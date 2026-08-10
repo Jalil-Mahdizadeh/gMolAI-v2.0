@@ -1,0 +1,16 @@
+{
+  "new_parameters": [
+    "vicreg_projector.0.bias",
+    "vicreg_projector.0.weight",
+    "vicreg_projector.1.bias",
+    "vicreg_projector.1.weight",
+    "vicreg_projector.3.bias",
+    "vicreg_projector.3.weight"
+  ],
+  "optimizer_state": "reset",
+  "scheduler_state": "reset",
+  "source_checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-novicreg/checkpoints/step-000015000.pt",
+  "source_checkpoint_sha256": "bb2359e6a621fe438120de35c12b8b63102543ba9915e14db321128aa7875b7a",
+  "source_global_step": 15000,
+  "source_training_plan_hash": "db59d49e10cd9b7e8f6f07fdefbf426d656bfff74e92331dd13238d550241638"
+}

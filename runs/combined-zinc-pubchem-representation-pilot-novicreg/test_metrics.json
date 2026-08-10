@@ -1,0 +1,255 @@
+{
+  "contrastive": 0.0,
+  "covariance": 4.170873532568668,
+  "descriptor": 0.05783964219313401,
+  "descriptor_mae": 0.13271188283128005,
+  "descriptor_pearson_r": {
+    "BalabanJ": 0.9914825351114024,
+    "HeavyAtomCount": 0.9995560086812673,
+    "LabuteASA": 0.9993908929062875,
+    "MaxPartialCharge": 0.9910908019520923,
+    "MinPartialCharge": 0.9934194808562236,
+    "MolLogP": 0.9948344848995219,
+    "MolMR": 0.9986833717213066,
+    "MolWt": 0.9987375929092925,
+    "NumHAcceptors": 0.9963222660872121,
+    "NumHDonors": 0.99823311771815,
+    "NumValenceElectrons": 0.9993497828940776,
+    "TPSA": 0.9976635477019037,
+    "qed": 0.9784402330734266
+  },
+  "descriptor_raw_mae": {
+    "BalabanJ": 0.04545922822365799,
+    "HeavyAtomCount": 0.14662352937470563,
+    "LabuteASA": 0.9056655510730421,
+    "MaxPartialCharge": 0.007105171358732218,
+    "MinPartialCharge": 0.005939417031694924,
+    "MolLogP": 0.12698026125132916,
+    "MolMR": 0.7272723420716558,
+    "MolWt": 2.652730503822668,
+    "NumHAcceptors": 0.11585919039840561,
+    "NumHDonors": 0.04300953295347884,
+    "NumValenceElectrons": 0.7577362341123381,
+    "TPSA": 1.921201454844663,
+    "qed": 0.01940468382157548
+  },
+  "descriptor_standardized_mae": {
+    "BalabanJ": 0.09331394137391001,
+    "HeavyAtomCount": 0.03308178614496067,
+    "LabuteASA": 0.03601835247094803,
+    "MaxPartialCharge": 0.08982708979767816,
+    "MinPartialCharge": 0.07958451228537958,
+    "MolLogP": 0.0845829730223867,
+    "MolMR": 0.04354978718292094,
+    "MolWt": 0.04337680023561597,
+    "NumHAcceptors": 0.06818702839423903,
+    "NumHDonors": 0.04346597028569132,
+    "NumValenceElectrons": 0.033229548687878994,
+    "TPSA": 0.07170733305219805,
+    "qed": 0.13116675393264268
+  },
+  "edge_exact_match": 0.9743658523654773,
+  "edge_existence_metrics": {
+    "easy": {
+      "auroc": 0.9948601085963426,
+      "average_precision": 0.9632625638709748,
+      "histogram_bins": 4096,
+      "negatives": 6236023,
+      "positives": 935264
+    },
+    "model_hard": {
+      "auroc": 0.9745586122884726,
+      "average_precision": 0.8654230564687776,
+      "histogram_bins": 4096,
+      "negatives": 6235854,
+      "positives": 935264
+    }
+  },
+  "edge_feature": 0.019611072651136693,
+  "edge_feature_metrics": {
+    "bond_type": {
+      "accuracy": 0.9931716916590902,
+      "balanced_accuracy": 0.9680540248580216,
+      "classes_present": 4,
+      "classes_total": 6,
+      "examples": 2527566,
+      "macro_f1": 0.9788411671721018
+    },
+    "conjugated": {
+      "accuracy": 0.9886301683121232,
+      "balanced_accuracy": 0.988654196802784,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 2527566,
+      "macro_f1": 0.988622973056707
+    },
+    "same_ring": {
+      "accuracy": 0.9856624911080463,
+      "balanced_accuracy": 0.9854610113229678,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 2527566,
+      "macro_f1": 0.9853668985499968
+    },
+    "stereo": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "classes_present": 1,
+      "classes_total": 7,
+      "examples": 2527566,
+      "macro_f1": 1.0
+    }
+  },
+  "existence": 0.2931018128133479,
+  "existence_negative": 0.19341346199959517,
+  "existence_positive": 0.09968835081375273,
+  "graphs": 250000,
+  "invariance": 0.9780366606445312,
+  "kl": 0.0,
+  "latent_diagnostics": {
+    "clean": {
+      "active_units": 256,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 31.322193047574675,
+      "effective_rank_ratio": 0.12235231659208858,
+      "mean_coordinate_std": 0.6896899500665861,
+      "median_coordinate_std": 0.6786745777931529,
+      "minimum_coordinate_std": 0.3765579307309048,
+      "participation_ratio": 17.83793656565788,
+      "participation_ratio_fraction": 0.0696794397096011,
+      "top_eigenvalue_fraction": 0.15088974572743405
+    },
+    "masked": {
+      "active_units": 256,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 52.52029547422088,
+      "effective_rank_ratio": 0.2051574041961753,
+      "mean_coordinate_std": 0.9138380178206457,
+      "median_coordinate_std": 0.8971976853912119,
+      "minimum_coordinate_std": 0.6116191219578851,
+      "participation_ratio": 31.391168873360623,
+      "participation_ratio_fraction": 0.12262175341156493,
+      "top_eigenvalue_fraction": 0.0951572285029367
+    },
+    "masked_clean_cosine": 0.511893615934106,
+    "regularization_clean": {
+      "active_units": 256,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 31.322193047574675,
+      "effective_rank_ratio": 0.12235231659208858,
+      "mean_coordinate_std": 0.6896899500665861,
+      "median_coordinate_std": 0.6786745777931529,
+      "minimum_coordinate_std": 0.3765579307309048,
+      "participation_ratio": 17.83793656565788,
+      "participation_ratio_fraction": 0.0696794397096011,
+      "top_eigenvalue_fraction": 0.15088974572743405
+    },
+    "regularization_masked": {
+      "active_units": 256,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 52.52029547422088,
+      "effective_rank_ratio": 0.2051574041961753,
+      "mean_coordinate_std": 0.9138380178206457,
+      "median_coordinate_std": 0.8971976853912119,
+      "minimum_coordinate_std": 0.6116191219578851,
+      "participation_ratio": 31.391168873360623,
+      "participation_ratio_fraction": 0.12262175341156493,
+      "top_eigenvalue_fraction": 0.0951572285029367
+    },
+    "regularization_space": "graph_z"
+  },
+  "metric_denominators": {
+    "contrastive": 250000,
+    "descriptor": 6500000,
+    "descriptor_mae": 6500000,
+    "edge_feature": 2527566,
+    "existence_negative": 12471877,
+    "existence_positive": 935264,
+    "invariance": 64000000,
+    "node": 1746251
+  },
+  "node": 0.1561821540756835,
+  "node_exact_match": 0.7681828099167874,
+  "node_feature_metrics": {
+    "aromatic": {
+      "accuracy": 0.9909005062846062,
+      "balanced_accuracy": 0.9899628377382043,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 1746251,
+      "macro_f1": 0.9902233806385814
+    },
+    "atom_type": {
+      "accuracy": 0.875157122315177,
+      "balanced_accuracy": 0.36528870240040023,
+      "classes_present": 11,
+      "classes_total": 12,
+      "examples": 1746251,
+      "macro_f1": 0.4155444904447046
+    },
+    "chirality": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "classes_present": 1,
+      "classes_total": 4,
+      "examples": 1746251,
+      "macro_f1": 1.0
+    },
+    "formal_charge": {
+      "accuracy": 0.9882811806550147,
+      "balanced_accuracy": 0.4260924225052103,
+      "classes_present": 4,
+      "classes_total": 8,
+      "examples": 1746251,
+      "macro_f1": 0.49517866554151024
+    },
+    "hybridization": {
+      "accuracy": 0.971884912306421,
+      "balanced_accuracy": 0.6982507451002463,
+      "classes_present": 4,
+      "classes_total": 7,
+      "examples": 1746251,
+      "macro_f1": 0.7114934423905553
+    },
+    "hydrogen_bond_acceptor": {
+      "accuracy": 0.9301434902542647,
+      "balanced_accuracy": 0.7787905594894633,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 1746251,
+      "macro_f1": 0.8268254556982157
+    },
+    "hydrogen_bond_donor": {
+      "accuracy": 0.9591524929692238,
+      "balanced_accuracy": 0.8157568197076068,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 1746251,
+      "macro_f1": 0.854852265430204
+    },
+    "total_degree": {
+      "accuracy": 0.8871886114882683,
+      "balanced_accuracy": 0.7888104658774557,
+      "classes_present": 4,
+      "classes_total": 8,
+      "examples": 1746251,
+      "macro_f1": 0.8056998495726216
+    },
+    "total_hydrogens": {
+      "accuracy": 0.8341910756242945,
+      "balanced_accuracy": 0.822451020769921,
+      "classes_present": 4,
+      "classes_total": 6,
+      "examples": 1746251,
+      "macro_f1": 0.8194443649014505
+    }
+  },
+  "selection_score": 0.3368040436817777,
+  "step": 15000,
+  "total": 0.3368040436817777,
+  "variance": 0.2134540069960666
+}

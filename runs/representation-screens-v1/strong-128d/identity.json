@@ -1,0 +1,20 @@
+{
+  "config_hash": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+  "descriptor_schema_hash": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+  "feature_schema_hash": "8f3cdfe95be6021102859e73ac148bb86160443a9ef2224dacfc7e5361a3ff0a",
+  "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+  "runtime": {
+    "duckdb": "1.5.4",
+    "gmolai_retrain": "0.2.1",
+    "numpy": "1.26.4",
+    "platform": "Linux-5.14.0-687.31.1.el9_8.aarch64-aarch64-with-glibc2.39",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0"
+  },
+  "scaler_hash": "b6649fc550fffdc1baabef09939726940bf4454ad7548ad584c99a61a45f3388",
+  "training_implementation_version": "5",
+  "training_plan_hash": "775e0aa308bf42b6ab9f53371e023735f2384bc006a77e70a53fc3cf81941ee0"
+}

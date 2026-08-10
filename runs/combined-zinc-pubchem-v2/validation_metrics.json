@@ -1,0 +1,203 @@
+{
+  "descriptor": 0.05382515948368953,
+  "descriptor_mae": 0.13126204329270583,
+  "descriptor_pearson_r": {
+    "BalabanJ": 0.9794550506086385,
+    "HeavyAtomCount": 0.9997357803189663,
+    "LabuteASA": 0.9986261528665242,
+    "MaxPartialCharge": 0.9529534845303034,
+    "MinPartialCharge": 0.9337062477239536,
+    "MolLogP": 0.9485937776840407,
+    "MolMR": 0.9954646629844495,
+    "MolWt": 0.9943768216099612,
+    "NumHAcceptors": 0.9647303600316512,
+    "NumHDonors": 0.9588325552562593,
+    "NumValenceElectrons": 0.9994287447478474,
+    "TPSA": 0.9746437706244007,
+    "qed": 0.9529850249659272
+  },
+  "descriptor_raw_mae": {
+    "BalabanJ": 0.06629869338986114,
+    "HeavyAtomCount": 0.09754929051778756,
+    "LabuteASA": 1.1233675721715888,
+    "MaxPartialCharge": 0.015270062366835702,
+    "MinPartialCharge": 0.013845070725680171,
+    "MolLogP": 0.3392305606629288,
+    "MolMR": 1.216964139081362,
+    "MolWt": 3.5637940927099616,
+    "NumHAcceptors": 0.3314526790672492,
+    "NumHDonors": 0.17004101179525682,
+    "NumValenceElectrons": 0.6724184057541063,
+    "TPSA": 4.205047377342436,
+    "qed": 0.03174702874293806
+  },
+  "descriptor_standardized_mae": {
+    "BalabanJ": 0.13609101231790594,
+    "HeavyAtomCount": 0.0220094604274258,
+    "LabuteASA": 0.04467636990384563,
+    "MaxPartialCharge": 0.1930516794300995,
+    "MinPartialCharge": 0.18551537893028,
+    "MolLogP": 0.22596527269801372,
+    "MolMR": 0.07287301633838034,
+    "MolWt": 0.05827428915888177,
+    "NumHAcceptors": 0.19507104409402237,
+    "NumHDonors": 0.17184556674995694,
+    "NumValenceElectrons": 0.02948804497756064,
+    "TPSA": 0.1569500855972161,
+    "qed": 0.21459533922358962
+  },
+  "edge_exact_match": 0.9443828970710691,
+  "edge_existence_metrics": {
+    "easy": {
+      "auroc": 0.9940868377770647,
+      "average_precision": 0.9523979030274092,
+      "histogram_bins": 4096,
+      "negatives": 496889,
+      "positives": 74680
+    },
+    "model_hard": {
+      "auroc": 0.970692239643774,
+      "average_precision": 0.8207579289882124,
+      "histogram_bins": 4096,
+      "negatives": 496867,
+      "positives": 74680
+    }
+  },
+  "edge_feature": 0.057721079352677056,
+  "edge_feature_metrics": {
+    "bond_type": {
+      "accuracy": 0.9913326816552623,
+      "balanced_accuracy": 0.9884839440410498,
+      "classes_present": 4,
+      "classes_total": 6,
+      "examples": 138105,
+      "macro_f1": 0.982024975676864
+    },
+    "conjugated": {
+      "accuracy": 0.9825133050939503,
+      "balanced_accuracy": 0.9824262486975139,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 138105,
+      "macro_f1": 0.982506618845923
+    },
+    "same_ring": {
+      "accuracy": 0.9650990188624597,
+      "balanced_accuracy": 0.9623783003418371,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 138105,
+      "macro_f1": 0.963937531487871
+    },
+    "stereo": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "classes_present": 1,
+      "classes_total": 7,
+      "examples": 138105,
+      "macro_f1": 1.0
+    }
+  },
+  "existence": 0.30732131867020185,
+  "existence_negative": 0.2179916646120407,
+  "existence_positive": 0.08932965405816118,
+  "graphs": 20000,
+  "kl": 16.963344578810087,
+  "latent_diagnostics": {
+    "active_units": 90,
+    "mean_kl_per_dimension": 0.06626306076691292,
+    "mean_variance": 0.05711552220513832,
+    "median_kl_per_dimension": 0.004256512135389541,
+    "median_variance": 0.007772041243176372,
+    "total_units": 256,
+    "variance_threshold": 0.01
+  },
+  "metric_denominators": {
+    "descriptor": 260000,
+    "descriptor_mae": 260000,
+    "edge_feature": 138105,
+    "existence_negative": 993756,
+    "existence_positive": 74680,
+    "kl": 461505,
+    "node": 69005
+  },
+  "node": 0.16846429722420195,
+  "node_exact_match": 0.7579016013332367,
+  "node_feature_metrics": {
+    "aromatic": {
+      "accuracy": 0.9903050503586697,
+      "balanced_accuracy": 0.9870297247383368,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 69005,
+      "macro_f1": 0.9894793241025646
+    },
+    "atom_type": {
+      "accuracy": 0.8666328526918339,
+      "balanced_accuracy": 0.3363997484627214,
+      "classes_present": 11,
+      "classes_total": 12,
+      "examples": 69005,
+      "macro_f1": 0.3636201735232414
+    },
+    "chirality": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "classes_present": 1,
+      "classes_total": 4,
+      "examples": 69005,
+      "macro_f1": 1.0
+    },
+    "formal_charge": {
+      "accuracy": 0.9893051228171872,
+      "balanced_accuracy": 0.5831205393793482,
+      "classes_present": 3,
+      "classes_total": 8,
+      "examples": 69005,
+      "macro_f1": 0.6608918242150972
+    },
+    "hybridization": {
+      "accuracy": 0.9651619447866097,
+      "balanced_accuracy": 0.9305325087064015,
+      "classes_present": 3,
+      "classes_total": 7,
+      "examples": 69005,
+      "macro_f1": 0.9503234262636245
+    },
+    "hydrogen_bond_acceptor": {
+      "accuracy": 0.9216143757698717,
+      "balanced_accuracy": 0.758283877474259,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 69005,
+      "macro_f1": 0.8057456257606026
+    },
+    "hydrogen_bond_donor": {
+      "accuracy": 0.9584377943627274,
+      "balanced_accuracy": 0.822000857503609,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 69005,
+      "macro_f1": 0.854067576637596
+    },
+    "total_degree": {
+      "accuracy": 0.8762553438156655,
+      "balanced_accuracy": 0.7694218340447835,
+      "classes_present": 4,
+      "classes_total": 8,
+      "examples": 69005,
+      "macro_f1": 0.7931731213331522
+    },
+    "total_hydrogens": {
+      "accuracy": 0.8243605535830737,
+      "balanced_accuracy": 0.8096042413647369,
+      "classes_present": 4,
+      "classes_total": 6,
+      "examples": 69005,
+      "macro_f1": 0.8067459160137713
+    }
+  },
+  "selection_score": 0.6535949194917472,
+  "step": 35000,
+  "total": 0.6535949194917472
+}

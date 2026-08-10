@@ -1,0 +1,253 @@
+{
+  "covariance": 0.006957139509333339,
+  "descriptor": 1.4013673342191255,
+  "descriptor_mae": 0.8726564554067758,
+  "descriptor_pearson_r": {
+    "BalabanJ": -0.0645843751565332,
+    "HeavyAtomCount": 0.4869679616862796,
+    "LabuteASA": 0.217475738390618,
+    "MaxPartialCharge": 0.5097175482095764,
+    "MinPartialCharge": 0.05826361064109954,
+    "MolLogP": 0.19538513898281012,
+    "MolMR": 0.12271035849988428,
+    "MolWt": 0.07922852889579465,
+    "NumHAcceptors": 0.4769966262710433,
+    "NumHDonors": 0.16996456455222203,
+    "NumValenceElectrons": 0.3064945588034838,
+    "TPSA": -0.3711300116888319,
+    "qed": 0.2138559694507434
+  },
+  "descriptor_raw_mae": {
+    "BalabanJ": 0.3139476296616486,
+    "HeavyAtomCount": 4.121954601369997,
+    "LabuteASA": 21.877304630099587,
+    "MaxPartialCharge": 0.0777121226411773,
+    "MinPartialCharge": 0.06409013770907243,
+    "MolLogP": 1.270618875098393,
+    "MolMR": 13.635766985586855,
+    "MolWt": 52.8192925329907,
+    "NumHAcceptors": 1.541528965685064,
+    "NumHDonors": 0.867653011954473,
+    "NumValenceElectrons": 21.68678834823413,
+    "TPSA": 25.801364935632563,
+    "qed": 0.12282019488507138
+  },
+  "descriptor_standardized_mae": {
+    "BalabanJ": 0.6444388049130794,
+    "HeavyAtomCount": 0.930011855554767,
+    "LabuteASA": 0.8700612144821207,
+    "MaxPartialCharge": 0.9824750827829121,
+    "MinPartialCharge": 0.8587681795470417,
+    "MolLogP": 0.8463734518663841,
+    "MolMR": 0.8165232141327579,
+    "MolWt": 0.8636881498096045,
+    "NumHAcceptors": 0.9072416179697029,
+    "NumHDonors": 0.8768609525868669,
+    "NumValenceElectrons": 0.9510462306789123,
+    "TPSA": 0.9630156504281331,
+    "qed": 0.8302081306028413
+  },
+  "edge_exact_match": 0.19047619047619047,
+  "edge_existence_metrics": {
+    "easy": {
+      "auroc": 0.7199479897148201,
+      "average_precision": 0.32892069350084296,
+      "histogram_bins": 4096,
+      "negatives": 1426,
+      "positives": 216
+    },
+    "model_hard": {
+      "auroc": 0.349525650035137,
+      "average_precision": 0.12891360590289597,
+      "histogram_bins": 4096,
+      "negatives": 1423,
+      "positives": 216
+    }
+  },
+  "edge_feature": 1.231600080217634,
+  "edge_feature_metrics": {
+    "bond_type": {
+      "accuracy": 0.6462585034013606,
+      "balanced_accuracy": 0.24934383202099739,
+      "classes_present": 4,
+      "classes_total": 6,
+      "examples": 588,
+      "macro_f1": 0.1962809917355372
+    },
+    "conjugated": {
+      "accuracy": 0.5680272108843537,
+      "balanced_accuracy": 0.5192863410353905,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 588,
+      "macro_f1": 0.41044021979410095
+    },
+    "same_ring": {
+      "accuracy": 0.4166666666666667,
+      "balanced_accuracy": 0.5,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 588,
+      "macro_f1": 0.29411764705882354
+    },
+    "stereo": {
+      "accuracy": 0.7534013605442177,
+      "balanced_accuracy": 0.7534013605442177,
+      "classes_present": 1,
+      "classes_total": 7,
+      "examples": 588,
+      "macro_f1": 0.8593598448108631
+    }
+  },
+  "existence": 1.3840860823034742,
+  "existence_negative": 0.6866871548268033,
+  "existence_positive": 0.697398927476671,
+  "graphs": 64,
+  "invariance": 0.025203149765729904,
+  "kl": 0.0,
+  "latent_diagnostics": {
+    "clean": {
+      "active_units": 234,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 4.3322813801528985,
+      "effective_rank_ratio": 0.01692297414122226,
+      "mean_coordinate_std": 0.1754593249766188,
+      "median_coordinate_std": 0.15339154433166832,
+      "minimum_coordinate_std": 0.07406185900996533,
+      "participation_ratio": 2.1569854705290803,
+      "participation_ratio_fraction": 0.00842572449425422,
+      "top_eigenvalue_fraction": 0.670012202373952
+    },
+    "masked": {
+      "active_units": 247,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 7.139792175115705,
+      "effective_rank_ratio": 0.027889813184045723,
+      "mean_coordinate_std": 0.18217760572137057,
+      "median_coordinate_std": 0.16435060547998726,
+      "minimum_coordinate_std": 0.07635309644152874,
+      "participation_ratio": 3.188087664261604,
+      "participation_ratio_fraction": 0.01245346743852189,
+      "top_eigenvalue_fraction": 0.5373330494045081
+    },
+    "masked_clean_cosine": 0.9873928589650025,
+    "regularization_clean": {
+      "active_units": 61,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 3.1808812845625813,
+      "effective_rank_ratio": 0.012425317517822583,
+      "mean_coordinate_std": 0.07882755336127024,
+      "median_coordinate_std": 0.07174902528221275,
+      "minimum_coordinate_std": 0.019981264956279474,
+      "participation_ratio": 1.7128982887618147,
+      "participation_ratio_fraction": 0.006691008940475839,
+      "top_eigenvalue_fraction": 0.759084846899766
+    },
+    "regularization_masked": {
+      "active_units": 64,
+      "active_variance_threshold": 0.01,
+      "dimensions": 256,
+      "effective_rank": 5.145408832866851,
+      "effective_rank_ratio": 0.020099253253386136,
+      "mean_coordinate_std": 0.08202823273649873,
+      "median_coordinate_std": 0.0746881678162774,
+      "minimum_coordinate_std": 0.035894448518066585,
+      "participation_ratio": 2.4533882741624904,
+      "participation_ratio_fraction": 0.009583547945947228,
+      "top_eigenvalue_fraction": 0.620872125247174
+    },
+    "regularization_space": "projector"
+  },
+  "metric_denominators": {
+    "descriptor": 1664,
+    "descriptor_mae": 1664,
+    "edge_feature": 588,
+    "existence_negative": 2849,
+    "existence_positive": 216,
+    "invariance": 16384,
+    "node": 413
+  },
+  "node": 1.371097296837167,
+  "node_exact_match": 0.0,
+  "node_feature_metrics": {
+    "aromatic": {
+      "accuracy": 0.7360774818401937,
+      "balanced_accuracy": 0.538135593220339,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 413,
+      "macro_f1": 0.4928976152659029
+    },
+    "atom_type": {
+      "accuracy": 0.7070217917675545,
+      "balanced_accuracy": 0.12248322147651007,
+      "classes_present": 8,
+      "classes_total": 12,
+      "examples": 413,
+      "macro_f1": 0.10354609929078015
+    },
+    "chirality": {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "classes_present": 1,
+      "classes_total": 4,
+      "examples": 413,
+      "macro_f1": 1.0
+    },
+    "formal_charge": {
+      "accuracy": 0.9467312348668281,
+      "balanced_accuracy": 0.32101806239737274,
+      "classes_present": 3,
+      "classes_total": 8,
+      "examples": 413,
+      "macro_f1": 0.32421227197346597
+    },
+    "hybridization": {
+      "accuracy": 0.5060532687651331,
+      "balanced_accuracy": 0.3476564545692589,
+      "classes_present": 3,
+      "classes_total": 7,
+      "examples": 413,
+      "macro_f1": 0.2559477124183006
+    },
+    "hydrogen_bond_acceptor": {
+      "accuracy": 0.8426150121065376,
+      "balanced_accuracy": 0.5,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 413,
+      "macro_f1": 0.45729303547963207
+    },
+    "hydrogen_bond_donor": {
+      "accuracy": 0.8716707021791767,
+      "balanced_accuracy": 0.4891534391534392,
+      "classes_present": 2,
+      "classes_total": 2,
+      "examples": 413,
+      "macro_f1": 0.4838108713595095
+    },
+    "total_degree": {
+      "accuracy": 0.38498789346246975,
+      "balanced_accuracy": 0.25,
+      "classes_present": 4,
+      "classes_total": 8,
+      "examples": 413,
+      "macro_f1": 0.13898601398601398
+    },
+    "total_hydrogens": {
+      "accuracy": 0.4019370460048426,
+      "balanced_accuracy": 0.25,
+      "classes_present": 4,
+      "classes_total": 6,
+      "examples": 413,
+      "macro_f1": 0.14335060449050085
+    }
+  },
+  "selection_score": 4.920906052646315,
+  "step": 1,
+  "total": 4.590135794058538,
+  "variance": 0.9195721069511155
+}

@@ -1,4 +1,6 @@
 # Generated datasets, manifests, caches, checkpoints, and evaluation artifacts.
+# The compact external-review records and exact promoted model already tracked
+# under runs/ are deliberate exceptions; these rules keep future bulk output out.
 work/
 runs/
 gMolAI-retrain/

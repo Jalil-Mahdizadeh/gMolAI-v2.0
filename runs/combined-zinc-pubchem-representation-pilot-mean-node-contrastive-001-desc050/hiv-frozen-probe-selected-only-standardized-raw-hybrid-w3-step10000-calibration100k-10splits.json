@@ -1,0 +1,223 @@
+{
+  "benchmark": "MoleculeNet frozen scaffold-group linear probes",
+  "checkpoint": {
+    "architecture": "masked_graph_vicreg",
+    "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "config_hash": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+    "embedding_definition": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+    "embedding_dimensions": 384,
+    "embedding_parameters": {
+      "calibration_graphs": 100000,
+      "calibration_sampling_seed": 271828,
+      "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "coordinate_transform": "train_mean_and_population_std",
+      "graph_dimensions": 256,
+      "mean_node_dimensions": 128,
+      "mean_node_weight": 3.0
+    },
+    "global_step": 10000,
+    "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+    "name": "checkpoints/step-000010000.pt",
+    "training_plan_hash": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c"
+  },
+  "datasets": {
+    "hiv": {
+      "feature_results": {
+        "molecule_embedding": {
+          "per_split": [
+            {
+              "average_precision": 0.14185939699799305,
+              "balanced_accuracy": 0.654568692789067,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.01,
+              "outer_seed": 42,
+              "roc_auc": 0.7397088502771909,
+              "test": 7186,
+              "test_positive_fraction": 0.03228499860840523,
+              "train": 30039
+            },
+            {
+              "average_precision": 0.20384955952028858,
+              "balanced_accuracy": 0.7185036344967803,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.1,
+              "outer_seed": 104771,
+              "roc_auc": 0.7758477659234478,
+              "test": 7213,
+              "test_positive_fraction": 0.029114099542492722,
+              "train": 30012
+            },
+            {
+              "average_precision": 0.15617794924964806,
+              "balanced_accuracy": 0.6563037081782576,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.1,
+              "outer_seed": 209500,
+              "roc_auc": 0.7471852530251952,
+              "test": 7157,
+              "test_positive_fraction": 0.031018583205253598,
+              "train": 30068
+            },
+            {
+              "average_precision": 0.19922456394665392,
+              "balanced_accuracy": 0.7153666795378264,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.01,
+              "outer_seed": 314229,
+              "roc_auc": 0.7714482574879997,
+              "test": 8743,
+              "test_positive_fraction": 0.029966830607343016,
+              "train": 28482
+            },
+            {
+              "average_precision": 0.18854056449317907,
+              "balanced_accuracy": 0.6649013129022303,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.01,
+              "outer_seed": 418958,
+              "roc_auc": 0.7452475600744082,
+              "test": 7064,
+              "test_positive_fraction": 0.029161947904869763,
+              "train": 30161
+            },
+            {
+              "average_precision": 0.18373801148512434,
+              "balanced_accuracy": 0.692748288206747,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.01,
+              "outer_seed": 523687,
+              "roc_auc": 0.7595474709120856,
+              "test": 7203,
+              "test_positive_fraction": 0.03248646397334444,
+              "train": 30022
+            },
+            {
+              "average_precision": 0.15985528339967958,
+              "balanced_accuracy": 0.6557764284642452,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.01,
+              "outer_seed": 628416,
+              "roc_auc": 0.7260359834492504,
+              "test": 6752,
+              "test_positive_fraction": 0.03154620853080569,
+              "train": 30473
+            },
+            {
+              "average_precision": 0.20205570807493825,
+              "balanced_accuracy": 0.6929688351313066,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.01,
+              "outer_seed": 733145,
+              "roc_auc": 0.773200947405429,
+              "test": 7325,
+              "test_positive_fraction": 0.037679180887372016,
+              "train": 29900
+            },
+            {
+              "average_precision": 0.18729824347286317,
+              "balanced_accuracy": 0.6979931638049119,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.01,
+              "outer_seed": 837874,
+              "roc_auc": 0.7655313634855984,
+              "test": 7084,
+              "test_positive_fraction": 0.03402032749858837,
+              "train": 30141
+            },
+            {
+              "average_precision": 0.1902838298398745,
+              "balanced_accuracy": 0.70651517745816,
+              "inner_scaffold_folds": 3,
+              "logistic_c": 0.1,
+              "outer_seed": 942603,
+              "roc_auc": 0.7738067014382805,
+              "test": 9295,
+              "test_positive_fraction": 0.03270575578267886,
+              "train": 27930
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.18128831104802426,
+              "std": 0.020204412748899888,
+              "values": [
+                0.14185939699799305,
+                0.20384955952028858,
+                0.15617794924964806,
+                0.19922456394665392,
+                0.18854056449317907,
+                0.18373801148512434,
+                0.15985528339967958,
+                0.20205570807493825,
+                0.18729824347286317,
+                0.1902838298398745
+              ]
+            },
+            "balanced_accuracy": {
+              "mean": 0.6855645920969532,
+              "std": 0.024091950020149546,
+              "values": [
+                0.654568692789067,
+                0.7185036344967803,
+                0.6563037081782576,
+                0.7153666795378264,
+                0.6649013129022303,
+                0.692748288206747,
+                0.6557764284642452,
+                0.6929688351313066,
+                0.6979931638049119,
+                0.70651517745816
+              ]
+            },
+            "roc_auc": {
+              "mean": 0.7577560153478886,
+              "std": 0.016354472769851896,
+              "values": [
+                0.7397088502771909,
+                0.7758477659234478,
+                0.7471852530251952,
+                0.7714482574879997,
+                0.7452475600744082,
+                0.7595474709120856,
+                0.7260359834492504,
+                0.773200947405429,
+                0.7655313634855984,
+                0.7738067014382805
+              ]
+            }
+          }
+        }
+      },
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 37225,
+        "positive_fraction": 0.03092008059100067,
+        "raw_rows": 41127,
+        "rejections": {
+          "disconnected": 3086,
+          "parse_failure": 7,
+          "unsupported_element": 809
+        },
+        "scaffold_groups": 18651,
+        "target_mean": 0.03092008059100067,
+        "target_std": 0.17310121087747102,
+        "valid_rows_before_deduplication": 37225
+      },
+      "scaffold_splits": 10,
+      "source": {
+        "filename": "HIV.csv",
+        "sha256": "9ffa7fe57dc86c342627ee1d5255e937e2ab812393c73c4d16c697022f6e1d22",
+        "smiles_column": "smiles",
+        "target_column": "HIV_active",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/HIV.csv"
+      },
+      "task": "classification"
+    }
+  },
+  "datasets_requested": [
+    "hiv"
+  ],
+  "schema_version": 1,
+  "selected_only": true
+}

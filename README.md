@@ -4,6 +4,16 @@ This directory is a resumable molecular-representation package for the combined 
 
 The original checkpoints are deliberately not loaded: the feature schema, denoising objective, symmetric decoders, pooling, latent width, split, and scaler contract have changed.
 
+## External review bundle
+
+This repository includes the exact promoted encoder and train-only calibrator
+used for molecular embeddings, all compact JSON/JSONL training and validation
+records from the repair experiments, the authoritative downstream/test results,
+and final Slurm validation logs. Raw ZINC/PubChem or MoleculeNet data, graph
+shards, intermediate checkpoints, and bulk embedding tensors are deliberately
+excluded. See [`REVIEW_ARTIFACTS.md`](REVIEW_ARTIFACTS.md) for hashes, scope,
+usage, and the exclusion boundary.
+
 ## Descriptor contract (resolved)
 
 The source function was supplied after the audit. It filters `Descriptors._descList` by a set and returns `list(res.values())`; therefore the stored order follows `_descList`, not the set literal. The resulting mapping is:
