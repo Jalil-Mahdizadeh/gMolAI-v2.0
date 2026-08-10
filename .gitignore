@@ -26,3 +26,10 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 *.py[cod]
+
+# Inference outputs are local products. The exact packaged model pair is an
+# intentional exception to the general checkpoint rule above.
+inference/output/*
+!inference/output/.gitkeep
+!inference/model/representation-best.pt
+!inference/model/representation-calibrator.pt

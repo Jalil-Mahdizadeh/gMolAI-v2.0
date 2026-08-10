@@ -22,6 +22,20 @@ must be retained together for the public 384-dimensional molecular vector.
 `--checkpoint auto --embedding-definition auto` validates the selection record
 and both hashes before loading them.
 
+Byte-identical copies of the promoted pair, selection record, and resolved model
+configuration are packaged under `inference/model/`. The standalone inference
+script applies the training-time canonicalization/feature policy and does not
+need graph shards:
+
+```bash
+python inference/generate_embeddings.py \
+  --input inference/data/example_smiles.csv \
+  --output-dir inference/output
+```
+
+See [`inference/README.md`](inference/README.md) for the CSV contract, rejection
+handling, device selection, and output provenance.
+
 With the immutable graph data available at the paths in `configs/retrain.yaml`,
 the promoted export path is:
 

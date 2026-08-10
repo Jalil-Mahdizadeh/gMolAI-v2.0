@@ -14,6 +14,9 @@ shards, intermediate checkpoints, and bulk embedding tensors are deliberately
 excluded. See [`REVIEW_ARTIFACTS.md`](REVIEW_ARTIFACTS.md) for hashes, scope,
 usage, and the exclusion boundary.
 
+For direct real-world CSV-to-vector inference without graph shards, use the
+hash-verified workflow in [`inference/README.md`](inference/README.md).
+
 ## Descriptor contract (resolved)
 
 The source function was supplied after the audit. It filters `Descriptors._descList` by a set and returns `list(res.values())`; therefore the stored order follows `_descList`, not the set literal. The resulting mapping is:
