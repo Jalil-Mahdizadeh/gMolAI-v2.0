@@ -1,0 +1,42 @@
+Bootstrap: docker
+# NVIDIA NGC PyG 25.09 arm64 image digest. The pinned runtime was observed as
+# CUDA 13.0.1, PyTorch 2.8.0a0+nv25.08 and PyG 2.7. Build this recipe on an
+# Arrhenius GPU (aarch64) node; the %test block prints the authoritative values.
+From: nvcr.io/nvidia/pyg@sha256:3338cc5c0c1eba88872e0452a0151768cf68ca85565be5a9d8ceeadf6834d9a3
+
+%labels
+    org.opencontainers.image.title gMolAI Arrhenius retraining
+    org.opencontainers.image.version 0.1.0
+    org.opencontainers.image.base.name nvcr.io/nvidia/pyg:25.09-py3
+    org.opencontainers.image.base.digest sha256:3338cc5c0c1eba88872e0452a0151768cf68ca85565be5a9d8ceeadf6834d9a3
+    gmolai.cuda 13.0.1
+    gmolai.architecture linux/arm64
+
+%files
+    requirements.lock /opt/gmolai/requirements.lock
+
+%post
+    set -eu
+    export DEBIAN_FRONTEND=noninteractive
+    apt-get update
+    apt-get install -y --no-install-recommends ca-certificates git jq procps time
+    rm -rf /var/lib/apt/lists/*
+    python -m pip install --no-cache-dir -r /opt/gmolai/requirements.lock
+
+%environment
+    export PYTHONUNBUFFERED=1
+    export PYTHONDONTWRITEBYTECODE=1
+    export TOKENIZERS_PARALLELISM=false
+    export OMP_NUM_THREADS=8
+
+%runscript
+    exec "$@"
+
+%test
+    python -c "import duckdb, pandas, pyarrow, rdkit, scipy, sklearn, torch, torch_geometric, yaml; print('container imports: OK'); print('torch', torch.__version__, 'cuda', torch.version.cuda, 'pyg', torch_geometric.__version__, 'arrow', pyarrow.__version__, 'pandas', pandas.__version__, 'rdkit', rdkit.__version__, 'sklearn', sklearn.__version__, 'scipy', scipy.__version__)"
+
+%help
+    Build on an Arrhenius GPU node from the gMolAI-retrain directory:
+      apptainer build /nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif arrhenius.def
+
+    The project source and data remain outside the immutable image and are bind-mounted by the Slurm scripts.

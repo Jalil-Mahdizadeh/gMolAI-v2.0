@@ -1,0 +1,26 @@
+# Generated datasets, manifests, caches, checkpoints, and evaluation artifacts.
+work/
+runs/
+gMolAI-retrain/
+
+# Slurm output and container images.
+slurm-outs/
+slurm-*.out
+*.sif
+*.log
+
+# Large generated ML/data artifacts (defense in depth).
+*.pt
+*.pth
+*.ckpt
+*.feather
+*.arrow
+*.parquet
+
+# Python/tool caches.
+__pycache__/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
