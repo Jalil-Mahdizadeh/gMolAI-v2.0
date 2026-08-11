@@ -55,8 +55,8 @@
     "semantic_hash": "5dcd16a945ad2ada04a21223f38576aa"
   },
   "src/gmolai_retrain/cli.py": {
-    "mtime": 1786475422.0,
-    "ast_hash": "8000dbd8053c0d92e780da207d2f7e8f",
+    "mtime": 1786485312.0,
+    "ast_hash": "132b29e1f0e282b3df75b6adba16b530",
     "semantic_hash": ""
   },
   "src/gmolai_retrain/config.py": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786477732.0,
-    "ast_hash": "4f15d1382eff7d8ecbc19dc7446271f1",
+    "mtime": 1786485041.0,
+    "ast_hash": "ce95d702f042dd635bcb11bf208d488a",
     "semantic_hash": ""
   },
   "REPRESENTATION_REPAIR.md": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "REVIEW_ARTIFACTS.md": {
-    "mtime": 1786477732.0,
-    "ast_hash": "dc0a02fd7dc9f8a4aafa2a0b349689dc",
+    "mtime": 1786485065.0,
+    "ast_hash": "5e129acbfeec98286677f023b8a3822c",
     "semantic_hash": ""
   },
   "configs/descriptors.yaml": {
@@ -485,13 +485,63 @@
     "semantic_hash": ""
   },
   "tests/test_downstream_audit.py": {
-    "mtime": 1786478186.0,
-    "ast_hash": "cdea2d7b24a7f0b38cb336831fc86db0",
+    "mtime": 1786485325.0,
+    "ast_hash": "21f66dcff3769a8ca5b6a72e9fee2883",
     "semantic_hash": ""
   },
   "artifacts/manuscript-rev3/README.md": {
     "mtime": 1786477316.0,
     "ast_hash": "7ad21e64e13ee65d50e134f2e884b727",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev4/artifact_manifest.json": {
+    "mtime": 1786485243.0,
+    "ast_hash": "e896674bc924cb9981cb0a6aaa5dc303",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev4/descriptor_only_control.json": {
+    "mtime": 1786484535.0,
+    "ast_hash": "b64ef8a3f02578c60ad293202ba4285b",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev4/downstream_checkpoint_exposure.json": {
+    "mtime": 1786484407.0,
+    "ast_hash": "b698940d9c4a1cb568d608c887cea046",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev4/pretraining_downstream_overlap.json": {
+    "mtime": 1786484535.0,
+    "ast_hash": "aee76ee9519ace2a1d4129a1256f40c2",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev4/promotion_criteria_chronology.json": {
+    "mtime": 1786484535.0,
+    "ast_hash": "c80d8749f71680fb5887b602c79a3681",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev4/training_exposure_seed42_5k-15k.json": {
+    "mtime": 1786483958.0,
+    "ast_hash": "829b4bcb6aae3c1c3ada56e1fc05e8e6",
+    "semantic_hash": ""
+  },
+  "scripts/update_manuscript_rev4.py": {
+    "mtime": 1786484391.0,
+    "ast_hash": "a6f503c7f76b0bc75aba2a6c44f763b2",
+    "semantic_hash": ""
+  },
+  "src/gmolai_retrain/downstream_exposure.py": {
+    "mtime": 1786483891.0,
+    "ast_hash": "cf68dffa95ac0a6a23a4631d9b9354e5",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev4/README.md": {
+    "mtime": 1786484585.0,
+    "ast_hash": "abd8551a37250df1d3ae4901744f3349",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m.md": {
+    "mtime": 1786485445.0,
+    "ast_hash": "628e76bfeb62839b989bfaa1fea7dea5",
     "semantic_hash": ""
   }
 }
