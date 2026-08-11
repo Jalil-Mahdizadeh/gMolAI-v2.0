@@ -1,0 +1,5318 @@
+{
+  "generated_utc": "2026-08-11T12:13:04.389071+00:00",
+  "protocol": {
+    "calibration_graphs": 100000,
+    "calibration_sampling_seed": 271828,
+    "calibration_split": "pretraining train",
+    "clustering_kmeans_n_init_per_repetition": 20,
+    "clustering_kmeans_repetitions": 5,
+    "downstream_diagnostic_feature_panels": [
+      "graph_z",
+      "mean_node_z",
+      "molecule_embedding",
+      "morgan_radius2_2048",
+      "raw_graph_z_plus_mean_node_z",
+      "unit_graph_z",
+      "unit_mean_node_z"
+    ],
+    "downstream_scaffold_splits": 10,
+    "probe_sampling_seed": 20260810,
+    "probe_train_graphs": 10000,
+    "probe_validation_graphs": 50000,
+    "similarity_graphs": 5000
+  },
+  "schema_version": 1,
+  "selection_run": "primary seed 42",
+  "steps": [
+    {
+      "artifacts": {
+        "calibration_source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000005000/calibration-source-raw-hybrid-100k-seed271828.pt",
+        "calibration_source_sha256": "2c7bdf5f07e988623dc2006cda43ae52639566f5f4174732661a045d38936877",
+        "calibrator": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000005000/embedding-calibrator-100k-seed271828.pt",
+        "calibrator_sha256": "14870f199aa8f8165804b944fc826c18cd43a7849e2867318e465f85b2709a1f",
+        "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000005000.pt",
+        "checkpoint_sha256": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+        "downstream_benchmark": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000005000/moleculenet-full-diagnostic-standardized-raw-hybrid-w3-10splits.json",
+        "downstream_benchmark_sha256": "e1c38dbc58d505c47a257787bf0edc8faddb2410d23c2858f95879ea13e2ed41",
+        "representation_probe": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000005000/representation-probe-standardized-raw-hybrid-w3-50k-sim5k.json",
+        "representation_probe_sha256": "475b47b2469111a8227a8eb69e6edfc1fae600b05997a801b3ff07da94ed8c94"
+      },
+      "checks": [
+        {
+          "expected": "checkpoints/step-000005000.pt",
+          "name": "calibrator.checkpoint",
+          "observed": "checkpoints/step-000005000.pt",
+          "passed": true
+        },
+        {
+          "expected": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "name": "calibrator.checkpoint_sha256",
+          "observed": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "passed": true
+        },
+        {
+          "expected": 5000,
+          "name": "calibrator.global_step",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": "2c7bdf5f07e988623dc2006cda43ae52639566f5f4174732661a045d38936877",
+          "name": "calibrator.source_sha256",
+          "observed": "2c7bdf5f07e988623dc2006cda43ae52639566f5f4174732661a045d38936877",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "name": "calibrator.train_only_100k_protocol",
+          "observed": {
+            "graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "finite": true,
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "name": "calibrator.coordinate_payload",
+          "observed": {
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "passed": true
+        },
+        {
+          "expected": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "name": "probe_train.checkpoint_sha256",
+          "observed": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "passed": true
+        },
+        {
+          "expected": 5000,
+          "name": "probe_train.global_step",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_train.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_train.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_train.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_train.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "name": "probe_validation.checkpoint_sha256",
+          "observed": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "passed": true
+        },
+        {
+          "expected": 5000,
+          "name": "probe_validation.global_step",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_validation.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_validation.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_validation.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_validation.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "name": "downstream.checkpoint_sha256",
+          "observed": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+          "passed": true
+        },
+        {
+          "expected": 5000,
+          "name": "downstream.global_step",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "downstream.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "downstream.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "downstream.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "downstream.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000005000.pt",
+          "name": "probe_train.checkpoint_name",
+          "observed": "checkpoints/step-000005000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_train.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000005000.pt",
+          "name": "probe_validation.checkpoint_name",
+          "observed": "checkpoints/step-000005000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_validation.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000005000.pt",
+          "name": "downstream.checkpoint_name",
+          "observed": "checkpoints/step-000005000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "downstream.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "14870f199aa8f8165804b944fc826c18cd43a7849e2867318e465f85b2709a1f",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_train.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "14870f199aa8f8165804b944fc826c18cd43a7849e2867318e465f85b2709a1f",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "14870f199aa8f8165804b944fc826c18cd43a7849e2867318e465f85b2709a1f",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_validation.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "14870f199aa8f8165804b944fc826c18cd43a7849e2867318e465f85b2709a1f",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "14870f199aa8f8165804b944fc826c18cd43a7849e2867318e465f85b2709a1f",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "downstream.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "14870f199aa8f8165804b944fc826c18cd43a7849e2867318e465f85b2709a1f",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "name": "probe_train.sampling_protocol",
+          "observed": {
+            "graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "name": "probe_validation.sampling_protocol",
+          "observed": {
+            "graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.probe_train_graphs",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.probe_validation_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5000
+          },
+          "name": "protocol.similarity_graphs",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.similarity_available_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.clustering_graphs",
+          "observed": 11034,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.clustering_sampled_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5
+          },
+          "name": "protocol.clustering_kmeans_repetitions",
+          "observed": 5,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 20
+          },
+          "name": "protocol.clustering_kmeans_n_init",
+          "observed": 20,
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.similarity_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.clustering_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": true,
+          "name": "protocol.clustering_available",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "expected": false,
+          "name": "downstream.full_diagnostic_panel",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "expected": 384,
+          "name": "downstream.embedding_dimensions",
+          "observed": 384,
+          "passed": true
+        },
+        {
+          "expected": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "name": "downstream.dataset_panel",
+          "observed": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1400
+          },
+          "name": "downstream.bace.molecules",
+          "observed": 1513,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bace.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bace.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.graph_z.roc_auc",
+          "observed": 0.8413507701393247,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_mean_node_z.roc_auc",
+          "observed": 0.821466321772693,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.molecule_embedding.roc_auc",
+          "observed": 0.8404385110671695,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8404385110671695,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_graph_z.roc_auc",
+          "observed": 0.8413071818241986,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.morgan_radius2_2048.roc_auc",
+          "observed": 0.8560141069044205,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.mean_node_z.roc_auc",
+          "observed": 0.8144444807083033,
+          "passed": true
+        },
+        {
+          "expected": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "name": "downstream.bace.source_sha256",
+          "observed": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1800
+          },
+          "name": "downstream.bbbp.molecules",
+          "observed": 1860,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bbbp.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bbbp.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.graph_z.roc_auc",
+          "observed": 0.8742494720318181,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_mean_node_z.roc_auc",
+          "observed": 0.860362180713202,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.molecule_embedding.roc_auc",
+          "observed": 0.8826642905543345,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8826642905543345,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_graph_z.roc_auc",
+          "observed": 0.8743677489838946,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.morgan_radius2_2048.roc_auc",
+          "observed": 0.8650618857817779,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.mean_node_z.roc_auc",
+          "observed": 0.8562745258183092,
+          "passed": true
+        },
+        {
+          "expected": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "name": "downstream.bbbp.source_sha256",
+          "observed": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1000
+          },
+          "name": "downstream.esol.molecules",
+          "observed": 1116,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.esol.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.esol.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.graph_z.rmse",
+          "observed": 0.847105169164078,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_mean_node_z.rmse",
+          "observed": 0.9477133007934955,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.molecule_embedding.rmse",
+          "observed": 0.7811545288054523,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.7811979798203929,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_graph_z.rmse",
+          "observed": 0.850299222306593,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.morgan_radius2_2048.rmse",
+          "observed": 1.5990712200288444,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.mean_node_z.rmse",
+          "observed": 1.0776556981416525,
+          "passed": true
+        },
+        {
+          "expected": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "name": "downstream.esol.source_sha256",
+          "observed": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 600
+          },
+          "name": "downstream.freesolv.molecules",
+          "observed": 639,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.freesolv.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.freesolv.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.graph_z.rmse",
+          "observed": 1.416151255151945,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_mean_node_z.rmse",
+          "observed": 1.4199808143152626,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.molecule_embedding.rmse",
+          "observed": 1.3904499283004497,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 1.3906305647808264,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_graph_z.rmse",
+          "observed": 1.4184295517360985,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.morgan_radius2_2048.rmse",
+          "observed": 2.381000649467138,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.mean_node_z.rmse",
+          "observed": 1.5732203466861292,
+          "passed": true
+        },
+        {
+          "expected": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "name": "downstream.freesolv.source_sha256",
+          "observed": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 4000
+          },
+          "name": "downstream.lipophilicity.molecules",
+          "observed": 4198,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.lipophilicity.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.lipophilicity.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.graph_z.rmse",
+          "observed": 0.8325317978706683,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_mean_node_z.rmse",
+          "observed": 0.8695128625196082,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.molecule_embedding.rmse",
+          "observed": 0.803249540428207,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.8032695415832745,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_graph_z.rmse",
+          "observed": 0.832318354901535,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.morgan_radius2_2048.rmse",
+          "observed": 0.9297426149398664,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.mean_node_z.rmse",
+          "observed": 0.8821377902794103,
+          "passed": true
+        },
+        {
+          "expected": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "name": "downstream.lipophilicity.source_sha256",
+          "observed": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "passed": true
+        },
+        {
+          "expected": {
+            "passed": false
+          },
+          "name": "repository_fail_closed_validator.agrees_with_complete_table5_audit",
+          "observed": {
+            "error": "ValueError: Promotion gate embedding_effective_rank failed: 24.8654 must be >= 25",
+            "passed": false
+          },
+          "passed": true
+        }
+      ],
+      "full_promotion_gate_passed": false,
+      "protocol_and_identity_passed": true,
+      "repository_fail_closed_validator": {
+        "error": "ValueError: Promotion gate embedding_effective_rank failed: 24.8654 must be >= 25",
+        "passed": false
+      },
+      "step": 5000,
+      "table5_passed": false,
+      "table5_rows": [
+        {
+          "criterion": ">= 25",
+          "direction": "minimum",
+          "domain": "Latent utilization",
+          "margin": -0.1345511830922952,
+          "metric": "Effective rank",
+          "passed": false,
+          "reference": 25.0,
+          "value": 24.865448816907705
+        },
+        {
+          "criterion": ">= 0.90",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.06734276289021357,
+          "metric": "Mean R2",
+          "passed": true,
+          "reference": 0.9,
+          "value": 0.9673427628902136
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.018713679450331755,
+          "metric": "Median R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9687136794503317
+        },
+        {
+          "criterion": "<= 0.15",
+          "direction": "maximum",
+          "domain": "Held-out topology",
+          "margin": 0.03703996394170547,
+          "metric": "Mean standardized MAE",
+          "passed": true,
+          "reference": 0.15,
+          "value": 0.11296003605829452
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.017682780114335772,
+          "metric": "Scaffold-disjoint mean R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9676827801143357
+        },
+        {
+          "criterion": ">= 0.18",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.005160000000000026,
+          "metric": "Morgan recall@10",
+          "passed": true,
+          "reference": 0.18,
+          "value": 0.18516000000000002
+        },
+        {
+          "criterion": ">= 0.35",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.08929993470060116,
+          "metric": "Cosine-Tanimoto Spearman",
+          "passed": true,
+          "reference": 0.35,
+          "value": 0.43929993470060114
+        },
+        {
+          "criterion": ">= 0.20",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.024386870861053456,
+          "metric": "Neighbor mean Tanimoto",
+          "passed": true,
+          "reference": 0.2,
+          "value": 0.22438687086105347
+        },
+        {
+          "criterion": ">= 1.70-fold",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.2473873376846314,
+          "metric": "Neighbor-Tanimoto enrichment",
+          "passed": true,
+          "reference": 1.7,
+          "value": 1.9473873376846313
+        },
+        {
+          "criterion": ">= 25-fold",
+          "direction": "minimum",
+          "domain": "Scaffold neighborhood",
+          "margin": 7.346366081053866,
+          "metric": "Purity enrichment",
+          "passed": true,
+          "reference": 25.0,
+          "value": 32.346366081053866
+        },
+        {
+          "criterion": ">= matched Morgan ARI",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.04340804488742911,
+          "metric": "Learned ARI",
+          "passed": true,
+          "reference": 0.3171019129743372,
+          "value": 0.3605099578617663
+        },
+        {
+          "criterion": ">= Morgan NMI - 0.03",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.03364128602787608,
+          "metric": "Learned NMI",
+          "passed": true,
+          "reference": 0.7465562831683781,
+          "value": 0.7801975691962542
+        },
+        {
+          "criterion": ">= 0.82",
+          "direction": "minimum",
+          "domain": "BACE",
+          "margin": 0.02043851106716954,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.82,
+          "value": 0.8404385110671695
+        },
+        {
+          "criterion": ">= 0.87",
+          "direction": "minimum",
+          "domain": "BBBP",
+          "margin": 0.01266429055433449,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.87,
+          "value": 0.8826642905543345
+        },
+        {
+          "criterion": "<= 0.80",
+          "direction": "maximum",
+          "domain": "ESOL",
+          "margin": 0.018845471194547714,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.8,
+          "value": 0.7811545288054523
+        },
+        {
+          "criterion": "<= 1.30",
+          "direction": "maximum",
+          "domain": "FreeSolv",
+          "margin": -0.09044992830044962,
+          "metric": "Mean RMSE",
+          "passed": false,
+          "reference": 1.3,
+          "value": 1.3904499283004497
+        },
+        {
+          "criterion": "<= 0.85",
+          "direction": "maximum",
+          "domain": "Lipophilicity",
+          "margin": 0.046750459571793024,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.85,
+          "value": 0.803249540428207
+        }
+      ]
+    },
+    {
+      "artifacts": {
+        "calibration_source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000007500/calibration-source-raw-hybrid-100k-seed271828.pt",
+        "calibration_source_sha256": "dfca142a97aa7e18149089f50870248f43bf487f233e3f4d371fbaab12cce89b",
+        "calibrator": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000007500/embedding-calibrator-100k-seed271828.pt",
+        "calibrator_sha256": "b1fa41d8b35ddcf86fac3712445fdd51c9daaa1e7d048e76a4130227b1f3343e",
+        "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000007500.pt",
+        "checkpoint_sha256": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+        "downstream_benchmark": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000007500/moleculenet-full-diagnostic-standardized-raw-hybrid-w3-10splits.json",
+        "downstream_benchmark_sha256": "4b7e8d08c3143eec7448e8c83e5f2486e31f7a1e6a9a4f9db3a35f3834ba8d10",
+        "representation_probe": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000007500/representation-probe-standardized-raw-hybrid-w3-50k-sim5k.json",
+        "representation_probe_sha256": "d3ca6d01bb3a44a59d102b6829665a573456615180f1371c704760cec785fb21"
+      },
+      "checks": [
+        {
+          "expected": "checkpoints/step-000007500.pt",
+          "name": "calibrator.checkpoint",
+          "observed": "checkpoints/step-000007500.pt",
+          "passed": true
+        },
+        {
+          "expected": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "name": "calibrator.checkpoint_sha256",
+          "observed": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "passed": true
+        },
+        {
+          "expected": 7500,
+          "name": "calibrator.global_step",
+          "observed": 7500,
+          "passed": true
+        },
+        {
+          "expected": "dfca142a97aa7e18149089f50870248f43bf487f233e3f4d371fbaab12cce89b",
+          "name": "calibrator.source_sha256",
+          "observed": "dfca142a97aa7e18149089f50870248f43bf487f233e3f4d371fbaab12cce89b",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "name": "calibrator.train_only_100k_protocol",
+          "observed": {
+            "graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "finite": true,
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "name": "calibrator.coordinate_payload",
+          "observed": {
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "passed": true
+        },
+        {
+          "expected": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "name": "probe_train.checkpoint_sha256",
+          "observed": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "passed": true
+        },
+        {
+          "expected": 7500,
+          "name": "probe_train.global_step",
+          "observed": 7500,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_train.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_train.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_train.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_train.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "name": "probe_validation.checkpoint_sha256",
+          "observed": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "passed": true
+        },
+        {
+          "expected": 7500,
+          "name": "probe_validation.global_step",
+          "observed": 7500,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_validation.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_validation.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_validation.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_validation.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "name": "downstream.checkpoint_sha256",
+          "observed": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+          "passed": true
+        },
+        {
+          "expected": 7500,
+          "name": "downstream.global_step",
+          "observed": 7500,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "downstream.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "downstream.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "downstream.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "downstream.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000007500.pt",
+          "name": "probe_train.checkpoint_name",
+          "observed": "checkpoints/step-000007500.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_train.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000007500.pt",
+          "name": "probe_validation.checkpoint_name",
+          "observed": "checkpoints/step-000007500.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_validation.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000007500.pt",
+          "name": "downstream.checkpoint_name",
+          "observed": "checkpoints/step-000007500.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "downstream.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "b1fa41d8b35ddcf86fac3712445fdd51c9daaa1e7d048e76a4130227b1f3343e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_train.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "b1fa41d8b35ddcf86fac3712445fdd51c9daaa1e7d048e76a4130227b1f3343e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "b1fa41d8b35ddcf86fac3712445fdd51c9daaa1e7d048e76a4130227b1f3343e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_validation.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "b1fa41d8b35ddcf86fac3712445fdd51c9daaa1e7d048e76a4130227b1f3343e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "b1fa41d8b35ddcf86fac3712445fdd51c9daaa1e7d048e76a4130227b1f3343e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "downstream.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "b1fa41d8b35ddcf86fac3712445fdd51c9daaa1e7d048e76a4130227b1f3343e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "name": "probe_train.sampling_protocol",
+          "observed": {
+            "graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "name": "probe_validation.sampling_protocol",
+          "observed": {
+            "graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.probe_train_graphs",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.probe_validation_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5000
+          },
+          "name": "protocol.similarity_graphs",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.similarity_available_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.clustering_graphs",
+          "observed": 11034,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.clustering_sampled_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5
+          },
+          "name": "protocol.clustering_kmeans_repetitions",
+          "observed": 5,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 20
+          },
+          "name": "protocol.clustering_kmeans_n_init",
+          "observed": 20,
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.similarity_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.clustering_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": true,
+          "name": "protocol.clustering_available",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "expected": false,
+          "name": "downstream.full_diagnostic_panel",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "expected": 384,
+          "name": "downstream.embedding_dimensions",
+          "observed": 384,
+          "passed": true
+        },
+        {
+          "expected": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "name": "downstream.dataset_panel",
+          "observed": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1400
+          },
+          "name": "downstream.bace.molecules",
+          "observed": 1513,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bace.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bace.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.graph_z.roc_auc",
+          "observed": 0.8364422454250823,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_mean_node_z.roc_auc",
+          "observed": 0.8169594777779847,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.molecule_embedding.roc_auc",
+          "observed": 0.8391007271935693,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8391007271935693,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_graph_z.roc_auc",
+          "observed": 0.8365488763408692,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.morgan_radius2_2048.roc_auc",
+          "observed": 0.8560141069044205,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.mean_node_z.roc_auc",
+          "observed": 0.8064953809633885,
+          "passed": true
+        },
+        {
+          "expected": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "name": "downstream.bace.source_sha256",
+          "observed": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1800
+          },
+          "name": "downstream.bbbp.molecules",
+          "observed": 1860,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bbbp.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bbbp.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.graph_z.roc_auc",
+          "observed": 0.8782169695355637,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_mean_node_z.roc_auc",
+          "observed": 0.8701010951571997,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.molecule_embedding.roc_auc",
+          "observed": 0.8838420977398783,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8838488265159855,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_graph_z.roc_auc",
+          "observed": 0.8769809275635669,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.morgan_radius2_2048.roc_auc",
+          "observed": 0.8650618857817779,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.mean_node_z.roc_auc",
+          "observed": 0.8668638357205996,
+          "passed": true
+        },
+        {
+          "expected": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "name": "downstream.bbbp.source_sha256",
+          "observed": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1000
+          },
+          "name": "downstream.esol.molecules",
+          "observed": 1116,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.esol.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.esol.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.graph_z.rmse",
+          "observed": 0.8155732647385394,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_mean_node_z.rmse",
+          "observed": 0.966038398290365,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.molecule_embedding.rmse",
+          "observed": 0.7461224393634331,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.746221792565495,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_graph_z.rmse",
+          "observed": 0.8203438460500218,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.morgan_radius2_2048.rmse",
+          "observed": 1.5990712200288444,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.mean_node_z.rmse",
+          "observed": 1.0714565070325588,
+          "passed": true
+        },
+        {
+          "expected": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "name": "downstream.esol.source_sha256",
+          "observed": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 600
+          },
+          "name": "downstream.freesolv.molecules",
+          "observed": 639,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.freesolv.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.freesolv.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.graph_z.rmse",
+          "observed": 1.4815712563493322,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_mean_node_z.rmse",
+          "observed": 1.4043701742756542,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.molecule_embedding.rmse",
+          "observed": 1.3722728508542907,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 1.3722269192028973,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_graph_z.rmse",
+          "observed": 1.4875131870187654,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.morgan_radius2_2048.rmse",
+          "observed": 2.381000649467138,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.mean_node_z.rmse",
+          "observed": 1.49367651800923,
+          "passed": true
+        },
+        {
+          "expected": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "name": "downstream.freesolv.source_sha256",
+          "observed": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 4000
+          },
+          "name": "downstream.lipophilicity.molecules",
+          "observed": 4198,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.lipophilicity.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.lipophilicity.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.graph_z.rmse",
+          "observed": 0.8375765248297459,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_mean_node_z.rmse",
+          "observed": 0.8662177655143083,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.molecule_embedding.rmse",
+          "observed": 0.80917450589456,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.8092206682261065,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_graph_z.rmse",
+          "observed": 0.8356396918963588,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.morgan_radius2_2048.rmse",
+          "observed": 0.9297426149398664,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.mean_node_z.rmse",
+          "observed": 0.8795527670381658,
+          "passed": true
+        },
+        {
+          "expected": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "name": "downstream.lipophilicity.source_sha256",
+          "observed": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "passed": true
+        },
+        {
+          "expected": {
+            "passed": false
+          },
+          "name": "repository_fail_closed_validator.agrees_with_complete_table5_audit",
+          "observed": {
+            "error": "ValueError: Promotion gate freesolv.rmse failed: 1.37227 must be <= 1.3",
+            "passed": false
+          },
+          "passed": true
+        }
+      ],
+      "full_promotion_gate_passed": false,
+      "protocol_and_identity_passed": true,
+      "repository_fail_closed_validator": {
+        "error": "ValueError: Promotion gate freesolv.rmse failed: 1.37227 must be <= 1.3",
+        "passed": false
+      },
+      "step": 7500,
+      "table5_passed": false,
+      "table5_rows": [
+        {
+          "criterion": ">= 25",
+          "direction": "minimum",
+          "domain": "Latent utilization",
+          "margin": 3.052069156232111,
+          "metric": "Effective rank",
+          "passed": true,
+          "reference": 25.0,
+          "value": 28.05206915623211
+        },
+        {
+          "criterion": ">= 0.90",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.06720818382551363,
+          "metric": "Mean R2",
+          "passed": true,
+          "reference": 0.9,
+          "value": 0.9672081838255137
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.017263463626113862,
+          "metric": "Median R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9672634636261138
+        },
+        {
+          "criterion": "<= 0.15",
+          "direction": "maximum",
+          "domain": "Held-out topology",
+          "margin": 0.037085484578118624,
+          "metric": "Mean standardized MAE",
+          "passed": true,
+          "reference": 0.15,
+          "value": 0.11291451542188137
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.017514088302802433,
+          "metric": "Scaffold-disjoint mean R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9675140883028024
+        },
+        {
+          "criterion": ">= 0.18",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.016140000000000015,
+          "metric": "Morgan recall@10",
+          "passed": true,
+          "reference": 0.18,
+          "value": 0.19614
+        },
+        {
+          "criterion": ">= 0.35",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.08708904876379447,
+          "metric": "Cosine-Tanimoto Spearman",
+          "passed": true,
+          "reference": 0.35,
+          "value": 0.43708904876379445
+        },
+        {
+          "criterion": ">= 0.20",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.02724144160747527,
+          "metric": "Neighbor mean Tanimoto",
+          "passed": true,
+          "reference": 0.2,
+          "value": 0.22724144160747528
+        },
+        {
+          "criterion": ">= 1.70-fold",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.2721612930297852,
+          "metric": "Neighbor-Tanimoto enrichment",
+          "passed": true,
+          "reference": 1.7,
+          "value": 1.9721612930297852
+        },
+        {
+          "criterion": ">= 25-fold",
+          "direction": "minimum",
+          "domain": "Scaffold neighborhood",
+          "margin": 8.335352374634233,
+          "metric": "Purity enrichment",
+          "passed": true,
+          "reference": 25.0,
+          "value": 33.33535237463423
+        },
+        {
+          "criterion": ">= matched Morgan ARI",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.04217926507287312,
+          "metric": "Learned ARI",
+          "passed": true,
+          "reference": 0.3171019129743372,
+          "value": 0.3592811780472103
+        },
+        {
+          "criterion": ">= Morgan NMI - 0.03",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.03514869324873926,
+          "metric": "Learned NMI",
+          "passed": true,
+          "reference": 0.7465562831683781,
+          "value": 0.7817049764171173
+        },
+        {
+          "criterion": ">= 0.82",
+          "direction": "minimum",
+          "domain": "BACE",
+          "margin": 0.019100727193569367,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.82,
+          "value": 0.8391007271935693
+        },
+        {
+          "criterion": ">= 0.87",
+          "direction": "minimum",
+          "domain": "BBBP",
+          "margin": 0.013842097739878323,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.87,
+          "value": 0.8838420977398783
+        },
+        {
+          "criterion": "<= 0.80",
+          "direction": "maximum",
+          "domain": "ESOL",
+          "margin": 0.0538775606365669,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.8,
+          "value": 0.7461224393634331
+        },
+        {
+          "criterion": "<= 1.30",
+          "direction": "maximum",
+          "domain": "FreeSolv",
+          "margin": -0.0722728508542907,
+          "metric": "Mean RMSE",
+          "passed": false,
+          "reference": 1.3,
+          "value": 1.3722728508542907
+        },
+        {
+          "criterion": "<= 0.85",
+          "direction": "maximum",
+          "domain": "Lipophilicity",
+          "margin": 0.04082549410544001,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.85,
+          "value": 0.80917450589456
+        }
+      ]
+    },
+    {
+      "artifacts": {
+        "calibration_source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000010000/calibration-source-raw-hybrid-100k-seed271828.pt",
+        "calibration_source_sha256": "cc85ac871a123c9e8d204079843b298df853e5f70bedc5bc107df6679ce5d9fa",
+        "calibrator": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000010000/embedding-calibrator-100k-seed271828.pt",
+        "calibrator_sha256": "d6780cb41b52f9c27f227220749cc5863ad97cd9402968ddc85d5147c2e2ba91",
+        "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+        "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+        "downstream_benchmark": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000010000/moleculenet-full-diagnostic-standardized-raw-hybrid-w3-10splits.json",
+        "downstream_benchmark_sha256": "323e73998543da7a7d4f0bbf5f026b73cedaa83dc49be6ef4839ea646092787e",
+        "representation_probe": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000010000/representation-probe-standardized-raw-hybrid-w3-50k-sim5k.json",
+        "representation_probe_sha256": "0601ed88e1acb822d1edc058137f26b5e9d73c7d51bae930bf5ad6ce745a118f"
+      },
+      "checks": [
+        {
+          "expected": "checkpoints/step-000010000.pt",
+          "name": "calibrator.checkpoint",
+          "observed": "checkpoints/step-000010000.pt",
+          "passed": true
+        },
+        {
+          "expected": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "name": "calibrator.checkpoint_sha256",
+          "observed": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "passed": true
+        },
+        {
+          "expected": 10000,
+          "name": "calibrator.global_step",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": "cc85ac871a123c9e8d204079843b298df853e5f70bedc5bc107df6679ce5d9fa",
+          "name": "calibrator.source_sha256",
+          "observed": "cc85ac871a123c9e8d204079843b298df853e5f70bedc5bc107df6679ce5d9fa",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "name": "calibrator.train_only_100k_protocol",
+          "observed": {
+            "graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "finite": true,
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "name": "calibrator.coordinate_payload",
+          "observed": {
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "passed": true
+        },
+        {
+          "expected": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "name": "probe_train.checkpoint_sha256",
+          "observed": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "passed": true
+        },
+        {
+          "expected": 10000,
+          "name": "probe_train.global_step",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_train.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_train.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_train.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_train.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "name": "probe_validation.checkpoint_sha256",
+          "observed": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "passed": true
+        },
+        {
+          "expected": 10000,
+          "name": "probe_validation.global_step",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_validation.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_validation.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_validation.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_validation.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "name": "downstream.checkpoint_sha256",
+          "observed": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+          "passed": true
+        },
+        {
+          "expected": 10000,
+          "name": "downstream.global_step",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "downstream.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "downstream.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "downstream.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "downstream.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000010000.pt",
+          "name": "probe_train.checkpoint_name",
+          "observed": "checkpoints/step-000010000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_train.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000010000.pt",
+          "name": "probe_validation.checkpoint_name",
+          "observed": "checkpoints/step-000010000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_validation.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000010000.pt",
+          "name": "downstream.checkpoint_name",
+          "observed": "checkpoints/step-000010000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "downstream.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "d6780cb41b52f9c27f227220749cc5863ad97cd9402968ddc85d5147c2e2ba91",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_train.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "d6780cb41b52f9c27f227220749cc5863ad97cd9402968ddc85d5147c2e2ba91",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "d6780cb41b52f9c27f227220749cc5863ad97cd9402968ddc85d5147c2e2ba91",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_validation.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "d6780cb41b52f9c27f227220749cc5863ad97cd9402968ddc85d5147c2e2ba91",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "d6780cb41b52f9c27f227220749cc5863ad97cd9402968ddc85d5147c2e2ba91",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "downstream.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "d6780cb41b52f9c27f227220749cc5863ad97cd9402968ddc85d5147c2e2ba91",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "name": "probe_train.sampling_protocol",
+          "observed": {
+            "graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "name": "probe_validation.sampling_protocol",
+          "observed": {
+            "graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.probe_train_graphs",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.probe_validation_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5000
+          },
+          "name": "protocol.similarity_graphs",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.similarity_available_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.clustering_graphs",
+          "observed": 11034,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.clustering_sampled_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5
+          },
+          "name": "protocol.clustering_kmeans_repetitions",
+          "observed": 5,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 20
+          },
+          "name": "protocol.clustering_kmeans_n_init",
+          "observed": 20,
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.similarity_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.clustering_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": true,
+          "name": "protocol.clustering_available",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "expected": false,
+          "name": "downstream.full_diagnostic_panel",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "expected": 384,
+          "name": "downstream.embedding_dimensions",
+          "observed": 384,
+          "passed": true
+        },
+        {
+          "expected": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "name": "downstream.dataset_panel",
+          "observed": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1400
+          },
+          "name": "downstream.bace.molecules",
+          "observed": 1513,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bace.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bace.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.graph_z.roc_auc",
+          "observed": 0.8376723687746488,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_mean_node_z.roc_auc",
+          "observed": 0.8211175763856676,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.molecule_embedding.roc_auc",
+          "observed": 0.841333873098624,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8413408955705342,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_graph_z.roc_auc",
+          "observed": 0.8377469399571025,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.morgan_radius2_2048.roc_auc",
+          "observed": 0.8560141069044205,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.mean_node_z.roc_auc",
+          "observed": 0.8101493302542544,
+          "passed": true
+        },
+        {
+          "expected": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "name": "downstream.bace.source_sha256",
+          "observed": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1800
+          },
+          "name": "downstream.bbbp.molecules",
+          "observed": 1860,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bbbp.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bbbp.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.graph_z.roc_auc",
+          "observed": 0.8753607879205786,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_mean_node_z.roc_auc",
+          "observed": 0.8767919994641031,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.molecule_embedding.roc_auc",
+          "observed": 0.8789488567165493,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8789488567165493,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_graph_z.roc_auc",
+          "observed": 0.8753137130492638,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.morgan_radius2_2048.roc_auc",
+          "observed": 0.8650618857817779,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.mean_node_z.roc_auc",
+          "observed": 0.86837398170661,
+          "passed": true
+        },
+        {
+          "expected": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "name": "downstream.bbbp.source_sha256",
+          "observed": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1000
+          },
+          "name": "downstream.esol.molecules",
+          "observed": 1116,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.esol.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.esol.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.graph_z.rmse",
+          "observed": 0.7903898825441804,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_mean_node_z.rmse",
+          "observed": 0.9676972527731088,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.molecule_embedding.rmse",
+          "observed": 0.731433674309603,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.7314295116272719,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_graph_z.rmse",
+          "observed": 0.7958676910977104,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.morgan_radius2_2048.rmse",
+          "observed": 1.5990712200288444,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.mean_node_z.rmse",
+          "observed": 1.0930440244301527,
+          "passed": true
+        },
+        {
+          "expected": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "name": "downstream.esol.source_sha256",
+          "observed": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 600
+          },
+          "name": "downstream.freesolv.molecules",
+          "observed": 639,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.freesolv.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.freesolv.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.graph_z.rmse",
+          "observed": 1.4449329273330735,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_mean_node_z.rmse",
+          "observed": 1.4310043073059844,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.molecule_embedding.rmse",
+          "observed": 1.2971636290302135,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 1.2971752293865406,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_graph_z.rmse",
+          "observed": 1.4543301619689895,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.morgan_radius2_2048.rmse",
+          "observed": 2.381000649467138,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.mean_node_z.rmse",
+          "observed": 1.4626090808371903,
+          "passed": true
+        },
+        {
+          "expected": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "name": "downstream.freesolv.source_sha256",
+          "observed": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 4000
+          },
+          "name": "downstream.lipophilicity.molecules",
+          "observed": 4198,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.lipophilicity.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.lipophilicity.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.graph_z.rmse",
+          "observed": 0.8337666419820862,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_mean_node_z.rmse",
+          "observed": 0.8775484180996307,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.molecule_embedding.rmse",
+          "observed": 0.8124906854233437,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.8125270199483546,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_graph_z.rmse",
+          "observed": 0.8328585395431116,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.morgan_radius2_2048.rmse",
+          "observed": 0.9297426149398664,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.mean_node_z.rmse",
+          "observed": 0.8840715819188791,
+          "passed": true
+        },
+        {
+          "expected": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "name": "downstream.lipophilicity.source_sha256",
+          "observed": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "passed": true
+        },
+        {
+          "expected": {
+            "passed": true
+          },
+          "name": "repository_fail_closed_validator.agrees_with_complete_table5_audit",
+          "observed": {
+            "error": null,
+            "passed": true
+          },
+          "passed": true
+        }
+      ],
+      "full_promotion_gate_passed": true,
+      "protocol_and_identity_passed": true,
+      "repository_fail_closed_validator": {
+        "error": null,
+        "passed": true
+      },
+      "step": 10000,
+      "table5_passed": true,
+      "table5_rows": [
+        {
+          "criterion": ">= 25",
+          "direction": "minimum",
+          "domain": "Latent utilization",
+          "margin": 4.97305074604548,
+          "metric": "Effective rank",
+          "passed": true,
+          "reference": 25.0,
+          "value": 29.97305074604548
+        },
+        {
+          "criterion": ">= 0.90",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.06786511378619908,
+          "metric": "Mean R2",
+          "passed": true,
+          "reference": 0.9,
+          "value": 0.9678651137861991
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.01749411335756834,
+          "metric": "Median R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9674941133575683
+        },
+        {
+          "criterion": "<= 0.15",
+          "direction": "maximum",
+          "domain": "Held-out topology",
+          "margin": 0.03798843520432746,
+          "metric": "Mean standardized MAE",
+          "passed": true,
+          "reference": 0.15,
+          "value": 0.11201156479567254
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.018051871463808933,
+          "metric": "Scaffold-disjoint mean R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9680518714638089
+        },
+        {
+          "criterion": ">= 0.18",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.022280000000000022,
+          "metric": "Morgan recall@10",
+          "passed": true,
+          "reference": 0.18,
+          "value": 0.20228000000000002
+        },
+        {
+          "criterion": ">= 0.35",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.08693369468449674,
+          "metric": "Cosine-Tanimoto Spearman",
+          "passed": true,
+          "reference": 0.35,
+          "value": 0.4369336946844967
+        },
+        {
+          "criterion": ">= 0.20",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.029026481509208668,
+          "metric": "Neighbor mean Tanimoto",
+          "passed": true,
+          "reference": 0.2,
+          "value": 0.22902648150920868
+        },
+        {
+          "criterion": ">= 1.70-fold",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.287653136253357,
+          "metric": "Neighbor-Tanimoto enrichment",
+          "passed": true,
+          "reference": 1.7,
+          "value": 1.987653136253357
+        },
+        {
+          "criterion": ">= 25-fold",
+          "direction": "minimum",
+          "domain": "Scaffold neighborhood",
+          "margin": 8.80023515335315,
+          "metric": "Purity enrichment",
+          "passed": true,
+          "reference": 25.0,
+          "value": 33.80023515335315
+        },
+        {
+          "criterion": ">= matched Morgan ARI",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.0449975559365825,
+          "metric": "Learned ARI",
+          "passed": true,
+          "reference": 0.3171019129743372,
+          "value": 0.3620994689109197
+        },
+        {
+          "criterion": ">= Morgan NMI - 0.03",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.04186540038096187,
+          "metric": "Learned NMI",
+          "passed": true,
+          "reference": 0.7465562831683781,
+          "value": 0.78842168354934
+        },
+        {
+          "criterion": ">= 0.82",
+          "direction": "minimum",
+          "domain": "BACE",
+          "margin": 0.021333873098624,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.82,
+          "value": 0.841333873098624
+        },
+        {
+          "criterion": ">= 0.87",
+          "direction": "minimum",
+          "domain": "BBBP",
+          "margin": 0.008948856716549325,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.87,
+          "value": 0.8789488567165493
+        },
+        {
+          "criterion": "<= 0.80",
+          "direction": "maximum",
+          "domain": "ESOL",
+          "margin": 0.068566325690397,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.8,
+          "value": 0.731433674309603
+        },
+        {
+          "criterion": "<= 1.30",
+          "direction": "maximum",
+          "domain": "FreeSolv",
+          "margin": 0.002836370969786506,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 1.3,
+          "value": 1.2971636290302135
+        },
+        {
+          "criterion": "<= 0.85",
+          "direction": "maximum",
+          "domain": "Lipophilicity",
+          "margin": 0.037509314576656294,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.85,
+          "value": 0.8124906854233437
+        }
+      ]
+    },
+    {
+      "artifacts": {
+        "calibration_source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000012500/calibration-source-raw-hybrid-100k-seed271828.pt",
+        "calibration_source_sha256": "b93264ea1bb8e51ad3f83e10eeed178380b6ea7684c3e5e0df40c4efe7e967d6",
+        "calibrator": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000012500/embedding-calibrator-100k-seed271828.pt",
+        "calibrator_sha256": "c359a811eeaf074a9a3ba8b3ebdf461a28571460c1ee49448b334d2abf4e2f78",
+        "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000012500.pt",
+        "checkpoint_sha256": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+        "downstream_benchmark": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000012500/moleculenet-full-diagnostic-standardized-raw-hybrid-w3-10splits.json",
+        "downstream_benchmark_sha256": "03a1125617746685a38f2caf04c14b8c9610f2880925150eeb0eea98978326b6",
+        "representation_probe": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000012500/representation-probe-standardized-raw-hybrid-w3-50k-sim5k.json",
+        "representation_probe_sha256": "5c8ba3dc4ac1eaade020c2460ce11d0f4a47b5824ac8dc603086c195e27448b3"
+      },
+      "checks": [
+        {
+          "expected": "checkpoints/step-000012500.pt",
+          "name": "calibrator.checkpoint",
+          "observed": "checkpoints/step-000012500.pt",
+          "passed": true
+        },
+        {
+          "expected": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "name": "calibrator.checkpoint_sha256",
+          "observed": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "passed": true
+        },
+        {
+          "expected": 12500,
+          "name": "calibrator.global_step",
+          "observed": 12500,
+          "passed": true
+        },
+        {
+          "expected": "b93264ea1bb8e51ad3f83e10eeed178380b6ea7684c3e5e0df40c4efe7e967d6",
+          "name": "calibrator.source_sha256",
+          "observed": "b93264ea1bb8e51ad3f83e10eeed178380b6ea7684c3e5e0df40c4efe7e967d6",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "name": "calibrator.train_only_100k_protocol",
+          "observed": {
+            "graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "finite": true,
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "name": "calibrator.coordinate_payload",
+          "observed": {
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "passed": true
+        },
+        {
+          "expected": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "name": "probe_train.checkpoint_sha256",
+          "observed": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "passed": true
+        },
+        {
+          "expected": 12500,
+          "name": "probe_train.global_step",
+          "observed": 12500,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_train.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_train.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_train.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_train.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "name": "probe_validation.checkpoint_sha256",
+          "observed": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "passed": true
+        },
+        {
+          "expected": 12500,
+          "name": "probe_validation.global_step",
+          "observed": 12500,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_validation.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_validation.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_validation.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_validation.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "name": "downstream.checkpoint_sha256",
+          "observed": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+          "passed": true
+        },
+        {
+          "expected": 12500,
+          "name": "downstream.global_step",
+          "observed": 12500,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "downstream.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "downstream.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "downstream.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "downstream.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000012500.pt",
+          "name": "probe_train.checkpoint_name",
+          "observed": "checkpoints/step-000012500.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_train.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000012500.pt",
+          "name": "probe_validation.checkpoint_name",
+          "observed": "checkpoints/step-000012500.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_validation.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000012500.pt",
+          "name": "downstream.checkpoint_name",
+          "observed": "checkpoints/step-000012500.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "downstream.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "c359a811eeaf074a9a3ba8b3ebdf461a28571460c1ee49448b334d2abf4e2f78",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_train.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "c359a811eeaf074a9a3ba8b3ebdf461a28571460c1ee49448b334d2abf4e2f78",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "c359a811eeaf074a9a3ba8b3ebdf461a28571460c1ee49448b334d2abf4e2f78",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_validation.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "c359a811eeaf074a9a3ba8b3ebdf461a28571460c1ee49448b334d2abf4e2f78",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "c359a811eeaf074a9a3ba8b3ebdf461a28571460c1ee49448b334d2abf4e2f78",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "downstream.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "c359a811eeaf074a9a3ba8b3ebdf461a28571460c1ee49448b334d2abf4e2f78",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "name": "probe_train.sampling_protocol",
+          "observed": {
+            "graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "name": "probe_validation.sampling_protocol",
+          "observed": {
+            "graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.probe_train_graphs",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.probe_validation_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5000
+          },
+          "name": "protocol.similarity_graphs",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.similarity_available_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.clustering_graphs",
+          "observed": 11034,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.clustering_sampled_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5
+          },
+          "name": "protocol.clustering_kmeans_repetitions",
+          "observed": 5,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 20
+          },
+          "name": "protocol.clustering_kmeans_n_init",
+          "observed": 20,
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.similarity_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.clustering_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": true,
+          "name": "protocol.clustering_available",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "expected": false,
+          "name": "downstream.full_diagnostic_panel",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "expected": 384,
+          "name": "downstream.embedding_dimensions",
+          "observed": 384,
+          "passed": true
+        },
+        {
+          "expected": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "name": "downstream.dataset_panel",
+          "observed": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1400
+          },
+          "name": "downstream.bace.molecules",
+          "observed": 1513,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bace.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bace.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.graph_z.roc_auc",
+          "observed": 0.8439308482135607,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_mean_node_z.roc_auc",
+          "observed": 0.819480783858683,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.molecule_embedding.roc_auc",
+          "observed": 0.8460512200156052,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8460561961302547,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_graph_z.roc_auc",
+          "observed": 0.8441527006352245,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.morgan_radius2_2048.roc_auc",
+          "observed": 0.8560141069044205,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.mean_node_z.roc_auc",
+          "observed": 0.8076678198954547,
+          "passed": true
+        },
+        {
+          "expected": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "name": "downstream.bace.source_sha256",
+          "observed": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1800
+          },
+          "name": "downstream.bbbp.molecules",
+          "observed": 1860,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bbbp.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bbbp.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.graph_z.roc_auc",
+          "observed": 0.8850343185681669,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_mean_node_z.roc_auc",
+          "observed": 0.881514851188356,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.molecule_embedding.roc_auc",
+          "observed": 0.88731723512486,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8873094952728253,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_graph_z.roc_auc",
+          "observed": 0.8829599443620504,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.morgan_radius2_2048.roc_auc",
+          "observed": 0.8650618857817779,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.mean_node_z.roc_auc",
+          "observed": 0.8731349163248352,
+          "passed": true
+        },
+        {
+          "expected": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "name": "downstream.bbbp.source_sha256",
+          "observed": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1000
+          },
+          "name": "downstream.esol.molecules",
+          "observed": 1116,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.esol.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.esol.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.graph_z.rmse",
+          "observed": 0.8019630831775532,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_mean_node_z.rmse",
+          "observed": 0.9930969818706268,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.molecule_embedding.rmse",
+          "observed": 0.7329723310620082,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.7329410102673366,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_graph_z.rmse",
+          "observed": 0.807492905041741,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.morgan_radius2_2048.rmse",
+          "observed": 1.5990712200288444,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.mean_node_z.rmse",
+          "observed": 1.0906672997556535,
+          "passed": true
+        },
+        {
+          "expected": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "name": "downstream.esol.source_sha256",
+          "observed": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 600
+          },
+          "name": "downstream.freesolv.molecules",
+          "observed": 639,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.freesolv.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.freesolv.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.graph_z.rmse",
+          "observed": 1.4464667232371264,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_mean_node_z.rmse",
+          "observed": 1.4172081751992676,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.molecule_embedding.rmse",
+          "observed": 1.3228865952742266,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 1.322835552756219,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_graph_z.rmse",
+          "observed": 1.4560251665782287,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.morgan_radius2_2048.rmse",
+          "observed": 2.381000649467138,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.mean_node_z.rmse",
+          "observed": 1.4546933684820402,
+          "passed": true
+        },
+        {
+          "expected": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "name": "downstream.freesolv.source_sha256",
+          "observed": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 4000
+          },
+          "name": "downstream.lipophilicity.molecules",
+          "observed": 4198,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.lipophilicity.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.lipophilicity.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.graph_z.rmse",
+          "observed": 0.8315258680998872,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_mean_node_z.rmse",
+          "observed": 0.8820601453423844,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.molecule_embedding.rmse",
+          "observed": 0.8125398725083427,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.8123638714752724,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_graph_z.rmse",
+          "observed": 0.8305953733992159,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.morgan_radius2_2048.rmse",
+          "observed": 0.9297426149398664,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.mean_node_z.rmse",
+          "observed": 0.8855852025913548,
+          "passed": true
+        },
+        {
+          "expected": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "name": "downstream.lipophilicity.source_sha256",
+          "observed": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "passed": true
+        },
+        {
+          "expected": {
+            "passed": false
+          },
+          "name": "repository_fail_closed_validator.agrees_with_complete_table5_audit",
+          "observed": {
+            "error": "ValueError: Promotion gate freesolv.rmse failed: 1.32289 must be <= 1.3",
+            "passed": false
+          },
+          "passed": true
+        }
+      ],
+      "full_promotion_gate_passed": false,
+      "protocol_and_identity_passed": true,
+      "repository_fail_closed_validator": {
+        "error": "ValueError: Promotion gate freesolv.rmse failed: 1.32289 must be <= 1.3",
+        "passed": false
+      },
+      "step": 12500,
+      "table5_passed": false,
+      "table5_rows": [
+        {
+          "criterion": ">= 25",
+          "direction": "minimum",
+          "domain": "Latent utilization",
+          "margin": 5.901873438822793,
+          "metric": "Effective rank",
+          "passed": true,
+          "reference": 25.0,
+          "value": 30.901873438822793
+        },
+        {
+          "criterion": ">= 0.90",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.0681773378280578,
+          "metric": "Mean R2",
+          "passed": true,
+          "reference": 0.9,
+          "value": 0.9681773378280578
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.017766516258014953,
+          "metric": "Median R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9677665162580149
+        },
+        {
+          "criterion": "<= 0.15",
+          "direction": "maximum",
+          "domain": "Held-out topology",
+          "margin": 0.0383551263888547,
+          "metric": "Mean standardized MAE",
+          "passed": true,
+          "reference": 0.15,
+          "value": 0.11164487361114529
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.018347113448533903,
+          "metric": "Scaffold-disjoint mean R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9683471134485339
+        },
+        {
+          "criterion": ">= 0.18",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.026359999999999995,
+          "metric": "Morgan recall@10",
+          "passed": true,
+          "reference": 0.18,
+          "value": 0.20636
+        },
+        {
+          "criterion": ">= 0.35",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.08719372756406668,
+          "metric": "Cosine-Tanimoto Spearman",
+          "passed": true,
+          "reference": 0.35,
+          "value": 0.43719372756406666
+        },
+        {
+          "criterion": ">= 0.20",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.030042487382888783,
+          "metric": "Neighbor mean Tanimoto",
+          "passed": true,
+          "reference": 0.2,
+          "value": 0.2300424873828888
+        },
+        {
+          "criterion": ">= 1.70-fold",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.29647080898284917,
+          "metric": "Neighbor-Tanimoto enrichment",
+          "passed": true,
+          "reference": 1.7,
+          "value": 1.9964708089828491
+        },
+        {
+          "criterion": ">= 25-fold",
+          "direction": "minimum",
+          "domain": "Scaffold neighborhood",
+          "margin": 8.9927025458164,
+          "metric": "Purity enrichment",
+          "passed": true,
+          "reference": 25.0,
+          "value": 33.9927025458164
+        },
+        {
+          "criterion": ">= matched Morgan ARI",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.05011329073854176,
+          "metric": "Learned ARI",
+          "passed": true,
+          "reference": 0.3171019129743372,
+          "value": 0.36721520371287897
+        },
+        {
+          "criterion": ">= Morgan NMI - 0.03",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.04646803276340927,
+          "metric": "Learned NMI",
+          "passed": true,
+          "reference": 0.7465562831683781,
+          "value": 0.7930243159317873
+        },
+        {
+          "criterion": ">= 0.82",
+          "direction": "minimum",
+          "domain": "BACE",
+          "margin": 0.026051220015605225,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.82,
+          "value": 0.8460512200156052
+        },
+        {
+          "criterion": ">= 0.87",
+          "direction": "minimum",
+          "domain": "BBBP",
+          "margin": 0.017317235124860053,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.87,
+          "value": 0.88731723512486
+        },
+        {
+          "criterion": "<= 0.80",
+          "direction": "maximum",
+          "domain": "ESOL",
+          "margin": 0.06702766893799184,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.8,
+          "value": 0.7329723310620082
+        },
+        {
+          "criterion": "<= 1.30",
+          "direction": "maximum",
+          "domain": "FreeSolv",
+          "margin": -0.02288659527422654,
+          "metric": "Mean RMSE",
+          "passed": false,
+          "reference": 1.3,
+          "value": 1.3228865952742266
+        },
+        {
+          "criterion": "<= 0.85",
+          "direction": "maximum",
+          "domain": "Lipophilicity",
+          "margin": 0.03746012749165728,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.85,
+          "value": 0.8125398725083427
+        }
+      ]
+    },
+    {
+      "artifacts": {
+        "calibration_source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000015000/calibration-source-raw-hybrid-100k-seed271828.pt",
+        "calibration_source_sha256": "c8739fd994167cf3803919d7f82ca3c95a860921852d6124032381d1f789ba1f",
+        "calibrator": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000015000/embedding-calibrator-100k-seed271828.pt",
+        "calibrator_sha256": "1e43d887077f0a57f663a40c5b5224386dce2245adfe44ee2edfda947adf090e",
+        "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000015000.pt",
+        "checkpoint_sha256": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+        "downstream_benchmark": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000015000/moleculenet-full-diagnostic-standardized-raw-hybrid-w3-10splits.json",
+        "downstream_benchmark_sha256": "09a5111eb400bc3823dc146dffb366eff62e3b5e5481a5dc391e4d44ef2bc899",
+        "representation_probe": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000015000/representation-probe-standardized-raw-hybrid-w3-50k-sim5k.json",
+        "representation_probe_sha256": "585b199f9ea0c2e63076359c26978216e070e87cc7d83a2d32b2c6222b9efef3"
+      },
+      "checks": [
+        {
+          "expected": "checkpoints/step-000015000.pt",
+          "name": "calibrator.checkpoint",
+          "observed": "checkpoints/step-000015000.pt",
+          "passed": true
+        },
+        {
+          "expected": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "name": "calibrator.checkpoint_sha256",
+          "observed": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "passed": true
+        },
+        {
+          "expected": 15000,
+          "name": "calibrator.global_step",
+          "observed": 15000,
+          "passed": true
+        },
+        {
+          "expected": "c8739fd994167cf3803919d7f82ca3c95a860921852d6124032381d1f789ba1f",
+          "name": "calibrator.source_sha256",
+          "observed": "c8739fd994167cf3803919d7f82ca3c95a860921852d6124032381d1f789ba1f",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "name": "calibrator.train_only_100k_protocol",
+          "observed": {
+            "graphs": 100000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 271828,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "finite": true,
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "name": "calibrator.coordinate_payload",
+          "observed": {
+            "mean_shape": [
+              384
+            ],
+            "scale_shape": [
+              384
+            ]
+          },
+          "passed": true
+        },
+        {
+          "expected": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "name": "probe_train.checkpoint_sha256",
+          "observed": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "passed": true
+        },
+        {
+          "expected": 15000,
+          "name": "probe_train.global_step",
+          "observed": 15000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_train.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_train.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_train.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_train.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "name": "probe_validation.checkpoint_sha256",
+          "observed": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "passed": true
+        },
+        {
+          "expected": 15000,
+          "name": "probe_validation.global_step",
+          "observed": 15000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "probe_validation.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "probe_validation.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "probe_validation.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "probe_validation.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "name": "downstream.checkpoint_sha256",
+          "observed": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+          "passed": true
+        },
+        {
+          "expected": 15000,
+          "name": "downstream.global_step",
+          "observed": 15000,
+          "passed": true
+        },
+        {
+          "expected": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "name": "downstream.config_hash",
+          "observed": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+          "passed": true
+        },
+        {
+          "expected": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "name": "downstream.training_plan_hash",
+          "observed": "6cd07c9d87dced1bd3cddcb779f20a004f88221e9e8e447bba61cc14e8ab7e4c",
+          "passed": true
+        },
+        {
+          "expected": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "name": "downstream.graph_manifest_hash",
+          "observed": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+          "passed": true
+        },
+        {
+          "expected": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "name": "downstream.descriptor_schema_hash",
+          "observed": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000015000.pt",
+          "name": "probe_train.checkpoint_name",
+          "observed": "checkpoints/step-000015000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_train.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000015000.pt",
+          "name": "probe_validation.checkpoint_name",
+          "observed": "checkpoints/step-000015000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "probe_validation.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": "checkpoints/step-000015000.pt",
+          "name": "downstream.checkpoint_name",
+          "observed": "checkpoints/step-000015000.pt",
+          "passed": true
+        },
+        {
+          "expected": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "name": "downstream.embedding_definition",
+          "observed": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "1e43d887077f0a57f663a40c5b5224386dce2245adfe44ee2edfda947adf090e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_train.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "1e43d887077f0a57f663a40c5b5224386dce2245adfe44ee2edfda947adf090e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "1e43d887077f0a57f663a40c5b5224386dce2245adfe44ee2edfda947adf090e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "probe_validation.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "1e43d887077f0a57f663a40c5b5224386dce2245adfe44ee2edfda947adf090e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "1e43d887077f0a57f663a40c5b5224386dce2245adfe44ee2edfda947adf090e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "name": "downstream.embedding_parameters",
+          "observed": {
+            "calibration_graphs": 100000,
+            "calibration_sampling_seed": 271828,
+            "calibrator_sha256": "1e43d887077f0a57f663a40c5b5224386dce2245adfe44ee2edfda947adf090e",
+            "coordinate_transform": "train_mean_and_population_std",
+            "graph_dimensions": 256,
+            "mean_node_dimensions": 128,
+            "mean_node_weight": 3.0
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "name": "probe_train.sampling_protocol",
+          "observed": {
+            "graphs": 10000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "train"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum_graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "name": "probe_validation.sampling_protocol",
+          "observed": {
+            "graphs": 50000,
+            "sampled_source_buckets": 256,
+            "sampling": "deterministic_hash_bucket_stratified_without_replacement",
+            "sampling_seed": 20260810,
+            "split": "validation"
+          },
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.probe_train_graphs",
+          "observed": 10000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.probe_validation_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5000
+          },
+          "name": "protocol.similarity_graphs",
+          "observed": 5000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.similarity_available_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10000
+          },
+          "name": "protocol.clustering_graphs",
+          "observed": 11034,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 50000
+          },
+          "name": "protocol.clustering_sampled_graphs",
+          "observed": 50000,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 5
+          },
+          "name": "protocol.clustering_kmeans_repetitions",
+          "observed": 5,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 20
+          },
+          "name": "protocol.clustering_kmeans_n_init",
+          "observed": 20,
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.similarity_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": "seeded_without_replacement_across_export",
+          "name": "protocol.clustering_sampling",
+          "observed": "seeded_without_replacement_across_export",
+          "passed": true
+        },
+        {
+          "expected": true,
+          "name": "protocol.clustering_available",
+          "observed": true,
+          "passed": true
+        },
+        {
+          "expected": false,
+          "name": "downstream.full_diagnostic_panel",
+          "observed": false,
+          "passed": true
+        },
+        {
+          "expected": 384,
+          "name": "downstream.embedding_dimensions",
+          "observed": 384,
+          "passed": true
+        },
+        {
+          "expected": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "name": "downstream.dataset_panel",
+          "observed": [
+            "bace",
+            "bbbp",
+            "esol",
+            "freesolv",
+            "lipophilicity"
+          ],
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1400
+          },
+          "name": "downstream.bace.molecules",
+          "observed": 1513,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bace.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bace.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.graph_z.roc_auc",
+          "observed": 0.8406485063354487,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_mean_node_z.roc_auc",
+          "observed": 0.8202627642685651,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.molecule_embedding.roc_auc",
+          "observed": 0.8435860058900551,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.843593536010537,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.unit_graph_z.roc_auc",
+          "observed": 0.8407509195037651,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.morgan_radius2_2048.roc_auc",
+          "observed": 0.8560141069044205,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bace.mean_node_z.roc_auc",
+          "observed": 0.808388019636538,
+          "passed": true
+        },
+        {
+          "expected": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "name": "downstream.bace.source_sha256",
+          "observed": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1800
+          },
+          "name": "downstream.bbbp.molecules",
+          "observed": 1860,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.bbbp.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.bbbp.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.graph_z.roc_auc",
+          "observed": 0.8773803349523093,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_mean_node_z.roc_auc",
+          "observed": 0.8826861153163046,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.molecule_embedding.roc_auc",
+          "observed": 0.8822981127230541,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.raw_graph_z_plus_mean_node_z.roc_auc",
+          "observed": 0.8822981127230541,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.unit_graph_z.roc_auc",
+          "observed": 0.8774068160859722,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.morgan_radius2_2048.roc_auc",
+          "observed": 0.8650618857817779,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.bbbp.mean_node_z.roc_auc",
+          "observed": 0.8739469810098551,
+          "passed": true
+        },
+        {
+          "expected": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "name": "downstream.bbbp.source_sha256",
+          "observed": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 1000
+          },
+          "name": "downstream.esol.molecules",
+          "observed": 1116,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.esol.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.esol.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.graph_z.rmse",
+          "observed": 0.7940651126111622,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_mean_node_z.rmse",
+          "observed": 0.9945217020966053,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.molecule_embedding.rmse",
+          "observed": 0.7347822170975385,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.7347560440099109,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.unit_graph_z.rmse",
+          "observed": 0.7998674872088455,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.morgan_radius2_2048.rmse",
+          "observed": 1.5990712200288444,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.esol.mean_node_z.rmse",
+          "observed": 1.0947967964597178,
+          "passed": true
+        },
+        {
+          "expected": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "name": "downstream.esol.source_sha256",
+          "observed": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 600
+          },
+          "name": "downstream.freesolv.molecules",
+          "observed": 639,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.freesolv.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.freesolv.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.graph_z.rmse",
+          "observed": 1.4184817991469139,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_mean_node_z.rmse",
+          "observed": 1.4184597692915408,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.molecule_embedding.rmse",
+          "observed": 1.3034648995851392,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 1.3034399315037182,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.unit_graph_z.rmse",
+          "observed": 1.4276344845199946,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.morgan_radius2_2048.rmse",
+          "observed": 2.381000649467138,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.freesolv.mean_node_z.rmse",
+          "observed": 1.4452423709051228,
+          "passed": true
+        },
+        {
+          "expected": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "name": "downstream.freesolv.source_sha256",
+          "observed": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 4000
+          },
+          "name": "downstream.lipophilicity.molecules",
+          "observed": 4198,
+          "passed": true
+        },
+        {
+          "expected": {
+            "minimum": 10
+          },
+          "name": "downstream.lipophilicity.scaffold_splits",
+          "observed": 10,
+          "passed": true
+        },
+        {
+          "expected": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "name": "downstream.lipophilicity.diagnostic_features",
+          "observed": [
+            "graph_z",
+            "mean_node_z",
+            "molecule_embedding",
+            "morgan_radius2_2048",
+            "raw_graph_z_plus_mean_node_z",
+            "unit_graph_z",
+            "unit_mean_node_z"
+          ],
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.graph_z.rmse",
+          "observed": 0.8322838658179312,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_mean_node_z.rmse",
+          "observed": 0.8811378662574649,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.molecule_embedding.rmse",
+          "observed": 0.8105329880719058,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.raw_graph_z_plus_mean_node_z.rmse",
+          "observed": 0.8105086886675036,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.unit_graph_z.rmse",
+          "observed": 0.8313609873462653,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.morgan_radius2_2048.rmse",
+          "observed": 0.9297426149398664,
+          "passed": true
+        },
+        {
+          "expected": "finite",
+          "name": "downstream.lipophilicity.mean_node_z.rmse",
+          "observed": 0.88542049714155,
+          "passed": true
+        },
+        {
+          "expected": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "name": "downstream.lipophilicity.source_sha256",
+          "observed": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+          "passed": true
+        },
+        {
+          "expected": {
+            "passed": false
+          },
+          "name": "repository_fail_closed_validator.agrees_with_complete_table5_audit",
+          "observed": {
+            "error": "ValueError: Promotion gate freesolv.rmse failed: 1.30346 must be <= 1.3",
+            "passed": false
+          },
+          "passed": true
+        }
+      ],
+      "full_promotion_gate_passed": false,
+      "protocol_and_identity_passed": true,
+      "repository_fail_closed_validator": {
+        "error": "ValueError: Promotion gate freesolv.rmse failed: 1.30346 must be <= 1.3",
+        "passed": false
+      },
+      "step": 15000,
+      "table5_passed": false,
+      "table5_rows": [
+        {
+          "criterion": ">= 25",
+          "direction": "minimum",
+          "domain": "Latent utilization",
+          "margin": 6.13933438884666,
+          "metric": "Effective rank",
+          "passed": true,
+          "reference": 25.0,
+          "value": 31.13933438884666
+        },
+        {
+          "criterion": ">= 0.90",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.068053265924641,
+          "metric": "Mean R2",
+          "passed": true,
+          "reference": 0.9,
+          "value": 0.968053265924641
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.017223107425677453,
+          "metric": "Median R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9672231074256774
+        },
+        {
+          "criterion": "<= 0.15",
+          "direction": "maximum",
+          "domain": "Held-out topology",
+          "margin": 0.038128257331001114,
+          "metric": "Mean standardized MAE",
+          "passed": true,
+          "reference": 0.15,
+          "value": 0.11187174266899888
+        },
+        {
+          "criterion": ">= 0.95",
+          "direction": "minimum",
+          "domain": "Held-out topology",
+          "margin": 0.018186441612277227,
+          "metric": "Scaffold-disjoint mean R2",
+          "passed": true,
+          "reference": 0.95,
+          "value": 0.9681864416122772
+        },
+        {
+          "criterion": ">= 0.18",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.027400000000000008,
+          "metric": "Morgan recall@10",
+          "passed": true,
+          "reference": 0.18,
+          "value": 0.2074
+        },
+        {
+          "criterion": ">= 0.35",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.08802889584184248,
+          "metric": "Cosine-Tanimoto Spearman",
+          "passed": true,
+          "reference": 0.35,
+          "value": 0.43802889584184246
+        },
+        {
+          "criterion": ">= 0.20",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.030326443910598744,
+          "metric": "Neighbor mean Tanimoto",
+          "passed": true,
+          "reference": 0.2,
+          "value": 0.23032644391059875
+        },
+        {
+          "criterion": ">= 1.70-fold",
+          "direction": "minimum",
+          "domain": "Retrieval",
+          "margin": 0.2989351034164429,
+          "metric": "Neighbor-Tanimoto enrichment",
+          "passed": true,
+          "reference": 1.7,
+          "value": 1.9989351034164429
+        },
+        {
+          "criterion": ">= 25-fold",
+          "direction": "minimum",
+          "domain": "Scaffold neighborhood",
+          "margin": 9.158520607015497,
+          "metric": "Purity enrichment",
+          "passed": true,
+          "reference": 25.0,
+          "value": 34.1585206070155
+        },
+        {
+          "criterion": ">= matched Morgan ARI",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.049661742839923195,
+          "metric": "Learned ARI",
+          "passed": true,
+          "reference": 0.3171019129743372,
+          "value": 0.3667636558142604
+        },
+        {
+          "criterion": ">= Morgan NMI - 0.03",
+          "direction": "minimum",
+          "domain": "Clustering",
+          "margin": 0.053531986981511404,
+          "metric": "Learned NMI",
+          "passed": true,
+          "reference": 0.7465562831683781,
+          "value": 0.8000882701498895
+        },
+        {
+          "criterion": ">= 0.82",
+          "direction": "minimum",
+          "domain": "BACE",
+          "margin": 0.023586005890055106,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.82,
+          "value": 0.8435860058900551
+        },
+        {
+          "criterion": ">= 0.87",
+          "direction": "minimum",
+          "domain": "BBBP",
+          "margin": 0.012298112723054144,
+          "metric": "Mean ROC-AUC",
+          "passed": true,
+          "reference": 0.87,
+          "value": 0.8822981127230541
+        },
+        {
+          "criterion": "<= 0.80",
+          "direction": "maximum",
+          "domain": "ESOL",
+          "margin": 0.0652177829024615,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.8,
+          "value": 0.7347822170975385
+        },
+        {
+          "criterion": "<= 1.30",
+          "direction": "maximum",
+          "domain": "FreeSolv",
+          "margin": -0.0034648995851391806,
+          "metric": "Mean RMSE",
+          "passed": false,
+          "reference": 1.3,
+          "value": 1.3034648995851392
+        },
+        {
+          "criterion": "<= 0.85",
+          "direction": "maximum",
+          "domain": "Lipophilicity",
+          "margin": 0.03946701192809421,
+          "metric": "Mean RMSE",
+          "passed": true,
+          "reference": 0.85,
+          "value": 0.8105329880719058
+        }
+      ]
+    }
+  ]
+}

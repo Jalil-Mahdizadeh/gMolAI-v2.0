@@ -52,10 +52,48 @@ The repository does not bundle the molecules or graph shards consumed by this
 command. The included smoke payload lets reviewers inspect the exact output
 schema and provenance without those data.
 
+## Full retained-checkpoint selection audit
+
+The primary seed-42 checkpoints at steps 5k, 7.5k, 10k, 12.5k, and 15k were
+each rerun through the complete Table 5 protocol rather than compared with a
+partial milestone screen. All five checkpoints passed all 105 protocol,
+artifact-identity, source-integrity, completeness, and repository-validator
+consistency checks. Their quality-gate outcomes were:
+
+| Step | Table 5 criteria | Failing quality criteria | Full gate |
+|---:|---:|---|---|
+| 5,000 | 15/17 | Effective rank 24.8654; FreeSolv RMSE 1.39045 | Fail |
+| 7,500 | 16/17 | FreeSolv RMSE 1.37227 | Fail |
+| 10,000 | 17/17 | None | Pass |
+| 12,500 | 16/17 | FreeSolv RMSE 1.32289 | Fail |
+| 15,000 | 16/17 | FreeSolv RMSE 1.30346 | Fail |
+
+The FreeSolv maximum was fixed at 1.30. Step 15k therefore misses promotion by
+0.00346 RMSE even though its other 16 criteria pass; changing the threshold
+after seeing this result would violate the predeclared fail-closed policy.
+
+Versioned compact evidence is under
+`runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/`:
+
+- `Table5_full_promotion_trajectory_steps_5k-15k.csv`, SHA-256
+  `7a2380647bc0df82a041806d1bf4f2e4e5b3352a9dbbb2d3fe1be6cdce40c1a2`;
+- `promotion_trajectory_audit.json`, SHA-256
+  `02eb29abca45d292f7fed56b9de72a3887c3cb6555946999b9894fdff47c597e`;
+- the representation-probe and full MoleculeNet JSON for each checkpoint,
+  plus its `COMPLETE` marker.
+
+[`scripts/summarize_promotion_trajectory.py`](scripts/summarize_promotion_trajectory.py)
+performs the independent identity/protocol audit and invokes the repository's
+actual fail-closed validator for every checkpoint.
+[`slurm/72_promotion_trajectory.sbatch`](slurm/72_promotion_trajectory.sbatch)
+reproduces the five-step evidence generation. The 100k calibration, 10k probe
+training, and 50k probe-validation tensors are reproducible bulk intermediates
+and are deliberately not versioned.
+
 ## Compact training and validation record
 
-All 396 JSON, JSONL, and `COMPLETE` files generated under `runs/` at review
-packaging time are tracked (23.14 MiB total). They include:
+The compact JSON, JSONL, CSV, and `COMPLETE` files generated under `runs/` at
+review packaging time are tracked. They include:
 
 - the original collapsing v1 history and deterministic-but-collapsing v4/v2
   history;

@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-08-11T13:30:00.471716+00:00",
+  "nodes": {
+    "graphify_out_memory_query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour_deterministic_v5_molecular_encoder": {
+      "code_fingerprint": "40a546c6b49c32e0bae4d78afea4ea15b7e623c2e9089e5805929a0b2d2d4bfd",
+      "label": "Deterministic V5 Molecular Encoder",
+      "last": "2026-08-11T08:58:46.839890+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T08:58:46.839890+00:00",
+          "outcome": "useful",
+          "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
+        }
+      ],
+      "score": 0.995657595,
+      "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "graphify_out_memory_query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour_gmolai_retraining_pipeline": {
+      "code_fingerprint": "40a546c6b49c32e0bae4d78afea4ea15b7e623c2e9089e5805929a0b2d2d4bfd",
+      "label": "gMolAI Retraining Pipeline",
+      "last": "2026-08-11T08:58:46.839890+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T08:58:46.839890+00:00",
+          "outcome": "useful",
+          "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
+        }
+      ],
+      "score": 0.995657595,
+      "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "graphify_out_memory_query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour_semantic_promotion_suite": {
+      "code_fingerprint": "40a546c6b49c32e0bae4d78afea4ea15b7e623c2e9089e5805929a0b2d2d4bfd",
+      "label": "Semantic Promotion Suite",
+      "last": "2026-08-11T12:15:30.846195+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T12:15:30.846195+00:00",
+          "outcome": "useful",
+          "q": "i want you to conduct a full promotion evaluation on checkpoints 5k-15k according to the table 5 in the rev1 document. We must fully understand how the full promotion gate varies by the training steps. Afterwards, prepare a csv file (smilar to the table 5 in the rev1 document) with corresponding values at each checkpoint."
+        },
+        {
+          "date": "2026-08-11T11:09:50.597045+00:00",
+          "outcome": "useful",
+          "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
+        },
+        {
+          "date": "2026-08-11T08:58:46.839890+00:00",
+          "outcome": "useful",
+          "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
+        }
+      ],
+      "score": 2.992216627,
+      "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
+      "status": "preferred",
+      "uses": 3
+    },
+    "graphify_out_memory_query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour_verified_zinc_and_pubchem_source_ingestion": {
+      "code_fingerprint": "40a546c6b49c32e0bae4d78afea4ea15b7e623c2e9089e5805929a0b2d2d4bfd",
+      "label": "Verified ZINC and PubChem Source Ingestion",
+      "last": "2026-08-11T08:58:46.839890+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T08:58:46.839890+00:00",
+          "outcome": "useful",
+          "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
+        }
+      ],
+      "score": 0.995657595,
+      "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "graphify_out_memory_query_20260811_110950_one_important_question_has_emerged__at_training_st_promotion_integrity_gates": {
+      "code_fingerprint": "f7821a9c8773000691cb679acd2951066e1ed65c56d37b219bbc25eeec9bd05f",
+      "label": "Promotion Integrity Gates",
+      "last": "2026-08-11T11:09:50.597045+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T11:09:50.597045+00:00",
+          "outcome": "useful",
+          "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
+        }
+      ],
+      "score": 0.997753576,
+      "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "graphify_out_memory_query_20260811_110950_one_important_question_has_emerged__at_training_st_validation_evidence_bundle": {
+      "code_fingerprint": "f7821a9c8773000691cb679acd2951066e1ed65c56d37b219bbc25eeec9bd05f",
+      "label": "Validation Evidence Bundle",
+      "last": "2026-08-11T11:09:50.597045+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T11:09:50.597045+00:00",
+          "outcome": "useful",
+          "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
+        }
+      ],
+      "score": 0.997753576,
+      "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "inference_readme_self_contained_inference_entry_point": {
+      "code_fingerprint": "28ecd3b608f8ac4919098da4cda44965123e8d65da51fe5f823046d22ea0d10f",
+      "label": "Self-Contained Inference Entry Point",
+      "last": "2026-08-11T08:58:46.839890+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T08:58:46.839890+00:00",
+          "outcome": "useful",
+          "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
+        }
+      ],
+      "score": 0.995657595,
+      "source_file": "inference/README.md",
+      "status": "tentative",
+      "uses": 1
+    }
+  },
+  "version": 1
+}

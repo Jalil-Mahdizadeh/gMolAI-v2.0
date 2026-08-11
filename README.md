@@ -326,6 +326,45 @@ python -m gmolai_retrain.cli --config configs/retrain.yaml promote-representatio
   --downstream-benchmark "$GMOLAI_RUN_DIR/moleculenet-probes.json"
 ```
 
+### Retained-checkpoint promotion trajectory
+
+The selected milestone is also audited against every retained checkpoint from
+5k through 15k with the same fail-closed protocol. Each checkpoint receives its
+own 100k train-only calibrator, 10k/50k train/validation exports, 5k-query
+representation probe, and full seven-feature, ten-split MoleculeNet panel. The
+Slurm array is resumable at the artifact level:
+
+```bash
+source configs/arrhenius.env
+export GMOLAI_PROMOTION_RUN_DIR="$GMOLAI_RUN_DIR"
+export GMOLAI_PROMOTION_SWEEP_ROOT="$GMOLAI_RUN_DIR/promotion-trajectory-table5-rev1"
+sbatch -A "$NAISS_PROJECT" --export=ALL slurm/72_promotion_trajectory.sbatch
+```
+
+After all five array tasks complete, validate checkpoint/artifact identities and
+write the cross-checkpoint Table 5 files from an Arrhenius login shell:
+
+```bash
+source configs/arrhenius.env
+source slurm/common.sh
+container_login python scripts/summarize_promotion_trajectory.py \
+  --run-dir "$GMOLAI_RUN_DIR" \
+  --sweep-root "$GMOLAI_RUN_DIR/promotion-trajectory-table5-rev1" \
+  --datasets-dir "$CODE_DIR/work/downstream_benchmarks/moleculenet" \
+  --output-csv "$GMOLAI_RUN_DIR/promotion-trajectory-table5-rev1/Table5_full_promotion_trajectory_steps_5k-15k.csv" \
+  --output-json "$GMOLAI_RUN_DIR/promotion-trajectory-table5-rev1/promotion_trajectory_audit.json"
+```
+
+The completed seed-42 sweep passed all 105 protocol, identity, completeness,
+and validator-consistency checks at every step. Only step 10k passed all 17
+quality criteria. Step 5k failed effective rank and FreeSolv; steps 7.5k,
+12.5k, and 15k failed only FreeSolv (RMSE 1.37227, 1.32289, and 1.30346,
+respectively, against the predeclared maximum of 1.30). Thus the later 15k
+checkpoint is close but is not promotable under the frozen fail-closed gate.
+The compact results and audit are tracked under
+`$GMOLAI_RUN_DIR/promotion-trajectory-table5-rev1/`; bulk embedding and
+calibration tensors remain excluded from Git.
+
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both
 `representation-best.pt` and `representation-calibrator.pt`.

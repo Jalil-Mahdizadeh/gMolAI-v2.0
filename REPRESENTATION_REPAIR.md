@@ -139,10 +139,30 @@ A second independent 50k validation sample also favored the latent over Morgan
 (`ARI 0.3523 vs 0.3215`, `NMI 0.7846 vs 0.7828`). Weight screens at 1, 3, and
 6 confirmed weight 3 as the strongest large-sample compromise.
 
-The retained-step screen also supports the 10k selection. Frozen FreeSolv RMSE
-for the raw graph-plus-mean-node vector at steps 5k, 7.5k, 10k, 12.5k, and 15k
-was respectively `1.391`, `1.372`, `1.297`, `1.323`, and `1.304`; 10k was the
-best milestone and the only one satisfying the 1.30 development gate.
+The retained-step screen was subsequently expanded into the complete promotion
+protocol at every stored primary-seed checkpoint. Each step used an independent
+100k train-only calibrator, the same 10k/50k probe sampling contract, 5k
+similarity queries, five KMeans repetitions, and all seven diagnostic features
+across ten scaffold splits on the five development datasets. All 105 protocol,
+identity, source-integrity, completeness, and validator-consistency checks
+passed at every checkpoint:
+
+| Step | Passed criteria | Effective rank | FreeSolv RMSE | Full promotion gate |
+|---:|---:|---:|---:|---|
+| 5,000 | 15/17 | 24.8654 | 1.39045 | Fail |
+| 7,500 | 16/17 | 28.0521 | 1.37227 | Fail |
+| 10,000 | 17/17 | 29.9731 | 1.29716 | Pass |
+| 12,500 | 16/17 | 30.9019 | 1.32289 | Fail |
+| 15,000 | 16/17 | 31.1393 | 1.30346 | Fail |
+
+Step 5k failed effective rank and FreeSolv. Every other non-selected checkpoint
+failed only FreeSolv. In particular, step 15k improved the other reported
+criteria but remained 0.00346 RMSE above the frozen 1.30 FreeSolv ceiling, so it
+cannot replace step 10k without a post-hoc gate change. The cross-step CSV and
+machine-readable audit are in
+`promotion-trajectory-table5-rev1/` beneath the selected run directory; the
+audit also records the exact repository-validator exception for each rejected
+checkpoint.
 
 ### Cross-training-seed replication
 

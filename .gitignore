@@ -27,6 +27,24 @@ __pycache__/
 .ruff_cache/
 *.py[cod]
 
+# Graphify's portable graph/report are versioned; interpreter markers,
+# extraction caches, and in-progress refresh state are machine-local.
+graphify-out/cache/
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/.vocab.txt
+graphify-out/.graphify_ast.json
+graphify-out/.graphify_detect.json
+graphify-out/.graphify_incremental.json
+graphify-out/.graphify_cached.json
+graphify-out/.graphify_uncached.txt
+graphify-out/.graphify_semantic.json
+graphify-out/.graphify_semantic_new.json
+graphify-out/.graphify_extract.json
+graphify-out/.graphify_analysis.json
+graphify-out/.graphify_old.json
+graphify-out/.graphify_chunk_*.json
+
 # Inference outputs are local products. The exact packaged model pair is an
 # intentional exception to the general checkpoint rule above.
 inference/output/*
