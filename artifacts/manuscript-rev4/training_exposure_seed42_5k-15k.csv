@@ -1,0 +1,6 @@
+global_step,world_size,training_graph_presentations,unique_training_graphs_presented,repeated_training_graph_presentations,training_partition_fraction_percent,full_corpus_fraction_percent,completed_one_training_partition_pass,completed_one_full_corpus_pass
+5000,4,28743683,28743683,0,12.997434601696744,12.879107883787029,False,False
+7500,4,43109793,43109793,0,19.49356020974014,19.31609372726268,False,False
+10000,4,57504265,57504265,0,26.002510661425642,25.765787658905037,False,False
+12500,4,71870280,71870280,0,32.49859331198557,32.20273093597579,False,False
+15000,4,86236032,86236032,0,38.99455703814392,38.63955637131507,False,False

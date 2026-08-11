@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "source_manuscript": {
+    "path": "../manuscript/gmolai-rev3.docx",
+    "tracked_copy": "artifacts/manuscript-rev3/gmolai-rev3.docx",
+    "sha256": "b9a2bc76d6412ad9cd423fe8ea21fc58e57c0453b468af4ec55ea056abb862f4"
+  },
+  "publication_manuscript": {
+    "path": "artifacts/manuscript-rev4/gmolai-rev4.docx",
+    "sibling_copy": "../manuscript/gmolai-rev4.docx",
+    "sha256": "6a02e6088d29d527160db234fcc76dd9ed0e0e4b180d46e088c08265923d8e37"
+  },
+  "audit_artifacts": {
+    "descriptor_only_control.json": "1d5fcf6f52473f75960061c3348447442565cb9d44596c193b84f804be343de2",
+    "descriptor_only_control.csv": "df0d1efdcc890ddf453dafc848df78f4eb244d7f25fccf9b544e692c83332bfe",
+    "pretraining_downstream_overlap.json": "c2df665de6df9a6f3c81643629ef7e1c7c57cb266e8198b89293a1209826285d",
+    "pretraining_downstream_overlap.csv": "16fc89b2c3bc32c64a62f85d7901f69b1e85559600b7ea2e192acb466ed5a8ff",
+    "training_exposure_seed42_5k-15k.json": "5f3979753ab19c4cb6e926e853639ccffde1088a255a095f653501519fc8830e",
+    "training_exposure_seed42_5k-15k.csv": "a9bee5c1e1fb0fa616ca969bed77acdcb3e33f86cced4b642ac78f392e59d7b1",
+    "downstream_checkpoint_exposure.json": "f51397f12f6a4e035af3c58bf587c24b2f7779e3976c1260c7e4c092a966230f",
+    "downstream_checkpoint_exposure.csv": "fbd1671851e13e3742ffadf2a4d164fd4645d87e7361b6b353866eb614c2ed8a",
+    "downstream_checkpoint_exposure_identities.csv": "aab745eb6283b86220267f33c37442e21ff5406a8296d33fa2c8836249c3f3ef",
+    "promotion_criteria_chronology.json": "1517971558c663f58e1f9080ab9505658a9e51ee7aa57904f35e449b71eff0cc"
+  },
+  "checkpoint_inputs": {
+    "step-000005000.pt": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+    "step-000007500.pt": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+    "step-000010000.pt": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "step-000012500.pt": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+    "step-000015000.pt": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4"
+  },
+  "promoted_artifact": {
+    "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-best.pt",
+    "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "selection_record": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation_selection.json",
+    "selection_record_sha256": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1"
+  },
+  "implementation": {
+    "auditor": {
+      "path": "src/gmolai_retrain/downstream_exposure.py",
+      "sha256": "46e8737fe4148a3a5d84bd6ed6a5092c1e65e4d514723e9f6406bc79542c4e29"
+    },
+    "manuscript_builder": {
+      "path": "scripts/update_manuscript_rev4.py",
+      "sha256": "e4867b5664d92843865f2c676c17da9af0048294f090bd07d5006d1d22e39530"
+    }
+  },
+  "constraints": {
+    "pretrained_model_executed": false,
+    "training_performed_or_resumed": false,
+    "embeddings_regenerated": false,
+    "checkpoints_modified": false,
+    "promotion_criteria_modified": false,
+    "promoted_seed42_step10000_artifact_modified": false
+  },
+  "notes": [
+    "The source rev3 manuscript remains unchanged and matches its tracked copy byte-for-byte.",
+    "The tracked rev4 manuscript matches ../manuscript/gmolai-rev4.docx byte-for-byte.",
+    "All five retained checkpoints used four complete cycle-0 rank cursors; exact seen identities are monotonic.",
+    "All 27,136 training shards and 221,148,895 training graph hashes were checked without loading tensor-storage members.",
+    "The promoted artifact and its selection record are byte-identical to the parent commit."
+  ]
+}

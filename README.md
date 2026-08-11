@@ -365,35 +365,45 @@ The compact results and audit are tracked under
 `$GMOLAI_RUN_DIR/promotion-trajectory-table5-rev1/`; bulk embedding and
 calibration tensors remain excluded from Git.
 
-### No-training manuscript rev3 audits
+### No-training manuscript rev4 audits
 
-Three CPU-only audit commands now preserve the manuscript-relevant evidence
-without instantiating or executing the pretrained model or starting training.
-The exposure command deserializes the retained checkpoint mappings with PyTorch's
-restricted weights-only loader solely to read their DDP cursors:
+Four CPU-only audit commands preserve the manuscript-relevant evidence without
+instantiating or executing the pretrained model or starting training. Checkpoint
+files are deserialized with PyTorch's restricted weights-only loader solely to
+read their DDP cursors:
 
-- `audit-training-exposure` reconstructs per-rank graph presentations from the
-  serialized DDP cursors. The seed-42 stream consumed 57,504,265 unique training
-  graphs by step 10k and 86,236,032 by step 15k (26.00% and 38.99% of the
-  221,148,895-graph training partition); neither completed one pass.
+- `audit-training-exposure` reconstructs aggregate per-rank graph presentations
+  from the serialized DDP cursors. The seed-42 stream consumed 28,743,683,
+  43,109,793, 57,504,265, 71,870,280, and 86,236,032 unique training graphs by
+  steps 5k, 7.5k, 10k, 12.5k, and 15k, respectively (13.00% through 38.99% of
+  the 221,148,895-graph training partition); no checkpoint completed one pass.
 - `audit-downstream-overlap` joins canonical SHA-256 identities for BACE, BBBP,
   ESOL, FreeSolv, Lipophilicity, and HIV against the immutable 223,180,699-row
   deduplicated corpus and reports overlap by pretraining split.
+- `audit-downstream-exposure` scans the identity metadata of all 27,136 training
+  graph shards, reconstructs each rank's exact cycle-0 shard and graph order,
+  and applies the exclusive checkpoint cursor boundary. At step 10k, the exact
+  numbers of downstream molecules already presented were 109/1,513 (BACE),
+  278/1,860 (BBBP), 226/1,116 (ESOL), 120/639 (FreeSolv), 682/4,198
+  (Lipophilicity), and 7,038/37,225 (HIV). The complete five-checkpoint
+  trajectory and collision-safe row-level identity ledger are versioned.
 - `benchmark-descriptor-control` evaluates the frozen 13 auxiliary descriptors
   with the exact downstream preparation, accepted outer seeds, inner group
   folds, fold-local scaling, estimators, grids, and metrics used by the selected
   10k gMolAI/Morgan panel. It never loads a checkpoint.
 
-The complete methods, commands, compact CSVs, machine-readable provenance, and
-bounded interpretation are tracked in
-[`artifacts/manuscript-rev3/`](artifacts/manuscript-rev3/). In particular, the
-13 descriptors explain much of the mean gMolAI-versus-Morgan RMSE gap on ESOL
-and FreeSolv but not on Lipophilicity; gMolAI remains numerically better than the
-descriptor-only control on all five development tasks. These comparisons are
-descriptive, not causal decompositions. The publication-formatted rev3 manuscript
-is tracked with those artifacts and can be rebuilt from the retained sibling
-`manuscript/gmolai-rev2.docx` using `scripts/update_manuscript_rev3.py` and the
-`manuscript` optional dependency.
+The complete methods, commands, compact CSVs, machine-readable provenance,
+identity ledger, and bounded interpretation are tracked in
+[`artifacts/manuscript-rev4/`](artifacts/manuscript-rev4/); the rev3 bundle is
+retained unchanged. The exact exposure audit establishes presentation before
+each checkpoint, but it does not use downstream labels and does not identify a
+causal effect on downstream scores. The 13 descriptors explain much of the mean
+gMolAI-versus-Morgan RMSE gap on ESOL and FreeSolv but not on Lipophilicity;
+gMolAI remains numerically better than the descriptor-only control on all five
+development tasks. These comparisons are descriptive, not causal
+decompositions. The publication-formatted rev4 manuscript is tracked with the
+rev4 artifacts and can be rebuilt from retained `gmolai-rev3.docx` using
+`scripts/update_manuscript_rev4.py` and the `manuscript` optional dependency.
 
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both

@@ -323,6 +323,25 @@ def command_audit_training_exposure(args) -> None:
     )
 
 
+def command_audit_downstream_exposure(args) -> None:
+    from .downstream_exposure import audit_downstream_checkpoint_exposure
+
+    cfg = _load(args)
+    _apply_run_directory(cfg, args)
+    _print(
+        audit_downstream_checkpoint_exposure(
+            cfg,
+            checkpoint_names=args.checkpoints,
+            datasets_dir=args.datasets_dir,
+            output=args.output,
+            summary_csv=args.summary_csv,
+            identity_ledger_csv=args.identity_ledger_csv,
+            dataset_names=args.datasets,
+            workers=args.workers,
+        )
+    )
+
+
 def command_promote_representation(args) -> None:
     from .representations import promote_representation_checkpoint
 
@@ -599,6 +618,38 @@ def build_parser() -> argparse.ArgumentParser:
     exposure.add_argument("--output", required=True)
     exposure.add_argument("--summary-csv", required=True)
     exposure.set_defaults(handler=command_audit_training_exposure)
+
+    downstream_exposure = commands.add_parser("audit-downstream-exposure")
+    downstream_exposure.add_argument(
+        "--plan",
+        action="append",
+        help="Repeatable recorded training-plan overlay used only to restore artifact identity",
+    )
+    downstream_exposure.add_argument("--run-dir", required=True)
+    downstream_exposure.add_argument(
+        "--checkpoint",
+        dest="checkpoints",
+        action="append",
+        required=True,
+        help="Checkpoint path relative to run-dir; repeat in any order",
+    )
+    downstream_exposure.add_argument("--datasets-dir", required=True)
+    downstream_exposure.add_argument("--output", required=True)
+    downstream_exposure.add_argument("--summary-csv", required=True)
+    downstream_exposure.add_argument("--identity-ledger-csv", required=True)
+    downstream_exposure.add_argument(
+        "--dataset",
+        dest="datasets",
+        action="append",
+        help="Dataset name to audit; repeat to select a subset (default: all six)",
+    )
+    downstream_exposure.add_argument(
+        "--workers",
+        type=int,
+        default=8,
+        help="Concurrent metadata-only graph-shard readers",
+    )
+    downstream_exposure.set_defaults(handler=command_audit_downstream_exposure)
 
     promotion = commands.add_parser("promote-representation")
     promotion.add_argument("--run-dir", required=True)

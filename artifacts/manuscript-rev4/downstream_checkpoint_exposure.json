@@ -1,0 +1,974 @@
+{
+  "audit": "Exact seed-42 downstream-molecule exposure from canonical identities, graph-shard order and serialized DDP cursors",
+  "checkpoints": [
+    {
+      "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000005000.pt",
+      "checkpoint_sha256": "d8cac9ca2e0938e344dbc0bcb398bd0e6b9c8136fecda3c0818cd499c366af16",
+      "data_states": [
+        {
+          "cycle": 0,
+          "graph_position": 92,
+          "shard_position": 880
+        },
+        {
+          "cycle": 0,
+          "graph_position": 5594,
+          "shard_position": 884
+        },
+        {
+          "cycle": 0,
+          "graph_position": 197,
+          "shard_position": 882
+        },
+        {
+          "cycle": 0,
+          "graph_position": 4397,
+          "shard_position": 882
+        }
+      ],
+      "global_step": 5000,
+      "rank_accounting": [
+        {
+          "completed_shards_in_current_cycle": 880,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0217/train/shard-00034.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 92,
+            "shard_position": 880
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 0,
+          "total_presentations": 7209052,
+          "unique_graphs_presented": 7209052
+        },
+        {
+          "completed_shards_in_current_cycle": 884,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0227/train/shard-00103.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 5594,
+            "shard_position": 884
+          },
+          "local_population": 54997218,
+          "local_shards": 6784,
+          "rank": 1,
+          "total_presentations": 7158157,
+          "unique_graphs_presented": 7158157
+        },
+        {
+          "completed_shards_in_current_cycle": 882,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0023/train/shard-00088.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 197,
+            "shard_position": 882
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 2,
+          "total_presentations": 7225541,
+          "unique_graphs_presented": 7225541
+        },
+        {
+          "completed_shards_in_current_cycle": 882,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0105/train/shard-00081.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 4397,
+            "shard_position": 882
+          },
+          "local_population": 55002621,
+          "local_shards": 6784,
+          "rank": 3,
+          "total_presentations": 7150933,
+          "unique_graphs_presented": 7150933
+        }
+      ],
+      "training_graph_presentations": 28743683,
+      "unique_training_graphs_presented": 28743683,
+      "world_size": 4
+    },
+    {
+      "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000007500.pt",
+      "checkpoint_sha256": "3be884b5d9f05f5b11bb8832bd6fdbcb2d2180b0f5b76a8e9b2ca3b1fe5e581e",
+      "data_states": [
+        {
+          "cycle": 0,
+          "graph_position": 5562,
+          "shard_position": 1320
+        },
+        {
+          "cycle": 0,
+          "graph_position": 2279,
+          "shard_position": 1324
+        },
+        {
+          "cycle": 0,
+          "graph_position": 4891,
+          "shard_position": 1320
+        },
+        {
+          "cycle": 0,
+          "graph_position": 1826,
+          "shard_position": 1323
+        }
+      ],
+      "global_step": 7500,
+      "rank_accounting": [
+        {
+          "completed_shards_in_current_cycle": 1320,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0223/train/shard-00070.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 5562,
+            "shard_position": 1320
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 0,
+          "total_presentations": 10819002,
+          "unique_graphs_presented": 10819002
+        },
+        {
+          "completed_shards_in_current_cycle": 1324,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0005/train/shard-00051.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 2279,
+            "shard_position": 1324
+          },
+          "local_population": 54997218,
+          "local_shards": 6784,
+          "rank": 1,
+          "total_presentations": 10740072,
+          "unique_graphs_presented": 10740072
+        },
+        {
+          "completed_shards_in_current_cycle": 1320,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0079/train/shard-00012.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 4891,
+            "shard_position": 1320
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 2,
+          "total_presentations": 10818331,
+          "unique_graphs_presented": 10818331
+        },
+        {
+          "completed_shards_in_current_cycle": 1323,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0006/train/shard-00079.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 1826,
+            "shard_position": 1323
+          },
+          "local_population": 55002621,
+          "local_shards": 6784,
+          "rank": 3,
+          "total_presentations": 10732388,
+          "unique_graphs_presented": 10732388
+        }
+      ],
+      "training_graph_presentations": 43109793,
+      "unique_training_graphs_presented": 43109793,
+      "world_size": 4
+    },
+    {
+      "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "data_states": [
+        {
+          "cycle": 0,
+          "graph_position": 7532,
+          "shard_position": 1760
+        },
+        {
+          "cycle": 0,
+          "graph_position": 2478,
+          "shard_position": 1770
+        },
+        {
+          "cycle": 0,
+          "graph_position": 83,
+          "shard_position": 1762
+        },
+        {
+          "cycle": 0,
+          "graph_position": 1061,
+          "shard_position": 1764
+        }
+      ],
+      "global_step": 10000,
+      "rank_accounting": [
+        {
+          "completed_shards_in_current_cycle": 1760,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0142/train/shard-00016.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 7532,
+            "shard_position": 1760
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 0,
+          "total_presentations": 14425452,
+          "unique_graphs_presented": 14425452
+        },
+        {
+          "completed_shards_in_current_cycle": 1770,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0255/train/shard-00087.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 2478,
+            "shard_position": 1770
+          },
+          "local_population": 54997218,
+          "local_shards": 6784,
+          "rank": 1,
+          "total_presentations": 14325085,
+          "unique_graphs_presented": 14325085
+        },
+        {
+          "completed_shards_in_current_cycle": 1762,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0083/train/shard-00024.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 83,
+            "shard_position": 1762
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 2,
+          "total_presentations": 14434387,
+          "unique_graphs_presented": 14434387
+        },
+        {
+          "completed_shards_in_current_cycle": 1764,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0169/train/shard-00081.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 1061,
+            "shard_position": 1764
+          },
+          "local_population": 55002621,
+          "local_shards": 6784,
+          "rank": 3,
+          "total_presentations": 14319341,
+          "unique_graphs_presented": 14319341
+        }
+      ],
+      "training_graph_presentations": 57504265,
+      "unique_training_graphs_presented": 57504265,
+      "world_size": 4
+    },
+    {
+      "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000012500.pt",
+      "checkpoint_sha256": "7b078f5d7852161f7e07222469eb1a58127c1d7f8e470e2670fadf95885649ce",
+      "data_states": [
+        {
+          "cycle": 0,
+          "graph_position": 6140,
+          "shard_position": 2201
+        },
+        {
+          "cycle": 0,
+          "graph_position": 3510,
+          "shard_position": 2210
+        },
+        {
+          "cycle": 0,
+          "graph_position": 1793,
+          "shard_position": 2203
+        },
+        {
+          "cycle": 0,
+          "graph_position": 1943,
+          "shard_position": 2205
+        }
+      ],
+      "global_step": 12500,
+      "rank_accounting": [
+        {
+          "completed_shards_in_current_cycle": 2201,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0151/train/shard-00030.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 6140,
+            "shard_position": 2201
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 0,
+          "total_presentations": 18036732,
+          "unique_graphs_presented": 18036732
+        },
+        {
+          "completed_shards_in_current_cycle": 2210,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0151/train/shard-00023.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 3510,
+            "shard_position": 2210
+          },
+          "local_population": 54997218,
+          "local_shards": 6784,
+          "rank": 1,
+          "total_presentations": 17887768,
+          "unique_graphs_presented": 17887768
+        },
+        {
+          "completed_shards_in_current_cycle": 2203,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0141/train/shard-00104.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 1793,
+            "shard_position": 2203
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 2,
+          "total_presentations": 18048769,
+          "unique_graphs_presented": 18048769
+        },
+        {
+          "completed_shards_in_current_cycle": 2205,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0123/train/shard-00097.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 1943,
+            "shard_position": 2205
+          },
+          "local_population": 55002621,
+          "local_shards": 6784,
+          "rank": 3,
+          "total_presentations": 17897011,
+          "unique_graphs_presented": 17897011
+        }
+      ],
+      "training_graph_presentations": 71870280,
+      "unique_training_graphs_presented": 71870280,
+      "world_size": 4
+    },
+    {
+      "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000015000.pt",
+      "checkpoint_sha256": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+      "data_states": [
+        {
+          "cycle": 0,
+          "graph_position": 793,
+          "shard_position": 2642
+        },
+        {
+          "cycle": 0,
+          "graph_position": 2539,
+          "shard_position": 2653
+        },
+        {
+          "cycle": 0,
+          "graph_position": 2267,
+          "shard_position": 2642
+        },
+        {
+          "cycle": 0,
+          "graph_position": 1649,
+          "shard_position": 2644
+        }
+      ],
+      "global_step": 15000,
+      "rank_accounting": [
+        {
+          "completed_shards_in_current_cycle": 2642,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0036/train/shard-00080.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 793,
+            "shard_position": 2642
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 0,
+          "total_presentations": 21644057,
+          "unique_graphs_presented": 21644057
+        },
+        {
+          "completed_shards_in_current_cycle": 2653,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0036/train/shard-00001.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 2539,
+            "shard_position": 2653
+          },
+          "local_population": 54997218,
+          "local_shards": 6784,
+          "rank": 1,
+          "total_presentations": 21472251,
+          "unique_graphs_presented": 21472251
+        },
+        {
+          "completed_shards_in_current_cycle": 2642,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0188/train/shard-00082.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 2267,
+            "shard_position": 2642
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 2,
+          "total_presentations": 21645531,
+          "unique_graphs_presented": 21645531
+        },
+        {
+          "completed_shards_in_current_cycle": 2644,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0231/train/shard-00077.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 1649,
+            "shard_position": 2644
+          },
+          "local_population": 55002621,
+          "local_shards": 6784,
+          "rank": 3,
+          "total_presentations": 21474193,
+          "unique_graphs_presented": 21474193
+        }
+      ],
+      "training_graph_presentations": 86236032,
+      "unique_training_graphs_presented": 86236032,
+      "world_size": 4
+    }
+  ],
+  "checkpoints_modified": false,
+  "corpus": {
+    "dataset_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/dataset_manifest.json",
+    "dataset_manifest_hash": "4e3aa3b70b7808c5d2efcd891314c99a982766391cc48a383d9096af41fc2a1a",
+    "dataset_manifest_sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "graph_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graph_manifest.json",
+    "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+    "graph_manifest_sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+    "graphs": 223180699,
+    "test": 1088766,
+    "training": 221148895,
+    "validation": 943038
+  },
+  "current_shard_boundary_rule": "A graph is consumed only when its deterministic shuffled position is strictly less than graph_position; graph_position names the next unread graph.",
+  "datasets": {
+    "bace": {
+      "accepted_identity_set_sha256": "f555c95157ea0f78a50b713c6fb8bc467c04b98943ed7e790479928e8d1c5626",
+      "corpus_overlap": {
+        "count": 414,
+        "fraction_of_downstream": 0.2736285525446133,
+        "identity_set_sha256": "54aee0dd3e14cfb56e129f12d1692de9d5df1dec19afa8cb4753e70211fc2afa"
+      },
+      "monotonic": true,
+      "post_filter_downstream_size": 1513,
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 1513,
+        "positive_fraction": 0.456708526107072,
+        "raw_rows": 1513,
+        "rejections": {},
+        "scaffold_groups": 675,
+        "target_mean": 0.456708526107072,
+        "target_std": 0.4981223226158189,
+        "valid_rows_before_deduplication": 1513
+      },
+      "source": {
+        "filename": "bace.csv",
+        "sha256": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+        "smiles_column": "mol",
+        "target_column": "Class",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/bace.csv"
+      },
+      "task": "classification",
+      "training_partition_overlap": {
+        "count": 413,
+        "fraction_of_downstream": 0.2729676140118969,
+        "identity_set_sha256": "d6ef4f1b3d41a5e5871f4814b869210a8764405fbfebe370b22a8404ace3fd35"
+      },
+      "trajectory": [
+        {
+          "full_downstream_fraction_seen": 0.037012557832121616,
+          "global_step": 5000,
+          "seen_identity_set_sha256": "6c19740c937ec0fb145d7c8afe37034aa5873a28489527f79abb20a346f3aa10",
+          "seen_training_overlap_molecules": 56,
+          "training_overlap_fraction_seen": 0.13559322033898305
+        },
+        {
+          "full_downstream_fraction_seen": 0.05023132848645076,
+          "global_step": 7500,
+          "seen_identity_set_sha256": "2bdd39f1f21a4176ec6908a6ccebe60cbf9ef25a54a205da9ac4bf33b8518d8a",
+          "seen_training_overlap_molecules": 76,
+          "training_overlap_fraction_seen": 0.18401937046004843
+        },
+        {
+          "full_downstream_fraction_seen": 0.07204230006609386,
+          "global_step": 10000,
+          "seen_identity_set_sha256": "ad7735588da94a9d20b79bb70ad3d03aac7f7c086bca0106136d5e1e03df164f",
+          "seen_training_overlap_molecules": 109,
+          "training_overlap_fraction_seen": 0.2639225181598063
+        },
+        {
+          "full_downstream_fraction_seen": 0.08592200925313946,
+          "global_step": 12500,
+          "seen_identity_set_sha256": "adf4bf66043fcd659de9e9d4bf93045edf9fb8e9f976139f3a69f2262b9788d4",
+          "seen_training_overlap_molecules": 130,
+          "training_overlap_fraction_seen": 0.31476997578692495
+        },
+        {
+          "full_downstream_fraction_seen": 0.10641110376734964,
+          "global_step": 15000,
+          "seen_identity_set_sha256": "820f0b21bb4c91a75f74650d5b50739876a1ff1e55311f239d6b6fda5f42899c",
+          "seen_training_overlap_molecules": 161,
+          "training_overlap_fraction_seen": 0.3898305084745763
+        }
+      ]
+    },
+    "bbbp": {
+      "accepted_identity_set_sha256": "6ef53732472e7729c4e3edb77ece33facb5f5e37407ee1daadaaba0f66e822a3",
+      "corpus_overlap": {
+        "count": 1090,
+        "fraction_of_downstream": 0.5860215053763441,
+        "identity_set_sha256": "a9ad58464fb5cc373efe29d98041ea76967cade119496c5dc19c9d5db3036782"
+      },
+      "monotonic": true,
+      "post_filter_downstream_size": 1860,
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 20,
+        "duplicate_rows_collapsed": 64,
+        "molecules": 1860,
+        "positive_fraction": 0.7709677419354839,
+        "raw_rows": 2050,
+        "rejections": {
+          "disconnected": 105,
+          "parse_failure": 11
+        },
+        "scaffold_groups": 1062,
+        "target_mean": 0.7709677419354839,
+        "target_std": 0.4202100460845564,
+        "valid_rows_before_deduplication": 1934
+      },
+      "source": {
+        "filename": "BBBP.csv",
+        "sha256": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+        "smiles_column": "smiles",
+        "target_column": "p_np",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/BBBP.csv"
+      },
+      "task": "classification",
+      "training_partition_overlap": {
+        "count": 1080,
+        "fraction_of_downstream": 0.5806451612903226,
+        "identity_set_sha256": "37d5bafceb22125ef01d0200d2fabf3d9178acf73646ff26c7a2596f0a3f5134"
+      },
+      "trajectory": [
+        {
+          "full_downstream_fraction_seen": 0.08279569892473118,
+          "global_step": 5000,
+          "seen_identity_set_sha256": "aad0f02babb4a261310a03a6c50040574a8d22cbb8789e815c2362ed70c53f6f",
+          "seen_training_overlap_molecules": 154,
+          "training_overlap_fraction_seen": 0.1425925925925926
+        },
+        {
+          "full_downstream_fraction_seen": 0.11559139784946236,
+          "global_step": 7500,
+          "seen_identity_set_sha256": "aed4c52dbaf7b55693ee2eb8ac11462528bb833321d9b93af74303af75656898",
+          "seen_training_overlap_molecules": 215,
+          "training_overlap_fraction_seen": 0.19907407407407407
+        },
+        {
+          "full_downstream_fraction_seen": 0.14946236559139786,
+          "global_step": 10000,
+          "seen_identity_set_sha256": "86c18dcf437d7083f16251e8a436dfa01a20e3e9b4d895ba7494310f0ad1d972",
+          "seen_training_overlap_molecules": 278,
+          "training_overlap_fraction_seen": 0.2574074074074074
+        },
+        {
+          "full_downstream_fraction_seen": 0.17903225806451614,
+          "global_step": 12500,
+          "seen_identity_set_sha256": "03dac970ecbe1759ec13cec7304da24d163c4aecbcd300b3ea8e4d8a77231423",
+          "seen_training_overlap_molecules": 333,
+          "training_overlap_fraction_seen": 0.30833333333333335
+        },
+        {
+          "full_downstream_fraction_seen": 0.22204301075268817,
+          "global_step": 15000,
+          "seen_identity_set_sha256": "2abf10f6d7c427cb48f6a325ce57beea77b81b83c06ccf44af3a15368f74b073",
+          "seen_training_overlap_molecules": 413,
+          "training_overlap_fraction_seen": 0.3824074074074074
+        }
+      ]
+    },
+    "esol": {
+      "accepted_identity_set_sha256": "f966fd6429e67db24fd6c1fb15604eff694bc4d6abfcad50db1e375699aa3266",
+      "corpus_overlap": {
+        "count": 969,
+        "fraction_of_downstream": 0.8682795698924731,
+        "identity_set_sha256": "cba89ae13598538b4145c43023b7c275f91ba6ef343e9ca1d758fd3689792b57"
+      },
+      "monotonic": true,
+      "post_filter_downstream_size": 1116,
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 11,
+        "molecules": 1116,
+        "positive_fraction": null,
+        "raw_rows": 1128,
+        "rejections": {
+          "too_few_atoms": 1
+        },
+        "scaffold_groups": 581,
+        "target_mean": -3.0519847670250897,
+        "target_std": 2.094467457986315,
+        "valid_rows_before_deduplication": 1127
+      },
+      "source": {
+        "filename": "delaney-processed.csv",
+        "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+        "smiles_column": "smiles",
+        "target_column": "measured log solubility in mols per litre",
+        "url": "https://raw.githubusercontent.com/deepchem/deepchem/master/datasets/delaney-processed.csv"
+      },
+      "task": "regression",
+      "training_partition_overlap": {
+        "count": 964,
+        "fraction_of_downstream": 0.8637992831541219,
+        "identity_set_sha256": "0434ee1e93084397090d54baa96e303cbc914f40c8eecd3adda3a51090c0cb70"
+      },
+      "trajectory": [
+        {
+          "full_downstream_fraction_seen": 0.09946236559139784,
+          "global_step": 5000,
+          "seen_identity_set_sha256": "1020ed9f5fef15c8ae5b26d7fd1f2c734dc099e6536ffcb46ff24e7a9b5d4267",
+          "seen_training_overlap_molecules": 111,
+          "training_overlap_fraction_seen": 0.11514522821576763
+        },
+        {
+          "full_downstream_fraction_seen": 0.1478494623655914,
+          "global_step": 7500,
+          "seen_identity_set_sha256": "4d89cf09141f4cfb23ab3127e18995c0d3e82b0664ab35174ee201cf68ebce23",
+          "seen_training_overlap_molecules": 165,
+          "training_overlap_fraction_seen": 0.17116182572614108
+        },
+        {
+          "full_downstream_fraction_seen": 0.2025089605734767,
+          "global_step": 10000,
+          "seen_identity_set_sha256": "ce3f0e666e5b6a9731357055206a8c6a558d316b11086008700efd7775ea758b",
+          "seen_training_overlap_molecules": 226,
+          "training_overlap_fraction_seen": 0.23443983402489627
+        },
+        {
+          "full_downstream_fraction_seen": 0.26881720430107525,
+          "global_step": 12500,
+          "seen_identity_set_sha256": "4e97b569e68297ebe2758ff83ff9e25c3bf1d335a88ff1ea7e9393658d7ad866",
+          "seen_training_overlap_molecules": 300,
+          "training_overlap_fraction_seen": 0.3112033195020747
+        },
+        {
+          "full_downstream_fraction_seen": 0.3324372759856631,
+          "global_step": 15000,
+          "seen_identity_set_sha256": "c37f44bbb5de8dc18c5c77126978833dcafe69f0fcc43516ef7f1e028460c190",
+          "seen_training_overlap_molecules": 371,
+          "training_overlap_fraction_seen": 0.3848547717842324
+        }
+      ]
+    },
+    "freesolv": {
+      "accepted_identity_set_sha256": "2a2f87bbf6ef1d9bda5200644b0c837a0973bc641d65bb493e70373768642db2",
+      "corpus_overlap": {
+        "count": 526,
+        "fraction_of_downstream": 0.8231611893583725,
+        "identity_set_sha256": "22a1a3ce316fa07254b7d5be0d95b9c3e80950a4b87acfa076e76ceccc1fc80c"
+      },
+      "monotonic": true,
+      "post_filter_downstream_size": 639,
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 639,
+        "positive_fraction": null,
+        "raw_rows": 642,
+        "rejections": {
+          "too_few_atoms": 3
+        },
+        "scaffold_groups": 376,
+        "target_mean": -3.8161815336463225,
+        "target_std": 3.8449639202000605,
+        "valid_rows_before_deduplication": 639
+      },
+      "source": {
+        "filename": "SAMPL.csv",
+        "sha256": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+        "smiles_column": "smiles",
+        "target_column": "expt",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/SAMPL.csv"
+      },
+      "task": "regression",
+      "training_partition_overlap": {
+        "count": 524,
+        "fraction_of_downstream": 0.8200312989045383,
+        "identity_set_sha256": "51436115713dd38c8ed7415c30606704843b983dac501070006e1ca3a7a3adc6"
+      },
+      "trajectory": [
+        {
+          "full_downstream_fraction_seen": 0.09233176838810642,
+          "global_step": 5000,
+          "seen_identity_set_sha256": "d3ff104cce005a65de820fafd2288c9d15e3504a4f5a09496fe9a1ccedd20279",
+          "seen_training_overlap_molecules": 59,
+          "training_overlap_fraction_seen": 0.11259541984732824
+        },
+        {
+          "full_downstream_fraction_seen": 0.14397496087636932,
+          "global_step": 7500,
+          "seen_identity_set_sha256": "6facf82b320381c6dfa54a8c3517c125267cde30bcd3166fc7fdcd0e3b606b0f",
+          "seen_training_overlap_molecules": 92,
+          "training_overlap_fraction_seen": 0.17557251908396945
+        },
+        {
+          "full_downstream_fraction_seen": 0.18779342723004694,
+          "global_step": 10000,
+          "seen_identity_set_sha256": "cb37fbed3188e4863509ddce994a5a6317900ee734cab49fe18f5c6d88186f5b",
+          "seen_training_overlap_molecules": 120,
+          "training_overlap_fraction_seen": 0.22900763358778625
+        },
+        {
+          "full_downstream_fraction_seen": 0.2378716744913928,
+          "global_step": 12500,
+          "seen_identity_set_sha256": "d27de5eeb2f42d2cbb45361b72ed4374004caa17afbdf932d5ebd0a8db4e9ff5",
+          "seen_training_overlap_molecules": 152,
+          "training_overlap_fraction_seen": 0.2900763358778626
+        },
+        {
+          "full_downstream_fraction_seen": 0.29107981220657275,
+          "global_step": 15000,
+          "seen_identity_set_sha256": "0f450fcb3789e81f1276c42afda8307efd185a5e72605de700cc82b7ddaab691",
+          "seen_training_overlap_molecules": 186,
+          "training_overlap_fraction_seen": 0.3549618320610687
+        }
+      ]
+    },
+    "hiv": {
+      "accepted_identity_set_sha256": "824a1f76864430298fbf7c258e68c3541ac4a293129351fc7520e2ab2e1e71cd",
+      "corpus_overlap": {
+        "count": 27377,
+        "fraction_of_downstream": 0.7354466084620551,
+        "identity_set_sha256": "417ba290a0d8b0343171a822053a28b24bf8a48401b1008d34835ac26c17284f"
+      },
+      "monotonic": true,
+      "post_filter_downstream_size": 37225,
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 37225,
+        "positive_fraction": 0.03092008059100067,
+        "raw_rows": 41127,
+        "rejections": {
+          "disconnected": 3086,
+          "parse_failure": 7,
+          "unsupported_element": 809
+        },
+        "scaffold_groups": 18651,
+        "target_mean": 0.03092008059100067,
+        "target_std": 0.17310121087747102,
+        "valid_rows_before_deduplication": 37225
+      },
+      "source": {
+        "filename": "HIV.csv",
+        "sha256": "9ffa7fe57dc86c342627ee1d5255e937e2ab812393c73c4d16c697022f6e1d22",
+        "smiles_column": "smiles",
+        "target_column": "HIV_active",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/HIV.csv"
+      },
+      "task": "classification",
+      "training_partition_overlap": {
+        "count": 27145,
+        "fraction_of_downstream": 0.729214237743452,
+        "identity_set_sha256": "042feebae031866d391156c7bbfa4a20a983426256702de2a5804c5738c38bfd"
+      },
+      "trajectory": [
+        {
+          "full_downstream_fraction_seen": 0.0944257891202149,
+          "global_step": 5000,
+          "seen_identity_set_sha256": "4d13d86ec0054a44732b5f995ba552cef852d878c620ae34ecec6ca2b5453e65",
+          "seen_training_overlap_molecules": 3515,
+          "training_overlap_fraction_seen": 0.12948977712285872
+        },
+        {
+          "full_downstream_fraction_seen": 0.1421356615177972,
+          "global_step": 7500,
+          "seen_identity_set_sha256": "766717fee67ed1f3ca17fb930dc4eb7abe6858a9fe1b9043bef2fee11eb741f1",
+          "seen_training_overlap_molecules": 5291,
+          "training_overlap_fraction_seen": 0.19491619082703998
+        },
+        {
+          "full_downstream_fraction_seen": 0.18906648757555405,
+          "global_step": 10000,
+          "seen_identity_set_sha256": "0102ffcef2c396aa8cab95bba969dea946cfd27ddeaf89c2663b629f9e981cad",
+          "seen_training_overlap_molecules": 7038,
+          "training_overlap_fraction_seen": 0.2592742678209615
+        },
+        {
+          "full_downstream_fraction_seen": 0.23607790463398254,
+          "global_step": 12500,
+          "seen_identity_set_sha256": "c262844997e887ab0858c67516452f9e599184d148688f86e00b08282a491180",
+          "seen_training_overlap_molecules": 8788,
+          "training_overlap_fraction_seen": 0.3237428624055996
+        },
+        {
+          "full_downstream_fraction_seen": 0.2846474143720618,
+          "global_step": 15000,
+          "seen_identity_set_sha256": "c517d5f42996a062467ba74fdd48dba1adfbe62a469ea8b2ea3c8f2c12fa9dc7",
+          "seen_training_overlap_molecules": 10596,
+          "training_overlap_fraction_seen": 0.39034813041075705
+        }
+      ]
+    },
+    "lipophilicity": {
+      "accepted_identity_set_sha256": "f06fb3be221673faaf03e151ba6bd6a8d2389b83e20eaef8d547645653aa2b1d",
+      "corpus_overlap": {
+        "count": 2513,
+        "fraction_of_downstream": 0.5986183897093854,
+        "identity_set_sha256": "49dc56c0015a3a2adea0a378ee12bcfd4f6ee5aafcbbdad67e8d939e940205c6"
+      },
+      "monotonic": true,
+      "post_filter_downstream_size": 4198,
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 4198,
+        "positive_fraction": null,
+        "raw_rows": 4200,
+        "rejections": {
+          "disconnected": 1,
+          "unsupported_element": 1
+        },
+        "scaffold_groups": 2410,
+        "target_mean": 2.185778942353502,
+        "target_std": 1.2028760202411162,
+        "valid_rows_before_deduplication": 4198
+      },
+      "source": {
+        "filename": "Lipophilicity.csv",
+        "sha256": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+        "smiles_column": "smiles",
+        "target_column": "exp",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/Lipophilicity.csv"
+      },
+      "task": "regression",
+      "training_partition_overlap": {
+        "count": 2493,
+        "fraction_of_downstream": 0.5938542162934731,
+        "identity_set_sha256": "021911ef334d4acdf91181db427bca8f193b38280b4c0b40e3a5300c04983b81"
+      },
+      "trajectory": [
+        {
+          "full_downstream_fraction_seen": 0.08313482610767033,
+          "global_step": 5000,
+          "seen_identity_set_sha256": "4ddad042b05f800b78980dfa0cccf8630a458371ef930c1110352328ce17fbb0",
+          "seen_training_overlap_molecules": 349,
+          "training_overlap_fraction_seen": 0.13999197753710388
+        },
+        {
+          "full_downstream_fraction_seen": 0.12005717008099095,
+          "global_step": 7500,
+          "seen_identity_set_sha256": "f27fb8b437339bac4855ba461c8629004cfc5561217e2f4e20840dd347b02f0c",
+          "seen_training_overlap_molecules": 504,
+          "training_overlap_fraction_seen": 0.20216606498194944
+        },
+        {
+          "full_downstream_fraction_seen": 0.16245831348261078,
+          "global_step": 10000,
+          "seen_identity_set_sha256": "d7eaf9d3767a7d6e1e000dc7d73b951cfcf3d2575abdd8063934dc4994a37a39",
+          "seen_training_overlap_molecules": 682,
+          "training_overlap_fraction_seen": 0.2735659847573205
+        },
+        {
+          "full_downstream_fraction_seen": 0.1993806574559314,
+          "global_step": 12500,
+          "seen_identity_set_sha256": "0a9cf9445ea76ea0d507c9231346824e47c807981eb952ed7186b1ebabb2351c",
+          "seen_training_overlap_molecules": 837,
+          "training_overlap_fraction_seen": 0.33574007220216606
+        },
+        {
+          "full_downstream_fraction_seen": 0.23558837541686517,
+          "global_step": 15000,
+          "seen_identity_set_sha256": "3738c30a86478e4864c313f39ad3b925364b2e2da0d9e74404bc6e3cbbcfe410",
+          "seen_training_overlap_molecules": 989,
+          "training_overlap_fraction_seen": 0.39671079021259525
+        }
+      ]
+    }
+  },
+  "embeddings_regenerated": false,
+  "identity_rule": "SHA-256 of canonical isomeric SMILES, with canonical-SMILES equality required after every corpus hash join.",
+  "presentation_definition": "A source molecular graph included in a completed optimizer batch before the checkpoint cursor; masked or corrupted internal views are not counted separately.",
+  "pretrained_model_executed": false,
+  "promoted_seed42_step10000_artifact_modified": false,
+  "promotion_criteria_modified": false,
+  "rank_partition_rule": "Training shard at manifest index i is assigned exclusively to rank i modulo world_size; shard and graph permutations reproduce InfiniteGraphBatchIterator.",
+  "runtime": {
+    "duckdb": "1.5.4",
+    "gmolai_retrain": "0.2.1",
+    "numpy": "1.26.4",
+    "platform": "Linux-5.14.0-687.31.1.el9_8.aarch64-aarch64-with-glibc2.39",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0"
+  },
+  "schema_version": 1,
+  "training_permitted": false,
+  "training_stream_seed": 42,
+  "validation": {
+    "all_checkpoint_cursors_cycle_zero": true,
+    "all_ranks_accounted_exactly": true,
+    "all_training_overlap_locations_resolved_once": true,
+    "canonical_hash_matching_collision_safe": true,
+    "checkpoint_cursors_monotonic": true,
+    "dataset_seen_sets_monotonic": true,
+    "identity_ledger": "artifacts/manuscript-rev4/downstream_checkpoint_exposure_identities.csv",
+    "identity_ledger_sha256": "aab745eb6283b86220267f33c37442e21ff5406a8296d33fa2c8836249c3f3ef",
+    "identity_pickle_bytes_read": 16380374136,
+    "no_double_counting": true,
+    "rank_shard_counts": [
+      6784,
+      6784,
+      6784,
+      6784
+    ],
+    "rank_shards_exclusive": true,
+    "summary_csv": "artifacts/manuscript-rev4/downstream_checkpoint_exposure.csv",
+    "summary_csv_sha256": "fbd1671851e13e3742ffadf2a4d164fd4645d87e7361b6b353866eb614c2ed8a",
+    "target_locations_resolved": 31848,
+    "target_training_identity_union": 31848,
+    "tensor_storage_members_loaded": false,
+    "training_graph_hashes_scanned": 221148895,
+    "training_shards_scanned": 27136
+  }
+}

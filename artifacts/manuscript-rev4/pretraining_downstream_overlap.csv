@@ -1,0 +1,7 @@
+dataset,raw_rows,accepted_unique_molecules,pretraining_corpus_overlap,pretraining_corpus_overlap_percent,pretraining_train_overlap,pretraining_validation_overlap,pretraining_test_overlap,not_in_pretraining_corpus
+bace,1513,1513,414,27.362855254461333,413,0,1,1099
+bbbp,2050,1860,1090,58.60215053763441,1080,4,6,770
+esol,1128,1116,969,86.82795698924731,964,3,2,147
+freesolv,642,639,526,82.31611893583725,524,1,1,113
+lipophilicity,4200,4198,2513,59.86183897093854,2493,11,9,1685
+hiv,41127,37225,27377,73.5446608462055,27145,129,103,9848

@@ -100,18 +100,34 @@ reproduces the five-step evidence generation. The 100k calibration, 10k probe
 training, and 50k probe-validation tensors are reproducible bulk intermediates
 and are deliberately not versioned.
 
-## Manuscript rev3 no-training controls
+## Manuscript rev4 no-training controls
 
-[`artifacts/manuscript-rev3/`](artifacts/manuscript-rev3/) contains the exact
-10k/15k DDP-cursor exposure audit, six-dataset canonical-identity overlap audit,
-and the model-free 13-descriptor downstream control. The descriptor artifact
-validates reconstructed 10k outer seeds/counts, records outer and inner
-identity-set hashes, and includes the original gMolAI/Morgan results alongside
-the new control. Stored pretraining descriptors and pinned-RDKit recomputations
-agreed for every overlapping molecule at the configured tolerances. The exposure
-audit deserializes the retained checkpoint mappings with PyTorch's restricted
-weights-only loader to read their DDP cursors; no model was instantiated or
-executed, and no training was performed.
+[`artifacts/manuscript-rev4/`](artifacts/manuscript-rev4/) contains the exact
+five-checkpoint DDP-cursor exposure audit, six-dataset canonical-identity overlap
+audit, model-free 13-descriptor downstream control, and publication-formatted
+rev4 manuscript. The rev3 bundle remains intact.
+
+The new checkpoint-resolved audit scans the identity metadata for all 27,136
+training graph shards (221,148,895 graph boundaries), reconstructs the exact
+rank-specific cycle-0 shard and within-shard order, and applies the exclusive
+cursor boundary at steps 5k, 7.5k, 10k, 12.5k, and 15k. Its compact CSV reports
+corpus overlap, training-partition overlap, exact seen counts, percentage of the
+full downstream dataset seen, and percentage of training overlaps seen for
+BACE, BBBP, ESOL, FreeSolv, Lipophilicity, and confirmatory HIV. The row-level
+ledger preserves canonical SMILES, SHA-256 identity, split, exact rank/shard/
+graph location, and every checkpoint seen flag. Canonical equality is checked
+alongside each digest, locations are unique, all four ranks are complete, and
+the audit loads no graph tensor storage.
+
+The descriptor artifact validates reconstructed 10k outer seeds/counts, records
+outer and inner identity-set hashes, and includes the original gMolAI/Morgan
+results alongside the new control. Stored pretraining descriptors and
+pinned-RDKit recomputations agreed for every overlapping molecule at the
+configured tolerances. Checkpoint mappings are deserialized with PyTorch's
+restricted weights-only loader solely to read DDP cursors; no model was
+instantiated or executed, no embeddings were regenerated, and no training was
+performed. The exact presentation history is descriptive context and does not
+by itself establish a causal effect on downstream performance.
 
 ## Compact training and validation record
 
