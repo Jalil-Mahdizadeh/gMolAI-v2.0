@@ -1,0 +1,301 @@
+{
+  "audit": "Exact canonical-molecule overlap with immutable pretraining corpus",
+  "dataset_manifest": {
+    "config_hash": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+    "descriptor_schema_hash": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+    "graphs": 223180699,
+    "manifest_hash": "4e3aa3b70b7808c5d2efcd891314c99a982766391cc48a383d9096af41fc2a1a",
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/dataset_manifest.json",
+    "sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "split_counts": {
+      "test": 1088766,
+      "train": 221148895,
+      "validation": 943038
+    }
+  },
+  "datasets": {
+    "bace": {
+      "accepted_identity_set_sha256": "f555c95157ea0f78a50b713c6fb8bc467c04b98943ed7e790479928e8d1c5626",
+      "overlap": {
+        "by_pretraining_split": {
+          "test": 1,
+          "train": 413,
+          "validation": 0
+        },
+        "by_pretraining_split_fraction": {
+          "test": 0.0006609385327164573,
+          "train": 0.2729676140118969,
+          "validation": 0.0
+        },
+        "identity_rule": "SHA-256 of canonical isomeric SMILES",
+        "not_in_pretraining_corpus": 1099,
+        "not_in_pretraining_corpus_fraction": 0.7263714474553866,
+        "pretraining_corpus": 414,
+        "pretraining_corpus_fraction": 0.2736285525446133
+      },
+      "overlap_identity_set_sha256": "54aee0dd3e14cfb56e129f12d1692de9d5df1dec19afa8cb4753e70211fc2afa",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 1513,
+        "positive_fraction": 0.456708526107072,
+        "raw_rows": 1513,
+        "rejections": {},
+        "scaffold_groups": 675,
+        "target_mean": 0.456708526107072,
+        "target_std": 0.4981223226158189,
+        "valid_rows_before_deduplication": 1513
+      },
+      "source": {
+        "filename": "bace.csv",
+        "sha256": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737",
+        "smiles_column": "mol",
+        "target_column": "Class",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/bace.csv"
+      },
+      "task": "classification"
+    },
+    "bbbp": {
+      "accepted_identity_set_sha256": "6ef53732472e7729c4e3edb77ece33facb5f5e37407ee1daadaaba0f66e822a3",
+      "overlap": {
+        "by_pretraining_split": {
+          "test": 6,
+          "train": 1080,
+          "validation": 4
+        },
+        "by_pretraining_split_fraction": {
+          "test": 0.0032258064516129032,
+          "train": 0.5806451612903226,
+          "validation": 0.002150537634408602
+        },
+        "identity_rule": "SHA-256 of canonical isomeric SMILES",
+        "not_in_pretraining_corpus": 770,
+        "not_in_pretraining_corpus_fraction": 0.41397849462365593,
+        "pretraining_corpus": 1090,
+        "pretraining_corpus_fraction": 0.5860215053763441
+      },
+      "overlap_identity_set_sha256": "a9ad58464fb5cc373efe29d98041ea76967cade119496c5dc19c9d5db3036782",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 20,
+        "duplicate_rows_collapsed": 64,
+        "molecules": 1860,
+        "positive_fraction": 0.7709677419354839,
+        "raw_rows": 2050,
+        "rejections": {
+          "disconnected": 105,
+          "parse_failure": 11
+        },
+        "scaffold_groups": 1062,
+        "target_mean": 0.7709677419354839,
+        "target_std": 0.4202100460845564,
+        "valid_rows_before_deduplication": 1934
+      },
+      "source": {
+        "filename": "BBBP.csv",
+        "sha256": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662",
+        "smiles_column": "smiles",
+        "target_column": "p_np",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/BBBP.csv"
+      },
+      "task": "classification"
+    },
+    "esol": {
+      "accepted_identity_set_sha256": "f966fd6429e67db24fd6c1fb15604eff694bc4d6abfcad50db1e375699aa3266",
+      "overlap": {
+        "by_pretraining_split": {
+          "test": 2,
+          "train": 964,
+          "validation": 3
+        },
+        "by_pretraining_split_fraction": {
+          "test": 0.0017921146953405018,
+          "train": 0.8637992831541219,
+          "validation": 0.002688172043010753
+        },
+        "identity_rule": "SHA-256 of canonical isomeric SMILES",
+        "not_in_pretraining_corpus": 147,
+        "not_in_pretraining_corpus_fraction": 0.13172043010752688,
+        "pretraining_corpus": 969,
+        "pretraining_corpus_fraction": 0.8682795698924731
+      },
+      "overlap_identity_set_sha256": "cba89ae13598538b4145c43023b7c275f91ba6ef343e9ca1d758fd3689792b57",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 11,
+        "molecules": 1116,
+        "positive_fraction": null,
+        "raw_rows": 1128,
+        "rejections": {
+          "too_few_atoms": 1
+        },
+        "scaffold_groups": 581,
+        "target_mean": -3.0519847670250897,
+        "target_std": 2.094467457986315,
+        "valid_rows_before_deduplication": 1127
+      },
+      "source": {
+        "filename": "delaney-processed.csv",
+        "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189",
+        "smiles_column": "smiles",
+        "target_column": "measured log solubility in mols per litre",
+        "url": "https://raw.githubusercontent.com/deepchem/deepchem/master/datasets/delaney-processed.csv"
+      },
+      "task": "regression"
+    },
+    "freesolv": {
+      "accepted_identity_set_sha256": "2a2f87bbf6ef1d9bda5200644b0c837a0973bc641d65bb493e70373768642db2",
+      "overlap": {
+        "by_pretraining_split": {
+          "test": 1,
+          "train": 524,
+          "validation": 1
+        },
+        "by_pretraining_split_fraction": {
+          "test": 0.001564945226917058,
+          "train": 0.8200312989045383,
+          "validation": 0.001564945226917058
+        },
+        "identity_rule": "SHA-256 of canonical isomeric SMILES",
+        "not_in_pretraining_corpus": 113,
+        "not_in_pretraining_corpus_fraction": 0.17683881064162754,
+        "pretraining_corpus": 526,
+        "pretraining_corpus_fraction": 0.8231611893583725
+      },
+      "overlap_identity_set_sha256": "22a1a3ce316fa07254b7d5be0d95b9c3e80950a4b87acfa076e76ceccc1fc80c",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 639,
+        "positive_fraction": null,
+        "raw_rows": 642,
+        "rejections": {
+          "too_few_atoms": 3
+        },
+        "scaffold_groups": 376,
+        "target_mean": -3.8161815336463225,
+        "target_std": 3.8449639202000605,
+        "valid_rows_before_deduplication": 639
+      },
+      "source": {
+        "filename": "SAMPL.csv",
+        "sha256": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72",
+        "smiles_column": "smiles",
+        "target_column": "expt",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/SAMPL.csv"
+      },
+      "task": "regression"
+    },
+    "hiv": {
+      "accepted_identity_set_sha256": "824a1f76864430298fbf7c258e68c3541ac4a293129351fc7520e2ab2e1e71cd",
+      "overlap": {
+        "by_pretraining_split": {
+          "test": 103,
+          "train": 27145,
+          "validation": 129
+        },
+        "by_pretraining_split_fraction": {
+          "test": 0.002766957689724647,
+          "train": 0.729214237743452,
+          "validation": 0.003465413028878442
+        },
+        "identity_rule": "SHA-256 of canonical isomeric SMILES",
+        "not_in_pretraining_corpus": 9848,
+        "not_in_pretraining_corpus_fraction": 0.26455339153794494,
+        "pretraining_corpus": 27377,
+        "pretraining_corpus_fraction": 0.7354466084620551
+      },
+      "overlap_identity_set_sha256": "417ba290a0d8b0343171a822053a28b24bf8a48401b1008d34835ac26c17284f",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 37225,
+        "positive_fraction": 0.03092008059100067,
+        "raw_rows": 41127,
+        "rejections": {
+          "disconnected": 3086,
+          "parse_failure": 7,
+          "unsupported_element": 809
+        },
+        "scaffold_groups": 18651,
+        "target_mean": 0.03092008059100067,
+        "target_std": 0.17310121087747102,
+        "valid_rows_before_deduplication": 37225
+      },
+      "source": {
+        "filename": "HIV.csv",
+        "sha256": "9ffa7fe57dc86c342627ee1d5255e937e2ab812393c73c4d16c697022f6e1d22",
+        "smiles_column": "smiles",
+        "target_column": "HIV_active",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/HIV.csv"
+      },
+      "task": "classification"
+    },
+    "lipophilicity": {
+      "accepted_identity_set_sha256": "f06fb3be221673faaf03e151ba6bd6a8d2389b83e20eaef8d547645653aa2b1d",
+      "overlap": {
+        "by_pretraining_split": {
+          "test": 9,
+          "train": 2493,
+          "validation": 11
+        },
+        "by_pretraining_split_fraction": {
+          "test": 0.0021438780371605525,
+          "train": 0.5938542162934731,
+          "validation": 0.0026202953787517864
+        },
+        "identity_rule": "SHA-256 of canonical isomeric SMILES",
+        "not_in_pretraining_corpus": 1685,
+        "not_in_pretraining_corpus_fraction": 0.4013816102906146,
+        "pretraining_corpus": 2513,
+        "pretraining_corpus_fraction": 0.5986183897093854
+      },
+      "overlap_identity_set_sha256": "49dc56c0015a3a2adea0a378ee12bcfd4f6ee5aafcbbdad67e8d939e940205c6",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 4198,
+        "positive_fraction": null,
+        "raw_rows": 4200,
+        "rejections": {
+          "disconnected": 1,
+          "unsupported_element": 1
+        },
+        "scaffold_groups": 2410,
+        "target_mean": 2.185778942353502,
+        "target_std": 1.2028760202411162,
+        "valid_rows_before_deduplication": 4198
+      },
+      "source": {
+        "filename": "Lipophilicity.csv",
+        "sha256": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd",
+        "smiles_column": "smiles",
+        "target_column": "exp",
+        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/Lipophilicity.csv"
+      },
+      "task": "regression"
+    }
+  },
+  "datasets_requested": [
+    "bace",
+    "bbbp",
+    "esol",
+    "freesolv",
+    "lipophilicity",
+    "hiv"
+  ],
+  "identity_rule": "SHA-256 of canonical isomeric SMILES after the pinned downstream policy",
+  "pretrained_model_executed": false,
+  "runtime": {
+    "duckdb": "1.5.4",
+    "gmolai_retrain": "0.2.1",
+    "numpy": "1.26.4",
+    "platform": "Linux-5.14.0-687.31.1.el9_8.aarch64-aarch64-with-glibc2.39",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "scikit_learn": "1.5.0",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0"
+  },
+  "schema_version": 1
+}

@@ -429,6 +429,8 @@ def _validate_promotion_quality(
         }
 
     clustering = probe.get("clustering", {})
+    # These legacy keys name historical artifacts; probes.py uses ordinary
+    # Euclidean KMeans after row L2 normalization, not spherical K-means.
     latent_ari = clustering.get("latent_spherical_kmeans", {}).get(
         "adjusted_rand_index"
     )

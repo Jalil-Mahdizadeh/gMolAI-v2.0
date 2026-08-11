@@ -15,9 +15,9 @@
     "semantic_hash": "9aec9f0babf5754ed96dbc80b24bdec3"
   },
   "pyproject.toml": {
-    "mtime": 1786323587.0,
-    "ast_hash": "b5c70be88450fb97f3b122faf62f363e",
-    "semantic_hash": "b5c70be88450fb97f3b122faf62f363e"
+    "mtime": 1786476882.0,
+    "ast_hash": "f8ac2bd18d6fe1106e1b77caf4271395",
+    "semantic_hash": ""
   },
   "slurm/common.sh": {
     "mtime": 1786318107.0,
@@ -55,9 +55,9 @@
     "semantic_hash": "5dcd16a945ad2ada04a21223f38576aa"
   },
   "src/gmolai_retrain/cli.py": {
-    "mtime": 1786359494.0,
-    "ast_hash": "ebff3a1b6dde2e88db498c4b1240b4db",
-    "semantic_hash": "ebff3a1b6dde2e88db498c4b1240b4db"
+    "mtime": 1786475422.0,
+    "ast_hash": "8000dbd8053c0d92e780da207d2f7e8f",
+    "semantic_hash": ""
   },
   "src/gmolai_retrain/config.py": {
     "mtime": 1786340819.0,
@@ -75,9 +75,9 @@
     "semantic_hash": "20047d45209bae2433d18596110b905d"
   },
   "src/gmolai_retrain/downstream.py": {
-    "mtime": 1786359569.0,
-    "ast_hash": "29af997086704c83c04156ce31e64282",
-    "semantic_hash": "29af997086704c83c04156ce31e64282"
+    "mtime": 1786475826.0,
+    "ast_hash": "d2be41556b573fe2e00f5ab043a4c194",
+    "semantic_hash": ""
   },
   "src/gmolai_retrain/graph_shards.py": {
     "mtime": 1786030960.0,
@@ -100,14 +100,14 @@
     "semantic_hash": "9d66f3229bb8210e3fa3752034857e29"
   },
   "src/gmolai_retrain/probes.py": {
-    "mtime": 1786348351.0,
-    "ast_hash": "1b2d616c9e6683d65545876fdfccffa3",
-    "semantic_hash": "1b2d616c9e6683d65545876fdfccffa3"
+    "mtime": 1786475826.0,
+    "ast_hash": "44a68d2a43d156fca65938b771d0cdf0",
+    "semantic_hash": ""
   },
   "src/gmolai_retrain/representations.py": {
-    "mtime": 1786359038.0,
-    "ast_hash": "36b513add4460340d0f5a18d563ff0a8",
-    "semantic_hash": "36b513add4460340d0f5a18d563ff0a8"
+    "mtime": 1786475826.0,
+    "ast_hash": "307aa083abbd37554b333644c704c8ae",
+    "semantic_hash": ""
   },
   "src/gmolai_retrain/schema.py": {
     "mtime": 1786030784.0,
@@ -120,9 +120,9 @@
     "semantic_hash": "23dc0c9bb7b559373e8bad47f57d1cfb"
   },
   "src/gmolai_retrain/util.py": {
-    "mtime": 1786259425.0,
-    "ast_hash": "2d8b41698dcd2bc8a0bed458dec21fd9",
-    "semantic_hash": "2d8b41698dcd2bc8a0bed458dec21fd9"
+    "mtime": 1786478143.0,
+    "ast_hash": "d5fd25d7413464019a8411cb5d28ade1",
+    "semantic_hash": ""
   },
   "tests/benchmark_negative_sampling.py": {
     "mtime": 1786263589.0,
@@ -180,24 +180,24 @@
     "semantic_hash": "c9103b9781c6250de5e576ebea791013"
   },
   "AUDIT_RESPONSE.md": {
-    "mtime": 1786454082.0,
-    "ast_hash": "93383def2d07817e50bf56412acdeb88",
-    "semantic_hash": "93383def2d07817e50bf56412acdeb88"
+    "mtime": 1786477316.0,
+    "ast_hash": "bd25f311d918337dbc01ec79438b52ee",
+    "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786454082.0,
-    "ast_hash": "57a61d28439211a007b56cf36da865c3",
-    "semantic_hash": "57a61d28439211a007b56cf36da865c3"
+    "mtime": 1786477732.0,
+    "ast_hash": "4f15d1382eff7d8ecbc19dc7446271f1",
+    "semantic_hash": ""
   },
   "REPRESENTATION_REPAIR.md": {
-    "mtime": 1786454082.0,
-    "ast_hash": "dc951a362abdd5686b0bcfd7a91b465d",
-    "semantic_hash": "dc951a362abdd5686b0bcfd7a91b465d"
+    "mtime": 1786476046.0,
+    "ast_hash": "ad08d8bcbb2f180e592d41587dcf87ef",
+    "semantic_hash": ""
   },
   "REVIEW_ARTIFACTS.md": {
-    "mtime": 1786454082.0,
-    "ast_hash": "d5a129c5fc01ec1fa9a16b01b7a0d4e0",
-    "semantic_hash": "d5a129c5fc01ec1fa9a16b01b7a0d4e0"
+    "mtime": 1786477732.0,
+    "ast_hash": "dc0a02fd7dc9f8a4aafa2a0b349689dc",
+    "semantic_hash": ""
   },
   "configs/descriptors.yaml": {
     "mtime": 1786043626.0,
@@ -410,9 +410,9 @@
     "semantic_hash": "34142a64a8b46e5b25854f920c1a0dd3"
   },
   "scripts/summarize_promotion_trajectory.py": {
-    "mtime": 1786450316.0,
-    "ast_hash": "059dcccefae7ba4218ff7c9e5ad380cb",
-    "semantic_hash": "059dcccefae7ba4218ff7c9e5ad380cb"
+    "mtime": 1786475866.0,
+    "ast_hash": "856d899ebb09c107f03f48f3ea41311e",
+    "semantic_hash": ""
   },
   "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md": {
     "mtime": 1786438726.0,
@@ -443,5 +443,55 @@
     "mtime": 1786450530.0,
     "ast_hash": "ef3a6dfe35bf6a9727a0286fa2429870",
     "semantic_hash": "ef3a6dfe35bf6a9727a0286fa2429870"
+  },
+  "artifacts/manuscript-rev3/artifact_manifest.json": {
+    "mtime": 1786478201.0,
+    "ast_hash": "41273596629aab37b3603a9d4402cc7f",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev3/descriptor_only_control.json": {
+    "mtime": 1786475642.0,
+    "ast_hash": "b64ef8a3f02578c60ad293202ba4285b",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev3/pretraining_downstream_overlap.json": {
+    "mtime": 1786475531.0,
+    "ast_hash": "aee76ee9519ace2a1d4129a1256f40c2",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev3/promotion_criteria_chronology.json": {
+    "mtime": 1786477200.0,
+    "ast_hash": "c80d8749f71680fb5887b602c79a3681",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev3/training_exposure_seed42.json": {
+    "mtime": 1786476655.0,
+    "ast_hash": "4270ee92545bdfcee4fc33aa580d124f",
+    "semantic_hash": ""
+  },
+  "scripts/update_manuscript_rev3.py": {
+    "mtime": 1786477255.0,
+    "ast_hash": "a4e98c972ead6bfc834ba0a8b560679c",
+    "semantic_hash": ""
+  },
+  "src/gmolai_retrain/downstream_audit.py": {
+    "mtime": 1786477939.0,
+    "ast_hash": "1fdba486c3523dbd546650b856205a80",
+    "semantic_hash": ""
+  },
+  "src/gmolai_retrain/exposure.py": {
+    "mtime": 1786477890.0,
+    "ast_hash": "a3a8526541e83c32ca139060974fe268",
+    "semantic_hash": ""
+  },
+  "tests/test_downstream_audit.py": {
+    "mtime": 1786478186.0,
+    "ast_hash": "cdea2d7b24a7f0b38cb336831fc86db0",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev3/README.md": {
+    "mtime": 1786477316.0,
+    "ast_hash": "7ad21e64e13ee65d50e134f2e884b727",
+    "semantic_hash": ""
   }
 }

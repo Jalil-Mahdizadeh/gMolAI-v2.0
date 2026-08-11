@@ -1,0 +1,185 @@
+{
+  "audit": "Exact seed-42 training exposure from serialized DDP cursors",
+  "checkpoints": [
+    {
+      "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "completed_one_full_corpus_pass": false,
+      "completed_one_training_partition_pass": false,
+      "full_corpus_fraction_presented": 0.25765787658905037,
+      "global_step": 10000,
+      "rank_accounting": [
+        {
+          "completed_shards_in_current_cycle": 1760,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0142/train/shard-00016.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 7532,
+            "shard_position": 1760
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 0,
+          "total_presentations": 14425452,
+          "unique_graphs_presented": 14425452
+        },
+        {
+          "completed_shards_in_current_cycle": 1770,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0255/train/shard-00087.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 2478,
+            "shard_position": 1770
+          },
+          "local_population": 54997218,
+          "local_shards": 6784,
+          "rank": 1,
+          "total_presentations": 14325085,
+          "unique_graphs_presented": 14325085
+        },
+        {
+          "completed_shards_in_current_cycle": 1762,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0083/train/shard-00024.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 83,
+            "shard_position": 1762
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 2,
+          "total_presentations": 14434387,
+          "unique_graphs_presented": 14434387
+        },
+        {
+          "completed_shards_in_current_cycle": 1764,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0169/train/shard-00081.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 1061,
+            "shard_position": 1764
+          },
+          "local_population": 55002621,
+          "local_shards": 6784,
+          "rank": 3,
+          "total_presentations": 14319341,
+          "unique_graphs_presented": 14319341
+        }
+      ],
+      "repeated_training_graph_presentations": 0,
+      "training_graph_presentations": 57504265,
+      "training_partition_fraction_presented": 0.26002510661425643,
+      "unique_training_graphs_presented": 57504265,
+      "world_size": 4
+    },
+    {
+      "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000015000.pt",
+      "checkpoint_sha256": "277f9da1b3531a486fa8211d21d9a0f6a4bd8a5258355eb5b0cf13a1de274fe4",
+      "completed_one_full_corpus_pass": false,
+      "completed_one_training_partition_pass": false,
+      "full_corpus_fraction_presented": 0.38639556371315065,
+      "global_step": 15000,
+      "rank_accounting": [
+        {
+          "completed_shards_in_current_cycle": 2642,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0036/train/shard-00080.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 793,
+            "shard_position": 2642
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 0,
+          "total_presentations": 21644057,
+          "unique_graphs_presented": 21644057
+        },
+        {
+          "completed_shards_in_current_cycle": 2653,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0036/train/shard-00001.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 2539,
+            "shard_position": 2653
+          },
+          "local_population": 54997218,
+          "local_shards": 6784,
+          "rank": 1,
+          "total_presentations": 21472251,
+          "unique_graphs_presented": 21472251
+        },
+        {
+          "completed_shards_in_current_cycle": 2642,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0188/train/shard-00082.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 2267,
+            "shard_position": 2642
+          },
+          "local_population": 55574528,
+          "local_shards": 6784,
+          "rank": 2,
+          "total_presentations": 21645531,
+          "unique_graphs_presented": 21645531
+        },
+        {
+          "completed_shards_in_current_cycle": 2644,
+          "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0231/train/shard-00077.pt",
+          "current_shard_graphs": 8192,
+          "cursor": {
+            "cycle": 0,
+            "graph_position": 1649,
+            "shard_position": 2644
+          },
+          "local_population": 55002621,
+          "local_shards": 6784,
+          "rank": 3,
+          "total_presentations": 21474193,
+          "unique_graphs_presented": 21474193
+        }
+      ],
+      "repeated_training_graph_presentations": 0,
+      "training_graph_presentations": 86236032,
+      "training_partition_fraction_presented": 0.3899455703814392,
+      "unique_training_graphs_presented": 86236032,
+      "world_size": 4
+    }
+  ],
+  "corpus": {
+    "dataset_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/dataset_manifest.json",
+    "dataset_manifest_hash": "4e3aa3b70b7808c5d2efcd891314c99a982766391cc48a383d9096af41fc2a1a",
+    "dataset_manifest_sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "graph_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graph_manifest.json",
+    "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+    "graph_manifest_sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+    "graphs": 223180699,
+    "test": 1088766,
+    "training": 221148895,
+    "validation": 943038
+  },
+  "counting_rule": "For each rank: completed cycles times the exclusive local population, plus graph counts in completed shards of the current deterministic shuffle, plus graph_position in the current shard.",
+  "presentation_definition": "One source molecular graph consumed into one rank's optimizer batch; masked or corrupted internal views are not counted separately.",
+  "pretrained_model_executed": false,
+  "rank_partition_rule": "Training shards at manifest index i are assigned to rank i modulo world_size.",
+  "runtime": {
+    "duckdb": "1.5.4",
+    "gmolai_retrain": "0.2.1",
+    "numpy": "1.26.4",
+    "platform": "Linux-5.14.0-687.31.1.el9_8.aarch64-aarch64-with-glibc2.39",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0"
+  },
+  "schema_version": 1,
+  "training_permitted": false,
+  "training_stream_seed": 42
+}

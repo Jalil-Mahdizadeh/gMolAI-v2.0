@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
 import os
@@ -27,6 +28,32 @@ def atomic_write_json(path: str | Path, value: Any) -> None:
             handle.flush()
             os.fsync(handle.fileno())
         os.replace(temporary, path)
+    except BaseException:
+        try:
+            os.unlink(temporary)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def atomic_write_csv(path: str | Path, rows: list[dict[str, Any]]) -> None:
+    if not rows:
+        raise ValueError("Cannot write an empty CSV artifact")
+    destination = Path(path)
+    ensure_directory(destination.parent)
+    fd, temporary = tempfile.mkstemp(
+        prefix=f".{destination.name}.", suffix=".tmp", dir=destination.parent
+    )
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(
+                handle, fieldnames=list(rows[0]), lineterminator="\n"
+            )
+            writer.writeheader()
+            writer.writerows(rows)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, destination)
     except BaseException:
         try:
             os.unlink(temporary)

@@ -359,11 +359,41 @@ The completed seed-42 sweep passed all 105 protocol, identity, completeness,
 and validator-consistency checks at every step. Only step 10k passed all 17
 quality criteria. Step 5k failed effective rank and FreeSolv; steps 7.5k,
 12.5k, and 15k failed only FreeSolv (RMSE 1.37227, 1.32289, and 1.30346,
-respectively, against the predeclared maximum of 1.30). Thus the later 15k
+respectively, against the frozen maximum of 1.30). Thus the later 15k
 checkpoint is close but is not promotable under the frozen fail-closed gate.
 The compact results and audit are tracked under
 `$GMOLAI_RUN_DIR/promotion-trajectory-table5-rev1/`; bulk embedding and
 calibration tensors remain excluded from Git.
+
+### No-training manuscript rev3 audits
+
+Three CPU-only audit commands now preserve the manuscript-relevant evidence
+without instantiating or executing the pretrained model or starting training.
+The exposure command deserializes the retained checkpoint mappings with PyTorch's
+restricted weights-only loader solely to read their DDP cursors:
+
+- `audit-training-exposure` reconstructs per-rank graph presentations from the
+  serialized DDP cursors. The seed-42 stream consumed 57,504,265 unique training
+  graphs by step 10k and 86,236,032 by step 15k (26.00% and 38.99% of the
+  221,148,895-graph training partition); neither completed one pass.
+- `audit-downstream-overlap` joins canonical SHA-256 identities for BACE, BBBP,
+  ESOL, FreeSolv, Lipophilicity, and HIV against the immutable 223,180,699-row
+  deduplicated corpus and reports overlap by pretraining split.
+- `benchmark-descriptor-control` evaluates the frozen 13 auxiliary descriptors
+  with the exact downstream preparation, accepted outer seeds, inner group
+  folds, fold-local scaling, estimators, grids, and metrics used by the selected
+  10k gMolAI/Morgan panel. It never loads a checkpoint.
+
+The complete methods, commands, compact CSVs, machine-readable provenance, and
+bounded interpretation are tracked in
+[`artifacts/manuscript-rev3/`](artifacts/manuscript-rev3/). In particular, the
+13 descriptors explain much of the mean gMolAI-versus-Morgan RMSE gap on ESOL
+and FreeSolv but not on Lipophilicity; gMolAI remains numerically better than the
+descriptor-only control on all five development tasks. These comparisons are
+descriptive, not causal decompositions. The publication-formatted rev3 manuscript
+is tracked with those artifacts and can be rebuilt from the retained sibling
+`manuscript/gmolai-rev2.docx` using `scripts/update_manuscript_rev3.py` and the
+`manuscript` optional dependency.
 
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both

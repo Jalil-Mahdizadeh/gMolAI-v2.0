@@ -1,49 +1,60 @@
-# Graph Report - .  (2026-08-11)
+# Graph Report - gMolAI-retrain  (2026-08-11)
 
 ## Corpus Check
-- 11 files · ~43,692 words
+- 58 files · ~62,664 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 649 nodes · 1687 edges · 22 communities (17 shown, 5 thin omitted)
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 170 edges (avg confidence: 0.77)
+- 713 nodes · 1916 edges · 28 communities (23 shown, 5 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 197 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
+## Graph Freshness
+- Built from commit: `a2934b23`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
 ## Community Hubs (Navigation)
-- Training Losses and Checkpoints
-- Evaluation and Promotion
-- CLI Configuration and Tests
-- Audit and Selection Evidence
-- Preprocessing and Graph Shards
-- Objective Ablation Configs
-- Research and Manuscript Memory
-- Molecular Representation Models
-- Deterministic Data Loading
-- Dataset and Inference Contract
-- Pilot and Projector Plans
-- Production CSV Inference
-- Schemas and Model Tests
-- Semantic Representation Probes
-- Negative Sampling
-- Promotion Trajectory Audit
-- Container Runtime Helpers
-- Descriptor Schema
-- Container Benchmark Runner
-- Screening Training Config
-- Slurm Pipeline Submission
-- Package Entry Point
+- train.py
+- ValueError
+- cli.py
+- Audit Disposition and Retraining Corrections
+- atomic_write_json
+- Representation V1 Training Overlay
+- Full Promotion Evaluation
+- model.py
+- data.py
+- Combined ZINC-PubChem Retraining Configuration
+- Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers)
+- generate_embeddings.py
+- RuntimeError
+- run_representation_probes
+- build
+- audit_step
+- common.sh
+- Descriptor Schema Configuration
+- run_benchmark_in_container.sh
+- Representation Screening Configuration (5k steps, frequent validation, no resume)
+- submit_pipeline.sh
+- gmolai-retrain
+- sample_per_graph_negatives
+- Manuscript rev3 audit artifacts
+- MolecularRepresentationModel
+- MolecularVGAE
+- _TrainingBatchPrefetcher
+- checkpoint.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `train()` - 36 edges
-2. `MolecularRepresentationModel` - 28 edges
-3. `build_parser()` - 25 edges
-4. `benchmark_moleculenet()` - 25 edges
-5. `atomic_write_json()` - 25 edges
+2. `atomic_write_json()` - 30 edges
+3. `build_parser()` - 29 edges
+4. `MolecularRepresentationModel` - 29 edges
+5. `benchmark_moleculenet()` - 25 edges
 6. `Representation V1 Training Overlay` - 25 edges
-7. `export_embeddings()` - 20 edges
-8. `_load()` - 19 edges
-9. `load_saved_model()` - 19 edges
-10. `evaluate()` - 19 edges
+7. `benchmark_descriptor_control()` - 23 edges
+8. `_load()` - 22 edges
+9. `_print()` - 21 edges
+10. `export_embeddings()` - 20 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Training-Time Molecule Acceptance Policy` --semantically_similar_to--> `Molecular Canonicalization Policy`  [INFERRED] [semantically similar]
@@ -73,95 +84,124 @@
 - **384-Dimensional Embedding Composition** — configs_representation_v1_dual_latent_spaces, inference_readme_vector_definition, inference_readme_promoted_384_dimensional_vector [INFERRED 0.95]
 - **Training-to-Inference Molecule Policy Continuity** — configs_retrain_molecular_canonicalization_policy, inference_readme_molecule_acceptance_policy, inference_readme_row_stable_rejection_policy [INFERRED 0.95]
 
-## Communities (22 total, 5 thin omitted)
+## Communities (28 total, 5 thin omitted)
 
-### Community 0 - "Training Losses and Checkpoints"
-Cohesion: 0.07
-Nodes (67): DistributedDataParallel, Future, Optimizer, build_checkpoint(), capture_rng_state(), gather_rank_objects(), Any, Module (+59 more)
+### Community 0 - "train.py"
+Cohesion: 0.18
+Nodes (27): _all_reduce_mean(), _architecture(), _balanced_existence_loss(), _binary_histogram_metrics(), _build_model(), _covariance_diagnostics(), _distributed_context(), evaluate() (+19 more)
 
-### Community 1 - "Evaluation and Promotion"
+### Community 1 - "ValueError"
+Cohesion: 0.20
+Nodes (29): atomic_copy(), atomic_torch_save(), Path, _automatic_checkpoint_name(), _automatic_representation_calibrator(), _calibrator_expected_identity(), _check_gate(), export_embeddings() (+21 more)
+
+### Community 2 - "cli.py"
 Cohesion: 0.09
-Nodes (61): RuntimeError, atomic_copy(), atomic_torch_save(), Path, _feature_factory(), featurize_molecule(), _hydrogen_bond_flags(), _position_encoding() (+53 more)
+Nodes (56): _apply_run_directory(), _apply_training_budgets(), build_parser(), command_audit_downstream_overlap(), command_audit_training_exposure(), command_benchmark_descriptor_control(), command_benchmark_downstream(), command_benchmark_training() (+48 more)
 
-### Community 2 - "CLI Configuration and Tests"
-Cohesion: 0.10
-Nodes (47): _apply_run_directory(), _apply_training_budgets(), build_parser(), command_benchmark_downstream(), command_benchmark_training(), command_canonicalize(), command_check_config(), command_deduplicate() (+39 more)
-
-### Community 3 - "Audit and Selection Evidence"
+### Community 3 - "Audit Disposition and Retraining Corrections"
 Cohesion: 0.06
 Nodes (57): Atomic Exact Resume Contract, Audit Disposition and Retraining Corrections, Molecular Encoder Capability Boundary, Exact-Denominator Distributed Validation, Explicit 13-Descriptor Contract, Fail-Closed Representation Promotion, Numerical GPU Reproducibility, Per-Graph Negative Sampling (+49 more)
 
-### Community 4 - "Preprocessing and Graph Shards"
-Cohesion: 0.10
-Nodes (42): Schema, canonicalize(), CanonicalMolecule, _one_hot(), Any, descriptor_names(), deduplicate_bucket(), finalize_dataset() (+34 more)
+### Community 4 - "atomic_write_json"
+Cohesion: 0.06
+Nodes (67): Schema, canonicalize(), CanonicalMolecule, _feature_factory(), featurize_molecule(), _hydrogen_bond_flags(), _one_hot(), _position_encoding() (+59 more)
 
-### Community 5 - "Objective Ablation Configs"
+### Community 5 - "Representation V1 Training Overlay"
 Cohesion: 0.05
 Nodes (45): Representation 128d Configuration, 128-Dimensional Graph Latent Space, Representation Contrastive 0.02 Configuration, NT-Xent Weight 0.02, Representation Contrastive 0.05 Configuration, NT-Xent Weight 0.05, Representation Contrastive 0.10 Configuration, NT-Xent Weight 0.10 (+37 more)
 
-### Community 6 - "Research and Manuscript Memory"
+### Community 6 - "Full Promotion Evaluation"
 Cohesion: 0.07
 Nodes (41): Cosine-Tanimoto Spearman Sampling Protocol, Manuscript Accuracy Audit, Manuscript Wording and Units Corrections, Per-Fold StandardScaler Interpretation, Seed-42 ESOL Rounding, Seed-43 Calibration Protocol, Separate Edge Decoder MLPs, Table 1 Raw Hybrid Vector Protocol (+33 more)
 
-### Community 7 - "Molecular Representation Models"
-Cohesion: 0.09
-Nodes (16): DeterministicGINEEncoder, GraphConditionedEdgeDecoder, MolecularRepresentationModel, Any, Tensor, A deterministic atom encoder for transferable molecular representations., Decode an unordered atom pair while forcing use of its graph embedding., Masked graph autoencoder with an explicit deterministic molecule vector. Every… (+8 more)
+### Community 7 - "model.py"
+Cohesion: 0.13
+Nodes (13): corrupt_graph_inputs(), CorruptedGraph, DeterministicGINEEncoder, GraphConditionedEdgeDecoder, grouped_feature_loss(), kl_divergence(), Any, A deterministic atom encoder for transferable molecular representations. (+5 more)
 
-### Community 8 - "Deterministic Data Loading"
+### Community 8 - "data.py"
 Cohesion: 0.12
-Nodes (25): Batch, Data, _balanced_allocation(), finite_batches(), _finite_shard_plan(), _finite_shard_window_plan(), graph_from_shard(), InfiniteGraphBatchIterator (+17 more)
+Nodes (26): Batch, Data, _balanced_allocation(), finite_batches(), _finite_shard_plan(), _finite_shard_window_plan(), graph_from_shard(), InfiniteGraphBatchIterator (+18 more)
 
-### Community 9 - "Dataset and Inference Contract"
+### Community 9 - "Combined ZINC-PubChem Retraining Configuration"
 Cohesion: 0.10
 Nodes (31): Bemis-Murcko Scaffold Hash Split, Node-Budgeted 500,000-Step Retraining Schedule, Canonical Isomeric SMILES Deduplication, Combined ZINC-PubChem Dataset, Combined ZINC-PubChem Retraining Configuration, Thirteen-Column Descriptor Schema, Four-Layer GINE Latent Model, 8,192-Graph Sharding (+23 more)
 
-### Community 10 - "Pilot and Projector Plans"
+### Community 10 - "Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers)"
 Cohesion: 0.15
 Nodes (29): Pilot Contrastive 0.005 Configuration, Low-Contrastive Pilot, Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers), Pilot Projector Contrastive Configuration (weight 0.01), Pilot Projector Contrastive Configuration (weight 0.01, descriptor weight 0.50, 15k steps), Projector-Space Contrastive Masked-Graph Objective with VICReg Terms Disabled, Pilot Projector Contrastive Configuration (weight 0.01, seed 43), Pilot Projector Contrastive Configuration (weight 0.02) (+21 more)
 
-### Community 11 - "Production CSV Inference"
+### Community 11 - "generate_embeddings.py"
 Cohesion: 0.16
 Nodes (27): build_parser(), canonicalize_input(), encode_batch(), fsync_text_handle(), InferenceError, load_json_object(), load_model_bundle(), main() (+19 more)
 
-### Community 12 - "Schemas and Model Tests"
-Cohesion: 0.11
-Nodes (25): categorical_width(), dimensions(), feature_schema(), FeatureDimensions, canonical(), test_explicit_feature_dimensions_and_bidirectional_edges(), test_stereochemistry_is_retained_and_fragments_rejected(), Tensor (+17 more)
+### Community 12 - "RuntimeError"
+Cohesion: 0.09
+Nodes (62): RuntimeError, descriptor_names(), audit_pretraining_overlap(), benchmark_descriptor_control(), _dataset_source(), _descriptor_matrix(), _groups_digest(), _identity_digest() (+54 more)
 
-### Community 13 - "Semantic Representation Probes"
+### Community 13 - "run_representation_probes"
 Cohesion: 0.27
 Nodes (17): _chemical_records(), _embedding_diagnostics(), _held_out_values(), _load_embedding_payload(), _molecules_and_labels(), Any, Mol, ndarray (+9 more)
 
-### Community 14 - "Negative Sampling"
-Cohesion: 0.20
-Nodes (14): assert_valid_candidates(), _edge_tensor(), _pair_template(), ndarray, Tensor, Return lexicographic upper-triangle pairs for a graph size., Sample unique undirected negatives independently inside each graph. Easy…, sample_per_graph_negatives() (+6 more)
+### Community 14 - "build"
+Cohesion: 0.28
+Nodes (15): Paragraph, build(), find_paragraph(), fmt(), insert_after(), load_json(), metric_summary(), parse_args() (+7 more)
 
-### Community 15 - "Promotion Trajectory Audit"
+### Community 15 - "audit_step"
 Cohesion: 0.44
-Nodes (11): Any, Path, add_check(), audit_step(), finite_number(), format_number(), main(), nested() (+3 more)
+Nodes (11): add_check(), audit_step(), finite_number(), format_number(), main(), nested(), Any, Path (+3 more)
 
-### Community 17 - "Descriptor Schema"
+### Community 17 - "Descriptor Schema Configuration"
 Cohesion: 0.67
 Nodes (3): Descriptor Schema Configuration, Thirteen Molecular Descriptor Targets, Train-Split Descriptor Standardization
 
+### Community 22 - "sample_per_graph_negatives"
+Cohesion: 0.20
+Nodes (14): assert_valid_candidates(), _edge_tensor(), _pair_template(), ndarray, Tensor, Return lexicographic upper-triangle pairs for a graph size., Sample unique undirected negatives independently inside each graph. Easy…, sample_per_graph_negatives() (+6 more)
+
+### Community 23 - "Manuscript rev3 audit artifacts"
+Cohesion: 0.29
+Nodes (6): Exact downstream/pretraining identity overlap, Exact seed-42 training exposure, Frozen 13-descriptor-only downstream control, Manuscript rev3 audit artifacts, Promotion chronology and terminology, Reproduction commands
+
+### Community 24 - "MolecularRepresentationModel"
+Cohesion: 0.15
+Nodes (12): MolecularRepresentationModel, nt_xent_loss(), Tensor, Masked graph autoencoder with an explicit deterministic molecule vector. Every…, Return deterministic atom and molecule embeddings., Combine already encoded graph and atom blocks., Concatenate raw graph and mean-atom blocks before train calibration., Apply immutable train-split coordinate statistics to raw vectors. (+4 more)
+
+### Community 25 - "MolecularVGAE"
+Cohesion: 0.20
+Nodes (16): DistributedDataParallel, MolecularVGAE, NegativeCandidates, Select hard-pool logits while retaining gradients for selected values., select_hard_negative_logits(), _legacy_losses_for_batch(), _losses_for_batch(), Return a plan-scoped seed without changing immutable graph identity. (+8 more)
+
+### Community 26 - "_TrainingBatchPrefetcher"
+Cohesion: 0.33
+Nodes (5): Future, _prepare_training_batch(), _PreparedTrainingBatch, Prepare one deterministic batch ahead without advancing checkpoint cursors., _TrainingBatchPrefetcher
+
+### Community 27 - "checkpoint.py"
+Cohesion: 0.39
+Nodes (8): Optimizer, build_checkpoint(), capture_rng_state(), gather_rank_objects(), Any, Module, restore_rng_state(), validate_checkpoint()
+
 ## Knowledge Gaps
-- **37 isolated node(s):** `gmolai-retrain`, `common.sh script`, `run_benchmark_in_container.sh script`, `submit_pipeline.sh script`, `Thirteen Molecular Descriptor Targets` (+32 more)
+- **42 isolated node(s):** `gmolai-retrain`, `common.sh script`, `run_benchmark_in_container.sh script`, `submit_pipeline.sh script`, `Exact seed-42 training exposure` (+37 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Work-memory lessons
+
+**Preferred sources** — corroborated by past sessions; start here.
+- `Semantic Promotion Suite` (3× useful, score=2.992216627)
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `MolecularRepresentationModel` connect `Molecular Representation Models` to `Training Losses and Checkpoints`, `Evaluation and Promotion`, `Production CSV Inference`, `Schemas and Model Tests`?**
+- **Why does `MolecularRepresentationModel` connect `MolecularRepresentationModel` to `train.py`, `ValueError`, `atomic_write_json`, `model.py`, `generate_embeddings.py`, `RuntimeError`, `MolecularVGAE`, `_TrainingBatchPrefetcher`?**
   _High betweenness centrality (0.037) - this node is a cross-community bridge._
-- **Why does `Representation V1 Training Overlay` connect `Objective Ablation Configs` to `Dataset and Inference Contract`, `Pilot and Projector Plans`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
-- **Are the 41 inferred relationships involving `ValueError` (e.g. with `canonicalize()` and `_one_hot()`) actually correct?**
-  _`ValueError` has 41 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `Representation V1 Training Overlay` connect `Representation V1 Training Overlay` to `Combined ZINC-PubChem Retraining Configuration`, `Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers)`?**
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `train()` connect `train.py` to `ValueError`, `cli.py`, `atomic_write_json`, `data.py`, `RuntimeError`, `MolecularVGAE`, `_TrainingBatchPrefetcher`, `checkpoint.py`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Are the 47 inferred relationships involving `RuntimeError` (e.g. with `build()` and `find_paragraph()`) actually correct?**
+  _`RuntimeError` has 47 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 46 inferred relationships involving `ValueError` (e.g. with `audit_step()` and `main()`) actually correct?**
+  _`ValueError` has 46 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `train()` (e.g. with `RuntimeError` and `_request_stop()`) actually correct?**
   _`train()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 31 inferred relationships involving `RuntimeError` (e.g. with `validate_checkpoint()` and `featurize_molecule()`) actually correct?**
-  _`RuntimeError` has 31 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 5 inferred relationships involving `MolecularRepresentationModel` (e.g. with `InferenceError` and `ModelBundle`) actually correct?**
-  _`MolecularRepresentationModel` has 5 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 19 inferred relationships involving `build_parser()` (e.g. with `command_benchmark_downstream()` and `command_benchmark_training()`) actually correct?**
-  _`build_parser()` has 19 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 22 inferred relationships involving `build_parser()` (e.g. with `command_audit_downstream_overlap()` and `command_audit_training_exposure()`) actually correct?**
+  _`build_parser()` has 22 INFERRED edges - model-reasoned connections that need verification._

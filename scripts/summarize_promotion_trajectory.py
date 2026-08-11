@@ -168,6 +168,8 @@ def table_rows() -> list[dict[str, Any]]:
             "reference": lambda p, d: 25.0,
             "value": probe("similarity", "scaffold_purity_enrichment"),
         },
+        # Historical *_spherical_kmeans keys are schema labels for standard
+        # Euclidean KMeans applied after row L2 normalization.
         {
             "domain": "Clustering",
             "metric": "Learned ARI",

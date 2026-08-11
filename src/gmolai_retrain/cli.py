@@ -279,6 +279,50 @@ def command_benchmark_downstream(args) -> None:
     )
 
 
+def command_audit_downstream_overlap(args) -> None:
+    from .downstream_audit import audit_pretraining_overlap
+
+    _print(
+        audit_pretraining_overlap(
+            _load(args),
+            datasets_dir=args.datasets_dir,
+            output=args.output,
+            summary_csv=args.summary_csv,
+            dataset_names=args.datasets,
+        )
+    )
+
+
+def command_benchmark_descriptor_control(args) -> None:
+    from .downstream_audit import benchmark_descriptor_control
+
+    _print(
+        benchmark_descriptor_control(
+            _load(args),
+            datasets_dir=args.datasets_dir,
+            reference_benchmark=args.reference_benchmark,
+            output=args.output,
+            summary_csv=args.summary_csv,
+            dataset_names=args.datasets,
+        )
+    )
+
+
+def command_audit_training_exposure(args) -> None:
+    from .exposure import audit_training_exposure
+
+    cfg = _load(args)
+    _apply_run_directory(cfg, args)
+    _print(
+        audit_training_exposure(
+            cfg,
+            checkpoint_names=args.checkpoints,
+            output=args.output,
+            summary_csv=args.summary_csv,
+        )
+    )
+
+
 def command_promote_representation(args) -> None:
     from .representations import promote_representation_checkpoint
 
@@ -502,6 +546,59 @@ def build_parser() -> argparse.ArgumentParser:
     )
     downstream.add_argument("--allow-cpu", action="store_true")
     downstream.set_defaults(handler=command_benchmark_downstream)
+
+    overlap = commands.add_parser("audit-downstream-overlap")
+    overlap.add_argument(
+        "--plan",
+        action="append",
+        help="Repeatable recorded training-plan overlay used only to restore artifact identity",
+    )
+    overlap.add_argument("--datasets-dir", required=True)
+    overlap.add_argument("--output", required=True)
+    overlap.add_argument("--summary-csv", required=True)
+    overlap.add_argument(
+        "--dataset",
+        dest="datasets",
+        action="append",
+        help="Dataset name to audit; repeat to select a subset (default: all six)",
+    )
+    overlap.set_defaults(handler=command_audit_downstream_overlap)
+
+    descriptor_control = commands.add_parser("benchmark-descriptor-control")
+    descriptor_control.add_argument(
+        "--plan",
+        action="append",
+        help="Repeatable recorded training-plan overlay used only to restore artifact identity",
+    )
+    descriptor_control.add_argument("--datasets-dir", required=True)
+    descriptor_control.add_argument("--reference-benchmark", required=True)
+    descriptor_control.add_argument("--output", required=True)
+    descriptor_control.add_argument("--summary-csv", required=True)
+    descriptor_control.add_argument(
+        "--dataset",
+        dest="datasets",
+        action="append",
+        help="Dataset name to evaluate; repeat to select a subset (default: development panel)",
+    )
+    descriptor_control.set_defaults(handler=command_benchmark_descriptor_control)
+
+    exposure = commands.add_parser("audit-training-exposure")
+    exposure.add_argument(
+        "--plan",
+        action="append",
+        help="Repeatable recorded training-plan overlay used only to restore artifact identity",
+    )
+    exposure.add_argument("--run-dir", required=True)
+    exposure.add_argument(
+        "--checkpoint",
+        dest="checkpoints",
+        action="append",
+        required=True,
+        help="Checkpoint path relative to run-dir; repeat for multiple steps",
+    )
+    exposure.add_argument("--output", required=True)
+    exposure.add_argument("--summary-csv", required=True)
+    exposure.set_defaults(handler=command_audit_training_exposure)
 
     promotion = commands.add_parser("promote-representation")
     promotion.add_argument("--run-dir", required=True)

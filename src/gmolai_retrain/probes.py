@@ -315,7 +315,11 @@ def _scaffold_clustering_probe(
     maximum_graphs: int,
     seed: int,
 ) -> dict[str, Any]:
-    """Evaluate unsupervised spherical k-means against recurring scaffolds."""
+    """Evaluate L2-normalized inputs with standard Euclidean K-means.
+
+    Centroids are not constrained or renormalized, so this is not spherical
+    K-means. Historical artifact keys are retained for schema compatibility.
+    """
     indices = _sample_indices(embeddings.shape[0], maximum_graphs, seed + 17)
     count = len(indices)
     sampled_embeddings = embeddings[indices]
@@ -399,6 +403,8 @@ def _scaffold_clustering_probe(
         "kmeans_repetitions": len(kmeans_seeds),
         "kmeans_seeds": kmeans_seeds,
         "kmeans_n_init_per_repetition": 20,
+        # Legacy field names are immutable artifact-schema labels. Both values
+        # come from standard KMeans on row-L2-normalized inputs.
         "latent_spherical_kmeans": cluster(sampled_embeddings[selected]),
         "morgan_spherical_kmeans": cluster(morgan),
     }

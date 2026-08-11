@@ -190,7 +190,7 @@ promotion threshold:
 | Lipophilicity | RMSE | 0.8125 | 0.8051 |
 | HIV | ROC-AUC | 0.7578 | -- |
 
-The five development tasks pass their predeclared promotion gates for both
+The five development tasks pass their frozen promotion gates for both
 training seeds. The provenance-complete seed-42 panel is
 `moleculenet-frozen-probes-standardized-raw-hybrid-w3-step10000-calibration100k-10splits-provenance-v2.json`
 (SHA-256 `d91a9201e4c9e23c78849e4413159e45ac608feb494965b46b7766a74b97c11e`).
@@ -208,6 +208,30 @@ dominance. The full seven-feature artifact has SHA-256
 `8fa8fc2837c38578638c916b4a8d7b02dcdcd43803cb818f860d52acd90faba3`;
 the independently generated selected-only, complete-provenance artifact has
 SHA-256 `7e0d7b7b53a4e9ff241e68d1b87657f9e0a054b18f083203e87f98d1845fcb08`.
+
+### No-training descriptor and corpus-membership controls
+
+A model-free control evaluated the 13 auxiliary descriptor values with the same
+accepted molecules, reconstructed outer scaffold-group seeds, inner folds,
+fold-local scaling, estimators, hyperparameter grids, and metrics as the selected
+10k gMolAI/Morgan panel. Descriptor-only ROC-AUC was `0.6889 +/- 0.0563` on BACE
+and `0.8388 +/- 0.0505` on BBBP. Descriptor-only RMSE was
+`0.8771 +/- 0.1237` on ESOL, `1.6019 +/- 0.1574` on FreeSolv, and
+`1.0071 +/- 0.0380` on Lipophilicity. Thus the descriptor features explain a
+large descriptive share of the mean gMolAI-versus-Morgan gap for ESOL (83.2%)
+and FreeSolv (71.9%), while gMolAI remains lower-RMSE than descriptors on both;
+the Lipophilicity descriptor control is worse than Morgan and cannot explain the
+gMolAI gain there. These ratios are not causal decompositions.
+
+Exact canonical-isomeric-SMILES SHA-256 joins found whole-corpus overlap of
+`414/1,513` BACE, `1,090/1,860` BBBP, `969/1,116` ESOL, `526/639`
+FreeSolv, `2,513/4,198` Lipophilicity, and `27,377/37,225` HIV molecules.
+The corresponding pretraining-training overlaps were 413, 1,080, 964, 524,
+2,493, and 27,145. Pretraining did not consume the experimental endpoint labels,
+but these evaluations are not molecule-novel relative to the unlabeled/auxiliary
+pretraining corpus. Full identity digests and split counts are tracked under
+`artifacts/manuscript-rev3/`. No checkpoint was executed and no retraining was
+performed.
 
 ### Internal scaffold-hash test
 

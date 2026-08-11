@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "source_manuscript": {
+    "path": "../manuscript/gmolai-rev2.docx",
+    "sha256": "4db2f590ef61b7d90b2e773eb2510be094a2b738b8d5e42f7f2a8274752ae815"
+  },
+  "publication_manuscript": {
+    "path": "gmolai-rev3.docx",
+    "sha256": "b9a2bc76d6412ad9cd423fe8ea21fc58e57c0453b468af4ec55ea056abb862f4"
+  },
+  "audit_artifacts": {
+    "descriptor_only_control.json": "1d5fcf6f52473f75960061c3348447442565cb9d44596c193b84f804be343de2",
+    "descriptor_only_control.csv": "df0d1efdcc890ddf453dafc848df78f4eb244d7f25fccf9b544e692c83332bfe",
+    "pretraining_downstream_overlap.json": "c2df665de6df9a6f3c81643629ef7e1c7c57cb266e8198b89293a1209826285d",
+    "pretraining_downstream_overlap.csv": "16fc89b2c3bc32c64a62f85d7901f69b1e85559600b7ea2e192acb466ed5a8ff",
+    "training_exposure_seed42.json": "e5079f4f65965b8e696cfee22babf8b6ad0fa9565acf28b863a64d7204282f13",
+    "training_exposure_seed42.csv": "626d60293a145d8c3edf110f03f8598f0605ed8909213a18aa20e220be75f066",
+    "promotion_criteria_chronology.json": "1517971558c663f58e1f9080ab9505658a9e51ee7aa57904f35e449b71eff0cc"
+  },
+  "reference_artifact": {
+    "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/step-000010000/moleculenet-full-diagnostic-standardized-raw-hybrid-w3-10splits.json",
+    "sha256": "323e73998543da7a7d4f0bbf5f026b73cedaa83dc49be6ef4839ea646092787e"
+  },
+  "builder": {
+    "path": "scripts/update_manuscript_rev3.py",
+    "sha256": "32a794b93395c8ac9a0908b3923d6af5b5e2a6cfdbeac8d5585cb57fd24d8c02"
+  },
+  "constraints": {
+    "pretrained_model_executed": false,
+    "training_performed": false
+  },
+  "notes": [
+    "The source manuscript remains outside the Git worktree and was not modified.",
+    "The tracked rev3 copy was verified byte-identical to ../manuscript/gmolai-rev3.docx."
+  ]
+}

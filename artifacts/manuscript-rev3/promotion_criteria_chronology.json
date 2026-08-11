@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "audit": "Promotion-criteria chronology",
+  "conclusion": "The 17 criteria were repository-frozen before the expanded complete 5,000-15,000-step audit, but the repository does not establish prospective specification before the original 10,000-step selection or the preliminary retained-step screen.",
+  "recommended_terminology": "Frozen promotion criteria applied uniformly in the complete retrospective 5,000-15,000-step checkpoint audit.",
+  "repository_evidence": {
+    "first_commit": {
+      "commit": "39a5662a4805df459864352dc007bbc871e80cb8",
+      "committed_at": "2026-08-10T14:04:03+02:00",
+      "subject": "Implement robust molecular representation pipeline"
+    },
+    "criteria_validator": {
+      "path": "src/gmolai_retrain/representations.py",
+      "git_blob_oid_at_first_commit": "067796f0031c66ab0bede0b72c70cfa5f7e9d5d2",
+      "git_blob_oid_at_pre_sweep_commit": "067796f0031c66ab0bede0b72c70cfa5f7e9d5d2",
+      "git_blob_oid_at_sweep_commit": "067796f0031c66ab0bede0b72c70cfa5f7e9d5d2",
+      "first_commit_file_sha256": "31b79405308cb88aec88b05dbc6b1f06467621c69c6020f53353a8052c07d324",
+      "interpretation": "The criteria-bearing validator was unchanged in every repository snapshot through the expanded-sweep commit."
+    },
+    "original_selection_record": {
+      "path": "REPRESENTATION_REPAIR.md",
+      "git_blob_oid_at_first_commit": "3d3b7db5ae8e5f5790c730007416cd137d555949",
+      "first_commit_file_sha256": "28beb8e5e713aac1bbdf1ea4affa84881e9af8d811d95f59004857c3a9aa1f8f",
+      "already_documents": [
+        "selection of seed 42 at step 10,000",
+        "the five development-task values and gates",
+        "a preliminary retained-step FreeSolv screen at 5k, 7.5k, 10k, 12.5k and 15k"
+      ]
+    }
+  },
+  "expanded_complete_audit": {
+    "slurm_job_id": "1174926",
+    "scheduler_timezone": "Europe/Stockholm",
+    "array_tasks": [
+      {"step": 5000, "started": "2026-08-11T13:47:10+02:00", "ended": "2026-08-11T13:56:06+02:00", "state": "COMPLETED"},
+      {"step": 7500, "started": "2026-08-11T13:47:10+02:00", "ended": "2026-08-11T13:56:16+02:00", "state": "COMPLETED"},
+      {"step": 10000, "started": "2026-08-11T13:47:10+02:00", "ended": "2026-08-11T13:56:03+02:00", "state": "COMPLETED"},
+      {"step": 12500, "started": "2026-08-11T13:47:10+02:00", "ended": "2026-08-11T13:56:45+02:00", "state": "COMPLETED"},
+      {"step": 15000, "started": "2026-08-11T13:56:03+02:00", "ended": "2026-08-11T14:06:51+02:00", "state": "COMPLETED"}
+    ],
+    "audit_generated_utc": "2026-08-11T12:13:04.389071+00:00",
+    "audit_artifact": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/promotion_trajectory_audit.json",
+    "audit_artifact_sha256": "02eb29abca45d292f7fed56b9de72a3887c3cb6555946999b9894fdff47c597e",
+    "job_definition": "slurm/72_promotion_trajectory.sbatch",
+    "job_definition_sha256": "d835cda4105e5f31de7a7bb58cc7fcec3d789b156a40837e0ba1ef3dd38c14aa",
+    "sweep_commit": "a2934b2325f22afc3b2a18ce71203d3962beccbd",
+    "sweep_committed_at": "2026-08-11T15:34:07+02:00"
+  },
+  "criteria": {
+    "count": 17,
+    "representation": {
+      "embedding_effective_rank": ["minimum", 25.0],
+      "held_out_topology_mean_r2": ["minimum", 0.9],
+      "held_out_topology_median_r2": ["minimum", 0.95],
+      "held_out_topology_mean_standardized_mae": ["maximum", 0.15],
+      "scaffold_disjoint_topology_mean_r2": ["minimum", 0.95],
+      "morgan_recall_at_10": ["minimum", 0.18],
+      "cosine_tanimoto_spearman": ["minimum", 0.35],
+      "neighbor_mean_tanimoto": ["minimum", 0.2],
+      "neighbor_tanimoto_enrichment": ["minimum", 1.7],
+      "scaffold_neighbor_purity_enrichment": ["minimum", 25.0]
+    },
+    "clustering": {
+      "latent_clustering_ari_vs_morgan": ["minimum", "matched Morgan ARI"],
+      "latent_clustering_nmi_noninferiority": ["minimum", "matched Morgan NMI minus 0.03"]
+    },
+    "downstream": {
+      "bace_roc_auc": ["minimum", 0.82],
+      "bbbp_roc_auc": ["minimum", 0.87],
+      "esol_rmse": ["maximum", 0.8],
+      "freesolv_rmse": ["maximum", 1.3],
+      "lipophilicity_rmse": ["maximum", 0.85]
+    }
+  },
+  "outcome": {
+    "only_complete_pass": 10000,
+    "step_2500_in_complete_audit": false,
+    "thresholds_modified_for_expanded_audit": false
+  },
+  "evidence_limit": "Git records committed snapshots rather than the uncommitted decision process; it cannot prove that the thresholds were fixed before the original 10k selection or preliminary retained-step inspection."
+}

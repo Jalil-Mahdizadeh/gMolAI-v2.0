@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -100,6 +101,19 @@ DEFAULT_MOLECULENET_DATASETS = (
 )
 
 
+@dataclass(frozen=True)
+class PreparedMoleculeNetDataset:
+    """Canonical, deduplicated downstream rows in their deterministic order."""
+
+    molecules: list[Chem.Mol]
+    targets: np.ndarray
+    scaffold_groups: np.ndarray
+    canonical_smiles: tuple[str, ...]
+    molecule_hashes: tuple[str, ...]
+    source_buckets: np.ndarray
+    preparation: dict[str, Any]
+
+
 def _resolve_dataset_names(requested: list[str] | tuple[str, ...] | None) -> list[str]:
     if requested is None:
         return list(DEFAULT_MOLECULENET_DATASETS)
@@ -120,9 +134,9 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def _prepare_dataset(
+def _prepare_dataset_records(
     path: Path, spec: dict[str, Any], cfg: dict[str, Any]
-) -> tuple[list[Chem.Mol], np.ndarray, np.ndarray, dict[str, Any]]:
+) -> PreparedMoleculeNetDataset:
     observed_hash = _sha256(path)
     if observed_hash != spec["sha256"]:
         raise RuntimeError(
@@ -156,7 +170,7 @@ def _prepare_dataset(
             allowed_elements=set(policy["allowed_elements"]),
             min_atoms=int(policy["min_atoms"]),
             max_atoms=int(policy["max_atoms"]),
-            buckets=1,
+            buckets=int(cfg["data"]["hash_buckets"]),
             split_cfg=cfg["data"]["split"],
         )
         if not isinstance(canonical, CanonicalMolecule):
@@ -176,6 +190,9 @@ def _prepare_dataset(
     molecules: list[Chem.Mol] = []
     targets: list[float] = []
     scaffold_groups: list[str] = []
+    canonical_smiles: list[str] = []
+    molecule_hashes: list[str] = []
+    source_buckets: list[int] = []
     conflicting_duplicates = 0
     duplicate_rows = 0
     for smiles in sorted(grouped):
@@ -191,6 +208,9 @@ def _prepare_dataset(
             target = float(np.mean(values))
         molecules.append(molecule)
         targets.append(target)
+        canonical_smiles.append(canonical.smiles)
+        molecule_hashes.append(canonical.molecule_hash)
+        source_buckets.append(int(canonical.bucket))
         scaffold_groups.append(
             f"SCAFFOLD:{canonical.scaffold}"
             if canonical.scaffold
@@ -216,7 +236,29 @@ def _prepare_dataset(
             float(target_array.mean()) if spec["task"] == "classification" else None
         ),
     }
-    return molecules, target_array, np.asarray(scaffold_groups, dtype=object), report
+    return PreparedMoleculeNetDataset(
+        molecules=molecules,
+        targets=target_array,
+        scaffold_groups=np.asarray(scaffold_groups, dtype=object),
+        canonical_smiles=tuple(canonical_smiles),
+        molecule_hashes=tuple(molecule_hashes),
+        source_buckets=np.asarray(source_buckets, dtype=np.int16),
+        preparation=report,
+    )
+
+
+def _prepare_dataset(
+    path: Path, spec: dict[str, Any], cfg: dict[str, Any]
+) -> tuple[list[Chem.Mol], np.ndarray, np.ndarray, dict[str, Any]]:
+    """Backward-compatible tuple view used by the pretrained-model benchmark."""
+
+    prepared = _prepare_dataset_records(path, spec, cfg)
+    return (
+        prepared.molecules,
+        prepared.targets,
+        prepared.scaffold_groups,
+        prepared.preparation,
+    )
 
 
 @torch.no_grad()
@@ -349,6 +391,8 @@ def _scaffold_splits(
     attempts = 0
     while len(result) < count and attempts < count * 50:
         split_seed = int(seed + 104729 * attempts)
+        # In GroupShuffleSplit, test_size is a fraction of scaffold groups,
+        # not molecules; realized molecule fractions vary with group sizes.
         outer = GroupShuffleSplit(n_splits=1, test_size=0.20, random_state=split_seed)
         train, test = next(outer.split(indices, targets, groups))
         if set(groups[train]) & set(groups[test]):

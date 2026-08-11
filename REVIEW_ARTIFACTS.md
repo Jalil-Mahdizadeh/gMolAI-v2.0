@@ -70,7 +70,17 @@ consistency checks. Their quality-gate outcomes were:
 
 The FreeSolv maximum was fixed at 1.30. Step 15k therefore misses promotion by
 0.00346 RMSE even though its other 16 criteria pass; changing the threshold
-after seeing this result would violate the predeclared fail-closed policy.
+after seeing this result would violate the frozen fail-closed gate.
+
+Repository history supports a narrower chronology than prospective language:
+the criteria-bearing validator was committed and remained unchanged before this
+expanded complete sweep. The first repository commit, however, already contains
+the criteria, the original 10k selection, and a preliminary retained-step
+FreeSolv screen. The sweep is therefore described as a complete retrospective
+audit using uniformly applied frozen criteria; the repository does not prove
+prospective specification before the original selection or preliminary screen.
+Exact Git and SLURM evidence is preserved in
+`artifacts/manuscript-rev3/promotion_criteria_chronology.json`.
 
 Versioned compact evidence is under
 `runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/promotion-trajectory-table5-rev1/`:
@@ -89,6 +99,19 @@ actual fail-closed validator for every checkpoint.
 reproduces the five-step evidence generation. The 100k calibration, 10k probe
 training, and 50k probe-validation tensors are reproducible bulk intermediates
 and are deliberately not versioned.
+
+## Manuscript rev3 no-training controls
+
+[`artifacts/manuscript-rev3/`](artifacts/manuscript-rev3/) contains the exact
+10k/15k DDP-cursor exposure audit, six-dataset canonical-identity overlap audit,
+and the model-free 13-descriptor downstream control. The descriptor artifact
+validates reconstructed 10k outer seeds/counts, records outer and inner
+identity-set hashes, and includes the original gMolAI/Morgan results alongside
+the new control. Stored pretraining descriptors and pinned-RDKit recomputations
+agreed for every overlapping molecule at the configured tolerances. The exposure
+audit deserializes the retained checkpoint mappings with PyTorch's restricted
+weights-only loader to read their DDP cursors; no model was instantiated or
+executed, and no training was performed.
 
 ## Compact training and validation record
 
