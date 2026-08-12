@@ -129,6 +129,15 @@ instantiated or executed, no embeddings were regenerated, and no training was
 performed. The exact presentation history is descriptive context and does not
 by itself establish a causal effect on downstream performance.
 
+## Manuscript rev5 editorial release
+
+[`artifacts/manuscript-rev5/`](artifacts/manuscript-rev5/) contains the
+structurally reorganized, publication-formatted rev5 manuscript, a reproducible
+document-only builder and a hash-bound validation manifest. The revision makes
+the chronology and evidence roles explicit, separates the locked internal test
+from the external HIV confirmation, and preserves the rev4 numerical results,
+tables, equations, checkpoints, calibrator and promotion decision unchanged.
+
 ## Compact training and validation record
 
 The compact JSON, JSONL, CSV, and `COMPLETE` files generated under `runs/` at

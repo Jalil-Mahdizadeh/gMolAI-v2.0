@@ -405,6 +405,16 @@ decompositions. The publication-formatted rev4 manuscript is tracked with the
 rev4 artifacts and can be rebuilt from retained `gmolai-rev3.docx` using
 `scripts/update_manuscript_rev4.py` and the `manuscript` optional dependency.
 
+### Manuscript rev5 editorial release
+
+[`artifacts/manuscript-rev5/`](artifacts/manuscript-rev5/) contains the
+publication-formatted rev5 manuscript and its editorial audit trail. Revision 5
+is generated directly from the hash-locked rev4 DOCX by
+`scripts/update_manuscript_rev5.py`; it reorganizes Methods and Results by
+experimental chronology and evidence source, adds a compact data/evidence-roles
+table, and preserves all scientific results and promotion criteria. The rev4
+bundle and sibling DOCX remain unchanged.
+
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both
 `representation-best.pt` and `representation-calibrator.pt`.

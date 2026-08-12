@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "revision_scope": "structural_editorial_only",
+  "source_manuscript": {
+    "path": "artifacts/manuscript-rev4/gmolai-rev4.docx",
+    "sibling_copy": "../manuscript/gmolai-rev4.docx",
+    "sha256": "6a02e6088d29d527160db234fcc76dd9ed0e0e4b180d46e088c08265923d8e37"
+  },
+  "publication_manuscript": {
+    "path": "artifacts/manuscript-rev5/gmolai-rev5.docx",
+    "sibling_copy": "../manuscript/gmolai-rev5.docx",
+    "sha256": "9a17e5384a61212c8c462b3f6a267ece8a6bc53dd4370c13afa4c46462a6dbb2"
+  },
+  "implementation": {
+    "manuscript_builder": {
+      "path": "scripts/update_manuscript_rev5.py",
+      "sha256": "c3489f8a6bdac583f3e859a6f0339cc0cb7813ddfab8e482ae930c320afda267"
+    }
+  },
+  "promoted_artifacts": {
+    "checkpoint": {
+      "path": "inference/model/representation-best.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "calibrator": {
+      "path": "inference/model/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    }
+  },
+  "validation": {
+    "source_sha256_enforced_by_builder": true,
+    "existing_table_cell_matrices_preserved": true,
+    "office_math_hashes_preserved": true,
+    "sequential_table_captions": "1-12",
+    "sequential_figure_references": "1-2",
+    "docx_zip_integrity": "pass",
+    "serialized_docx_reopened": true,
+    "rendered_pdf_pages": 29,
+    "rendered_pdf_page_size": "US letter",
+    "rendered_pdf_suspects": "none",
+    "all_rendered_pages_visually_inspected": true,
+    "release_raster_pages_matching_inspected_render": "29/29",
+    "tracked_and_sibling_rev5_byte_identical": true,
+    "rev4_preserved_byte_identical": true
+  },
+  "scientific_invariants": {
+    "full_corpus": 223180699,
+    "training_partition": 221148895,
+    "validation_partition": 943038,
+    "locked_internal_test_partition": 1088766,
+    "unique_training_graphs_seen": {
+      "5000": 28743683,
+      "7500": 43109793,
+      "10000": 57504265,
+      "12500": 71870280,
+      "15000": 86236032
+    },
+    "only_checkpoint_passing_all_17_gates": 10000,
+    "step_2500_in_complete_downstream_sweep": false
+  },
+  "constraints": {
+    "pretrained_model_executed": false,
+    "training_performed_or_resumed": false,
+    "embeddings_regenerated": false,
+    "checkpoints_modified": false,
+    "calibrators_modified": false,
+    "promotion_criteria_modified": false,
+    "scientific_results_modified": false,
+    "promoted_seed42_step10000_artifact_modified": false
+  }
+}
