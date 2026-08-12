@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786485041.0,
-    "ast_hash": "ce95d702f042dd635bcb11bf208d488a",
+    "mtime": 1786523226.0,
+    "ast_hash": "ffab0b83692eaf6837283750641d5d8f",
     "semantic_hash": ""
   },
   "REPRESENTATION_REPAIR.md": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "REVIEW_ARTIFACTS.md": {
-    "mtime": 1786485065.0,
-    "ast_hash": "5e129acbfeec98286677f023b8a3822c",
+    "mtime": 1786523226.0,
+    "ast_hash": "8c9fe4621bbb887f9b73b0c1840050d3",
     "semantic_hash": ""
   },
   "configs/descriptors.yaml": {
@@ -542,6 +542,26 @@
   "graphify-out/memory/query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m.md": {
     "mtime": 1786485445.0,
     "ast_hash": "628e76bfeb62839b989bfaa1fea7dea5",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev5/artifact_manifest.json": {
+    "mtime": 1786523301.0,
+    "ast_hash": "c52b8acc4a2cc8cdc38e3ba370071257",
+    "semantic_hash": ""
+  },
+  "scripts/update_manuscript_rev5.py": {
+    "mtime": 1786522445.0,
+    "ast_hash": "a855f6dbaa190e239e80a2710aecdbaa",
+    "semantic_hash": ""
+  },
+  "artifacts/manuscript-rev5/README.md": {
+    "mtime": 1786523301.0,
+    "ast_hash": "36b586f0ce4834f91069643733f51fd4",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md": {
+    "mtime": 1786523496.0,
+    "ast_hash": "83cb47ad56a37de467b44c7460e1eb5c",
     "semantic_hash": ""
   }
 }

@@ -1,6 +1,27 @@
 {
-  "generated_at": "2026-08-11T13:30:00.471716+00:00",
+  "generated_at": "2026-08-12T08:31:37.150251+00:00",
   "nodes": {
+    "artifacts_manuscript_rev4_readme_manuscript_rev4_exact_downstream_molecule_exposure_audit": {
+      "code_fingerprint": "b02733544deba3642092338c7cb86f235fcbfcd689edb495840f6f96ea60f026",
+      "label": "Manuscript rev4: exact downstream-molecule exposure audit",
+      "last": "2026-08-12T08:31:37.000920+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T08:31:37.000920+00:00",
+          "outcome": "useful",
+          "q": "Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx."
+        },
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 1.989875957,
+      "source_file": "artifacts/manuscript-rev4/README.md",
+      "status": "preferred",
+      "uses": 2
+    },
     "graphify_out_memory_query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour_deterministic_v5_molecular_encoder": {
       "code_fingerprint": "40a546c6b49c32e0bae4d78afea4ea15b7e623c2e9089e5805929a0b2d2d4bfd",
       "label": "Deterministic V5 Molecular Encoder",
@@ -12,7 +33,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.995657595,
+      "score": 0.977585916,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -28,7 +49,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.995657595,
+      "score": 0.977585916,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -54,7 +75,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 2.992216627,
+      "score": 2.93790641,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "preferred",
       "uses": 3
@@ -70,7 +91,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.995657595,
+      "score": 0.977585916,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -78,34 +99,44 @@
     "graphify_out_memory_query_20260811_110950_one_important_question_has_emerged__at_training_st_promotion_integrity_gates": {
       "code_fingerprint": "f7821a9c8773000691cb679acd2951066e1ed65c56d37b219bbc25eeec9bd05f",
       "label": "Promotion Integrity Gates",
-      "last": "2026-08-11T11:09:50.597045+00:00",
+      "last": "2026-08-12T08:31:37.000920+00:00",
       "provenance": [
+        {
+          "date": "2026-08-12T08:31:37.000920+00:00",
+          "outcome": "useful",
+          "q": "Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx."
+        },
         {
           "date": "2026-08-11T11:09:50.597045+00:00",
           "outcome": "useful",
           "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
         }
       ],
-      "score": 0.997753576,
+      "score": 1.979643813,
       "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 2
     },
     "graphify_out_memory_query_20260811_110950_one_important_question_has_emerged__at_training_st_validation_evidence_bundle": {
       "code_fingerprint": "f7821a9c8773000691cb679acd2951066e1ed65c56d37b219bbc25eeec9bd05f",
       "label": "Validation Evidence Bundle",
-      "last": "2026-08-11T11:09:50.597045+00:00",
+      "last": "2026-08-12T08:31:37.000920+00:00",
       "provenance": [
+        {
+          "date": "2026-08-12T08:31:37.000920+00:00",
+          "outcome": "useful",
+          "q": "Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx."
+        },
         {
           "date": "2026-08-11T11:09:50.597045+00:00",
           "outcome": "useful",
           "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
         }
       ],
-      "score": 0.997753576,
+      "score": 1.979643813,
       "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 2
     },
     "inference_readme_self_contained_inference_entry_point": {
       "code_fingerprint": "28ecd3b608f8ac4919098da4cda44965123e8d65da51fe5f823046d22ea0d10f",
@@ -118,8 +149,120 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.995657595,
+      "score": 0.977585916,
       "source_file": "inference/README.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_cli_command_audit_downstream_exposure": {
+      "code_fingerprint": "f2fb49b45014b87a52b66c2f4553c1272bc8004b122758817d0f7faf8518f967",
+      "label": "command_audit_downstream_exposure()",
+      "last": "2026-08-11T21:57:25.846831+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 0.989875997,
+      "source_file": "src/gmolai_retrain/cli.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_downstream_audit_join_pretraining_rows": {
+      "code_fingerprint": "8739fd3015bd50b462b78dfa44f2c049ee4ead7c0fa8c27939f258dd5630ac4d",
+      "label": "_join_pretraining_rows()",
+      "last": "2026-08-11T21:57:25.846831+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 0.989875997,
+      "source_file": "src/gmolai_retrain/downstream_audit.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_downstream_exposure_audit_downstream_checkpoint_exposure": {
+      "code_fingerprint": "46e8737fe4148a3a5d84bd6ed6a5092c1e65e4d514723e9f6406bc79542c4e29",
+      "label": "audit_downstream_checkpoint_exposure()",
+      "last": "2026-08-11T21:57:25.846831+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 0.989875997,
+      "source_file": "src/gmolai_retrain/downstream_exposure.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_downstream_exposure_checkpoint_records": {
+      "code_fingerprint": "46e8737fe4148a3a5d84bd6ed6a5092c1e65e4d514723e9f6406bc79542c4e29",
+      "label": "_checkpoint_records()",
+      "last": "2026-08-11T21:57:25.846831+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 0.989875997,
+      "source_file": "src/gmolai_retrain/downstream_exposure.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_downstream_exposure_scan_target_locations": {
+      "code_fingerprint": "46e8737fe4148a3a5d84bd6ed6a5092c1e65e4d514723e9f6406bc79542c4e29",
+      "label": "_scan_target_locations()",
+      "last": "2026-08-11T21:57:25.846831+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 0.989875997,
+      "source_file": "src/gmolai_retrain/downstream_exposure.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_downstream_exposure_seen_at_cycle_zero_cursor": {
+      "code_fingerprint": "46e8737fe4148a3a5d84bd6ed6a5092c1e65e4d514723e9f6406bc79542c4e29",
+      "label": "_seen_at_cycle_zero_cursor()",
+      "last": "2026-08-11T21:57:25.846831+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 0.989875997,
+      "source_file": "src/gmolai_retrain/downstream_exposure.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_exposure_rank_exposure": {
+      "code_fingerprint": "79c1bba478862d2a3cfe3d4f64a9e66203beaefe247b2bfe33d6d7b25ea8c48c",
+      "label": "_rank_exposure()",
+      "last": "2026-08-11T21:57:25.846831+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-11T21:57:25.846831+00:00",
+          "outcome": "useful",
+          "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+        }
+      ],
+      "score": 0.989875997,
+      "source_file": "src/gmolai_retrain/exposure.py",
       "status": "tentative",
       "uses": 1
     }

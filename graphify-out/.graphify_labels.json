@@ -1,5 +1,5 @@
 {
-  "0": "train.py",
+  "0": "Any",
   "1": "ValueError",
   "2": "cli.py",
   "3": "Audit Disposition and Retraining Corrections",
@@ -21,13 +21,17 @@
   "19": "Representation Screening Configuration (5k steps, frequent validation, no resume)",
   "20": "submit_pipeline.sh",
   "21": "gmolai-retrain",
-  "22": "NegativeCandidates",
+  "22": "sample_per_graph_negatives",
   "23": "Manuscript rev3 audit artifacts",
   "24": "MolecularRepresentationModel",
-  "25": "MolecularVGAE",
-  "26": "_TrainingBatchPrefetcher",
-  "27": "checkpoint.py",
+  "25": "test_model.py",
+  "26": "train.py",
+  "27": "train",
   "28": "update_manuscript_rev4.py",
   "29": "Manuscript rev4: exact downstream-molecule exposure audit",
-  "30": "Q: Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
+  "30": "Q: Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k.",
+  "31": "update_manuscript_rev5.py",
+  "32": "Manuscript rev5: evidence-source reorganization",
+  "33": "Q: Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx.",
+  "34": "nt_xent_loss"
 }

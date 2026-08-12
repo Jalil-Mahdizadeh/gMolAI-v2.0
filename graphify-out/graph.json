@@ -1060,6 +1060,265 @@
       "norm_label": "parse_args()"
     },
     {
+      "label": "update_manuscript_rev5.py",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "update_manuscript_rev5.py"
+    },
+    {
+      "label": "sha256_file()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L70",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_sha256_file",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "sha256_file()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_py_path",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "path"
+    },
+    {
+      "label": "find_paragraph()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L78",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_find_paragraph",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "find_paragraph()"
+    },
+    {
+      "label": "Paragraph",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_py_paragraph",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "paragraph"
+    },
+    {
+      "label": "find_exact_paragraph()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L87",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_find_exact_paragraph",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "find_exact_paragraph()"
+    },
+    {
+      "label": "set_text()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L94",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_set_text",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "set_text()"
+    },
+    {
+      "label": "replace_in_runs()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_replace_in_runs",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "replace_in_runs()"
+    },
+    {
+      "label": "new_paragraph_before()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L110",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_new_paragraph_before",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "new_paragraph_before()"
+    },
+    {
+      "label": "delete_paragraph()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L119",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_delete_paragraph",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "delete_paragraph()"
+    },
+    {
+      "label": "next_table_element()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L126",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_next_table_element",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "next_table_element()"
+    },
+    {
+      "label": "table_matrix()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L137",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_table_matrix",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "table_matrix()"
+    },
+    {
+      "label": "omml_hashes()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L141",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_omml_hashes",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "omml_hashes()"
+    },
+    {
+      "label": "Counter",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "counter",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "counter"
+    },
+    {
+      "label": "set_repeat_header()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L152",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_set_repeat_header",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "set_repeat_header()"
+    },
+    {
+      "label": "set_cant_split()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L159",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_set_cant_split",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "set_cant_split()"
+    },
+    {
+      "label": "set_cell()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L165",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_set_cell",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "set_cell()"
+    },
+    {
+      "label": "insert_evidence_roles_table()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L187",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "insert_evidence_roles_table()"
+    },
+    {
+      "label": "assert_source_contract()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L302",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_assert_source_contract",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "assert_source_contract()"
+    },
+    {
+      "label": "build()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L319",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_build",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "build()"
+    },
+    {
+      "label": "Namespace",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_py_namespace",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "namespace"
+    },
+    {
+      "label": "parse_args()",
+      "file_type": "code",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L1045",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_update_manuscript_rev5_parse_args",
+      "community": 31,
+      "community_name": "update_manuscript_rev5.py",
+      "norm_label": "parse_args()"
+    },
+    {
       "label": "common.sh",
       "file_type": "code",
       "source_file": "slurm/common.sh",
@@ -1250,7 +1509,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "checkpoint.py"
     },
     {
@@ -1262,7 +1521,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_capture_rng_state",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "capture_rng_state()"
     },
     {
@@ -1273,7 +1532,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_py_any",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "any"
     },
     {
@@ -1285,7 +1544,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_restore_rng_state",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "restore_rng_state()"
     },
     {
@@ -1297,7 +1556,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_gather_rank_objects",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "gather_rank_objects()"
     },
     {
@@ -1344,7 +1603,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_build_checkpoint",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "build_checkpoint()"
     },
     {
@@ -1355,7 +1614,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_py_module",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "module"
     },
     {
@@ -1366,7 +1625,7 @@
       "_origin": "ast",
       "id": "optimizer",
       "community": 27,
-      "community_name": "checkpoint.py",
+      "community_name": "train",
       "norm_label": "optimizer"
     },
     {
@@ -1377,8 +1636,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_validate_checkpoint",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "validate_checkpoint()"
     },
     {
@@ -1388,8 +1647,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "chem.py"
     },
     {
@@ -1400,8 +1659,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_feature_factory",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "_feature_factory()"
     },
     {
@@ -1412,8 +1671,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_one_hot",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "_one_hot()"
     },
     {
@@ -1423,8 +1682,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_py_any",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "any"
     },
     {
@@ -1436,8 +1695,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_canonicalmolecule",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "canonicalmolecule"
     },
     {
@@ -1461,8 +1720,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_canonicalize",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "canonicalize()"
     },
     {
@@ -1473,8 +1732,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_hydrogen_bond_flags",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "_hydrogen_bond_flags()"
     },
     {
@@ -1484,8 +1743,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_py_mol",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "mol"
     },
     {
@@ -1496,8 +1755,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_position_encoding",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "_position_encoding()"
     },
     {
@@ -1507,8 +1766,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_py_ndarray",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "ndarray"
     },
     {
@@ -1519,8 +1778,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_featurize_molecule",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "featurize_molecule()"
     },
     {
@@ -1923,8 +2182,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "config.py"
     },
     {
@@ -1936,8 +2195,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_configurationerror",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "configurationerror"
     },
     {
@@ -1959,8 +2218,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_expand",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "_expand()"
     },
     {
@@ -1970,8 +2229,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_py_any",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "any"
     },
     {
@@ -1982,8 +2241,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_canonical_json",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "canonical_json()"
     },
     {
@@ -1994,8 +2253,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_object_hash",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "object_hash()"
     },
     {
@@ -2006,8 +2265,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_load_yaml",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "load_yaml()"
     },
     {
@@ -2017,8 +2276,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_py_path",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "path"
     },
     {
@@ -2029,8 +2288,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_load_config",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "load_config()"
     },
     {
@@ -2041,8 +2300,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_deep_update",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "_deep_update()"
     },
     {
@@ -2053,8 +2312,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_apply_training_plan",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "apply_training_plan()"
     },
     {
@@ -2065,8 +2324,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_validate_descriptor_manifest",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "_validate_descriptor_manifest()"
     },
     {
@@ -2077,8 +2336,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_validate_config",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "_validate_config()"
     },
     {
@@ -2089,8 +2348,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_validate_training_plan",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "_validate_training_plan()"
     },
     {
@@ -2113,8 +2372,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_public_config",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "public_config()"
     },
     {
@@ -2124,8 +2383,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_rationale_85",
-      "community": 2,
-      "community_name": "cli.py",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "overlay model/training choices without changing immutable data identity. graph..."
     },
     {
@@ -2206,8 +2465,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_data_load_graph_manifest",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 8,
+      "community_name": "data.py",
       "norm_label": "load_graph_manifest()"
     },
     {
@@ -2580,8 +2839,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_path",
-      "community": 12,
-      "community_name": "RuntimeError",
+      "community": 1,
+      "community_name": "ValueError",
       "norm_label": "path"
     },
     {
@@ -2592,8 +2851,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_prepare_dataset_records",
-      "community": 12,
-      "community_name": "RuntimeError",
+      "community": 1,
+      "community_name": "ValueError",
       "norm_label": "_prepare_dataset_records()"
     },
     {
@@ -3600,7 +3859,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularvgae",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "molecularvgae"
     },
     {
@@ -3634,8 +3893,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularvgae_encode",
-      "community": 24,
-      "community_name": "MolecularRepresentationModel",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": ".encode()"
     },
     {
@@ -3853,8 +4112,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_vicreg_terms",
-      "community": 24,
-      "community_name": "MolecularRepresentationModel",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "vicreg_terms()"
     },
     {
@@ -3865,8 +4124,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_nt_xent_loss",
-      "community": 24,
-      "community_name": "MolecularRepresentationModel",
+      "community": 34,
+      "community_name": "nt_xent_loss",
       "norm_label": "nt_xent_loss()"
     },
     {
@@ -3902,8 +4161,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_kl_divergence",
-      "community": 7,
-      "community_name": "model.py",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "kl_divergence()"
     },
     {
@@ -3914,8 +4173,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_grouped_feature_loss",
-      "community": 7,
-      "community_name": "model.py",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "grouped_feature_loss()"
     },
     {
@@ -4013,8 +4272,8 @@
       "source_location": "L496",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_496",
-      "community": 24,
-      "community_name": "MolecularRepresentationModel",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "return invariance, variance-floor, and covariance-redundancy losses."
     },
     {
@@ -4024,8 +4283,8 @@
       "source_location": "L525",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_525",
-      "community": 24,
-      "community_name": "MolecularRepresentationModel",
+      "community": 34,
+      "community_name": "nt_xent_loss",
       "norm_label": "symmetric cross-view infonce loss for graph embeddings."
     },
     {
@@ -4035,8 +4294,8 @@
       "source_location": "L617",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_617",
-      "community": 7,
-      "community_name": "model.py",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "use categorical ce for one-hot groups and bce for binary features."
     },
     {
@@ -4047,7 +4306,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "negative_sampling.py"
     },
     {
@@ -4059,8 +4318,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_negativecandidates",
-      "community": 22,
-      "community_name": "NegativeCandidates",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "negativecandidates"
     },
     {
@@ -4071,8 +4330,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_negativecandidates_post_init",
-      "community": 22,
-      "community_name": "NegativeCandidates",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": ".__post_init__()"
     },
     {
@@ -4083,8 +4342,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_negativecandidates_pin_memory",
-      "community": 22,
-      "community_name": "NegativeCandidates",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": ".pin_memory()"
     },
     {
@@ -4096,7 +4355,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_edge_tensor",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "_edge_tensor()"
     },
     {
@@ -4107,7 +4366,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_py_ndarray",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "ndarray"
     },
     {
@@ -4118,7 +4377,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_py_tensor",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "tensor"
     },
     {
@@ -4130,7 +4389,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_pair_template",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "_pair_template()"
     },
     {
@@ -4142,7 +4401,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_sample_per_graph_negatives",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "sample_per_graph_negatives()"
     },
     {
@@ -4153,8 +4412,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_select_hard_negative_logits",
-      "community": 22,
-      "community_name": "NegativeCandidates",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "select_hard_negative_logits()"
     },
     {
@@ -4166,7 +4425,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_assert_valid_candidates",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "assert_valid_candidates()"
     },
     {
@@ -4177,7 +4436,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_rationale_41",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "return lexicographic upper-triangle pairs for a graph size."
     },
     {
@@ -4188,7 +4447,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_rationale_56",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "sample unique undirected negatives independently inside each graph. easy..."
     },
     {
@@ -4198,8 +4457,8 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_rationale_181",
-      "community": 22,
-      "community_name": "NegativeCandidates",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "select hard-pool logits while retaining gradients for selected values."
     },
     {
@@ -4873,8 +5132,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_schema_validate_feature_schema",
-      "community": 1,
-      "community_name": "ValueError",
+      "community": 4,
+      "community_name": "atomic_write_json",
       "norm_label": "validate_feature_schema()"
     },
     {
@@ -4884,7 +5143,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_train",
-      "community": 0,
+      "community": 26,
       "community_name": "train.py",
       "norm_label": "train.py"
     },
@@ -4897,7 +5156,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_architecture",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_architecture()"
     },
     {
@@ -4908,7 +5167,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_py_any",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "any"
     },
     {
@@ -4920,7 +5179,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_implementation_version",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_implementation_version()"
     },
     {
@@ -4931,8 +5190,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_training_seed",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "_training_seed()"
     },
     {
@@ -4944,7 +5203,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_build_model",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_build_model()"
     },
     {
@@ -4955,8 +5214,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_initialize_model_from_checkpoint",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "_initialize_model_from_checkpoint()"
     },
     {
@@ -4966,8 +5225,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_py_module",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "module"
     },
     {
@@ -4977,8 +5236,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_py_path",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "path"
     },
     {
@@ -4989,8 +5248,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_request_stop",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "_request_stop()"
     },
     {
@@ -5024,8 +5283,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_py_device",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 0,
+      "community_name": "Any",
       "norm_label": "device"
     },
     {
@@ -5036,8 +5295,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_all_reduce_mean",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 0,
+      "community_name": "Any",
       "norm_label": "_all_reduce_mean()"
     },
     {
@@ -5048,8 +5307,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_sample_negative_candidates",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "_sample_negative_candidates()"
     },
     {
@@ -5062,7 +5321,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_preparedtrainingbatch",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": "_preparedtrainingbatch"
     },
     {
@@ -5074,7 +5333,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_prepare_training_batch",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": "_prepare_training_batch()"
     },
     {
@@ -5087,7 +5346,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": "_trainingbatchprefetcher"
     },
     {
@@ -5099,7 +5358,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_init",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": ".__init__()"
     },
     {
@@ -5111,7 +5370,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_submit",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": "._submit()"
     },
     {
@@ -5122,7 +5381,7 @@
       "_origin": "ast",
       "id": "future",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": "future"
     },
     {
@@ -5134,7 +5393,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_next",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": ".next()"
     },
     {
@@ -5146,7 +5405,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_checkpoint_state",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": ".checkpoint_state()"
     },
     {
@@ -5158,7 +5417,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_close",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": ".close()"
     },
     {
@@ -5169,8 +5428,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_balanced_existence_loss",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "_balanced_existence_loss()"
     },
     {
@@ -5181,7 +5440,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_py_tensor",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "tensor"
     },
     {
@@ -5192,8 +5451,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_legacy_losses_for_batch",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "_legacy_losses_for_batch()"
     },
     {
@@ -5204,7 +5463,7 @@
       "_origin": "ast",
       "id": "distributeddataparallel",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "distributeddataparallel"
     },
     {
@@ -5215,8 +5474,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_representation_losses_for_batch",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "_representation_losses_for_batch()"
     },
     {
@@ -5228,7 +5487,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_losses_for_batch",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "_losses_for_batch()"
     },
     {
@@ -5240,7 +5499,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_group_confusions",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_group_confusions()"
     },
     {
@@ -5252,7 +5511,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_update_group_confusions",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_update_group_confusions()"
     },
     {
@@ -5264,7 +5523,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_finalize_group_confusions",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_finalize_group_confusions()"
     },
     {
@@ -5276,7 +5535,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_update_score_histogram",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_update_score_histogram()"
     },
     {
@@ -5288,7 +5547,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_binary_histogram_metrics",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_binary_histogram_metrics()"
     },
     {
@@ -5300,7 +5559,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_covariance_diagnostics",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "_covariance_diagnostics()"
     },
     {
@@ -5311,7 +5570,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_py_no_grad",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "no_grad"
     },
     {
@@ -5323,7 +5582,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_evaluate",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "evaluate()"
     },
     {
@@ -5334,8 +5593,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_scheduler",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "_scheduler()"
     },
     {
@@ -5346,8 +5605,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_log_json",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "_log_json()"
     },
     {
@@ -5358,8 +5617,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_train",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "train()"
     },
     {
@@ -5371,7 +5630,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_evaluate_saved",
       "community": 0,
-      "community_name": "train.py",
+      "community_name": "Any",
       "norm_label": "evaluate_saved()"
     },
     {
@@ -5381,8 +5640,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_rationale_66",
-      "community": 25,
-      "community_name": "MolecularVGAE",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "return a plan-scoped seed without changing immutable graph identity."
     },
     {
@@ -5392,8 +5651,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_rationale_84",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "load compatible encoder/decoder weights while resetting optimizer state."
     },
     {
@@ -5404,7 +5663,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_rationale_232",
       "community": 26,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community_name": "train.py",
       "norm_label": "prepare one deterministic batch ahead without advancing checkpoint cursors."
     },
     {
@@ -5520,8 +5779,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_util_stable_u64",
-      "community": 8,
-      "community_name": "data.py",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "stable_u64()"
     },
     {
@@ -5532,8 +5791,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_util_stable_fraction",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "stable_fraction()"
     },
     {
@@ -5544,8 +5803,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_util_seed_everything",
-      "community": 0,
-      "community_name": "train.py",
+      "community": 27,
+      "community_name": "train",
       "norm_label": "seed_everything()"
     },
     {
@@ -5568,7 +5827,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "benchmark_negative_sampling.py"
     },
     {
@@ -5580,7 +5839,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling_synthetic_path_batch",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "synthetic_path_batch()"
     },
     {
@@ -5592,7 +5851,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling_main",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "main()"
     },
     {
@@ -5603,7 +5862,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling_rationale_1",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "microbenchmark the deterministic molecular negative sampler."
     },
     {
@@ -5614,7 +5873,7 @@
       "_origin": "ast",
       "id": "tests_ddp_smoke",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "ddp_smoke.py"
     },
     {
@@ -5626,7 +5885,7 @@
       "_origin": "ast",
       "id": "tests_ddp_smoke_valid_features",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "valid_features()"
     },
     {
@@ -5638,7 +5897,7 @@
       "_origin": "ast",
       "id": "tests_ddp_smoke_main",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "main()"
     },
     {
@@ -5649,7 +5908,7 @@
       "_origin": "ast",
       "id": "tests_ddp_smoke_rationale_1",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "run directly with: torchrun --standalone --nproc_per_node=2 tests/ddp_smoke.py"
     },
     {
@@ -5659,8 +5918,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_chemistry",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "test_chemistry.py"
     },
     {
@@ -5671,8 +5930,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_chemistry_canonical",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "canonical()"
     },
     {
@@ -5683,8 +5942,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_chemistry_test_stereochemistry_is_retained_and_fragments_rejected",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "test_stereochemistry_is_retained_and_fragments_rejected()"
     },
     {
@@ -5695,8 +5954,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_chemistry_test_explicit_feature_dimensions_and_bidirectional_edges",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 11,
+      "community_name": "generate_embeddings.py",
       "norm_label": "test_explicit_feature_dimensions_and_bidirectional_edges()"
     },
     {
@@ -6003,8 +6262,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_model",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_model.py"
     },
     {
@@ -6015,8 +6274,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_model_forward_and_symmetric_edge_decoder",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_model_forward_and_symmetric_edge_decoder()"
     },
     {
@@ -6027,8 +6286,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_descriptor_prediction_is_independent_of_posterior_sampling",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_descriptor_prediction_is_independent_of_posterior_sampling()"
     },
     {
@@ -6039,8 +6298,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_corruption_masks_both_directions_together",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 7,
+      "community_name": "model.py",
       "norm_label": "test_corruption_masks_both_directions_together()"
     },
     {
@@ -6052,7 +6311,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_complete_corrected_objective_backpropagates",
       "community": 25,
-      "community_name": "MolecularVGAE",
+      "community_name": "test_model.py",
       "norm_label": "test_complete_corrected_objective_backpropagates()"
     },
     {
@@ -6063,8 +6322,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_valid_features",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "_valid_features()"
     },
     {
@@ -6074,8 +6333,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_model_py_tensor",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "tensor"
     },
     {
@@ -6086,8 +6345,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_representation_model_and_batch",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "_representation_model_and_batch()"
     },
     {
@@ -6098,8 +6357,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_representation_model_exports_deterministic_graph_vectors_and_symmetric_edges",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_representation_model_exports_deterministic_graph_vectors_and_symmetric_edges()"
     },
     {
@@ -6110,8 +6369,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_molecule_embedding_is_invariant_to_atom_index_permutation",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_molecule_embedding_is_invariant_to_atom_index_permutation()"
     },
     {
@@ -6122,8 +6381,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_molecule_embedding_does_not_depend_on_batch_companions",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_molecule_embedding_does_not_depend_on_batch_companions()"
     },
     {
@@ -6134,8 +6393,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_vicreg_and_complete_representation_objective_prevent_silent_unused_parameters",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_vicreg_and_complete_representation_objective_prevent_silent_unused_parameters()"
     },
     {
@@ -6146,8 +6405,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_nt_xent_prefers_correct_cross_view_pairs",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 34,
+      "community_name": "nt_xent_loss",
       "norm_label": "test_nt_xent_prefers_correct_cross_view_pairs()"
     },
     {
@@ -6158,8 +6417,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_contrastive_objective_can_target_canonical_mean_node_block",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_contrastive_objective_can_target_canonical_mean_node_block()"
     },
     {
@@ -6170,8 +6429,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_embedding_auto_resolves_to_canonical_hybrid_without_changing_legacy",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_embedding_auto_resolves_to_canonical_hybrid_without_changing_legacy()"
     },
     {
@@ -6182,8 +6441,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_projector_regularization_keeps_exported_graph_vector_separate_and_backpropagates",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_projector_regularization_keeps_exported_graph_vector_separate_and_backpropagates()"
     },
     {
@@ -6194,8 +6453,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_warm_start_loads_shared_weights_and_only_initializes_new_projector",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "test_warm_start_loads_shared_weights_and_only_initializes_new_projector()"
     },
     {
@@ -6205,8 +6464,8 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "tests_test_model_rationale_59",
-      "community": 4,
-      "community_name": "atomic_write_json",
+      "community": 25,
+      "community_name": "test_model.py",
       "norm_label": "the descriptor head must see the same representation in train/eval paths."
     },
     {
@@ -6217,7 +6476,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_negative_sampling.py"
     },
     {
@@ -6229,7 +6488,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_per_graph_negatives_are_unique_disjoint_and_deterministic",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_per_graph_negatives_are_unique_disjoint_and_deterministic()"
     },
     {
@@ -6241,7 +6500,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_complete_graph_has_no_invalid_negative",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_complete_graph_has_no_invalid_negative()"
     },
     {
@@ -6253,7 +6512,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_cross_graph_positive_edge_is_rejected",
       "community": 22,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_cross_graph_positive_edge_is_rejected()"
     },
     {
@@ -6264,8 +6523,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_segmented_hard_negative_selection_preserves_selected_gradients",
-      "community": 22,
-      "community_name": "NegativeCandidates",
+      "community": 26,
+      "community_name": "train.py",
       "norm_label": "test_segmented_hard_negative_selection_preserves_selected_gradients()"
     },
     {
@@ -6670,6 +6929,83 @@
       "norm_label": "reproduction"
     },
     {
+      "label": "manuscript-rev5/README.md",
+      "file_type": "document",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "artifacts_manuscript_rev5_readme",
+      "community": 32,
+      "community_name": "Manuscript rev5: evidence-source reorganization",
+      "norm_label": "manuscript-rev5/readme.md"
+    },
+    {
+      "label": "Manuscript rev5: evidence-source reorganization",
+      "file_type": "document",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "artifacts_manuscript_rev5_readme_manuscript_rev5_evidence_source_reorganization",
+      "community": 32,
+      "community_name": "Manuscript rev5: evidence-source reorganization",
+      "norm_label": "manuscript rev5: evidence-source reorganization"
+    },
+    {
+      "label": "Experimental chronology made explicit",
+      "file_type": "document",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "artifacts_manuscript_rev5_readme_experimental_chronology_made_explicit",
+      "community": 32,
+      "community_name": "Manuscript rev5: evidence-source reorganization",
+      "norm_label": "experimental chronology made explicit"
+    },
+    {
+      "label": "Old-to-new section mapping",
+      "file_type": "document",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "artifacts_manuscript_rev5_readme_old_to_new_section_mapping",
+      "community": 32,
+      "community_name": "Manuscript rev5: evidence-source reorganization",
+      "norm_label": "old-to-new section mapping"
+    },
+    {
+      "label": "Interpretation-affecting wording changes",
+      "file_type": "document",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "artifacts_manuscript_rev5_readme_interpretation_affecting_wording_changes",
+      "community": 32,
+      "community_name": "Manuscript rev5: evidence-source reorganization",
+      "norm_label": "interpretation-affecting wording changes"
+    },
+    {
+      "label": "Tables, figures and validation",
+      "file_type": "document",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "artifacts_manuscript_rev5_readme_tables_figures_and_validation",
+      "community": 32,
+      "community_name": "Manuscript rev5: evidence-source reorganization",
+      "norm_label": "tables, figures and validation"
+    },
+    {
+      "label": "Rebuild",
+      "file_type": "document",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "artifacts_manuscript_rev5_readme_rebuild",
+      "community": 32,
+      "community_name": "Manuscript rev5: evidence-source reorganization",
+      "norm_label": "rebuild"
+    },
+    {
       "label": "query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m.md",
       "file_type": "document",
       "source_file": "graphify-out/memory/query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m.md",
@@ -6722,6 +7058,61 @@
       "id": "graphify_out_memory_query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m_source_nodes",
       "community": 30,
       "community_name": "Q: Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k.",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita",
+      "community": 33,
+      "community_name": "Q: Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx.",
+      "norm_label": "query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md"
+    },
+    {
+      "label": "Q: Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx.",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_q_create_gmolai_rev5_docx_from_the_current_authoritative_gmolai_rev4_docx",
+      "community": 33,
+      "community_name": "Q: Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx.",
+      "norm_label": "q: create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx."
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_answer",
+      "community": 33,
+      "community_name": "Q: Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx.",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_outcome",
+      "community": 33,
+      "community_name": "Q: Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx.",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_source_nodes",
+      "community": 33,
+      "community_name": "Q: Create gmolai-rev5.docx from the current authoritative gmolai-rev4.docx.",
       "norm_label": "source nodes"
     },
     {
@@ -8241,10 +8632,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 5,
       "norm_label": "standardized graph-256 plus weighted mean-node-128 vector definition",
       "_origin": "semantic",
-      "community_name": "Combined ZINC-PubChem Retraining Configuration",
+      "community_name": "Representation V1 Training Overlay",
       "id": "inference_readme_vector_definition"
     },
     {
@@ -10431,6 +10822,90 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L305",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_assert_source_contract",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L960",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_delete_paragraph",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_find_exact_paragraph",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_find_paragraph",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_next_table_element",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_replace_in_runs",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "src/gmolai_retrain/checkpoint.py",
       "source_location": "L115",
       "weight": 1.0,
@@ -11452,6 +11927,18 @@
       "source": "inference_generate_embeddings_main",
       "target": "inference_generate_embeddings_run_inference",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "inference/generate_embeddings.py",
+      "source_location": "L497",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "inference_generate_embeddings_run_inference",
+      "target": "counter"
     },
     {
       "relation": "references",
@@ -12786,6 +13273,661 @@
       "_origin": "ast",
       "source": "scripts_update_manuscript_rev4_parse_args",
       "target": "scripts_update_manuscript_rev4_py_namespace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L302",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_assert_source_contract",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L319",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_delete_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_find_exact_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_find_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_new_paragraph_before",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_next_table_element",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_omml_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L1045",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_parse_args",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_replace_in_runs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_set_cant_split",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_set_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_set_repeat_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_set_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_sha256_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5",
+      "target": "scripts_update_manuscript_rev5_table_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L303",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_assert_source_contract",
+      "target": "scripts_update_manuscript_rev5_sha256_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_sha256_file",
+      "target": "scripts_update_manuscript_rev5_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L302",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_assert_source_contract",
+      "target": "scripts_update_manuscript_rev5_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L320",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_find_paragraph",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_delete_paragraph",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_find_exact_paragraph",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_new_paragraph_before",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_next_table_element",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_replace_in_runs",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_set_text",
+      "target": "scripts_update_manuscript_rev5_py_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L333",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_find_exact_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L338",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_set_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L210",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "target": "scripts_update_manuscript_rev5_set_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L359",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_replace_in_runs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L342",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_new_paragraph_before",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "target": "scripts_update_manuscript_rev5_new_paragraph_before",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L893",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_delete_paragraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L333",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_next_table_element",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L316",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_assert_source_contract",
+      "target": "scripts_update_manuscript_rev5_table_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L971",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_table_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L316",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_assert_source_contract",
+      "target": "scripts_update_manuscript_rev5_omml_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L976",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_omml_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_omml_hashes",
+      "target": "counter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L302",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_assert_source_contract",
+      "target": "counter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/gmolai_retrain/downstream.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_gmolai_retrain_downstream_prepare_dataset_records",
+      "target": "counter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/gmolai_retrain/graph_shards.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_gmolai_retrain_graph_shards_featurize_bucket",
+      "target": "counter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/gmolai_retrain/graph_shards.py",
+      "source_location": "L237",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_gmolai_retrain_graph_shards_finalize_graphs",
+      "target": "counter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/gmolai_retrain/preprocess.py",
+      "source_location": "L174",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_gmolai_retrain_preprocess_canonicalize_task",
+      "target": "counter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/gmolai_retrain/probes.py",
+      "source_location": "L328",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_gmolai_retrain_probes_scaffold_clustering_probe",
+      "target": "counter"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L229",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "target": "scripts_update_manuscript_rev5_set_repeat_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L230",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "target": "scripts_update_manuscript_rev5_set_cant_split",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "target": "scripts_update_manuscript_rev5_set_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L588",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_insert_evidence_roles_table",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L328",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_assert_source_contract",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L319",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "scripts_update_manuscript_rev5_py_namespace",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L323",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_build",
+      "target": "valueerror"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update_manuscript_rev5.py",
+      "source_location": "L1045",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_update_manuscript_rev5_parse_args",
+      "target": "scripts_update_manuscript_rev5_py_namespace",
       "confidence_score": 1.0
     },
     {
@@ -30310,6 +31452,72 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_manuscript_rev5_readme",
+      "target": "artifacts_manuscript_rev5_readme_manuscript_rev5_evidence_source_reorganization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_manuscript_rev5_readme_manuscript_rev5_evidence_source_reorganization",
+      "target": "artifacts_manuscript_rev5_readme_experimental_chronology_made_explicit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_manuscript_rev5_readme_manuscript_rev5_evidence_source_reorganization",
+      "target": "artifacts_manuscript_rev5_readme_interpretation_affecting_wording_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_manuscript_rev5_readme_manuscript_rev5_evidence_source_reorganization",
+      "target": "artifacts_manuscript_rev5_readme_old_to_new_section_mapping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_manuscript_rev5_readme_manuscript_rev5_evidence_source_reorganization",
+      "target": "artifacts_manuscript_rev5_readme_rebuild",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "artifacts/manuscript-rev5/README.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "artifacts_manuscript_rev5_readme_manuscript_rev5_evidence_source_reorganization",
+      "target": "artifacts_manuscript_rev5_readme_tables_figures_and_validation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "graphify-out/memory/query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m.md",
       "source_location": "L10",
       "weight": 1.0,
@@ -30349,6 +31557,50 @@
       "_origin": "ast",
       "source": "graphify_out_memory_query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m_q_perform_a_no_training_audit_of_actual_downstream_molecule_exposure_for_every_retained_seed_42_checkpoint_from_5k_through_15k",
       "target": "graphify_out_memory_query_20260811_215725_perform_a_no_training_audit_of_actual_downstream_m_source_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita",
+      "target": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_q_create_gmolai_rev5_docx_from_the_current_authoritative_gmolai_rev4_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_q_create_gmolai_rev5_docx_from_the_current_authoritative_gmolai_rev4_docx",
+      "target": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_q_create_gmolai_rev5_docx_from_the_current_authoritative_gmolai_rev4_docx",
+      "target": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_q_create_gmolai_rev5_docx_from_the_current_authoritative_gmolai_rev4_docx",
+      "target": "graphify_out_memory_query_20260812_083137_create_gmolai_rev5_docx_from_the_current_authorita_source_nodes",
       "confidence_score": 1.0
     },
     {
@@ -34066,5 +35318,5 @@
       "source_file": "inference/README.md"
     }
   ],
-  "built_at_commit": "e34fc5a4eabe7bf8bce21a21f566f812e225b00a"
+  "built_at_commit": "0a515043db50e8769227940a93a522b67d723245"
 }
