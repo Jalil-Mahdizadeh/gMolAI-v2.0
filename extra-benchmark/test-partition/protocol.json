@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "protocol_status": "frozen_before_locked_comparator_execution",
+  "frozen_date": "2026-08-12",
+  "execution": {
+    "mode": "inference_only",
+    "gpus": 1,
+    "precision": "float32",
+    "uses_3d": false
+  },
+  "repository": {
+    "expected_head": "d192c04",
+    "project_root": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain",
+    "work_dir": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work"
+  },
+  "authoritative_panels": {
+    "train": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/train-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810.pt",
+      "sha256": "469ffed7a0da0e4a4e970f974f89e70e269bd563c729464e02b1c697adfb53e7",
+      "rows": 10000,
+      "split": "train"
+    },
+    "validation": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/validation-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810-50k.pt",
+      "sha256": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+      "rows": 50000,
+      "split": "validation"
+    },
+    "test": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/test-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810-50k.pt",
+      "sha256": "46b1851fcb53f5fd200ff8f8185c827447f25e50812e682a37122801f502c828",
+      "rows": 50000,
+      "split": "test",
+      "population_rows": 1088766
+    },
+    "reference_test_metrics": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-probes-test-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810-50k.json",
+      "sha256": "41814d0dda0a3b45547e085adf862d4c253fe56f17d86f23133cde77c587ba40"
+    },
+    "dataset_manifest": {
+      "path": "work/dataset_manifest.json",
+      "sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788"
+    },
+    "graph_manifest": {
+      "path": "work/graph_manifest.json",
+      "sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da"
+    }
+  },
+  "diagnostics": {
+    "similarity_rows": 5000,
+    "seed": 42,
+    "ridge_alpha": 10.0,
+    "morgan_radius": 2,
+    "morgan_bits": 2048,
+    "minimum_scaffold_frequency": 5,
+    "maximum_scaffold_clusters": 32,
+    "kmeans_repetitions": 5,
+    "kmeans_n_init": 20,
+    "kmeans_max_iter": 500
+  },
+  "comparators": {
+    "gmolai": {
+      "dimension": 384,
+      "representation": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+      "source": "authoritative_panel_exports"
+    },
+    "morgan": {
+      "dimension": 2048,
+      "batch_size": 4096,
+      "representation": "rdkit_morgan_radius2_fpSize2048_float32",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    },
+    "molai": {
+      "dimension": 512,
+      "batch_size": 256,
+      "representation": "epoch6_three_lstm_hidden_cell_concat_linear_tanh",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif",
+      "container_sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e",
+      "max_tokens": 109,
+      "stereochemistry": "removed_by_official_preprocessing"
+    },
+    "molformer": {
+      "dimension": 768,
+      "batch_size": 128,
+      "representation": "official_pooler_output",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif",
+      "container_sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431",
+      "max_tokens_including_special": 202,
+      "model_revision": "7b12d946c181a37f6012b9dc3b002275de070314"
+    },
+    "smi_ted": {
+      "dimension": 768,
+      "batch_size": 100,
+      "representation": "official_model_encode",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif",
+      "container_sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a",
+      "max_tokens_including_special": 202,
+      "model_revision": "414c3ea0a8603ef49d1c5bb3db336e09877c01ce",
+      "stereochemistry": "removed_by_official_preprocessing",
+      "warmup_batches": 1
+    },
+    "molclr_gin": {
+      "dimension": 512,
+      "batch_size": 256,
+      "representation": "official_downstream_preprojection_graph_vector",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif",
+      "container_sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272"
+    },
+    "kermt_v2": {
+      "dimension": 512,
+      "batch_size": 64,
+      "representation": "cmim_projected_mean_latent",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif",
+      "container_sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117"
+    }
+  }
+}

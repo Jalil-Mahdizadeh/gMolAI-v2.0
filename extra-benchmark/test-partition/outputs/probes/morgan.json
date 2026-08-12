@@ -1,0 +1,317 @@
+{
+  "checkpoint_metadata": {
+    "architecture": "morgan",
+    "checkpoint": "rdkit_morgan_radius2_fpSize2048_float32",
+    "checkpoint_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "common_identity_sha256": "a9e3e63eade2c542fef670184ed1a34e054167d085ad299ee080217d7301e237",
+    "config_hash": "35bbc0b7eb184a71f3739fbe0ce4688a8d093a41da2418b00070b10731ccab22",
+    "descriptor_schema_hash": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+    "dimensions": 2048,
+    "embedding_definition": "rdkit_morgan_radius2_fpSize2048_float32",
+    "embedding_parameters": {
+      "frozen_protocol_digest": "35bbc0b7eb184a71f3739fbe0ce4688a8d093a41da2418b00070b10731ccab22",
+      "native_dimension": 2048,
+      "precision": "float32"
+    },
+    "execution": "inference_only",
+    "global_step": 0,
+    "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+    "graphs": 49844,
+    "sampling": "authoritative_panel_filtered_to_all_comparator_common_coverage",
+    "sampling_seed": 20260810,
+    "schema_version": 1,
+    "split": "test",
+    "training_plan_hash": "not_applicable_frozen_inference_35bbc0b7eb184a71f3739fbe0ce4688a8d093a41da2418b00070b10731ccab22",
+    "uses_3d": false
+  },
+  "clustering": {
+    "available": true,
+    "available_graphs": 49844,
+    "graphs": 16360,
+    "kmeans_n_init_per_repetition": 20,
+    "kmeans_repetitions": 5,
+    "kmeans_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "latent_spherical_kmeans": {
+      "adjusted_rand_index": 0.3955703042792596,
+      "adjusted_rand_index_std": 0.03540624954906404,
+      "completeness": 0.7245282241667913,
+      "completeness_std": 0.017171308402427515,
+      "homogeneity": 0.8753101738054789,
+      "homogeneity_std": 0.014724300886648155,
+      "normalized_mutual_information": 0.7927995386560196,
+      "normalized_mutual_information_std": 0.016199591573177942,
+      "per_seed": [
+        {
+          "adjusted_rand_index": 0.37993204636607647,
+          "completeness": 0.7140744552918556,
+          "homogeneity": 0.8597672154365945,
+          "normalized_mutual_information": 0.7801773424343524,
+          "v_measure": 0.7801773424343524
+        },
+        {
+          "adjusted_rand_index": 0.4424612436406299,
+          "completeness": 0.7510224035620251,
+          "homogeneity": 0.8980994846531067,
+          "normalized_mutual_information": 0.8180024028812152,
+          "v_measure": 0.8180024028812153
+        },
+        {
+          "adjusted_rand_index": 0.36368580104482034,
+          "completeness": 0.7128993185810902,
+          "homogeneity": 0.8690038606268127,
+          "normalized_mutual_information": 0.7832492762235881,
+          "v_measure": 0.7832492762235881
+        },
+        {
+          "adjusted_rand_index": 0.4333553763920492,
+          "completeness": 0.7384172566114425,
+          "homogeneity": 0.8867329569450648,
+          "normalized_mutual_information": 0.8058072564029604,
+          "v_measure": 0.8058072564029604
+        },
+        {
+          "adjusted_rand_index": 0.35841705395272194,
+          "completeness": 0.7062276867875431,
+          "homogeneity": 0.8629473513658161,
+          "normalized_mutual_information": 0.7767614153379818,
+          "v_measure": 0.7767614153379819
+        }
+      ],
+      "v_measure": 0.7927995386560196,
+      "v_measure_std": 0.016199591573177952
+    },
+    "maximum_scaffold_clusters": 32,
+    "minimum_scaffold_frequency": 5,
+    "morgan_spherical_kmeans": {
+      "adjusted_rand_index": 0.3955703042792596,
+      "adjusted_rand_index_std": 0.03540624954906404,
+      "completeness": 0.7245282241667913,
+      "completeness_std": 0.017171308402427515,
+      "homogeneity": 0.8753101738054789,
+      "homogeneity_std": 0.014724300886648155,
+      "normalized_mutual_information": 0.7927995386560196,
+      "normalized_mutual_information_std": 0.016199591573177942,
+      "per_seed": [
+        {
+          "adjusted_rand_index": 0.37993204636607647,
+          "completeness": 0.7140744552918556,
+          "homogeneity": 0.8597672154365945,
+          "normalized_mutual_information": 0.7801773424343524,
+          "v_measure": 0.7801773424343524
+        },
+        {
+          "adjusted_rand_index": 0.4424612436406299,
+          "completeness": 0.7510224035620251,
+          "homogeneity": 0.8980994846531067,
+          "normalized_mutual_information": 0.8180024028812152,
+          "v_measure": 0.8180024028812153
+        },
+        {
+          "adjusted_rand_index": 0.36368580104482034,
+          "completeness": 0.7128993185810902,
+          "homogeneity": 0.8690038606268127,
+          "normalized_mutual_information": 0.7832492762235881,
+          "v_measure": 0.7832492762235881
+        },
+        {
+          "adjusted_rand_index": 0.4333553763920492,
+          "completeness": 0.7384172566114425,
+          "homogeneity": 0.8867329569450648,
+          "normalized_mutual_information": 0.8058072564029604,
+          "v_measure": 0.8058072564029604
+        },
+        {
+          "adjusted_rand_index": 0.35841705395272194,
+          "completeness": 0.7062276867875431,
+          "homogeneity": 0.8629473513658161,
+          "normalized_mutual_information": 0.7767614153379818,
+          "v_measure": 0.7767614153379819
+        }
+      ],
+      "v_measure": 0.7927995386560196,
+      "v_measure_std": 0.016199591573177952
+    },
+    "sampled_graphs": 49844,
+    "sampling": "seeded_without_replacement_across_export",
+    "sampling_seed": 59,
+    "scaffold_clusters": 32
+  },
+  "embedding_block_diagnostics": null,
+  "embedding_diagnostics": {
+    "dimensions": 2048,
+    "effective_rank": 718.0907277011385,
+    "effective_rank_ratio": 0.3506302381353215,
+    "graphs": 49844,
+    "median_coordinate_std": 0.09375077565313417,
+    "minimum_coordinate_std": 0.03824204274918921,
+    "participation_ratio": 239.2739416511981,
+    "participation_ratio_fraction": 0.11683297932187407,
+    "top_eigenvalue_fraction": 0.030587956138742784
+  },
+  "held_out_linear_probe": {
+    "mean_r2": 0.8163285001871103,
+    "mean_standardized_mae": 0.29250424312501805,
+    "median_r2": 0.810354165882849,
+    "r2": {
+      "aliphatic_ring_count": 0.8381122093138528,
+      "aromatic_ring_count": 0.8931007399057391,
+      "bertz_complexity": 0.8779288824384494,
+      "chi0v": 0.7952364886724951,
+      "chi1v": 0.810354165882849,
+      "fraction_csp3": 0.9040924152074448,
+      "hall_kier_alpha": 0.8745232624392907,
+      "kappa1": 0.7832304900833976,
+      "kappa2": 0.7555897392945277,
+      "kappa3": 0.6393916198230634,
+      "ring_count": 0.8078569160125693,
+      "rotatable_bond_count": 0.8048016800369058,
+      "saturated_ring_count": 0.8280518933218484
+    },
+    "ridge_alpha": 10.0,
+    "standardized_mae": {
+      "aliphatic_ring_count": 0.29369468281913397,
+      "aromatic_ring_count": 0.23604763395942935,
+      "bertz_complexity": 0.24312375206335177,
+      "chi0v": 0.31304538237703067,
+      "chi1v": 0.3027562564389075,
+      "fraction_csp3": 0.23682847691784645,
+      "hall_kier_alpha": 0.2560222709650178,
+      "kappa1": 0.320260613001998,
+      "kappa2": 0.3315166942842989,
+      "kappa3": 0.37271437157910753,
+      "ring_count": 0.28927173205116374,
+      "rotatable_bond_count": 0.29976941528756906,
+      "saturated_ring_count": 0.30750387888037917
+    },
+    "train_graphs": 9958,
+    "validation_graphs": 49844
+  },
+  "latent_minus_descriptor_baseline_mean_r2": 0.044711425024049456,
+  "scaffold_disjoint_linear_probe": {
+    "mean_r2": 0.8173125036373313,
+    "mean_standardized_mae": 0.2887681711945959,
+    "median_r2": 0.8121691022719713,
+    "r2": {
+      "aliphatic_ring_count": 0.835968873565573,
+      "aromatic_ring_count": 0.889039234459897,
+      "bertz_complexity": 0.8726723065471996,
+      "chi0v": 0.7950845762553002,
+      "chi1v": 0.8095470895437074,
+      "fraction_csp3": 0.907261959083969,
+      "hall_kier_alpha": 0.8732398760065607,
+      "kappa1": 0.7914604723959923,
+      "kappa2": 0.7704058396362582,
+      "kappa3": 0.6609933034027058,
+      "ring_count": 0.78066723431755,
+      "rotatable_bond_count": 0.8121691022719713,
+      "saturated_ring_count": 0.8265526797986221
+    },
+    "ridge_alpha": 10.0,
+    "standardized_mae": {
+      "aliphatic_ring_count": 0.294393981565329,
+      "aromatic_ring_count": 0.23652724076842563,
+      "bertz_complexity": 0.2428627784023281,
+      "chi0v": 0.30926393723901996,
+      "chi1v": 0.2991846075996901,
+      "fraction_csp3": 0.23276014636849265,
+      "hall_kier_alpha": 0.2545127338863889,
+      "kappa1": 0.3154331747923418,
+      "kappa2": 0.3241352476630994,
+      "kappa3": 0.35363229246703537,
+      "ring_count": 0.2888027988214073,
+      "rotatable_bond_count": 0.294159428437862,
+      "saturated_ring_count": 0.30831785751832674
+    },
+    "train_graphs": 9958,
+    "validation_graphs": 49054
+  },
+  "scaffold_disjoint_validation_fraction": 0.9841505497151112,
+  "schema_version": 1,
+  "similarity": {
+    "available_graphs": 49844,
+    "graphs": 5000,
+    "latent_cosine_vs_morgan_spearman": 0.9991606559019005,
+    "latent_neighbor_mean_tanimoto": 0.3313407003879547,
+    "latent_to_morgan_recall_at_10": 0.96996,
+    "morgan_bits": 2048,
+    "morgan_radius": 2,
+    "neighbor_tanimoto_enrichment": 2.671607494354248,
+    "neighbors": 10,
+    "nonempty_scaffold_queries": 4933,
+    "random_pair_mean_tanimoto": 0.1240229681134224,
+    "random_scaffold_neighbor_purity": 0.011125030601092852,
+    "sampling": "seeded_without_replacement_across_export",
+    "sampling_seed": 42,
+    "scaffold_neighbor_purity_at_10": 0.33016420028380294,
+    "scaffold_purity_enrichment": 29.677599291400576
+  },
+  "train_embedding_metadata": {
+    "architecture": "morgan",
+    "checkpoint": "rdkit_morgan_radius2_fpSize2048_float32",
+    "checkpoint_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "common_identity_sha256": "0e9477476ed5aade943809928ab96859a143087731f2843e2b8d946ae7b94417",
+    "config_hash": "35bbc0b7eb184a71f3739fbe0ce4688a8d093a41da2418b00070b10731ccab22",
+    "descriptor_schema_hash": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0",
+    "dimensions": 2048,
+    "embedding_definition": "rdkit_morgan_radius2_fpSize2048_float32",
+    "embedding_parameters": {
+      "frozen_protocol_digest": "35bbc0b7eb184a71f3739fbe0ce4688a8d093a41da2418b00070b10731ccab22",
+      "native_dimension": 2048,
+      "precision": "float32"
+    },
+    "execution": "inference_only",
+    "global_step": 0,
+    "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+    "graphs": 9958,
+    "sampling": "authoritative_panel_filtered_to_all_comparator_common_coverage",
+    "sampling_seed": 20260810,
+    "schema_version": 1,
+    "split": "train",
+    "training_plan_hash": "not_applicable_frozen_inference_35bbc0b7eb184a71f3739fbe0ce4688a8d093a41da2418b00070b10731ccab22",
+    "uses_3d": false
+  },
+  "training_descriptor_baseline": {
+    "mean_r2": 0.7716170751630609,
+    "mean_standardized_mae": 0.30922355856599043,
+    "median_r2": 0.843060294415792,
+    "r2": {
+      "aliphatic_ring_count": 0.5329991847349707,
+      "aromatic_ring_count": 0.843060294415792,
+      "bertz_complexity": 0.9458705474081157,
+      "chi0v": 0.9894097871472011,
+      "chi1v": 0.9257718266514602,
+      "fraction_csp3": 0.874693912485772,
+      "hall_kier_alpha": 0.940174620940287,
+      "kappa1": 0.9700940861595739,
+      "kappa2": 0.7272206094504592,
+      "kappa3": 0.5357127241397401,
+      "ring_count": 0.7228515932081401,
+      "rotatable_bond_count": 0.45371817035626005,
+      "saturated_ring_count": 0.5694446200220211
+    },
+    "ridge_alpha": 10.0,
+    "standardized_mae": {
+      "aliphatic_ring_count": 0.5097802413100604,
+      "aromatic_ring_count": 0.29369645856230436,
+      "bertz_complexity": 0.16711437008777347,
+      "chi0v": 0.07692329064266631,
+      "chi1v": 0.1990069655213057,
+      "fraction_csp3": 0.26855138337510376,
+      "hall_kier_alpha": 0.18590121824532646,
+      "kappa1": 0.12752391659876874,
+      "kappa2": 0.37339489399183645,
+      "kappa3": 0.44327230998442896,
+      "ring_count": 0.3523750220655996,
+      "rotatable_bond_count": 0.5317029620774393,
+      "saturated_ring_count": 0.4906632288952626
+    },
+    "train_graphs": 9958,
+    "validation_graphs": 49844
+  }
+}

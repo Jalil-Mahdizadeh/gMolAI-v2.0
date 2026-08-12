@@ -1,0 +1,46 @@
+{
+  "collision_safe_validation": true,
+  "identity_rule": "SHA-256 of canonical isomeric SMILES",
+  "panels": {
+    "test_50k": {
+      "canonical_smiles_sha256": "87093c87778d349f72d6c17ebfb355079d1986fe48b6086fceb45348dd801b33",
+      "ordered_identity_sha256": "920578106aefe66602ff38538ec5913f90945f0229dfa0ddcec93abc6df842b3",
+      "rows": 50000,
+      "smiles": "extra-benchmark/test-partition/inputs/test_50k.smi",
+      "smiles_sha256": "87093c87778d349f72d6c17ebfb355079d1986fe48b6086fceb45348dd801b33",
+      "tsv": "extra-benchmark/test-partition/inputs/test_50k.tsv",
+      "tsv_sha256": "08c9bb9bac153821aedfc8c085c28bdd0799b8f35e689b840b66ad3edce6e616",
+      "unique_identities": 50000
+    },
+    "train_10k": {
+      "canonical_smiles_sha256": "4481726a150ea4e92b1a19904a5abe08960978857ab5794ca1c902c0ebc2e540",
+      "ordered_identity_sha256": "65716c0da33a4d3eb4198f1e3ea8a8eedfd91b6e8596fd0553f73ab519826391",
+      "rows": 10000,
+      "smiles": "extra-benchmark/test-partition/inputs/train_10k.smi",
+      "smiles_sha256": "4481726a150ea4e92b1a19904a5abe08960978857ab5794ca1c902c0ebc2e540",
+      "tsv": "extra-benchmark/test-partition/inputs/train_10k.tsv",
+      "tsv_sha256": "816dc5749093f0e3ee27db3fc19516097de390f29210953b84bc55381c10876a",
+      "unique_identities": 10000
+    },
+    "validation_qualification": {
+      "canonical_smiles_sha256": "857c2b3c2368fcc07bd52ac540e8bb11a881b51e78064bb52b83c5b64a9dfde6",
+      "ordered_identity_sha256": "1cd2e414e08de761dce041d260e68339968e0be167b7e5b5dbe1c6968293a0b8",
+      "rows": 128,
+      "smiles": "extra-benchmark/test-partition/inputs/validation_qualification.smi",
+      "smiles_sha256": "857c2b3c2368fcc07bd52ac540e8bb11a881b51e78064bb52b83c5b64a9dfde6",
+      "tsv": "extra-benchmark/test-partition/inputs/validation_qualification.tsv",
+      "tsv_sha256": "4ee33d1f54beab1a073a23c03d188d10e75d7ab28079cefd35c678495788813c",
+      "unique_identities": 128
+    }
+  },
+  "qualification_selection": {
+    "method": "length_stratified_even_positions_with_hash_tiebreak",
+    "selected_source_indices_sha256": "f8238ba873840aaa6d52e6f0c3a5c74764201b3a087fca2a9838e87890330e21",
+    "source": "pretraining_validation_partition",
+    "source_rows": 50000
+  },
+  "schema_version": 1,
+  "source_dataset_manifest_sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+  "source_graph_manifest_sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+  "status": "ok"
+}

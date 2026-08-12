@@ -415,6 +415,25 @@ experimental chronology and evidence source, adds a compact data/evidence-roles
 table, and preserves all scientific results and promotion criteria. The rev4
 bundle and sibling DOCX remain unchanged.
 
+### Additional frozen-encoder benchmark
+
+[`extra-benchmark/test-partition/`](extra-benchmark/test-partition/) contains
+the completed inference-only comparison of the frozen seed-42/10k 384-D gMolAI
+representation with Morgan, MolAI epoch 6, MoLFormer, SMI-TED-Light,
+MolCLR-GIN, and KERMT v2. All encoders were evaluated on the same 49,844-molecule
+intersection of the authoritative 50,000-molecule sample from the locked
+1,088,766-molecule internal pretraining test partition; the topology probe used
+9,958 common molecules from the existing 10,000-molecule training export.
+
+gMolAI ranked first on the common 13-descriptor topology probe (mean R2
+0.9705), whereas Morgan remained strongest for recurring-scaffold clustering
+(ARI 0.3956 and NMI 0.7928, versus gMolAI 0.3578 and 0.7246). This is
+representation-diagnostic evidence, not endpoint prediction, and it does not
+establish universal superiority. The compact results, per-seed probe records,
+coverage tables, frozen protocol, and checksum-sealed completion state are
+versioned; large embedding matrices and payloads remain excluded from Git.
+MoleculeNet comparator evaluation has not yet been launched.
+
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both
 `representation-best.pt` and `representation-calibrator.pt`.

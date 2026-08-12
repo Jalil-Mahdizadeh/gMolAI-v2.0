@@ -1,0 +1,109 @@
+{
+  "current": {
+    "host": "n566",
+    "message": "Locked internal test-partition benchmark completed; MoleculeNet untouched",
+    "slurm_job_id": "1215856",
+    "stage": "complete",
+    "status": "complete",
+    "timestamp_utc": "2026-08-12T13:23:15.616471+00:00"
+  },
+  "history": [
+    {
+      "host": "n139",
+      "message": "Verifying frozen artifacts and all SIF hashes",
+      "slurm_job_id": null,
+      "stage": "preflight",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T12:33:56.910540+00:00"
+    },
+    {
+      "host": "n139",
+      "message": "Reconstructing immutable canonical identity panels",
+      "slurm_job_id": null,
+      "stage": "panels",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T12:35:12.690775+00:00"
+    },
+    {
+      "host": "n139",
+      "message": "Qualifying frozen adapters without locked-test tuning",
+      "slurm_job_id": null,
+      "stage": "validation_qualification",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T12:36:11.910939+00:00"
+    },
+    {
+      "host": "n139",
+      "message": "Applying frozen coverage rules once to train-10k and locked-test-50k",
+      "slurm_job_id": null,
+      "stage": "locked_coverage",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T12:38:13.536972+00:00"
+    },
+    {
+      "host": "n139",
+      "message": "Exporting native FP32 representations on identical common identities",
+      "slurm_job_id": null,
+      "stage": "locked_encoding",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T12:40:08.403462+00:00"
+    },
+    {
+      "host": "n139",
+      "message": "Binding native vectors to exact immutable identities",
+      "slurm_job_id": null,
+      "stage": "payload_binding",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T12:47:12.645040+00:00"
+    },
+    {
+      "host": "n139",
+      "message": "Running unchanged common topology, geometry, neighbour, and clustering probes",
+      "slurm_job_id": null,
+      "stage": "common_probes",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T12:47:24.801724+00:00"
+    },
+    {
+      "host": "n566",
+      "message": "Validating frozen sources and existing native embeddings; no encoding",
+      "slurm_job_id": "1215856",
+      "stage": "recovery_validation",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T13:05:55.998721+00:00"
+    },
+    {
+      "host": "n566",
+      "message": "Restoring authoritative hybrid metadata in derived gMolAI payloads",
+      "slurm_job_id": "1215856",
+      "stage": "recovery_payload_binding",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T13:07:25.693593+00:00"
+    },
+    {
+      "host": "n566",
+      "message": "Running topology, geometry, neighbour and clustering probes",
+      "slurm_job_id": "1215856",
+      "stage": "common_probes",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T13:07:41.595680+00:00"
+    },
+    {
+      "host": "n566",
+      "message": "Hashing outputs and sealing inference-only completion state",
+      "slurm_job_id": "1215856",
+      "stage": "integrity",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T13:23:12.028909+00:00"
+    },
+    {
+      "host": "n566",
+      "message": "Locked internal test-partition benchmark completed; MoleculeNet untouched",
+      "slurm_job_id": "1215856",
+      "stage": "complete",
+      "status": "complete",
+      "timestamp_utc": "2026-08-12T13:23:15.616471+00:00"
+    }
+  ],
+  "schema_version": 1
+}

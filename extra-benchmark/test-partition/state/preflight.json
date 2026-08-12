@@ -1,0 +1,42 @@
+{
+  "architecture": "aarch64",
+  "benchmark_source_sha256": {
+    "extra-benchmark/test-partition/protocol.json": "1fe98a5a7e3795c5e876d8616bd7a61b0b7038418be7ad472744558433d83f3e",
+    "extra-benchmark/test-partition/scripts/adapter.py": "7c87bfa567564765da7aca9ae417ef3b1f4c7252c7922b6ab4db2bb25c59a8e4",
+    "extra-benchmark/test-partition/scripts/assemble_common.py": "819d3004b490fd30df75ccc813104d7b295615c8f73e9c0510de39db81dfae08",
+    "extra-benchmark/test-partition/scripts/benchmark_io.py": "548fd9ba4a99e9012258300f3e9f8637728e3cc0ac0eb9bccc7a7c15b25e812f",
+    "extra-benchmark/test-partition/scripts/evaluate_payloads.py": "32f284298ff625543c4ff7b1f69bd3498fa572b9fcb9c70959f4fd2bcdaaf0fd",
+    "extra-benchmark/test-partition/scripts/finalize.py": "ba31497933596e17de8b75ba3b7c50f44d44a0ecc119542b2a8252ebab71d758",
+    "extra-benchmark/test-partition/scripts/package_payloads.py": "4fe588466b9706b15469f09c77d9b829976113f94400a7273917b17fe3a1ee28",
+    "extra-benchmark/test-partition/scripts/preflight.py": "8a37c22760091c83598b59fdcbd93229740403c4b7f20085f3a6a622e659635e",
+    "extra-benchmark/test-partition/scripts/prepare_panels.py": "c3e7c76bf0dd5196ba8de6bbdf14c421f948eb38bc352ec513e2f6e28ea160f2",
+    "extra-benchmark/test-partition/scripts/state_update.py": "c943511c06e513eb1632fb538ddf20dcd5a6e8d31013d55ef56bdd40dc66b680",
+    "extra-benchmark/test-partition/scripts/validate_adapter_output.py": "ba6275ce37a77215e8b7f4c1f6d4a91e4675b03a8113bd8f43e918c91af37342"
+  },
+  "container_hashes_skipped": false,
+  "execution": "inference_only",
+  "host": "n566",
+  "protocol_semantic_digest": "35bbc0b7eb184a71f3739fbe0ce4688a8d093a41da2418b00070b10731ccab22",
+  "protocol_sha256": "1fe98a5a7e3795c5e876d8616bd7a61b0b7038418be7ad472744558433d83f3e",
+  "repository_head": "d192c04",
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-12T13:07:13.298035+00:00",
+  "verified_artifacts": {
+    "authoritative_panels.dataset_manifest": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "authoritative_panels.graph_manifest": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+    "authoritative_panels.reference_test_metrics": "41814d0dda0a3b45547e085adf862d4c253fe56f17d86f23133cde77c587ba40",
+    "authoritative_panels.test": "46b1851fcb53f5fd200ff8f8185c827447f25e50812e682a37122801f502c828",
+    "authoritative_panels.train": "469ffed7a0da0e4a4e970f974f89e70e269bd563c729464e02b1c697adfb53e7",
+    "authoritative_panels.validation": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+    "comparators.kermt_v2.container": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117",
+    "comparators.molai.container": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e",
+    "comparators.molclr_gin.container": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272",
+    "comparators.molformer.container": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431",
+    "comparators.morgan.container": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "comparators.smi_ted.container": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a"
+  },
+  "working_tree_changes": [
+    "?? extra-benchmark/"
+  ]
+}

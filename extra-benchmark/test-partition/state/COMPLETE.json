@@ -1,0 +1,25 @@
+{
+  "checksummed_files": 111,
+  "common_test_rows": 49844,
+  "common_train_rows": 9958,
+  "comparators": [
+    "gmolai",
+    "kermt_v2",
+    "molai",
+    "molclr_gin",
+    "molformer",
+    "morgan",
+    "smi_ted"
+  ],
+  "execution": "inference_only",
+  "gmolai_checkpoint_or_calibrator_modified": false,
+  "model_weights_modified": false,
+  "moleculenet_executed": false,
+  "protocol_sha256": "1fe98a5a7e3795c5e876d8616bd7a61b0b7038418be7ad472744558433d83f3e",
+  "schema_version": 1,
+  "sha256sums_sha256": "410afbd22f1146d72ffcd10f3b197db49512a94bc1cac6770ffbcad4c8da3844",
+  "status": "complete",
+  "summary_sha256": "380c0952120753ecf63a7bb964db4c32416de10c77da6f6ceca65e7f8498f8b1",
+  "timestamp_utc": "2026-08-12T13:23:15.297986+00:00",
+  "training_performed": false
+}

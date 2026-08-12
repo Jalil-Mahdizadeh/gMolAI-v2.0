@@ -1,0 +1,8 @@
+model,attempted,accepted,rejected,coverage_fraction,common_rows
+gmolai,10000,10000,0,1.0,9958
+morgan,10000,10000,0,1.0,9958
+molai,10000,9958,42,0.9958,9958
+molformer,10000,10000,0,1.0,9958
+smi_ted,10000,10000,0,1.0,9958
+molclr_gin,10000,10000,0,1.0,9958
+kermt_v2,10000,10000,0,1.0,9958
