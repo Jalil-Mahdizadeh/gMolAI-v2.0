@@ -81,15 +81,20 @@ absolute definition of quality. Raw effective rank is dimension-dependent, so
 normalized rank is always reported beside it. gMolAI-only reconstruction and
 masked-graph metrics are excluded from the common leaderboard.
 
-## Timing scope in this initiated run
+## Timing scope and subsequent controlled benchmark
 
 The job records model-load-plus-representation export wall time, attempted and
 accepted rows, output bytes, and observed peak GPU memory for the frozen
-10k/50k panels. These are an initial controlled systems record, not yet the
-final full-1,088,766-molecule sustained-throughput experiment. A later speed
-stage must retain the same frozen adapters, add unmeasured warm-up, separate
-cold start from steady state, exclude serialization from model-only timing,
-and use at least five repetitions.
+10k/50k panels. These remain provenance for this workflow rather than an
+apples-to-apples throughput leaderboard. The subsequent dedicated speed design
+was frozen on the 49,844-molecule all-model-common panel and completed on one
+GH200 with common timing boundaries, unmeasured warm-up, four batch sizes, and
+one full measured pass per condition; see
+[`../speed/PROTOCOL.md`](../speed/PROTOCOL.md) and
+[`../speed/RESULTS.md`](../speed/RESULTS.md). That completed protocol supersedes
+the preliminary full-corpus, five-repetition plan recorded before the definitive
+speed protocol. It governs the current reported comparison while explicitly
+retaining the limitation that its point estimates have no confidence intervals.
 
 ## Prohibitions
 

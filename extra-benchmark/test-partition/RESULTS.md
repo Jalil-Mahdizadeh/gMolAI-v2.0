@@ -85,8 +85,10 @@ spherical K-means despite immutable legacy JSON key names.
   Lipophilicity, HIV, or any other endpoint.
 - Recorded comparator export timings include model loading, warm-up, and
   serialization; gMolAI was reused from its authoritative export. They are not
-  a publication-grade, apples-to-apples throughput comparison. A separate
-  frozen sustained-throughput stage is still required.
+  a publication-grade, apples-to-apples throughput comparison. The completed
+  frozen single-GPU benchmark in
+  [`../speed/RESULTS.md`](../speed/RESULTS.md) supersedes these incidental
+  timings for controlled throughput comparisons.
 
 ## Versioned audit artifacts
 

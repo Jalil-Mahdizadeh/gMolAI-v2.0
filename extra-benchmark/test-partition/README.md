@@ -22,7 +22,9 @@ The workflow is fail-closed and resumable:
    clustering diagnostics on identical identities; and
 8. write coverage, timing, integrity, and result summaries.
 
-The five-dataset MoleculeNet evaluation is not part of this workflow.
+The five-development-dataset MoleculeNet evaluation plus HIV confirmation is a
+separate completed workflow; see
+[`../moleculenet/RESULTS.md`](../moleculenet/RESULTS.md).
 
 ## Launch on Arrhenius
 
@@ -51,4 +53,9 @@ probes, and exited successfully. It did not execute an encoder.
 `state/COMPLETE.json` was written only after all seven model probes and the
 integrity checks passed. All 111 entries in `outputs/SHA256SUMS` were then
 independently verified. The promoted seed-42/10k checkpoint and calibrator were
-not changed, and MoleculeNet was not executed.
+not changed. These jobs were limited to the locked internal test-partition
+workflow. The independent MoleculeNet plus HIV benchmark subsequently completed
+with its own checksum-validated record, and the controlled single-GPU
+throughput follow-up also completed; see
+[`../moleculenet/RESULTS.md`](../moleculenet/RESULTS.md) and
+[`../speed/RESULTS.md`](../speed/RESULTS.md), respectively.

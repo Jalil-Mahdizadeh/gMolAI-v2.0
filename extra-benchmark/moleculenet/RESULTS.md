@@ -143,8 +143,13 @@ These timings include load, warm-up, preprocessing, inference, and export for
 Morgan is CPU-based, neural implementations have different preprocessing and
 batching, the measurements include non-inference work, and the recovery used
 two GH200 nodes. These values are therefore not a publication-quality speed
-leaderboard. A repeated steady-state benchmark with common timing boundaries
-is still needed for a defensible scalability claim.
+leaderboard. The dedicated single-GPU benchmark has since completed on the
+49,844-molecule all-model-common locked-test panel with common timing
+boundaries and batch sizes 64, 128, 256, and 512; see
+[`../speed/RESULTS.md`](../speed/RESULTS.md). That controlled benchmark
+supersedes these incidental export timings for throughput comparisons. Its
+values remain descriptive single-pass point estimates without confidence
+intervals, as bounded in the frozen speed protocol.
 
 ## Bounded conclusions
 
