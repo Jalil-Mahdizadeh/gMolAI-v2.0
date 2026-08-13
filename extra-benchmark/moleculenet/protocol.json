@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "protocol_status": "frozen_before_comparator_execution",
+  "frozen_date": "2026-08-12",
+  "runtime_wrapper_status": "amended after failed job 1219337 and before MolCLR-GIN or KERMT-v2 inference",
+  "runtime_amendments": [
+    {
+      "id": "2026-08-12-molclr-container-pythonpath",
+      "trigger_job_id": "1219337",
+      "detected_before_model_inference": "molclr_gin",
+      "failed_model_output_created": false,
+      "completed_outputs_retained_for_validation": [
+        "gmolai",
+        "morgan",
+        "molai",
+        "molformer",
+        "smi_ted"
+      ],
+      "change": "Stop overriding each neural comparator container's built-in PYTHONPATH; enable ERR-trap inheritance for explicit failure-state recording.",
+      "scientific_impact": "None: no source molecule, common-panel identity, split role, representation definition, checkpoint, calibrator, model weight, hyperparameter grid, metric, or result changed. Existing completed embeddings must pass the same checksum/identity/shape validation before reuse."
+    }
+  ],
+  "scope": {
+    "neural_encoders": "frozen inference only; no fine-tuning or weight updates",
+    "downstream_fits": "fold-local Ridge or logistic regression only",
+    "uses_3d": false,
+    "gpus": 1,
+    "precision": "float32 representations",
+    "development_panel": ["bace", "bbbp", "esol", "freesolv", "lipophilicity"],
+    "confirmatory_endpoint": "hiv"
+  },
+  "repository": {
+    "root": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain",
+    "expected_head": "333abda947ac1283aafca9619f2149d6eec99d7a"
+  },
+  "sources": {
+    "config": {
+      "path": "configs/retrain.yaml",
+      "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+      "config_hash": "e925a1605de913173539eb82307170f1419b0911a7a8e1dd77d0ab3ad5b359c4",
+      "descriptor_schema_hash": "ce048da426db8c7aa529628d90335d47c713e757b59cbc6ded86158f08da9fe0"
+    },
+    "training_plan": {
+      "path": "configs/representation-pilot-mean-node-contrastive-001-desc050.yaml",
+      "sha256": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61"
+    },
+    "checkpoint": {
+      "run_dir": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050",
+      "name": "checkpoints/step-000010000.pt",
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "calibrator": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "training_graphs": 100000,
+      "sampling_seed": 271828
+    },
+    "dataset_manifest": {
+      "path": "work/dataset_manifest.json",
+      "sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788"
+    },
+    "graph_manifest": {
+      "path": "work/graph_manifest.json",
+      "sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da"
+    }
+  },
+  "datasets": {
+    "directory": "work/downstream_benchmarks/moleculenet",
+    "order": ["bace", "bbbp", "esol", "freesolv", "lipophilicity", "hiv"],
+    "sources": {
+      "bace": {"filename": "bace.csv", "sha256": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737", "task": "classification"},
+      "bbbp": {"filename": "BBBP.csv", "sha256": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662", "task": "classification"},
+      "esol": {"filename": "delaney-processed.csv", "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189", "task": "regression"},
+      "freesolv": {"filename": "SAMPL.csv", "sha256": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72", "task": "regression"},
+      "lipophilicity": {"filename": "Lipophilicity.csv", "sha256": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd", "task": "regression"},
+      "hiv": {"filename": "HIV.csv", "sha256": "9ffa7fe57dc86c342627ee1d5255e937e2ab812393c73c4d16c697022f6e1d22", "task": "classification"}
+    }
+  },
+  "references": {
+    "development": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/moleculenet-frozen-probes-standardized-raw-hybrid-w3-step10000-calibration100k-10splits-provenance-v2.json",
+      "sha256": "d91a9201e4c9e23c78849e4413159e45ac608feb494965b46b7766a74b97c11e"
+    },
+    "hiv": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/hiv-frozen-probe-standardized-raw-hybrid-w3-step10000-calibration100k-10splits.json",
+      "sha256": "8fa8fc2837c38578638c916b4a8d7b02dcdcd43803cb818f860d52acd90faba3"
+    },
+    "descriptor_control": {
+      "path": "artifacts/manuscript-rev4/descriptor_only_control.json",
+      "sha256": "1d5fcf6f52473f75960061c3348447442565cb9d44596c193b84f804be343de2"
+    },
+    "adapter_qualification_protocol": {
+      "path": "extra-benchmark/test-partition/protocol.json",
+      "sha256": "1fe98a5a7e3795c5e876d8616bd7a61b0b7038418be7ad472744558433d83f3e"
+    },
+    "adapter_qualification_complete": {
+      "path": "extra-benchmark/test-partition/state/COMPLETE.json",
+      "sha256": "e797cd4134999b42ef46200ccf71cf01721bd1bfbb73e6606adf19991429c54e"
+    }
+  },
+  "comparators": {
+    "model_order": ["gmolai", "morgan", "molai", "molformer", "smi_ted", "molclr_gin", "kermt_v2"],
+    "screen_models": ["morgan", "molai", "molformer", "smi_ted", "molclr_gin", "kermt_v2"],
+    "models": {
+      "gmolai": {
+        "display_name": "gMolAI",
+        "dimension": 384,
+        "representation": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks_mean_node_weight_3",
+        "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+        "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+      },
+      "morgan": {
+        "display_name": "Morgan radius-2",
+        "dimension": 2048,
+        "batch_size": 4096,
+        "representation": "rdkit_morgan_radius2_fpSize2048_float32",
+        "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+        "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+      },
+      "molai": {
+        "display_name": "MolAI epoch 6",
+        "dimension": 512,
+        "batch_size": 256,
+        "representation": "epoch6_three_lstm_hidden_cell_concat_linear_tanh",
+        "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif",
+        "container_sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e"
+      },
+      "molformer": {
+        "display_name": "MoLFormer",
+        "dimension": 768,
+        "batch_size": 128,
+        "representation": "official_pooler_output",
+        "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif",
+        "container_sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431"
+      },
+      "smi_ted": {
+        "display_name": "SMI-TED-Light",
+        "dimension": 768,
+        "batch_size": 100,
+        "representation": "official_model_encode",
+        "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif",
+        "container_sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a"
+      },
+      "molclr_gin": {
+        "display_name": "MolCLR-GIN",
+        "dimension": 512,
+        "batch_size": 256,
+        "representation": "official_downstream_preprojection_graph_vector",
+        "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif",
+        "container_sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272"
+      },
+      "kermt_v2": {
+        "display_name": "KERMT v2",
+        "dimension": 512,
+        "batch_size": 64,
+        "representation": "cmim_projected_mean_latent",
+        "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif",
+        "container_sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117"
+      }
+    }
+  },
+  "evaluation": {
+    "canonicalization": "repository-pinned isomeric canonical SMILES, fragment rejection, allowed elements and 2-256 atom bounds",
+    "deduplication": "canonical identity; regression duplicates averaged and conflicting classification duplicates rejected",
+    "seed": 42,
+    "outer_splits": 10,
+    "outer_splitter": "GroupShuffleSplit test_size=0.20 of scaffold groups; accepted seeds inherited from the authoritative 10k artifacts",
+    "common_panel_rule": "intersection of all encoder coverage screens",
+    "split_inheritance": "each common molecule retains its frozen full-panel outer and inner role; no split is regenerated after intersection",
+    "inner_folds": 3,
+    "classification_inner_splitter": "StratifiedGroupKFold",
+    "regression_inner_splitter": "GroupKFold",
+    "feature_scaling": "fold-local StandardScaler",
+    "regression": {"model": "Ridge solver=lsqr", "alphas": [0.1, 1.0, 10.0, 100.0, 1000.0], "selection_metric": "mean inner RMSE", "primary_metric": "RMSE"},
+    "classification": {"model": "LogisticRegression solver=liblinear class_weight=balanced max_iter=3000 random_state=0", "c_values": [0.01, 0.1, 1.0, 10.0], "selection_metric": "mean inner ROC-AUC", "primary_metric": "ROC-AUC"},
+    "dispersion": "population standard deviation (ddof=0) over ten overlapping outer splits",
+    "inference_constraint": "no standard-error, independence, or universal-superiority claim"
+  },
+  "integrity": {
+    "files": [
+      {"path": "configs/retrain.yaml", "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011"},
+      {"path": "configs/descriptors.yaml", "sha256": "7a8a8adf9035fded17d03fae9723bb96e6b35c70d9bee50df2f1ebf1a89dab66"},
+      {"path": "configs/representation-pilot-mean-node-contrastive-001-desc050.yaml", "sha256": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61"},
+      {"path": "work/dataset_manifest.json", "sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788"},
+      {"path": "work/graph_manifest.json", "sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da"},
+      {"path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt", "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"},
+      {"path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt", "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"},
+      {"path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/moleculenet-frozen-probes-standardized-raw-hybrid-w3-step10000-calibration100k-10splits-provenance-v2.json", "sha256": "d91a9201e4c9e23c78849e4413159e45ac608feb494965b46b7766a74b97c11e"},
+      {"path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/hiv-frozen-probe-standardized-raw-hybrid-w3-step10000-calibration100k-10splits.json", "sha256": "8fa8fc2837c38578638c916b4a8d7b02dcdcd43803cb818f860d52acd90faba3"},
+      {"path": "artifacts/manuscript-rev4/descriptor_only_control.json", "sha256": "1d5fcf6f52473f75960061c3348447442565cb9d44596c193b84f804be343de2"},
+      {"path": "extra-benchmark/test-partition/protocol.json", "sha256": "1fe98a5a7e3795c5e876d8616bd7a61b0b7038418be7ad472744558433d83f3e"},
+      {"path": "extra-benchmark/test-partition/state/COMPLETE.json", "sha256": "e797cd4134999b42ef46200ccf71cf01721bd1bfbb73e6606adf19991429c54e"},
+      {"path": "extra-benchmark/test-partition/scripts/adapter.py", "sha256": "7c87bfa567564765da7aca9ae417ef3b1f4c7252c7922b6ab4db2bb25c59a8e4"},
+      {"path": "extra-benchmark/test-partition/scripts/benchmark_io.py", "sha256": "548fd9ba4a99e9012258300f3e9f8637728e3cc0ac0eb9bccc7a7c15b25e812f"},
+      {"path": "work/downstream_benchmarks/moleculenet/bace.csv", "sha256": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737"},
+      {"path": "work/downstream_benchmarks/moleculenet/BBBP.csv", "sha256": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662"},
+      {"path": "work/downstream_benchmarks/moleculenet/delaney-processed.csv", "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"},
+      {"path": "work/downstream_benchmarks/moleculenet/SAMPL.csv", "sha256": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72"},
+      {"path": "work/downstream_benchmarks/moleculenet/Lipophilicity.csv", "sha256": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd"},
+      {"path": "work/downstream_benchmarks/moleculenet/HIV.csv", "sha256": "9ffa7fe57dc86c342627ee1d5255e937e2ab812393c73c4d16c697022f6e1d22"},
+      {"path": "extra-benchmark/moleculenet/scripts/benchmark_io.py", "sha256": "ff7eb9720876cc680aeb8cdfd6a66ca41a6bbe34661320df96acda43d1ff2745"},
+      {"path": "extra-benchmark/moleculenet/scripts/prepare_datasets.py", "sha256": "f7ea7edc1b1ed4350dda4730c9e2a3da5bb1c98c207424c52ea276e5af5536be"},
+      {"path": "extra-benchmark/moleculenet/scripts/assemble_common.py", "sha256": "47358fc37c8ff0fb527e078424a978a2e8904d3b0c43254e4865f5996861ea47"},
+      {"path": "extra-benchmark/moleculenet/scripts/gmolai_adapter.py", "sha256": "08233f8233add9e0dc82db6930ac247b0e5903e0bcb9b574c9281634b0a1564d"},
+      {"path": "extra-benchmark/moleculenet/scripts/validate_embedding.py", "sha256": "85e103f1907e68d786ef1f3bea4b854c9fa41ec48352e39bf2cdf90a649975d9"},
+      {"path": "extra-benchmark/moleculenet/scripts/evaluate_fixed_splits.py", "sha256": "355f5de1d2a38049d9272a3ac815da50c306a8cdf8da21a4c7fcefb62f9b2e0a"},
+      {"path": "extra-benchmark/moleculenet/scripts/finalize.py", "sha256": "2dac91f5694c3eeaf40f3303a52e9408cc1347a5e857c830821b0df807016f3a"},
+      {"path": "extra-benchmark/moleculenet/scripts/state_update.py", "sha256": "77fc2ff4e3c9ac0c2fb0473449592d52b4ce79c23eb58b63557513a157f26395"},
+      {"path": "extra-benchmark/moleculenet/scripts/preflight.py", "sha256": "4b8914afc890bc2d7eea097232691d5740f4c86b10388435cc248899eb32d1db"},
+      {"path": "extra-benchmark/moleculenet/run_moleculenet.sbatch", "sha256": "f11db839954f3fdc9f96a53fc2989e2d23d8ddf95bea42840c688b0bf220f8ba"}
+    ],
+    "containers": [
+      {"path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif", "sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"},
+      {"path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif", "sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e"},
+      {"path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif", "sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431"},
+      {"path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif", "sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a"},
+      {"path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif", "sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272"},
+      {"path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif", "sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117"}
+    ]
+  }
+}

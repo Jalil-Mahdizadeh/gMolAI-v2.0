@@ -1,0 +1,14 @@
+{
+  "batch_size": 192,
+  "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+  "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+  "dimensions": 384,
+  "dtype": "float32",
+  "input": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/speed/inputs/common_test.tsv",
+  "input_sha256": "fac4a8abffd0431b36245c6b6eaa447ce1f1628373cad590e59e7a7e2a0fc18e",
+  "output_sha256": "66efc5aa10bafe783ca9552d54631d433e144656724295bf881134e24f993442",
+  "rows": 49844,
+  "schema_version": 1,
+  "smiles_column": "canonical_smiles",
+  "workers": 48
+}

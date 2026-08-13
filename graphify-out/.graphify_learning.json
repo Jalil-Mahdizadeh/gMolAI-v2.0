@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T08:31:37.150251+00:00",
+  "generated_at": "2026-08-13T09:40:36.960263+00:00",
   "nodes": {
     "artifacts_manuscript_rev4_readme_manuscript_rev4_exact_downstream_molecule_exposure_audit": {
       "code_fingerprint": "b02733544deba3642092338c7cb86f235fcbfcd689edb495840f6f96ea60f026",
@@ -17,10 +17,58 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 1.989875957,
+      "score": 1.942275722,
       "source_file": "artifacts/manuscript-rev4/README.md",
       "status": "preferred",
       "uses": 2
+    },
+    "configs_representation_pilot_contrastive_0005_masked_graph_vicreg_architecture": {
+      "code_fingerprint": "6f6f7ef803ffe0789d9d8e1afc60097c3d48517bacd9364b42970e0ddce5b3ce",
+      "label": "Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers)",
+      "last": "2026-08-12T22:32:41.187954+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T22:32:41.187954+00:00",
+          "outcome": "useful",
+          "q": "gmolai is the smallest model but it is much slower compare to others. why is it?"
+        }
+      ],
+      "score": 0.989340244,
+      "source_file": "configs/representation-pilot-contrastive-0005.yaml",
+      "status": "tentative",
+      "uses": 1
+    },
+    "extra_benchmark_speed_scripts_speed_adapter": {
+      "code_fingerprint": "d580734c9c8fc84adcf59d6879f6800089b0eba6a8403d03823860c5c15f68da",
+      "label": "speed_adapter.py",
+      "last": "2026-08-13T09:33:34.057044+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T09:33:34.057044+00:00",
+          "outcome": "useful",
+          "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
+        }
+      ],
+      "score": 0.999886915,
+      "source_file": "extra-benchmark/speed/scripts/speed_adapter.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "extra_benchmark_speed_scripts_speed_adapter_load_gmolai": {
+      "code_fingerprint": "d580734c9c8fc84adcf59d6879f6800089b0eba6a8403d03823860c5c15f68da",
+      "label": "load_gmolai()",
+      "last": "2026-08-13T09:33:34.057044+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T09:33:34.057044+00:00",
+          "outcome": "useful",
+          "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
+        }
+      ],
+      "score": 0.999886915,
+      "source_file": "extra-benchmark/speed/scripts/speed_adapter.py",
+      "status": "tentative",
+      "uses": 1
     },
     "graphify_out_memory_query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour_deterministic_v5_molecular_encoder": {
       "code_fingerprint": "40a546c6b49c32e0bae4d78afea4ea15b7e623c2e9089e5805929a0b2d2d4bfd",
@@ -33,7 +81,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.977585916,
+      "score": 0.95420088,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -49,7 +97,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.977585916,
+      "score": 0.95420088,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -75,7 +123,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 2.93790641,
+      "score": 2.867628143,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "preferred",
       "uses": 3
@@ -91,7 +139,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.977585916,
+      "score": 0.95420088,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -112,7 +160,7 @@
           "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
         }
       ],
-      "score": 1.979643813,
+      "score": 1.932288344,
       "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
       "status": "preferred",
       "uses": 2
@@ -133,13 +181,29 @@
           "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
         }
       ],
-      "score": 1.979643813,
+      "score": 1.932288344,
       "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
       "status": "preferred",
       "uses": 2
     },
+    "inference_readme_runtime_environment": {
+      "code_fingerprint": "39b7f7663f70f4087f1cb276a8e6263f737897d72098a01677143abd5cbd75c8",
+      "label": "PyTorch Geometric RDKit Inference Environment",
+      "last": "2026-08-12T22:32:41.187954+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T22:32:41.187954+00:00",
+          "outcome": "useful",
+          "q": "gmolai is the smallest model but it is much slower compare to others. why is it?"
+        }
+      ],
+      "score": 0.989340244,
+      "source_file": "inference/README.md",
+      "status": "tentative",
+      "uses": 1
+    },
     "inference_readme_self_contained_inference_entry_point": {
-      "code_fingerprint": "28ecd3b608f8ac4919098da4cda44965123e8d65da51fe5f823046d22ea0d10f",
+      "code_fingerprint": "39b7f7663f70f4087f1cb276a8e6263f737897d72098a01677143abd5cbd75c8",
       "label": "Self-Contained Inference Entry Point",
       "last": "2026-08-11T08:58:46.839890+00:00",
       "provenance": [
@@ -149,8 +213,56 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.977585916,
+      "score": 0.95420088,
       "source_file": "inference/README.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "representation_repair_morgan_fingerprint_baseline": {
+      "code_fingerprint": "086e8c1e3a72ed65a6aa200da42de9930fc32fecfadc0eadab7a03ba0c6f3b1b",
+      "label": "Morgan Fingerprint Baseline",
+      "last": "2026-08-12T19:13:29.783066+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T19:13:29.783066+00:00",
+          "outcome": "useful",
+          "q": "Calculate the embedding time for each model and Morgan from the MoleculeNet plus HIV benchmark"
+        }
+      ],
+      "score": 0.98618334,
+      "source_file": "REPRESENTATION_REPAIR.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "slurm_common_container_gpu": {
+      "code_fingerprint": "fd53faebf1e1b4d5f490f53c8927cec106a694eef43db0b783443d1f9e57feea",
+      "label": "container_gpu()",
+      "last": "2026-08-13T09:33:34.057044+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T09:33:34.057044+00:00",
+          "outcome": "useful",
+          "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
+        }
+      ],
+      "score": 0.999886915,
+      "source_file": "slurm/common.sh",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_chem_featurize_molecule": {
+      "code_fingerprint": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3",
+      "label": "featurize_molecule()",
+      "last": "2026-08-12T22:32:41.187954+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T22:32:41.187954+00:00",
+          "outcome": "useful",
+          "q": "gmolai is the smallest model but it is much slower compare to others. why is it?"
+        }
+      ],
+      "score": 0.989340244,
+      "source_file": "src/gmolai_retrain/chem.py",
       "status": "tentative",
       "uses": 1
     },
@@ -165,7 +277,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.989875997,
+      "score": 0.966196968,
       "source_file": "src/gmolai_retrain/cli.py",
       "status": "tentative",
       "uses": 1
@@ -181,7 +293,23 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.989875997,
+      "score": 0.966196968,
+      "source_file": "src/gmolai_retrain/downstream_audit.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_downstream_audit_split_identity_manifest": {
+      "code_fingerprint": "8739fd3015bd50b462b78dfa44f2c049ee4ead7c0fa8c27939f258dd5630ac4d",
+      "label": "_split_identity_manifest()",
+      "last": "2026-08-12T19:09:05.742030+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T19:09:05.742030+00:00",
+          "outcome": "useful",
+          "q": "Audit the completed MoleculeNet plus HIV benchmark implementation and artifact flow"
+        }
+      ],
+      "score": 0.986113709,
       "source_file": "src/gmolai_retrain/downstream_audit.py",
       "status": "tentative",
       "uses": 1
@@ -197,7 +325,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.989875997,
+      "score": 0.966196968,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
       "status": "tentative",
       "uses": 1
@@ -213,7 +341,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.989875997,
+      "score": 0.966196968,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
       "status": "tentative",
       "uses": 1
@@ -229,7 +357,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.989875997,
+      "score": 0.966196968,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
       "status": "tentative",
       "uses": 1
@@ -245,8 +373,24 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.989875997,
+      "score": 0.966196968,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_downstream_scaffold_splits": {
+      "code_fingerprint": "2c55bcda7bc1f9916e0ca5102488198db6cd131ef5a00c6c9347e5eb032390c5",
+      "label": "_scaffold_splits()",
+      "last": "2026-08-12T19:09:05.742030+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T19:09:05.742030+00:00",
+          "outcome": "useful",
+          "q": "Audit the completed MoleculeNet plus HIV benchmark implementation and artifact flow"
+        }
+      ],
+      "score": 0.986113709,
+      "source_file": "src/gmolai_retrain/downstream.py",
       "status": "tentative",
       "uses": 1
     },
@@ -261,8 +405,56 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.989875997,
+      "score": 0.966196968,
       "source_file": "src/gmolai_retrain/exposure.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_fast_inference_optimizedsmilesencoder": {
+      "code_fingerprint": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba",
+      "label": "OptimizedSmilesEncoder",
+      "last": "2026-08-13T09:33:34.057044+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T09:33:34.057044+00:00",
+          "outcome": "useful",
+          "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
+        }
+      ],
+      "score": 0.999886915,
+      "source_file": "src/gmolai_retrain/fast_inference.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_model_molecularrepresentationmodel": {
+      "code_fingerprint": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02",
+      "label": "MolecularRepresentationModel",
+      "last": "2026-08-13T07:48:31.265247+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T07:48:31.265247+00:00",
+          "outcome": "useful",
+          "q": "Explore and fully understand this repository. Expanded query tokens: architecture, pipeline, data, model, training, inference, evaluation, validation, checkpoints, reproducibility, promotion, audit."
+        }
+      ],
+      "score": 0.998203045,
+      "source_file": "src/gmolai_retrain/model.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_representations_export_embeddings": {
+      "code_fingerprint": "4d6a575de13701e37e8315881014b9ece0b50bd5cf27f679b2b745a84900e320",
+      "label": "export_embeddings()",
+      "last": "2026-08-12T19:13:29.783066+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-12T19:13:29.783066+00:00",
+          "outcome": "useful",
+          "q": "Calculate the embedding time for each model and Morgan from the MoleculeNet plus HIV benchmark"
+        }
+      ],
+      "score": 0.98618334,
+      "source_file": "src/gmolai_retrain/representations.py",
       "status": "tentative",
       "uses": 1
     }

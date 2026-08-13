@@ -15,7 +15,9 @@ excluded. See [`REVIEW_ARTIFACTS.md`](REVIEW_ARTIFACTS.md) for hashes, scope,
 usage, and the exclusion boundary.
 
 For direct real-world CSV-to-vector inference without graph shards, use the
-hash-verified workflow in [`inference/README.md`](inference/README.md).
+hash-verified workflow in [`inference/README.md`](inference/README.md). Its
+default backend is now the qualified speed-optimized implementation; explicit
+`reference` and bounded `verify` modes retain the original scientific oracle.
 
 ## Descriptor contract (resolved)
 
@@ -415,7 +417,16 @@ experimental chronology and evidence source, adds a compact data/evidence-roles
 table, and preserves all scientific results and promotion criteria. The rev4
 bundle and sibling DOCX remain unchanged.
 
-### Additional frozen-encoder benchmark
+### Manuscript rev6 frozen-encoder addition
+
+`scripts/update_manuscript_rev6.py` constructs revision 6 directly from the
+hash-locked rev5 DOCX. It adds only the completed locked-test frozen-encoder
+comparison, Figure 3, and the exact parameter-count table, while verifying that
+all existing tables, equations, and paragraph order remain unchanged. The
+builder hash-checks every scientific input and reopens the serialized DOCX
+before accepting it.
+
+### Additional frozen-encoder benchmarks
 
 [`extra-benchmark/test-partition/`](extra-benchmark/test-partition/) contains
 the completed inference-only comparison of the frozen seed-42/10k 384-D gMolAI
@@ -432,7 +443,19 @@ representation-diagnostic evidence, not endpoint prediction, and it does not
 establish universal superiority. The compact results, per-seed probe records,
 coverage tables, frozen protocol, and checksum-sealed completion state are
 versioned; large embedding matrices and payloads remain excluded from Git.
-MoleculeNet comparator evaluation has not yet been launched.
+
+[`extra-benchmark/moleculenet/`](extra-benchmark/moleculenet/) contains the
+completed frozen-feature endpoint comparison on BACE, BBBP, ESOL, FreeSolv,
+Lipophilicity, and the independent post-selection HIV endpoint. All primary
+rankings use the same 45,504-molecule all-model coverage intersection, paired
+outer scaffold splits, and identical fold-local probe selection.
+
+[`extra-benchmark/speed/`](extra-benchmark/speed/) contains the definitive
+single-GPU throughput rerun at batch sizes 64, 128, 256, and 512. The
+repository-canonical optimized gMolAI path reached 58,330 molecules/s at batch
+512: 5.36x Morgan throughput and 10.04x the fastest other
+representation-equivalent neural encoder under that condition. These are
+descriptive one-pass measurements on one GH200.
 
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both

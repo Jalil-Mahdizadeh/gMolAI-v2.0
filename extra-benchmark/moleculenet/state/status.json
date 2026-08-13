@@ -1,0 +1,93 @@
+{
+  "history": [
+    {
+      "message": "Verifying frozen sources, reference results, scripts, and SIF hashes",
+      "slurm_job_id": "1219337",
+      "stage": "preflight",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:27:21.831872+00:00"
+    },
+    {
+      "message": "Reconstructing canonical endpoint molecules and frozen outer/inner identities",
+      "slurm_job_id": "1219337",
+      "stage": "preparation",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:28:13.305803+00:00"
+    },
+    {
+      "message": "Applying all frozen adapter coverage rules before endpoint fitting",
+      "slurm_job_id": "1219337",
+      "stage": "coverage",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:29:30.743207+00:00"
+    },
+    {
+      "message": "Exporting seven frozen native-dimensional common-panel representations",
+      "slurm_job_id": "1219337",
+      "stage": "encoding",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:31:01.992914+00:00"
+    },
+    {
+      "message": "Job 1219337 stopped before MolCLR-GIN inference because the launcher overrode the container-native PYTHONPATH; no MolCLR output was created.",
+      "slurm_job_id": "1219337",
+      "stage": "failed",
+      "status": "failed",
+      "timestamp_utc": "2026-08-12T17:40:10.721115+00:00"
+    },
+    {
+      "message": "Verifying frozen sources, reference results, scripts, and SIF hashes",
+      "slurm_job_id": "1219522",
+      "stage": "preflight",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:43:01.456621+00:00"
+    },
+    {
+      "message": "Reconstructing canonical endpoint molecules and frozen outer/inner identities",
+      "slurm_job_id": "1219522",
+      "stage": "preparation",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:43:52.544564+00:00"
+    },
+    {
+      "message": "Applying all frozen adapter coverage rules before endpoint fitting",
+      "slurm_job_id": "1219522",
+      "stage": "coverage",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:45:11.151058+00:00"
+    },
+    {
+      "message": "Exporting seven frozen native-dimensional common-panel representations",
+      "slurm_job_id": "1219522",
+      "stage": "encoding",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:46:45.452998+00:00"
+    },
+    {
+      "message": "Fitting identical fold-local linear probes on inherited split assignments",
+      "slurm_job_id": "1219522",
+      "stage": "evaluation",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T17:49:58.160490+00:00"
+    },
+    {
+      "message": "Aggregating paired results and checksum-sealing all endpoint outputs",
+      "slurm_job_id": "1219522",
+      "stage": "integrity",
+      "status": "running",
+      "timestamp_utc": "2026-08-12T18:58:56.100441+00:00"
+    },
+    {
+      "message": "MoleculeNet plus HIV frozen-encoder benchmark completed",
+      "slurm_job_id": "1219522",
+      "stage": "complete",
+      "status": "complete",
+      "timestamp_utc": "2026-08-12T18:58:59.077300+00:00"
+    }
+  ],
+  "message": "MoleculeNet plus HIV frozen-encoder benchmark completed",
+  "slurm_job_id": "1219522",
+  "stage": "complete",
+  "status": "complete",
+  "timestamp_utc": "2026-08-12T18:58:59.077300+00:00"
+}

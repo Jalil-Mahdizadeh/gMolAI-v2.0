@@ -3,6 +3,10 @@
 This folder is a self-contained entry point for generating the promoted gMolAI
 384-dimensional molecular vector from ordinary SMILES rows. It does not require
 the pretraining datasets, descriptor values, graph manifest, or graph shards.
+The repository-canonical execution path is the speed-optimized inference
+backend in `src/gmolai_retrain/fast_graph.py` and
+`src/gmolai_retrain/fast_inference.py`; the original PyG path remains available
+as a reference oracle.
 
 ## Contents
 
@@ -34,7 +38,8 @@ python inference/generate_embeddings.py
 ```
 
 The defaults read `inference/data/example_smiles.csv`, select CUDA when
-available (otherwise CPU), and write:
+available (otherwise CPU), use batch size 192 and up to 48 RDKit workers within
+the detected Slurm/CPU-affinity allocation, and write:
 
 - `inference/output/embeddings.csv`;
 - `inference/output/embeddings.rejections.csv`;
@@ -49,6 +54,9 @@ python inference/generate_embeddings.py \
   --id-column molecule_id \
   --output-dir /path/to/output \
   --output-stem my_embeddings \
+  --backend optimized \
+  --workers auto \
+  --batch-size 192 \
   --device cuda
 ```
 
@@ -66,6 +74,28 @@ outputs are never replaced unless `--overwrite` is supplied.
 The training policy accepts 2–256 atom, single-fragment molecules composed of
 C, N, O, F, P, S, Cl, Br, I, H, B, or Si. Stereochemistry is retained.
 
+## Inference backends
+
+- `--backend optimized` is the production default. It uses the exact reduced
+  donor/acceptor feature factory, direct NumPy graph packing, allocation-bounded
+  multiprocess RDKit preprocessing, and the equivalent eval-only GINE core.
+- `--backend reference` retains the original BaseFeatures/PyG execution for
+  audits and debugging.
+- `--backend verify` returns optimized vectors while checking the first
+  `--verify-rows` accepted molecules against the reference backend with the
+  frozen scale-aware numerical gate.
+
+The optimized backend fails closed if the model architecture or feature schema
+does not match the promoted chirality-enabled, position-dimension-zero
+contract. Training and gradient computation continue to use the ordinary model
+implementation; this backend is inference-only.
+
+The metadata sidecar records the backend and implementation versions, worker
+count, batch and node budgets, checkpoint/calibrator/schema identities, runtime
+versions, row/rejection counts and output hashes. CPU workers never exceed the
+detected Slurm or process-affinity allocation. For very small inputs the same
+CLI remains valid; no minimum row count applies.
+
 ## Model identity
 
 - checkpoint SHA-256:
@@ -77,6 +107,14 @@ C, N, O, F, P, S, Cl, Br, I, H, B, or Si. Stereochemistry is retained.
 
 The metadata sidecar records all model/data/output hashes, row counts,
 rejection reasons, dimensions, runtime versions, and execution parameters.
+
+The definitive single-GPU comparison reran all seven encoders on the complete
+49,844-molecule common locked-test panel at batch sizes 64, 128, 256 and 512.
+Optimized gMolAI produced **13,040.69**, **22,901.45**, **40,068.75** and
+**58,330.38 molecules/s**, respectively. At batch 512 this was 5.36x Morgan
+throughput and 10.04x the fastest other representation-equivalent neural
+encoder. See `extra-benchmark/speed/RESULTS.md`; these are descriptive
+single-pass measurements on one GH200, not hardware-independent estimates.
 
 Inference is deterministic for a fixed runtime, device, and batching setup.
 Different CPU/GPU scatter-reduction orders or batch shapes can change the last

@@ -8,10 +8,12 @@ from pathlib import Path
 from typing import Any
 
 import torch
+import torch.nn.functional as F
 from torch_geometric.nn import global_mean_pool
 
 from .checkpoint import atomic_copy, atomic_torch_save, validate_checkpoint
 from .data import Standardizer, finite_batches, load_graph_manifest
+from .fast_inference import FAST_INFERENCE_VERSION, OptimizedRawCore
 from .model import MolecularRepresentationModel, MolecularVGAE
 from .schema import validate_feature_schema
 from .train import (
@@ -696,6 +698,11 @@ def export_embeddings(
     graph_ids: list[torch.Tensor] = []
     source_buckets: list[torch.Tensor] = []
     molecule_hashes: list[str] = []
+    optimized_core = (
+        OptimizedRawCore(model).to(device).eval()
+        if isinstance(model, MolecularRepresentationModel)
+        else None
+    )
     for batch in finite_batches(
         manifest,
         standardizer,
@@ -710,13 +717,15 @@ def export_embeddings(
     ):
         device_batch = batch.to(device, non_blocking=True)
         if isinstance(model, MolecularRepresentationModel):
-            node_z, learned_graph_z = model.encode(
+            assert optimized_core is not None
+            raw_hybrid = optimized_core(
                 device_batch.x,
                 device_batch.edge_index,
                 device_batch.edge_attr,
                 device_batch.batch,
             )
-            mean_node_z = global_mean_pool(node_z, device_batch.batch)
+            learned_graph_z = raw_hybrid[:, : int(model.graph_latent_dim)]
+            mean_node_z = raw_hybrid[:, int(model.graph_latent_dim) :]
             if selected_definition == "graph_z":
                 graph_z = learned_graph_z
                 definition = "clean_graph_z"
@@ -731,27 +740,26 @@ def export_embeddings(
                 graph_z = model.vicreg_projector(learned_graph_z)
                 definition = "clean_contrastive_projector_z"
             elif selected_definition in {"raw_hybrid", "standardized_raw_hybrid"}:
-                raw_graph_z = model.combine_raw_molecule_embedding(
-                    node_z, learned_graph_z, device_batch.batch
-                )
                 if selected_definition == "standardized_raw_hybrid":
                     assert calibration_mean is not None and calibration_scale is not None
                     graph_z = model.apply_molecule_calibration(
-                        raw_graph_z, calibration_mean, calibration_scale
+                        raw_hybrid, calibration_mean, calibration_scale
                     )
                     graph_z[:, int(model.graph_latent_dim) :] *= float(
                         mean_node_weight
                     )
                     definition = _STANDARDIZED_RAW_HYBRID_DEFINITION
                 else:
-                    graph_z = raw_graph_z
+                    graph_z = raw_hybrid
                     definition = _RAW_HYBRID_DEFINITION
             else:
-                graph_z = model.combine_molecule_embedding(
-                    node_z,
-                    learned_graph_z,
-                    device_batch.batch,
-                    mean_node_weight=mean_node_weight,
+                graph_z = torch.cat(
+                    (
+                        F.normalize(learned_graph_z.float(), dim=-1),
+                        float(mean_node_weight)
+                        * F.normalize(mean_node_z.float(), dim=-1),
+                    ),
+                    dim=-1,
                 )
                 definition = "clean_graph_z_plus_mean_node_z_unit_blocks"
         else:
@@ -781,6 +789,16 @@ def export_embeddings(
         "metadata": {
             "schema_version": 1,
             "architecture": _architecture(cfg),
+            "inference_backend": (
+                "optimized_gine_v1"
+                if isinstance(model, MolecularRepresentationModel)
+                else "reference_legacy_vgae"
+            ),
+            "fast_inference_version": (
+                FAST_INFERENCE_VERSION
+                if isinstance(model, MolecularRepresentationModel)
+                else None
+            ),
             "embedding_definition": definition,
             "embedding_parameters": (
                 {

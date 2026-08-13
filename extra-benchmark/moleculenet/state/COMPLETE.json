@@ -1,0 +1,30 @@
+{
+  "checkpoint_or_calibrator_modified": false,
+  "common_rows": 45504,
+  "datasets": [
+    "bace",
+    "bbbp",
+    "esol",
+    "freesolv",
+    "lipophilicity",
+    "hiv"
+  ],
+  "files_hashed": 28,
+  "models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "neural_training_or_finetuning": false,
+  "protocol_sha256": "ae643f10f9495cd9b7067ae15eb05d5099fd978e0573dca837c306fc58faec59",
+  "schema_version": 1,
+  "sha256sums_sha256": "8e9f6db79832eb03235a0229ed4717c169740cbc8639cb5026cb06a3cf700d8b",
+  "slurm_job_id": "1219522",
+  "status": "complete",
+  "summary_sha256": "35d8a27d64e891978b55d912fbdc28c58851d91c49c255bdfb8d69fc85d6edd6",
+  "timestamp_utc": "2026-08-12T18:58:58.667826+00:00"
+}

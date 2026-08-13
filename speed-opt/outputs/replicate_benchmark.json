@@ -1,0 +1,81 @@
+{
+  "baseline": {
+    "batch_size": 64,
+    "host": "n131",
+    "rows": 49844,
+    "rows_per_second": 405.5331294426076,
+    "slurm_job_id": "1226415",
+    "source": "extra-benchmark/speed/outputs/speed_results.csv",
+    "source_sha256": "52a2abe831ae28fadda8454862e33181c752ea1dcdf86628ecc26e2af5fb86d9",
+    "wall_seconds": 122.90981027495582
+  },
+  "embedding_validation": {
+    "against_authoritative_batch64": {
+      "exact": false,
+      "maximum_absolute_delta": 0.01286458969116211,
+      "maximum_relative_l2": 0.0009695135054265388,
+      "minimum_cosine": 0.9999995328495086,
+      "relative_l2_p99": 0.0007836574812347094,
+      "rms_delta": 0.0008350784219664668
+    },
+    "against_authoritative_batch64_rows": 8192,
+    "same_batch": {
+      "exact": false,
+      "maximum_absolute_delta": 1.0728836059570312e-06,
+      "maximum_relative_l2": 9.638173853220487e-08,
+      "minimum_cosine": 0.9999999999999954,
+      "relative_l2_p99": 4.4285154883678106e-08,
+      "rms_delta": 1.1447819280935126e-08
+    },
+    "same_batch_rows": 8192
+  },
+  "feature_validation": {
+    "atoms": 190505,
+    "directed_edges": 408376,
+    "exact_array_equality": true,
+    "graphs": 8192,
+    "seconds": 20.84255722502712
+  },
+  "matrix_validation_artifact": "speed-opt/artifacts/replicate_embeddings.npy",
+  "model": {
+    "calibration_graphs": 100000,
+    "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "checkpoint_step": 10000
+  },
+  "optimization": {
+    "checkpoint_or_calibrator_changed": false,
+    "direct_numpy_graph_packing": true,
+    "exact_reduced_RDKit_feature_factory": true,
+    "manual_equivalent_GINE_scatter": true,
+    "multiprocess_graph_preprocessing": true,
+    "new_container_required": false
+  },
+  "optimized": {
+    "batch_count": 260,
+    "batch_size": 192,
+    "matrix_sha256": "66efc5aa10bafe783ca9552d54631d433e144656724295bf881134e24f993442",
+    "milliseconds_per_molecule": 0.0320145936132405,
+    "peak_gpu_memory_bytes": 126957568,
+    "rows_per_second": 31235.754921043976,
+    "wall_seconds": 1.5957354040583596,
+    "workers": 48
+  },
+  "panel": {
+    "path": "extra-benchmark/speed/inputs/common_test.tsv",
+    "rows": 49844,
+    "sha256": "fac4a8abffd0431b36245c6b6eaa447ce1f1628373cad590e59e7a7e2a0fc18e"
+  },
+  "runtime": {
+    "cpu_limit": 72,
+    "gpu": "NVIDIA GH200 120GB",
+    "host": "n504",
+    "maximum_rss_kib": 1754636,
+    "slurm_job_id": "1202110",
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "schema_version": 1,
+  "scope": "inference_only_no_training",
+  "speedup_vs_authoritative_batch64": 77.02392888091912,
+  "timing_boundary": "canonical_smiles_in_ram_to_ordered_fp32_vectors_in_host_ram"
+}

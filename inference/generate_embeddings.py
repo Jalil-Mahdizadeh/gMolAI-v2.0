@@ -29,11 +29,14 @@ if str(SOURCE_DIR) not in sys.path:
 
 try:
     import numpy as np
-    from rdkit import Chem, rdBase
+    from rdkit import rdBase
     import torch
-    from torch_geometric.data import Batch, Data
 
-    from gmolai_retrain.chem import Rejection, canonicalize, featurize_molecule
+    from gmolai_retrain.chem import Rejection, canonicalize
+    from gmolai_retrain.fast_inference import (
+        build_smiles_encoder,
+        implementation_metadata,
+    )
     from gmolai_retrain.model import MolecularRepresentationModel
     from gmolai_retrain.schema import feature_schema, validate_feature_schema
 except ImportError as error:  # pragma: no cover - depends on the deployment environment
@@ -44,7 +47,7 @@ except ImportError as error:  # pragma: no cover - depends on the deployment env
     ) from error
 
 
-SCRIPT_VERSION = "1.0.0"
+SCRIPT_VERSION = "2.0.0"
 PUBLIC_EMBEDDING_DEFINITION = (
     "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks"
 )
@@ -77,13 +80,7 @@ class PendingMolecule:
     input_smiles: str
     canonical_smiles: str
     molecule_hash: str
-    x: np.ndarray
-    edge_index: np.ndarray
-    edge_attr: np.ndarray
-
-    @property
-    def atom_count(self) -> int:
-        return int(self.x.shape[0])
+    atom_count: int
 
 
 @dataclass(slots=True)
@@ -357,38 +354,20 @@ def load_model_bundle(model_dir: Path, device: torch.device) -> ModelBundle:
     )
 
 
-@torch.inference_mode()
-def encode_batch(bundle: ModelBundle, records: list[PendingMolecule]) -> np.ndarray:
+def encode_batch(encoder: Any, records: list[PendingMolecule]) -> np.ndarray:
     if not records:
-        return np.empty((0, bundle.embedding_dimensions), dtype=np.float32)
-    graphs = [
-        Data(
-            x=torch.from_numpy(record.x),
-            edge_index=torch.from_numpy(record.edge_index),
-            edge_attr=torch.from_numpy(record.edge_attr),
-        )
-        for record in records
-    ]
-    batch = Batch.from_data_list(graphs).to(bundle.device)
-    node_z, graph_z = bundle.model.encode(
-        batch.x, batch.edge_index, batch.edge_attr, batch.batch
+        return np.empty((0, 0), dtype=np.float32)
+    embeddings = encoder.encode(
+        [record.canonical_smiles for record in records],
+        atom_counts=[record.atom_count for record in records],
     )
-    raw_embedding = bundle.model.combine_raw_molecule_embedding(
-        node_z, graph_z, batch.batch
-    )
-    embeddings = bundle.model.apply_molecule_calibration(
-        raw_embedding, bundle.coordinate_mean, bundle.coordinate_scale
-    )
-    embeddings[:, bundle.graph_dimensions :] *= bundle.mean_node_weight
-    embeddings = embeddings.float().cpu()
-    if embeddings.shape != (len(records), bundle.embedding_dimensions):
+    if embeddings.shape[0] != len(records):
         raise InferenceError(
-            f"Model returned shape {tuple(embeddings.shape)}, expected "
-            f"({len(records)}, {bundle.embedding_dimensions})"
+            f"Model returned {embeddings.shape[0]} rows, expected {len(records)}"
         )
-    if not bool(torch.isfinite(embeddings).all()):
+    if not np.isfinite(embeddings).all():
         raise InferenceError("Model produced non-finite embeddings")
-    return embeddings.numpy()
+    return np.asarray(embeddings, dtype=np.float32)
 
 
 def temporary_path(destination: Path) -> Path:
@@ -428,10 +407,7 @@ def canonicalize_input(
     )
     if isinstance(value, Rejection):
         return None, value.reason
-    molecule = Chem.MolFromSmiles(value.smiles)
-    if molecule is None:
-        raise InferenceError("Canonical SMILES unexpectedly failed RDKit reparsing")
-    return (value, molecule), None
+    return value, None
 
 
 def resolve_id_column(requested: str, headers: list[str]) -> str | None:
@@ -466,6 +442,8 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
         raise InferenceError("--threads must be positive")
     torch.set_num_threads(args.threads)
     torch.set_float32_matmul_precision("highest")
+    torch.use_deterministic_algorithms(True)
+    torch.backends.cudnn.benchmark = False
 
     output_dir.mkdir(parents=True, exist_ok=True)
     embeddings_path = output_dir / f"{args.output_stem}.csv"
@@ -479,6 +457,22 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
 
     device = resolve_device(args.device)
     bundle = load_model_bundle(model_dir, device)
+    encoder = build_smiles_encoder(
+        args.backend,
+        bundle.model,
+        bundle.coordinate_mean,
+        bundle.coordinate_scale,
+        device=device,
+        batch_size=args.batch_size,
+        node_budget=args.node_budget,
+        workers=args.workers,
+        mean_node_weight=bundle.mean_node_weight,
+        verify_rows=args.verify_rows,
+    )
+    backend_info = implementation_metadata(encoder)
+    pipeline_batches = max(1, int(backend_info["workers"]))
+    pipeline_graph_budget = args.batch_size * pipeline_batches
+    pipeline_node_budget = args.node_budget * pipeline_batches
     input_hash = sha256_file(input_path)
     embeddings_temporary = temporary_path(embeddings_path)
     rejections_temporary = temporary_path(rejections_path)
@@ -539,7 +533,7 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
                 nonlocal pending, pending_nodes, accepted_rows
                 if not pending:
                     return
-                vectors = encode_batch(bundle, pending)
+                vectors = encode_batch(encoder, pending)
                 for record, vector in zip(pending, vectors, strict=True):
                     output_writer.writerow(
                         [
@@ -571,7 +565,7 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
                         duplicate_nonempty_ids += 1
                     seen_ids.add(input_id)
 
-                canonicalized, rejection_reason = canonicalize_input(
+                canonical, rejection_reason = canonicalize_input(
                     raw_smiles, bundle.resolved_config
                 )
                 if rejection_reason is not None:
@@ -585,22 +579,10 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
                             f"Rejected molecule at input row {input_row}: {rejection_reason}"
                         )
                     continue
-                assert canonicalized is not None
-                canonical, molecule = canonicalized
-                x, edge_index, edge_attr = featurize_molecule(
-                    molecule,
-                    include_chirality=bool(
-                        bundle.resolved_config["features"]["include_atom_chirality"]
-                    ),
-                    position_dim=int(
-                        bundle.resolved_config["features"][
-                            "canonical_position_encoding_dim"
-                        ]
-                    ),
-                )
+                assert canonical is not None
                 if pending and (
-                    len(pending) >= args.batch_size
-                    or pending_nodes + len(x) > args.node_budget
+                    len(pending) >= pipeline_graph_budget
+                    or pending_nodes + canonical.atom_count > pipeline_node_budget
                 ):
                     flush_pending()
                 pending.append(
@@ -610,12 +592,10 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
                         input_smiles=raw_smiles,
                         canonical_smiles=canonical.smiles,
                         molecule_hash=canonical.molecule_hash,
-                        x=x,
-                        edge_index=edge_index,
-                        edge_attr=edge_attr,
+                        atom_count=int(canonical.atom_count),
                     )
                 )
-                pending_nodes += len(x)
+                pending_nodes += int(canonical.atom_count)
                 unique_hashes.add(canonical.molecule_hash)
             flush_pending()
             if total_rows == 0:
@@ -694,6 +674,14 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
                 "device": str(bundle.device),
                 "batch_size": args.batch_size,
                 "node_budget": args.node_budget,
+                "backend": backend_info["backend"],
+                "fast_inference_version": backend_info[
+                    "fast_inference_version"
+                ],
+                "fast_graph_version": backend_info["fast_graph_version"],
+                "workers": backend_info["workers"],
+                "pipeline_batches": pipeline_batches,
+                "verify_rows": args.verify_rows if args.backend == "verify" else 0,
                 "threads": args.threads,
                 "invalid_policy": args.invalid_policy,
                 "python": platform.python_version(),
@@ -728,6 +716,8 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
             "rejected": rejected_rows,
             "dimensions": bundle.embedding_dimensions,
             "device": str(bundle.device),
+            "backend": backend_info["backend"],
+            "workers": backend_info["workers"],
             "embeddings": str(embeddings_path),
             "rejections": str(rejections_path),
             "metadata": str(metadata_path),
@@ -737,6 +727,7 @@ def run_inference(args: argparse.Namespace) -> dict[str, Any]:
             ],
         }
     finally:
+        encoder.close()
         for temporary in temporary_files:
             try:
                 temporary.unlink()
@@ -781,8 +772,28 @@ def build_parser() -> argparse.ArgumentParser:
         default="auto",
         help="auto, cpu, cuda, or cuda:<index> (default: auto)",
     )
-    parser.add_argument("--batch-size", type=int, default=256)
+    parser.add_argument(
+        "--backend",
+        choices=("optimized", "reference", "verify"),
+        default="optimized",
+        help="Embedding backend (default: optimized)",
+    )
+    parser.add_argument("--batch-size", type=int, default=192)
     parser.add_argument("--node-budget", type=int, default=16384)
+    parser.add_argument(
+        "--workers",
+        default="auto",
+        help=(
+            "RDKit preprocessing workers for the optimized backend; auto uses "
+            "up to 48 within the Slurm/CPU-affinity allocation"
+        ),
+    )
+    parser.add_argument(
+        "--verify-rows",
+        type=int,
+        default=1024,
+        help="Reference rows checked by --backend verify (default: 1024)",
+    )
     parser.add_argument(
         "--threads",
         type=int,
@@ -807,7 +818,7 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> int:
     try:
         summary = run_inference(build_parser().parse_args())
-    except (InferenceError, OSError, csv.Error, ValueError) as error:
+    except (InferenceError, OSError, csv.Error, RuntimeError, TypeError, ValueError) as error:
         print(f"Inference failed: {error}", file=sys.stderr, flush=True)
         return 2
     print(json.dumps(summary, sort_keys=True, indent=2), flush=True)

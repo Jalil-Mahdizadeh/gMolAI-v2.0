@@ -1,0 +1,93 @@
+{
+  "current": {
+    "host": "n54",
+    "message": "Single-pass common locked-test speed benchmark completed",
+    "slurm_job_id": "1230738",
+    "stage": "complete",
+    "status": "complete",
+    "timestamp_utc": "2026-08-13T09:16:53.536131+00:00"
+  },
+  "history": [
+    {
+      "host": "n54",
+      "message": "Verifying the frozen common panel, model sources, and SIF hashes",
+      "slurm_job_id": "1230738",
+      "stage": "preflight",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T08:57:58.738003+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Measuring gmolai once at batch sizes 64, 128, 256, and 512",
+      "slurm_job_id": "1230738",
+      "stage": "encode_gmolai",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T08:58:43.074865+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Measuring morgan once at batch sizes 64, 128, 256, and 512",
+      "slurm_job_id": "1230738",
+      "stage": "encode_morgan",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T08:59:01.867240+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Measuring molai once at batch sizes 64, 128, 256, and 512",
+      "slurm_job_id": "1230738",
+      "stage": "encode_molai",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T08:59:26.345066+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Measuring molformer once at batch sizes 64, 128, 256, and 512",
+      "slurm_job_id": "1230738",
+      "stage": "encode_molformer",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T09:00:16.662971+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Measuring smi_ted once at batch sizes 64, 128, 256, and 512",
+      "slurm_job_id": "1230738",
+      "stage": "encode_smi_ted",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T09:01:23.553737+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Measuring molclr_gin once at batch sizes 64, 128, 256, and 512",
+      "slurm_job_id": "1230738",
+      "stage": "encode_molclr_gin",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T09:04:51.253064+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Measuring kermt_v2 once at batch sizes 64, 128, 256, and 512",
+      "slurm_job_id": "1230738",
+      "stage": "encode_kermt_v2",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T09:07:09.367364+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Validating all timings and producing compact tables and figures",
+      "slurm_job_id": "1230738",
+      "stage": "finalize",
+      "status": "running",
+      "timestamp_utc": "2026-08-13T09:16:50.358069+00:00"
+    },
+    {
+      "host": "n54",
+      "message": "Single-pass common locked-test speed benchmark completed",
+      "slurm_job_id": "1230738",
+      "stage": "complete",
+      "status": "complete",
+      "timestamp_utc": "2026-08-13T09:16:53.536131+00:00"
+    }
+  ],
+  "schema_version": 1
+}

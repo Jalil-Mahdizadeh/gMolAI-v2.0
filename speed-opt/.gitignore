@@ -1,0 +1,9 @@
+# Large, reproducible validation matrices and transient worker output.
+artifacts/*.npy
+artifacts/*.npz
+logs/*.out
+artifacts/torchinductor/
+logs/*.err
+__pycache__/
+scripts/__pycache__/
+

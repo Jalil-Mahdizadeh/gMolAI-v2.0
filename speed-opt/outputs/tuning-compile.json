@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "batch_size": 64,
+      "peak_gpu_memory_bytes": 58767872,
+      "qualification_raw": {
+        "exact": false,
+        "maximum_absolute_delta": 0.0014203786849975586,
+        "maximum_relative_l2": 0.0005058325002740521,
+        "minimum_cosine": 0.9999998721169822,
+        "relative_l2_p99": 0.0004560089323226731,
+        "rms_delta": 0.0002220967068822316
+      },
+      "rows_per_second": 1832.8295949133742,
+      "seconds": 2.2347958650207147
+    },
+    {
+      "batch_size": 256,
+      "peak_gpu_memory_bytes": 107047424,
+      "qualification_raw": {
+        "exact": false,
+        "maximum_absolute_delta": 0.0020879507064819336,
+        "maximum_relative_l2": 0.000589832772738695,
+        "minimum_cosine": 0.9999998260946343,
+        "relative_l2_p99": 0.0005249664259386016,
+        "rms_delta": 0.000235279894275978
+      },
+      "rows_per_second": 2026.4716237433336,
+      "seconds": 2.021247152937576
+    },
+    {
+      "batch_size": 1024,
+      "peak_gpu_memory_bytes": 294875136,
+      "qualification_raw": {
+        "exact": false,
+        "maximum_absolute_delta": 0.0020079612731933594,
+        "maximum_relative_l2": 0.0005994362601649531,
+        "minimum_cosine": 0.9999998203456668,
+        "relative_l2_p99": 0.0005034180635276037,
+        "rms_delta": 0.00022732129428209942
+      },
+      "rows_per_second": 2047.985777715268,
+      "seconds": 2.000013889046386
+    }
+  ]
+}

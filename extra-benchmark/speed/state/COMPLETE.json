@@ -1,0 +1,38 @@
+{
+  "all_other_models_cross_batch_integrity_passed": true,
+  "batch_sizes": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "checksummed_files": 16,
+  "execution": "inference_only_single_pass_speed_benchmark",
+  "gmolai_checkpoint_or_calibrator_modified": false,
+  "gpu_name": "NVIDIA GH200 120GB",
+  "host": "n54",
+  "known_cross_batch_nonconformance_models": [
+    "kermt_v2"
+  ],
+  "measured_passes_per_condition": 1,
+  "model_weights_modified": false,
+  "models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "panel_rows": 49844,
+  "protocol_sha256": "30d514f9b48534ccd1f35738a38fe8fadecea5d6beb391a4143859a50c8953bc",
+  "schema_version": 1,
+  "scientific_embedding_artifacts_written": false,
+  "sha256sums_sha256": "32b6f5736f37b1fb27a9cfd451f56c65f48e463b34556df605518e1f2a29436e",
+  "slurm_job_id": "1230738",
+  "status": "complete_with_declared_kermt_cross_batch_nonconformance",
+  "summary_sha256": "1b0dc4b6e2314f5da3a376a2e901fa3b65052d66fe62d2d5f6a03b1aa1bc8f0d",
+  "timestamp_utc": "2026-08-13T09:59:43.848580+00:00",
+  "training_performed": false
+}

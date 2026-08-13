@@ -1,0 +1,8 @@
+model,display_name,rows,dimension,wall_seconds_including_load_warmup_export,rows_per_second_including_load_warmup_export,peak_gpu_memory_bytes,gpu_name,interpretation
+gmolai,gMolAI,45504,384,135.49774603103288,335.8284645530434,833902592,NVIDIA GH200 120GB,observed common-panel export timing; not the separately controlled scalability benchmark
+morgan,Morgan radius-2,45504,2048,6.801233601057902,6690.550960184936,,,observed common-panel export timing; not the separately controlled scalability benchmark
+molai,MolAI epoch 6,45504,512,12.233436835929751,3719.6415537418075,1233785344,NVIDIA GH200 120GB,observed common-panel export timing; not the separately controlled scalability benchmark
+molformer,MoLFormer,45504,768,19.289575746981427,2358.994339578505,616190976,NVIDIA GH200 120GB,observed common-panel export timing; not the separately controlled scalability benchmark
+smi_ted,SMI-TED-Light,45504,768,62.97056065907236,722.623389783081,984013312,NVIDIA GH200 120GB,observed common-panel export timing; not the separately controlled scalability benchmark
+molclr_gin,MolCLR-GIN,45504,512,31.782471450045705,1431.7325847840748,1675367424,NVIDIA GH200 120GB,observed common-panel export timing; not the separately controlled scalability benchmark
+kermt_v2,KERMT v2,45504,512,149.91106625797693,303.53996630037767,897863168,NVIDIA GH200 120GB,observed common-panel export timing; not the separately controlled scalability benchmark

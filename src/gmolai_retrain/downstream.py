@@ -9,6 +9,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 import torch
+import torch.nn.functional as F
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 from scipy.stats import spearmanr
@@ -27,6 +28,12 @@ from torch_geometric.data import Batch, Data
 from torch_geometric.nn import global_mean_pool
 
 from .chem import CanonicalMolecule, canonicalize, featurize_molecule
+from .fast_graph import pack_molecules
+from .fast_inference import (
+    FAST_INFERENCE_VERSION,
+    OptimizedRawCore,
+    packed_to_device,
+)
 from .model import MolecularRepresentationModel
 from .representations import (
     _RAW_HYBRID_DEFINITION,
@@ -270,9 +277,66 @@ def _encode_molecules(
 ) -> tuple[np.ndarray, dict[str, Any]]:
     include_chirality = bool(cfg["features"]["include_atom_chirality"])
     position_dim = int(cfg["features"]["canonical_position_encoding_dim"])
+    if isinstance(model, MolecularRepresentationModel):
+        if not include_chirality or position_dim != 0:
+            raise ValueError(
+                "Optimized downstream inference requires the promoted feature contract"
+            )
+        core = OptimizedRawCore(model).to(device).eval()
+        chunks: list[torch.Tensor] = []
+        raw_graph_chunks: list[torch.Tensor] = []
+        raw_mean_node_chunks: list[torch.Tensor] = []
+        pending: list[Chem.Mol] = []
+        pending_nodes = 0
+
+        def flush_representation() -> None:
+            nonlocal pending, pending_nodes
+            if not pending:
+                return
+            packed = pack_molecules(pending)
+            raw = core(*packed_to_device(packed, device))
+            graph_z = raw[:, : int(model.graph_latent_dim)]
+            mean_node_z = raw[:, int(model.graph_latent_dim) :]
+            embeddings = torch.cat(
+                (
+                    F.normalize(graph_z.float(), dim=-1),
+                    3.0 * F.normalize(mean_node_z.float(), dim=-1),
+                ),
+                dim=-1,
+            )
+            chunks.append(embeddings.float().cpu())
+            raw_graph_chunks.append(graph_z.float().cpu())
+            raw_mean_node_chunks.append(mean_node_z.float().cpu())
+            pending = []
+            pending_nodes = 0
+
+        for molecule in molecules:
+            atoms = int(molecule.GetNumAtoms())
+            if pending and (len(pending) >= 512 or pending_nodes + atoms > 16384):
+                flush_representation()
+            pending.append(molecule)
+            pending_nodes += atoms
+        flush_representation()
+        result = torch.cat(chunks).numpy()
+        raw_graph_z = torch.cat(raw_graph_chunks).numpy()
+        raw_mean_node_z = torch.cat(raw_mean_node_chunks).numpy()
+        if (
+            result.shape[0] != len(molecules)
+            or not np.isfinite(result).all()
+            or not np.isfinite(raw_graph_z).all()
+            or not np.isfinite(raw_mean_node_z).all()
+        ):
+            raise RuntimeError(
+                "Optimized downstream embedding export lost rows or produced non-finite values"
+            )
+        return result, {
+            "graph_dimensions": int(model.graph_latent_dim),
+            "mean_node_dimensions": int(model.node_latent_dim),
+            "raw_graph_z": raw_graph_z,
+            "raw_mean_node_z": raw_mean_node_z,
+        }
+
     chunks: list[torch.Tensor] = []
-    raw_graph_chunks: list[torch.Tensor] = []
-    raw_mean_node_chunks: list[torch.Tensor] = []
     graphs: list[Data] = []
     node_count = 0
 
@@ -281,27 +345,10 @@ def _encode_molecules(
         if not graphs:
             return
         batch = Batch.from_data_list(graphs).to(device)
-        if isinstance(model, MolecularRepresentationModel):
-            node_z, graph_z = model.encode(
-                batch.x,
-                batch.edge_index,
-                batch.edge_attr,
-                batch.batch,
-            )
-            mean_node_z = global_mean_pool(node_z, batch.batch)
-            embeddings = model.combine_molecule_embedding(
-                node_z,
-                graph_z,
-                batch.batch,
-                mean_node_weight=3.0,
-            )
-            raw_graph_chunks.append(graph_z.float().cpu())
-            raw_mean_node_chunks.append(mean_node_z.float().cpu())
-        else:
-            _, mu, _ = model.encode(
-                batch.x, batch.edge_index, batch.edge_attr, sample=False
-            )
-            embeddings = global_mean_pool(mu, batch.batch)
+        _, mu, _ = model.encode(
+            batch.x, batch.edge_index, batch.edge_attr, sample=False
+        )
+        embeddings = global_mean_pool(mu, batch.batch)
         chunks.append(embeddings.float().cpu())
         graphs = []
         node_count = 0
@@ -326,19 +373,7 @@ def _encode_molecules(
     result = torch.cat(chunks).numpy()
     if result.shape[0] != len(molecules) or not np.isfinite(result).all():
         raise RuntimeError("Downstream embedding export lost rows or produced non-finite values")
-    if isinstance(model, MolecularRepresentationModel):
-        raw_graph_z = torch.cat(raw_graph_chunks).numpy()
-        raw_mean_node_z = torch.cat(raw_mean_node_chunks).numpy()
-        if not np.isfinite(raw_graph_z).all() or not np.isfinite(raw_mean_node_z).all():
-            raise RuntimeError("Raw downstream embedding blocks contain non-finite values")
-        blocks = {
-            "graph_dimensions": int(model.graph_latent_dim),
-            "mean_node_dimensions": int(model.node_latent_dim),
-            "raw_graph_z": raw_graph_z,
-            "raw_mean_node_z": raw_mean_node_z,
-        }
-    else:
-        blocks = {"graph_dimensions": int(result.shape[1]), "mean_node_dimensions": 0}
+    blocks = {"graph_dimensions": int(result.shape[1]), "mean_node_dimensions": 0}
     return result, blocks
 
 
@@ -719,6 +754,14 @@ def benchmark_moleculenet(
             ),
             "global_step": int(checkpoint["global_step"]),
             "architecture": cfg["model"].get("architecture", "legacy_vgae"),
+            "inference_backend": (
+                "optimized_gine_v1"
+                if is_representation_model
+                else "reference_legacy_vgae"
+            ),
+            "fast_inference_version": (
+                FAST_INFERENCE_VERSION if is_representation_model else None
+            ),
             "config_hash": cfg["_config_hash"],
             "training_plan_hash": _training_plan_hash(cfg),
             "graph_manifest_hash": manifest["graph_manifest_hash"],

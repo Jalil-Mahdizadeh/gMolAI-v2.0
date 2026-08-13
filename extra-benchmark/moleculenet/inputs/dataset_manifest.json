@@ -1,0 +1,2713 @@
+{
+  "dataset_order": [
+    "bace",
+    "bbbp",
+    "esol",
+    "freesolv",
+    "lipophilicity",
+    "hiv"
+  ],
+  "datasets": {
+    "bace": {
+      "global_panel_start": 0,
+      "global_panel_stop": 1513,
+      "identity_set_sha256": "f555c95157ea0f78a50b713c6fb8bc467c04b98943ed7e790479928e8d1c5626",
+      "ordered_identity_sha256": "d9733f97f4738af5bd410b8a1f32832585bba328e48dc7e53f411209617add88",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 1513,
+        "positive_fraction": 0.456708526107072,
+        "raw_rows": 1513,
+        "rejections": {},
+        "scaffold_groups": 675,
+        "target_mean": 0.456708526107072,
+        "target_std": 0.4981223226158189,
+        "valid_rows_before_deduplication": 1513
+      },
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/downstream_benchmarks/moleculenet/bace.csv",
+        "sha256": "f3fb9ce90bada3e2bd6148b0df13f8f8145a357bf87df0dd5b391ede974fc737"
+      },
+      "split_identity_manifest": [
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "64a6f3e93b4ee4b1160ce8d5ed3263c6b866b80915a6f385785e0ca89c809c3e",
+              "fit_molecules": 745,
+              "fit_scaffold_groups": 337,
+              "fold": 0,
+              "validation_identity_set_sha256": "e50cc7e421dd51828464bb25c61b2d09077b9e7afdc4d370987bca19c552efe7",
+              "validation_molecules": 483,
+              "validation_scaffold_groups": 203
+            },
+            {
+              "fit_identity_set_sha256": "1a0fd1657e95ecd9a8e4f9f97a8b17ee758c50ece8766711054f9474fcc21798",
+              "fit_molecules": 815,
+              "fit_scaffold_groups": 349,
+              "fold": 1,
+              "validation_identity_set_sha256": "9583f9bf159ff0b777015fa66f67dac10c7e0366727abfd5156e5cf82aab01e3",
+              "validation_molecules": 413,
+              "validation_scaffold_groups": 191
+            },
+            {
+              "fit_identity_set_sha256": "5447c967f04f24455c0715a6e1de521937c22d34806235b6132f758aea6e64b4",
+              "fit_molecules": 896,
+              "fit_scaffold_groups": 394,
+              "fold": 2,
+              "validation_identity_set_sha256": "8670a8317adbbfe9498c73706f905efc0af7f1210d0ce6ab067c132c8ca7c2e9",
+              "validation_molecules": 332,
+              "validation_scaffold_groups": 146
+            }
+          ],
+          "outer_seed": 42,
+          "test_identity_set_sha256": "4b957039fbc00c556d392defa39ce86849ae106d7c40a0e6e827c6cbca163b9c",
+          "test_molecule_fraction": 0.18836748182419036,
+          "test_molecules": 285,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "abae3b23bb14d2a569dd62735495c726e1fdc766a5895dbd285fdd42c09ecc5f",
+          "train_identity_set_sha256": "9eecbb37211aef8ae0804762290feb5ab04b60bafbe5a4c2e3194c7ef1702580",
+          "train_molecules": 1228,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "3ed940682a53f04101ea3542c52ee2388331d7ba79e3dcd83f5c047d3014e14d"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "1fa669df94768d1539d241bd55e27fcfed2142ec80ab3f2b5e5f7b873170a6fa",
+              "fit_molecules": 805,
+              "fit_scaffold_groups": 359,
+              "fold": 0,
+              "validation_identity_set_sha256": "d568c4ac09eb2ea8d118bfee378a722b84e9d9c999729dcb09636540137a8857",
+              "validation_molecules": 394,
+              "validation_scaffold_groups": 181
+            },
+            {
+              "fit_identity_set_sha256": "65b7bca4b9c3e60232b65c9cd5cd7161350d97ceea16bf031f07d400fc176b82",
+              "fit_molecules": 759,
+              "fit_scaffold_groups": 358,
+              "fold": 1,
+              "validation_identity_set_sha256": "f7413401dfbfc573c6cde82c248e65e7770ec26c81d6cf1155383581767aaeae",
+              "validation_molecules": 440,
+              "validation_scaffold_groups": 182
+            },
+            {
+              "fit_identity_set_sha256": "bddb96e3d60349ed7c42a30fb4d1313045f2adbbf9a3c1810c65aff411da4619",
+              "fit_molecules": 834,
+              "fit_scaffold_groups": 363,
+              "fold": 2,
+              "validation_identity_set_sha256": "efb3484d85c24e884631354e64d6041772e472c641bbefb85d551afa163dd152",
+              "validation_molecules": 365,
+              "validation_scaffold_groups": 177
+            }
+          ],
+          "outer_seed": 104771,
+          "test_identity_set_sha256": "e11eb59dc30fd17c7a7db5f0b8342faab49410f50525cf48d4375bac16cc52b2",
+          "test_molecule_fraction": 0.2075346992729676,
+          "test_molecules": 314,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "fea72c12532840648c86d01559206df9e7f11fd03c650f750253899ea676ebdf",
+          "train_identity_set_sha256": "1ce3fda3ad1a964771dfbfcfb968b66c1155208120c2486d795bcf646e6a4b77",
+          "train_molecules": 1199,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "4a212b764bd669e3d98fa6b37034d14d9ef172e5c2170494eae1696582721063"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "57c47cee09a0e97147c9153799559fbb71762fcda5dd63d617e3860545a74516",
+              "fit_molecules": 809,
+              "fit_scaffold_groups": 390,
+              "fold": 0,
+              "validation_identity_set_sha256": "26994044ed85d672e241521f3d7cd21b0d8c3a26fc6df92bb5beb23810e09533",
+              "validation_molecules": 430,
+              "validation_scaffold_groups": 150
+            },
+            {
+              "fit_identity_set_sha256": "3a409e3098499a440615a332025765a8d74d72a00c53771a0929e976dcac48ef",
+              "fit_molecules": 824,
+              "fit_scaffold_groups": 342,
+              "fold": 1,
+              "validation_identity_set_sha256": "33d0cccbd600ba4ac261a58cc893fe81e92b57f613c5b392fa471c39485ec51e",
+              "validation_molecules": 415,
+              "validation_scaffold_groups": 198
+            },
+            {
+              "fit_identity_set_sha256": "c41b8adf6b022e65e4fb715dc09222192deeeca03bd002c76132dd0a49ef54de",
+              "fit_molecules": 845,
+              "fit_scaffold_groups": 348,
+              "fold": 2,
+              "validation_identity_set_sha256": "c154ee6a0f83e88684a97abb3ee6969d53faea422748ae4d83b046f048883f08",
+              "validation_molecules": 394,
+              "validation_scaffold_groups": 192
+            }
+          ],
+          "outer_seed": 209500,
+          "test_identity_set_sha256": "e6b4342dbee13db11b85d1b3d6c179ba52b436a66cd66347a74640c5008a6911",
+          "test_molecule_fraction": 0.1810971579643093,
+          "test_molecules": 274,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "df01a0d7c7b10f56adabfb8570cbf03f3a7ffa61fc9098628ffd434974ff613e",
+          "train_identity_set_sha256": "b59add5636cc7f054862d63d7ad216e221fafee2d84b6148169b1cba1ec3b179",
+          "train_molecules": 1239,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "c43e5e50f3777ed415c99d4761fe754388e8e3c3211a1dcd0b87fe8eb3e9fc64"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "b3281aeb07a23a4e55bba0aa209aa4cc2f3dadf93e6f22c41e0b4a627ffa6bff",
+              "fit_molecules": 847,
+              "fit_scaffold_groups": 355,
+              "fold": 0,
+              "validation_identity_set_sha256": "cfd37834c0bd777b562155612cce3b23cf3100e8f6e871964e4de116f6b43d8e",
+              "validation_molecules": 386,
+              "validation_scaffold_groups": 185
+            },
+            {
+              "fit_identity_set_sha256": "00a71907e865e9aec4fcd9cd9b1229e3ad0c6d06060651fc2e851fa8ecf73e83",
+              "fit_molecules": 729,
+              "fit_scaffold_groups": 358,
+              "fold": 1,
+              "validation_identity_set_sha256": "81b2c83a12fa805e3c7ef2d41b856d0333c65eb62ae14ea623a802f4af513a18",
+              "validation_molecules": 504,
+              "validation_scaffold_groups": 182
+            },
+            {
+              "fit_identity_set_sha256": "4f6cbb7648368cea667e7a5be80284ab0f17363ef3b61b0e6e7e7c39f76c5739",
+              "fit_molecules": 890,
+              "fit_scaffold_groups": 367,
+              "fold": 2,
+              "validation_identity_set_sha256": "8a2890defec12f8048f6ca95d9ff8ecc65c48120b444c259b48542ebd5b1ca6e",
+              "validation_molecules": 343,
+              "validation_scaffold_groups": 173
+            }
+          ],
+          "outer_seed": 314229,
+          "test_identity_set_sha256": "cf9d30b1df670c190f10bcbe8f4bbfd0e25c3137524184ab0f4d7ef60b1b334f",
+          "test_molecule_fraction": 0.18506278916060806,
+          "test_molecules": 280,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "9d30cb32f5ef0e2167717ba1b1ff5f62c0bf51ec72073ea874d53a68a0a5d83d",
+          "train_identity_set_sha256": "a40368cb0a36fa5bc314cfd81379f45f0eff328a4a31ba61c40ea895ad85e055",
+          "train_molecules": 1233,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "805e69de30fa3acc02ddf2cdaae63309b2102482d3f7abd528dbf596d307b140"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "2bda029b2481faf77550e23a268a7ba221423c352a433e2e059eb447f0136600",
+              "fit_molecules": 707,
+              "fit_scaffold_groups": 343,
+              "fold": 0,
+              "validation_identity_set_sha256": "75cfa50642937f2510ed931fae2b614d6ad40bc44f6f64529e0b3f1a0678a759",
+              "validation_molecules": 557,
+              "validation_scaffold_groups": 197
+            },
+            {
+              "fit_identity_set_sha256": "81248d7e548800071074631df0cca1221b8b0abbff5b9f08b0d82a020d916670",
+              "fit_molecules": 963,
+              "fit_scaffold_groups": 386,
+              "fold": 1,
+              "validation_identity_set_sha256": "6717252a5d712ebff3e02d72f69c5472015573545ca41bee7dd4ab82d6bb8e15",
+              "validation_molecules": 301,
+              "validation_scaffold_groups": 154
+            },
+            {
+              "fit_identity_set_sha256": "1f3253ea45db2cecec5aed7c8ecf45671dfd5359904484cb15ebc9ffeaa57f9d",
+              "fit_molecules": 858,
+              "fit_scaffold_groups": 351,
+              "fold": 2,
+              "validation_identity_set_sha256": "8839559b7d37527461851f1f62f61285bd335d4c8417a09cfc84452f72bac06d",
+              "validation_molecules": 406,
+              "validation_scaffold_groups": 189
+            }
+          ],
+          "outer_seed": 418958,
+          "test_identity_set_sha256": "23bb6667a034c91360506c460177a7b3480d26ba1c129cc1372d19185db7c9b6",
+          "test_molecule_fraction": 0.16457369464639787,
+          "test_molecules": 249,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "fad45cc89aebd7ec09726a3de64e15c09f4db202a7010eaef16ced70ba970a75",
+          "train_identity_set_sha256": "5a3c7a7562e59a603588037e4eb812d3c827e106063126aad51f3597183ddb6f",
+          "train_molecules": 1264,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "a9d3af4f030fb60869603587a412f7e75eb3ed9a51a817f91f61e600e1272f31"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "6bc354daddafd3fd2a80849a376c504d185019ccb53ba7ab343ae83585e6deb0",
+              "fit_molecules": 825,
+              "fit_scaffold_groups": 349,
+              "fold": 0,
+              "validation_identity_set_sha256": "d168feae26f84ce1c8594c9f374ed48c1f03bf034e74dbcd9aeef4a627e98b28",
+              "validation_molecules": 337,
+              "validation_scaffold_groups": 191
+            },
+            {
+              "fit_identity_set_sha256": "f48906831ffdd19b3205019f35a7b6cb42d69f43af82901f470105f9eb4f48d8",
+              "fit_molecules": 768,
+              "fit_scaffold_groups": 369,
+              "fold": 1,
+              "validation_identity_set_sha256": "c0a2c84d323d9e78f96951910266acabd23aa2bcfb1ce98ed404063f0df6ed10",
+              "validation_molecules": 394,
+              "validation_scaffold_groups": 171
+            },
+            {
+              "fit_identity_set_sha256": "70e9d9fce633e4c9e1e247493be847517db5825cb8db083c176c77d91001ec7d",
+              "fit_molecules": 731,
+              "fit_scaffold_groups": 362,
+              "fold": 2,
+              "validation_identity_set_sha256": "224765d3d32a68611f03a519570e334af121fb6f8e1d8093f5c369bb7d87adf5",
+              "validation_molecules": 431,
+              "validation_scaffold_groups": 178
+            }
+          ],
+          "outer_seed": 523687,
+          "test_identity_set_sha256": "bf8bc8c1562a0200caf5e4e96f6666c02dff23b335523c4304cbc22356c89de5",
+          "test_molecule_fraction": 0.23198942498347655,
+          "test_molecules": 351,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "e23d87c2bb34b17d1140b13d04c324530455fe62b62c42c30477aaa6f4008c38",
+          "train_identity_set_sha256": "c408f78cfa54dd33e4a5dde053d7b922592f3e686e8c80cf951a96dc62950848",
+          "train_molecules": 1162,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "5974c91e46fbefe6b4697138611b736f49591a2bca9351917fa499cf0ae46df8"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "99363282084cb435f57786e6a9dbd9963b8a5823d18547d8f9c991831e886d73",
+              "fit_molecules": 937,
+              "fit_scaffold_groups": 380,
+              "fold": 0,
+              "validation_identity_set_sha256": "d6a90120791d68119e55a08ec596d2df84f33aa91f8ae77856544b40d37c74a4",
+              "validation_molecules": 322,
+              "validation_scaffold_groups": 160
+            },
+            {
+              "fit_identity_set_sha256": "24ac92de1378ea820eee589a80333fb5b11169bfbd6ee2982d7ecbb90f5ead3d",
+              "fit_molecules": 714,
+              "fit_scaffold_groups": 343,
+              "fold": 1,
+              "validation_identity_set_sha256": "cf9d8e36187bbb149e0a8fa7beec30d8267988b66265816de9df6cf442112b70",
+              "validation_molecules": 545,
+              "validation_scaffold_groups": 197
+            },
+            {
+              "fit_identity_set_sha256": "cdd2e1a86be016c5d061d9a666222e147047738ce4e1bd1ffe741e465c08d0f3",
+              "fit_molecules": 867,
+              "fit_scaffold_groups": 357,
+              "fold": 2,
+              "validation_identity_set_sha256": "92535921c5995b0fa68caa96364aa20945bdc2eace729f4dbce87ea332efb185",
+              "validation_molecules": 392,
+              "validation_scaffold_groups": 183
+            }
+          ],
+          "outer_seed": 628416,
+          "test_identity_set_sha256": "e90a1f8b327fbe0976f02736c932a7620d281fa77641821e23a9b93e26ad358c",
+          "test_molecule_fraction": 0.16787838730998017,
+          "test_molecules": 254,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "b9d1b7f9a44f08ecf62db2dc6c220cac7786c55e9d2e1af01c9bde3988d47400",
+          "train_identity_set_sha256": "356ddcc50494236e2fa302914d68e6b4e0fe6043f17759537b72756ee95ed586",
+          "train_molecules": 1259,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "82ce696f21db6cdb94665e0a13a126b3690e94e64e5e8c61acacd3722a72d938"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "e86c3b771294783fbb68619bc00029d56aaacb54f9c464f357a2a65f51113deb",
+              "fit_molecules": 861,
+              "fit_scaffold_groups": 382,
+              "fold": 0,
+              "validation_identity_set_sha256": "0d20a9d5a0a3d341e589162c719a64fff13e296369a1456b3e1e4bad077b9aba",
+              "validation_molecules": 326,
+              "validation_scaffold_groups": 158
+            },
+            {
+              "fit_identity_set_sha256": "6c44de791ac7eccf0d769c1ecfdc246779474e1ff20cf66d0a70395abd66e1c7",
+              "fit_molecules": 778,
+              "fit_scaffold_groups": 344,
+              "fold": 1,
+              "validation_identity_set_sha256": "c1a46df8974f22b3b54e4b1943eff8b65100c0c1a8cb20a35c1f29a7ab2bfb3d",
+              "validation_molecules": 409,
+              "validation_scaffold_groups": 196
+            },
+            {
+              "fit_identity_set_sha256": "841c162d4a115bfb9c91623da15ada15837d810a6e8b84f4fc7c70161a0647d3",
+              "fit_molecules": 735,
+              "fit_scaffold_groups": 354,
+              "fold": 2,
+              "validation_identity_set_sha256": "8b48564cbc18e6ecebe4b801a899ed9d34d613f2b64452f65ac06c1f9390f1fc",
+              "validation_molecules": 452,
+              "validation_scaffold_groups": 186
+            }
+          ],
+          "outer_seed": 733145,
+          "test_identity_set_sha256": "5457c0b50b76a0b9888c92179cb1ad511be194305705672bf8986679956bea5a",
+          "test_molecule_fraction": 0.21546596166556511,
+          "test_molecules": 326,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "6ccdf83ccdadcd5b81cf3f5eddd9b785f0ee7f674ec2f379ca2a92fa4f9fe6cb",
+          "train_identity_set_sha256": "1c84dc2d9af20feeadb890685b1c91cd470d7e9c0d84f0af39e3a4f081f74f3c",
+          "train_molecules": 1187,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "652e4677a4b9bd119adc8098bbc8e1b05e637d57968e91a73965e5a194a67f0f"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "7af229defbc811065a63e5ead49f69e8f8780dea14ec24010abe3ad5e7a0c7ff",
+              "fit_molecules": 708,
+              "fit_scaffold_groups": 353,
+              "fold": 0,
+              "validation_identity_set_sha256": "10e88cd0881fae49058e304e4a98f85e8fe28d0341d19be63414a8bea19ed474",
+              "validation_molecules": 472,
+              "validation_scaffold_groups": 187
+            },
+            {
+              "fit_identity_set_sha256": "45d9b73653b6d96de20652b95864c00023e6441cefc6c980ac71dc3a59591902",
+              "fit_molecules": 800,
+              "fit_scaffold_groups": 366,
+              "fold": 1,
+              "validation_identity_set_sha256": "0141873de47286b383768ba322260ff5f8a46c33e7cbbfdd2953a2ea34a36b11",
+              "validation_molecules": 380,
+              "validation_scaffold_groups": 174
+            },
+            {
+              "fit_identity_set_sha256": "ecf9e682924502e4f30e7a030e4e3642700140efbe772cf2010e66f845417bfc",
+              "fit_molecules": 852,
+              "fit_scaffold_groups": 361,
+              "fold": 2,
+              "validation_identity_set_sha256": "2c42da8f15a0c8d9b96df23197a285a056a521ec797c4f8754c0b699d24ba871",
+              "validation_molecules": 328,
+              "validation_scaffold_groups": 179
+            }
+          ],
+          "outer_seed": 837874,
+          "test_identity_set_sha256": "2987d92e1a97ccd2b631eb8190d00f39263a758df62f3d9eccf64e3ded9a5028",
+          "test_molecule_fraction": 0.2200925313945803,
+          "test_molecules": 333,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "bf795b190384b6d72f82cca6fbbbac18034c9bfe0e36303227818e5221ab44df",
+          "train_identity_set_sha256": "871fdfbab27d1faab35596203e1c90f543479d64fa4e87fae2ca1735e4e703e9",
+          "train_molecules": 1180,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "545e9447bee2459f9ea6dd45bac37a8ba262b80062ef6596db348c5ae9f9f7c3"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "1810c0a003df01f58ed6111dd1febc609a138e4eb51fdc662b4ebd89548dd6de",
+              "fit_molecules": 753,
+              "fit_scaffold_groups": 356,
+              "fold": 0,
+              "validation_identity_set_sha256": "6b5d783852116e85e388615cb67beba61cb14a5ea0b0265bf5cdfaf17e5cdedb",
+              "validation_molecules": 423,
+              "validation_scaffold_groups": 184
+            },
+            {
+              "fit_identity_set_sha256": "fc074ff39996b7a8a6ced558f1591ab5a8839ed922e3501f182e9f799ad91131",
+              "fit_molecules": 796,
+              "fit_scaffold_groups": 351,
+              "fold": 1,
+              "validation_identity_set_sha256": "8b74463a69612e9304717f8a3ed909472566a8040828b1bc7ad4cebb44d619e1",
+              "validation_molecules": 380,
+              "validation_scaffold_groups": 189
+            },
+            {
+              "fit_identity_set_sha256": "1f5523c70efdf8bbaecc21d729b86660f93e4d33857dc646984cc56e6d7499f2",
+              "fit_molecules": 803,
+              "fit_scaffold_groups": 373,
+              "fold": 2,
+              "validation_identity_set_sha256": "f6686744f77d7c238afd9d70702117be3a4341effe303fe63c1c6337075c687a",
+              "validation_molecules": 373,
+              "validation_scaffold_groups": 167
+            }
+          ],
+          "outer_seed": 942603,
+          "test_identity_set_sha256": "590634e701642b606361aee22508f4642d78565ff0d0befcf537761084d341e3",
+          "test_molecule_fraction": 0.22273628552544614,
+          "test_molecules": 337,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 135,
+          "test_scaffold_set_sha256": "6d993332f04bf9e900dd238e208bb460546f2a98f23ef2fbc088bca757cce988",
+          "train_identity_set_sha256": "f4f5907e37aa6cd1d6432b5102c0f66024c68260d32dd2e8d87ff3ff0c75ebd0",
+          "train_molecules": 1176,
+          "train_scaffold_groups": 540,
+          "train_scaffold_set_sha256": "ea564e5978e7397456f3093e9ff570591b411af697f9efb8d93b155c08b402bc"
+        }
+      ],
+      "task": "classification"
+    },
+    "bbbp": {
+      "global_panel_start": 1513,
+      "global_panel_stop": 3373,
+      "identity_set_sha256": "6ef53732472e7729c4e3edb77ece33facb5f5e37407ee1daadaaba0f66e822a3",
+      "ordered_identity_sha256": "b22f921f544375474200a11220152b529c8985898c0dcf54b9fb0a536d06be97",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 20,
+        "duplicate_rows_collapsed": 64,
+        "molecules": 1860,
+        "positive_fraction": 0.7709677419354839,
+        "raw_rows": 2050,
+        "rejections": {
+          "disconnected": 105,
+          "parse_failure": 11
+        },
+        "scaffold_groups": 1062,
+        "target_mean": 0.7709677419354839,
+        "target_std": 0.4202100460845564,
+        "valid_rows_before_deduplication": 1934
+      },
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/downstream_benchmarks/moleculenet/BBBP.csv",
+        "sha256": "d07a38487aeac5cee5508413e468043ef3097451d2a112701c2d60be9ec6b662"
+      },
+      "split_identity_manifest": [
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "4061298bd47567bd2007399d7f24ba9d307465402b23fa40428e9be6672f4105",
+              "fit_molecules": 915,
+              "fit_scaffold_groups": 573,
+              "fold": 0,
+              "validation_identity_set_sha256": "5fcea5070fb3216c45261033ae9ab50759d9b857815fbcfcbe7cc6a706c00b71",
+              "validation_molecules": 528,
+              "validation_scaffold_groups": 276
+            },
+            {
+              "fit_identity_set_sha256": "c960a88b83c23beb28fad1b7ed262333d29b82d4d0be37982c490f5da143f855",
+              "fit_molecules": 985,
+              "fit_scaffold_groups": 559,
+              "fold": 1,
+              "validation_identity_set_sha256": "6dc9b40f3605f6e9e271d9f3ca1ca9ffbed2371e3334d4d1d83fa861a35ee9b8",
+              "validation_molecules": 458,
+              "validation_scaffold_groups": 290
+            },
+            {
+              "fit_identity_set_sha256": "9cda3e95c35a7d93ebf18cd168cf535a99cc1bf88ba47451cfd5ca4842654293",
+              "fit_molecules": 986,
+              "fit_scaffold_groups": 566,
+              "fold": 2,
+              "validation_identity_set_sha256": "b521e849b1458de904158bfcf7612af489b4c26c09e55986b9f1be8cba7e420e",
+              "validation_molecules": 457,
+              "validation_scaffold_groups": 283
+            }
+          ],
+          "outer_seed": 42,
+          "test_identity_set_sha256": "418943ddcf28ed04cf3731e7f00a4a561f80b15508bb2a80fe9fa4646e432171",
+          "test_molecule_fraction": 0.22419354838709676,
+          "test_molecules": 417,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "514f0a4c2110b8aa87183e3a882d78d4552d62474546fe5813eb6cf728409671",
+          "train_identity_set_sha256": "8602eeda4bb297d4f280be6d6201e46c2ff249d4f23aa02e3c324f78301dc006",
+          "train_molecules": 1443,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "3521b36bb19dd953372e700062231d4bb737d1a886f9111958d193c9e855a1c8"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "66428f08f0a82d20207b6132e4c0ee8f343798d0a7e445ffb8cedf3116f55309",
+              "fit_molecules": 964,
+              "fit_scaffold_groups": 569,
+              "fold": 0,
+              "validation_identity_set_sha256": "8a43b6c73d821873c970a40734a1e2d7fd1f467f62e60ef178c433ad46045de2",
+              "validation_molecules": 565,
+              "validation_scaffold_groups": 280
+            },
+            {
+              "fit_identity_set_sha256": "3435174545e2214bc13902fd71c571bb5eeded92dbbead840da0c26f78ebd2b7",
+              "fit_molecules": 1007,
+              "fit_scaffold_groups": 569,
+              "fold": 1,
+              "validation_identity_set_sha256": "78856850a3440ed7cacc451f3cb609351f87675efe3d8c8f4c9e1269d3a2a25a",
+              "validation_molecules": 522,
+              "validation_scaffold_groups": 280
+            },
+            {
+              "fit_identity_set_sha256": "b7a51f59c0452992ae879fb1b9a0382ea55f6837984b9995bdc597942baf009d",
+              "fit_molecules": 1087,
+              "fit_scaffold_groups": 560,
+              "fold": 2,
+              "validation_identity_set_sha256": "3fc0a700f10120a1680a34a6297e7514651865ea855f4c369adcc63016446179",
+              "validation_molecules": 442,
+              "validation_scaffold_groups": 289
+            }
+          ],
+          "outer_seed": 104771,
+          "test_identity_set_sha256": "7241c66a799c1e69136f44b71dbe7fdca1235955a2efeea04e1655856bc9b8a9",
+          "test_molecule_fraction": 0.17795698924731182,
+          "test_molecules": 331,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "00860cd1f641305df6ebb617e175903e28e94a1d84655458c182f1e7a1dfb934",
+          "train_identity_set_sha256": "9dbe1ec31222f0d824e4af580c446db9a583e183726b41728d67e9c59bbda361",
+          "train_molecules": 1529,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "1db78fe9d3fb13fba3933c740be4904f0bd64075b5f9131b0f7855d32eb3593f"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "961d9058a9388855c99711318908f54c4ffa5b78acd1c223914dbe9365c7ef16",
+              "fit_molecules": 1043,
+              "fit_scaffold_groups": 573,
+              "fold": 0,
+              "validation_identity_set_sha256": "1e439f4ffd02bcf211ae908f6d5a4ce8fe010766061f1b2a70acc2974e812772",
+              "validation_molecules": 444,
+              "validation_scaffold_groups": 276
+            },
+            {
+              "fit_identity_set_sha256": "4eb0cfc8278f3a57f29a606aed51c1353e02551f759f1d99f87bc4952770d633",
+              "fit_molecules": 1030,
+              "fit_scaffold_groups": 563,
+              "fold": 1,
+              "validation_identity_set_sha256": "e1357141f01573dd7597492a4fcd435e39d1038516f9f47867e74ef318a6b9e6",
+              "validation_molecules": 457,
+              "validation_scaffold_groups": 286
+            },
+            {
+              "fit_identity_set_sha256": "2d2a2c074b20663810f6238facaaf756aeb7b3f820a228da376b751aed5ac021",
+              "fit_molecules": 901,
+              "fit_scaffold_groups": 562,
+              "fold": 2,
+              "validation_identity_set_sha256": "c6bdbc357571cd468c6e44d83a3aa9b49d6882a91d81ef9878f89ce7df8226f0",
+              "validation_molecules": 586,
+              "validation_scaffold_groups": 287
+            }
+          ],
+          "outer_seed": 209500,
+          "test_identity_set_sha256": "bdcac7e58a0bdf00f6e32a6d9c4de832a443e589c58adcdc26df7af44662a5b9",
+          "test_molecule_fraction": 0.20053763440860214,
+          "test_molecules": 373,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "068ea7d8ec740b33ef23591b841c6292bd38c8dd0cb32db311dc4a13933ecb26",
+          "train_identity_set_sha256": "b721a40812c13a4e8676b53c85f313d629436f7279331dded18393b64c62ad3e",
+          "train_molecules": 1487,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "2e835d90d793bd7be1e6f9c50567d84fcbfcdcf5a718442d8a86e6debdbdbcce"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "860cd3334c2d657d5665b6ce897ed8b2a5b4dc5a548ec714b19d7f2827a64027",
+              "fit_molecules": 1071,
+              "fit_scaffold_groups": 566,
+              "fold": 0,
+              "validation_identity_set_sha256": "d4ee24190f20f6650a3ae6944ef2f25718cf8366d17d661b0592b9eb7cd09953",
+              "validation_molecules": 482,
+              "validation_scaffold_groups": 283
+            },
+            {
+              "fit_identity_set_sha256": "c67a8fdba7f3408fae2e31aef45408147918dab0e28c354893c57be685e385da",
+              "fit_molecules": 901,
+              "fit_scaffold_groups": 572,
+              "fold": 1,
+              "validation_identity_set_sha256": "389c0ea21aec529303d2c3f89454bc859ca63e9a07819ad7888b6a86a5ea564f",
+              "validation_molecules": 652,
+              "validation_scaffold_groups": 277
+            },
+            {
+              "fit_identity_set_sha256": "afc8c999b11a75bf3870b691cf620ca1de69f640bd4ee9522f0d3335ec8d1083",
+              "fit_molecules": 1134,
+              "fit_scaffold_groups": 560,
+              "fold": 2,
+              "validation_identity_set_sha256": "1bc2f2fbba3997d3a6f4c90cb4d0add26bcb2169bc2958241846aba06cfaf140",
+              "validation_molecules": 419,
+              "validation_scaffold_groups": 289
+            }
+          ],
+          "outer_seed": 314229,
+          "test_identity_set_sha256": "56c2edb4ed43a1f46b00cde349867251a3bac25b500eb1e454d599d9b24a768c",
+          "test_molecule_fraction": 0.1650537634408602,
+          "test_molecules": 307,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "1575e87a3c8e13138307fc035de8084ce30e0fddbb14a72ddc78c85212fd3245",
+          "train_identity_set_sha256": "237b7da8711787dd9607fed57c5dfbd145e024b2d516ac8feddf07cc607e8458",
+          "train_molecules": 1553,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "68e980674cedbaaeecdb572eabfeadcb81dc3d7279ff07d9d467f2e7494491d4"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "b249c655b4b050489aae7758d1196ae1c9eae11c40f62311095f4d659b2c25b1",
+              "fit_molecules": 1047,
+              "fit_scaffold_groups": 571,
+              "fold": 0,
+              "validation_identity_set_sha256": "e58e09a0f624cb79949ab367a928e8486438b978baca81a27950e5c3b4ae5ff0",
+              "validation_molecules": 439,
+              "validation_scaffold_groups": 278
+            },
+            {
+              "fit_identity_set_sha256": "a31c94c8f6a08dc9a32bae7722e68f4f647ae7fbe44556607d994e7045994234",
+              "fit_molecules": 1036,
+              "fit_scaffold_groups": 570,
+              "fold": 1,
+              "validation_identity_set_sha256": "9d513a5c8c16e5e3b137fc095a19248edb63ae34789513e785ca5d6bc637a90e",
+              "validation_molecules": 450,
+              "validation_scaffold_groups": 279
+            },
+            {
+              "fit_identity_set_sha256": "fe7c18c4b589385ecf31bde7109cb774cc0f15b2659b4ad14e4bb900b8ccd2ea",
+              "fit_molecules": 889,
+              "fit_scaffold_groups": 557,
+              "fold": 2,
+              "validation_identity_set_sha256": "96c7e76f6032b186396f83bef33fd2abb9a10b3e9329634a0144aff7d50508d5",
+              "validation_molecules": 597,
+              "validation_scaffold_groups": 292
+            }
+          ],
+          "outer_seed": 418958,
+          "test_identity_set_sha256": "d173733465e5e80602ed9752afe432fb746422989104a07a2f7f99b78625f560",
+          "test_molecule_fraction": 0.2010752688172043,
+          "test_molecules": 374,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "7815141a69ffce50d5ffc210fb39a246eab565e7f282691f363aeada9dc33fde",
+          "train_identity_set_sha256": "b2e4241b28bafb195e48979a378e5c8e4abdd008a90282f8cd5df8244eabcf2b",
+          "train_molecules": 1486,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "e3c68c1bc0329f42d07751ea169e9b01b1190187a9766165e49638be2a899949"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "a997ac1973936530a6327993bcbfbcb8879ea6a6a434d3d31ee8a16f5db56f88",
+              "fit_molecules": 962,
+              "fit_scaffold_groups": 577,
+              "fold": 0,
+              "validation_identity_set_sha256": "4ca8332a7125dd89841d4b443552218ce48878faf852df9d96aeff0302df3f5e",
+              "validation_molecules": 463,
+              "validation_scaffold_groups": 272
+            },
+            {
+              "fit_identity_set_sha256": "f3a952828f4193c68f8f1935accc560a6352bc84f5cc9f7844d4933033f8a084",
+              "fit_molecules": 874,
+              "fit_scaffold_groups": 563,
+              "fold": 1,
+              "validation_identity_set_sha256": "8081ce67744f15570fae3abbc6212bfa9cb50c2ef23f858a7613dc5665fc3c10",
+              "validation_molecules": 551,
+              "validation_scaffold_groups": 286
+            },
+            {
+              "fit_identity_set_sha256": "a58dc43b328ce494c85ac9d8b1ff3f4ce96cecad5a3eac06a06478ca836c47e9",
+              "fit_molecules": 1014,
+              "fit_scaffold_groups": 558,
+              "fold": 2,
+              "validation_identity_set_sha256": "6ca6f55dda23a0bf6af7743c5454ea06be2d9a3558d8e90360c546741eb4771b",
+              "validation_molecules": 411,
+              "validation_scaffold_groups": 291
+            }
+          ],
+          "outer_seed": 523687,
+          "test_identity_set_sha256": "bae7bab77ec5673eed680dbde95d8102bc2694acc01dabd5e2c42bc161538c41",
+          "test_molecule_fraction": 0.23387096774193547,
+          "test_molecules": 435,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "f552c0c48256b87fac0b730012b95cefca08c9ea1d570f7389e18c833a21c067",
+          "train_identity_set_sha256": "596f8008520f3ad9875707465ebe72ecaff606c5a6a5bf71c973ab505b7297b7",
+          "train_molecules": 1425,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "e3171a95b84cdbbcab79e0a2e4be6df9be9c6166114748cd6fddba8ec778ba50"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "8dd2dc9197939f6dd4375a2563ab5c3d76940a7a510698cdc55455d53acbec66",
+              "fit_molecules": 1009,
+              "fit_scaffold_groups": 560,
+              "fold": 0,
+              "validation_identity_set_sha256": "4e59415dde621edc80d4ddc392edeec08b5c8c693da7347acd613d148eb01e57",
+              "validation_molecules": 485,
+              "validation_scaffold_groups": 289
+            },
+            {
+              "fit_identity_set_sha256": "847870454533265703e4feecfa04ff8c18b9fa27db5d41b307120c5ba53c9b57",
+              "fit_molecules": 883,
+              "fit_scaffold_groups": 576,
+              "fold": 1,
+              "validation_identity_set_sha256": "a91ce4b0c8b16512ce184317111c91d0ec08ac0b3b6acaec2f04ead5b617bbe6",
+              "validation_molecules": 611,
+              "validation_scaffold_groups": 273
+            },
+            {
+              "fit_identity_set_sha256": "d33cd4ff22125f08cc9e8d4f13a9bced6c222b8b142315ae82af1b64fa454e0f",
+              "fit_molecules": 1096,
+              "fit_scaffold_groups": 562,
+              "fold": 2,
+              "validation_identity_set_sha256": "779dd01bdb832cadcdbb789cf38edd875b7ceb04d270fe95a61ad40bf92ee7e5",
+              "validation_molecules": 398,
+              "validation_scaffold_groups": 287
+            }
+          ],
+          "outer_seed": 628416,
+          "test_identity_set_sha256": "c2dff7ddf447b50ce0c445f18130048b899ea955a6ce9a75e9da8ca6be74fdba",
+          "test_molecule_fraction": 0.1967741935483871,
+          "test_molecules": 366,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "1eb6d31c38ea8f5995b3fca34fbe1d74ee26db6500331c37cb6a11018e2e5d7e",
+          "train_identity_set_sha256": "c3388e53e4c427a0969a927dd4b478a706c3d20723c59de92b9f805430ed0f0b",
+          "train_molecules": 1494,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "b130e71cfd5b713b94253c11994b756673f0b974c6dad6b49aa9bee6625bfb9e"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "a69003fa45593837fcbc436f100970ceb78e597c8037d557f52943b41fb90d0b",
+              "fit_molecules": 1023,
+              "fit_scaffold_groups": 566,
+              "fold": 0,
+              "validation_identity_set_sha256": "139ab91d4cbb3dd15b9cc6ff6833b1731863cd7ed426d238cd5f1f8fbbe8a631",
+              "validation_molecules": 505,
+              "validation_scaffold_groups": 283
+            },
+            {
+              "fit_identity_set_sha256": "ea60bf55226a82bc96787b4dcca81e3d024eea6b4ad5dd6d7a3a41c30ffe61a4",
+              "fit_molecules": 963,
+              "fit_scaffold_groups": 574,
+              "fold": 1,
+              "validation_identity_set_sha256": "3b2b9515a51db3c9f7c394aefd9359195c48cca3fc80ea22b8f5b0fa9a294970",
+              "validation_molecules": 565,
+              "validation_scaffold_groups": 275
+            },
+            {
+              "fit_identity_set_sha256": "6e27b5062366976fba836a4cd0081dff50c099f9eb2c17e230162c82f5aeaae4",
+              "fit_molecules": 1070,
+              "fit_scaffold_groups": 558,
+              "fold": 2,
+              "validation_identity_set_sha256": "ac31855339e2bcb5a363326391446b60a2db3a141804093601b389a5e4ebeb11",
+              "validation_molecules": 458,
+              "validation_scaffold_groups": 291
+            }
+          ],
+          "outer_seed": 733145,
+          "test_identity_set_sha256": "368fcce795bf09627842a4c8347fbc65285c3e8c2e7685e570d8d27da974592d",
+          "test_molecule_fraction": 0.17849462365591398,
+          "test_molecules": 332,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "c09010bec4569d6f643817486ccbd3de3dd5c22b4fa57905e0d69fd49ebafc4e",
+          "train_identity_set_sha256": "f434f2d017d552a3b03404f2103439455108c8411790fb467a2dfbaa900b7d56",
+          "train_molecules": 1528,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "9132f558e8add8f789d55817d90425c9c5cbcd2825f8da528ec1ba6e84a5d8ac"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "b4fe4c6b88546f06c577058afad52e40daf0cc556a3ee2e82472992ca3852d68",
+              "fit_molecules": 937,
+              "fit_scaffold_groups": 570,
+              "fold": 0,
+              "validation_identity_set_sha256": "e5d0de61432fe70de41d07e01088cb35f5959e94aad278b8f2adf6609299946c",
+              "validation_molecules": 516,
+              "validation_scaffold_groups": 279
+            },
+            {
+              "fit_identity_set_sha256": "fd1d4b4e3ea5bfffedfc8ca463d9df1c8fa98937da976ca7145b95864bff8edd",
+              "fit_molecules": 948,
+              "fit_scaffold_groups": 569,
+              "fold": 1,
+              "validation_identity_set_sha256": "11687158aa1f1eb30aaa541741e4c30cac21954603ad761adbd91a69f844f833",
+              "validation_molecules": 505,
+              "validation_scaffold_groups": 280
+            },
+            {
+              "fit_identity_set_sha256": "fc1b188100a380800c1c76bb2ff0eaa54e143e9cbe63c3996ccba2658f42846e",
+              "fit_molecules": 1021,
+              "fit_scaffold_groups": 559,
+              "fold": 2,
+              "validation_identity_set_sha256": "4b0af26e7ff2476076f2ceebe0d1bf9d844670570e5e6ab1dbf1dbb299c6ca86",
+              "validation_molecules": 432,
+              "validation_scaffold_groups": 290
+            }
+          ],
+          "outer_seed": 837874,
+          "test_identity_set_sha256": "071343942c228c8f8ef05587bfea90a41cf5d23aba19a312abd06d426b026951",
+          "test_molecule_fraction": 0.21881720430107526,
+          "test_molecules": 407,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "34255c09a43b0a8357795c228ed6dd43c83eb5ff09daa434e6e920f9610572c0",
+          "train_identity_set_sha256": "9612ab576cbf6e5c399138ce9f6a872e0b2301ae9dd6dc5a65e8607089a95def",
+          "train_molecules": 1453,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "7155fb2727de293853b0aa10e6f26d19401d50ed4d64c70f341e97f3b2d7d543"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "7e7f71c9992759b352fee720bb747537be4706b08676519298b2453e8c85b958",
+              "fit_molecules": 920,
+              "fit_scaffold_groups": 573,
+              "fold": 0,
+              "validation_identity_set_sha256": "926d5afb902ee240cf7e501a35d9c662e27a3b5718504268c414f533a1b49750",
+              "validation_molecules": 542,
+              "validation_scaffold_groups": 276
+            },
+            {
+              "fit_identity_set_sha256": "5217f77e83ffee6b0bc3895a3e4007e48bb3a56c221934324f3459e043d49f1f",
+              "fit_molecules": 1035,
+              "fit_scaffold_groups": 565,
+              "fold": 1,
+              "validation_identity_set_sha256": "6a33bf88b75c99c9c4314492e6da6098a281a162d68ebdb78436dd8c761e49ab",
+              "validation_molecules": 427,
+              "validation_scaffold_groups": 284
+            },
+            {
+              "fit_identity_set_sha256": "298f68fa74fb3a51a8a1bf4cc0885811451a8f7cedc8455daf880fbbbc3c7011",
+              "fit_molecules": 969,
+              "fit_scaffold_groups": 560,
+              "fold": 2,
+              "validation_identity_set_sha256": "ae26b7cbd17ba3d13bc63c12135a2187ffd8cede63aaf7423f9245817f186c59",
+              "validation_molecules": 493,
+              "validation_scaffold_groups": 289
+            }
+          ],
+          "outer_seed": 942603,
+          "test_identity_set_sha256": "8e5016a16691feedcc8f79cbcfd231d4c293fe65a4b723362760f261dc04d89b",
+          "test_molecule_fraction": 0.21397849462365592,
+          "test_molecules": 398,
+          "test_scaffold_group_fraction": 0.20056497175141244,
+          "test_scaffold_groups": 213,
+          "test_scaffold_set_sha256": "46cc34300133d2707e26edbf0a1bd8c4d3e9270a345f518cd8d3af7fe5bcda68",
+          "train_identity_set_sha256": "8062a130e42ae5eb0320efe7adde5082b9922a47f6353bee2b3b5be5f4bb944d",
+          "train_molecules": 1462,
+          "train_scaffold_groups": 849,
+          "train_scaffold_set_sha256": "c25091f3359461ca54cd3e5c2e187b74bfdb713dc8a848eee38969fc6490d8ad"
+        }
+      ],
+      "task": "classification"
+    },
+    "esol": {
+      "global_panel_start": 3373,
+      "global_panel_stop": 4489,
+      "identity_set_sha256": "f966fd6429e67db24fd6c1fb15604eff694bc4d6abfcad50db1e375699aa3266",
+      "ordered_identity_sha256": "91b4101fe3e00de659a4f51d93632f0bba4cdc580058fc95da600b37385437c5",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 11,
+        "molecules": 1116,
+        "positive_fraction": null,
+        "raw_rows": 1128,
+        "rejections": {
+          "too_few_atoms": 1
+        },
+        "scaffold_groups": 581,
+        "target_mean": -3.0519847670250897,
+        "target_std": 2.094467457986315,
+        "valid_rows_before_deduplication": 1127
+      },
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/downstream_benchmarks/moleculenet/delaney-processed.csv",
+        "sha256": "8c06a76f0c6487d29ab0f903e6a7a7139f189ab3c1178f159c8be8964602f189"
+      },
+      "split_identity_manifest": [
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "579b9f5d87f617c70321348bd2d02cd3acdbc37745328f06f652339b811b8fc7",
+              "fit_molecules": 643,
+              "fit_scaffold_groups": 394,
+              "fold": 0,
+              "validation_identity_set_sha256": "b9d418a6481ea5b5c4e27085fe5c4d7d6ebca501ed3bcea4e644e498799db774",
+              "validation_molecules": 322,
+              "validation_scaffold_groups": 70
+            },
+            {
+              "fit_identity_set_sha256": "a897e8dfb164259d9bfa9df43c7fcb39fd70a3085c434f5383757c17b2904968",
+              "fit_molecules": 643,
+              "fit_scaffold_groups": 267,
+              "fold": 1,
+              "validation_identity_set_sha256": "1aa60a6a3e44e3da0d2a914df5b34f936ea067ad0c7d975ab467cf7ae3c9c4f8",
+              "validation_molecules": 322,
+              "validation_scaffold_groups": 197
+            },
+            {
+              "fit_identity_set_sha256": "0990d937c6b441574fdbfe1063c5d9460413bb2283dfdd06b73c8492f8d56a96",
+              "fit_molecules": 644,
+              "fit_scaffold_groups": 267,
+              "fold": 2,
+              "validation_identity_set_sha256": "56ceddf97ee07195031610356de78243f8fe273ff81acddd3a0d7cb662208722",
+              "validation_molecules": 321,
+              "validation_scaffold_groups": 197
+            }
+          ],
+          "outer_seed": 42,
+          "test_identity_set_sha256": "9ee23b0d909b0adc61ede6d4253ee15a54151fab02f21c2e33fac466979ec1cc",
+          "test_molecule_fraction": 0.13530465949820789,
+          "test_molecules": 151,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "75c9e643f29ddb459da5ed48286640d2dd20f295fef28a2b1b93aafd0eb46cd4",
+          "train_identity_set_sha256": "38778b87a6eb5b1733926b81c6ff8e6f5c8de4595536b7b18c49b524d11d256c",
+          "train_molecules": 965,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "72a1c855ffcceb9866e8ae972b06985e9e5d840778c241c68670336b536d08e6"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "c16554c3e6ed95924fdbb9b4a0f470b8c9d4d69baae28f512c7661f070460db1",
+              "fit_molecules": 632,
+              "fit_scaffold_groups": 399,
+              "fold": 0,
+              "validation_identity_set_sha256": "57cd5fafaa036acc10ca31ae9af573c5ace7c4ccf37c46ede1166266c6b31a86",
+              "validation_molecules": 317,
+              "validation_scaffold_groups": 65
+            },
+            {
+              "fit_identity_set_sha256": "7fee55c7f387bafb5c8ccd3e442261a75cf8bf50c29730f76adc1022e2100cd9",
+              "fit_molecules": 633,
+              "fit_scaffold_groups": 265,
+              "fold": 1,
+              "validation_identity_set_sha256": "7d081686d4098f12beae1ac9de8554dce14d7eddc0ffe354d9bf802a1dd06a7a",
+              "validation_molecules": 316,
+              "validation_scaffold_groups": 199
+            },
+            {
+              "fit_identity_set_sha256": "44c1e7f8eae066e09df4257a520ecffdb8a5467a290196ab0b534631de71dbf8",
+              "fit_molecules": 633,
+              "fit_scaffold_groups": 264,
+              "fold": 2,
+              "validation_identity_set_sha256": "40eb3a26814e77818f3a28fef592723ec06280b2f1e460e77124e9a57fcab541",
+              "validation_molecules": 316,
+              "validation_scaffold_groups": 200
+            }
+          ],
+          "outer_seed": 104771,
+          "test_identity_set_sha256": "7746087087bf8cbc47e70c5ff00076ed93563886584d5ca2f7ec04560ed843ef",
+          "test_molecule_fraction": 0.1496415770609319,
+          "test_molecules": 167,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "c9c0cc98e8a53848dfaa7c39609123566a91bb36b5eb5d260e1585040d3de1e4",
+          "train_identity_set_sha256": "caf5704ca0aa75b721102ab42aa452ca7d9022a32ad06cfc3aa8c1204079588c",
+          "train_molecules": 949,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "cf550bd233b31689ee30fda76256cec0ac417234c2ac4e7739d28cd0941b61a3"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "1223ba77fafa23b3c768be1453f5e6cadf8c41f4a7d2fd079cd5b0aeadca62b3",
+              "fit_molecules": 612,
+              "fit_scaffold_groups": 410,
+              "fold": 0,
+              "validation_identity_set_sha256": "352f1c1134ebe88a0b21c880ef6a92300df86a703f825939168430f5ce10d615",
+              "validation_molecules": 306,
+              "validation_scaffold_groups": 54
+            },
+            {
+              "fit_identity_set_sha256": "04702b6b1d505bf63a721364c344536c5551b6ce1a56ecf5201638b8eaa595d8",
+              "fit_molecules": 612,
+              "fit_scaffold_groups": 259,
+              "fold": 1,
+              "validation_identity_set_sha256": "a09ecb04d699d4161a690e685041433a8fd25370a7429bd0634c36142db4f02d",
+              "validation_molecules": 306,
+              "validation_scaffold_groups": 205
+            },
+            {
+              "fit_identity_set_sha256": "01e4b183c8be1274b40fa324eec835b4147fa6de5e13b8c645f9150a86933f1f",
+              "fit_molecules": 612,
+              "fit_scaffold_groups": 259,
+              "fold": 2,
+              "validation_identity_set_sha256": "2ad6c40abbeba452908aa02f5c0671162cb806f7cdb6d4b6a5f4bc2b357b2f8e",
+              "validation_molecules": 306,
+              "validation_scaffold_groups": 205
+            }
+          ],
+          "outer_seed": 209500,
+          "test_identity_set_sha256": "3ca713a3bdfc99b10c8548b6daf0d6fb9a62b3fbc10aee8ed4405025cc846d90",
+          "test_molecule_fraction": 0.1774193548387097,
+          "test_molecules": 198,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "b62c62771e3ad32dad2671cef3bcef0e73ff22db190be6200dee8c20bb7da939",
+          "train_identity_set_sha256": "e61c07c386db65343845eefe2844fdaf440356e0cf2181db21b30c12569f2fe2",
+          "train_molecules": 918,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "caf4c9209b9ed39634bc7e548dd4bdb8f0bd2563fc2eca2603d7ac786df2b2c1"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "6a5aee322293d18644411ca1840f2482dd2e1130a8600fb470af2a9e8d2d238b",
+              "fit_molecules": 612,
+              "fit_scaffold_groups": 409,
+              "fold": 0,
+              "validation_identity_set_sha256": "338907dd787ebd423fc8030344d068a7806e23b8cbc700ad141f3a928cf897d2",
+              "validation_molecules": 307,
+              "validation_scaffold_groups": 55
+            },
+            {
+              "fit_identity_set_sha256": "fc7a1f6b5c2a2b338626ec720278e26c79a61f7101448533c9595d7a719e9731",
+              "fit_molecules": 613,
+              "fit_scaffold_groups": 260,
+              "fold": 1,
+              "validation_identity_set_sha256": "f6fe1de02a6ad74ac27808e5da705d6e65a2e3e58d6c193ef07f7531b1228e80",
+              "validation_molecules": 306,
+              "validation_scaffold_groups": 204
+            },
+            {
+              "fit_identity_set_sha256": "f2a5208fc48ed2b1eb51abadae9f79f90c69e51cd68e7d9594384b38677e657c",
+              "fit_molecules": 613,
+              "fit_scaffold_groups": 259,
+              "fold": 2,
+              "validation_identity_set_sha256": "c1caf87fdde8a2c04c5cfbc8a0220395e7573e2af4e791f56945029dee27b257",
+              "validation_molecules": 306,
+              "validation_scaffold_groups": 205
+            }
+          ],
+          "outer_seed": 314229,
+          "test_identity_set_sha256": "c4440900c79f51e455993fadf1dde5eece5ab7ee7dd339d9b72aa04fda117849",
+          "test_molecule_fraction": 0.17652329749103943,
+          "test_molecules": 197,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "298df000f17f20cca04c9b4f57b1cecf99d639f54b45b1a263608580829a826c",
+          "train_identity_set_sha256": "45a2b20e85ab6031f6650a3b246495fdec2870e5e4f905a166d12d41962dbae7",
+          "train_molecules": 919,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "e55727db2319c38c06932f9a8ae31a40a7097f08851db7bbc0d58a220231bcbc"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "19bf8186a9a0be4b10ac809e8219e07c20d27f4099c2cb8ad13043f052a331d1",
+              "fit_molecules": 464,
+              "fit_scaffold_groups": 310,
+              "fold": 0,
+              "validation_identity_set_sha256": "96f2f6bdb9e3cc5ad904e6a34d1169a2010e3cd927444c1d938cf41510baf22e",
+              "validation_molecules": 233,
+              "validation_scaffold_groups": 154
+            },
+            {
+              "fit_identity_set_sha256": "26e613fe16b26de3621f48ab635c8c870832f16266d529cae51f56f694381a32",
+              "fit_molecules": 465,
+              "fit_scaffold_groups": 309,
+              "fold": 1,
+              "validation_identity_set_sha256": "e33ce2a28bbc00829168b0dece447bec21c514e93fb815e721760d4c814b5787",
+              "validation_molecules": 232,
+              "validation_scaffold_groups": 155
+            },
+            {
+              "fit_identity_set_sha256": "330be53cd0b5ec53427c04cd6d406233b7767db3706e4dc3e508a5f8cb7b540b",
+              "fit_molecules": 465,
+              "fit_scaffold_groups": 309,
+              "fold": 2,
+              "validation_identity_set_sha256": "ea9770d0577887d4874d495e8d6af68ae896963e05496c66826df4716394bb3c",
+              "validation_molecules": 232,
+              "validation_scaffold_groups": 155
+            }
+          ],
+          "outer_seed": 418958,
+          "test_identity_set_sha256": "f014b1fda5e1bcae261689008980cfbd59a725b58252e970ab52bc3aabfe6df4",
+          "test_molecule_fraction": 0.37544802867383514,
+          "test_molecules": 419,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "f26c5b0c71e066113782ddacc447142f287a5f622e9b771ab621da98cfbe56a5",
+          "train_identity_set_sha256": "9b14de577a1b224dd3d827d7c0b1699b0078934b55b32a17595bc8b05ec0da70",
+          "train_molecules": 697,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "891994c3512a1daf539898877dbe791e1886ffb3227714190a264e3f00f32de6"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "e491ae9d18b849c88cf6aebb00f89e498e205ebdae7f417c7663da5ef4fb717d",
+              "fit_molecules": 603,
+              "fit_scaffold_groups": 414,
+              "fold": 0,
+              "validation_identity_set_sha256": "ae5b5dc5b2e5577fe2f88293f715c4188d8c638325b22b89e75021f8c3f3e97a",
+              "validation_molecules": 302,
+              "validation_scaffold_groups": 50
+            },
+            {
+              "fit_identity_set_sha256": "50e2958d04d4281d5772cc64944e3f994b71fdc91215121ecd42b1f60ad68b05",
+              "fit_molecules": 603,
+              "fit_scaffold_groups": 257,
+              "fold": 1,
+              "validation_identity_set_sha256": "6c766569d3c71d58ed68228668120dc4906648176e9bbae89d5b015db1920ba5",
+              "validation_molecules": 302,
+              "validation_scaffold_groups": 207
+            },
+            {
+              "fit_identity_set_sha256": "ec783e405e6b74a7e90af29fbe5fef341ccfd34c5b41b28aeee2c25dad9d6162",
+              "fit_molecules": 604,
+              "fit_scaffold_groups": 257,
+              "fold": 2,
+              "validation_identity_set_sha256": "413fe1085762e0f1386b0b5340b57d180cb34d91d57c3b5e102aa65b86e83eee",
+              "validation_molecules": 301,
+              "validation_scaffold_groups": 207
+            }
+          ],
+          "outer_seed": 523687,
+          "test_identity_set_sha256": "6fdf7e4321f5afe6e8fff550ab74ef05a51e0dce412c488764e779514598fb26",
+          "test_molecule_fraction": 0.18906810035842295,
+          "test_molecules": 211,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "9d15f29fa8f136944601f6369cdcd0bfad1e9178385f113b9d8d8eb52f54b169",
+          "train_identity_set_sha256": "3a54f858f92c7cda4492ec3eae384af89e244906bd4b34f0ce6272f8421263d2",
+          "train_molecules": 905,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "a3bb4d94188a9aaaabf4b09a266c6526e06d566a7b2d272eb62ccfb6e73a1477"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "74869277648cce967f47f6acca5ea58b4c61a94be67e56b7fd830de8c441c96c",
+              "fit_molecules": 460,
+              "fit_scaffold_groups": 310,
+              "fold": 0,
+              "validation_identity_set_sha256": "abb80ff78aa782c168004211a459c721a88f39976816e9623612aa4fad9e2d66",
+              "validation_molecules": 230,
+              "validation_scaffold_groups": 154
+            },
+            {
+              "fit_identity_set_sha256": "7917e9d3d2bf72bafa95b3d528da7b714d9b996549a855a1adef0893ea012a68",
+              "fit_molecules": 460,
+              "fit_scaffold_groups": 309,
+              "fold": 1,
+              "validation_identity_set_sha256": "54ad7c1cce7d34d8277e8815a61ab333f630af7429f0e725a81491f1eacc320a",
+              "validation_molecules": 230,
+              "validation_scaffold_groups": 155
+            },
+            {
+              "fit_identity_set_sha256": "47507be002aaec7263d4e752d610ac91df80eb1069e9f9565646238a6161e574",
+              "fit_molecules": 460,
+              "fit_scaffold_groups": 309,
+              "fold": 2,
+              "validation_identity_set_sha256": "da64eb432e2cbf82eea0734783e33065d4cae4affef116143e062c0410e9a2bf",
+              "validation_molecules": 230,
+              "validation_scaffold_groups": 155
+            }
+          ],
+          "outer_seed": 628416,
+          "test_identity_set_sha256": "11405b4344f95ffae5c96d68c48711a487ec85810ede61ede8b16e7e96ac0f7f",
+          "test_molecule_fraction": 0.3817204301075269,
+          "test_molecules": 426,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "df77450aeacaddefb767ca1a28695cf1948d74ff0808dd2ac668f7438d6b564a",
+          "train_identity_set_sha256": "27df9149049daa504012f2b9785ac5d54712ca19e51f324b764fccb04fba8114",
+          "train_molecules": 690,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "a6e5b25026bf935d9fa65a445ccea3956a305aa22cf9806a576aa232622f679b"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "593b187e1cc7207d0e4b7d8a5e7b6fdfd443ddaa10174726633c9ca2f3d25664",
+              "fit_molecules": 475,
+              "fit_scaffold_groups": 310,
+              "fold": 0,
+              "validation_identity_set_sha256": "56f56e3a197a29fa9ed3141b2e218ee87f92bf6a6a134a5b7b68498eecdefa40",
+              "validation_molecules": 238,
+              "validation_scaffold_groups": 154
+            },
+            {
+              "fit_identity_set_sha256": "79f3cfea38986054366937ba8e317f02f14e357b02e3f6bd33c9888b2bc50caa",
+              "fit_molecules": 475,
+              "fit_scaffold_groups": 309,
+              "fold": 1,
+              "validation_identity_set_sha256": "0fdc3d7f48361b71a17194cae717cca77df2faf7d204d2462f1afb7b6097d370",
+              "validation_molecules": 238,
+              "validation_scaffold_groups": 155
+            },
+            {
+              "fit_identity_set_sha256": "317da94a2b24a8667d48f93583776398699263e2972db830c9e1ec5ae6d9d142",
+              "fit_molecules": 476,
+              "fit_scaffold_groups": 309,
+              "fold": 2,
+              "validation_identity_set_sha256": "c760779f4dc6fa27c1038bd6c31dadf72f0d63a535c9a812082199dc324855e1",
+              "validation_molecules": 237,
+              "validation_scaffold_groups": 155
+            }
+          ],
+          "outer_seed": 733145,
+          "test_identity_set_sha256": "91f1baafcd9d5d419e75b6f36c2bd2204d65e05e7f4b8e1e02e93949cc472d89",
+          "test_molecule_fraction": 0.3611111111111111,
+          "test_molecules": 403,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "6e4a8e0a46dd440eff07134a6342f2bcfd8f6418cbf9f36b5e75c29fe054d35c",
+          "train_identity_set_sha256": "58b100a2a335b09c169390355a1a7db016071b9695dbedc40cc39b6c8006e1b5",
+          "train_molecules": 713,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "eca294201299440e6dff1b0c4c24206292deb2500501ed85060edbe335c59272"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "f0c2cc35687244c2a68e1f9141c488df486267d899d782c9170540a4aa8cc6f6",
+              "fit_molecules": 466,
+              "fit_scaffold_groups": 310,
+              "fold": 0,
+              "validation_identity_set_sha256": "6483c6d401ef075700afe8e2c86718264b2d8341ecceb2ac1ad45c344fa5aeb4",
+              "validation_molecules": 234,
+              "validation_scaffold_groups": 154
+            },
+            {
+              "fit_identity_set_sha256": "72952960698bdb1b6ad983c916fe81c6240be57064d4975b3cd95d251b273f00",
+              "fit_molecules": 467,
+              "fit_scaffold_groups": 309,
+              "fold": 1,
+              "validation_identity_set_sha256": "5f85cf99784aa56881e2ebd4ca2b60725689000a2e2e1080ec7c11a50ac409d1",
+              "validation_molecules": 233,
+              "validation_scaffold_groups": 155
+            },
+            {
+              "fit_identity_set_sha256": "0a238972b2bfa460f0a34835925d63baa944cbf5a58eed335e31ecffc5c95ada",
+              "fit_molecules": 467,
+              "fit_scaffold_groups": 309,
+              "fold": 2,
+              "validation_identity_set_sha256": "97a9dc3962e766348c17083246389fc02a6890d973e09ab6d9f4407913a55f94",
+              "validation_molecules": 233,
+              "validation_scaffold_groups": 155
+            }
+          ],
+          "outer_seed": 837874,
+          "test_identity_set_sha256": "c95bb388d11b2ff029713e7157ac45162bdbfec19523a225e44ceaab2d70ca87",
+          "test_molecule_fraction": 0.3727598566308244,
+          "test_molecules": 416,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "115b8e959c1dbd4d31a7adf46e1eae61476c10c4a6a33fe2b57aab4385efe594",
+          "train_identity_set_sha256": "982e0b672e5986665814d74f3f0509d6dde7a52c3e08349fd6723aa732f62adc",
+          "train_molecules": 700,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "e46ca4df3dd7db9e5a4877398038a3e0f6f9ffbf0c4bc77e69acd5d9c80a9b3d"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "1fce018c0fdf96c0f00b98cedeca76e1d23c0018aeeca733baf75aa2f9f560b1",
+              "fit_molecules": 622,
+              "fit_scaffold_groups": 405,
+              "fold": 0,
+              "validation_identity_set_sha256": "6c33bdbc6166c8f780f6b01cdf69a3bf0ccd6ddaac26b0307435bfdeac67b8b2",
+              "validation_molecules": 311,
+              "validation_scaffold_groups": 59
+            },
+            {
+              "fit_identity_set_sha256": "da0a8915692e360eca4e3a1a7babf6447e56f3b1458facac0f4fd817e03bc476",
+              "fit_molecules": 622,
+              "fit_scaffold_groups": 262,
+              "fold": 1,
+              "validation_identity_set_sha256": "af5afcbb5f3464c004d22cd9951fef5f0e7beb8a0a87fcce0f3955597b0875f4",
+              "validation_molecules": 311,
+              "validation_scaffold_groups": 202
+            },
+            {
+              "fit_identity_set_sha256": "f330c150fe60cb52327cae715af3181513e697440ddf485ccf94baf9f4df263a",
+              "fit_molecules": 622,
+              "fit_scaffold_groups": 261,
+              "fold": 2,
+              "validation_identity_set_sha256": "a5f5b78dec759de286cc8ab30ca28e6838282ab2d842558e8edac31b9911eaf4",
+              "validation_molecules": 311,
+              "validation_scaffold_groups": 203
+            }
+          ],
+          "outer_seed": 942603,
+          "test_identity_set_sha256": "3902545a1551ed11db78535ba6a345a85fc5517374ce164f8e2dd91d2e4c750c",
+          "test_molecule_fraction": 0.1639784946236559,
+          "test_molecules": 183,
+          "test_scaffold_group_fraction": 0.20137693631669534,
+          "test_scaffold_groups": 117,
+          "test_scaffold_set_sha256": "3e240706215b29ecfa5171ecbce9cf34ce4f43efc13a1c05581b0393227e5929",
+          "train_identity_set_sha256": "a4575326c94e8f5d1c57f4a1159315781c0195f545b4083921ca75c850de60ce",
+          "train_molecules": 933,
+          "train_scaffold_groups": 464,
+          "train_scaffold_set_sha256": "df138846a8bb78df28a702e04af8c69c49f6ac1602cd6d0d8177291d6616345f"
+        }
+      ],
+      "task": "regression"
+    },
+    "freesolv": {
+      "global_panel_start": 4489,
+      "global_panel_stop": 5128,
+      "identity_set_sha256": "2a2f87bbf6ef1d9bda5200644b0c837a0973bc641d65bb493e70373768642db2",
+      "ordered_identity_sha256": "de528b43148659cbcce70f0bf7439c1ab2d3ea431f043ce3a01fff137363795e",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 639,
+        "positive_fraction": null,
+        "raw_rows": 642,
+        "rejections": {
+          "too_few_atoms": 3
+        },
+        "scaffold_groups": 376,
+        "target_mean": -3.8161815336463225,
+        "target_std": 3.8449639202000605,
+        "valid_rows_before_deduplication": 639
+      },
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/downstream_benchmarks/moleculenet/SAMPL.csv",
+        "sha256": "ab5895d914ee87cb563bd7b9611e869527bba45bec6b014d34dc495a0f9dcb72"
+      },
+      "split_identity_manifest": [
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "b949f3127da4fdb5d9209cd61b29683fa1d64e38b34bfa8aa1f41938609f1b29",
+              "fit_molecules": 360,
+              "fit_scaffold_groups": 270,
+              "fold": 0,
+              "validation_identity_set_sha256": "7e24811f6c66fb6767f1208d22be7f98d9eac17d3a63f2199e4e6dc489bec638",
+              "validation_molecules": 181,
+              "validation_scaffold_groups": 30
+            },
+            {
+              "fit_identity_set_sha256": "f9b76a133f456d32652adf3fd694a9dbd45f134378e95b5efcf8cefd93694e4d",
+              "fit_molecules": 361,
+              "fit_scaffold_groups": 165,
+              "fold": 1,
+              "validation_identity_set_sha256": "186c6d3154554fc6993598485b05444d0828eb8d3e9f46daeff0bdcf53907dc3",
+              "validation_molecules": 180,
+              "validation_scaffold_groups": 135
+            },
+            {
+              "fit_identity_set_sha256": "215944a6204af228c365acefdb7d5186fb8699c7266719eb84f6999f0d99aa2f",
+              "fit_molecules": 361,
+              "fit_scaffold_groups": 165,
+              "fold": 2,
+              "validation_identity_set_sha256": "0ad9ce936b57a426b20c13e910112254b363a6726a3eb589c04d9be30e5bda4c",
+              "validation_molecules": 180,
+              "validation_scaffold_groups": 135
+            }
+          ],
+          "outer_seed": 42,
+          "test_identity_set_sha256": "34ee2b18b91d371ee28fde09878fda044169c9598058569d488f2802b5bf88ca",
+          "test_molecule_fraction": 0.15336463223787167,
+          "test_molecules": 98,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "84d06fadf09cc5f138a2a4daa8b71c61ecf6e369364fe9037b04f928f719c6b6",
+          "train_identity_set_sha256": "8eec7f95701e5b9a5367ee142706e870dbc5a891284e812ec3f51ef21ee0eb0c",
+          "train_molecules": 541,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "a4261fc9b913227c438bd753807f91da81e9be4ab6e1a988be7893fe80ee3c0d"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "39995f06e4f41160cd4e4acb790766dbaba8eb2e8d89933c7f4e3b336b298f97",
+              "fit_molecules": 350,
+              "fit_scaffold_groups": 276,
+              "fold": 0,
+              "validation_identity_set_sha256": "716683813b7b3c6278247f45756e829cb176637ff233c97975f3d473f88f3adc",
+              "validation_molecules": 175,
+              "validation_scaffold_groups": 24
+            },
+            {
+              "fit_identity_set_sha256": "e8003932fddbc82fffb5d8c3e570326001a99e239055df65f87d7c4307cc12fe",
+              "fit_molecules": 350,
+              "fit_scaffold_groups": 163,
+              "fold": 1,
+              "validation_identity_set_sha256": "f8b243a4d237a007043b214e41378cc54e4c20724ff0c195f71afe2a3ef759b3",
+              "validation_molecules": 175,
+              "validation_scaffold_groups": 137
+            },
+            {
+              "fit_identity_set_sha256": "e2e0538655b60f41bccf618833a8816e6968cde63b834b70463c58ed5783a567",
+              "fit_molecules": 350,
+              "fit_scaffold_groups": 161,
+              "fold": 2,
+              "validation_identity_set_sha256": "07b7e7b551e720761892ddb94771d020ec3af358386f24e3dba9eeca17c8d27e",
+              "validation_molecules": 175,
+              "validation_scaffold_groups": 139
+            }
+          ],
+          "outer_seed": 104771,
+          "test_identity_set_sha256": "47b469db4eb6e141d823c801270ab78f7aed654ca231eb71c322c41c5344fcea",
+          "test_molecule_fraction": 0.1784037558685446,
+          "test_molecules": 114,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "586463a5e97fe97803399a15c4ff80b295ec6571ea6d94cf7cb38100739c3862",
+          "train_identity_set_sha256": "a6fab6f33133e24be2e7c6dab201b16ab541a3b39ceb1c3fa80f75ca83f623ca",
+          "train_molecules": 525,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "eaead07951a8c12edb3419f2f85ca5213936239caa1efe0dabb0f228d671942b"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "96866d238996d05ebbfb118d22d1e8df35d7add4f6d82b0913935a94a6e9e11f",
+              "fit_molecules": 355,
+              "fit_scaffold_groups": 273,
+              "fold": 0,
+              "validation_identity_set_sha256": "4809e185d35b894dc1b2747bb493c0295adf395341dd01520b67314df62629a8",
+              "validation_molecules": 178,
+              "validation_scaffold_groups": 27
+            },
+            {
+              "fit_identity_set_sha256": "af245446171474fb881f9f85a88b7b129d11369162bf654e9de94b4645d250df",
+              "fit_molecules": 355,
+              "fit_scaffold_groups": 164,
+              "fold": 1,
+              "validation_identity_set_sha256": "944d2a6781e4eada19f4d781841db7007f75b57e23ef60a63c1648999e9046e4",
+              "validation_molecules": 178,
+              "validation_scaffold_groups": 136
+            },
+            {
+              "fit_identity_set_sha256": "1b30b049c0197d7192686cf07f1dc021fe4b8dfe923949a5f83faea16b8fb081",
+              "fit_molecules": 356,
+              "fit_scaffold_groups": 163,
+              "fold": 2,
+              "validation_identity_set_sha256": "f72dd76db54a7f172c0313adf8c84239a11837ef32b261d8d2373f60dc49acab",
+              "validation_molecules": 177,
+              "validation_scaffold_groups": 137
+            }
+          ],
+          "outer_seed": 209500,
+          "test_identity_set_sha256": "1178a10663551dc53684eab1dd5f9922fc2694fa7be7b7bf2e99208d0f0574a3",
+          "test_molecule_fraction": 0.16588419405320814,
+          "test_molecules": 106,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "3154b4d7f3cb5fd9015003651fb564620b0f781a90f9a3fb36a4ea24b9af09e2",
+          "train_identity_set_sha256": "f1a62a44e3798d324a5cbd7e8e390094c0633aea5204088b6c522afbc9e8b73b",
+          "train_molecules": 533,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "41103504dc6cf3e116b07e3acd1fe464130a5c124f11090c1fb124cd9859fdbb"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "f5e2bdd19ffbf3dd3948b7fab4e64eb3ab0832d4b8291f832c0ea98f02566ba3",
+              "fit_molecules": 350,
+              "fit_scaffold_groups": 275,
+              "fold": 0,
+              "validation_identity_set_sha256": "717bba781f5d4f6abfe6f2123a6a22de9c93b69cce184f8343a8730e2e48c0c8",
+              "validation_molecules": 176,
+              "validation_scaffold_groups": 25
+            },
+            {
+              "fit_identity_set_sha256": "72e0ec563dda0d4f5b8087336db0e00b93042f16c82cba53f983632ea57d19ab",
+              "fit_molecules": 351,
+              "fit_scaffold_groups": 163,
+              "fold": 1,
+              "validation_identity_set_sha256": "138b4629b6133da7148bbf2048602b9cc1e01005742842fdaecb61d209fb90c9",
+              "validation_molecules": 175,
+              "validation_scaffold_groups": 137
+            },
+            {
+              "fit_identity_set_sha256": "d6c2afec5896554852b61728235a3184b54a4c04f7ca2df1da129850a3859b9b",
+              "fit_molecules": 351,
+              "fit_scaffold_groups": 162,
+              "fold": 2,
+              "validation_identity_set_sha256": "37e01d8524aacc9a82533b49be3d9d12c05e127f8633a71378becdad815a620e",
+              "validation_molecules": 175,
+              "validation_scaffold_groups": 138
+            }
+          ],
+          "outer_seed": 314229,
+          "test_identity_set_sha256": "63676728f9d0c8792c5671a3005a677d58279e4efd24af95b357315f23f609a2",
+          "test_molecule_fraction": 0.17683881064162754,
+          "test_molecules": 113,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "8dc08a2e5c74a28f7efff5a2dc628a2937b89567fcddd9e2468562c7b1cebc44",
+          "train_identity_set_sha256": "2c3217c1550e43004079f5e1742bed3e45e6a48da677fa98241c1fc24651345b",
+          "train_molecules": 526,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "d119c228c99bca6dfa02ac49db829943ffaf7eaf8416a44a5079436b1401e946"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "7107d29be7a8bf740d0da3cfb9d339122c8e80612aed9f5a369e47839d5fd19e",
+              "fit_molecules": 371,
+              "fit_scaffold_groups": 265,
+              "fold": 0,
+              "validation_identity_set_sha256": "7d9dbf3ac99c5cbbab5deca19bc0e43a3a7f997a1e3ef3fafa2104d0b6dc8721",
+              "validation_molecules": 186,
+              "validation_scaffold_groups": 35
+            },
+            {
+              "fit_identity_set_sha256": "143b223c569126b6c7a80094c6bd555b8edaddcfedb67d71bbf3f5be30cc16d5",
+              "fit_molecules": 371,
+              "fit_scaffold_groups": 168,
+              "fold": 1,
+              "validation_identity_set_sha256": "685a4b928d1a5a03c53741fd0403b002286e67dcb70689b92377d6d8467f653e",
+              "validation_molecules": 186,
+              "validation_scaffold_groups": 132
+            },
+            {
+              "fit_identity_set_sha256": "967ce97d32683a4a8ed3b41adeaa28e0d314ea61f64bd7866df5d0e192715edc",
+              "fit_molecules": 372,
+              "fit_scaffold_groups": 167,
+              "fold": 2,
+              "validation_identity_set_sha256": "a7d0004dfb3581f51b2fc0f0dfead96e56565ba0cef88ba527d043c98471f79b",
+              "validation_molecules": 185,
+              "validation_scaffold_groups": 133
+            }
+          ],
+          "outer_seed": 418958,
+          "test_identity_set_sha256": "c7aac8d3c55bc0efa937b807cf597a9dd238f2a3bb2a10c1738136d8e586f647",
+          "test_molecule_fraction": 0.12832550860719874,
+          "test_molecules": 82,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "09cba61d9b6d4013bd0faa7c350a3e705ee2406a20539cd1ecb24be5dac1a110",
+          "train_identity_set_sha256": "4db6789d931b704fda8801ece131e1f9195686bac964cd0dfb12877f10046e79",
+          "train_molecules": 557,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "bb99007f897f7928465953c47c1d35496f0a917fc5dfe51a16c660a98a384db9"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "aabd6b1c08377f1f115d97c496f0185ee9f8ecefc62ee40678a6ec85b1627b20",
+              "fit_molecules": 357,
+              "fit_scaffold_groups": 272,
+              "fold": 0,
+              "validation_identity_set_sha256": "f5a8f009ca96e3c22267a26f4a3ca1c3cb5f4546956631ff92a4eb62c3260986",
+              "validation_molecules": 179,
+              "validation_scaffold_groups": 28
+            },
+            {
+              "fit_identity_set_sha256": "6e25b6dea379ce0402dd89778301973a06c4b754d43f2906436e18c09fcd38a8",
+              "fit_molecules": 357,
+              "fit_scaffold_groups": 164,
+              "fold": 1,
+              "validation_identity_set_sha256": "8a633d2fa207e8f982a2a919e04857db0957fc2a29cf8cfb4b67b71822226b35",
+              "validation_molecules": 179,
+              "validation_scaffold_groups": 136
+            },
+            {
+              "fit_identity_set_sha256": "521868e2e7266ac26779593f6d75d41d1e5e39eab2ae286ace35e33aa68c84ac",
+              "fit_molecules": 358,
+              "fit_scaffold_groups": 164,
+              "fold": 2,
+              "validation_identity_set_sha256": "657aec12fe42e7214ecf4505c8c013c42de3243a711d06e181a081741afef5a5",
+              "validation_molecules": 178,
+              "validation_scaffold_groups": 136
+            }
+          ],
+          "outer_seed": 523687,
+          "test_identity_set_sha256": "63c954c8ad8569e83059e6fca601e509f43e057bec807dad49bd81506b716d70",
+          "test_molecule_fraction": 0.16118935837245696,
+          "test_molecules": 103,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "d86cec542280a1b6d494e177b6a58fdaa4fa877d14eb104dbb91084db5cb0eb7",
+          "train_identity_set_sha256": "fc4ef910c976e72f5c5133a48de0362255e7bb5c72aad0784c5c7e252d361e9d",
+          "train_molecules": 536,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "c06f9b51ad497cc07f20093e65e5ff8ba64b8f3b41a69bcb54b70a7fd884310b"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "6592e0f78118eb9f54b5c349ee9a2c02c7e83942377ae47108983e341addb0be",
+              "fit_molecules": 351,
+              "fit_scaffold_groups": 275,
+              "fold": 0,
+              "validation_identity_set_sha256": "80c24231fcf1735aa17c1640ae67238d27998eee46425b445d9526f97a651789",
+              "validation_molecules": 176,
+              "validation_scaffold_groups": 25
+            },
+            {
+              "fit_identity_set_sha256": "7b0d9def5f8aaadb72e5115d49faca350aff74b90561834130ef17433bfd49df",
+              "fit_molecules": 351,
+              "fit_scaffold_groups": 162,
+              "fold": 1,
+              "validation_identity_set_sha256": "2695b3a0d356e8d0ed5929018baa99af14bed039746d37fd7ff78c74eee6ab1b",
+              "validation_molecules": 176,
+              "validation_scaffold_groups": 138
+            },
+            {
+              "fit_identity_set_sha256": "79e653a7a108ab57d717e66d6cdcb872a3a663f7b41d5ce7bed6376bea688029",
+              "fit_molecules": 352,
+              "fit_scaffold_groups": 163,
+              "fold": 2,
+              "validation_identity_set_sha256": "207bf9398aeb8b11b7da7116257275e5347c23fffb7c2ebbd3ade5c567ff510a",
+              "validation_molecules": 175,
+              "validation_scaffold_groups": 137
+            }
+          ],
+          "outer_seed": 628416,
+          "test_identity_set_sha256": "c1febb32bcabbb4e9ee70c5942a9323e10a3da6e55140f8021ec1104d810b12e",
+          "test_molecule_fraction": 0.1752738654147105,
+          "test_molecules": 112,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "8273cde58ee02106a808db499f82f85db8ba7be25c64762afa76731d0f086a6b",
+          "train_identity_set_sha256": "9d4862e53f67c37148793731b0da4808f838ec5064637b60cf1eff03d99249ce",
+          "train_molecules": 527,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "271d4e0a62368f19613f6b4141ce7c1cb5e142795c2d36912293c1062cd34d00"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "971cc2a00e94c3239a9e6606f574c6c4b1e47f08a5d15d4c6a6fe580dafd7a62",
+              "fit_molecules": 363,
+              "fit_scaffold_groups": 269,
+              "fold": 0,
+              "validation_identity_set_sha256": "da2ce9c68fa86a330687ff26ed5b143cd6bfcce38d5e82f090409762b3679bfa",
+              "validation_molecules": 182,
+              "validation_scaffold_groups": 31
+            },
+            {
+              "fit_identity_set_sha256": "fd026174d40eeb643f5ebbecc873130b2ad49feb73943442ba02ff283262e273",
+              "fit_molecules": 363,
+              "fit_scaffold_groups": 165,
+              "fold": 1,
+              "validation_identity_set_sha256": "bbe328748caf32c75bdcec9e6ff6d159d398bd446336f35f90509509452d4148",
+              "validation_molecules": 182,
+              "validation_scaffold_groups": 135
+            },
+            {
+              "fit_identity_set_sha256": "82bcfc55806614b15221d68850ac59566a4c5ae863314a6647d7a47eb95d5879",
+              "fit_molecules": 364,
+              "fit_scaffold_groups": 166,
+              "fold": 2,
+              "validation_identity_set_sha256": "6b868b2a761982dfc4276df300854ccd678d1d3c63c57500cd3e85ed1a4f99b9",
+              "validation_molecules": 181,
+              "validation_scaffold_groups": 134
+            }
+          ],
+          "outer_seed": 733145,
+          "test_identity_set_sha256": "0cd3e41409bc1baeaa474929648d0c81182a5f5f6f8e8fb34b0af9d1772f95c5",
+          "test_molecule_fraction": 0.14710485133020346,
+          "test_molecules": 94,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "cd3ba4ba7c095a33835b1046857ccbe218faa7c3c6d4082e9b04178d2489e709",
+          "train_identity_set_sha256": "fa6b23fcd5730a278c66d593c84875f083f135a88eec228cca7a1cebaa862527",
+          "train_molecules": 545,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "8965a7fca3908ffeb4d3abf5640d375f757f97e886b3ffd43f8ae83183125d32"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "5e580ac78f9d1ceccf6086d940b04f76143292dd948380c321ec9a4eeb4afdf6",
+              "fit_molecules": 361,
+              "fit_scaffold_groups": 270,
+              "fold": 0,
+              "validation_identity_set_sha256": "506a501e68d6cb6a835f5f7ef41e02237aab215c824c99a82bac30e5837423be",
+              "validation_molecules": 181,
+              "validation_scaffold_groups": 30
+            },
+            {
+              "fit_identity_set_sha256": "2e14a42639e6d48e7492146bb9986c4e17fbe559495e7120810b9582d0256a91",
+              "fit_molecules": 361,
+              "fit_scaffold_groups": 165,
+              "fold": 1,
+              "validation_identity_set_sha256": "5a5a9dca3498c6a2dfd7ab1db62a45c92cc7c6477340675d6b69969c8d1b6d5c",
+              "validation_molecules": 181,
+              "validation_scaffold_groups": 135
+            },
+            {
+              "fit_identity_set_sha256": "0e050c3b5462fd0e79e4fb868cef7149c3a7d75a233b29e61c6640b45fc68c5b",
+              "fit_molecules": 362,
+              "fit_scaffold_groups": 165,
+              "fold": 2,
+              "validation_identity_set_sha256": "0c5bc7cef4d585c6af4efc04e9d83b70d6c55151b75a34b45e8130e709002536",
+              "validation_molecules": 180,
+              "validation_scaffold_groups": 135
+            }
+          ],
+          "outer_seed": 837874,
+          "test_identity_set_sha256": "5fb863719dbc7524b0a9116a34bee9cf6a256dc2a5fbd643b3e0510b34beb34d",
+          "test_molecule_fraction": 0.15179968701095461,
+          "test_molecules": 97,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "0b36eb908de36db5643c547392a435fc95e7c1526b73c8f3a809ec5ddeb345a5",
+          "train_identity_set_sha256": "a9102df2e930876931474c5699720652d98b8589569a154fff6b91abe4926519",
+          "train_molecules": 542,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "8895f651c4585530df700207af66b6476e3577c4af31c09937b9f1841233c1a1"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "80f9ee0179fed54b628391d07a4d2b8b04ab2a03eaac8438d69acb4254156685",
+              "fit_molecules": 262,
+              "fit_scaffold_groups": 201,
+              "fold": 0,
+              "validation_identity_set_sha256": "bb952ed6222e91f0f700e56917ce4df5038fdd26910e6ee6de2d8746bbfe8165",
+              "validation_molecules": 131,
+              "validation_scaffold_groups": 99
+            },
+            {
+              "fit_identity_set_sha256": "a00811b8f4534c3a27a61ab8f1edb95fb22c16f2cefea8a2627c1f23efbc9355",
+              "fit_molecules": 262,
+              "fit_scaffold_groups": 200,
+              "fold": 1,
+              "validation_identity_set_sha256": "7365d7df9a7b62aac9d8468f449c2b848a41662a9522ff5868ebff1c9e6a6ea3",
+              "validation_molecules": 131,
+              "validation_scaffold_groups": 100
+            },
+            {
+              "fit_identity_set_sha256": "efde62a59de9781eedf78200c246449fe86f63ed2a05340ce30beb5bd930574e",
+              "fit_molecules": 262,
+              "fit_scaffold_groups": 199,
+              "fold": 2,
+              "validation_identity_set_sha256": "af6ae55c8e8cf82b907e305b71f90b9be901657c6683f03ae5178a358cb6b2e7",
+              "validation_molecules": 131,
+              "validation_scaffold_groups": 101
+            }
+          ],
+          "outer_seed": 942603,
+          "test_identity_set_sha256": "ca401e5891715b1559ab5aff6156fc4200671728e5647b5873f408beabbf51c4",
+          "test_molecule_fraction": 0.38497652582159625,
+          "test_molecules": 246,
+          "test_scaffold_group_fraction": 0.20212765957446807,
+          "test_scaffold_groups": 76,
+          "test_scaffold_set_sha256": "6f952c1bcf3d781a64471c1cfd96a0f60c1939ab1bad8eeb0fd015b9a2fbb19a",
+          "train_identity_set_sha256": "55f7fbdbc2317842aacc5deac6bab05cd3e8353afc4fe69ef5c5f87c5c718903",
+          "train_molecules": 393,
+          "train_scaffold_groups": 300,
+          "train_scaffold_set_sha256": "8ec99cdf4fc831abb65f7a9e1720da955810b30bc66a55761a2fcebedb03579c"
+        }
+      ],
+      "task": "regression"
+    },
+    "hiv": {
+      "global_panel_start": 9326,
+      "global_panel_stop": 46551,
+      "identity_set_sha256": "824a1f76864430298fbf7c258e68c3541ac4a293129351fc7520e2ab2e1e71cd",
+      "ordered_identity_sha256": "2aea902e210d0216ae8c8ab8f67b61ba4108c7f0139e1c23919d63c433764a4d",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 37225,
+        "positive_fraction": 0.03092008059100067,
+        "raw_rows": 41127,
+        "rejections": {
+          "disconnected": 3086,
+          "parse_failure": 7,
+          "unsupported_element": 809
+        },
+        "scaffold_groups": 18651,
+        "target_mean": 0.03092008059100067,
+        "target_std": 0.17310121087747102,
+        "valid_rows_before_deduplication": 37225
+      },
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/downstream_benchmarks/moleculenet/HIV.csv",
+        "sha256": "9ffa7fe57dc86c342627ee1d5255e937e2ab812393c73c4d16c697022f6e1d22"
+      },
+      "split_identity_manifest": [
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "be441a1b5976db8b942eba89d0c2718fc4209b7a0d93e1ac5b36dad0c8e258f9",
+              "fit_molecules": 20985,
+              "fit_scaffold_groups": 9972,
+              "fold": 0,
+              "validation_identity_set_sha256": "b7fc0bd9e9e3d1b946d1f6e504b7aa878fe0a202cd39b28d16085267684a13f0",
+              "validation_molecules": 9054,
+              "validation_scaffold_groups": 4948
+            },
+            {
+              "fit_identity_set_sha256": "a0f5983e45a76b16812e59424de090baa715f77f187c4d2f9377c68e9049b547",
+              "fit_molecules": 20286,
+              "fit_scaffold_groups": 9932,
+              "fold": 1,
+              "validation_identity_set_sha256": "198e6392502b8cfef4142b428c3cf813fbdec72fb9a521784799ea210a8ed87c",
+              "validation_molecules": 9753,
+              "validation_scaffold_groups": 4988
+            },
+            {
+              "fit_identity_set_sha256": "f6cf51b9fdf839ae876e8f304591ccad0e71dc964cef72009315739e53b54cf0",
+              "fit_molecules": 18807,
+              "fit_scaffold_groups": 9936,
+              "fold": 2,
+              "validation_identity_set_sha256": "02a7339b446bec257cd90761bb54881390c5e87bf01e388948e7904ab6b925d3",
+              "validation_molecules": 11232,
+              "validation_scaffold_groups": 4984
+            }
+          ],
+          "outer_seed": 42,
+          "test_identity_set_sha256": "e590d02caad61b400e508f561bdd9effe4bdda9ad994da4ea8e66d976275df1c",
+          "test_molecule_fraction": 0.1930423102753526,
+          "test_molecules": 7186,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "445bae030634018cb4b3bdc50d1bd85c78fdb5766b8ca5a276cb95871db47537",
+          "train_identity_set_sha256": "fae842c6f010d9fe6fcc0e2f767ed13043803ee82cb9ec313e50acf8c1d60b9f",
+          "train_molecules": 30039,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "823363f97d8bc68def9d61abe79d7283c0b90546498004a9bfd28331315a17c5"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "735fae2c4c8751dce49f6dc5c6ee1eb3931dfde9704877d247307bfa1f9a1a76",
+              "fit_molecules": 19117,
+              "fit_scaffold_groups": 9980,
+              "fold": 0,
+              "validation_identity_set_sha256": "a626c9174765dd9fdbd5c62842814d9f2fb4e58a35ce01f12e685460e9c29bfa",
+              "validation_molecules": 10895,
+              "validation_scaffold_groups": 4940
+            },
+            {
+              "fit_identity_set_sha256": "1498c66068e69a8884e2bfe7a1360caccd851d405a40a8645ff653f36657aa5f",
+              "fit_molecules": 20374,
+              "fit_scaffold_groups": 9923,
+              "fold": 1,
+              "validation_identity_set_sha256": "2421da5bada9215de053e90ab36023a19b25c5f37c756e106f68f97bf5eb8a89",
+              "validation_molecules": 9638,
+              "validation_scaffold_groups": 4997
+            },
+            {
+              "fit_identity_set_sha256": "890a8d7638da62ad26ded38594e33f9e37983b4928c9b46224606d8541ec7c48",
+              "fit_molecules": 20533,
+              "fit_scaffold_groups": 9937,
+              "fold": 2,
+              "validation_identity_set_sha256": "04a3217f3f3c7ca083cf0e5aea7f6f9326e4eebb1211250c0001248ce67fc2e3",
+              "validation_molecules": 9479,
+              "validation_scaffold_groups": 4983
+            }
+          ],
+          "outer_seed": 104771,
+          "test_identity_set_sha256": "d19d1bfb7203d976cfd2e59fd02fde5b6c0f3373222ddb0310b21448dcc689ed",
+          "test_molecule_fraction": 0.1937676292813969,
+          "test_molecules": 7213,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "9809188f411da1d6ec6e13af80076af356e0b9f10a57c24d3ec4b1f2dbdc646c",
+          "train_identity_set_sha256": "6d1091f38c88b5da7c46da88c28cd8c037b35827caf8f70f587009cc8ea97e42",
+          "train_molecules": 30012,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "30de0b93ddf41ff35e077aaca9615a44bb644c7f44303a915aa167e071019519"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "c0609128ad79191d678e6857cec5fb5c8ae77c198b1ea99cb996f8657f10943a",
+              "fit_molecules": 20455,
+              "fit_scaffold_groups": 9992,
+              "fold": 0,
+              "validation_identity_set_sha256": "5b9419adf6068e2dff5895e37b0adbbfbb18dba7f349849805c1c9d289750dfc",
+              "validation_molecules": 9613,
+              "validation_scaffold_groups": 4928
+            },
+            {
+              "fit_identity_set_sha256": "c67194db4a7208aab90438e35a7779c65990bb4c338d6c5f177bf87567259331",
+              "fit_molecules": 19175,
+              "fit_scaffold_groups": 9931,
+              "fold": 1,
+              "validation_identity_set_sha256": "32d490f1eba162b162c5ce544ff9bea04b605bb4f321ff7975e60021253664c2",
+              "validation_molecules": 10893,
+              "validation_scaffold_groups": 4989
+            },
+            {
+              "fit_identity_set_sha256": "0cebf9083adbb375514de833592ea1ca680837c5707272c439cfa4e841b8a301",
+              "fit_molecules": 20506,
+              "fit_scaffold_groups": 9917,
+              "fold": 2,
+              "validation_identity_set_sha256": "13184c192f2db27092e3860516359d0933d335abece8b9dc6f76f02885f7aea4",
+              "validation_molecules": 9562,
+              "validation_scaffold_groups": 5003
+            }
+          ],
+          "outer_seed": 209500,
+          "test_identity_set_sha256": "ad31e8538c5edfd2fe29d23310d1c4d33533053ffcf69e7cfbd764099d92fec5",
+          "test_molecule_fraction": 0.1922632639355272,
+          "test_molecules": 7157,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "964f5082db510e4e94a3028927c5b6fbb9a9c014b636f5abecf41f674cf8d632",
+          "train_identity_set_sha256": "1e90d02d4ffdbe07c75e93cc862faad77692c27f3728dc90ffb83af267eda910",
+          "train_molecules": 30068,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "6f545938509db0c4a1bce297dba1f90f570a115f9291236493e0b762aa4a057d"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "bc9da8c90c02fb56a292e49810f161b87849df6a74a835628b9c18d42a6f7c94",
+              "fit_molecules": 19129,
+              "fit_scaffold_groups": 9952,
+              "fold": 0,
+              "validation_identity_set_sha256": "fafa863ba56dd24c8f48dae8e174f5a0022aa7264f55f86a0398d1111116084c",
+              "validation_molecules": 9353,
+              "validation_scaffold_groups": 4968
+            },
+            {
+              "fit_identity_set_sha256": "73b0f915bbf3a4760bb1fa04395bc2d67b068c9c70d1f8d9aa7c2bbf92c924c5",
+              "fit_molecules": 19139,
+              "fit_scaffold_groups": 9952,
+              "fold": 1,
+              "validation_identity_set_sha256": "eabd859a3f1bfc55b68995b5c9970c8b7aa3ff6d1b122ffc7d61830904692b91",
+              "validation_molecules": 9343,
+              "validation_scaffold_groups": 4968
+            },
+            {
+              "fit_identity_set_sha256": "3a5533157bc3f55e5b1c38fefe4389fe393b9b13cbfdc1712f08801574188635",
+              "fit_molecules": 18696,
+              "fit_scaffold_groups": 9936,
+              "fold": 2,
+              "validation_identity_set_sha256": "9493b83f803f74ee6ccdb92fe86c1098cfc8e7b0c5df44b7af063c813a77e7d9",
+              "validation_molecules": 9786,
+              "validation_scaffold_groups": 4984
+            }
+          ],
+          "outer_seed": 314229,
+          "test_identity_set_sha256": "3c23fe5404e892a30ac391244dee2f84b0a139c4c4914ed9f411715982fc71a2",
+          "test_molecule_fraction": 0.23486903962390868,
+          "test_molecules": 8743,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "575dfc8b4de3155d0fe610fc78d056335976a583252e29dacab58e17053529b2",
+          "train_identity_set_sha256": "d08ae8d69e5020def9749e8bbb34c132c6f8562cd659a4a7e8077c4278bb1874",
+          "train_molecules": 28482,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "01c778d3ea39736e706e9b7d7aee0eb6511a11fc866024ba463006c9e8051f5a"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "48edf70913f413d4a2c0d1b2f8afcf55792757dc9d7e1035113248b271535e5c",
+              "fit_molecules": 20869,
+              "fit_scaffold_groups": 9974,
+              "fold": 0,
+              "validation_identity_set_sha256": "11b31d94bc2dba729a3819db1d8a843cd95726868322c70435386b81d96877a6",
+              "validation_molecules": 9292,
+              "validation_scaffold_groups": 4946
+            },
+            {
+              "fit_identity_set_sha256": "d1ddd3c7a19ea31ffe252c7f847aabd3ccae0294c651bb4c062c07bb8a65d184",
+              "fit_molecules": 20432,
+              "fit_scaffold_groups": 9920,
+              "fold": 1,
+              "validation_identity_set_sha256": "c00c5ff8911369c3490762884d7354dca8a6b000647fe3cb9cb390a7bc411dda",
+              "validation_molecules": 9729,
+              "validation_scaffold_groups": 5000
+            },
+            {
+              "fit_identity_set_sha256": "857c368aa6550e667f134e015d36d2f159fdd51c0e24a3de513cccc0b5ea8cf1",
+              "fit_molecules": 19021,
+              "fit_scaffold_groups": 9946,
+              "fold": 2,
+              "validation_identity_set_sha256": "1eaa329a54a8b204d1775ad46535ae6b21d1c2670c9182fbccaf610ea6aa7192",
+              "validation_molecules": 11140,
+              "validation_scaffold_groups": 4974
+            }
+          ],
+          "outer_seed": 418958,
+          "test_identity_set_sha256": "062d88d64ada33c60b15ca5161149f32b4ceddd22f2672879756c638b1fb54ee",
+          "test_molecule_fraction": 0.18976494291470786,
+          "test_molecules": 7064,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "91d99f79aae63423f6073d0f3fb5e3ff96a0e1b6ba9aa9a8f35029b1d21708b2",
+          "train_identity_set_sha256": "aaeaac6f37b1a94474f68aa1b3bbbef0d5ce9127794236be4b7082ac386a30e5",
+          "train_molecules": 30161,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "f86799d08963bb485d3da88667d54bc3b36db86f57f74e45f616f9a6ace6b1fc"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "12cebabaf5636322f76ddea51c44fdb9054499d80ee46768d2ae869ea449785e",
+              "fit_molecules": 20332,
+              "fit_scaffold_groups": 9986,
+              "fold": 0,
+              "validation_identity_set_sha256": "ad897ab0474c92acaa6078e39db7d59814a4ac9303162084af9bee9a7247144b",
+              "validation_molecules": 9690,
+              "validation_scaffold_groups": 4934
+            },
+            {
+              "fit_identity_set_sha256": "d8424e2fb22fcf935d70e7bb78cc43c5d216adfa393c32d756a4d7bd00e38d10",
+              "fit_molecules": 20952,
+              "fit_scaffold_groups": 9929,
+              "fold": 1,
+              "validation_identity_set_sha256": "789be54c001a78e63a2ca854ac677ea7a5971cde9f3fe6ff3f247db23e0ba565",
+              "validation_molecules": 9070,
+              "validation_scaffold_groups": 4991
+            },
+            {
+              "fit_identity_set_sha256": "e1b7532c5827a7369cbe3c94a0a0b8f6c4e4a3382c1fb11c2e9e6bee15074d77",
+              "fit_molecules": 18760,
+              "fit_scaffold_groups": 9925,
+              "fold": 2,
+              "validation_identity_set_sha256": "6dbb6b3da125498eee39b2df57c8cd0b2c5eee0eb49fe90b1d53618ba165aaf9",
+              "validation_molecules": 11262,
+              "validation_scaffold_groups": 4995
+            }
+          ],
+          "outer_seed": 523687,
+          "test_identity_set_sha256": "656e1fa01fc0533d2677ffa83cfd7aefdb8e0ab504989777e2343f34db62db8f",
+          "test_molecule_fraction": 0.1934989926124916,
+          "test_molecules": 7203,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "589adf27853213de22146951345f664feb65100856aeabcb2621fc0673279d19",
+          "train_identity_set_sha256": "e8d9588450b83b29a57ace5092d1c746d10753d7b3c7db8c80def956793a9016",
+          "train_molecules": 30022,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "09b63baf7fcdd82d1bdae71b96402212b46bf3d77542a189247177144a3fe22d"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "bb391781aacfa516e0c8c64b678ae62536fd96596dd29afb1dbc94eaa69d7940",
+              "fit_molecules": 20653,
+              "fit_scaffold_groups": 9987,
+              "fold": 0,
+              "validation_identity_set_sha256": "92083e9f470a06e26977742407b923e68081c2d9e9e56b0e49fd69295916b190",
+              "validation_molecules": 9820,
+              "validation_scaffold_groups": 4933
+            },
+            {
+              "fit_identity_set_sha256": "a4e3ca599023de67512e1b4efce515f96c91e6ad0a99136f0ec6ae27cf88b8f6",
+              "fit_molecules": 19243,
+              "fit_scaffold_groups": 9917,
+              "fold": 1,
+              "validation_identity_set_sha256": "66482b633649fe48f17b350d448875c02b515667860a524ef1119c11513f0c2d",
+              "validation_molecules": 11230,
+              "validation_scaffold_groups": 5003
+            },
+            {
+              "fit_identity_set_sha256": "f6739aa65690726cd07cdcb6d61b12d8e1556fd3eec80a8bdaca072ca452715f",
+              "fit_molecules": 21050,
+              "fit_scaffold_groups": 9936,
+              "fold": 2,
+              "validation_identity_set_sha256": "1fedc54db0aa65ce032c3ef2f890fd6f5631d86b6d907a2add7d82e78aaf4768",
+              "validation_molecules": 9423,
+              "validation_scaffold_groups": 4984
+            }
+          ],
+          "outer_seed": 628416,
+          "test_identity_set_sha256": "0cc25b0e7d3ab98be280a6278bec94c67774ca3894561d22fb1906e333ff37a4",
+          "test_molecule_fraction": 0.18138347884486233,
+          "test_molecules": 6752,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "107d8f945e26e554129f1e200e1e9e63810c2fa43dbab646ced06205ed88e021",
+          "train_identity_set_sha256": "c363c472adc382f876dcac068888251dc29d3727dee2ee87d4ed8c4a5e33f393",
+          "train_molecules": 30473,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "85bb61cc76f6b920fec1997d79fa5dee3aaf666e0dba5ddce3f1368bd79f7119"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "10ea70f92026a18bffed8fea2d905b555498d93f6d00682316b2dd2077832cda",
+              "fit_molecules": 20632,
+              "fit_scaffold_groups": 9978,
+              "fold": 0,
+              "validation_identity_set_sha256": "5835f1600fed31c9c884facb77767fe3450e887ccc9b7c74753bece6f562054f",
+              "validation_molecules": 9268,
+              "validation_scaffold_groups": 4942
+            },
+            {
+              "fit_identity_set_sha256": "faa104a7a5841464d18bb4bc21b7ea99702787a48d2c13fb11427d5d47acecd9",
+              "fit_molecules": 18791,
+              "fit_scaffold_groups": 9927,
+              "fold": 1,
+              "validation_identity_set_sha256": "afa6c764759c6ba78517859decaae8088b2c45282b4d6b13fff508a1d37740d2",
+              "validation_molecules": 11109,
+              "validation_scaffold_groups": 4993
+            },
+            {
+              "fit_identity_set_sha256": "39238e5d15101e45f8dd3f3bf07b68f7346c67fdb00ac17c250dd09ede3abebf",
+              "fit_molecules": 20377,
+              "fit_scaffold_groups": 9935,
+              "fold": 2,
+              "validation_identity_set_sha256": "8d700a6679c7360a83318f02c1aeb15eabbebaac549a4771442e8c5774da379b",
+              "validation_molecules": 9523,
+              "validation_scaffold_groups": 4985
+            }
+          ],
+          "outer_seed": 733145,
+          "test_identity_set_sha256": "63f13da48177ebbcde882cad99be09e8259b5e1f4aa4f777130827288e3e54ec",
+          "test_molecule_fraction": 0.19677635997313633,
+          "test_molecules": 7325,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "877b6b6b1817ca2e9387a96b25ec4651c203413dfd53fd938d7d2e76dc62f1d5",
+          "train_identity_set_sha256": "f881157ba4f418f391cf722dbd9074303f930026bbf9075e8051f8d61ec482bc",
+          "train_molecules": 29900,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "74938ae28cb61d70f1a2d84593104885618da0e9782d6a95a216863d5d15f69c"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "d8bb269e173c866afd4d4566ab0b179309590a56567d2013122682f9d3912499",
+              "fit_molecules": 20602,
+              "fit_scaffold_groups": 9991,
+              "fold": 0,
+              "validation_identity_set_sha256": "c2972b0598329ff59aa3283d58717593456dc296a469cd89b9445b1fc763d31c",
+              "validation_molecules": 9539,
+              "validation_scaffold_groups": 4929
+            },
+            {
+              "fit_identity_set_sha256": "dca60d814a3fe975405bc7d73e5ec77c5e2aad002924390c4f06460af7807d7d",
+              "fit_molecules": 20954,
+              "fit_scaffold_groups": 9925,
+              "fold": 1,
+              "validation_identity_set_sha256": "a637b5a7bdfcf2fef3b1c808818b0cf2a923168b5b8ef52561b1dbfac25470cb",
+              "validation_molecules": 9187,
+              "validation_scaffold_groups": 4995
+            },
+            {
+              "fit_identity_set_sha256": "ef950775c5ae1181d418d36b84a837a7f470d1fc7247d10da0964745b59e8470",
+              "fit_molecules": 18726,
+              "fit_scaffold_groups": 9924,
+              "fold": 2,
+              "validation_identity_set_sha256": "5914748c7469eeeeaac68ab97cbf7f365e91cfde65dda79155c868a28abae413",
+              "validation_molecules": 11415,
+              "validation_scaffold_groups": 4996
+            }
+          ],
+          "outer_seed": 837874,
+          "test_identity_set_sha256": "a84ea72ac653e2be0292b351244ce29b5df959d99b9b31877b87c0d46d54253f",
+          "test_molecule_fraction": 0.19030221625251847,
+          "test_molecules": 7084,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "4e1542b0d549be702b87101a0567b86f917c4849e51abd1a974630526c12751a",
+          "train_identity_set_sha256": "73b7525323f013a84bb3843f7df12df3cea958dff417db6c7e58fea919c656f3",
+          "train_molecules": 30141,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "80653f65e11861897b3385e0e659d3535d5ea83f4be498a7ff2542ba61a81f54"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "a7e0a8551e5e5b86a884f4c33720fcf98d670303aff75d647f68049327c368c5",
+              "fit_molecules": 18949,
+              "fit_scaffold_groups": 9929,
+              "fold": 0,
+              "validation_identity_set_sha256": "fc5998018ca1f67163f6dd2ac912f5e652382c2afb9050aafed62366cc7691ce",
+              "validation_molecules": 8981,
+              "validation_scaffold_groups": 4991
+            },
+            {
+              "fit_identity_set_sha256": "7245e5d9398cfb1633b79de2b8508bc6f0e4eda5696c5bf48a9c693a133d8d17",
+              "fit_molecules": 18228,
+              "fit_scaffold_groups": 9966,
+              "fold": 1,
+              "validation_identity_set_sha256": "e18da9ad31e98636aa3a3f310f978f8dc7a873ae4586b63690a8c4063863cf93",
+              "validation_molecules": 9702,
+              "validation_scaffold_groups": 4954
+            },
+            {
+              "fit_identity_set_sha256": "7cab0f15709e4f9b71eedc69286fb9ae755ff2e7e1ca6e66a5f27bea7fdbd207",
+              "fit_molecules": 18683,
+              "fit_scaffold_groups": 9945,
+              "fold": 2,
+              "validation_identity_set_sha256": "f63c6078f8129b5e3dedfe3845d3d0d571eed0c259890358e3255a680a2382db",
+              "validation_molecules": 9247,
+              "validation_scaffold_groups": 4975
+            }
+          ],
+          "outer_seed": 942603,
+          "test_identity_set_sha256": "14af13ee8afdcc15fab5cf0a31247adaf09b19688afa6be93648f5c241233899",
+          "test_molecule_fraction": 0.24969778374748153,
+          "test_molecules": 9295,
+          "test_scaffold_group_fraction": 0.20004289314245885,
+          "test_scaffold_groups": 3731,
+          "test_scaffold_set_sha256": "6786b6c00fc92c4e4dc4262655341fd40e507173530d2fd47b6dc672b8bb1525",
+          "train_identity_set_sha256": "5b6099c07bfa1df7f1b6bd62a328176418ded9bcc4e9a615349e61d0e7bc8343",
+          "train_molecules": 27930,
+          "train_scaffold_groups": 14920,
+          "train_scaffold_set_sha256": "3866f57fd83d6f207983824bbb369bf7faf0cea87ecfc19f2a57756eb4a898a5"
+        }
+      ],
+      "task": "classification"
+    },
+    "lipophilicity": {
+      "global_panel_start": 5128,
+      "global_panel_stop": 9326,
+      "identity_set_sha256": "f06fb3be221673faaf03e151ba6bd6a8d2389b83e20eaef8d547645653aa2b1d",
+      "ordered_identity_sha256": "af49cd11e7d7958c236a2aa8ba495161f5b28c77ff3a65394d14e03a75ca5ef9",
+      "preparation": {
+        "conflicting_duplicate_rows_rejected": 0,
+        "duplicate_rows_collapsed": 0,
+        "molecules": 4198,
+        "positive_fraction": null,
+        "raw_rows": 4200,
+        "rejections": {
+          "disconnected": 1,
+          "unsupported_element": 1
+        },
+        "scaffold_groups": 2410,
+        "target_mean": 2.185778942353502,
+        "target_std": 1.2028760202411162,
+        "valid_rows_before_deduplication": 4198
+      },
+      "source": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/downstream_benchmarks/moleculenet/Lipophilicity.csv",
+        "sha256": "aed41590cb30609d51d8e08ad3ff06495a76e80e211358801f596b10da69bacd"
+      },
+      "split_identity_manifest": [
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "a77d208b1f3e6f986473fc96d72b9a907e21a857306633f276c244f4f98c8076",
+              "fit_molecules": 2263,
+              "fit_scaffold_groups": 1287,
+              "fold": 0,
+              "validation_identity_set_sha256": "40597118a17bb78c4f679f0e15c506ef04a706939316b8bff923f4f69b0d43a6",
+              "validation_molecules": 1132,
+              "validation_scaffold_groups": 641
+            },
+            {
+              "fit_identity_set_sha256": "0540b90b4e3d2ac91c89bc9211e0bc2980bee2faf3c87260a1df344a8e22f778",
+              "fit_molecules": 2263,
+              "fit_scaffold_groups": 1284,
+              "fold": 1,
+              "validation_identity_set_sha256": "99c5ae5beb5b4c538e70cd2f5c9d76d608834b915ae46de1c3eaafcaaee40818",
+              "validation_molecules": 1132,
+              "validation_scaffold_groups": 644
+            },
+            {
+              "fit_identity_set_sha256": "436fc5f75c368d89b4bb4f2e218ceb9d5c8d1c3fc62f8d608e773ea7f3b49a05",
+              "fit_molecules": 2264,
+              "fit_scaffold_groups": 1285,
+              "fold": 2,
+              "validation_identity_set_sha256": "ae4927e34d24b4c5f8fbe5222f6b33520c9098fe6bddd1ac1a65a2bba63ff331",
+              "validation_molecules": 1131,
+              "validation_scaffold_groups": 643
+            }
+          ],
+          "outer_seed": 42,
+          "test_identity_set_sha256": "d3c599445f79f591285527b12098f48144c481e0fd1dd1460281fb2f8ec7f95a",
+          "test_molecule_fraction": 0.1912815626488804,
+          "test_molecules": 803,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "7e6e66857b2011de10a8567caf8c83033042e3aed8c18d739ed0059f3b8724be",
+          "train_identity_set_sha256": "5eb574b91c91f334d6720cc25984b8333621e2909e08efce93755969535ad500",
+          "train_molecules": 3395,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "7e2502f8aaf0bbc9937f7195539c5318de4391940c5d5c9cd3c82ab27aa5eb29"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "709963ab1f642f5642a10cbe0a8a470ef74bd7bc5afd3379a3f9244db5325ab4",
+              "fit_molecules": 2206,
+              "fit_scaffold_groups": 1286,
+              "fold": 0,
+              "validation_identity_set_sha256": "e51169293efff07f776efed785ca2c70ba7159e1a924a2aa7393df7e62a939cb",
+              "validation_molecules": 1103,
+              "validation_scaffold_groups": 642
+            },
+            {
+              "fit_identity_set_sha256": "27d9a6f0097f0fb835abac52991642fcb0d6743244dcbec7bd62a35cab5a0007",
+              "fit_molecules": 2206,
+              "fit_scaffold_groups": 1285,
+              "fold": 1,
+              "validation_identity_set_sha256": "47d41e3e03c76d1621f3f100f951427f1a3102ee7de6c890fbcbf83e96ae477e",
+              "validation_molecules": 1103,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "c7111b16dc97c9017de135d009abd862ac594100cc7ad8216efb46a172547744",
+              "fit_molecules": 2206,
+              "fit_scaffold_groups": 1285,
+              "fold": 2,
+              "validation_identity_set_sha256": "c6c3f6f677800cf88a83b524e27aa4f55506c2c7a98f59c5f9649c9a4e2add0e",
+              "validation_molecules": 1103,
+              "validation_scaffold_groups": 643
+            }
+          ],
+          "outer_seed": 104771,
+          "test_identity_set_sha256": "91d06d6543f410649b3949c8196eb8700e1b57d967a4bc44ebdbf36eece24e4f",
+          "test_molecule_fraction": 0.21176750833730348,
+          "test_molecules": 889,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "0c9060b891be5f791691645bbe22c0b20b2392d41fcb85fe5ae4611e26fae767",
+          "train_identity_set_sha256": "a5ab7326bb90819b5c162d2ce3b0a4df84895a9126b14ee81510c6ffcc468d02",
+          "train_molecules": 3309,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "ffdf2d543e4acf9b6002e36b5575a8918bc1fa5c7129e36201febff5e21d1b58"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "e1defd43a56068b7d8d5795e5da8eb27c58378567abec75638db8ef1a0c08c3c",
+              "fit_molecules": 2235,
+              "fit_scaffold_groups": 1285,
+              "fold": 0,
+              "validation_identity_set_sha256": "9d3ab6709c052fbc0ba0f2e7ec47f9a2bf8fd363fef98b777e05b63090dd0221",
+              "validation_molecules": 1118,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "97f948b14500e9e1a41ff2c46fc75fdb5ed25f35941d5ba7fe9bf017f5ed4169",
+              "fit_molecules": 2235,
+              "fit_scaffold_groups": 1285,
+              "fold": 1,
+              "validation_identity_set_sha256": "9f2647407c138ed1e4dee2d45f6b64d1ef62506382074ae699a2c23be977eae5",
+              "validation_molecules": 1118,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "a740f08f0cbb643da3b92a2986cc628630b2c3e35aa988022d5c718274970ec7",
+              "fit_molecules": 2236,
+              "fit_scaffold_groups": 1286,
+              "fold": 2,
+              "validation_identity_set_sha256": "4ea1639d8fe0ce666d6cf71d31d1961b51ffd7c97beb8cb2199ae155a6c819d8",
+              "validation_molecules": 1117,
+              "validation_scaffold_groups": 642
+            }
+          ],
+          "outer_seed": 209500,
+          "test_identity_set_sha256": "014fedbd4ed9b6ddb301045163527ab262a546ac3013c45b4f22e7a8c1a3b701",
+          "test_molecule_fraction": 0.20128632682229633,
+          "test_molecules": 845,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "b2dbea39365dcfe950c5b369ae2e85ad57438e773f3984eeefdeabfa515681f6",
+          "train_identity_set_sha256": "73551129031c41ee92be54e4549cf657ddbc3fb7f9619596232333832ffceb6a",
+          "train_molecules": 3353,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "206168588b3ef703855fb1dec0e6be30d6ed9641488a282fff9b0efd639922a0"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "c3d1dab7c886e5882805d1046fb07800604f27a3bcdab04061df028fd6dcd0b7",
+              "fit_molecules": 2204,
+              "fit_scaffold_groups": 1286,
+              "fold": 0,
+              "validation_identity_set_sha256": "f6a8fca432231d0d6a2c15cf84671e635c84885f137863b58f2e24f16dd6a3dc",
+              "validation_molecules": 1102,
+              "validation_scaffold_groups": 642
+            },
+            {
+              "fit_identity_set_sha256": "50f1e58937229a9a5164a1b5ddd6669016b81603fe5b4246652b69537cd58a60",
+              "fit_molecules": 2204,
+              "fit_scaffold_groups": 1285,
+              "fold": 1,
+              "validation_identity_set_sha256": "8c0a7e0493d9c29f93602d5d6a066a03f73b047e6d3602761add45b16d26dcdc",
+              "validation_molecules": 1102,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "8aff210a4488937141a1fb87c421241529772ef7aea07dadee857f8009856c09",
+              "fit_molecules": 2204,
+              "fit_scaffold_groups": 1285,
+              "fold": 2,
+              "validation_identity_set_sha256": "47bcfa373be562831036a103d424e1a2c9129bb97bf3bed1200028a0beb0831b",
+              "validation_molecules": 1102,
+              "validation_scaffold_groups": 643
+            }
+          ],
+          "outer_seed": 314229,
+          "test_identity_set_sha256": "f78750f02871608101b63aebd7da2f1d174373bc4a013a5ca9202667991c1bff",
+          "test_molecule_fraction": 0.21248213434969032,
+          "test_molecules": 892,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "69af549027ad6462401939d48cddfdf362d84a7dd3ef12738f6165595327291e",
+          "train_identity_set_sha256": "fec7d53c68c476b135136d29fff03717aacecbcc3b9b43f93475ab8e37504759",
+          "train_molecules": 3306,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "569a77d64eee03cf441961dc80377211f9d82d800a2959b0be8b63e2eb6fc1bc"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "f7c99343f3811e9780455f31db269e4090a53613341c7e89c7f5a0c1bf9bdcfe",
+              "fit_molecules": 2309,
+              "fit_scaffold_groups": 1287,
+              "fold": 0,
+              "validation_identity_set_sha256": "d040b733ffb04df147399ec04b46f540def2f206be24c8d1dcbb1ddf6faa35e7",
+              "validation_molecules": 1155,
+              "validation_scaffold_groups": 641
+            },
+            {
+              "fit_identity_set_sha256": "63bb13264e70dc4f2f4791d31b0cc9400f9ed883d8b12e4554e203a9f7885932",
+              "fit_molecules": 2309,
+              "fit_scaffold_groups": 1284,
+              "fold": 1,
+              "validation_identity_set_sha256": "c90f079a8f61662db7e4b0db25f2bc007f6754549f9db489bdbc8437b2d1673e",
+              "validation_molecules": 1155,
+              "validation_scaffold_groups": 644
+            },
+            {
+              "fit_identity_set_sha256": "03b9a95807378220bd7a27ab1baef8915d7dae37a75456ba7d1e8f7c2135d7df",
+              "fit_molecules": 2310,
+              "fit_scaffold_groups": 1285,
+              "fold": 2,
+              "validation_identity_set_sha256": "219829a207149c387acb7f9db97d0a104be709a832cd6c944d8de4153ed8dc51",
+              "validation_molecules": 1154,
+              "validation_scaffold_groups": 643
+            }
+          ],
+          "outer_seed": 418958,
+          "test_identity_set_sha256": "ee85c8d1762d8aee2b1ad64e3375f35587792a1233bc7c02f58046a7088b2924",
+          "test_molecule_fraction": 0.17484516436398284,
+          "test_molecules": 734,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "b12484b9eac0b68615d2596c254be2392a6795c529d05325e08688b2e491d78c",
+          "train_identity_set_sha256": "9a133c01a7bd72c3397b8239a44d49553a5293a92dec4aacaea2880ce6e15e84",
+          "train_molecules": 3464,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "5a2d09435d24615e53d46ede5a6f9b39d03dba7f0d6228f4f9c8bd45c54a0c28"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "2a9f496d4340a8053bfa41e0364fc9ea2347baeb181111cac71abe32b35e0eb9",
+              "fit_molecules": 2268,
+              "fit_scaffold_groups": 1286,
+              "fold": 0,
+              "validation_identity_set_sha256": "7c22d37b5b7bb59e781a895668eb8f7c4c15d0ea73b8be3a9728f6e817a2e831",
+              "validation_molecules": 1135,
+              "validation_scaffold_groups": 642
+            },
+            {
+              "fit_identity_set_sha256": "738e3a2f7c21877399baf0877713438c35712c10c68fff8bed5a8ade55e995d1",
+              "fit_molecules": 2269,
+              "fit_scaffold_groups": 1285,
+              "fold": 1,
+              "validation_identity_set_sha256": "2199764eeadc846f4c7801d939ec52838d0ef480cca9968043b041632955df08",
+              "validation_molecules": 1134,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "bf39432175bea2729fbedc63a8c53cb64250a13a48b547dc688d0d857f487484",
+              "fit_molecules": 2269,
+              "fit_scaffold_groups": 1285,
+              "fold": 2,
+              "validation_identity_set_sha256": "8e9357878523b7be283a0539a38294504f183d093bcc8c5d0b5e365c50c5d2b7",
+              "validation_molecules": 1134,
+              "validation_scaffold_groups": 643
+            }
+          ],
+          "outer_seed": 523687,
+          "test_identity_set_sha256": "550a129fbcca1fc2b590758d7cd25cbfe0f50ea40b0bfbc464d2efb1ae27448e",
+          "test_molecule_fraction": 0.18937589328251547,
+          "test_molecules": 795,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "eacf3daf6764bfa56b49a3e515d4f33546794b71eb2ecbdc6436f9949697dfe9",
+          "train_identity_set_sha256": "d1f9236c090eb3f86a396e9b835fdfad61a2bafe99b3ec868965dad2ec2b4cd2",
+          "train_molecules": 3403,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "352cd2373f69ca0c09c44d3e693f4221037240efa7bd90835c16162fdedd4295"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "04d0d4e94b3218d136d36941d80495b7ae1062abc8b1db7a7b4c670dc40f5a49",
+              "fit_molecules": 2314,
+              "fit_scaffold_groups": 1286,
+              "fold": 0,
+              "validation_identity_set_sha256": "dce4d144bb7806a702000edd3244229c6afa55d930b7413e692c41fa7d4067c1",
+              "validation_molecules": 1158,
+              "validation_scaffold_groups": 642
+            },
+            {
+              "fit_identity_set_sha256": "58e9fd118b8d5903c2ededb601cfbd8947f69a0a1c3d3fe540dc90da4000a1c9",
+              "fit_molecules": 2315,
+              "fit_scaffold_groups": 1285,
+              "fold": 1,
+              "validation_identity_set_sha256": "3b7fdffbb33acbb48eb0bed2851d60edad2b0b7964f56bdc95e5a05bd296d393",
+              "validation_molecules": 1157,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "d852cb4bc5ea8469009167e70bc031717c9e338c1e0c71ad904a87799aac9b41",
+              "fit_molecules": 2315,
+              "fit_scaffold_groups": 1285,
+              "fold": 2,
+              "validation_identity_set_sha256": "f2cf2075405ad92e0051f97ac5c1a846c6833b8ec99f256378b79df60042496b",
+              "validation_molecules": 1157,
+              "validation_scaffold_groups": 643
+            }
+          ],
+          "outer_seed": 628416,
+          "test_identity_set_sha256": "df1c1105a39ba495fb7ff368db06b7f50f89033e75dae91c370767819877c5c4",
+          "test_molecule_fraction": 0.1729394949976179,
+          "test_molecules": 726,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "a4a2aea22151d5cce308b1d7d7cfc85c1fbb1a20e29e511497734302cdfdf033",
+          "train_identity_set_sha256": "549ee4b73e0acdd9214d8dcb46676db0a300fc76a00475991eecbd6d85e96914",
+          "train_molecules": 3472,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "061a382cd820f8817e77af85fe6cd514e6b0dd63f2fea7be531feae91e2a2326"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "3ef7ede274012675b3edc8d7771a23dbce0856330c3c3a4bca1e36a73fc76377",
+              "fit_molecules": 2259,
+              "fit_scaffold_groups": 1287,
+              "fold": 0,
+              "validation_identity_set_sha256": "55997b42aec5664f1c8c587ed0c3cea2d19d9f704d9bbc59170267260ba0bc1a",
+              "validation_molecules": 1130,
+              "validation_scaffold_groups": 641
+            },
+            {
+              "fit_identity_set_sha256": "722e1716107fa037c99925369014f25c9851ae3db58232c9420a6eb8b9f3095a",
+              "fit_molecules": 2259,
+              "fit_scaffold_groups": 1284,
+              "fold": 1,
+              "validation_identity_set_sha256": "046a54a33184576fac914cd4b5d9a3de3e9c06684c43f405cef177c5c57c4f71",
+              "validation_molecules": 1130,
+              "validation_scaffold_groups": 644
+            },
+            {
+              "fit_identity_set_sha256": "c604eb63dcbd048ca5de0ba399f0bfd4e2359fab45759a3eaddaf0181d0bd7f3",
+              "fit_molecules": 2260,
+              "fit_scaffold_groups": 1285,
+              "fold": 2,
+              "validation_identity_set_sha256": "bc2c3ebbdc95f7701b17ec9225899b99803a2b99a066aca6b338ab53f3e00d74",
+              "validation_molecules": 1129,
+              "validation_scaffold_groups": 643
+            }
+          ],
+          "outer_seed": 733145,
+          "test_identity_set_sha256": "39bebec074bbf369404af2978e37ce8599e662f1e69601309f0e7e443e2fdade",
+          "test_molecule_fraction": 0.1927108146736541,
+          "test_molecules": 809,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "bc3ad75982f561fe81acad9a813abda0b9645130108da80d38e69ca07288463c",
+          "train_identity_set_sha256": "ec5501e10ebde0a8f2fd1469a922638af35c9eb716713b40ea27886fe1c1dc50",
+          "train_molecules": 3389,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "2b86e8704538d91651bec6cbd1b74bf39c051d34c9aaebcf8b2fa10dc6cbbc5f"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "09265d11fab81c99a8d665a069ea0cd1056e2f5132315bf0732a78c9814b37b5",
+              "fit_molecules": 2190,
+              "fit_scaffold_groups": 1287,
+              "fold": 0,
+              "validation_identity_set_sha256": "8315feda4a9b7438cc21e97d2573b1374cbdf17e3075f339b1fee254a481ee74",
+              "validation_molecules": 1095,
+              "validation_scaffold_groups": 641
+            },
+            {
+              "fit_identity_set_sha256": "5556d7e2b06cf2e0d7a92a2c2f137e91910bd150cf5eaa0732867607c657bf7d",
+              "fit_molecules": 2190,
+              "fit_scaffold_groups": 1285,
+              "fold": 1,
+              "validation_identity_set_sha256": "94b7ea42acc2c3caaee29c5c30032a4448ffad238d0c5e873544fd2a6e0a1e76",
+              "validation_molecules": 1095,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "60ec180c0f34091868deaa69452ed5e59604c8a925649dc66455a497d7af4b6e",
+              "fit_molecules": 2190,
+              "fit_scaffold_groups": 1284,
+              "fold": 2,
+              "validation_identity_set_sha256": "15ee8e8be5654010e0d408a3112f891f6df44671f29390b42491a15f381e6e77",
+              "validation_molecules": 1095,
+              "validation_scaffold_groups": 644
+            }
+          ],
+          "outer_seed": 837874,
+          "test_identity_set_sha256": "49328272f4528121caa395d035ad21488ccf9c85c8bd638d2fbb95d2f15facaa",
+          "test_molecule_fraction": 0.2174845164363983,
+          "test_molecules": 913,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "9bef35c7cf09491c7dbb5961e31347c74a1bccbf92ae1cb5fc14d4eddd232353",
+          "train_identity_set_sha256": "7c8f6b5702d6a7db7b8646d8861c39249586f90c2383bee916fb1d00f4fefb61",
+          "train_molecules": 3285,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "135db5feae72bc9aff044f9b7fb3c7f8ccad16033b7ce919300612bbb7296dd5"
+        },
+        {
+          "inner_folds": [
+            {
+              "fit_identity_set_sha256": "9645d35945c9edf970633cb0c1e4e76a36b512f96c354b085aef8b15b0010fda",
+              "fit_molecules": 2292,
+              "fit_scaffold_groups": 1287,
+              "fold": 0,
+              "validation_identity_set_sha256": "48f9b39945da1dbf5ba0c9bfb5be9af32199b6b86c574815e19c0257cc37b298",
+              "validation_molecules": 1146,
+              "validation_scaffold_groups": 641
+            },
+            {
+              "fit_identity_set_sha256": "49bbbe4e5b7dc15d591daab7525ff4076844d38f7bd1724cea9feff9d476b1f3",
+              "fit_molecules": 2292,
+              "fit_scaffold_groups": 1285,
+              "fold": 1,
+              "validation_identity_set_sha256": "8317f21e5614f0da6073fed4e05e7841dc6aaca59006ae7b6fac5d5107549b7a",
+              "validation_molecules": 1146,
+              "validation_scaffold_groups": 643
+            },
+            {
+              "fit_identity_set_sha256": "301a70637bb7d24b877c62d3b0e31ac091a95c7a39840f82703e72eb0ecdc9e2",
+              "fit_molecules": 2292,
+              "fit_scaffold_groups": 1284,
+              "fold": 2,
+              "validation_identity_set_sha256": "452d3ecbf0720d12dbb750008ec0984d9cf04a2b8234bd4ba281f5a4ceae8c61",
+              "validation_molecules": 1146,
+              "validation_scaffold_groups": 644
+            }
+          ],
+          "outer_seed": 942603,
+          "test_identity_set_sha256": "eae171e214e9aa5592d3602da074e5048a30b5e08b2de94e539961000450134c",
+          "test_molecule_fraction": 0.1810385898046689,
+          "test_molecules": 760,
+          "test_scaffold_group_fraction": 0.2,
+          "test_scaffold_groups": 482,
+          "test_scaffold_set_sha256": "7904868175b7d9bfcc58eecda00026b757dcd049e298772b0409add89a355950",
+          "train_identity_set_sha256": "0a2a3bdd938aeb9e72bcb4f604c5aa62d0afb00bf2f865e9ac5a4d54991638cf",
+          "train_molecules": 3438,
+          "train_scaffold_groups": 1928,
+          "train_scaffold_set_sha256": "bd76882c29cc31a5dc47b9610f8d119ae27dc2b8246c7be1e4825aff5ec353a9"
+        }
+      ],
+      "task": "regression"
+    }
+  },
+  "full_labels": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/moleculenet/inputs/full_labels.tsv",
+    "sha256": "dff7d9597af94e27e2ed6afb8151b3f7fc8b5e8092841d003ade47284f2abb08"
+  },
+  "full_panel": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/moleculenet/inputs/full_panel.tsv",
+    "sha256": "033639f1e46eac23020a181ec31ed672fa7610bad38cf2efd189b8265deceaa0"
+  },
+  "ordered_identity_sha256": "80e730ab725239468a19500c77f2b68aad2960ce021ea8610dae4bdafffbc879",
+  "reference_validation": "Five development datasets match the rev4 identity audit exactly; HIV matches the authoritative accepted outer seeds and molecule counts.",
+  "rows": 46551,
+  "schema_version": 1,
+  "split_indices": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/moleculenet/inputs/full_split_indices.npz",
+    "sha256": "ea3c9fd9bc59adc144ada864ed6e59313091ec13ac3d45225f7568700290af50"
+  },
+  "status": "frozen_source_splits_reconstructed"
+}

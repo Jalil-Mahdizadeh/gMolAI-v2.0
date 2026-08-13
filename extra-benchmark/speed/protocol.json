@@ -1,0 +1,198 @@
+{
+  "schema_version": 2,
+  "protocol_status": "frozen_before_optimized_speed_rerun",
+  "frozen_date": "2026-08-13",
+  "supersedes": {
+    "slurm_job_id": "1226415",
+    "batch_sizes": [8, 32, 64],
+    "reason": "The earlier comparison used the pre-optimization gMolAI inference path. This replacement reruns every encoder with the repository-canonical optimized gMolAI backend."
+  },
+  "superseded_protocol_amendments": [
+    {
+      "id": "2026-08-12-scale-aware-cross-batch-integrity",
+      "trigger_job_id": "1224521",
+      "failure_stage": "gmolai_after_batch8_timing_before_any_raw_or_final_result_was_written",
+      "change": "Replace an invalid near-elementwise equality gate with cosine and relative-L2 batch-stability gates while retaining exact, absolute, RMS, relative-L2, and cosine diagnostics.",
+      "diagnostic_basis": "On an inference-only 1,024-molecule subset, batch-32 versus batch-8 gMolAI vectors had maximum absolute delta 0.01910 on values with maximum absolute magnitude 22.70, maximum per-row relative L2 delta 0.001196, and minimum cosine similarity 0.9999993.",
+      "scientific_impact": "None: the model, checkpoint, calibrator, panel, timing boundary, batch sizes, condition order, measured-pass count, and representations are unchanged. The failed job produced no raw result record or final summary."
+    },
+    {
+      "id": "2026-08-12-scale-aware-fixed-batch-repeatability",
+      "trigger_job_id": "1224835",
+      "failure_stage": "smi_ted_fixed_batch_qualification_after_four_partial_raw_timing_records_and_before_smi_ted_panel_timing_or_any_final_summary",
+      "change": "Replace bitwise equality for the repeated eight-molecule qualification fixture with frozen scale-aware repeatability gates while recording exact equality, absolute/RMS drift, relative-L2 drift, and cosine similarity.",
+      "diagnostic_basis": "Two frozen SMI-TED-Light inference calls on the identical ordered eight-molecule fixture had maximum absolute delta 0.00020105 on values with maximum absolute magnitude 3.47425, RMS delta 0.00004075, maximum per-row relative-L2 delta 0.00008843, and minimum cosine similarity 0.9999999961.",
+      "scientific_impact": "None: the model, checkpoint, panel, timing boundary, batch sizes, condition order, measured-pass count, and representations are unchanged. Partial job-1224835 outputs are archived and excluded; all seven encoders are rerun in one complete host/job execution."
+    },
+    {
+      "id": "2026-08-12-kermt-native-cross-batch-nonconformance",
+      "trigger_job_id": "1225272",
+      "failure_stage": "kermt_v2_after_batch8_and_batch32_panel_timing_before_batch64_or_any_final_summary",
+      "change": "Keep the frozen cross-batch integrity gates unchanged, but record rather than abort on KERMT v2's known native-path nonconformance so all three computational throughput points can be reported with an explicit output-nonequivalence warning.",
+      "diagnostic_basis": "On the full common panel, native KERMT v2 batch-32 versus batch-8 output had minimum per-row cosine similarity 0.98383964 and maximum relative-L2 delta 0.18010095. A controlled affected group changed from adjacency width 3 to 4 and showed maximum relative-L2 delta 0.14886983; forcing identical width 4 reduced this to 0.00018176 with minimum cosine 0.99999998. The frozen encoder's nominal padding row had norms 16.60-23.09 rather than zero.",
+      "scientific_impact": "No KERMT code, checkpoint, representation, panel, timing condition, or integrity threshold is changed. KERMT v2 timings remain native-path compute-throughput measurements but are not representation-equivalent across batch sizes. Partial job-1225272 outputs are archived and excluded; all encoders are rerun in one complete host/job execution."
+    }
+  ],
+  "scope": {
+    "execution": "inference_only",
+    "training_permitted": false,
+    "embedding_artifacts_persisted": false,
+    "uses_3d": false
+  },
+  "repository": {
+    "root": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain",
+    "expected_head": "333abda947ac1283aafca9619f2149d6eec99d7a"
+  },
+  "panel": {
+    "role": "all_model_common_locked_internal_test_panel",
+    "source_path": "extra-benchmark/test-partition/inputs/common_test.tsv",
+    "local_path": "extra-benchmark/speed/inputs/common_test.tsv",
+    "rows": 49844,
+    "unique_identities": 49844,
+    "tsv_sha256": "fac4a8abffd0431b36245c6b6eaa447ce1f1628373cad590e59e7a7e2a0fc18e",
+    "ordered_identity_sha256": "a9e3e63eade2c542fef670184ed1a34e054167d085ad299ee080217d7301e237",
+    "identity_rule": "SHA-256 of canonical isomeric SMILES"
+  },
+  "execution": {
+    "gpus": 1,
+    "gpu_class": "NVIDIA GH200 120GB",
+    "cpus_per_task": 48,
+    "cpu_workers": 48,
+    "blas_openmp_threads_per_process": 1,
+    "precision": "float32 host representations",
+    "batch_sizes": [64, 128, 256, 512],
+    "reference_batch_size": 64,
+    "measured_passes_per_condition": 1,
+    "warmup_batches_per_condition": 1,
+    "condition_order": "ascending_batch_size",
+    "fixed_batch_minimum_cosine_similarity": 0.999999,
+    "fixed_batch_maximum_relative_l2_delta": 0.001,
+    "cross_batch_minimum_cosine_similarity": 0.9999,
+    "cross_batch_maximum_relative_l2_delta": 0.005,
+    "record_only_cross_batch_nonconformance_models": ["kermt_v2"]
+  },
+  "timing": {
+    "primary": "steady_state_smiles_in_ram_to_ordered_fp32_vectors_in_host_ram",
+    "includes": [
+      "model_specific_smiles_parsing_or_normalization",
+      "tokenization_or_2d_graph_construction",
+      "host_to_device_transfer",
+      "frozen_forward_inference",
+      "device_to_host_transfer",
+      "host_matrix_assignment"
+    ],
+    "excludes": [
+      "container_startup",
+      "model_checkpoint_and_calibrator_loading",
+      "input_file_read",
+      "worker_process_startup",
+      "warmup",
+      "output_validation_and_hashing",
+      "disk_serialization"
+    ],
+    "cuda_synchronization": "immediately_before_and_after_each_complete_panel_pass"
+  },
+  "gmolai_sources": {
+    "config": {
+      "path": "configs/retrain.yaml",
+      "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011"
+    },
+    "training_plan": {
+      "path": "configs/representation-pilot-mean-node-contrastive-001-desc050.yaml",
+      "sha256": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61"
+    },
+    "checkpoint": {
+      "run_dir": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050",
+      "name": "checkpoints/step-000010000.pt",
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "calibrator": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "fast_graph": {
+      "path": "src/gmolai_retrain/fast_graph.py",
+      "sha256": "4a1878ffd1cb36454cdaaa324234e03013f0df77e5c1ca625f6cf08d743e399e"
+    },
+    "fast_inference": {
+      "path": "src/gmolai_retrain/fast_inference.py",
+      "sha256": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba"
+    }
+  },
+  "model_order": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "models": {
+    "gmolai": {
+      "display_name": "gMolAI optimized",
+      "dimension": 384,
+      "device": "gpu",
+      "representation": "standardized graph_z plus 3x standardized mean_node_z",
+      "inference_path": "repository-canonical optimized_gine_v1 with 48 allocation-bounded RDKit workers",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    },
+    "morgan": {
+      "display_name": "Morgan radius-2",
+      "dimension": 2048,
+      "device": "cpu",
+      "representation": "RDKit Morgan radius 2, 2048 bits, float32",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    },
+    "molai": {
+      "display_name": "MolAI epoch 6",
+      "dimension": 512,
+      "device": "gpu",
+      "representation": "epoch-6 512-D tanh latent",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif",
+      "container_sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e"
+    },
+    "molformer": {
+      "display_name": "MoLFormer",
+      "dimension": 768,
+      "device": "gpu",
+      "representation": "official pooler output",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif",
+      "container_sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431"
+    },
+    "smi_ted": {
+      "display_name": "SMI-TED-Light",
+      "dimension": 768,
+      "device": "gpu",
+      "representation": "official model.encode output",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif",
+      "container_sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a"
+    },
+    "molclr_gin": {
+      "display_name": "MolCLR-GIN",
+      "dimension": 512,
+      "device": "gpu",
+      "representation": "official downstream preprojection graph vector",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif",
+      "container_sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272"
+    },
+    "kermt_v2": {
+      "display_name": "KERMT v2",
+      "dimension": 512,
+      "device": "gpu",
+      "representation": "cMIM projected mean latent",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif",
+      "container_sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117"
+    }
+  },
+  "interpretation": {
+    "replication_uncertainty_available": false,
+    "confidence_intervals_available": false,
+    "allowed_claim": "descriptive single-pass end-to-end throughput on one fixed common panel, host, GPU and resource envelope",
+    "forbidden_claim": "hardware-independent speed superiority, GPU throughput for the CPU-only Morgan baseline, or representation-equivalent KERMT scaling when its cross-batch gate fails"
+  }
+}
+

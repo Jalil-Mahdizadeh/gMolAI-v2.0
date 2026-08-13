@@ -44,6 +44,8 @@ graphify-out/.graphify_extract.json
 graphify-out/.graphify_analysis.json
 graphify-out/.graphify_old.json
 graphify-out/.graphify_chunk_*.json
+# Dated snapshots are local rollback copies created by incremental refreshes.
+graphify-out/20??-??-??/
 
 # Inference outputs are local products. The exact packaged model pair is an
 # intentional exception to the general checkpoint rule above.
