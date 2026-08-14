@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "study_id": "gmolai-step2d-post-completion-sa-extension-v1",
+  "status": "post_completion_descriptive_amendment_requested_after_step2d_results",
+  "score": {
+    "name": "RDKit_Contrib_SA_Score",
+    "implementation": "rdkit.Contrib.SA_Score.sascorer.calculateScore",
+    "interpretation": "1 is heuristically easier and 10 is heuristically harder",
+    "unit_of_computation": "one score per globally unique policy-accepted canonical molecular identity",
+    "candidate_seed_delta": "candidate_sa_score_minus_seed_sa_score",
+    "lower_delta_is_easier_relative_to_seed": true
+  },
+  "population": {
+    "identity_source": "intermediate/final_unique_molecules.parquet",
+    "pair_source": "outputs/tables/final_candidate_characterization.parquet",
+    "include_only_policy_accepted_identities": true,
+    "retain_seed_identity_rows_for_integrity": true,
+    "exclude_seed_identity_rows_from_analogue_summaries": true,
+    "budgets": [50, 100, 250, 500, 1000]
+  },
+  "comparisons": {
+    "no_harder_delta_max": 0.0,
+    "not_more_than_half_point_harder_delta_max": 0.5,
+    "absolute_within_half_point_delta_max": 0.5,
+    "substantially_easier_delta_max": -1.0,
+    "substantially_harder_delta_min": 1.0,
+    "categories": [
+      "one_cut_mmp_derivative",
+      "scaffold_preserving_non_mmp_analogue",
+      "scaffold_changing_analogue",
+      "acyclic_non_mmp_analogue"
+    ],
+    "report_pair_weighted_and_seed_macro_statistics": true,
+    "bootstrap_unit": "seed",
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 20260818
+  },
+  "plots": {
+    "sa_histogram_bins": 90,
+    "joint_sa_histogram_bins": 90,
+    "joint_sa_range": [1.0, 10.0],
+    "quality_plot_show_validity_policy_gap_basis_points": true
+  },
+  "execution": {
+    "workers": 64,
+    "chunksize": 256,
+    "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif"
+  },
+  "scientific_boundary": {
+    "candidate_generation_changed": false,
+    "encoder_training": false,
+    "decoder_training": false,
+    "latent_perturbation": false,
+    "mmp_direction_editing": false,
+    "property_optimization": false,
+    "endpoint_labels_used": false,
+    "locked_test_rows": 0,
+    "sa_score_is_not_a_retrosynthesis_or_experimental_feasibility_claim": true
+  }
+}

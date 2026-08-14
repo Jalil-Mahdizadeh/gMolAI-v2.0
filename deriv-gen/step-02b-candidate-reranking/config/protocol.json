@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "study_id": "gmolai-decoder-candidate-reranking-step2b-v1",
+  "seed": 20260815,
+  "scientific_boundary": {
+    "frozen_gmolai": true,
+    "frozen_calibrator": true,
+    "embedding_space": "released_hybrid_w3",
+    "frozen_decoder": true,
+    "encoder_training": false,
+    "decoder_training": false,
+    "endpoint_labels_used": false,
+    "locked_test_rows": 0,
+    "latent_perturbation": false,
+    "derivative_generation": false
+  },
+  "panels": {
+    "development_partition": "pretraining_train_scaffold_disjoint_decoder_dev",
+    "development_rows": 2048,
+    "development_identity": "same deterministic train-partition development panel used for Step-2 decode selection",
+    "final_partition": "validation",
+    "final_rows": 10000,
+    "final_identity": "deterministic hash-ranked validation panel after excluding every molecule in the original Step-2 10k generation panel",
+    "final_post_hoc": false,
+    "candidate_set_sizes": [1, 5, 10, 20, 50],
+    "controls": [
+      "correct_embedding",
+      "shuffled_embedding",
+      "nearest_wrong_embedding"
+    ],
+    "shuffled_control": "deterministic derangement within the phase panel",
+    "nearest_wrong_development": "nearest non-self released-hybrid-w3 condition in the 20k train-partition decoder-development bank",
+    "nearest_wrong_final": "nearest non-self released-hybrid-w3 condition in the complete 50k validation bank"
+  },
+  "generation": {
+    "maximum_smiles_bytes": 128,
+    "maximum_unique_candidates": 50,
+    "always_reserve_slot_1_for_original_greedy": true,
+    "candidate_definition": "unique unchanged-policy-accepted molecular identities after canonicalization",
+    "beam_width": 64,
+    "beam_query_batch_size": 16,
+    "sample_draws": 128,
+    "sample_query_batch_size": 8,
+    "greedy_query_batch_size": 512,
+    "policies": [
+      {
+        "name": "beam64_lp00",
+        "kind": "beam",
+        "length_penalty": 0.0,
+        "registered_order": 1
+      },
+      {
+        "name": "beam64_lp06",
+        "kind": "beam",
+        "length_penalty": 0.6,
+        "registered_order": 2
+      },
+      {
+        "name": "sample128_t085_p095",
+        "kind": "sample",
+        "temperature": 0.85,
+        "top_p": 0.95,
+        "registered_order": 3
+      },
+      {
+        "name": "sample128_t100_p098",
+        "kind": "sample",
+        "temperature": 1.0,
+        "top_p": 0.98,
+        "registered_order": 4
+      }
+    ],
+    "candidate_order": {
+      "beam": "greedy first, then final beam hypotheses by registered length-normalized decoder log probability",
+      "sample": "greedy first, then unique samples by mean untempered decoder log probability",
+      "ties": "canonical SMILES lexical order",
+      "target_information_used": false
+    }
+  },
+  "reranking": {
+    "reencoder": "frozen released optimized_gine_v1",
+    "primary_metric": "relative_l2_to_supplied_condition",
+    "equivalent_primary_metric_note": "the condition norm is constant within each query, so relative-L2 and L2 induce the same within-query ordering",
+    "tie_breakers": [
+      "higher_cosine_to_supplied_condition",
+      "lower_candidate_proposal_rank",
+      "canonical_smiles_lexical_order"
+    ],
+    "target_identity_used": false,
+    "target_smiles_equality_used": false,
+    "target_morgan_used": false,
+    "target_scaffold_used": false,
+    "reencode_batch_size": 512,
+    "reencode_node_budget": 65536,
+    "reencode_workers": "auto"
+  },
+  "development_selection": {
+    "information_boundary": "development metrics from train-partition molecules only; no final validation generation may exist when the policy is frozen",
+    "eligible_if": "correct-condition k=50 latent-reranked exact identity is not below the same-panel greedy value",
+    "selection_order": [
+      "highest correct-condition k=50 latent-reranked exact identity",
+      "highest correct-condition oracle Recall@50",
+      "highest correct-condition candidate-set-full rate",
+      "lower registered order"
+    ],
+    "control_metrics": "shuffled and nearest-wrong source-following are audited but do not use original-target information for ranking"
+  },
+  "evaluation": {
+    "morgan_radius": 2,
+    "morgan_bits": 2048,
+    "bootstrap_resamples": 2000,
+    "historical_step2_exact_identity": 0.639,
+    "report_oracle_and_deployable_separately": true
+  },
+  "go_no_go": {
+    "rule": "GO only if every frozen final-validation gate passes; otherwise NO-GO",
+    "correct_k50_reranked_exact_identity_minimum": 0.8,
+    "correct_k50_oracle_recall_minimum": 0.85,
+    "correct_k50_rerank_selection_efficiency_minimum": 0.9,
+    "correct_k50_valid_top1_minimum": 0.95,
+    "correct_k50_scaffold_recovery_minimum": 0.9,
+    "correct_k50_mean_morgan_minimum": 0.9,
+    "correct_k50_candidate_set_nonempty_minimum": 0.99,
+    "correct_exact_identity_gain_over_same_panel_greedy_minimum": 0.1,
+    "correct_exact_identity_gain_over_historical_0_639_minimum": 0.1,
+    "shuffled_k50_condition_source_identity_minimum": 0.7,
+    "nearest_wrong_k50_condition_source_identity_minimum": 0.7,
+    "shuffled_k50_source_minus_original_target_identity_minimum": 0.5,
+    "nearest_wrong_k50_source_minus_original_target_identity_minimum": 0.5,
+    "search_related_definition": "oracle Recall@50 >= 0.85 and deployable exact-identity gain over same-panel greedy >= 0.10",
+    "compression_related_definition": "oracle Recall@50 < 0.80 despite candidate-set-nonempty rate >= 0.99"
+  }
+}

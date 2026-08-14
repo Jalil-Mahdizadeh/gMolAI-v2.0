@@ -1,0 +1,11 @@
+# Reproducible bulk artifacts retained locally but not versioned.
+prepared/tokens.npy
+prepared/split_indices.npz
+outputs/raw/reencoded_unique_molecules.npz
+state/cache/
+state/home/
+state/matplotlib/
+state/pycache/
+state/tmp/
+state/apptainer-cache/
+state/apptainer-tmp/

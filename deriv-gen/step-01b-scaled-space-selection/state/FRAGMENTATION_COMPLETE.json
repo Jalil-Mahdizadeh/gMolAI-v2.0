@@ -1,0 +1,41 @@
+{
+  "identity_overlap": 0,
+  "outputs": {
+    "train_fragments": {
+      "path": "intermediate/train_fragments.parquet",
+      "sha256": "fdb854173f42b9d56a61c2bb9dab6c323f2d6d24dfea7337363b9951c2f767c8",
+      "size_bytes": 78595315
+    },
+    "train_molecules": {
+      "path": "intermediate/train_molecules.parquet",
+      "sha256": "ace44c7283c0260540e78c1de825d13b5a4a1c0b61ed9ec83b5e1ac9438bd7d7",
+      "size_bytes": 56672797
+    },
+    "validation_fragments": {
+      "path": "intermediate/validation_fragments.parquet",
+      "sha256": "31933e897252f1577780558bd280d278f181cfd626ab4b1d2ed9d38d05366fde",
+      "size_bytes": 3872785
+    },
+    "validation_molecules": {
+      "path": "intermediate/validation_molecules.parquet",
+      "sha256": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf",
+      "size_bytes": 2982151
+    }
+  },
+  "schema_version": 1,
+  "sealed_at": "2026-08-13T15:27:24.888539+00:00",
+  "status": "complete",
+  "train": {
+    "eligible_fragmentations": 6084924,
+    "molecules": 1000000,
+    "molecules_with_eligible_fragments": 995161,
+    "parse_failures": 0
+  },
+  "validation": {
+    "eligible_fragmentations": 288622,
+    "molecules": 50000,
+    "molecules_with_eligible_fragments": 49763,
+    "parse_failures": 0
+  },
+  "workers": 48
+}

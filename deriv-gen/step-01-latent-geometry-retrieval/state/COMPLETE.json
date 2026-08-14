@@ -1,0 +1,22 @@
+{
+  "finished_at": "2026-08-13T13:44:48.035253+00:00",
+  "gates": {
+    "G1_local_chemical_organization": true,
+    "G2_transferable_mmp_direction": true,
+    "G3_controlled_retrieval": false,
+    "G4_interpolation_sanity": true
+  },
+  "gpu": "NVIDIA GH200 120GB",
+  "output_ledger_sha256": "5790e3bf3567444f3d58dcca3c69cac09fcf9bd5535cb5a22e16ef8cd812ea4a",
+  "recommended_next_approach": "transformation-conditioned matched-pair retrieval with local manifold constraints, followed by a seed-conditioned edit decoder; do not assume a universal linear vector",
+  "results_sha256": "60301391f2904acbc0f6ac75851cbe8200010fb8071b0dc8931ac72c6cf32a15",
+  "retrieval_queries": 227,
+  "schema_version": 1,
+  "single_gpu": true,
+  "status": "complete",
+  "study_id": "gmolai-derivative-day1-v1",
+  "test_rows": 0,
+  "train_rows": 100000,
+  "validation_rows": 50000,
+  "wall_time_seconds": 607.051983049023
+}

@@ -1,0 +1,19 @@
+{
+  "common_fitted_transformations": 89280,
+  "decision_sha256": "dca7336d4ede927649df220b7570785caa9fb8810238c4001584d0a4bdbbce1f",
+  "decoder_conditioning_representation": "released_hybrid_w3",
+  "finished_at": "2026-08-13T15:36:00.820003+00:00",
+  "gpu": "NVIDIA GH200 120GB",
+  "output_ledger_sha256": "8b243fc20f88cd45602a944789353d92b313a41a4d54396cfa098554d75432c8",
+  "results_sha256": "3587a2a6d3e46ab0d1e8527ecf26edf2f27dfb331f245fda0ea31e6ce71b49b0",
+  "retrieval_queries": 2048,
+  "schema_version": 1,
+  "selected_edit_control_space": "released_hybrid_w3",
+  "single_gpu": true,
+  "status": "complete",
+  "study_id": "gmolai-derivative-scaled-space-selection-v1",
+  "test_rows": 0,
+  "train_rows": 1000000,
+  "validation_rows": 50000,
+  "wall_time_seconds": 496.6533113999758
+}

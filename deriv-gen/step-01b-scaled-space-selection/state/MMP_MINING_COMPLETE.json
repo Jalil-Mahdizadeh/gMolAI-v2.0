@@ -1,0 +1,66 @@
+{
+  "outputs": {
+    "eligible_validation_mmp_observations": {
+      "path": "intermediate/eligible_validation_mmp_observations.parquet",
+      "sha256": "317ab137891de78894c925bfc1a52515d692dc3987ab67c8603eab2e40fc825e",
+      "size_bytes": 252383
+    },
+    "mmp_support_by_transformation": {
+      "path": "outputs/tables/mmp_support_by_transformation.csv",
+      "sha256": "c042538e5894ee010b9fe00ad1ecdfd28ae1058b6b6bedd10979609ed2359ce4",
+      "size_bytes": 69583692
+    },
+    "mmp_support_thresholds": {
+      "path": "outputs/tables/mmp_support_thresholds.csv",
+      "sha256": "2c9e27730558540becec90f8367e98d09fa37dd301153d467856f85ae5df4284",
+      "size_bytes": 286
+    },
+    "train_fragment_groups": {
+      "path": "intermediate/train_fragment_groups.parquet",
+      "sha256": "f0115d9caafcb86f3a8d550d43fcf024c5b0a70515310242707bfbdeeb984e20",
+      "size_bytes": 118050509
+    },
+    "train_mmp_observations": {
+      "path": "intermediate/train_mmp_observations.parquet",
+      "sha256": "009dcede4503e388e3d027755c7e5160460b6cbe12e65f80fb8a4e8ac6330d25",
+      "size_bytes": 47843744
+    },
+    "train_transformation_support": {
+      "path": "intermediate/train_transformation_support.parquet",
+      "sha256": "1052488a84c98f09e7bb72cc2b626551b9487a082f666477c201946025f3fc47",
+      "size_bytes": 14268602
+    },
+    "validation_fragment_groups": {
+      "path": "intermediate/validation_fragment_groups.parquet",
+      "sha256": "f7dac51d2dffadedddd6d7695b0b8cb32e96363ad6e0d49c0f09df389a04e7f9",
+      "size_bytes": 5386595
+    },
+    "validation_mmp_observations": {
+      "path": "intermediate/validation_mmp_observations.parquet",
+      "sha256": "ff2ec8722ddf18f435765818897933e4effb696adaa410c41da2281235137129",
+      "size_bytes": 1116807
+    }
+  },
+  "schema_version": 1,
+  "sealed_at": "2026-08-13T15:27:36.473275+00:00",
+  "status": "complete",
+  "summary": {
+    "eligible_unseen_core_validation": {
+      "observations": 9074,
+      "transformations": 3964
+    },
+    "train": {
+      "core_transform_observations": 1461391,
+      "fragment_groups": 6084924,
+      "molecule_pair_multiplicity": 1461391,
+      "transformations": 1323920
+    },
+    "validation": {
+      "core_transform_observations": 41228,
+      "fragment_groups": 288622,
+      "molecule_pair_multiplicity": 41228,
+      "transformations": 34659
+    }
+  },
+  "threads": 48
+}

@@ -1,0 +1,12 @@
+{
+  "known_mmp_transform": "C[*:1]>>CC[*:1]",
+  "schema_version": 1,
+  "status": "passed",
+  "tests": {
+    "canonical_spelling_identified": true,
+    "directional_variable_delta_recovered": true,
+    "frozen_policy_accepts_known_valid_molecules": true,
+    "known_one_cut_mmp_recovered": true,
+    "step1b_one_cut_fragmentation_imported": true
+  }
+}

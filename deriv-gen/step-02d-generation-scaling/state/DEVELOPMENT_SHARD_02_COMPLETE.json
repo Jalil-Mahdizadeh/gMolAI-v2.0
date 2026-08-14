@@ -1,0 +1,36 @@
+{
+  "completed_at": "2026-08-14T01:35:29.181142+00:00",
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "decoder_training": false,
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "latent_perturbation": false,
+  "num_shards": 4,
+  "output_sha256": {
+    "beam1000_lp00": "1ab6582a6411262903c0bbafd83b530355c91c109ba82af04b6332c866a9e8a0",
+    "beam1000_lp06": "2b45b35021d8986696d93157b609a4f461c6f2f86587c6fec769445720bfd60e",
+    "hybrid_b500_s500_t100": "3e9fa6449197d08d61414382fcbf2b764aa0a4dc69dd705b5b3bea5abe5fbe8a",
+    "hybrid_b500_s500_t120": "7e583107c7bad922aefe87b8900e94256bb9976c61245d18017e8e0d6d0b6527",
+    "sample_t100_p098": "5a0459380ede1d76c11517fca5453e649da21b5eec15da6bfba4e0a603d7ae04",
+    "sample_t120_p0995": "e1b5d0c006f0b3aca91d1246a09895e7c0f5e98bed3ad90b9b172d4619ee0d51",
+    "sample_t150_p100": "46e158a8923ce8765d2aedac7bb8bf681adabee30cb8f6c5d63f9198e6e53cc4"
+  },
+  "phase": "development",
+  "proposals_per_strategy_seed": 1000,
+  "schema_version": 1,
+  "seed_rows": 128,
+  "shard_id": 2,
+  "status": "complete",
+  "strategies": [
+    "beam1000_lp00",
+    "beam1000_lp06",
+    "sample_t100_p098",
+    "sample_t120_p0995",
+    "sample_t150_p100",
+    "hybrid_b500_s500_t100",
+    "hybrid_b500_s500_t120"
+  ],
+  "test_rows": 0,
+  "visible_gpu": "NVIDIA GH200 120GB",
+  "wall_seconds": 1217.197536400985
+}

@@ -1,0 +1,12 @@
+{
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "generation_rows_per_control": 10000,
+  "metrics_sha256": "ad9e561061d8354825bb47dd457bdf2cd1263f3658b4be5e3d6ccfff355b801e",
+  "raw_reconstructions_sha256": "e12caab62c24b495db52363e7a91983061a0f3b4f7b87efabab80726ba99281b",
+  "schema_version": 1,
+  "sealed_at": "2026-08-13T19:03:12.994666+00:00",
+  "status": "complete",
+  "summary_sha256": "0f512b986eda14640819e8fdc672bfefe933d65f78e2d69b1662a2d255b5fedd",
+  "test_rows": 0,
+  "validation_rows": 50000
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "policy": "all external inputs are immutable; only decoder artifacts may be trained",
+  "files": {
+    "checkpoint": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "calibrator": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "resolved_config": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/resolved_config.json",
+      "sha256": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+    },
+    "base_config": {
+      "path": "configs/retrain.yaml",
+      "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011"
+    },
+    "train_raw_embeddings": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/exports/train_raw_hybrid_1m.pt",
+      "sha256": "ff7cc47f729a7bd0c08814b6d08341b88dd1a6affe91b8b9d006d836659b3c2c"
+    },
+    "train_molecules": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/intermediate/train_molecules.parquet",
+      "sha256": "ace44c7283c0260540e78c1de825d13b5a4a1c0b61ed9ec83b5e1ac9438bd7d7"
+    },
+    "validation_embeddings": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/validation-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810-50k.pt",
+      "sha256": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642"
+    },
+    "validation_molecules": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/intermediate/validation_molecules.parquet",
+      "sha256": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf"
+    },
+    "step1b_complete": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/state/COMPLETE.json",
+      "sha256": "3c3e558381117f2d1a424e74835af6c219e8d0fe76c70c1d9850f9329ddc92f4"
+    },
+    "step1b_decision": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/outputs/space_decision.json",
+      "sha256": "3f9ac679488b6e745d0db2f1d22ac5f7a54bc212f9c598115b848931af2a4539"
+    },
+    "packaged_checkpoint": {
+      "path": "inference/model/representation-best.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "packaged_calibrator": {
+      "path": "inference/model/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "representation_selection": {
+      "path": "inference/model/representation_selection.json",
+      "sha256": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1"
+    },
+    "packaged_resolved_config": {
+      "path": "inference/model/resolved_config.json",
+      "sha256": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+    },
+    "inference_entrypoint": {
+      "path": "inference/generate_embeddings.py",
+      "sha256": "c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612"
+    },
+    "chemistry_policy": {
+      "path": "src/gmolai_retrain/chem.py",
+      "sha256": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3"
+    },
+    "optimized_inference": {
+      "path": "src/gmolai_retrain/fast_inference.py",
+      "sha256": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba"
+    },
+    "model_definition": {
+      "path": "src/gmolai_retrain/model.py",
+      "sha256": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02"
+    },
+    "container": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    }
+  },
+  "forbidden_inputs": [
+    "locked internal test partition",
+    "MoleculeNet endpoint labels",
+    "HIV endpoint labels"
+  ],
+  "selected_embedding_space": "released_hybrid_w3"
+}

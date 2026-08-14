@@ -18,6 +18,8 @@ slurm-*.out
 *.feather
 *.arrow
 *.parquet
+*.npy
+*.npz
 
 # Python/tool caches.
 __pycache__/

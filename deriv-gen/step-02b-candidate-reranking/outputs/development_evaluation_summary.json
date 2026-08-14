@@ -1,0 +1,88 @@
+{
+  "accepted_candidate_rows": 479943,
+  "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+  "candidate_sizes": [
+    1,
+    5,
+    10,
+    20,
+    50
+  ],
+  "controls": [
+    "correct_embedding",
+    "shuffled_embedding",
+    "nearest_wrong_embedding"
+  ],
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "decoder_training": false,
+  "derivative_generation": false,
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "finished_at": "2026-08-13T20:58:25.613231+00:00",
+  "gmolai_checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+  "gpu": "NVIDIA GH200 120GB",
+  "input_sha256": {
+    "chemistry_policy": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3",
+    "container": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "decoder_checkpoint": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+    "decoder_inference_export": "8b4f8db04499083ea2e9d028eaaae18d629b34ce773608d8e2c80863e9121d47",
+    "gmolai_calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "gmolai_checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "gmolai_model_definition": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02",
+    "gmolai_resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+    "inference_entrypoint": "c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612",
+    "optimized_inference": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba",
+    "packaged_calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "packaged_checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "packaged_resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+    "representation_selection": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1",
+    "step2_common_source": "461e7ed749faae2e913e410e70bbb9dccbc3c1980780d1eae32bb3cdce408997",
+    "step2_complete": "5a16f70fe1c2f7f5ec286f0173389b1fd8dfac7d3045d85db9cb0f9654fce765",
+    "step2_decoder_model_source": "7cb33424f91e00241946e38f63666690ff6cea6871433bd5ab1271ecc7862122",
+    "step2_manifest": "717a16ea45f205561b47b079731ebff0b2c7d1d6b46e1ee1e00fb5c37076ed15",
+    "step2_original_final_panel": "63039b75e84209bef073646ba4c349b0451e315c735f9cf19ef79d2f30aedf1e",
+    "step2_split_indices": "c5f5035e3b6d76b1f6ebc23e2dabe4dea36508f740022f05c0f55f072bc6d517",
+    "step2_training_complete": "28e6b81fc8bc589881af0e2929ccb75ec7a1ec66e2758ca61ca0ed21436df92f",
+    "train_molecules": "ace44c7283c0260540e78c1de825d13b5a4a1c0b61ed9ec83b5e1ac9438bd7d7",
+    "train_raw_embeddings": "ff7cc47f729a7bd0c08814b6d08341b88dd1a6affe91b8b9d006d836659b3c2c",
+    "validation_embeddings": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+    "validation_molecules": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf"
+  },
+  "latent_perturbation": false,
+  "maximum_gpu_memory_bytes": 2267241984,
+  "output_sha256": {
+    "candidates": "ebacc489a5e45f1e4b35f35481967a2b9f689ea0d88c1aa3bd931408a4e5c69b",
+    "generation_stats": "e2059ad7654802139130746fc16cf8ff68a94723b8286da0a7b4916746315927",
+    "metrics": "729b107c320f1e2214ae4adb31788822544d1d82c7f3220e4fd50195654c636b",
+    "query_results": "106e1c194722bae86a9851c91d8a33b1bf76eff8973c8879b42d02563b68072c",
+    "reencoded_unique": "f976c18ee13333529e53cee925da7ed6aa455cfaf441c0744d760e94537369d0"
+  },
+  "phase": "development",
+  "policies": [
+    "beam64_lp00",
+    "beam64_lp06",
+    "sample128_t085_p095",
+    "sample128_t100_p098"
+  ],
+  "ranking_inputs": [
+    "released_gmolai_relative_l2_to_supplied_condition",
+    "released_gmolai_cosine_to_supplied_condition_tie_break",
+    "target_blind_generator_order_tie_break"
+  ],
+  "reencoder": {
+    "backend": "optimized_gine_v1",
+    "batch_size": 512,
+    "fast_graph_version": "1",
+    "fast_inference_version": "1",
+    "node_budget": 65536,
+    "workers": 48
+  },
+  "rows_per_control": 2048,
+  "schema_version": 1,
+  "started_at": "2026-08-13T20:11:42.602403+00:00",
+  "status": "complete",
+  "target_structural_information_used_for_ranking": false,
+  "test_rows": 0,
+  "unique_accepted_candidate_molecules": 140250,
+  "wall_time_seconds": 2803.0108761970187
+}

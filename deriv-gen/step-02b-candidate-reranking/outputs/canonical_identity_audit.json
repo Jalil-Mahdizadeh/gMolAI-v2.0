@@ -1,0 +1,16 @@
+{
+  "audited_at": "2026-08-13T21:51:31.877672+00:00",
+  "candidate_rows_checked": 1058071,
+  "candidate_source_canonical_vs_hash_mismatches": 0,
+  "candidate_target_canonical_vs_hash_mismatches": 0,
+  "chemistry_identity_definition": "molecule_hash = SHA256(canonical isomeric SMILES)",
+  "oracle_canonical_vs_reported_hash_mismatches": 0,
+  "query_rows_checked": 150000,
+  "query_top1_canonical_vs_hash_mismatches": 0,
+  "schema_version": 1,
+  "status": "pass",
+  "table": "outputs/tables/final_canonical_identity_by_control_k.csv",
+  "table_sha256": "63106c6739fef6776f83e2f16d41bb83c9524107e68c5a56c424e1386c74352e",
+  "validation_hash_policy_mismatches": 0,
+  "validation_molecules_checked": 50000
+}

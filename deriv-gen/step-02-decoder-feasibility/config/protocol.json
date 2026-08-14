@@ -1,0 +1,111 @@
+{
+  "data": {
+    "ascii_byte_values": 128,
+    "bos_token": 1,
+    "byte_token_offset": 3,
+    "decoder_training_population": "deterministic 1M pretraining-train sample from Step 1b",
+    "dev_split": "deterministic scaffold-disjoint groups within the 1M train sample",
+    "eos_token": 2,
+    "final_generation_rows": 10000,
+    "final_generation_sampling": "deterministic hash-ranked validation panel",
+    "maximum_smiles_bytes": 128,
+    "pad_token": 0,
+    "preserve_isomeric_smiles": true,
+    "tokenizer": "ascii_byte_v1",
+    "train_partition_dev_rows_target": 20000,
+    "train_rows": 1000000,
+    "validation_rows": 50000,
+    "vocab_size": 131
+  },
+  "evaluation": {
+    "beam_generation_batch_size": 128,
+    "bootstrap_resamples": 2000,
+    "controls": [
+      "correct_embedding",
+      "shuffled_embedding",
+      "zero_embedding",
+      "wrong_molecule_embedding"
+    ],
+    "decode": "development_selected_greedy_or_beam_w4_lp06",
+    "decode_selection_policy_sha256": "53541b6141dd67c73ee8ad6f6901a31dbb70fd342dd6dc356c44c8d23b11d204",
+    "generation_batch_size": 1024,
+    "morgan_bits": 2048,
+    "morgan_radius": 2,
+    "nearest_neighbor_batch_size": 512,
+    "reencode_backend": "optimized_gine_v1",
+    "reencode_batch_size": 512,
+    "reencode_node_budget": 65536,
+    "reencode_workers": "auto",
+    "shuffled_control": "deterministic derangement within final panel",
+    "wrong_molecule_control": "nearest non-self validation molecule in released-hybrid-w3 Euclidean distance"
+  },
+  "go_no_go": {
+    "correct_identity_advantage_over_best_target_control_minimum": 0.5,
+    "correct_mean_morgan_similarity_all_rows_minimum": 0.9,
+    "correct_median_reencoded_cosine_to_condition_minimum": 0.95,
+    "correct_molecular_identity_recovery_minimum": 0.8,
+    "correct_scaffold_recovery_minimum": 0.9,
+    "correct_valid_smiles_rate_minimum": 0.95,
+    "hard_wrong_condition_source_identity_recovery_minimum": 0.6,
+    "minimum_generation_rows": 10000,
+    "rule": "GO only if every threshold passes; otherwise NO-GO",
+    "shuffled_condition_source_identity_recovery_minimum": 0.6
+  },
+  "model": {
+    "activation": "gelu",
+    "architecture": "cross_attention_conditional_transformer_smiles_v1",
+    "attention_heads": 8,
+    "condition_dimensions": 384,
+    "condition_injection": [
+      "cross_attention_memory",
+      "additive_token_bias"
+    ],
+    "condition_memory_tokens": 4,
+    "d_model": 512,
+    "decoder_layers": 6,
+    "dropout": 0.1,
+    "feedforward_dimensions": 2048,
+    "maximum_positions": 130,
+    "norm_first": true
+  },
+  "schema_version": 1,
+  "scientific_boundary": {
+    "embedding_space": "released_hybrid_w3",
+    "endpoint_labels_used": false,
+    "frozen_encoder": true,
+    "perturbation_generation": false,
+    "test_rows": 0,
+    "train_decoder_only": true
+  },
+  "seed": 20260814,
+  "study_id": "gmolai-decoder-feasibility-v1",
+  "training": {
+    "baseline_epochs": 12,
+    "checkpoint_score": "correct_identity + 0.25*(correct_identity-max(shuffled_identity,zero_identity)) - 0.01*teacher_forced_nll",
+    "cosine_schedule_epochs": 12,
+    "dev_batch_size": 1024,
+    "development_extension_policy_sha256": "db115ef75458a64a474c6d429eeb71979a0fce0d617d874024d2cdf8569a2d18",
+    "early_stopping_patience": 3,
+    "effective_batch_size": 1024,
+    "gradient_accumulation_steps": 1,
+    "gradient_clip_norm": 1,
+    "label_smoothing": 0,
+    "learning_rate": 0.0004,
+    "maximum_epochs": 24,
+    "micro_batch_size": 1024,
+    "minimum_epochs": 6,
+    "minimum_learning_rate": 4e-05,
+    "precision": "bfloat16",
+    "train_dev_controls": [
+      "correct_embedding",
+      "shuffled_embedding",
+      "zero_embedding"
+    ],
+    "train_dev_generation_rows": 2048,
+    "warmup_optimizer_steps": 500,
+    "weight_decay": 0.01,
+    "wrong_condition_fraction": 0.25,
+    "wrong_condition_loss_weight": 0.25,
+    "wrong_condition_margin_nats_per_token": 0.1
+  }
+}

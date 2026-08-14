@@ -1,0 +1,12 @@
+{
+  "development_panel_sha256": "82405148f16ba0c3866a5af62a7c512928f6bc822fe44df9e041a7c891a78319",
+  "endpoint_labels_used": false,
+  "fresh_validation_generation_started": false,
+  "fresh_validation_panel_sha256": "f5910d90f85590721952748fa6535b3133097f8c3d167221401f62d70b2eb33c",
+  "metadata_sha256": "732df192ae24ee112f8950c1e9fa2efa43579ff13dfa2676622ae4eda75517ae",
+  "overlap_with_original_step2_panel": 0,
+  "schema_version": 1,
+  "sealed_at": "2026-08-13T20:03:36.869719+00:00",
+  "status": "complete",
+  "test_rows": 0
+}

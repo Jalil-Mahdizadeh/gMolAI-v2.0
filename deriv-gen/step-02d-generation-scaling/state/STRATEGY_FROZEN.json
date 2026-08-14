@@ -1,0 +1,44 @@
+{
+  "best_primary_value": 36.083984375,
+  "bootstrap_table_sha256": "438f7ef875b98c35d45d2f9c10a48953414d29bdaf1a0cfb4fb15e1a19e5b27d",
+  "decoder_training": false,
+  "development_panel_sha256": "2d5a897110de6656be90b33bef7e2f1283cb5b0307641913a143cc92c8308732",
+  "development_summary_sha256": "bdf0fa8743657c69b82a787de4c4c664db8373090dd41e07aa411beaaed81fdd",
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "equivalence_margin_fraction": 0.02,
+  "equivalence_threshold": 35.3623046875,
+  "equivalent_strategies": [
+    "hybrid_b500_s500_t120",
+    "hybrid_b500_s500_t100"
+  ],
+  "final_data_visible_during_selection": false,
+  "final_panel_sha256": "de28147773d5492e60c912056422c898d1fc170db2e23002ac4bb2efc91a138f",
+  "frozen_at": "2026-08-14T01:42:12.247043+00:00",
+  "global_seed": 20260817,
+  "latent_perturbation": false,
+  "proposal_budgets": [
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "sampling_seed_definition": "SHA256(global_seed, phase, base_pool_name, target_hash) truncated to 63 bits",
+  "schema_version": 1,
+  "selected_primary_value": 36.083984375,
+  "selected_strategy": {
+    "beam_hypotheses": 500,
+    "kind": "hybrid",
+    "length_penalty": 0.0,
+    "merge": "proportional_balanced",
+    "name": "hybrid_b500_s500_t120",
+    "registered_order": 7,
+    "sample_hypotheses": 500,
+    "sample_pool": "t120_p0995"
+  },
+  "selection_primary_metric": "mean novel useful-local unique molecules per seed at raw budget 1000",
+  "selection_table_sha256": "f48634f411d19667cdcdf7645ed5e0909ae977ca4299f0a1e028362ff1d50b37",
+  "status": "frozen_before_final_generation",
+  "test_rows": 0
+}

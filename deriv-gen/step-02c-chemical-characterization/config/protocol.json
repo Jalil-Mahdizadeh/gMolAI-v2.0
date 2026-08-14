@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "study_id": "gmolai-decoder-candidate-chemistry-step2c-v1",
+  "seed": 20260816,
+  "scientific_boundary": {
+    "frozen_gmolai": true,
+    "frozen_calibrator": true,
+    "embedding_space": "released_hybrid_w3",
+    "frozen_decoder": true,
+    "encoder_training": false,
+    "decoder_training": false,
+    "candidate_regeneration": false,
+    "latent_perturbation": false,
+    "mmp_directed_generation": false,
+    "endpoint_labels_used": false,
+    "locked_test_rows": 0
+  },
+  "candidate_population": {
+    "source_phase": "final",
+    "source_policy": "beam64_lp00",
+    "source_control": "correct_embedding",
+    "requested_candidate_set_size": 50,
+    "expected_seed_rows": 10000,
+    "include_every_available_seed": true,
+    "candidate_definition": "stored unique unchanged-policy-accepted canonical molecular identities from Step 2b",
+    "raw_hypothesis_limitation": "individual rejected and deduplicated beam strings were not persisted by Step 2b; raw-beam validity and identity redundancy are recoverable only from frozen aggregate generation statistics"
+  },
+  "mmp": {
+    "implementation": "exact Step 1b RDKit rdMMPA one-cut fragmentation code, hash-bound and imported read-only",
+    "max_cuts": 1,
+    "min_core_heavy_atoms": 6,
+    "min_variable_heavy_atoms": 1,
+    "max_variable_heavy_atoms": 10,
+    "min_core_fraction": 0.6,
+    "max_variable_heavy_atom_delta": 6,
+    "max_parent_heavy_atom_delta": 8,
+    "primary_explanation_rule": "largest retained core, then smallest total variable size, then lexical core and substituents",
+    "seed_coverage_thresholds": [1, 5, 10, 20, 30, 40]
+  },
+  "similarity": {
+    "fingerprint": "Morgan",
+    "radius": 2,
+    "bits": 2048,
+    "include_chirality": false,
+    "quantiles": [0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95],
+    "pairwise_histogram_bins": 100
+  },
+  "classification_precedence": [
+    "exact_seed_identity",
+    "same_identity_alternative_smiles",
+    "one_cut_mmp_derivative",
+    "scaffold_preserving_non_mmp_analogue",
+    "acyclic_non_mmp_analogue",
+    "scaffold_changing_analogue"
+  ],
+  "bounded_conclusion": {
+    "label_if_all_gates_pass": "useful_local_analogue_generator_supported",
+    "label_if_yield_and_locality_pass_but_mmp_gate_fails": "local_analogue_behavior_supported_but_mmp_derivative_coverage_limited",
+    "label_otherwise": "useful_local_analogue_generator_not_supported",
+    "minimum_fraction_seeds_with_5_genuine_nonseed": 0.8,
+    "minimum_fraction_seeds_with_1_mmp": 0.5,
+    "minimum_nonempty_seed_scaffold_retention": 0.5,
+    "minimum_global_nonseed_median_morgan": 0.5,
+    "maximum_global_nonseed_median_morgan": 0.95,
+    "minimum_median_unique_nonseed_per_seed": 10,
+    "maximum_global_pairwise_mean_morgan": 0.95
+  },
+  "execution": {
+    "workers": 48,
+    "duckdb_threads": 48,
+    "no_gpu_required": true,
+    "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "embedding_space": "released_hybrid_w3",
+  "files": {
+    "chemistry_policy": {
+      "path": "src/gmolai_retrain/chem.py",
+      "sha256": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3"
+    },
+    "container": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    },
+    "decoder_checkpoint": {
+      "path": "deriv-gen/step-02-decoder-feasibility/checkpoints/best.pt",
+      "sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6"
+    },
+    "decoder_inference_export": {
+      "path": "deriv-gen/step-02-decoder-feasibility/checkpoints/decoder_inference.pt",
+      "sha256": "8b4f8db04499083ea2e9d028eaaae18d629b34ce773608d8e2c80863e9121d47"
+    },
+    "gmolai_calibrator": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "gmolai_checkpoint": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "gmolai_model_definition": {
+      "path": "src/gmolai_retrain/model.py",
+      "sha256": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02"
+    },
+    "gmolai_resolved_config": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/resolved_config.json",
+      "sha256": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+    },
+    "inference_entrypoint": {
+      "path": "inference/generate_embeddings.py",
+      "sha256": "c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612"
+    },
+    "optimized_inference": {
+      "path": "src/gmolai_retrain/fast_inference.py",
+      "sha256": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba"
+    },
+    "packaged_calibrator": {
+      "path": "inference/model/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "packaged_checkpoint": {
+      "path": "inference/model/representation-best.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "packaged_resolved_config": {
+      "path": "inference/model/resolved_config.json",
+      "sha256": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+    },
+    "representation_selection": {
+      "path": "inference/model/representation_selection.json",
+      "sha256": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1"
+    },
+    "step1b_complete": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/state/COMPLETE.json",
+      "sha256": "3c3e558381117f2d1a424e74835af6c219e8d0fe76c70c1d9850f9329ddc92f4"
+    },
+    "step1b_fragment_source": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/scripts/scaled_common.py",
+      "sha256": "c6728313d3f7e35579c026db74d527337b6f083248531fa3e543723f6bf1c40c"
+    },
+    "step1b_protocol": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/config/protocol.json",
+      "sha256": "5d5804006701986da5d858fca00dc5d7efc9d28b97d880eec3e84466067f23bf"
+    },
+    "step2_common_source": {
+      "path": "deriv-gen/step-02-decoder-feasibility/scripts/study_common.py",
+      "sha256": "461e7ed749faae2e913e410e70bbb9dccbc3c1980780d1eae32bb3cdce408997"
+    },
+    "step2_complete": {
+      "path": "deriv-gen/step-02-decoder-feasibility/state/COMPLETE.json",
+      "sha256": "5a16f70fe1c2f7f5ec286f0173389b1fd8dfac7d3045d85db9cb0f9654fce765"
+    },
+    "step2_decoder_model_source": {
+      "path": "deriv-gen/step-02-decoder-feasibility/scripts/decoder_model.py",
+      "sha256": "7cb33424f91e00241946e38f63666690ff6cea6871433bd5ab1271ecc7862122"
+    },
+    "step2_manifest": {
+      "path": "deriv-gen/step-02-decoder-feasibility/inputs/manifest.json",
+      "sha256": "717a16ea45f205561b47b079731ebff0b2c7d1d6b46e1ee1e00fb5c37076ed15"
+    },
+    "step2_original_final_panel": {
+      "path": "deriv-gen/step-02-decoder-feasibility/prepared/final_control_sources.csv",
+      "sha256": "63039b75e84209bef073646ba4c349b0451e315c735f9cf19ef79d2f30aedf1e"
+    },
+    "step2_split_indices": {
+      "path": "deriv-gen/step-02-decoder-feasibility/prepared/split_indices.npz",
+      "sha256": "c5f5035e3b6d76b1f6ebc23e2dabe4dea36508f740022f05c0f55f072bc6d517"
+    },
+    "step2_training_complete": {
+      "path": "deriv-gen/step-02-decoder-feasibility/state/TRAINING_COMPLETE.json",
+      "sha256": "28e6b81fc8bc589881af0e2929ccb75ec7a1ec66e2758ca61ca0ed21436df92f"
+    },
+    "step2b_candidate_source": {
+      "path": "deriv-gen/step-02b-candidate-reranking/scripts/candidate_model.py",
+      "sha256": "806a0b543460201f344a5bf0f379d3db2c1768fd9b13ab8246b6471c69f1d5f7"
+    },
+    "step2b_common_source_frozen": {
+      "path": "deriv-gen/step-02b-candidate-reranking/scripts/common.py",
+      "sha256": "5883de3a4c96e1ebf63eace410ccf3c5c64c337d903f3ef30a9dca92ee4a7989"
+    },
+    "step2b_complete": {
+      "path": "deriv-gen/step-02b-candidate-reranking/state/COMPLETE.json",
+      "sha256": "bdafd57da59cf1927a0c2392e8484815675ecb8904033d26eeba0eea632d7261"
+    },
+    "step2b_development_panel": {
+      "path": "deriv-gen/step-02b-candidate-reranking/prepared/development_panel.csv",
+      "sha256": "82405148f16ba0c3866a5af62a7c512928f6bc822fe44df9e041a7c891a78319"
+    },
+    "step2b_final_panel": {
+      "path": "deriv-gen/step-02b-candidate-reranking/prepared/fresh_validation_panel.csv",
+      "sha256": "f5910d90f85590721952748fa6535b3133097f8c3d167221401f62d70b2eb33c"
+    },
+    "step2b_protocol": {
+      "path": "deriv-gen/step-02b-candidate-reranking/config/protocol.json",
+      "sha256": "10c36f12c94273e9cf7d04b5d41a6fddc0a739ec81f7115b9c91957c83496e0b"
+    },
+    "step2b_verification": {
+      "path": "deriv-gen/step-02b-candidate-reranking/outputs/verification.json",
+      "sha256": "c15054f31a835a744694577610dde0a9a7167e8fd4e3b56c124efe4675507f56"
+    },
+    "step2c_audit_core_source": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/audit_core.py",
+      "sha256": "85adf10479fc65763dea6f48c15835fa5572af793415f529104e8edf88eae081"
+    },
+    "step2c_complete": {
+      "path": "deriv-gen/step-02c-chemical-characterization/state/COMPLETE.json",
+      "sha256": "bee8614eff40a6292532717700c04f89e5f253f268f32eaef217633c7404f1bc"
+    },
+    "step2c_protocol": {
+      "path": "deriv-gen/step-02c-chemical-characterization/config/protocol.json",
+      "sha256": "c8c1d8d32e75f21a705fc10f5ddc4aea4b536020b7b0c2d3a8e5f469c66460ad"
+    },
+    "step2c_verification": {
+      "path": "deriv-gen/step-02c-chemical-characterization/outputs/verification.json",
+      "sha256": "b20a83396ff43c36096f7687d82a511967ad2f711644b52eb36aaded92234f16"
+    },
+    "train_molecules": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/intermediate/train_molecules.parquet",
+      "sha256": "ace44c7283c0260540e78c1de825d13b5a4a1c0b61ed9ec83b5e1ac9438bd7d7"
+    },
+    "train_raw_embeddings": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/exports/train_raw_hybrid_1m.pt",
+      "sha256": "ff7cc47f729a7bd0c08814b6d08341b88dd1a6affe91b8b9d006d836659b3c2c"
+    },
+    "validation_embeddings": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/validation-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810-50k.pt",
+      "sha256": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642"
+    },
+    "validation_molecules": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/intermediate/validation_molecules.parquet",
+      "sha256": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf"
+    }
+  },
+  "forbidden_inputs": [
+    "locked internal test partition",
+    "MoleculeNet or HIV endpoint labels",
+    "latent perturbations",
+    "MMP direction vectors",
+    "target structure for generation ordering"
+  ],
+  "policy": "all encoder, calibrator, decoder, chemistry, split, panel, and prior-analysis inputs are immutable",
+  "schema_version": 1,
+  "study_id": "gmolai-frozen-decoder-generation-scaling-step2d-v1"
+}

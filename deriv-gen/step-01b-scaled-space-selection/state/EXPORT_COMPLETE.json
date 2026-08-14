@@ -1,0 +1,14 @@
+{
+  "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+  "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+  "dimensions": 384,
+  "export_path": "exports/train_raw_hybrid_1m.pt",
+  "export_sha256": "ff7cc47f729a7bd0c08814b6d08341b88dd1a6affe91b8b9d006d836659b3c2c",
+  "export_size_bytes": 1672005527,
+  "rows": 1000000,
+  "sampling_seed": 1618033,
+  "schema_version": 1,
+  "sealed_at": "2026-08-13T15:24:37.790832+00:00",
+  "split": "train",
+  "status": "complete"
+}

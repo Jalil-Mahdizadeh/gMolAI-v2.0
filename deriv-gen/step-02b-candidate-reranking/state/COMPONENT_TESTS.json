@@ -1,0 +1,21 @@
+{
+  "beam_shape": [
+    2,
+    4,
+    128
+  ],
+  "decoder_checkpoint_sha256_after": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "decoder_checkpoint_sha256_before": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "decoder_parameters_trainable": 0,
+  "endpoint_labels_used": false,
+  "fixed_seed_sampling_deterministic": true,
+  "sample_shape": [
+    2,
+    4,
+    128
+  ],
+  "schema_version": 1,
+  "status": "pass",
+  "test_rows": 0,
+  "tested_at": "2026-08-13T20:04:44.994037+00:00"
+}

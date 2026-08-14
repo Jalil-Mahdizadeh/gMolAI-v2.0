@@ -1,0 +1,16 @@
+{
+  "completed_at": "2026-08-14T06:51:37.811892+00:00",
+  "deterministic_repeat": true,
+  "endpoint_labels_used": false,
+  "rdkit_version": "2025.09.3",
+  "reference_scores": {
+    "aspirin": 1.580039750008826,
+    "caffeine": 2.29798245679401,
+    "ethanol": 1.9802570386349831
+  },
+  "sa_fragment_model_sha256": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73",
+  "sa_scorer_source_sha256": "8c191920cb9d011994e5f77a0b54924d20d92967052bf6f6903f6f40c0a6e3a2",
+  "schema_version": 1,
+  "status": "complete",
+  "test_rows": 0
+}

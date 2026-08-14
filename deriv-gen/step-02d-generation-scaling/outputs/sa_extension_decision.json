@@ -1,0 +1,47 @@
+{
+  "bounded_conclusion": "SA score is descriptive heuristic complexity evidence, not a feasible synthesis route.",
+  "budget_1000": {
+    "candidate_sa_median": 3.653694853567422,
+    "delta_sa_median": 0.1805340255467666,
+    "delta_sa_q25": 0.0051974615664747,
+    "delta_sa_q75": 0.4777577762641771,
+    "fraction_at_least_one_point_easier": 0.0050701513354721,
+    "fraction_at_least_one_point_harder": 0.0752162647416549,
+    "fraction_no_harder_than_seed": 0.2420171226796224,
+    "fraction_not_more_than_half_point_harder": 0.7622046803003732,
+    "matched_seed_sa_median": 3.3308950095215906,
+    "seed_macro_fraction_no_harder_ci": [
+      0.2233024309913356,
+      0.2293111851565467
+    ],
+    "seed_macro_mean_delta_sa": 0.3095876691966864,
+    "seed_macro_mean_delta_sa_ci": [
+      0.3052189754354736,
+      0.3138096610606143
+    ],
+    "seed_macro_mean_fraction_no_harder": 0.2264380217135575
+  },
+  "original_step2d_decision_changed": false,
+  "population": {
+    "genuine_nonseed_pairs_at_1000": 2106446,
+    "global_identity_rows": 2108115,
+    "seed_candidate_rows": 2116072,
+    "seed_rows": 10000
+  },
+  "schema_version": 1,
+  "scope_limits": [
+    "RDKit SA score is not retrosynthesis or experimental validation.",
+    "No candidate was regenerated, removed, reranked, or used to alter Step 2d.",
+    "No training, latent perturbation, property optimization, test data, or endpoint labels."
+  ],
+  "score": {
+    "candidate_seed_delta": "candidate_sa_score_minus_seed_sa_score",
+    "implementation": "rdkit.Contrib.SA_Score.sascorer.calculateScore",
+    "interpretation": "1 is heuristically easier and 10 is heuristically harder",
+    "lower_delta_is_easier_relative_to_seed": true,
+    "name": "RDKit_Contrib_SA_Score",
+    "unit_of_computation": "one score per globally unique policy-accepted canonical molecular identity"
+  },
+  "status": "descriptive_post_completion_extension",
+  "study_id": "gmolai-step2d-post-completion-sa-extension-v1"
+}

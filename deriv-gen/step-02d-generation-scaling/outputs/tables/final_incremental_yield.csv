@@ -1,0 +1,6 @@
+strategy,budget,interval_start_exclusive,interval_raw_proposals,mean_new_unique_accepted_identity_count,mean_new_mmp_derivative_count,mean_new_retains_nonempty_seed_scaffold_count,mean_new_novel_genuine_nonseed_count,mean_new_novel_useful_local_count,mean_new_distinct_scaffold_count,mean_rate_unique_accepted_identity_count,mean_rate_mmp_derivative_count,mean_rate_retains_nonempty_seed_scaffold_count,mean_rate_novel_genuine_nonseed_count,mean_rate_novel_useful_local_count,mean_rate_distinct_scaffold_count
+hybrid_b500_s500_t120,50,0,50,18.0319,2.2131,3.2501,17.1057,4.6126,11.2007,0.360638,0.044262,0.065002,0.342114,0.092252,0.224014
+hybrid_b500_s500_t120,100,50,50,13.9569,1.4831,2.0633,13.943,2.9735,7.7257,0.279138,0.029662,0.041266000000000004,0.27886,0.05947,0.154514
+hybrid_b500_s500_t120,250,100,150,35.9087,3.4275,4.6571,35.8922,6.7672,19.1282,0.23939133333333334,0.02285,0.031047333333333337,0.23928133333333335,0.045114666666666664,0.12752133333333335
+hybrid_b500_s500_t120,500,250,250,51.9403,4.6507,6.03,51.9287,8.9057,26.7544,0.2077612,0.0186028,0.02412,0.2077148,0.0356228,0.10701759999999999
+hybrid_b500_s500_t120,1000,500,500,91.7694,7.6946,9.6317,91.7593,14.4422,45.787,0.1835388,0.0153892,0.0192634,0.1835186,0.0288844,0.091574

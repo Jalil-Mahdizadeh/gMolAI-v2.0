@@ -1,0 +1,9 @@
+{
+  "candidate_regeneration": false,
+  "file_count": 25,
+  "manifest_sha256": "820e75b75fcb48b6203da5adb8aea2e7320a2222fcea3cc9922fd5a8b7e0de12",
+  "model_execution": false,
+  "registered_at": "2026-08-13T23:27:32.729769+00:00",
+  "schema_version": 1,
+  "status": "registered_before_analysis"
+}

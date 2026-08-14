@@ -1,0 +1,7 @@
+chemical_category,candidate_count,seed_count,unique_global_molecules,fraction_of_retained_candidates,fraction_of_genuine_nonseed
+exact_seed_identity,8960,8960,8960,0.025292015513941658,0.0
+same_identity_alternative_smiles,432,432,432,0.00121943646227933,0.0
+one_cut_mmp_derivative,43353,7892,43316,0.12237552997499027,0.12570823788673993
+scaffold_preserving_non_mmp_analogue,43425,6510,43056,0.12257876938537016,0.12591701220749849
+acyclic_non_mmp_analogue,7555,191,7555,0.021326024241945227,0.02190680546292806
+scaffold_changing_analogue,250537,9858,250072,0.7072082244214734,0.7264679444428336

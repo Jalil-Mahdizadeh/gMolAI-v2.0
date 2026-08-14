@@ -1,0 +1,27 @@
+{
+  "candidate_regeneration": false,
+  "classification": "useful_local_analogue_generator_not_supported",
+  "gate_values": {
+    "fraction_seeds_with_1_mmp": 0.7892,
+    "fraction_seeds_with_5_genuine_nonseed": 0.9993,
+    "global_nonseed_median_morgan": 0.5272727012634277,
+    "global_pairwise_mean_morgan": 0.45107218623161316,
+    "median_unique_nonseed_per_seed": 35.0,
+    "nonempty_seed_scaffold_retention": 0.17875978856113353
+  },
+  "gates": {
+    "genuine_nonseed_yield": true,
+    "mmp_seed_coverage": true,
+    "scaffold_locality": false,
+    "seed_similarity_local_not_trivial": true,
+    "unique_nonseed_yield": true,
+    "within_set_nontrivial_diversity": true
+  },
+  "headline": "NOT SUPPORTED",
+  "latent_perturbation": false,
+  "mmp_directed_generation": false,
+  "model_executed": false,
+  "schema_version": 1,
+  "scope": "unperturbed frozen Step-2b correct-condition candidate sets only",
+  "study_id": "gmolai-decoder-candidate-chemistry-step2c-v1"
+}

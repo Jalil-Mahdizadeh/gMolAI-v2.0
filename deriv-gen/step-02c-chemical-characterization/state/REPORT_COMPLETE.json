@@ -1,0 +1,78 @@
+{
+  "classification": "useful_local_analogue_generator_not_supported",
+  "completed_at": "2026-08-13T23:30:52.791392+00:00",
+  "outputs": {
+    "decision_json": {
+      "path": "outputs/decision.json",
+      "sha256": "572d597e8cb25607bb7a34f405bba92031616cc1fb12b3a1d175aab1280724f0",
+      "size_bytes": 972
+    },
+    "decision_markdown": {
+      "path": "DECISION.md",
+      "sha256": "817addbf512cb79107ff0c6db9bf06a496230b0f864a3801fefed0beabd11156",
+      "size_bytes": 440
+    },
+    "figure_01": {
+      "path": "outputs/figures/candidate_category_composition.png",
+      "sha256": "7ba262d41144326af8566fbd80f6976272d01584c8eeee29de7feb4093b30cd8",
+      "size_bytes": 96221
+    },
+    "figure_02": {
+      "path": "outputs/figures/candidate_category_composition.svg",
+      "sha256": "fe5f3a337e9c00607da13641e82d8a8391a9216277945a31e120f847162e8d3c",
+      "size_bytes": 48245
+    },
+    "figure_03": {
+      "path": "outputs/figures/per_seed_yield_and_mmp_coverage.png",
+      "sha256": "f0283e23a9645d024b0b59c37b32b46860642ffbb4f0ad0edad1cf22acd9751d",
+      "size_bytes": 111317
+    },
+    "figure_04": {
+      "path": "outputs/figures/per_seed_yield_and_mmp_coverage.svg",
+      "sha256": "16ebf354773a0e91260188fbfcff7e21c06f7c155b5b5629fa7ddb7297e26bf5",
+      "size_bytes": 57562
+    },
+    "figure_05": {
+      "path": "outputs/figures/seed_candidate_similarity_by_category.png",
+      "sha256": "e5b8af13ef50a3bcb05ac08d89d2c63dd27a6197617ea3b9c2f445aedf07ada5",
+      "size_bytes": 107030
+    },
+    "figure_06": {
+      "path": "outputs/figures/seed_candidate_similarity_by_category.svg",
+      "sha256": "c9764c78754998aa24ae58a848401e77fdb12b8fe1fd26cb5e0390f20a225c79",
+      "size_bytes": 38941
+    },
+    "figure_07": {
+      "path": "outputs/figures/within_set_structural_diversity.png",
+      "sha256": "6a62ac1887210de170ede54b90ce93ff0c915c7235be375eac708ceb061316bb",
+      "size_bytes": 379362
+    },
+    "figure_08": {
+      "path": "outputs/figures/within_set_structural_diversity.svg",
+      "sha256": "5056605fc910ae507ed724e86b0f043feb02a4684799e21a9154eb392ce98233",
+      "size_bytes": 1550942
+    },
+    "figure_09": {
+      "path": "outputs/figures/recurrent_mmp_transformations.png",
+      "sha256": "b983f89e3b42f32e44bc9c6c6f061e126e80a1714144b8dd5c8972716c5d38c6",
+      "size_bytes": 113040
+    },
+    "figure_10": {
+      "path": "outputs/figures/recurrent_mmp_transformations.svg",
+      "sha256": "6ac8a686b1a9da1fd595eb84e0daf9764a4d776678b8b79081bc5977dd3d7483",
+      "size_bytes": 58777
+    },
+    "readme": {
+      "path": "README.md",
+      "sha256": "e3819d55b5efa5860073f76a434d4bf8db35f1e2fa1816630473f5bb4286eeca",
+      "size_bytes": 1220
+    },
+    "results": {
+      "path": "RESULTS.md",
+      "sha256": "ee6d7d6acc40f4f07d02088a09cf4c3e2c3d8484e9216fd29262fb2016fbddb8",
+      "size_bytes": 6139
+    }
+  },
+  "schema_version": 1,
+  "status": "report_complete"
+}

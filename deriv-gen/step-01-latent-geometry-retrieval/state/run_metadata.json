@@ -1,0 +1,46 @@
+{
+  "command": [
+    "/repo/deriv-gen/step-01-latent-geometry-retrieval/scripts/day1_study.py",
+    "--repo-root",
+    "/repo",
+    "--step-root",
+    "/repo/deriv-gen/step-01-latent-geometry-retrieval"
+  ],
+  "config_sha256": "6c0316be0c67b97d71a3e430546405735a0a3d5498d23ba517c06d8f91f3a435",
+  "cpu_affinity": 72,
+  "finished_at": "2026-08-13T13:44:48.035253+00:00",
+  "fragmentation_workers": 48,
+  "git_commit": "ba4c96dc876ebfed2c84ed01733079726165f413",
+  "gpu": {
+    "count": 1,
+    "name": "NVIDIA GH200 120GB",
+    "total_memory_bytes": 102005473280
+  },
+  "hostname": "n54",
+  "input_manifest_sha256": "59e311c6b76c86e0ed773f5b459e108a2af09dd60765e8766c8d8b50b6b03010",
+  "input_sha256": {
+    "chemical_record_cache": "e2aac3617a2d6c719f2efae10e1296d1e234e50e405ba92f6522aff10ceee00d",
+    "container": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "dataset_manifest": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "descriptor_scaler": "120aaa0c7b59c36ffe2b3051273385bee0f82c1389d56ea4c56c7ba7952ea363",
+    "promoted_calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "train_raw_embeddings": "7cc13b3dd1780eafdd59fd26e9a24a20adbae333f82649fbdfa917b0333e7b77",
+    "validation_public_embeddings": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642"
+  },
+  "packages": {
+    "matplotlib": "3.10.5",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "rdkit": "2025.09.3",
+    "scikit_learn": "1.5.0",
+    "scipy": "1.15.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "platform": "Linux-5.14.0-687.31.1.el9_8.aarch64-aarch64-with-glibc2.39",
+  "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+  "schema_version": 1,
+  "started_at": "2026-08-13T13:34:40.983286+00:00",
+  "study_id": "gmolai-derivative-day1-v1",
+  "wall_time_seconds": 607.051983049023
+}

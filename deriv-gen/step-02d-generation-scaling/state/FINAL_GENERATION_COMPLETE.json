@@ -1,0 +1,21 @@
+{
+  "endpoint_labels_used": false,
+  "output_sha256": {
+    "outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-00-of-04.parquet": "d0ecb6cd1de6199bea3b98753d765387974f78ca485bf9e332fc1d566a1ce7db",
+    "outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-01-of-04.parquet": "1ddd4872cec919239e7af3a8492f1902ab5ba50a510bb5eea9de2c4fa2d8fcd7",
+    "outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-02-of-04.parquet": "7ec11945504b6d68899fc8d9c6557079490509fde6ec2ab29332e956eb768c0f",
+    "outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-03-of-04.parquet": "04b0948f23c80f74a05fb00ee45cc3754af53ceee4163b745afe7e135e4aed21"
+  },
+  "phase": "final",
+  "raw_proposals_per_strategy_seed": 1000,
+  "raw_rows": 10000000,
+  "schema_version": 1,
+  "sealed_at": "2026-08-14T05:14:54.832842+00:00",
+  "seed_rows": 10000,
+  "status": "complete",
+  "strategies": [
+    "hybrid_b500_s500_t120"
+  ],
+  "strategy_count": 1,
+  "test_rows": 0
+}

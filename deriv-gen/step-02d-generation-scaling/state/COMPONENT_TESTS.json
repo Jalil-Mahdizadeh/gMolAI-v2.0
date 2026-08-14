@@ -1,0 +1,13 @@
+{
+  "beam_order_test": "passed",
+  "completed_at": "2026-08-14T01:05:36.865631+00:00",
+  "decoder_condition_dimensions": 384,
+  "endpoint_labels_used": false,
+  "frozen_decoder": true,
+  "hybrid_merge_test": "passed",
+  "known_mmp_fragment_rows": 3,
+  "known_mmp_test": "passed",
+  "schema_version": 1,
+  "status": "complete",
+  "test_rows": 0
+}

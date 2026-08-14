@@ -426,6 +426,18 @@ all existing tables, equations, and paragraph order remain unchanged. The
 builder hash-checks every scientific input and reopens the serialized DOCX
 before accepting it.
 
+### Manuscript rev7 completed-benchmark integration
+
+`scripts/update_manuscript_rev7.py` constructs revision 7 directly from the
+hash-locked rev6 DOCX. It retains the completed locked-test comparison and the
+first 13 scientific tables, adds the seven-representation MoleculeNet/HIV and
+controlled encoding-speed results as Tables 14 and 15, and updates the Methods,
+Results, and Discussion with the frozen coverage and interpretation limits. It
+also removes rev6's embedded Figure 3 and its caption so the resulting DOCX has
+no embedded images. The builder verifies all three benchmark inputs and
+completion seals by SHA-256, preserves every existing equation and unedited
+paragraph, and validates the serialized Office archive before publication.
+
 ### Additional frozen-encoder benchmarks
 
 [`extra-benchmark/test-partition/`](extra-benchmark/test-partition/) contains

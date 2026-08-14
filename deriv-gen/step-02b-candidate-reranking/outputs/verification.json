@@ -1,0 +1,221 @@
+{
+  "checks": [
+    {
+      "check": "registered manifest hash is intact",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: config/protocol.json",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/candidate_model.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/common.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/evaluate_panel.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/freeze_policy.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/prepare_panels.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/register_study.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/report_results.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/run_study.sh",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/test_components.py",
+      "pass": true
+    },
+    {
+      "check": "registered source unchanged: scripts/verify_study.py",
+      "pass": true
+    },
+    {
+      "check": "Step 2b contains no trained checkpoint",
+      "pass": true
+    },
+    {
+      "check": "required state exists: PANELS_PREPARED.json",
+      "pass": true
+    },
+    {
+      "check": "required state exists: COMPONENT_TESTS.json",
+      "pass": true
+    },
+    {
+      "check": "required state exists: DEVELOPMENT_COMPLETE.json",
+      "pass": true
+    },
+    {
+      "check": "required state exists: POLICY_FROZEN.json",
+      "pass": true
+    },
+    {
+      "check": "required state exists: FINAL_COMPLETE.json",
+      "pass": true
+    },
+    {
+      "check": "required state exists: COMPLETE.json",
+      "pass": true
+    },
+    {
+      "check": "fresh final panel has registered size",
+      "pass": true
+    },
+    {
+      "check": "fresh final panel is disjoint from original Step-2 panel",
+      "pass": true
+    },
+    {
+      "check": "fresh final targets are unique",
+      "pass": true
+    },
+    {
+      "check": "policy was selected before final generation",
+      "pass": true
+    },
+    {
+      "check": "prospectively frozen final panel is unchanged",
+      "pass": true
+    },
+    {
+      "check": "final candidates use one frozen policy",
+      "pass": true
+    },
+    {
+      "check": "candidate proposal ranks stay inside registered sizes",
+      "pass": true
+    },
+    {
+      "check": "candidate molecular identities are unique within every query set",
+      "pass": true
+    },
+    {
+      "check": "every ranked candidate is policy-accepted canonical SMILES",
+      "pass": true
+    },
+    {
+      "check": "query-level metric coverage is complete",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: correct_embedding/k=1",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: correct_embedding/k=5",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: correct_embedding/k=10",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: correct_embedding/k=20",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: correct_embedding/k=50",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: shuffled_embedding/k=1",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: shuffled_embedding/k=5",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: shuffled_embedding/k=10",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: shuffled_embedding/k=20",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: shuffled_embedding/k=50",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: nearest_wrong_embedding/k=1",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: nearest_wrong_embedding/k=5",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: nearest_wrong_embedding/k=10",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: nearest_wrong_embedding/k=20",
+      "pass": true
+    },
+    {
+      "check": "target-blind relative-L2 reranking reproduced: nearest_wrong_embedding/k=50",
+      "pass": true
+    },
+    {
+      "check": "decision records target-blind ranking",
+      "pass": true
+    },
+    {
+      "check": "no latent perturbation was performed",
+      "pass": true
+    },
+    {
+      "check": "no derivative generation was performed",
+      "pass": true
+    },
+    {
+      "check": "locked test rows used equals zero",
+      "pass": true
+    },
+    {
+      "check": "endpoint labels were not used",
+      "pass": true
+    },
+    {
+      "check": "decision binds the frozen decoder",
+      "pass": true
+    },
+    {
+      "check": "decision binds frozen gMolAI",
+      "pass": true
+    }
+  ],
+  "checks_passed": 51,
+  "decision": "GO",
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "derivative_generation": false,
+  "endpoint_labels_used": false,
+  "fresh_panel_overlap_with_original_step2": 0,
+  "gmolai_checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+  "latent_perturbation": false,
+  "schema_version": 1,
+  "selected_policy": "beam64_lp00",
+  "status": "pass",
+  "test_rows": 0,
+  "verified_at": "2026-08-13T21:53:33.289052+00:00"
+}

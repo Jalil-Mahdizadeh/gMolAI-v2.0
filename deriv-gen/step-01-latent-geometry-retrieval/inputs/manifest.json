@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "policy": "immutable external inputs; no input is copied or modified",
+  "files": {
+    "train_raw_embeddings": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/train-raw-hybrid-step10000-calibration100k-seed271828.pt",
+      "sha256": "7cc13b3dd1780eafdd59fd26e9a24a20adbae333f82649fbdfa917b0333e7b77",
+      "split": "train",
+      "rows": 100000
+    },
+    "validation_public_embeddings": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/validation-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810-50k.pt",
+      "sha256": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+      "split": "validation",
+      "rows": 50000
+    },
+    "promoted_calibrator": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "chemical_record_cache": {
+      "path": "work/probe_chemical_records_cache_v1.json",
+      "sha256": "e2aac3617a2d6c719f2efae10e1296d1e234e50e405ba92f6522aff10ceee00d"
+    },
+    "dataset_manifest": {
+      "path": "work/dataset_manifest.json",
+      "sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788"
+    },
+    "descriptor_scaler": {
+      "path": "work/descriptor_scaler.json",
+      "sha256": "120aaa0c7b59c36ffe2b3051273385bee0f82c1389d56ea4c56c7ba7952ea363"
+    },
+    "container": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    }
+  },
+  "forbidden_inputs": [
+    "locked internal test-partition embeddings",
+    "MoleculeNet endpoint labels",
+    "HIV endpoint labels"
+  ]
+}
+

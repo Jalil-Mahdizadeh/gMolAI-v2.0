@@ -1,0 +1,186 @@
+{
+  "calibration_diagnostics": {
+    "maximum_absolute_coordinate_mean": 0.0744122639298439,
+    "maximum_absolute_coordinate_std_deviation_from_one": 0.03928375244140625,
+    "released_validation_reconstruction_max_abs_error": 0.0
+  },
+  "claim_boundary": "Retrieval geometry only; no decoder or novel-molecule generation was tested.",
+  "common_fitted_transformations": 89280,
+  "data": {
+    "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "identity_overlap": 0,
+    "sampling_seed": 1618033,
+    "test_rows": 0,
+    "train_rows": 1000000,
+    "validation_embedding_sha256": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+    "validation_rows": 50000
+  },
+  "decision": {
+    "claim_boundary": "Retrieval geometry only; this does not demonstrate decoding or novel-molecule generation.",
+    "decoder_conditioning_representation": "released_hybrid_w3",
+    "directional_transfer_by_support": [
+      {
+        "ci_high": 0.9028777570106364,
+        "ci_low": 0.8905991685939164,
+        "macro_alignment_gain": 0.8967019286299258,
+        "minimum_train_cores": 2,
+        "observations": 9074,
+        "space": "released_hybrid_w3",
+        "survives": true,
+        "transformations": 3964
+      },
+      {
+        "ci_high": 0.9012769573558912,
+        "ci_low": 0.879707627034841,
+        "macro_alignment_gain": 0.8904332326011308,
+        "minimum_train_cores": 5,
+        "observations": 5311,
+        "space": "released_hybrid_w3",
+        "survives": true,
+        "transformations": 1248
+      },
+      {
+        "ci_high": 0.9000182795279636,
+        "ci_low": 0.8663047755825598,
+        "macro_alignment_gain": 0.8830685361128711,
+        "minimum_train_cores": 10,
+        "observations": 3396,
+        "space": "released_hybrid_w3",
+        "survives": true,
+        "transformations": 420
+      },
+      {
+        "ci_high": 0.899259983188314,
+        "ci_low": 0.849281463866725,
+        "macro_alignment_gain": 0.8739190515969218,
+        "minimum_train_cores": 20,
+        "observations": 2123,
+        "space": "released_hybrid_w3",
+        "survives": true,
+        "transformations": 141
+      }
+    ],
+    "formal_selection_powered": true,
+    "mean_node_128_assessment": {
+      "conclusion": "Mean-node-128 remains the strongest directional-alignment space and is Pareto-optimal, but it is not the unique overall winner; released weight 3 has the highest exact recall and wins the compatibility-aware frozen rule.",
+      "directional_alignment_leader": true,
+      "exact_retrieval_leader": false,
+      "pareto_optimal": true,
+      "unique_overall_winner": false
+    },
+    "mean_node_128_remains_strongest": "directionally_yes_but_not_unique_overall",
+    "pareto_spaces": [
+      "mean_node_128",
+      "released_hybrid_w3",
+      "hybrid_w6"
+    ],
+    "primary_support_threshold": 5,
+    "released_w3_vs_unweighted_w1": {
+      "conclusion": "Weight 3 clearly improves directional alignment over weight 1; exact retrieval is numerically higher but its paired confidence interval includes zero.",
+      "macro_deltas_w3_minus_w1": {
+        "alignment_gain": 0.0524667485642529,
+        "exact_derivative_recall_at_1": 0.001606777680397,
+        "exact_requested_transform": 0.001606777680397
+      },
+      "metrics": {
+        "alignment_gain": {
+          "ci_high": 0.0566889044843574,
+          "ci_low": 0.0480155343632786,
+          "macro_delta_w3_minus_w1": 0.0524667485642529,
+          "statistically_resolved_negative": false,
+          "statistically_resolved_positive": true
+        },
+        "exact_derivative_recall_at_1": {
+          "ci_high": 0.0103710195734735,
+          "ci_low": -0.0067192521180251,
+          "macro_delta_w3_minus_w1": 0.001606777680397,
+          "statistically_resolved_negative": false,
+          "statistically_resolved_positive": false
+        },
+        "exact_requested_transform": {
+          "ci_high": 0.0103710195734735,
+          "ci_low": -0.0067192521180251,
+          "macro_delta_w3_minus_w1": 0.001606777680397,
+          "statistically_resolved_negative": false,
+          "statistically_resolved_positive": false
+        }
+      }
+    },
+    "schema_version": 1,
+    "selected_edit_control_space": "released_hybrid_w3",
+    "selection_reason": "The released weight-3 hybrid is viable and within every predeclared non-inferiority margin of the Pareto frontier, so representation compatibility breaks the tie.",
+    "viable_spaces": [
+      "graph_256",
+      "mean_node_128",
+      "hybrid_w1",
+      "released_hybrid_w3",
+      "hybrid_w6"
+    ]
+  },
+  "fragmentation": {
+    "train": {
+      "eligible_fragmentations": 6084924,
+      "molecules": 1000000,
+      "molecules_with_eligible_fragments": 995161,
+      "parse_failures": 0
+    },
+    "validation": {
+      "eligible_fragmentations": 288622,
+      "molecules": 50000,
+      "molecules_with_eligible_fragments": 49763,
+      "parse_failures": 0
+    }
+  },
+  "methods": [
+    "seed_nn",
+    "isotropic",
+    "global_covariance",
+    "local_covariance",
+    "mismatched_mmp_direction",
+    "mmp_direction",
+    "interpolation_0.25",
+    "interpolation_0.50",
+    "interpolation_0.75",
+    "interpolation_1.00"
+  ],
+  "mmp_mining": {
+    "eligible_unseen_core_validation": {
+      "observations": 9074,
+      "transformations": 3964
+    },
+    "train": {
+      "core_transform_observations": 1461391,
+      "fragment_groups": 6084924,
+      "molecule_pair_multiplicity": 1461391,
+      "transformations": 1323920
+    },
+    "validation": {
+      "core_transform_observations": 41228,
+      "fragment_groups": 288622,
+      "molecule_pair_multiplicity": 41228,
+      "transformations": 34659
+    }
+  },
+  "reporting_note": "Weight-3 versus weight-1 language uses paired hierarchical confidence intervals; directional leadership is separated from the final compatibility-aware selection.",
+  "retrieval_queries": 2048,
+  "schema_version": 1,
+  "spaces": [
+    "graph_256",
+    "mean_node_128",
+    "hybrid_w1",
+    "released_hybrid_w3",
+    "hybrid_w6"
+  ],
+  "statistics": {
+    "ci_alpha": 0.05,
+    "hierarchical_bootstrap_resamples": 2000,
+    "support_cohorts": [
+      2,
+      5,
+      10,
+      20
+    ]
+  },
+  "study_id": "gmolai-derivative-scaled-space-selection-v1"
+}

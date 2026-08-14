@@ -1,0 +1,23 @@
+{
+  "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+  "completed_at": "2026-08-13T21:49:23.361790+00:00",
+  "decision": "GO",
+  "decision_sha256": "2eba2f34ae8435d4d4c4f3fe411dd80461aa356ec6201e29811cc5e688127576",
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "decoder_training": false,
+  "derivative_generation": false,
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "final_metrics_sha256": "960bf624ea03ead675d31a22b3a0d83acb92313ff761136ed4e34f364aea5175",
+  "final_query_results_sha256": "82c4775fbe1ada8f2d106d1f7efebb738e4e5784b3fa1a8e4818c0942eba89ce",
+  "fresh_final_rows_per_control": 10000,
+  "gmolai_checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+  "latent_perturbation": false,
+  "original_step2_panel_overlap": 0,
+  "ranking_used_target_structure": false,
+  "results_sha256": "ec1b6418fbbf9461e5709883427fda18d27c961e9963ebd609fe108350f2bed2",
+  "schema_version": 1,
+  "selected_policy": "beam64_lp00",
+  "status": "complete",
+  "test_rows": 0
+}

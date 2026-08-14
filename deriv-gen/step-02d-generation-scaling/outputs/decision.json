@@ -1,0 +1,55 @@
+{
+  "bounded_answer": "The frozen unperturbed gMolAI-conditioned decoder meets the preregistered large-library definition.",
+  "budget_1000": {
+    "mean_distinct_scaffolds_per_seed": 110.596,
+    "mean_genuine_nonseed_per_seed": 210.6446,
+    "mean_mmp_per_seed": 19.469,
+    "mean_novel_useful_local_per_seed": 37.7012,
+    "mean_same_scaffold_non_mmp_per_seed": 18.2363,
+    "mean_unique_identities_per_seed": 211.6072,
+    "median_seed_candidate_morgan_nonseed": 0.460317462682724,
+    "median_unique_identities_per_seed": 182.0,
+    "mmp_fraction_among_genuine_nonseed": 0.0924258205527224,
+    "novel_fraction_among_genuine_nonseed": 0.9999254668764356,
+    "policy_accepted_fraction": 0.7127173,
+    "same_scaffold_fraction_among_eligible_nonseed": 0.1252867956216438,
+    "valid_fraction": 0.7129675,
+    "within_pairwise_morgan_weighted_mean": 0.3933644914450682
+  },
+  "development_selection": {
+    "final_data_visible": false,
+    "median_seed_candidate_morgan_at_1000": 0.4857142865657806,
+    "primary_mean_novel_useful_local_at_1000": 36.083984375,
+    "raw_policy_acceptance_at_1000": 0.690103515625
+  },
+  "diminishing_returns_begin_budget": 250,
+  "final_panel_rows": 10000,
+  "large_useful_analogue_library_supported": true,
+  "prospective_large_library_gates": {
+    "median_novel_useful_local": true,
+    "median_unique_policy_accepted": true,
+    "novel_fraction_among_genuine_nonseed": true,
+    "raw_policy_acceptance": true,
+    "seed_fraction_with_10_novel_useful_local": true
+  },
+  "recommended_budget_rule": "smallest registered budget reaching at least 90% of budget-1000 mean novel useful-local yield",
+  "recommended_raw_proposal_budget": 1000,
+  "saturation_budget": null,
+  "schema_version": 1,
+  "scope_limits": [
+    "No claim of synthesizability, activity, or property improvement.",
+    "No latent perturbation, MMP-direction editing, property optimization, or Step 3 was performed.",
+    "Novelty is defined only against the 980,000 decoder-fit identities."
+  ],
+  "selected_generation_strategy": {
+    "beam_hypotheses": 500,
+    "kind": "hybrid",
+    "length_penalty": 0.0,
+    "merge": "proportional_balanced",
+    "name": "hybrid_b500_s500_t120",
+    "registered_order": 7,
+    "sample_hypotheses": 500,
+    "sample_pool": "t120_p0995"
+  },
+  "study_id": "gmolai-frozen-decoder-generation-scaling-step2d-v1"
+}

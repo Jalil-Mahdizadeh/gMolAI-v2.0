@@ -1,0 +1,53 @@
+{
+  "command": [
+    "/repo/deriv-gen/step-01b-scaled-space-selection/scripts/analyze_spaces.py",
+    "--repo-root",
+    "/repo",
+    "--step-root",
+    "/repo/deriv-gen/step-01b-scaled-space-selection"
+  ],
+  "config_sha256": "5d5804006701986da5d858fca00dc5d7efc9d28b97d880eec3e84466067f23bf",
+  "cpu_affinity": 72,
+  "finished_at": "2026-08-13T15:36:00.820003+00:00",
+  "git_commit": "ba4c96dc876ebfed2c84ed01733079726165f413",
+  "git_status_at_completion": "M README.md\n M graphify-out/.graphify_learning.json\n M graphify-out/reflections/LESSONS.md\n?? deriv-gen/\n?? graphify-out/memory/query_20260813_110823_update_gmolai_rev6_docx_to_rev7_using_the_complete.md\n?? graphify-out/memory/query_20260813_112729_the_root_extra_benchmark_readme_md_still_says_that.md\n?? scripts/update_manuscript_rev7.py",
+  "gpu": {
+    "name": "NVIDIA GH200 120GB",
+    "total_memory_bytes": 102005473280,
+    "visible_count": 1
+  },
+  "hostname": "n54",
+  "input_sha256": {
+    "base_config": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+    "calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "chemical_record_cache": "e2aac3617a2d6c719f2efae10e1296d1e234e50e405ba92f6522aff10ceee00d",
+    "container": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "dataset_manifest": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "descriptor_scaler": "120aaa0c7b59c36ffe2b3051273385bee0f82c1389d56ea4c56c7ba7952ea363",
+    "graph_manifest": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+    "resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+    "training_plan": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61",
+    "validation_embeddings": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642"
+  },
+  "manifest_sha256": "8e68cb57d2f7ac0f327c79feaf6552cb1e3c6c28859e692ec059dfcd7dc82ea2",
+  "packages": {
+    "matplotlib": "3.10.5",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "rdkit": "2025.09.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "platform": "Linux-5.14.0-687.31.1.el9_8.aarch64-aarch64-with-glibc2.39",
+  "python": "3.12.3 (main, Jun 18 2025, 17:59:45) [GCC 13.3.0]",
+  "schema_version": 1,
+  "stage_seal_sha256": {
+    "export": "1ad074fa33dcc4128f68883465d5660a4bb5ca1af7c6ca7060f6b1952a5129fd",
+    "fragmentation": "15ebb8ef3121c722beccbc7b203262f2da8f6bc83ed34604c4b893ddf4a6a273",
+    "mmp_mining": "f9c58f7b8e7af699d8c10b715aef7a72d34d6d9caec0c88a0c0eb91e7343d914"
+  },
+  "started_at": "2026-08-13T15:27:44.166674+00:00",
+  "study_id": "gmolai-derivative-scaled-space-selection-v1",
+  "wall_time_seconds": 496.6533113999758
+}

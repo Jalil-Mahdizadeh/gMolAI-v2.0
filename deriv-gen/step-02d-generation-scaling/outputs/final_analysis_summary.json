@@ -1,0 +1,37 @@
+{
+  "budgets": [
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "completed_at": "2026-08-14T05:27:36.000215+00:00",
+  "decoder_training": false,
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "latent_perturbation": false,
+  "mmp_direction_editing": false,
+  "novelty_reference_rows": 980000,
+  "output_sha256": {
+    "budget_summary": "544bfcb5ea080b5f4fd0d42f985e4b4d49c9d629bfecfb200d7d07d148e6b6fd",
+    "candidate_characterization": "b08e753a85dec8299e4edd0aa8609ebde0f9a3b5cd99dd36487a80ae1f380f5c",
+    "diversity_histogram": "cf1848446169c7b305fdf30f350982e946389d502ddfdea17bd8e1864a1c27c3",
+    "incremental": "0c4fdb8800fba0051d9f596d24338190bb554a34f3fbd31e3d73b578befb124c",
+    "seed_budget_metrics": "20aa4fd76a3ae146d7f9667dd5915feb07120afb7fec60a5c8f61d5da455bcc2",
+    "similarity": "dd63b7bd31e54b8a8efab2eca3775c39124b07aa739ad2bd8627afcd18b890fc"
+  },
+  "phase": "final",
+  "policy_audit_unique_raw_strings": 5158999,
+  "raw_rows": 10000000,
+  "schema_version": 1,
+  "seed_rows": 10000,
+  "strategies": [
+    "hybrid_b500_s500_t120"
+  ],
+  "test_rows": 0,
+  "unique_molecules_fragmented": 2108115,
+  "unique_seed_candidate_chemistry_pairs": 2116072,
+  "unique_strategy_seed_candidate_rows": 2116072,
+  "wall_seconds": 733.0540094249882
+}

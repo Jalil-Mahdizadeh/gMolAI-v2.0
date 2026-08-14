@@ -1,0 +1,30 @@
+{
+  "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "decoder_training": false,
+  "derivative_generation": false,
+  "embedding_space": "released_hybrid_w3",
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "gmolai_checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+  "latent_perturbation": false,
+  "manifest_sha256": "c778211476da11dbd94f9ac8c5f12e4ef2022d74db46f19e53e0fa21363fa0a1",
+  "protocol_sha256": "10c36f12c94273e9cf7d04b5d41a6fddc0a739ec81f7115b9c91957c83496e0b",
+  "registered_at": "2026-08-13T20:10:56.817831+00:00",
+  "registered_source_sha256": {
+    "config/protocol.json": "10c36f12c94273e9cf7d04b5d41a6fddc0a739ec81f7115b9c91957c83496e0b",
+    "scripts/candidate_model.py": "806a0b543460201f344a5bf0f379d3db2c1768fd9b13ab8246b6471c69f1d5f7",
+    "scripts/common.py": "5883de3a4c96e1ebf63eace410ccf3c5c64c337d903f3ef30a9dca92ee4a7989",
+    "scripts/evaluate_panel.py": "1bcee48a3b567be242f11de5558e2c5e5dd3a976db805b7f52d87530835694cb",
+    "scripts/freeze_policy.py": "a6333416fb926fa29b1f56742dc5b009eaee59000cbbd1668a5b10027d3dbd64",
+    "scripts/prepare_panels.py": "72451c1913ed353b37908db33ef9783fe7b4d542e65d6fbd8b6e6932a6e2e501",
+    "scripts/register_study.py": "c148fc3268b0d5aa3e6b43ea65b0b7bc1fb1108404a86a703cc5a4c2f6ad8904",
+    "scripts/report_results.py": "387d63448f003cfec99be5af9c96d33854e0d13228c9624814c94047b74fa953",
+    "scripts/run_study.sh": "d9685e112dd253ceb403a0cd6e84874aeea150ac082d28287ae52108fc6b40f3",
+    "scripts/test_components.py": "c4259020fb1a7632c03d03b5f35ed4915e51452644e006d19146b1ba03dcb195",
+    "scripts/verify_study.py": "240df843ffc1f8d539333943c2c464c6439fde3dff876769ad38f5e14f2655b3"
+  },
+  "schema_version": 1,
+  "status": "registered_before_candidate_generation",
+  "test_rows": 0
+}

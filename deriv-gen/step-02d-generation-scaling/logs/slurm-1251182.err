@@ -1,0 +1,9 @@
+[2026-08-14T03:06:12.175] error: Not enough gres to bind 1 per task
+[2026-08-14T03:06:12.175] error: Bind request gres/gpu:per_task:1 does not specify any devices within the allocation for task 1. Binding to the first device in the allocation instead.
+[2026-08-14T03:06:12.182] error: Not enough gres to bind 1 per task
+[2026-08-14T03:06:12.182] error: Bind request gres/gpu:per_task:1 does not specify any devices within the allocation for task 2. Binding to the first device in the allocation instead.
+[2026-08-14T03:06:12.795] error: Not enough gres to bind 1 per task
+[2026-08-14T03:06:12.795] error: Bind request gres/gpu:per_task:1 does not specify any devices within the allocation for task 3. Binding to the first device in the allocation instead.
+srun: Job step aborted: Waiting up to 122 seconds for job step to finish.
+[2026-08-14T03:07:23.119] error: *** JOB 1251182 ON n185 CANCELLED AT 2026-08-14T03:07:23 DUE to SIGNAL Terminated ***
+[2026-08-14T03:07:23.141] error: *** STEP 1251182.0 ON n185 CANCELLED AT 2026-08-14T03:07:23 DUE to SIGNAL Terminated ***

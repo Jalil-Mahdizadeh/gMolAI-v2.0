@@ -1,0 +1,45 @@
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/concurrent/futures/process.py", line 263, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/process.py", line 212, in _process_chunk
+    return [fn(*args) for args in chunk]
+            ^^^^^^^^^
+  File "/repo/deriv-gen/step-02c-chemical-characterization/scripts/audit_core.py", line 79, in _policy_audit_worker
+    result = canonicalize(
+             ^^^^^^^^^^^^^
+  File "/repo/src/gmolai_retrain/chem.py", line 83, in canonicalize
+    fragments = Chem.GetMolFrags(mol, asMols=True, sanitizeFrags=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rdkit.Chem.rdchem.AtomValenceException: Explicit valence for atom # 3 C, 5, is greater than permitted
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/repo/deriv-gen/step-02d-generation-scaling/scripts/analyze_phase.py", line 827, in <module>
+    main()
+  File "/repo/deriv-gen/step-02d-generation-scaling/scripts/analyze_phase.py", line 747, in main
+    audit, raw_metrics, raw_candidates = audit_and_extract(
+                                         ^^^^^^^^^^^^^^^^^^
+  File "/repo/deriv-gen/step-02d-generation-scaling/scripts/analyze_phase.py", line 124, in audit_and_extract
+    audit = audit_raw_smiles(
+            ^^^^^^^^^^^^^^^^^
+  File "/repo/deriv-gen/step-02c-chemical-characterization/scripts/audit_core.py", line 140, in audit_raw_smiles
+    for completed, record in enumerate(
+  File "/usr/lib/python3.12/concurrent/futures/process.py", line 642, in _chain_from_iterable_of_lists
+    for element in iterable:
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+rdkit.Chem.rdchem.AtomValenceException: Explicit valence for atom # 3 C, 5, is greater than permitted

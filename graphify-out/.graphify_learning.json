@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T09:40:36.960263+00:00",
+  "generated_at": "2026-08-14T06:25:52.673230+00:00",
   "nodes": {
     "artifacts_manuscript_rev4_readme_manuscript_rev4_exact_downstream_molecule_exposure_audit": {
       "code_fingerprint": "b02733544deba3642092338c7cb86f235fcbfcd689edb495840f6f96ea60f026",
@@ -17,7 +17,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 1.942275722,
+      "score": 1.903853556,
       "source_file": "artifacts/manuscript-rev4/README.md",
       "status": "preferred",
       "uses": 2
@@ -33,26 +33,75 @@
           "q": "gmolai is the smallest model but it is much slower compare to others. why is it?"
         }
       ],
-      "score": 0.989340244,
+      "score": 0.96976908,
       "source_file": "configs/representation-pilot-contrastive-0005.yaml",
       "status": "tentative",
       "uses": 1
     },
+    "configs_retrain_molecular_canonicalization_policy": {
+      "code_fingerprint": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+      "label": "Molecular Canonicalization Policy",
+      "last": "2026-08-14T06:17:36.783546+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-14T06:17:36.783546+00:00",
+          "outcome": "useful",
+          "q": "I do not see the valid plot (blue) in quality_locality_diversity_scaling.png"
+        },
+        {
+          "date": "2026-08-13T23:33:01.515365+00:00",
+          "outcome": "useful",
+          "q": "Move to Step 2c: chemical characterization of the frozen Step-2b 50-candidate correct-condition sets using the Step-1b one-cut MMP rules, without training, regeneration, or latent perturbation."
+        }
+      ],
+      "score": 1.99326504,
+      "source_file": "configs/retrain.yaml",
+      "status": "preferred",
+      "uses": 2
+    },
+    "extra_benchmark_moleculenet_results_moleculenet_development_panel_plus_hiv_completed_results": {
+      "code_fingerprint": "15f6ea3e8435b07e7499b0b6d60a358617d57efa2bdd085f126c85b55543f708",
+      "label": "MoleculeNet development panel plus HIV: completed results",
+      "last": "2026-08-13T11:27:29.998868+00:00",
+      "neg": 1,
+      "provenance": [
+        {
+          "date": "2026-08-13T11:27:29.998868+00:00",
+          "outcome": "corrected",
+          "q": "The root extra-benchmark/README.md still says that moleculenet has not been executed while the MoleculeNet run is complete, and moleculenet/RESULTS.md says a controlled throughput benchmark is still needed even though speed is complete. Why were these missed, and can I rely on the documentation review?"
+        },
+        {
+          "date": "2026-08-13T11:08:23.069112+00:00",
+          "outcome": "useful",
+          "q": "Update gmolai-rev6.docx to rev7 using the completed test-partition, MoleculeNet plus HIV, and speed benchmarks; stage the speed plots in the manuscript figures directory, embed no figures, and leave rev6 untouched."
+        }
+      ],
+      "score": -0.000301112,
+      "source_file": "extra-benchmark/moleculenet/RESULTS.md",
+      "status": "contested",
+      "uses": 1,
+      "verdict": "dead end"
+    },
     "extra_benchmark_speed_scripts_speed_adapter": {
       "code_fingerprint": "d580734c9c8fc84adcf59d6879f6800089b0eba6a8403d03823860c5c15f68da",
       "label": "speed_adapter.py",
-      "last": "2026-08-13T09:33:34.057044+00:00",
+      "last": "2026-08-13T11:08:23.069112+00:00",
       "provenance": [
+        {
+          "date": "2026-08-13T11:08:23.069112+00:00",
+          "outcome": "useful",
+          "q": "Update gmolai-rev6.docx to rev7 using the completed test-partition, MoleculeNet plus HIV, and speed benchmarks; stage the speed plots in the manuscript figures directory, embed no figures, and leave rev6 untouched."
+        },
         {
           "date": "2026-08-13T09:33:34.057044+00:00",
           "outcome": "useful",
           "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
         }
       ],
-      "score": 0.999886915,
+      "score": 1.961706448,
       "source_file": "extra-benchmark/speed/scripts/speed_adapter.py",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 2
     },
     "extra_benchmark_speed_scripts_speed_adapter_load_gmolai": {
       "code_fingerprint": "d580734c9c8fc84adcf59d6879f6800089b0eba6a8403d03823860c5c15f68da",
@@ -65,8 +114,24 @@
           "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
         }
       ],
-      "score": 0.999886915,
+      "score": 0.980107117,
       "source_file": "extra-benchmark/speed/scripts/speed_adapter.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "extra_benchmark_test_partition_results": {
+      "code_fingerprint": "9223b30d15c12dcfd62f7a7db4ab088919ad0ba96f1c6ec9f3b232ad3d9fa80b",
+      "label": "test-partition/RESULTS.md",
+      "last": "2026-08-13T11:08:23.069112+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T11:08:23.069112+00:00",
+          "outcome": "useful",
+          "q": "Update gmolai-rev6.docx to rev7 using the completed test-partition, MoleculeNet plus HIV, and speed benchmarks; stage the speed plots in the manuscript figures directory, embed no figures, and leave rev6 untouched."
+        }
+      ],
+      "score": 0.981599331,
+      "source_file": "extra-benchmark/test-partition/RESULTS.md",
       "status": "tentative",
       "uses": 1
     },
@@ -81,7 +146,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.95420088,
+      "score": 0.935324845,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -97,7 +162,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.95420088,
+      "score": 0.935324845,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -123,7 +188,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 2.867628143,
+      "score": 2.810900623,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "preferred",
       "uses": 3
@@ -139,7 +204,7 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.95420088,
+      "score": 0.935324845,
       "source_file": "graphify-out/memory/query_20260811_085846_how_does_raw_molecule_data_flow_from_verified_sour.md",
       "status": "tentative",
       "uses": 1
@@ -160,7 +225,7 @@
           "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
         }
       ],
-      "score": 1.932288344,
+      "score": 1.894063749,
       "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
       "status": "preferred",
       "uses": 2
@@ -181,13 +246,34 @@
           "q": "one important question has emerged: at training step 15k, all parameters have been improved just FreeSolv. Reviewers will definetly ask why we did not promote 15k checkpoint instead."
         }
       ],
-      "score": 1.932288344,
+      "score": 1.894063749,
       "source_file": "graphify-out/memory/query_20260811_110950_one_important_question_has_emerged__at_training_st.md",
       "status": "preferred",
       "uses": 2
     },
+    "inference_generate_embeddings": {
+      "code_fingerprint": "c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612",
+      "label": "generate_embeddings.py",
+      "last": "2026-08-13T21:54:29.246937+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T21:54:29.246937+00:00",
+          "outcome": "useful",
+          "q": "Step 2b frozen-decoder candidate generation and frozen-gMolAI latent reranking on a fresh validation panel"
+        },
+        {
+          "date": "2026-08-13T09:46:02.179242+00:00",
+          "outcome": "useful",
+          "q": "is the use face folder 'inference' current? I mean is it using the speed-optimized pipeline instead of old slow one?"
+        }
+      ],
+      "score": 1.972131492,
+      "source_file": "inference/generate_embeddings.py",
+      "status": "preferred",
+      "uses": 2
+    },
     "inference_readme_runtime_environment": {
-      "code_fingerprint": "39b7f7663f70f4087f1cb276a8e6263f737897d72098a01677143abd5cbd75c8",
+      "code_fingerprint": "8fff620d10ff7e2d4f4b457d658483d4b32c68c182bee018ddbdafaa981d4cd6",
       "label": "PyTorch Geometric RDKit Inference Environment",
       "last": "2026-08-12T22:32:41.187954+00:00",
       "provenance": [
@@ -197,13 +283,13 @@
           "q": "gmolai is the smallest model but it is much slower compare to others. why is it?"
         }
       ],
-      "score": 0.989340244,
+      "score": 0.96976908,
       "source_file": "inference/README.md",
       "status": "tentative",
       "uses": 1
     },
     "inference_readme_self_contained_inference_entry_point": {
-      "code_fingerprint": "39b7f7663f70f4087f1cb276a8e6263f737897d72098a01677143abd5cbd75c8",
+      "code_fingerprint": "8fff620d10ff7e2d4f4b457d658483d4b32c68c182bee018ddbdafaa981d4cd6",
       "label": "Self-Contained Inference Entry Point",
       "last": "2026-08-11T08:58:46.839890+00:00",
       "provenance": [
@@ -213,8 +299,24 @@
           "q": "How does raw molecule data flow from verified sources through representation training and promotion into production inference?"
         }
       ],
-      "score": 0.95420088,
+      "score": 0.935324845,
       "source_file": "inference/README.md",
+      "status": "tentative",
+      "uses": 1
+    },
+    "readme_encoder_capability_boundary": {
+      "code_fingerprint": "ce2f83d3324914530240987ac19c95a811ce075bf58b3e9c2c5ea63a6a3b4327",
+      "label": "Encoder/Reconstructor Capability Boundary",
+      "last": "2026-08-13T21:54:29.246937+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T21:54:29.246937+00:00",
+          "outcome": "useful",
+          "q": "Step 2b frozen-decoder candidate generation and frozen-gMolAI latent reranking on a fresh validation panel"
+        }
+      ],
+      "score": 0.991828274,
+      "source_file": "README.md",
       "status": "tentative",
       "uses": 1
     },
@@ -229,7 +331,7 @@
           "q": "Calculate the embedding time for each model and Morgan from the MoleculeNet plus HIV benchmark"
         }
       ],
-      "score": 0.98618334,
+      "score": 0.966674627,
       "source_file": "REPRESENTATION_REPAIR.md",
       "status": "tentative",
       "uses": 1
@@ -245,8 +347,24 @@
           "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
         }
       ],
-      "score": 0.999886915,
+      "score": 0.980107117,
       "source_file": "slurm/common.sh",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_chem_canonicalmolecule": {
+      "code_fingerprint": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3",
+      "label": "CanonicalMolecule",
+      "last": "2026-08-13T19:10:00.725419+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T19:10:00.725419+00:00",
+          "outcome": "useful",
+          "q": "the results are very promising and I accept your decission. Proceed to the next step only: train and validate a molecular decoder conditioned on the frozen released gMolAI representation."
+        }
+      ],
+      "score": 0.989214271,
+      "source_file": "src/gmolai_retrain/chem.py",
       "status": "tentative",
       "uses": 1
     },
@@ -261,7 +379,7 @@
           "q": "gmolai is the smallest model but it is much slower compare to others. why is it?"
         }
       ],
-      "score": 0.989340244,
+      "score": 0.96976908,
       "source_file": "src/gmolai_retrain/chem.py",
       "status": "tentative",
       "uses": 1
@@ -277,7 +395,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.966196968,
+      "score": 0.947083626,
       "source_file": "src/gmolai_retrain/cli.py",
       "status": "tentative",
       "uses": 1
@@ -293,7 +411,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.966196968,
+      "score": 0.947083626,
       "source_file": "src/gmolai_retrain/downstream_audit.py",
       "status": "tentative",
       "uses": 1
@@ -309,7 +427,7 @@
           "q": "Audit the completed MoleculeNet plus HIV benchmark implementation and artifact flow"
         }
       ],
-      "score": 0.986113709,
+      "score": 0.966606373,
       "source_file": "src/gmolai_retrain/downstream_audit.py",
       "status": "tentative",
       "uses": 1
@@ -325,7 +443,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.966196968,
+      "score": 0.947083626,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
       "status": "tentative",
       "uses": 1
@@ -341,7 +459,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.966196968,
+      "score": 0.947083626,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
       "status": "tentative",
       "uses": 1
@@ -357,7 +475,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.966196968,
+      "score": 0.947083626,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
       "status": "tentative",
       "uses": 1
@@ -373,7 +491,7 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.966196968,
+      "score": 0.947083626,
       "source_file": "src/gmolai_retrain/downstream_exposure.py",
       "status": "tentative",
       "uses": 1
@@ -389,7 +507,7 @@
           "q": "Audit the completed MoleculeNet plus HIV benchmark implementation and artifact flow"
         }
       ],
-      "score": 0.986113709,
+      "score": 0.966606373,
       "source_file": "src/gmolai_retrain/downstream.py",
       "status": "tentative",
       "uses": 1
@@ -405,26 +523,78 @@
           "q": "Perform a no-training audit of actual downstream-molecule exposure for every retained seed-42 checkpoint from 5k through 15k."
         }
       ],
-      "score": 0.966196968,
+      "score": 0.947083626,
       "source_file": "src/gmolai_retrain/exposure.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "src_gmolai_retrain_fast_inference_build_smiles_encoder": {
+      "code_fingerprint": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba",
+      "label": "build_smiles_encoder()",
+      "last": "2026-08-13T09:46:02.179242+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T09:46:02.179242+00:00",
+          "outcome": "useful",
+          "q": "is the use face folder 'inference' current? I mean is it using the speed-optimized pipeline instead of old slow one?"
+        }
+      ],
+      "score": 0.980303218,
+      "source_file": "src/gmolai_retrain/fast_inference.py",
       "status": "tentative",
       "uses": 1
     },
     "src_gmolai_retrain_fast_inference_optimizedsmilesencoder": {
       "code_fingerprint": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba",
       "label": "OptimizedSmilesEncoder",
-      "last": "2026-08-13T09:33:34.057044+00:00",
+      "last": "2026-08-13T21:54:29.246937+00:00",
       "provenance": [
+        {
+          "date": "2026-08-13T21:54:29.246937+00:00",
+          "outcome": "useful",
+          "q": "Step 2b frozen-decoder candidate generation and frozen-gMolAI latent reranking on a fresh validation panel"
+        },
+        {
+          "date": "2026-08-13T19:10:00.725419+00:00",
+          "outcome": "useful",
+          "q": "the results are very promising and I accept your decission. Proceed to the next step only: train and validate a molecular decoder conditioned on the frozen released gMolAI representation."
+        },
+        {
+          "date": "2026-08-13T09:46:02.179242+00:00",
+          "outcome": "useful",
+          "q": "is the use face folder 'inference' current? I mean is it using the speed-optimized pipeline instead of old slow one?"
+        },
         {
           "date": "2026-08-13T09:33:34.057044+00:00",
           "outcome": "useful",
           "q": "Complete the optimized single-GPU speed benchmark for gMolAI, Morgan, and competitor models at batch sizes 64, 128, 256, and 512 with the qualified worker count, then replace old speed artifacts and update documentation."
         }
       ],
-      "score": 0.999886915,
+      "score": 3.94145288,
       "source_file": "src/gmolai_retrain/fast_inference.py",
-      "status": "tentative",
-      "uses": 1
+      "status": "preferred",
+      "uses": 4
+    },
+    "src_gmolai_retrain_model_graphconditionededgedecoder": {
+      "code_fingerprint": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02",
+      "label": "GraphConditionedEdgeDecoder",
+      "last": "2026-08-13T23:33:01.515365+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T23:33:01.515365+00:00",
+          "outcome": "useful",
+          "q": "Move to Step 2c: chemical characterization of the frozen Step-2b 50-candidate correct-condition sets using the Step-1b one-cut MMP rules, without training, regeneration, or latent perturbation."
+        },
+        {
+          "date": "2026-08-13T19:10:00.725419+00:00",
+          "outcome": "useful",
+          "q": "the results are very promising and I accept your decission. Proceed to the next step only: train and validate a molecular decoder conditioned on the frozen released gMolAI representation."
+        }
+      ],
+      "score": 1.982611912,
+      "source_file": "src/gmolai_retrain/model.py",
+      "status": "preferred",
+      "uses": 2
     },
     "src_gmolai_retrain_model_molecularrepresentationmodel": {
       "code_fingerprint": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02",
@@ -437,7 +607,7 @@
           "q": "Explore and fully understand this repository. Expanded query tokens: architecture, pipeline, data, model, training, inference, evaluation, validation, checkpoints, reproducibility, promotion, audit."
         }
       ],
-      "score": 0.998203045,
+      "score": 0.978456558,
       "source_file": "src/gmolai_retrain/model.py",
       "status": "tentative",
       "uses": 1
@@ -453,8 +623,24 @@
           "q": "Calculate the embedding time for each model and Morgan from the MoleculeNet plus HIV benchmark"
         }
       ],
-      "score": 0.98618334,
+      "score": 0.966674627,
       "source_file": "src/gmolai_retrain/representations.py",
+      "status": "tentative",
+      "uses": 1
+    },
+    "tests_test_chemistry_canonical": {
+      "code_fingerprint": "0de6b2c889cf424ff7237d7ec79c7eec3473dae3ae298443e2f618c2a72b3fec",
+      "label": "canonical()",
+      "last": "2026-08-13T23:33:01.515365+00:00",
+      "provenance": [
+        {
+          "date": "2026-08-13T23:33:01.515365+00:00",
+          "outcome": "useful",
+          "q": "Move to Step 2c: chemical characterization of the frozen Step-2b 50-candidate correct-condition sets using the Step-1b one-cut MMP rules, without training, regeneration, or latent perturbation."
+        }
+      ],
+      "score": 0.993397641,
+      "source_file": "tests/test_chemistry.py",
       "status": "tentative",
       "uses": 1
     }

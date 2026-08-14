@@ -1,0 +1,20 @@
+{
+  "candidate_regeneration": false,
+  "candidate_rows": 354262,
+  "candidate_table_sha256": "3e0af5f70fc0ce9102d803a42826127b15ddf1516209516840eb957bd7d8dc1b",
+  "classification": "useful_local_analogue_generator_not_supported",
+  "completed_at": "2026-08-13T23:30:55.812280+00:00",
+  "decision_sha256": "572d597e8cb25607bb7a34f405bba92031616cc1fb12b3a1d175aab1280724f0",
+  "endpoint_labels_used": false,
+  "latent_perturbation": false,
+  "mmp_candidate_rows": 43353,
+  "mmp_directed_generation": false,
+  "model_executed": false,
+  "schema_version": 1,
+  "seed_rows": 10000,
+  "seed_table_sha256": "49de243ac9372d190a62fa194cd367e921513662d94539fe26f611140e7445e6",
+  "status": "complete",
+  "study_summary_sha256": "57062cb62b15e503635ed2aeb0fe1e521cb56ee9f000321661d51870ee7ffc13",
+  "test_rows": 0,
+  "verification_sha256": "b20a83396ff43c36096f7687d82a511967ad2f711644b52eb36aaded92234f16"
+}

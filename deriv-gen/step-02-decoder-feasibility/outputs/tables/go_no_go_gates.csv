@@ -1,0 +1,10 @@
+gate,description,observed,comparator,threshold,passed
+generation_rows,Final validation generation panel size,10000.0,>=,10000.0,True
+correct_valid_smiles,Correct-condition valid-SMILES rate,0.9752,>=,0.95,True
+correct_identity,Correct-condition molecular identity recovery,0.639,>=,0.8,False
+correct_scaffold,Correct-condition scaffold recovery,0.747,>=,0.9,False
+correct_morgan,Correct-condition all-row mean Morgan similarity,0.8494532584797394,>=,0.9,False
+correct_reencoded_cosine,Median re-encoded cosine to correct condition,0.99999983532092,>=,0.95,True
+correct_identity_advantage,Correct target-identity advantage over best wrong control,0.6383,>=,0.5,True
+hard_wrong_source_identity,Nearest-wrong supplied-source identity recovery,0.6612,>=,0.6,True
+shuffled_source_identity,Shuffled supplied-source identity recovery,0.6392,>=,0.6,True

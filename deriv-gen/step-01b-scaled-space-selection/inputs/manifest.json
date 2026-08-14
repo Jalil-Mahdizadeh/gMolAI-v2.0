@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "policy": "read-only frozen model/data inputs; generated study files remain under deriv-gen",
+  "files": {
+    "checkpoint": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "calibrator": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "resolved_config": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/resolved_config.json",
+      "sha256": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+    },
+    "base_config": {
+      "path": "configs/retrain.yaml",
+      "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011"
+    },
+    "training_plan": {
+      "path": "configs/representation-pilot-mean-node-contrastive-001-desc050.yaml",
+      "sha256": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61"
+    },
+    "validation_embeddings": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/validation-standardized-raw-hybrid-w3-step10000-calibration100k-seed20260810-50k.pt",
+      "sha256": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642"
+    },
+    "chemical_record_cache": {
+      "path": "work/probe_chemical_records_cache_v1.json",
+      "sha256": "e2aac3617a2d6c719f2efae10e1296d1e234e50e405ba92f6522aff10ceee00d"
+    },
+    "dataset_manifest": {
+      "path": "work/dataset_manifest.json",
+      "sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788"
+    },
+    "graph_manifest": {
+      "path": "work/graph_manifest.json",
+      "sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da"
+    },
+    "descriptor_scaler": {
+      "path": "work/descriptor_scaler.json",
+      "sha256": "120aaa0c7b59c36ffe2b3051273385bee0f82c1389d56ea4c56c7ba7952ea363"
+    },
+    "container": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    }
+  },
+  "forbidden_inputs": [
+    "locked internal test partition",
+    "MoleculeNet labels",
+    "HIV labels"
+  ]
+}

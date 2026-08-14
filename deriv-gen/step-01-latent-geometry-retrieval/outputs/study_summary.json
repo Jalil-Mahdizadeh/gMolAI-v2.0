@@ -1,0 +1,88 @@
+{
+  "claim_boundary": "retrieval-geometry feasibility only; no current 384D decoder or novel-molecule generation demonstrated",
+  "data": {
+    "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "dataset_manifest_hash": "4e3aa3b70b7808c5d2efcd891314c99a982766391cc48a383d9096af41fc2a1a",
+    "identity_overlap": 0,
+    "train_rows": 100000,
+    "validation_rows": 50000
+  },
+  "fragmentation": {
+    "train": {
+      "eligible_fragmentations": 622020,
+      "molecules": 100000,
+      "molecules_with_eligible_fragments": 99528,
+      "parse_failures": 0
+    },
+    "validation": {
+      "eligible_fragmentations": 288622,
+      "molecules": 50000,
+      "molecules_with_eligible_fragments": 49763,
+      "parse_failures": 0
+    }
+  },
+  "gates": {
+    "G1_local_chemical_organization": {
+      "passed": true,
+      "scaffold_absolute_gain": 0.4921875,
+      "tanimoto_enrichment": 3.4644667243026075
+    },
+    "G2_transferable_mmp_direction": {
+      "alignment_gain": 0.6712078394419487,
+      "null_median_alignment": 0.028007184440223164,
+      "passed": true,
+      "validation_median_alignment": 0.6992150238821719
+    },
+    "G3_controlled_retrieval": {
+      "absolute_gain": 0.21879588839941255,
+      "best_blind_recall_at_10": 0.7767988252569751,
+      "fold_gain": 1.2816635160680527,
+      "mmp_recall_at_10": 0.9955947136563876,
+      "passed": false
+    },
+    "G4_interpolation_sanity": {
+      "nondecreasing": true,
+      "passed": true,
+      "recall_at_10_by_alpha": {
+        "0.25": 0.9251101321585903,
+        "0.50": 1.0,
+        "0.75": 1.0,
+        "1.00": 1.0
+      }
+    }
+  },
+  "matched_pairs": {
+    "eligible_unseen_core_validation_pairs": 685,
+    "repeated_train_transformations": 33,
+    "repeated_train_transformations_with_unseen_core_validation": 21,
+    "retrieval_queries": 227,
+    "train": {
+      "capped_core_groups": 0,
+      "eligible_core_groups": 10961,
+      "pairs": 14343,
+      "skipped_large_core_groups": 0,
+      "transformations": 14306
+    },
+    "validation": {
+      "capped_core_groups": 7,
+      "eligible_core_groups": 13463,
+      "pairs": 40355,
+      "skipped_large_core_groups": 0,
+      "transformations": 33803
+    }
+  },
+  "protocol_amendments": [
+    {
+      "file": "PROTOCOL_AMENDMENT_01.md",
+      "id": "01",
+      "new_value": 2,
+      "old_value": 5,
+      "parameter": "mmp.minimum_train_cores_per_transform",
+      "stage": "after_mmp_support_enumeration_before_outcome_inspection"
+    }
+  ],
+  "recommended_next_approach": "transformation-conditioned matched-pair retrieval with local manifold constraints, followed by a seed-conditioned edit decoder; do not assume a universal linear vector",
+  "schema_version": 1,
+  "study_id": "gmolai-derivative-day1-v1"
+}

@@ -1,0 +1,19 @@
+{
+  "completed_at": "2026-08-14T06:52:17.174681+00:00",
+  "decision_sha256": "a9a3798b8a11539fb6d8031a471b84054a9f0197a1c98b12539136bce99a57d6",
+  "document_sha256": {
+    "DECISION.md": "17017782344598e4ea92271eabed99c7820b3ce87afa29d12cfa6c7e6dfe58f2",
+    "README.md": "e32140a6d7b78841e7b9b75ec732db05b614461573ad9d65fcf2b3579681eb06",
+    "RESULTS.md": "0b6809a2148de4a9f6b5012ac40c8a3e316f9a7e796af3f5ad76420c507eb8e2"
+  },
+  "endpoint_labels_used": false,
+  "figure_sha256": {
+    "quality_locality_diversity": "7cf65ee5b1acec85202cb1894819ac7776bed35801a982dbf8deb16827b994b8",
+    "synthetic_accessibility_by_category": "506a36cd075d4294ca6586e5e8a206bcec6aef213ab4874ff1b05513eebe5400",
+    "synthetic_accessibility_scaling": "5e62e009dded5a428119c5dde667625ce286c97abcf049c58b6fdfbf13f92672",
+    "synthetic_accessibility_seed_candidate_density": "975e7fa2ca66a8d2f32a3b7e46b705a595cbaa34ac1c60aa6f35b5fa8e734d29"
+  },
+  "schema_version": 1,
+  "status": "complete",
+  "test_rows": 0
+}

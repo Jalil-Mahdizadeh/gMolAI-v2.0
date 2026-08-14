@@ -1,0 +1,39 @@
+{
+  "budgets": [
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "candidate_generation_changed": false,
+  "completed_at": "2026-08-14T06:52:08.100554+00:00",
+  "decoder_training": false,
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "genuine_nonseed_pair_rows_at_1000": 2106446,
+  "global_identity_rows": 2108115,
+  "latent_perturbation": false,
+  "mmp_direction_editing": false,
+  "output_sha256": {
+    "bootstrap": "09642d2e4d28e9e1c49459f5d30f98a8d45e1d04c4b3d4ccd59adf64bcac1f13",
+    "budget_summary": "d1ef3021f0538c1a2aab79134039f2f5a6e59b12a7af3a03c21adc99ea6f0002",
+    "candidate_comparison": "439eaef2d8f4a1a9f90c630c2a982a1da3f30d92a7db57ca72db61d829aa9203",
+    "category_summary": "96ed97af8b5c0dcc195469a48b3e86c21b21cbd755960244346bdda869b8e5a8",
+    "identity_scores": "ca0ecbe9fdd707807bc31e331007dd8c3fd1203e0b07ccd238f0315aa5c4a2d0",
+    "joint_histogram": "cda685578e4e2263fd24f15133b368e130239985400664a77fa696891286a89d",
+    "seed_metrics": "efc52df9ed0a7d52aa3ca184576af3ee181157353d2036c8766f77b039815258"
+  },
+  "property_optimization": false,
+  "rdkit_version": "2025.09.3",
+  "sa_fragment_model_sha256": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73",
+  "sa_scorer_source_sha256": "8c191920cb9d011994e5f77a0b54924d20d92967052bf6f6903f6f40c0a6e3a2",
+  "schema_version": 1,
+  "seed_candidate_rows": 2116072,
+  "seed_rows": 10000,
+  "status": "complete",
+  "study_id": "gmolai-step2d-post-completion-sa-extension-v1",
+  "test_rows": 0,
+  "wall_seconds": 22.912927597993985,
+  "workers": 64
+}

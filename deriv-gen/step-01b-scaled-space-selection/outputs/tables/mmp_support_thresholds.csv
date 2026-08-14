@@ -1,0 +1,5 @@
+minimum_train_cores,transformations,core_transform_observations,molecule_pair_multiplicity,transformations_with_unseen_core_validation,unseen_core_validation_observations
+2,89280,226751,226751,3964,9074
+5,4199,36502,36502,1248,5311
+10,799,16015,16015,420,3396
+20,201,8244,8244,141,2123

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "study_id": "gmolai-frozen-decoder-generation-scaling-step2d-v1",
+  "seed": 20260817,
+  "scientific_boundary": {
+    "frozen_gmolai": true,
+    "frozen_calibrator": true,
+    "embedding_space": "released_hybrid_w3",
+    "frozen_decoder": true,
+    "encoder_training": false,
+    "decoder_training": false,
+    "latent_perturbation": false,
+    "mmp_direction_editing": false,
+    "property_optimization": false,
+    "endpoint_labels_used": false,
+    "locked_test_rows": 0
+  },
+  "panels": {
+    "development_rows": 512,
+    "development_partition": "decoder_scaffold_disjoint_development_holdout",
+    "development_excludes_step2b_development_panel": true,
+    "final_rows": 10000,
+    "final_partition": "pretraining_validation",
+    "final_excludes_step2_and_step2b_generation_panels": true,
+    "final_generation_before_strategy_freeze_forbidden": true
+  },
+  "budgets": [50, 100, 250, 500, 1000],
+  "budget_definition": "nested raw decoder proposal slots per seed; validity, policy acceptance, canonical uniqueness, and chemical yield are measured within each prefix",
+  "generation": {
+    "maximum_smiles_bytes": 128,
+    "maximum_proposals_per_seed": 1000,
+    "beam_width": 1000,
+    "beam_query_batch_size": 1,
+    "sample_query_batch_size": 2,
+    "greedy_query_batch_size": 128,
+    "development_base_sample_pools": [
+      {"name": "t100_p098", "temperature": 1.0, "top_p": 0.98, "draws": 999},
+      {"name": "t120_p0995", "temperature": 1.2, "top_p": 0.995, "draws": 999},
+      {"name": "t150_p100", "temperature": 1.5, "top_p": 1.0, "draws": 999}
+    ],
+    "development_strategies": [
+      {"name": "beam1000_lp00", "kind": "beam", "length_penalty": 0.0, "registered_order": 1},
+      {"name": "beam1000_lp06", "kind": "beam", "length_penalty": 0.6, "registered_order": 2},
+      {"name": "sample_t100_p098", "kind": "sample", "sample_pool": "t100_p098", "include_greedy_first": true, "registered_order": 3},
+      {"name": "sample_t120_p0995", "kind": "sample", "sample_pool": "t120_p0995", "include_greedy_first": true, "registered_order": 4},
+      {"name": "sample_t150_p100", "kind": "sample", "sample_pool": "t150_p100", "include_greedy_first": true, "registered_order": 5},
+      {"name": "hybrid_b500_s500_t100", "kind": "hybrid", "beam_hypotheses": 500, "sample_hypotheses": 500, "sample_pool": "t100_p098", "length_penalty": 0.0, "merge": "proportional_balanced", "registered_order": 6},
+      {"name": "hybrid_b500_s500_t120", "kind": "hybrid", "beam_hypotheses": 500, "sample_hypotheses": 500, "sample_pool": "t120_p0995", "length_penalty": 0.0, "merge": "proportional_balanced", "registered_order": 7}
+    ],
+    "sampling_seed_definition": "SHA256(global_seed, phase, base_pool_name, target_hash) truncated to 63 bits",
+    "beam_order": "length-normalized cumulative decoder log probability, then source rank",
+    "sample_order": "fixed RNG draw order after one greedy proposal",
+    "hybrid_order": "deterministic proportional merge of ordered beam and fixed-order sample hypotheses",
+    "target_chemistry_used_for_generation_or_ordering": false
+  },
+  "mmp": {
+    "implementation": "exact hash-bound Step-1b RDKit one-cut implementation",
+    "max_cuts": 1,
+    "min_core_heavy_atoms": 6,
+    "min_variable_heavy_atoms": 1,
+    "max_variable_heavy_atoms": 10,
+    "min_core_fraction": 0.6,
+    "max_variable_heavy_atom_delta": 6,
+    "max_parent_heavy_atom_delta": 8,
+    "primary_explanation_rule": "largest retained core, smallest total variable size, lexical tie-break"
+  },
+  "similarity": {
+    "fingerprint": "Morgan",
+    "radius": 2,
+    "bits": 2048,
+    "include_chirality": false,
+    "maximum_pairwise_comparisons_per_seed_budget": 2048,
+    "pair_sampling": "all pairs when feasible, otherwise deterministic uniform unordered-pair sample",
+    "histogram_bins": 100
+  },
+  "novelty": {
+    "reference": "exact canonical molecular identities of the 980000 Step-2 decoder-fit molecules only",
+    "development_holdout_excluded": true,
+    "other_pretraining_train_molecules_not_in_decoder_fit_are_not_reference_novelty_failures": true,
+    "validation_and_locked_test_are_not_novelty_references": true
+  },
+  "development_selection": {
+    "primary_metric": "mean novel useful-local unique molecules per seed at raw budget 1000",
+    "useful_local_definition": "genuine non-seed candidate that is a one-cut MMP or retains a non-empty seed Bemis-Murcko scaffold",
+    "novel_definition": "candidate canonical identity absent from the 980000 decoder-fit identities",
+    "eligibility": {
+      "minimum_raw_policy_acceptance": 0.5,
+      "minimum_mean_unique_policy_accepted": 20.0,
+      "minimum_median_nonseed_morgan": 0.4,
+      "minimum_seed_coverage_with_one_novel_useful_local": 0.5
+    },
+    "equivalence_margin_fraction_of_best_primary": 0.02,
+    "selection_within_equivalence": [
+      "highest mean novel MMP count per seed",
+      "highest mean novel same-scaffold non-MMP count per seed",
+      "highest mean unique novel non-seed count per seed",
+      "highest raw policy acceptance",
+      "lower registered order"
+    ],
+    "paired_bootstrap_resamples": 2000,
+    "final_data_visible_during_selection": false
+  },
+  "scaling_decision": {
+    "useful_return_metric": "mean novel useful-local unique molecules per seed",
+    "diminishing_return_fraction_of_first_50_rate": 0.5,
+    "saturation_fraction_of_first_50_rate": 0.25,
+    "recommended_budget_fraction_of_1000_utility": 0.9,
+    "large_library_gates": {
+      "minimum_raw_policy_acceptance": 0.7,
+      "minimum_median_unique_policy_accepted": 100,
+      "minimum_novel_fraction_among_genuine_nonseed": 0.8,
+      "minimum_median_novel_useful_local": 20,
+      "minimum_seed_fraction_with_10_novel_useful_local": 0.8
+    }
+  },
+  "execution": {
+    "gpu_shards": 4,
+    "cpus_per_gpu_shard": 18,
+    "analysis_workers": 64,
+    "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+    "slurm_gpus": 4,
+    "slurm_memory": "400G",
+    "slurm_time": "12:00:00"
+  }
+}

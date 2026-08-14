@@ -1,0 +1,12 @@
+{
+  "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+  "cublas_workspace_config": ":4096:8",
+  "gpu": "NVIDIA GH200 120GB",
+  "recorded_at": "2026-08-13T20:11:16.648206+00:00",
+  "registered_state_sha256": "cd43f0c3687e8542b38d1a868cb287f555c05fe06943721878d2e2d07be986d9",
+  "schema_version": 1,
+  "single_visible_gpu": true,
+  "slurm_job_id": "1230738",
+  "slurm_node": "n54",
+  "superseded_pre_result_registration_count": 2
+}

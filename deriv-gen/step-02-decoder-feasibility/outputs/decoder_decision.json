@@ -1,0 +1,89 @@
+{
+  "all_predeclared_gates_pass": false,
+  "best_wrong_condition_target_identity_recovery": 0.0007,
+  "condition_dependence_demonstrated": true,
+  "correct_identity_advantage": 0.6383,
+  "correct_target_identity_recovery": 0.639,
+  "decision": "NO-GO",
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "embedding_space": "released_hybrid_w3",
+  "fidelity_thresholds_pass": false,
+  "gates": [
+    {
+      "comparator": ">=",
+      "description": "Final validation generation panel size",
+      "gate": "generation_rows",
+      "observed": 10000.0,
+      "passed": true,
+      "threshold": 10000.0
+    },
+    {
+      "comparator": ">=",
+      "description": "Correct-condition valid-SMILES rate",
+      "gate": "correct_valid_smiles",
+      "observed": 0.9752,
+      "passed": true,
+      "threshold": 0.95
+    },
+    {
+      "comparator": ">=",
+      "description": "Correct-condition molecular identity recovery",
+      "gate": "correct_identity",
+      "observed": 0.639,
+      "passed": false,
+      "threshold": 0.8
+    },
+    {
+      "comparator": ">=",
+      "description": "Correct-condition scaffold recovery",
+      "gate": "correct_scaffold",
+      "observed": 0.747,
+      "passed": false,
+      "threshold": 0.9
+    },
+    {
+      "comparator": ">=",
+      "description": "Correct-condition all-row mean Morgan similarity",
+      "gate": "correct_morgan",
+      "observed": 0.8494532584797394,
+      "passed": false,
+      "threshold": 0.9
+    },
+    {
+      "comparator": ">=",
+      "description": "Median re-encoded cosine to correct condition",
+      "gate": "correct_reencoded_cosine",
+      "observed": 0.99999983532092,
+      "passed": true,
+      "threshold": 0.95
+    },
+    {
+      "comparator": ">=",
+      "description": "Correct target-identity advantage over best wrong control",
+      "gate": "correct_identity_advantage",
+      "observed": 0.6383,
+      "passed": true,
+      "threshold": 0.5
+    },
+    {
+      "comparator": ">=",
+      "description": "Nearest-wrong supplied-source identity recovery",
+      "gate": "hard_wrong_source_identity",
+      "observed": 0.6612,
+      "passed": true,
+      "threshold": 0.6
+    },
+    {
+      "comparator": ">=",
+      "description": "Shuffled supplied-source identity recovery",
+      "gate": "shuffled_source_identity",
+      "observed": 0.6392,
+      "passed": true,
+      "threshold": 0.6
+    }
+  ],
+  "interpretation": "The decoder learned clear condition dependence, but it did not meet every predeclared fidelity criterion for a faithful inverse.",
+  "next_step_boundary": "No latent perturbation or derivative generation was performed.",
+  "schema_version": 1,
+  "scope": "zero-perturbation reconstruction only"
+}

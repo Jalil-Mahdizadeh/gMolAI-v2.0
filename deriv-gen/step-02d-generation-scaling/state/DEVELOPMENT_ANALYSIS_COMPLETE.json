@@ -1,0 +1,17 @@
+{
+  "completed_at": "2026-08-14T01:41:49.148774+00:00",
+  "endpoint_labels_used": false,
+  "output_sha256": {
+    "budget_summary": "bdf0fa8743657c69b82a787de4c4c664db8373090dd41e07aa411beaaed81fdd",
+    "candidate_characterization": "2097b01c564a304d5374955fcd69158d16bf0e5b5f95273288e4660e5299a14e",
+    "diversity_histogram": "537028317871249be301ae603833ec63a074da318564475cf1131766ed2aa0b1",
+    "incremental": "90864b32df429fe319919617da67980ab5157dd806f9eba4aaec40e2f1a175ff",
+    "seed_budget_metrics": "c04d5e4eeea00551708caf4d924cecb440d8b7a5edcc0b9263ff871e44d33a05",
+    "similarity": "935ec5cac51a040b98472dfa04a54dbff589caa57a462df94535d4dac4da23f7"
+  },
+  "phase": "development",
+  "schema_version": 1,
+  "status": "complete",
+  "summary_sha256": "d1a0770be4d627a11cb28329368a4c574588a0ec7124abd6b05ffda8408e23ec",
+  "test_rows": 0
+}

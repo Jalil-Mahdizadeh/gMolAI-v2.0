@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "predeclared_before_baseline_completion",
+  "registered_at": "2026-08-13T18:15:57+00:00",
+  "information_boundary": {
+    "latest_visible_train_partition_development_epoch": 8,
+    "training_curve_sha256_at_registration": "62c356e93d9a871eb2da220db879c29a492b423b8d9b213712acfb9b35089927",
+    "final_validation_generation_started": false,
+    "validation_used_for_model_selection": false,
+    "locked_test_rows": 0,
+    "endpoint_labels_used": false
+  },
+  "evaluate_after_epoch": 12,
+  "activate_only_if_all": {
+    "correct_identity_below_final_gate": 0.8,
+    "correct_identity_gain_epoch_12_minus_epoch_9_minimum": 0.01,
+    "best_shuffled_or_zero_target_identity_maximum": 0.05,
+    "correct_teacher_nll_epoch_12_below_epoch_9": true
+  },
+  "action_if_activated": {
+    "maximum_epoch": 24,
+    "resume_same_decoder_and_optimizer": true,
+    "new_train_molecules": false,
+    "new_model_parameters": false,
+    "cosine_schedule_epochs": 12,
+    "extension_learning_rate": 0.00004,
+    "early_stopping_patience": 3,
+    "checkpoint_score_unchanged": true,
+    "preserve_epoch_12_checkpoint_and_summary": true
+  },
+  "action_if_not_activated": "retain the best checkpoint from epochs 1-12",
+  "claim_boundary": "Development-only training-duration decision; final validation remains untouched until one decoder checkpoint is frozen."
+}

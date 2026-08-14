@@ -1,0 +1,17 @@
+{
+  "completed_at": "2026-08-14T05:27:36.003843+00:00",
+  "endpoint_labels_used": false,
+  "output_sha256": {
+    "budget_summary": "544bfcb5ea080b5f4fd0d42f985e4b4d49c9d629bfecfb200d7d07d148e6b6fd",
+    "candidate_characterization": "b08e753a85dec8299e4edd0aa8609ebde0f9a3b5cd99dd36487a80ae1f380f5c",
+    "diversity_histogram": "cf1848446169c7b305fdf30f350982e946389d502ddfdea17bd8e1864a1c27c3",
+    "incremental": "0c4fdb8800fba0051d9f596d24338190bb554a34f3fbd31e3d73b578befb124c",
+    "seed_budget_metrics": "20aa4fd76a3ae146d7f9667dd5915feb07120afb7fec60a5c8f61d5da455bcc2",
+    "similarity": "dd63b7bd31e54b8a8efab2eca3775c39124b07aa739ad2bd8627afcd18b890fc"
+  },
+  "phase": "final",
+  "schema_version": 1,
+  "status": "complete",
+  "summary_sha256": "14c7182eb484b26c08a45e58a550677ba0f7677edca9f5c9921511c900d76a66",
+  "test_rows": 0
+}

@@ -1,0 +1,24 @@
+{
+  "completed_at": "2026-08-14T05:10:02.600950+00:00",
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "decoder_training": false,
+  "encoder_training": false,
+  "endpoint_labels_used": false,
+  "latent_perturbation": false,
+  "num_shards": 4,
+  "output_sha256": {
+    "hybrid_b500_s500_t120": "1ddd4872cec919239e7af3a8492f1902ab5ba50a510bb5eea9de2c4fa2d8fcd7"
+  },
+  "phase": "final",
+  "proposals_per_strategy_seed": 1000,
+  "schema_version": 1,
+  "seed_rows": 2500,
+  "shard_id": 1,
+  "status": "complete",
+  "strategies": [
+    "hybrid_b500_s500_t120"
+  ],
+  "test_rows": 0,
+  "visible_gpu": "NVIDIA GH200 120GB",
+  "wall_seconds": 12416.18430516508
+}

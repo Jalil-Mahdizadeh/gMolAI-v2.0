@@ -1,0 +1,10 @@
+{
+  "candidate_data_inspected_for_scientific_selection": false,
+  "previous_manifest_archive": "inputs/manifest.superseded-5bad8bcf2a41.json",
+  "previous_manifest_sha256": "5bad8bcf2a4164252006b12d3f75460d6587db2c899a43628d879d50b23514fa",
+  "reason": "replace categorical Cartesian aggregation with observed-group aggregation after pre-result memory termination",
+  "replacement_manifest_sha256": "820e75b75fcb48b6203da5adb8aea2e7320a2222fcea3cc9922fd5a8b7e0de12",
+  "schema_version": 1,
+  "scientific_protocol_changed": false,
+  "status": "superseded_before_completed_analysis"
+}

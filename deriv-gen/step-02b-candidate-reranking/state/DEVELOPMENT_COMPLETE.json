@@ -1,0 +1,14 @@
+{
+  "candidates_sha256": "ebacc489a5e45f1e4b35f35481967a2b9f689ea0d88c1aa3bd931408a4e5c69b",
+  "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+  "endpoint_labels_used": false,
+  "evaluation_summary_sha256": "6f55d5f2d9a8ee848f64c50547bd4fd9a513c3081d599ecdf23ab05b31936943",
+  "fresh_validation_panel": false,
+  "metrics_sha256": "729b107c320f1e2214ae4adb31788822544d1d82c7f3220e4fd50195654c636b",
+  "phase": "development",
+  "query_results_sha256": "106e1c194722bae86a9851c91d8a33b1bf76eff8973c8879b42d02563b68072c",
+  "schema_version": 1,
+  "sealed_at": "2026-08-13T20:58:25.613231+00:00",
+  "status": "complete",
+  "test_rows": 0
+}

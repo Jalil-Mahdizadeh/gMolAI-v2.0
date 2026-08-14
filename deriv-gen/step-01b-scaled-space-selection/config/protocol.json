@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "study_id": "gmolai-derivative-scaled-space-selection-v1",
+  "seed": 20260813,
+  "train_sampling_seed": 1618033,
+  "train_rows": 1000000,
+  "validation_rows": 50000,
+  "spaces": {
+    "graph_256": {
+      "graph_weight": 1.0,
+      "mean_node_weight": 0.0
+    },
+    "mean_node_128": {
+      "graph_weight": 0.0,
+      "mean_node_weight": 1.0
+    },
+    "hybrid_w1": {
+      "graph_weight": 1.0,
+      "mean_node_weight": 1.0
+    },
+    "released_hybrid_w3": {
+      "graph_weight": 1.0,
+      "mean_node_weight": 3.0
+    },
+    "hybrid_w6": {
+      "graph_weight": 1.0,
+      "mean_node_weight": 6.0
+    }
+  },
+  "mmp": {
+    "min_core_heavy_atoms": 6,
+    "min_variable_heavy_atoms": 1,
+    "max_variable_heavy_atoms": 10,
+    "min_core_fraction": 0.6,
+    "max_variable_heavy_atom_delta": 6,
+    "max_parent_heavy_atom_delta": 8,
+    "support_thresholds": [
+      2,
+      5,
+      10,
+      20
+    ]
+  },
+  "retrieval": {
+    "minimum_train_cores": 2,
+    "primary_support_threshold": 5,
+    "maximum_queries": 2048,
+    "maximum_queries_per_transform": 32,
+    "top_k": 50,
+    "summary_top_k": 10,
+    "random_replicates": 3,
+    "local_train_neighbors": 64,
+    "gpu_query_batch_size": 256
+  },
+  "statistics": {
+    "hierarchical_bootstrap_resamples": 2000,
+    "ci_alpha": 0.05,
+    "support_cohorts": [
+      2,
+      5,
+      10,
+      20
+    ]
+  },
+  "selection": {
+    "minimum_positive_alignment_fraction": 0.7,
+    "recall_at_1_noninferiority_margin": 0.02,
+    "alignment_gain_noninferiority_margin": 0.05,
+    "exact_transform_noninferiority_margin": 0.02,
+    "compatibility_preference": "released_hybrid_w3",
+    "decoder_conditioning_representation": "released_hybrid_w3",
+    "minimum_primary_transformations": 10,
+    "minimum_primary_queries": 100
+  }
+}

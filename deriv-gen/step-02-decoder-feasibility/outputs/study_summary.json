@@ -1,0 +1,372 @@
+{
+  "completed_at": "2026-08-13T19:07:55.929540+00:00",
+  "data": {
+    "controls": [
+      "correct_embedding",
+      "shuffled_embedding",
+      "zero_embedding",
+      "wrong_molecule_embedding"
+    ],
+    "decoder_fit_rows": 980000,
+    "endpoint_labels_used": false,
+    "test_rows": 0,
+    "train_partition_dev_rows": 20000,
+    "validation_generation_rows_per_control": 10000,
+    "validation_teacher_forced_rows": 50000
+  },
+  "decision": {
+    "all_predeclared_gates_pass": false,
+    "best_wrong_condition_target_identity_recovery": 0.0007,
+    "condition_dependence_demonstrated": true,
+    "correct_identity_advantage": 0.6383,
+    "correct_target_identity_recovery": 0.639,
+    "decision": "NO-GO",
+    "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+    "embedding_space": "released_hybrid_w3",
+    "fidelity_thresholds_pass": false,
+    "gates": [
+      {
+        "comparator": ">=",
+        "description": "Final validation generation panel size",
+        "gate": "generation_rows",
+        "observed": 10000.0,
+        "passed": true,
+        "threshold": 10000.0
+      },
+      {
+        "comparator": ">=",
+        "description": "Correct-condition valid-SMILES rate",
+        "gate": "correct_valid_smiles",
+        "observed": 0.9752,
+        "passed": true,
+        "threshold": 0.95
+      },
+      {
+        "comparator": ">=",
+        "description": "Correct-condition molecular identity recovery",
+        "gate": "correct_identity",
+        "observed": 0.639,
+        "passed": false,
+        "threshold": 0.8
+      },
+      {
+        "comparator": ">=",
+        "description": "Correct-condition scaffold recovery",
+        "gate": "correct_scaffold",
+        "observed": 0.747,
+        "passed": false,
+        "threshold": 0.9
+      },
+      {
+        "comparator": ">=",
+        "description": "Correct-condition all-row mean Morgan similarity",
+        "gate": "correct_morgan",
+        "observed": 0.8494532584797394,
+        "passed": false,
+        "threshold": 0.9
+      },
+      {
+        "comparator": ">=",
+        "description": "Median re-encoded cosine to correct condition",
+        "gate": "correct_reencoded_cosine",
+        "observed": 0.99999983532092,
+        "passed": true,
+        "threshold": 0.95
+      },
+      {
+        "comparator": ">=",
+        "description": "Correct target-identity advantage over best wrong control",
+        "gate": "correct_identity_advantage",
+        "observed": 0.6383,
+        "passed": true,
+        "threshold": 0.5
+      },
+      {
+        "comparator": ">=",
+        "description": "Nearest-wrong supplied-source identity recovery",
+        "gate": "hard_wrong_source_identity",
+        "observed": 0.6612,
+        "passed": true,
+        "threshold": 0.6
+      },
+      {
+        "comparator": ">=",
+        "description": "Shuffled supplied-source identity recovery",
+        "gate": "shuffled_source_identity",
+        "observed": 0.6392,
+        "passed": true,
+        "threshold": 0.6
+      }
+    ],
+    "interpretation": "The decoder learned clear condition dependence, but it did not meet every predeclared fidelity criterion for a faithful inverse.",
+    "next_step_boundary": "No latent perturbation or derivative generation was performed.",
+    "schema_version": 1,
+    "scope": "zero-perturbation reconstruction only"
+  },
+  "decode_selection": {
+    "checks": {
+      "beam_shuffled_source_identity": true,
+      "beam_wrong_target_identity": true,
+      "correct_identity_gain": false,
+      "valid_smiles_drop": true
+    },
+    "config_sha256": "b036ff99c81d073dbdcd7287b039be21c4e13f6f17cc9cf2191938652c047e6b",
+    "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+    "development_panel_rows": 2048,
+    "endpoint_labels_used": false,
+    "frozen_input_sha256": {
+      "base_config": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+      "calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "chemistry_policy": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3",
+      "container": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+      "inference_entrypoint": "c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612",
+      "model_definition": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02",
+      "optimized_inference": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba",
+      "packaged_calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "packaged_checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "packaged_resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+      "representation_selection": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1",
+      "resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+      "step1b_complete": "3c3e558381117f2d1a424e74835af6c219e8d0fe76c70c1d9850f9329ddc92f4",
+      "step1b_decision": "3f9ac679488b6e745d0db2f1d22ac5f7a54bc212f9c598115b848931af2a4539",
+      "train_molecules": "ace44c7283c0260540e78c1de825d13b5a4a1c0b61ed9ec83b5e1ac9438bd7d7",
+      "train_raw_embeddings": "ff7cc47f729a7bd0c08814b6d08341b88dd1a6affe91b8b9d006d836659b3c2c",
+      "validation_embeddings": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+      "validation_molecules": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf"
+    },
+    "manifest_sha256": "717a16ea45f205561b47b079731ebff0b2c7d1d6b46e1ee1e00fb5c37076ed15",
+    "metrics": [
+      {
+        "condition_source_identity": 0.69091796875,
+        "control": "correct_embedding",
+        "gmolai_policy_accepted": 0.9794921875,
+        "method": "greedy",
+        "rows": 2048,
+        "target_identity": 0.69091796875,
+        "valid_smiles": 0.9794921875
+      },
+      {
+        "condition_source_identity": 0.69091796875,
+        "control": "shuffled_embedding",
+        "gmolai_policy_accepted": 0.9794921875,
+        "method": "greedy",
+        "rows": 2048,
+        "target_identity": 0.0,
+        "valid_smiles": 0.9794921875
+      },
+      {
+        "condition_source_identity": null,
+        "control": "zero_embedding",
+        "gmolai_policy_accepted": 1.0,
+        "method": "greedy",
+        "rows": 2048,
+        "target_identity": 0.0,
+        "valid_smiles": 1.0
+      },
+      {
+        "condition_source_identity": 0.703125,
+        "control": "correct_embedding",
+        "gmolai_policy_accepted": 0.9814453125,
+        "method": "beam_w4_lp06",
+        "rows": 2048,
+        "target_identity": 0.703125,
+        "valid_smiles": 0.9814453125
+      },
+      {
+        "condition_source_identity": 0.703125,
+        "control": "shuffled_embedding",
+        "gmolai_policy_accepted": 0.9814453125,
+        "method": "beam_w4_lp06",
+        "rows": 2048,
+        "target_identity": 0.0,
+        "valid_smiles": 0.9814453125
+      },
+      {
+        "condition_source_identity": null,
+        "control": "zero_embedding",
+        "gmolai_policy_accepted": 1.0,
+        "method": "beam_w4_lp06",
+        "rows": 2048,
+        "target_identity": 0.0,
+        "valid_smiles": 1.0
+      }
+    ],
+    "observed": {
+      "beam_best_shuffled_or_zero_target_identity": 0.0,
+      "beam_correct_identity_gain": 0.01220703125,
+      "beam_correct_minus_shuffled_source_identity": 0.0,
+      "beam_correct_valid_smiles_drop": -0.001953125
+    },
+    "policy_sha256": "53541b6141dd67c73ee8ad6f6901a31dbb70fd342dd6dc356c44c8d23b11d204",
+    "schema_version": 1,
+    "selected_at": "2026-08-13T19:00:31.591205+00:00",
+    "selected_before_final_validation": true,
+    "selected_decode_method": "greedy",
+    "status": "complete",
+    "test_rows": 0
+  },
+  "decoder": {
+    "checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+    "epochs_completed": 20,
+    "global_steps": 19160,
+    "gpu": "NVIDIA GH200 120GB",
+    "inference_artifact": "checkpoints/decoder_inference.pt",
+    "inference_artifact_sha256": "8b4f8db04499083ea2e9d028eaaae18d629b34ce773608d8e2c80863e9121d47",
+    "maximum_gpu_memory_bytes": 29366657536,
+    "parameters": 28316160,
+    "selected_epoch": 17
+  },
+  "development_duration": {
+    "action": {
+      "checkpoint_score_unchanged": true,
+      "cosine_schedule_epochs": 12,
+      "early_stopping_patience": 3,
+      "extension_learning_rate": 4e-05,
+      "maximum_epoch": 24,
+      "new_model_parameters": false,
+      "new_train_molecules": false,
+      "preserve_epoch_12_checkpoint_and_summary": true,
+      "resume_same_decoder_and_optimizer": true
+    },
+    "archive": {
+      "best_checkpoint": "state/epoch-12-baseline/best.pt",
+      "best_checkpoint_sha256": "211fbef634d80ebb9e97cda4ad76a159ebbd5552d91f771b09fda04c097d68c8",
+      "training_curve": "state/epoch-12-baseline/training_curve.csv",
+      "training_curve_sha256": "a70361854ea8b4a2b031189f9a579199e7fd25485977e270cdf19078bf19d92a",
+      "training_summary": "state/epoch-12-baseline/TRAINING_COMPLETE.json",
+      "training_summary_sha256": "eddc745cdf64358654abff073e002cfe073e64fb5f56ab3472545a15c7b490d6"
+    },
+    "baseline_best_checkpoint_sha256": "211fbef634d80ebb9e97cda4ad76a159ebbd5552d91f771b09fda04c097d68c8",
+    "baseline_config_sha256": "96e7d6d7d1ab543dffc8bced5404886755e173a18f0895c8c4b4d3e6e6e4622e",
+    "baseline_curve_sha256": "a70361854ea8b4a2b031189f9a579199e7fd25485977e270cdf19078bf19d92a",
+    "baseline_training_summary_sha256": "eddc745cdf64358654abff073e002cfe073e64fb5f56ab3472545a15c7b490d6",
+    "checks": {
+      "best_control_below_maximum": true,
+      "correct_identity_below_final_gate": true,
+      "correct_identity_gain_epoch_12_minus_epoch_9": true,
+      "correct_teacher_nll_improved": true
+    },
+    "decided_at": "2026-08-13T18:29:18.758996+00:00",
+    "extended_config_sha256": "a2ff32531c7fa6ecbf389bf6c2d08f00e9fe530139124be7012cdb15d6604e19",
+    "final_validation_generation_started": false,
+    "observed": {
+      "epoch_12_best_shuffled_or_zero_identity": 0.0,
+      "epoch_12_correct_identity": 0.66845703125,
+      "epoch_12_correct_teacher_nll": 0.0390917296522587,
+      "epoch_9_correct_identity": 0.64306640625,
+      "epoch_9_correct_teacher_nll": 0.0425612912635053,
+      "identity_gain_epoch_12_minus_epoch_9": 0.025390625
+    },
+    "policy_sha256": "db115ef75458a64a474c6d429eeb71979a0fce0d617d874024d2cdf8569a2d18",
+    "schema_version": 1,
+    "stable_protocol_config_sha256": "b036ff99c81d073dbdcd7287b039be21c4e13f6f17cc9cf2191938652c047e6b",
+    "status": "activated"
+  },
+  "evaluation": {
+    "controls": [
+      "correct_embedding",
+      "shuffled_embedding",
+      "zero_embedding",
+      "wrong_molecule_embedding"
+    ],
+    "decode_method": "greedy",
+    "decode_selection_sha256": "a1245a20b64f81f0367ecfdf47c3e3c056a14c39ddb2edac468ff4e9518ba068",
+    "decoder_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+    "finished_at": "2026-08-13T19:03:12.994666+00:00",
+    "frozen_calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "frozen_encoder_checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "hard_wrong": {
+      "definition": "nearest non-self validation molecule in released-hybrid-w3 Euclidean distance",
+      "mean_distance": 16.19259262084961,
+      "median_distance": 16.320938110351562
+    },
+    "input_sha256": {
+      "base_config": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+      "calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "chemistry_policy": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3",
+      "container": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+      "inference_entrypoint": "c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612",
+      "model_definition": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02",
+      "optimized_inference": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba",
+      "packaged_calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "packaged_checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "packaged_resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+      "representation_selection": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1",
+      "resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+      "step1b_complete": "3c3e558381117f2d1a424e74835af6c219e8d0fe76c70c1d9850f9329ddc92f4",
+      "step1b_decision": "3f9ac679488b6e745d0db2f1d22ac5f7a54bc212f9c598115b848931af2a4539",
+      "train_molecules": "ace44c7283c0260540e78c1de825d13b5a4a1c0b61ed9ec83b5e1ac9438bd7d7",
+      "train_raw_embeddings": "ff7cc47f729a7bd0c08814b6d08341b88dd1a6affe91b8b9d006d836659b3c2c",
+      "validation_embeddings": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+      "validation_molecules": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf"
+    },
+    "output_sha256": {
+      "metrics_by_control": "ad9e561061d8354825bb47dd457bdf2cd1263f3658b4be5e3d6ccfff355b801e",
+      "raw_reconstructions": "e12caab62c24b495db52363e7a91983061a0f3b4f7b87efabab80726ba99281b",
+      "teacher_forced_by_control": "7b07ee6704cafc09fbd7fbc6656d72cf94b52d39e4e3952cfb4e9d1a795bb3de"
+    },
+    "reencoder": {
+      "backend": "optimized_gine_v1",
+      "batch_size": 512,
+      "fast_graph_version": "1",
+      "fast_inference_version": "1",
+      "node_budget": 65536,
+      "workers": 48
+    },
+    "rejection_reasons": {
+      "parse_failure": 745
+    },
+    "schema_version": 1,
+    "started_at": "2026-08-13T19:01:29.732743+00:00",
+    "status": "complete",
+    "stereochemical_evaluation": "not_estimable_no_stereochemical_targets",
+    "stereochemical_targets": 0,
+    "teacher_forced_all_validation": {
+      "correct_embedding_nll": 0.05194658082608714,
+      "correct_embedding_token_accuracy": 0.9822901744054537
+    },
+    "unique_policy_accepted_decoded_molecules": 16787,
+    "validation_rows_generation": 10000,
+    "validation_rows_teacher_forced": 50000,
+    "wall_time_seconds": 103.26195413991809
+  },
+  "frozen_gmolai": {
+    "calibrator_sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "embedding_space": "released_hybrid_w3",
+    "parameters_in_optimizer": 0
+  },
+  "input_sha256": {
+    "base_config": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+    "calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "chemistry_policy": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3",
+    "container": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "inference_entrypoint": "c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612",
+    "model_definition": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02",
+    "optimized_inference": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba",
+    "packaged_calibrator": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "packaged_checkpoint": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "packaged_resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+    "representation_selection": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1",
+    "resolved_config": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+    "step1b_complete": "3c3e558381117f2d1a424e74835af6c219e8d0fe76c70c1d9850f9329ddc92f4",
+    "step1b_decision": "3f9ac679488b6e745d0db2f1d22ac5f7a54bc212f9c598115b848931af2a4539",
+    "train_molecules": "ace44c7283c0260540e78c1de825d13b5a4a1c0b61ed9ec83b5e1ac9438bd7d7",
+    "train_raw_embeddings": "ff7cc47f729a7bd0c08814b6d08341b88dd1a6affe91b8b9d006d836659b3c2c",
+    "validation_embeddings": "d1500f483a3394e3161c349b053dfd76780ee56bfdcb090172f24b9c7131e642",
+    "validation_molecules": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf"
+  },
+  "schema_version": 1,
+  "scientific_boundary": {
+    "embedding_space": "released_hybrid_w3",
+    "endpoint_labels_used": false,
+    "frozen_encoder": true,
+    "perturbation_generation": false,
+    "test_rows": 0,
+    "train_decoder_only": true
+  },
+  "status": "complete"
+}

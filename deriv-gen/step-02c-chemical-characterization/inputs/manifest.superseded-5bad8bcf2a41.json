@@ -1,0 +1,137 @@
+{
+  "candidate_regeneration": false,
+  "endpoint_labels_used": false,
+  "files": {
+    "external_chemistry_policy": {
+      "path": "src/gmolai_retrain/chem.py",
+      "sha256": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3",
+      "size_bytes": 7591
+    },
+    "external_resolved_config": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/resolved_config.json",
+      "sha256": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628",
+      "size_bytes": 4731
+    },
+    "external_step1b_fragment_source": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/scripts/scaled_common.py",
+      "sha256": "c6728313d3f7e35579c026db74d527337b6f083248531fa3e543723f6bf1c40c",
+      "size_bytes": 16750
+    },
+    "external_step1b_protocol": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/config/protocol.json",
+      "sha256": "5d5804006701986da5d858fca00dc5d7efc9d28b97d880eec3e84466067f23bf",
+      "size_bytes": 1804
+    },
+    "external_step2b_candidates": {
+      "path": "deriv-gen/step-02b-candidate-reranking/outputs/raw/final_candidates.parquet",
+      "sha256": "06578ddba69dc3a2c1d3978b0c99268fa37496de7527cc59cb4f6806646814b1",
+      "size_bytes": 89905402
+    },
+    "external_step2b_common_source": {
+      "path": "deriv-gen/step-02b-candidate-reranking/scripts/common.py",
+      "sha256": "5883de3a4c96e1ebf63eace410ccf3c5c64c337d903f3ef30a9dca92ee4a7989",
+      "size_bytes": 10189
+    },
+    "external_step2b_complete": {
+      "path": "deriv-gen/step-02b-candidate-reranking/state/COMPLETE.json",
+      "sha256": "bdafd57da59cf1927a0c2392e8484815675ecb8904033d26eeba0eea632d7261",
+      "size_bytes": 1114
+    },
+    "external_step2b_evaluation_source": {
+      "path": "deriv-gen/step-02b-candidate-reranking/scripts/evaluate_panel.py",
+      "sha256": "1bcee48a3b567be242f11de5558e2c5e5dd3a976db805b7f52d87530835694cb",
+      "size_bytes": 39932
+    },
+    "external_step2b_final_seal": {
+      "path": "deriv-gen/step-02b-candidate-reranking/state/FINAL_COMPLETE.json",
+      "sha256": "03d6731eb38d9a6475f2c2f6bce558d69a1cee92ac253e5e86c261c913332748",
+      "size_bytes": 677
+    },
+    "external_step2b_generation_stats": {
+      "path": "deriv-gen/step-02b-candidate-reranking/outputs/tables/final_generation_stats.csv",
+      "sha256": "b63a3f6432e3d70bcd16b62b3a1b0176b5ad6cadce88ff141a07928169bae9a0",
+      "size_bytes": 2543276
+    },
+    "external_step2b_manifest": {
+      "path": "deriv-gen/step-02b-candidate-reranking/inputs/manifest.json",
+      "sha256": "c778211476da11dbd94f9ac8c5f12e4ef2022d74db46f19e53e0fa21363fa0a1",
+      "size_bytes": 5520
+    },
+    "external_step2b_panel": {
+      "path": "deriv-gen/step-02b-candidate-reranking/prepared/fresh_validation_panel.csv",
+      "sha256": "f5910d90f85590721952748fa6535b3133097f8c3d167221401f62d70b2eb33c",
+      "size_bytes": 1027767
+    },
+    "external_step2b_policy_seal": {
+      "path": "deriv-gen/step-02b-candidate-reranking/state/POLICY_FROZEN.json",
+      "sha256": "ff4a063db8a7bdc6941e313f0ddc1a5fc528d08ac158b7387124db857bfa309d",
+      "size_bytes": 7567
+    },
+    "external_step2b_protocol": {
+      "path": "deriv-gen/step-02b-candidate-reranking/config/protocol.json",
+      "sha256": "10c36f12c94273e9cf7d04b5d41a6fddc0a739ec81f7115b9c91957c83496e0b",
+      "size_bytes": 5455
+    },
+    "external_step2b_verification": {
+      "path": "deriv-gen/step-02b-candidate-reranking/outputs/verification.json",
+      "sha256": "c15054f31a835a744694577610dde0a9a7167e8fd4e3b56c124efe4675507f56",
+      "size_bytes": 5820
+    },
+    "external_validation_molecules": {
+      "path": "deriv-gen/step-01b-scaled-space-selection/intermediate/validation_molecules.parquet",
+      "sha256": "6e9fd6449d4d1dd9d8c554adecdee5d998816c0a0d16849dc46e549bd6bd28cf",
+      "size_bytes": 2982151
+    },
+    "source_audit": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/audit_candidates.py",
+      "sha256": "a8fe252c61c6e145cadabf3fe7f87327e7413f15b180db4932ad0782b9ee740b",
+      "size_bytes": 45604
+    },
+    "source_audit_core": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/audit_core.py",
+      "sha256": "85adf10479fc65763dea6f48c15835fa5572af793415f529104e8edf88eae081",
+      "size_bytes": 16686
+    },
+    "source_common": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/common.py",
+      "sha256": "7739b1200540708e359b6108c4b5983b327873685b62462fa085834a68151c27",
+      "size_bytes": 6193
+    },
+    "source_component_tests": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/test_components.py",
+      "sha256": "54df958bf22c4c6c9bc5433f104adaebd76d9a6818ecae2de828d474967f1660",
+      "size_bytes": 3506
+    },
+    "source_protocol": {
+      "path": "deriv-gen/step-02c-chemical-characterization/config/protocol.json",
+      "sha256": "c8c1d8d32e75f21a705fc10f5ddc4aea4b536020b7b0c2d3a8e5f469c66460ad",
+      "size_bytes": 2968
+    },
+    "source_report": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/report_results.py",
+      "sha256": "f2e6a1c6d4c9b38e2c3bec3b128debdbca5a17280129bacf6b503030d2d0b598",
+      "size_bytes": 21611
+    },
+    "source_runner": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/run_study.sh",
+      "sha256": "08ee3fbac200ea4b8116871a64b200af57967cb34fcef68b2fd4cfc496881724",
+      "size_bytes": 3246
+    },
+    "source_verify": {
+      "path": "deriv-gen/step-02c-chemical-characterization/scripts/verify_study.py",
+      "sha256": "93b73fa3b464d4fcf3c1b13aaf5356c69aa55a45cea5a8fd306fcdfa50ca4441",
+      "size_bytes": 13397
+    }
+  },
+  "latent_perturbation": false,
+  "locked_test_rows": 0,
+  "mmp_directed_generation": false,
+  "model_execution": false,
+  "registered_at": "2026-08-13T23:20:22.159663+00:00",
+  "schema_version": 1,
+  "source_step2b_candidates_sha256": "06578ddba69dc3a2c1d3978b0c99268fa37496de7527cc59cb4f6806646814b1",
+  "source_step2b_control": "correct_embedding",
+  "source_step2b_policy": "beam64_lp00",
+  "study_id": "gmolai-decoder-candidate-chemistry-step2c-v1",
+  "training": false
+}
