@@ -480,6 +480,15 @@ repository-canonical optimized gMolAI path reached 58,330 molecules/s at batch
 representation-equivalent neural encoder under that condition. These are
 descriptive one-pass measurements on one GH200.
 
+[`extra-benchmark/tdc-admet/`](extra-benchmark/tdc-admet/) is the final active
+study before manuscript preparation. Its protocol freezes the complete
+22-endpoint DOI-backed TDC ADMET snapshot, the same seven representation
+definitions, five official scaffold-selection seeds, common-support pairing,
+and shallow Ridge/logistic probes before representation execution. The
+13-descriptor panel is diagnostic and excluded from the primary seven-model
+rank summary. This benchmark tests ADMET representation utility; it neither
+scores generated analogues nor reopens the closed derivative-generation study.
+
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both
 `representation-best.pt` and `representation-calibrator.pt`.

@@ -1,0 +1,525 @@
+{
+  "endpoint_order": [
+    "caco2_wang",
+    "hia_hou",
+    "pgp_broccatelli",
+    "bioavailability_ma",
+    "lipophilicity_astrazeneca",
+    "solubility_aqsoldb",
+    "bbb_martins",
+    "ppbr_az",
+    "vdss_lombardo",
+    "cyp2d6_veith",
+    "cyp3a4_veith",
+    "cyp2c9_veith",
+    "cyp2d6_substrate_carbonmangels",
+    "cyp3a4_substrate_carbonmangels",
+    "cyp2c9_substrate_carbonmangels",
+    "half_life_obach",
+    "clearance_microsome_az",
+    "clearance_hepatocyte_az",
+    "herg",
+    "ames",
+    "dili",
+    "ld50_zhu"
+  ],
+  "files": {
+    "ames": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/ames/test.csv",
+        "rows": 1457,
+        "sha256": "d87e29ad1f188d6ee4fcdd5c3c3aa4ba15e4fec657553353d0d951ad8df02d3f"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/ames/train_val.csv",
+        "rows": 5821,
+        "sha256": "8b3add847978ec60685541e07696c837f116b7cb245d44f86eb8f4f69da8e44d"
+      }
+    },
+    "bbb_martins": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/bbb_martins/test.csv",
+        "rows": 406,
+        "sha256": "82d4fa96f671a8382e9d8e6de3dde8385b9f337854c83e6fde2e69a7be93754f"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/bbb_martins/train_val.csv",
+        "rows": 1624,
+        "sha256": "5035139072311f4cb0a1a54cffe11bc727004886ace4629b98f6db20c431e4af"
+      }
+    },
+    "bioavailability_ma": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/bioavailability_ma/test.csv",
+        "rows": 128,
+        "sha256": "329a4a20a82975658d15bc488ad4f68d58bc68c511273360d9fdcaef61a9f281"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/bioavailability_ma/train_val.csv",
+        "rows": 512,
+        "sha256": "f2b9eb265aed8261cb4033668b20d78e082dd9f43ccdbd1b3781d05596b5b137"
+      }
+    },
+    "caco2_wang": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/caco2_wang/test.csv",
+        "rows": 182,
+        "sha256": "5380c15b0dd9c11e22d3e3843083362d535dae36062dfee08056d3af4cb444df"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/caco2_wang/train_val.csv",
+        "rows": 728,
+        "sha256": "e0965b4a0617a3aa2978ef28794e3467d55655090f282a120355ea575ebed6b2"
+      }
+    },
+    "clearance_hepatocyte_az": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/clearance_hepatocyte_az/test.csv",
+        "rows": 243,
+        "sha256": "23e061c3fdc2627707c099be6a3082a55fd928a1f19e555f6f4f4b734ed8d314"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/clearance_hepatocyte_az/train_val.csv",
+        "rows": 970,
+        "sha256": "dcb4e04024bee243ff4c55c182bd450b89e43a605f9947d57417a2fcd11a2687"
+      }
+    },
+    "clearance_microsome_az": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/clearance_microsome_az/test.csv",
+        "rows": 221,
+        "sha256": "832c4479f007ea7b11a41301d20e55e226aa5f52ebbaa1ca7783854f64e4fdf5"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/clearance_microsome_az/train_val.csv",
+        "rows": 881,
+        "sha256": "736ffa13d70b38d68ab0b956200292084dcbd5e970e8d72a62eb715d8763b660"
+      }
+    },
+    "cyp2c9_substrate_carbonmangels": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2c9_substrate_carbonmangels/test.csv",
+        "rows": 135,
+        "sha256": "2b4c4fc9babd751ff0cfdc7f04e671aa8d1d2ced0051825380711c1cbe2a8d2a"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2c9_substrate_carbonmangels/train_val.csv",
+        "rows": 534,
+        "sha256": "64bfc7ba07896486b9cf4253a9e31e6551586a1d868a4fef14b4981137b19371"
+      }
+    },
+    "cyp2c9_veith": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2c9_veith/test.csv",
+        "rows": 2419,
+        "sha256": "e62409b62d6adc69c25eb47d83bfb88379878d70656e0191a8f555ef733e2519"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2c9_veith/train_val.csv",
+        "rows": 9673,
+        "sha256": "f7d1cb85adac9b1c4bca33936c7ecde2d0e3c127258846786ca7bf6418ddb1a4"
+      }
+    },
+    "cyp2d6_substrate_carbonmangels": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2d6_substrate_carbonmangels/test.csv",
+        "rows": 135,
+        "sha256": "18b78567d7c0a0add39dae9e329c71c338db7666be42d3e81729ed3edb74d0da"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2d6_substrate_carbonmangels/train_val.csv",
+        "rows": 532,
+        "sha256": "4257760cccc9f903d230708192afb399e56b78d8f1c6f2f4569b65b489bcd693"
+      }
+    },
+    "cyp2d6_veith": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2d6_veith/test.csv",
+        "rows": 2626,
+        "sha256": "8e8f9ec13df932e38b6467051a1ac496d498bd87ef9d893fde3490757e676c16"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp2d6_veith/train_val.csv",
+        "rows": 10504,
+        "sha256": "e9e65ba87e09d23aa49fa068bdbb6a16dc686d7916d15f1028569bf6fc3bc5c8"
+      }
+    },
+    "cyp3a4_substrate_carbonmangels": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp3a4_substrate_carbonmangels/test.csv",
+        "rows": 135,
+        "sha256": "6a1a41df7eacb6f7a98a9cf81d9117ec0d74b1f4ca5d3930579dcc8b861772f7"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp3a4_substrate_carbonmangels/train_val.csv",
+        "rows": 535,
+        "sha256": "f34d74d38b59100f8218645120ce028a91383bfa318cbb951a33418ba42eddc3"
+      }
+    },
+    "cyp3a4_veith": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp3a4_veith/test.csv",
+        "rows": 2467,
+        "sha256": "5b7d31656dd28ad48e2a1c9ee9b59cce39b6dfa268f5f285f939629a339ec9bc"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/cyp3a4_veith/train_val.csv",
+        "rows": 9861,
+        "sha256": "df6944a7a01cf8ba0a56b87214ea9e25ac40a8f8a64d92da454f12fbc50d179f"
+      }
+    },
+    "dili": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/dili/test.csv",
+        "rows": 96,
+        "sha256": "eb4cacff67a3f25d1d5e6a4c15ada68239af630ec19979097c4c832b185478e8"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/dili/train_val.csv",
+        "rows": 379,
+        "sha256": "0a5c221e3a62b204a990586be505ae1373884b7ef10e983bea1821901755c908"
+      }
+    },
+    "half_life_obach": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/half_life_obach/test.csv",
+        "rows": 135,
+        "sha256": "ec68952751525bee83c40ad23be420da183b787b04319cbbf9877d3a2eb02316"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/half_life_obach/train_val.csv",
+        "rows": 532,
+        "sha256": "31ad09226c2d3a86ac5dd312f5f93aa1ba5153c45d0aaf90c8e2c69ba6d46d37"
+      }
+    },
+    "herg": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/herg/test.csv",
+        "rows": 132,
+        "sha256": "14277bd932dce885e2f7a8d706effb455816f983e05b230f4f1c9590eb6c4248"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/herg/train_val.csv",
+        "rows": 523,
+        "sha256": "22fc4c4b6079f72b392cf2ae675d99c6927a6351377ee50c4f9f98c586a3f206"
+      }
+    },
+    "hia_hou": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/hia_hou/test.csv",
+        "rows": 117,
+        "sha256": "da702497c3c0a50dbdff77471517562a8813859f53f069ac5bb43126aa534351"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/hia_hou/train_val.csv",
+        "rows": 461,
+        "sha256": "87f35dc1767174efa245ee71644229b5073a8490988527a3fe6d2f1e7522c7db"
+      }
+    },
+    "ld50_zhu": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/ld50_zhu/test.csv",
+        "rows": 1478,
+        "sha256": "8a3fcc8311d78acd05594ffff6abcb610610f6ed15a60f8eb01dc3677f9b4fbe"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/ld50_zhu/train_val.csv",
+        "rows": 5907,
+        "sha256": "0624ac7c370393c8a2dc0398acc83aeb624e2589bbde74cf58a2b3ebb3bb3290"
+      }
+    },
+    "lipophilicity_astrazeneca": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/lipophilicity_astrazeneca/test.csv",
+        "rows": 840,
+        "sha256": "69f3870c9b6f2cec79a992a31d59d2e940962f7e2c4b27dabaed1fe1e767e2d8"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/lipophilicity_astrazeneca/train_val.csv",
+        "rows": 3360,
+        "sha256": "a54636f85cf31eb4c914ea15e2c3a15364b0b8b51986262ea229203637e08f31"
+      }
+    },
+    "pgp_broccatelli": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/pgp_broccatelli/test.csv",
+        "rows": 245,
+        "sha256": "959e448d2b8927d65ede864838c2eee5b2075d4c01ca544aeec4c90d663b4ccb"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/pgp_broccatelli/train_val.csv",
+        "rows": 973,
+        "sha256": "4a9183cf40c01881c6cfdeee7b68fed6dbe31348081099a323b9b76351a1dae0"
+      }
+    },
+    "ppbr_az": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/ppbr_az/test.csv",
+        "rows": 559,
+        "sha256": "c3a0acbca0053a0d7aa8b6ed01e9873abeddde88fa1340c1edfb63d9cf728f42"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/ppbr_az/train_val.csv",
+        "rows": 2231,
+        "sha256": "edc4416f46b0e463b3c5f26b10e0ac2ba013db53813ac9546c4780bbb5f81720"
+      }
+    },
+    "solubility_aqsoldb": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/solubility_aqsoldb/test.csv",
+        "rows": 1997,
+        "sha256": "18cd02deec4e06c611a6e7e38fb44a1731bc0c0a96bc5d4ded098ff29da645fe"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/solubility_aqsoldb/train_val.csv",
+        "rows": 7985,
+        "sha256": "adbee092423fe0cb0f4219520f2f93730b6ba5bb1d0ef8dd7764c2d32b3393b9"
+      }
+    },
+    "vdss_lombardo": {
+      "test": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/vdss_lombardo/test.csv",
+        "rows": 226,
+        "sha256": "de60a8bf6752ec6795f836708da1eeb6e9b5b97cdde0776d8c7f279cb5020740"
+      },
+      "train_val": {
+        "columns": [
+          "Drug_ID",
+          "Drug",
+          "Y"
+        ],
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/admet_group/vdss_lombardo/train_val.csv",
+        "rows": 904,
+        "sha256": "943bef20ab9ce2387399f947850e2743b09eccf9cc03bdc1b48cf336a8b1631e"
+      }
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "archive_bytes": 1442130,
+    "archive_path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/tdc-admet/source/tdc_admet_group_2026-03-24.tar.gz",
+    "archive_sha256": "8ac217bd8c316d04d15ab2ef5173ef6e9a084e156dfcd16c0ac21e2ed6e4590b",
+    "audit_repository": "https://github.com/receptor-ai/tdc-admet-bench",
+    "audit_repository_commit": "3e5472ce159a29b872219ffaaa4a11b4a2660f77",
+    "doi": "10.5281/zenodo.20180944",
+    "snapshot_created_with": "PyTDC 0.3.8",
+    "title": "TDC ADMET benchmark snapshot (2026-03-24)"
+  },
+  "status": "verified",
+  "total_occurrences": 81809
+}

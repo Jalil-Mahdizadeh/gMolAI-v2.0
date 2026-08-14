@@ -1,0 +1,302 @@
+{
+  "direct_or_near_endpoint_reuse": {
+    "bbb_martins": {
+      "conflicting_tdc_target_identities_in_overlap": 0,
+      "exact_target_matches": 1860,
+      "interpretation": "exact endpoint reuse among unambiguous overlapping identities",
+      "maximum_absolute_target_difference": 0.0,
+      "overlap_unique_identities": 1860,
+      "prior_dataset": "bbbp",
+      "target_pearson": 1.0000000000000002,
+      "unambiguous_target_pairs": 1860
+    },
+    "lipophilicity_astrazeneca": {
+      "conflicting_tdc_target_identities_in_overlap": 0,
+      "exact_target_matches": 4198,
+      "interpretation": "exact endpoint reuse among unambiguous overlapping identities",
+      "maximum_absolute_target_difference": 0.0,
+      "overlap_unique_identities": 4198,
+      "prior_dataset": "lipophilicity",
+      "target_pearson": 0.9999999999999999,
+      "unambiguous_target_pairs": 4198
+    },
+    "solubility_aqsoldb": {
+      "conflicting_tdc_target_identities_in_overlap": 0,
+      "exact_target_matches": 260,
+      "interpretation": "strongly related endpoint subset",
+      "maximum_absolute_target_difference": 2.967831125,
+      "overlap_unique_identities": 1098,
+      "prior_dataset": "esol",
+      "target_pearson": 0.9925145871399653,
+      "unambiguous_target_pairs": 1098
+    }
+  },
+  "endpoints": {
+    "ames": {
+      "overlap_unique_identities": {
+        "bace": 2,
+        "bbbp": 171,
+        "esol": 458,
+        "freesolv": 292,
+        "lipophilicity": 124
+      },
+      "overlap_with_any_development_identity": 740,
+      "tdc_unique_identities": 7255
+    },
+    "bbb_martins": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 1860,
+        "esol": 93,
+        "freesolv": 38,
+        "lipophilicity": 185
+      },
+      "overlap_with_any_development_identity": 1864,
+      "tdc_unique_identities": 1870
+    },
+    "bioavailability_ma": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 287,
+        "esol": 39,
+        "freesolv": 8,
+        "lipophilicity": 211
+      },
+      "overlap_with_any_development_identity": 384,
+      "tdc_unique_identities": 638
+    },
+    "caco2_wang": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 97,
+        "esol": 23,
+        "freesolv": 15,
+        "lipophilicity": 67
+      },
+      "overlap_with_any_development_identity": 147,
+      "tdc_unique_identities": 897
+    },
+    "clearance_hepatocyte_az": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 71,
+        "esol": 18,
+        "freesolv": 4,
+        "lipophilicity": 710
+      },
+      "overlap_with_any_development_identity": 725,
+      "tdc_unique_identities": 1020
+    },
+    "clearance_microsome_az": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 47,
+        "esol": 9,
+        "freesolv": 3,
+        "lipophilicity": 884
+      },
+      "overlap_with_any_development_identity": 893,
+      "tdc_unique_identities": 1102
+    },
+    "cyp2c9_substrate_carbonmangels": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 211,
+        "esol": 44,
+        "freesolv": 25,
+        "lipophilicity": 143
+      },
+      "overlap_with_any_development_identity": 293,
+      "tdc_unique_identities": 666
+    },
+    "cyp2c9_veith": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 109,
+        "esol": 19,
+        "freesolv": 7,
+        "lipophilicity": 102
+      },
+      "overlap_with_any_development_identity": 180,
+      "tdc_unique_identities": 11519
+    },
+    "cyp2d6_substrate_carbonmangels": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 212,
+        "esol": 44,
+        "freesolv": 25,
+        "lipophilicity": 144
+      },
+      "overlap_with_any_development_identity": 295,
+      "tdc_unique_identities": 664
+    },
+    "cyp2d6_veith": {
+      "overlap_unique_identities": {
+        "bace": 1,
+        "bbbp": 109,
+        "esol": 21,
+        "freesolv": 8,
+        "lipophilicity": 114
+      },
+      "overlap_with_any_development_identity": 191,
+      "tdc_unique_identities": 12547
+    },
+    "cyp3a4_substrate_carbonmangels": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 211,
+        "esol": 41,
+        "freesolv": 24,
+        "lipophilicity": 143
+      },
+      "overlap_with_any_development_identity": 293,
+      "tdc_unique_identities": 667
+    },
+    "cyp3a4_veith": {
+      "overlap_unique_identities": {
+        "bace": 1,
+        "bbbp": 101,
+        "esol": 20,
+        "freesolv": 7,
+        "lipophilicity": 106
+      },
+      "overlap_with_any_development_identity": 180,
+      "tdc_unique_identities": 11744
+    },
+    "dili": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 130,
+        "esol": 39,
+        "freesolv": 7,
+        "lipophilicity": 133
+      },
+      "overlap_with_any_development_identity": 216,
+      "tdc_unique_identities": 456
+    },
+    "half_life_obach": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 243,
+        "esol": 31,
+        "freesolv": 6,
+        "lipophilicity": 166
+      },
+      "overlap_with_any_development_identity": 322,
+      "tdc_unique_identities": 655
+    },
+    "herg": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 51,
+        "esol": 12,
+        "freesolv": 3,
+        "lipophilicity": 43
+      },
+      "overlap_with_any_development_identity": 70,
+      "tdc_unique_identities": 636
+    },
+    "hia_hou": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 88,
+        "esol": 24,
+        "freesolv": 9,
+        "lipophilicity": 93
+      },
+      "overlap_with_any_development_identity": 141,
+      "tdc_unique_identities": 578
+    },
+    "ld50_zhu": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 333,
+        "esol": 590,
+        "freesolv": 316,
+        "lipophilicity": 169
+      },
+      "overlap_with_any_development_identity": 1032,
+      "tdc_unique_identities": 7342
+    },
+    "lipophilicity_astrazeneca": {
+      "overlap_unique_identities": {
+        "bace": 10,
+        "bbbp": 182,
+        "esol": 50,
+        "freesolv": 10,
+        "lipophilicity": 4198
+      },
+      "overlap_with_any_development_identity": 4198,
+      "tdc_unique_identities": 4198
+    },
+    "pgp_broccatelli": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 108,
+        "esol": 30,
+        "freesolv": 8,
+        "lipophilicity": 84
+      },
+      "overlap_with_any_development_identity": 162,
+      "tdc_unique_identities": 1212
+    },
+    "ppbr_az": {
+      "overlap_unique_identities": {
+        "bace": 13,
+        "bbbp": 106,
+        "esol": 15,
+        "freesolv": 3,
+        "lipophilicity": 1083
+      },
+      "overlap_with_any_development_identity": 1119,
+      "tdc_unique_identities": 1797
+    },
+    "solubility_aqsoldb": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 327,
+        "esol": 1098,
+        "freesolv": 522,
+        "lipophilicity": 204
+      },
+      "overlap_with_any_development_identity": 1591,
+      "tdc_unique_identities": 8771
+    },
+    "vdss_lombardo": {
+      "overlap_unique_identities": {
+        "bace": 0,
+        "bbbp": 80,
+        "esol": 42,
+        "freesolv": 2,
+        "lipophilicity": 52
+      },
+      "overlap_with_any_development_identity": 116,
+      "tdc_unique_identities": 1111
+    }
+  },
+  "predeclared_selection_robust_exclusions": [
+    "bbb_martins",
+    "lipophilicity_astrazeneca",
+    "solubility_aqsoldb"
+  ],
+  "prior_development_datasets": [
+    "bace",
+    "bbbp",
+    "esol",
+    "freesolv",
+    "lipophilicity"
+  ],
+  "prior_moleculenet_full_labels": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/moleculenet/inputs/full_labels.tsv",
+    "sha256": "dff7d9597af94e27e2ed6afb8151b3f7fc8b5e8092841d003ade47284f2abb08"
+  },
+  "purpose": "selection-conditioning audit; no TDC model output was available",
+  "rule": "Report all 22 endpoints and the panel-complete primary summary; also report a 19-endpoint category-balanced sensitivity excluding the three directly reused or near-reused development endpoints.",
+  "schema_version": 1,
+  "status": "frozen_before_representation_execution",
+  "tdc_full_labels": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/full_labels.tsv",
+    "sha256": "c6c70c291996f76d0664cabfa42cd0675d13fc68e287546721d2da21b77da917"
+  }
+}

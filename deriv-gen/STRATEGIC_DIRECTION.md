@@ -94,8 +94,9 @@ generation contract. No endpoint, property model, seed panel, ranking rule,
 threshold, protocol, candidate generation, or evaluation has been selected or
 run for that future work.
 
-The final active benchmark direction for the current project is instead a
-standardized frozen-representation ADMET transfer comparison. That benchmark
+The final active benchmark direction for the current project is instead the
+standardized frozen-representation
+[TDC ADMET transfer comparison](../extra-benchmark/tdc-admet/). That benchmark
 is scientifically separate from derivative generation: it tests whether
 released representations support ADMET endpoint prediction and cannot be used
 as evidence that generated candidates have improved ADMET profiles.

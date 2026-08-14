@@ -1,0 +1,1476 @@
+{
+  "accepted_occurrences": 78699,
+  "canonicalization": "repository-pinned isomeric canonical SMILES, fragment rejection, allowed elements, and 2-256 atom bounds",
+  "endpoints": {
+    "ames": {
+      "category": "Toxicity",
+      "occurrence_start": 63580,
+      "occurrence_stop": 70858,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 1457,
+        "train_val": 5821
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 1457,
+        "train_val": 5821
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 1457,
+          "train_occurrences": 5093,
+          "train_source_row_sha256": "37e7863d5724698aa09ab1aed29c12606a4772afdb09909059c64a0f1eb00172",
+          "valid_occurrences": 728,
+          "valid_source_row_sha256": "500c55386dadbc472e7379808cae2759621273e583b6d473957c2031e2a24616"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 1457,
+          "train_occurrences": 4553,
+          "train_source_row_sha256": "012ca7fb4a3230a2cbb092ef6743e4b4cdc3161ba71c22eaf67eadf566d9e0f4",
+          "valid_occurrences": 1268,
+          "valid_source_row_sha256": "277902e4d81a29c84186eec6084ccc898f8531da46c12ccca0a1278e7b96bc2d"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 1457,
+          "train_occurrences": 5093,
+          "train_source_row_sha256": "4a449f289d64c6b93de31a2fb9cff3cb962b94c78287ec3d6d5c4dfe796b3376",
+          "valid_occurrences": 728,
+          "valid_source_row_sha256": "7ebe58a7ca5a677868b5a2d8629c2324bf0ffe1cb1a3061d97803b4348e3afa2"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 1457,
+          "train_occurrences": 5093,
+          "train_source_row_sha256": "f095821dee19e1ec9cf13df7a277bc82dd6917804c6e89eb6791fe3cf4839331",
+          "valid_occurrences": 728,
+          "valid_source_row_sha256": "401930060d067ef098d469bf4484f8e0320ac2490ee7743406d494e067c55fdf"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 1457,
+          "train_occurrences": 5093,
+          "train_source_row_sha256": "7d05278f2288df7451c5f55c27586c93ccd5b04363c9328c1f23fdb6ba73aba0",
+          "valid_occurrences": 728,
+          "valid_source_row_sha256": "d59690bf32859b31560baf17c5ddc389a01c89c12b25908d8e61c8868d78f2a2"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 1453,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 5802,
+      "unique_identities": 7255
+    },
+    "bbb_martins": {
+      "category": "Distribution",
+      "occurrence_start": 16304,
+      "occurrence_stop": 18229,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 391,
+        "train_val": 1534
+      },
+      "policy_rejections": {
+        "test:disconnected": 15,
+        "train_val:disconnected": 90
+      },
+      "raw": {
+        "test": 406,
+        "train_val": 1624
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 391,
+          "train_occurrences": 1344,
+          "train_source_row_sha256": "d0824793bcb895258b58d1f41f5d9e02e931df17e45a6113c1a4ee1919ea4be8",
+          "valid_occurrences": 190,
+          "valid_source_row_sha256": "6ff67f635a286082efb77f7da26dc88fc2c25f2352d561f576c67377fcd9f1ca"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 391,
+          "train_occurrences": 1342,
+          "train_source_row_sha256": "d3e28d2c856ffde8f2a1920366f1cb9ca36b64f89f1b04d5a26469d2adff4403",
+          "valid_occurrences": 192,
+          "valid_source_row_sha256": "7e02e562bf9c3ef58586021455ac34dcbf7702fa72d1119ce40880852e19538c"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 391,
+          "train_occurrences": 1342,
+          "train_source_row_sha256": "fa7156591a7275ed77fddd31a75419bdef32e1deffd23e4458ea6b69490ecfbf",
+          "valid_occurrences": 192,
+          "valid_source_row_sha256": "38ff5b19f9b4c438606d1b3281948ecb4f27521c7befd1817601480ba6bbe0ea"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 391,
+          "train_occurrences": 1343,
+          "train_source_row_sha256": "2afc1ec96ccf235be4c9bbd78df3cd4dbc9e9fe8bd94e2384a79b5d10ab86e07",
+          "valid_occurrences": 191,
+          "valid_source_row_sha256": "89523724285c49d18db8a9cce15938d7e002d22121e2c8792e070415ac75ccc6"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 391,
+          "train_occurrences": 1349,
+          "train_source_row_sha256": "5e1f3b07f5656849c93729c60b1342366fc765fd897585eb6e2896a29fd57c9e",
+          "valid_occurrences": 185,
+          "valid_source_row_sha256": "8bfc97d05268eb4d07d42316ae6250570fa000e1761b13e5d81573cb639ddffe"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 379,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 1491,
+      "unique_identities": 1870
+    },
+    "bioavailability_ma": {
+      "category": "Absorption",
+      "occurrence_start": 2697,
+      "occurrence_stop": 3335,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 128,
+        "train_val": 510
+      },
+      "policy_rejections": {
+        "train_val:disconnected": 1,
+        "train_val:unsupported_element": 1
+      },
+      "raw": {
+        "test": 128,
+        "train_val": 512
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 128,
+          "train_occurrences": 446,
+          "train_source_row_sha256": "84cc1c6532031f96cffeea1d6cc4de37a7212f6bef5baed58823392e4c103d16",
+          "valid_occurrences": 64,
+          "valid_source_row_sha256": "1a854d2f976447aa1acd77a1ac67e0cf25595970c4e7946d3611341ad3a1fd28"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 128,
+          "train_occurrences": 446,
+          "train_source_row_sha256": "41f3740e04f38cff2324212a2e305064a16b27dab53d58e4543cc3ed013e22b9",
+          "valid_occurrences": 64,
+          "valid_source_row_sha256": "882e454a0400a677652604523de4c9cb1f3fb906f0aee0cc669ecc07ebc38945"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 128,
+          "train_occurrences": 446,
+          "train_source_row_sha256": "4f6168cfa2f16b49dac0bb81f2174b670a1ecdbbdb5b14d03e171f96bb2e41e2",
+          "valid_occurrences": 64,
+          "valid_source_row_sha256": "7e65fff03fcef980d847d55dbe163c51f469e0edbdb9cbbd9da3e1ee177ff75f"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 128,
+          "train_occurrences": 446,
+          "train_source_row_sha256": "1415084809499131bf0e46da51978277ed55ba556e52c0ac5142906368061ec2",
+          "valid_occurrences": 64,
+          "valid_source_row_sha256": "6ebebb2a4c3140a73c7ff5afb0230cba2c40cab3d2517b27917c6d75d72e9514"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 128,
+          "train_occurrences": 446,
+          "train_source_row_sha256": "dd855b7eda4f064250cee259986248c9164ce78ea20dd4409da7da0337580f91",
+          "valid_occurrences": 64,
+          "valid_source_row_sha256": "0bf1720ea38655d28047677dc9037ce9321e013d35fece380b3dd92c868c98ab"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 128,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 510,
+      "unique_identities": 638
+    },
+    "caco2_wang": {
+      "category": "Absorption",
+      "occurrence_start": 0,
+      "occurrence_stop": 901,
+      "official_metric": "mae",
+      "policy_accepted": {
+        "test": 181,
+        "train_val": 720
+      },
+      "policy_rejections": {
+        "test:disconnected": 1,
+        "train_val:disconnected": 8
+      },
+      "raw": {
+        "test": 182,
+        "train_val": 728
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 181,
+          "train_occurrences": 631,
+          "train_source_row_sha256": "85c7c0134e3f46d16a061091714e158f04ebdc9b8ea4bff6dde87a42253b6730",
+          "valid_occurrences": 89,
+          "valid_source_row_sha256": "4b320f854f56f84aadb945baf40074520bda910d8745381e9655e5dd4157f714"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 181,
+          "train_occurrences": 629,
+          "train_source_row_sha256": "f9b8cda62048c8f3fd52a86e9e1aa0cae5b8d583b01aaca53a5a0311d4cae6d8",
+          "valid_occurrences": 91,
+          "valid_source_row_sha256": "8d7c55f7e650e059a7c04df99a5e470467f76408ede4b1e00a5a23fe3db7f65c"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 181,
+          "train_occurrences": 629,
+          "train_source_row_sha256": "57569f3ce09b9988baa213dc5c7292a6790897e8141895b3fd0862df24e35385",
+          "valid_occurrences": 91,
+          "valid_source_row_sha256": "798a5b8e358c7dc23b2a642d092677b90964f73f33e36129c3bda16173dc9314"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 181,
+          "train_occurrences": 629,
+          "train_source_row_sha256": "27d932f07898e4e98febb6d03fef23d4727ffe0cf8df927a08b5463e1ba5cb0b",
+          "valid_occurrences": 91,
+          "valid_source_row_sha256": "99124e93993adf2e37b60f182694595a8d6b7ef35fe4d188a41fc17d3db1b9c9"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 181,
+          "train_occurrences": 629,
+          "train_source_row_sha256": "035ab194b9c81c9b533c66ea7bc3f892d40bb11196bd350882ceeeed642cf8f7",
+          "valid_occurrences": 91,
+          "valid_source_row_sha256": "cf94cae4e6a88490edd7864593c35fdd9dda678bb5b234fa082308ab939ecb54"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 180,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 717,
+      "unique_identities": 897
+    },
+    "clearance_hepatocyte_az": {
+      "category": "Excretion",
+      "occurrence_start": 61724,
+      "occurrence_stop": 62937,
+      "official_metric": "spearman",
+      "policy_accepted": {
+        "test": 243,
+        "train_val": 970
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 243,
+        "train_val": 970
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 243,
+          "train_occurrences": 848,
+          "train_source_row_sha256": "4f85bbb804bb3308149f5651b6bf8d42b173ce892af5420926aafd8437abeb44",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "47d4ab20f0a5013f76cd97be5e2891ae1f6d946b5e3306bc3d1c5b0c23d15975"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 243,
+          "train_occurrences": 848,
+          "train_source_row_sha256": "7acfedfaa3784930af77c10da649014d2462d790726f585dceb1c6a20b35c660",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "de3439997817d02002897ab0a8a153024beb85a018955286287180d4a7e0eb20"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 243,
+          "train_occurrences": 848,
+          "train_source_row_sha256": "2ea35fbb95fe1bc4ecc33a4ccf1aa59c623104cb02c7066311d1f73acadcdd40",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "976e58b995c43f35710e4028fdd907d5877415fbbeb203d2f9f52ddea3ca99db"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 243,
+          "train_occurrences": 848,
+          "train_source_row_sha256": "c70eb0a1b8a8dde2a67fde3e235352cce8457d4b58c669418e6361b80aca5da8",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "7dad61b835dc2677ba0c7b720af0e3452dd096df34d00b3919c81df6e42f5c3f"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 243,
+          "train_occurrences": 848,
+          "train_source_row_sha256": "8b356635b061da7145ca6b3682d99028ad19f7db79414e61cbe643d0daf51b9f",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "0fe5917d651239cfe0987f2818c049df4c75989765a3b0032f40048e56d60fbf"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 203,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 817,
+      "unique_identities": 1020
+    },
+    "clearance_microsome_az": {
+      "category": "Excretion",
+      "occurrence_start": 60622,
+      "occurrence_stop": 61724,
+      "official_metric": "spearman",
+      "policy_accepted": {
+        "test": 221,
+        "train_val": 881
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 221,
+        "train_val": 881
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 221,
+          "train_occurrences": 770,
+          "train_source_row_sha256": "a99996d2b8e0a5b6f3231523add4aa208dedb2c34963427dc837f6df34f36982",
+          "valid_occurrences": 111,
+          "valid_source_row_sha256": "421d2366f8b4d9d6392a06cfa8db99b137873a843cf73db5117548038c605a8e"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 221,
+          "train_occurrences": 770,
+          "train_source_row_sha256": "6cf1494c69336a640a62be65e7c9edc8efa78371ca221b8097c4ce40e7743626",
+          "valid_occurrences": 111,
+          "valid_source_row_sha256": "dda12941ccf0b63391285ec902f3c0d014ce3a249b4bec7d6a3c0d08f0103d56"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 221,
+          "train_occurrences": 770,
+          "train_source_row_sha256": "e4a31c9e86bfedc13591374876e1978911869782cc1778f029b897dd3fee0670",
+          "valid_occurrences": 111,
+          "valid_source_row_sha256": "df7090a137a9f6c46185228733a92ac625a1aa5ec1aec54060fbd8db09eed5b7"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 221,
+          "train_occurrences": 770,
+          "train_source_row_sha256": "cac93a22f39a620955c62471138aa50fe05f20f59c16aca29d1a9455e7e3ad56",
+          "valid_occurrences": 111,
+          "valid_source_row_sha256": "8b00ee2d73847b886e9f0cd0e9d38122896a7c697af50141bd690ff7776301a3"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 221,
+          "train_occurrences": 770,
+          "train_source_row_sha256": "26b3c0206c699ab802b86194bc6f1840429dfea1d45f4ff5b269c8a98997f9ad",
+          "valid_occurrences": 111,
+          "valid_source_row_sha256": "9c7d5a2188903a6fab1af094e0484491c3328bce2185e7c84558b5b3988d2a0f"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 221,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 881,
+      "unique_identities": 1102
+    },
+    "cyp2c9_substrate_carbonmangels": {
+      "category": "Metabolism",
+      "occurrence_start": 59296,
+      "occurrence_stop": 59965,
+      "official_metric": "pr_auc",
+      "policy_accepted": {
+        "test": 135,
+        "train_val": 534
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 135,
+        "train_val": 534
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 135,
+          "train_occurrences": 467,
+          "train_source_row_sha256": "a254014ee6b80041d5445782076e4b5fd1c01985af39c14735120bc1b55c158c",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "167e486ae34d64cc5cd6766076ec84b2c540a5338a8049e878acf0699b43e207"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 135,
+          "train_occurrences": 467,
+          "train_source_row_sha256": "03553e5a7965fc9e510a86e427d617993dd9489da82dc0acf5887b0fc9b73361",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "92b7288058fe2664b5f05e837309d3a481abe705f56719e84b8171b1ba32f30b"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 135,
+          "train_occurrences": 467,
+          "train_source_row_sha256": "fd1446d7078834f7c6e90e8e35e7d0c387fa1b5726d6ac40e2d53f0a28b5df8f",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "2cfabdf87c08ba3814ce834edbb54337355a94a1865c142b6cc2431816a5f04a"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 135,
+          "train_occurrences": 467,
+          "train_source_row_sha256": "6bb7ff92e48250aba2b161b46ebc61526341a6ce868ffcb47f1447545f0acc0e",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "95f50d9e8500b2d0d835d452890f508b4eff62cc96c53403bbcc8e8cf347feab"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 135,
+          "train_occurrences": 467,
+          "train_source_row_sha256": "a4d3edd2563c4655a8db42610eda2a5284ce47911bf50f2b8ec6e3786e0ff88e",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "b6a84d8e99af936c8b20906238abbbfdfbd917303eec6af0bb661c193d9e6941"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 135,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 531,
+      "unique_identities": 666
+    },
+    "cyp2c9_veith": {
+      "category": "Metabolism",
+      "occurrence_start": 46440,
+      "occurrence_stop": 57959,
+      "official_metric": "pr_auc",
+      "policy_accepted": {
+        "test": 2308,
+        "train_val": 9211
+      },
+      "policy_rejections": {
+        "test:disconnected": 106,
+        "test:unsupported_element": 5,
+        "train_val:disconnected": 432,
+        "train_val:unsupported_element": 30
+      },
+      "raw": {
+        "test": 2419,
+        "train_val": 9673
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 2308,
+          "train_occurrences": 8047,
+          "train_source_row_sha256": "6a0ca6afd6aa5354d34c49e0c5c769c2f9b6e26e4814a02f496d8f4352cfd12c",
+          "valid_occurrences": 1164,
+          "valid_source_row_sha256": "c06998643d8ebcc8808f267e7a2a962fd755a461ebf21a0badce1b6fc6c1f94d"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 2308,
+          "train_occurrences": 8046,
+          "train_source_row_sha256": "ac0a3a498bf62e096aa3656093e1a7b1ded97e20e52bc947c0a0434fa9697c3c",
+          "valid_occurrences": 1165,
+          "valid_source_row_sha256": "3f5e397ad7602cc1e11e0b05173723f26a6ab61b7d2ad0b703a5cc5703183093"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 2308,
+          "train_occurrences": 8071,
+          "train_source_row_sha256": "0a9d87a579d5a22609bf7074292b519cf8c813ab2b685bc520d9c8d64c97bd1c",
+          "valid_occurrences": 1140,
+          "valid_source_row_sha256": "565d7b49b3ce7da3c50b3245011c8e46b3174aea08978b148188b916780dff85"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 2308,
+          "train_occurrences": 8061,
+          "train_source_row_sha256": "b53ba0e9bce95c9a2f77916f3291304c7ba96d54b9143a5b9c6cfd4bf83084dd",
+          "valid_occurrences": 1150,
+          "valid_source_row_sha256": "2a7b169cabd0b88c5648af6b5b803f91dd15f5f962941ac6275d12016c32442c"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 2308,
+          "train_occurrences": 8056,
+          "train_source_row_sha256": "9d118d29c2bc7d53bc72fa737ae3f428256cb0e67e9c3b80749bb6dbf17d2f24",
+          "valid_occurrences": 1155,
+          "valid_source_row_sha256": "b47b37ef8c39ba95396899c3e4c0a436ac21bdfe753184ad30244c9acc38a599"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 2308,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 9211,
+      "unique_identities": 11519
+    },
+    "cyp2d6_substrate_carbonmangels": {
+      "category": "Metabolism",
+      "occurrence_start": 57959,
+      "occurrence_stop": 58626,
+      "official_metric": "pr_auc",
+      "policy_accepted": {
+        "test": 135,
+        "train_val": 532
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 135,
+        "train_val": 532
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 135,
+          "train_occurrences": 465,
+          "train_source_row_sha256": "6bfd841f77e696836fdd607db639d7a356038940862ca5c703a03247b909d010",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "3285c9608055cfab3cea53b7d5ea43122379178cea56baf2a282589b62f76f58"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 135,
+          "train_occurrences": 465,
+          "train_source_row_sha256": "b842b8699974b3f8586fed6da59f872555c7f8cba7094f87b2b138a10127a85b",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "78b04a1accdc6b1b0d8b3b1a4ce013184b7363e619db191d8fdfc9cada0750e9"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 135,
+          "train_occurrences": 465,
+          "train_source_row_sha256": "5d6f89cf5fab58d0b05b67ac47849673b2e560c49a5a8e94ba0fe83924e9f24a",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "3a01c632fd3d440c1f7c10f75c7db3d6015fcd65547b07d5380e1604432de9d0"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 135,
+          "train_occurrences": 465,
+          "train_source_row_sha256": "0941b6123f72f3fa96609a68749beb0b5f855fda189d3a9c3730678e1c8fe193",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "37e68345461d74bbcb4b5771927624da5f05cfbd59a39fbe405e24d09809b4df"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 135,
+          "train_occurrences": 465,
+          "train_source_row_sha256": "5bea8e5da83b4c1e6a4184b99a9cdca19416b687c937e1eeb1b141f7b0e9759f",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "118e8933c8febc8f74872b44ddd7bce95480ea4875509b93baf69d95098a7999"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 134,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 530,
+      "unique_identities": 664
+    },
+    "cyp2d6_veith": {
+      "category": "Metabolism",
+      "occurrence_start": 22149,
+      "occurrence_stop": 34696,
+      "official_metric": "pr_auc",
+      "policy_accepted": {
+        "test": 2475,
+        "train_val": 10072
+      },
+      "policy_rejections": {
+        "test:disconnected": 133,
+        "test:unsupported_element": 18,
+        "train_val:disconnected": 416,
+        "train_val:unsupported_element": 16
+      },
+      "raw": {
+        "test": 2626,
+        "train_val": 10504
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 2475,
+          "train_occurrences": 8808,
+          "train_source_row_sha256": "0fba5d43a38080c357afaa4b94aab56cfc9b5c3117ed4a173622d51dd9d92094",
+          "valid_occurrences": 1264,
+          "valid_source_row_sha256": "e8a6c8f15127d74af177ff401991ef84c91b28c28e06401d85f1889175a92f1e"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 2475,
+          "train_occurrences": 8822,
+          "train_source_row_sha256": "60a34dc97b8ac4795f414489d185e681ec3d89557a95f904eaca434a748de278",
+          "valid_occurrences": 1250,
+          "valid_source_row_sha256": "d17f3964bf64631a0c43181de41655d09b4ec4d2252b33bd6302b21de598c1a9"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 2475,
+          "train_occurrences": 8807,
+          "train_source_row_sha256": "7d4ae67b983e934b2dd4a81ba47797c9924296e9f447c80e0019c98ad7042687",
+          "valid_occurrences": 1265,
+          "valid_source_row_sha256": "00c5b8b961bc0f2e7d2dbfd9d74e912405ede0a2e07a8d965f6d0046cb70d97b"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 2475,
+          "train_occurrences": 8799,
+          "train_source_row_sha256": "dfe46768354a8034ad2c93783063d10bdd4cfd70802a20c47efb8b7c5eeb60c2",
+          "valid_occurrences": 1273,
+          "valid_source_row_sha256": "5e29483e25c3f9a3085bbaf1762426586f48b4e9168185d10dd5b160abb8dda5"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 2475,
+          "train_occurrences": 8803,
+          "train_source_row_sha256": "dc3a147cb4d64fc7266bc5f510e2323490f942ac22e3752d77d7f288644c63aa",
+          "valid_occurrences": 1269,
+          "valid_source_row_sha256": "62dbbc15ea0440eb5763a7731f4676ef36982603073911a6611bfbcc533d4536"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 2475,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 10072,
+      "unique_identities": 12547
+    },
+    "cyp3a4_substrate_carbonmangels": {
+      "category": "Metabolism",
+      "occurrence_start": 58626,
+      "occurrence_stop": 59296,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 135,
+        "train_val": 535
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 135,
+        "train_val": 535
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 135,
+          "train_occurrences": 468,
+          "train_source_row_sha256": "33aa6ce5c7ddd2cad20f007bc2a2e63de1a2d9abf2e054387f280b7dfbe917f9",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "8e7543ef1a8933bb459552cacdaca25ce98d7fcd4a9300a7874928dbe3ee43f4"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 135,
+          "train_occurrences": 468,
+          "train_source_row_sha256": "01f3f2cceb00a73024c1abf0250a905f451baf3202dd74b676d4fac3f15b78fb",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "3d93276071c2312f8a47816a06d9a5c294bcbeade6476c51112eb083d361c825"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 135,
+          "train_occurrences": 468,
+          "train_source_row_sha256": "7ab7ddec7e8b103be9b0f3110c68354f5ccb7b6c2db2f5170e0165c4fd2c57b8",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "24a639270053b13e53dbc1b08f6c125f3013309218db4821e409504a715390c1"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 135,
+          "train_occurrences": 468,
+          "train_source_row_sha256": "95a980684d02419951e5b8982b83096dc388dc23fd0deadc8655807f05a90d95",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "200deaa3f34248556d2f9a2d5ca3cf1b7a986501722b93589753ebb7da83f3e0"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 135,
+          "train_occurrences": 468,
+          "train_source_row_sha256": "a7d87bd526671406dbf0d543b858f18da1af415733c45d49e571b820fe9aff2a",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "1e66ba4caab15e372d7ad4baf8d96bbe871fe8dfeb2cd0abcbf75faa2f97fd17"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 134,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 533,
+      "unique_identities": 667
+    },
+    "cyp3a4_veith": {
+      "category": "Metabolism",
+      "occurrence_start": 34696,
+      "occurrence_stop": 46440,
+      "official_metric": "pr_auc",
+      "policy_accepted": {
+        "test": 2362,
+        "train_val": 9382
+      },
+      "policy_rejections": {
+        "test:disconnected": 99,
+        "test:unsupported_element": 6,
+        "train_val:disconnected": 450,
+        "train_val:unsupported_element": 29
+      },
+      "raw": {
+        "test": 2467,
+        "train_val": 9861
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 2362,
+          "train_occurrences": 8203,
+          "train_source_row_sha256": "e9bcf617cba5efea43bbd5c6ec0fd8ae9b125ac88744c0cd7e81f4a418511bd7",
+          "valid_occurrences": 1179,
+          "valid_source_row_sha256": "b1dd56fcadb2952931e2f7bd5166c33b8b5d71b32df58a5d061f5aa17405fd4c"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 2362,
+          "train_occurrences": 8206,
+          "train_source_row_sha256": "d49608821ae60bae059d3af64693ed966a9e30cead5a67b7828bf8ed25a9ef1b",
+          "valid_occurrences": 1176,
+          "valid_source_row_sha256": "f8e95ab5952fb158adf4fdd6db89b26298a459b05f0bea4498932d3cdf2e8351"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 2362,
+          "train_occurrences": 8202,
+          "train_source_row_sha256": "6ebaf2f18b6d98cd1003c477c564c6ef12e49666ceb2a145ae6eac742f7ee709",
+          "valid_occurrences": 1180,
+          "valid_source_row_sha256": "6e99e6d82630783483e2a0f78275b42fd8323e4da91aaba0369925c6762e8d9c"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 2362,
+          "train_occurrences": 8202,
+          "train_source_row_sha256": "3fa3b4587b4e57cb5fe96c09cf288b6ce2e288231edcf0fdbfb5e84536705c0f",
+          "valid_occurrences": 1180,
+          "valid_source_row_sha256": "80c941df3a64482e23ad03ec143672ca8844c78ca7561a38a484bfa0ea53d75d"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 2362,
+          "train_occurrences": 8221,
+          "train_source_row_sha256": "21aa9e73422c6bc68f3572ab1fc023b28a62f29c4e4036424f700cc1a849c16a",
+          "valid_occurrences": 1161,
+          "valid_source_row_sha256": "bc125746bf38aa57779c35db212bbc417a513731b99f3fd1d537efd07d0846e2"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 2362,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 9382,
+      "unique_identities": 11744
+    },
+    "dili": {
+      "category": "Toxicity",
+      "occurrence_start": 70858,
+      "occurrence_stop": 71314,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 90,
+        "train_val": 366
+      },
+      "policy_rejections": {
+        "test:disconnected": 6,
+        "train_val:disconnected": 12,
+        "train_val:unsupported_element": 1
+      },
+      "raw": {
+        "test": 96,
+        "train_val": 379
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 90,
+          "train_occurrences": 312,
+          "train_source_row_sha256": "96cc40d176eaa361afb7fb99d7d1750653e96baab53fa624e70b09dc4d10f80e",
+          "valid_occurrences": 54,
+          "valid_source_row_sha256": "9e4e62f8c08f4b2f15e7c44b7c86afb8cdefa67fe96d706dbb19787be7f9901d"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 90,
+          "train_occurrences": 318,
+          "train_source_row_sha256": "cb014892f16a1ecba4b8ebc1a57cb193649c28ddba111222199644fbe141d6ad",
+          "valid_occurrences": 48,
+          "valid_source_row_sha256": "ebdbd98f40d95309cf0a0e4070159d62c204df271ee2e6a85a5c0675a800e807"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 90,
+          "train_occurrences": 318,
+          "train_source_row_sha256": "d5cb81e9c000815d51b643346bb50583f21f8fb85eee4bd7e2564cbecaa25541",
+          "valid_occurrences": 48,
+          "valid_source_row_sha256": "fb6d593b860847e3cebb6d826ac953cb89bf0a1e3ebd18d7469afc745684f9e9"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 90,
+          "train_occurrences": 318,
+          "train_source_row_sha256": "393ed2b6d59a58df5cdb3c20ae54d2e6c716b8c67e42dd8fbdfb44fa9e0ce54a",
+          "valid_occurrences": 48,
+          "valid_source_row_sha256": "0f92e19fa437f4e0bf8e1a0e59f672c3f5d757c12e01f529af16aebed7428b3b"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 90,
+          "train_occurrences": 318,
+          "train_source_row_sha256": "4a75e8cdb0851144db2454e99a0d5188bae8c487966bd8b7316a81850c7af1ea",
+          "valid_occurrences": 48,
+          "valid_source_row_sha256": "5635d05e59d9eaf4af5b3d4f7bda3cd926595a62a4443a3be90c73366c9ca191"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 90,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 366,
+      "unique_identities": 456
+    },
+    "half_life_obach": {
+      "category": "Excretion",
+      "occurrence_start": 59965,
+      "occurrence_stop": 60622,
+      "official_metric": "spearman",
+      "policy_accepted": {
+        "test": 132,
+        "train_val": 525
+      },
+      "policy_rejections": {
+        "test:disconnected": 3,
+        "train_val:disconnected": 7
+      },
+      "raw": {
+        "test": 135,
+        "train_val": 532
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 132,
+          "train_occurrences": 459,
+          "train_source_row_sha256": "24442cdc0bfbfb6ec86ed0e45066c363ce973e1ba5647926a4249d5349e0a2c3",
+          "valid_occurrences": 66,
+          "valid_source_row_sha256": "543635fab1c4d9d74e7211712136415ba448b5ea6a0b9053e087b85428a4e846"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 132,
+          "train_occurrences": 458,
+          "train_source_row_sha256": "70e6ded988aa92e173717f340cef732a271601a598575b6842b95a704c08d6b2",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "f455e9e7723cc20115173da49ebb29077555e088d73dac6a3f4ca6bd784b085b"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 132,
+          "train_occurrences": 458,
+          "train_source_row_sha256": "bfd5f39a398a83d60f3830782fdf8f8e578653ee5f9c0b49e31107755e82dfd4",
+          "valid_occurrences": 67,
+          "valid_source_row_sha256": "11d4a3d9f4635de8ad9a93c91c8b82b00f27d4c12e12259fa2696acb13d9b725"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 132,
+          "train_occurrences": 459,
+          "train_source_row_sha256": "4bbb1acb96a17a8a9137ed3c8d099fb96766cbf13ceaf4e1a4e5d2dd020a08d5",
+          "valid_occurrences": 66,
+          "valid_source_row_sha256": "00f460c520bb065ba8a32141fb1e2275e9b8d7f5b600b936b189fd941b6b7a55"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 132,
+          "train_occurrences": 460,
+          "train_source_row_sha256": "c11e31ce8cc23928e7865424ecdf398da7de3b51f8f24dd0c6ebf58626464186",
+          "valid_occurrences": 65,
+          "valid_source_row_sha256": "833afb0b3f16399c0bccda9c0da00db9e81038a0f6d8d6e312a20d56b663859a"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 131,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 524,
+      "unique_identities": 655
+    },
+    "herg": {
+      "category": "Toxicity",
+      "occurrence_start": 62937,
+      "occurrence_stop": 63580,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 130,
+        "train_val": 513
+      },
+      "policy_rejections": {
+        "test:disconnected": 2,
+        "train_val:disconnected": 10
+      },
+      "raw": {
+        "test": 132,
+        "train_val": 523
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 130,
+          "train_occurrences": 449,
+          "train_source_row_sha256": "41675997896a4e158d8418240ceece5c294152b545b23f4b1e525bea32eaeb9d",
+          "valid_occurrences": 64,
+          "valid_source_row_sha256": "56cd9509424b8733560a87f5ed85c14b02612ce143fbd08b8faf795d2e8d794c"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 130,
+          "train_occurrences": 448,
+          "train_source_row_sha256": "7228030fe844452e2917663c173494e70ed14e5fc2369fe28a8ff3a84810cecf",
+          "valid_occurrences": 65,
+          "valid_source_row_sha256": "81e636dd8e63eef179fab779a73dbc46c08acacf77200df0e183e4a2fb517191"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 130,
+          "train_occurrences": 448,
+          "train_source_row_sha256": "3fdc8c6dfdf14878177b26cd5f47360b1af1363dc0c3feab33ec371bf9200a20",
+          "valid_occurrences": 65,
+          "valid_source_row_sha256": "22decc7ee67eed228fca6327ceca336eea2eb1b69c7ece26be7647d1b69cc198"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 130,
+          "train_occurrences": 447,
+          "train_source_row_sha256": "001aa2e90dc658fa874ba31a4ae4ffd2d64851cfa5a919fa7f83367867884b6d",
+          "valid_occurrences": 66,
+          "valid_source_row_sha256": "1e1bb3521cd7c2b2f704c87f839ccf9edb3efc2c43b7a5ddc9dd7ee67e15e309"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 130,
+          "train_occurrences": 448,
+          "train_source_row_sha256": "059d59fb208cdfc25d52854c66a0d9f7b38d24d81d9315fb506b7a1dc4e6c5fd",
+          "valid_occurrences": 65,
+          "valid_source_row_sha256": "01be82f8ebc87bde5be1a2267406ffffa4b7948a8b432676de0d4176fbad9ece"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 126,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 510,
+      "unique_identities": 636
+    },
+    "hia_hou": {
+      "category": "Absorption",
+      "occurrence_start": 901,
+      "occurrence_stop": 1479,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 117,
+        "train_val": 461
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 117,
+        "train_val": 461
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 117,
+          "train_occurrences": 403,
+          "train_source_row_sha256": "540ab2d654e1dfdac2bd2db9b483b21cbb69174f0e1c682700ee4c87a060fdf7",
+          "valid_occurrences": 58,
+          "valid_source_row_sha256": "9fe06f50100b31964dd3f68727bd8f52e7f0b42409d0630b882dec51fa285167"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 117,
+          "train_occurrences": 403,
+          "train_source_row_sha256": "139950a435a41cabba281636fc10d61e0f548991d41213f2aacdccdce8cfbc1b",
+          "valid_occurrences": 58,
+          "valid_source_row_sha256": "8044e7e1a120c1ad41a22fc844d793a624316f28d010eb498c83160a73f601c7"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 117,
+          "train_occurrences": 403,
+          "train_source_row_sha256": "a270c3e57fd8fa169570019c89b95d60675a02362586c546659059bd5136401f",
+          "valid_occurrences": 58,
+          "valid_source_row_sha256": "8b806f35ec964cf46f4b7487e728d00cd98ffeb6638bbf016d49570ce334de8b"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 117,
+          "train_occurrences": 403,
+          "train_source_row_sha256": "41b4a010e1a325620961c39250cd6c7144d247ef914d929be2a94c4d50b3d51d",
+          "valid_occurrences": 58,
+          "valid_source_row_sha256": "c60803d04f7329aa0b781ad5bf8eeecd4ceec1832652caf9c962a63fea37592b"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 117,
+          "train_occurrences": 397,
+          "train_source_row_sha256": "8fb0acae8a98eeb5c01728d86112216fe5ec8aab5b6253e7618312ae76724af4",
+          "valid_occurrences": 64,
+          "valid_source_row_sha256": "7c50363b0f5c186263877fe0ba5877137b0ad6e2167988e9b46e1753012343fa"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 117,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 461,
+      "unique_identities": 578
+    },
+    "ld50_zhu": {
+      "category": "Toxicity",
+      "occurrence_start": 71314,
+      "occurrence_stop": 78699,
+      "official_metric": "mae",
+      "policy_accepted": {
+        "test": 1478,
+        "train_val": 5907
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 1478,
+        "train_val": 5907
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 1478,
+          "train_occurrences": 5168,
+          "train_source_row_sha256": "87a41bc440c8c484fc86e9a2c6dbaad70e4567d11087ef21352e1cf82c63f499",
+          "valid_occurrences": 739,
+          "valid_source_row_sha256": "463fabbf25b212d3bfc6f580bbee165a4c8b4dff68d4bf429a457f8ded25b9c1"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 1478,
+          "train_occurrences": 5168,
+          "train_source_row_sha256": "1532f8c4793c07dbef8d2ee98de38e585bee594fe9a6df40df22a7f029434635",
+          "valid_occurrences": 739,
+          "valid_source_row_sha256": "d64ed49e524990ca494dbf20f53acc02f745220331b795a50cf21871c15eb47a"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 1478,
+          "train_occurrences": 3970,
+          "train_source_row_sha256": "d78afdb45d17a7c16e5a84b54375e86e3c98296d012eb15d48e70c34412dd0ba",
+          "valid_occurrences": 1937,
+          "valid_source_row_sha256": "05a67c2046111b0d6aab38339df4234b8dd36068318fae5c07b83f2a499a01aa"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 1478,
+          "train_occurrences": 5168,
+          "train_source_row_sha256": "665be6cb3927ec32ff2a881311186eb1dd865efc93afc6cb351007889b59b513",
+          "valid_occurrences": 739,
+          "valid_source_row_sha256": "a5930804d74e0fc8a87182e4b3969d3fc45e147c0e0d10b1c8d99c71510bd4c9"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 1478,
+          "train_occurrences": 4367,
+          "train_source_row_sha256": "1bbf0d50cc70ae912fda34fe6c171f10c333e29cfd6797aaa615bb1b720697cc",
+          "valid_occurrences": 1540,
+          "valid_source_row_sha256": "2dc148885ad671f70915bef6cba9144f4afee04a7290ace0fe7cd7c562493c2d"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 1466,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 5876,
+      "unique_identities": 7342
+    },
+    "lipophilicity_astrazeneca": {
+      "category": "Absorption",
+      "occurrence_start": 3335,
+      "occurrence_stop": 7533,
+      "official_metric": "mae",
+      "policy_accepted": {
+        "test": 840,
+        "train_val": 3358
+      },
+      "policy_rejections": {
+        "train_val:disconnected": 1,
+        "train_val:unsupported_element": 1
+      },
+      "raw": {
+        "test": 840,
+        "train_val": 3360
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 840,
+          "train_occurrences": 2938,
+          "train_source_row_sha256": "3da32b113b4649ed6da9112b56d1684b78c99e880c4220a56847ab2696fc1179",
+          "valid_occurrences": 420,
+          "valid_source_row_sha256": "14a16e3e920c94d32bdc9342907170347daa633f1c470754d67ffd2ce0157018"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 840,
+          "train_occurrences": 2939,
+          "train_source_row_sha256": "aa3f1eaeb40bb1065e98e3b985b2a84603869c9a10b762993abc47561470182e",
+          "valid_occurrences": 419,
+          "valid_source_row_sha256": "4f6af855e21252b6f932fc785daff2a542c78c169fbb9a07171a12365b4c66f2"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 840,
+          "train_occurrences": 2939,
+          "train_source_row_sha256": "fb0b9727f37c68bfd0898ea81fa4dea46cecebd84b6a6b37d85ceb6a8cb8279e",
+          "valid_occurrences": 419,
+          "valid_source_row_sha256": "5259012a15886c8e598d997cc760406451737037f734734d67b2e6e8064960e2"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 840,
+          "train_occurrences": 2938,
+          "train_source_row_sha256": "65c7805ab2939020fc8d23b381cf944bca02f8eb18bba8d7782ebe6f7160b817",
+          "valid_occurrences": 420,
+          "valid_source_row_sha256": "18c5150e33fe0bac589c97c6b3eaff751d883b3c4da6bbbabfbefaf735c6dcfb"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 840,
+          "train_occurrences": 2938,
+          "train_source_row_sha256": "ebb311a918d50000db278601bf3cc997fd9e3698f8d44870821115fc2da55f1e",
+          "valid_occurrences": 420,
+          "valid_source_row_sha256": "782f9822f55b55f5183c432de073997ff651b74b0995db23426e8ddd70dbdeec"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 840,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 3358,
+      "unique_identities": 4198
+    },
+    "pgp_broccatelli": {
+      "category": "Absorption",
+      "occurrence_start": 1479,
+      "occurrence_stop": 2697,
+      "official_metric": "roc_auc",
+      "policy_accepted": {
+        "test": 245,
+        "train_val": 973
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 245,
+        "train_val": 973
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 245,
+          "train_occurrences": 851,
+          "train_source_row_sha256": "74499dccf693bc92ef186e07c46491c961305fb5001d5d7b1f0e084b31726f47",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "ff1aae56bca3de2e540d606c25754483072d5ad0de92371655d084845dfa6770"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 245,
+          "train_occurrences": 851,
+          "train_source_row_sha256": "0af6ab9f7c662b796dc7bbeee7591b6aa38d738dbe6a27617663f468c0ba7f87",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "c9ef2b9d6893b9bb7d2f4ea205e2c03e7439debf38e2a7532382aada279d2179"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 245,
+          "train_occurrences": 851,
+          "train_source_row_sha256": "44e056f48a7f61de43d99ad3ce77c5124c85381ed477cc8b184043251f7a34f8",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "b1e4d1c2551d546e07a827d3611763ccf2762674c93d6e2364c93a7c649b4cc9"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 245,
+          "train_occurrences": 851,
+          "train_source_row_sha256": "b6062e8073110e72e485827c13955c744e179c0d607d5c787d69497bb6cdbe28",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "27b2c0f92638d8ff59a4a327ff2334b31c3e555e25dbb109882b7f4a96c8881b"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 245,
+          "train_occurrences": 851,
+          "train_source_row_sha256": "b66c3bbbf843191f1c6ddaf21d5442b27c842384330baa6918b887ffd7003ab2",
+          "valid_occurrences": 122,
+          "valid_source_row_sha256": "6e4f0f784efb103a709042c102bab64b084eaf3dd6785e6a2201b66bda8d8774"
+        }
+      ],
+      "task": "classification",
+      "test_unique_identities": 245,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 967,
+      "unique_identities": 1212
+    },
+    "ppbr_az": {
+      "category": "Distribution",
+      "occurrence_start": 18229,
+      "occurrence_stop": 21019,
+      "official_metric": "mae",
+      "policy_accepted": {
+        "test": 559,
+        "train_val": 2231
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 559,
+        "train_val": 2231
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 559,
+          "train_occurrences": 1952,
+          "train_source_row_sha256": "9370e7d3428a8703e5caf8a4b21ab47bc66d7e746ab84d0a6e8b1baa6bc1617c",
+          "valid_occurrences": 279,
+          "valid_source_row_sha256": "d843e1d3e82b542f424bcf7b0fcf039a65aa27c723b0ee5b9c3083c81e846c89"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 559,
+          "train_occurrences": 1952,
+          "train_source_row_sha256": "823ee1f9375989f8faecae6d4a8e25bbf8d82f1a2b01f1148105c18ca724a3bf",
+          "valid_occurrences": 279,
+          "valid_source_row_sha256": "b63862bf9f20a75101321ae240000fc7372e77e766547380cae1da7690be2aa7"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 559,
+          "train_occurrences": 1952,
+          "train_source_row_sha256": "7aa72990949a20f5539bf61c61af40f596ea5c45b91b0ec800d04d0797fb7625",
+          "valid_occurrences": 279,
+          "valid_source_row_sha256": "3f1e8c70f2a3047c1756e702607f69389722ba66542e86181f2697873fa618d3"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 559,
+          "train_occurrences": 1952,
+          "train_source_row_sha256": "588d93e8241f8f4c760d6072831a44e5850bc3dffc7da185568f322313cf7881",
+          "valid_occurrences": 279,
+          "valid_source_row_sha256": "219a5947466bd00c2e0e849dbfde38ea033e73d45517f5b6f6bad88079cdcf72"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 559,
+          "train_occurrences": 1952,
+          "train_source_row_sha256": "24baa984a650bdb14adbbf2adc930a44189e1ad12f616dd4793bda73ccd97191",
+          "valid_occurrences": 279,
+          "valid_source_row_sha256": "1c97cb3ee62d10693f165a3ec8549bf07cbe05dfea317e679ed6b002b1152f06"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 343,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 1454,
+      "unique_identities": 1797
+    },
+    "solubility_aqsoldb": {
+      "category": "Absorption",
+      "occurrence_start": 7533,
+      "occurrence_stop": 16304,
+      "official_metric": "mae",
+      "policy_accepted": {
+        "test": 1817,
+        "train_val": 6954
+      },
+      "policy_rejections": {
+        "test:disconnected": 173,
+        "test:parse_failure": 2,
+        "test:unsupported_element": 5,
+        "train_val:disconnected": 925,
+        "train_val:too_few_atoms": 7,
+        "train_val:unsupported_element": 99
+      },
+      "raw": {
+        "test": 1997,
+        "train_val": 7985
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 1817,
+          "train_occurrences": 6034,
+          "train_source_row_sha256": "e205426e9ebb560888dbd956d325733bee6e0c6e00ff62913ac12ebbf4c76c56",
+          "valid_occurrences": 920,
+          "valid_source_row_sha256": "245b13c73f7ae47b90f5bab892f3e8c03ce21467096628ab69f20a04ef62a2ef"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 1817,
+          "train_occurrences": 6021,
+          "train_source_row_sha256": "cb5b1c9dcace828ef87064cef7b0ae6510a1e6430c4fe9565a93104a0d27bea9",
+          "valid_occurrences": 933,
+          "valid_source_row_sha256": "bc12d27d4677124690efddd800975f3e8fa9d6899289d2763877ed495b0d20d7"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 1817,
+          "train_occurrences": 6040,
+          "train_source_row_sha256": "469906172ee28b22e6f811fe15876bb7fc90b2e911c7f15c1e3b2561e48a60b1",
+          "valid_occurrences": 914,
+          "valid_source_row_sha256": "810c9dd4a1922df38b7b3de80ecc5966169b86408f3578a88107c9ee9e9fe5fa"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 1817,
+          "train_occurrences": 6029,
+          "train_source_row_sha256": "0003f9efb7a244f95fac2d0ae056865d5c3f3d4d5733769c1af37ba9fd9ca39a",
+          "valid_occurrences": 925,
+          "valid_source_row_sha256": "5f35dd40688076cdd668c4647c5641463d1334dbd246cf9d4623f951d1d51316"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 1817,
+          "train_occurrences": 4705,
+          "train_source_row_sha256": "155d428e95313808e7d1ea539ad38d60e8a761072eccf0e631133036407c76c6",
+          "valid_occurrences": 2249,
+          "valid_source_row_sha256": "0c755b7b0b3580bfc467670cb7fc19132afce7d16334200a89eb7fb5309b0627"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 1817,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 6954,
+      "unique_identities": 8771
+    },
+    "vdss_lombardo": {
+      "category": "Distribution",
+      "occurrence_start": 21019,
+      "occurrence_stop": 22149,
+      "official_metric": "spearman",
+      "policy_accepted": {
+        "test": 226,
+        "train_val": 904
+      },
+      "policy_rejections": {},
+      "raw": {
+        "test": 226,
+        "train_val": 904
+      },
+      "split_manifest": [
+        {
+          "seed": 1,
+          "test_occurrences": 226,
+          "train_occurrences": 791,
+          "train_source_row_sha256": "22271099329b310dbac8607e4551b8270679ebbba01aa2ac614ba472e97f0567",
+          "valid_occurrences": 113,
+          "valid_source_row_sha256": "27abe5eb0e1aadbc431aa6cbaf7d455a7957aaac3a574d8ba1e2c5d521019815"
+        },
+        {
+          "seed": 2,
+          "test_occurrences": 226,
+          "train_occurrences": 791,
+          "train_source_row_sha256": "7f943f94a1a9a55a8b9f94aeb780042676033a8254562047d2656efdd7d4bb4a",
+          "valid_occurrences": 113,
+          "valid_source_row_sha256": "b65128dd5dd615a2d912035e960853b5c320019ad726ab418ac4f13fb37d4152"
+        },
+        {
+          "seed": 3,
+          "test_occurrences": 226,
+          "train_occurrences": 791,
+          "train_source_row_sha256": "090f90eec756c972b8c93adb3c6d40cba5ef5720cccc3658c9e84dea1b3295b5",
+          "valid_occurrences": 113,
+          "valid_source_row_sha256": "75be841d43009d7749e7a273a69bcf6d6693268847c0e57cdcd8ba7685e2e0e4"
+        },
+        {
+          "seed": 4,
+          "test_occurrences": 226,
+          "train_occurrences": 791,
+          "train_source_row_sha256": "d6b1eb2c571f4536e91797976e8cdf7e6f5007866c05da925ee6f2bcc7139a09",
+          "valid_occurrences": 113,
+          "valid_source_row_sha256": "4f99cbdddc5cdb348140e8319853aa8087bd77bf1104d55e506a7a3e1d8ca490"
+        },
+        {
+          "seed": 5,
+          "test_occurrences": 226,
+          "train_occurrences": 791,
+          "train_source_row_sha256": "3964944e7c7acd2e1ae5c9d00f6301235bf732355194e3c86bf1f89f2460fee5",
+          "valid_occurrences": 113,
+          "valid_source_row_sha256": "5e8ba0a79586dfa19d1ca8dc56bf8b9fb7fe23460678c8167497674894362a05"
+        }
+      ],
+      "task": "regression",
+      "test_unique_identities": 221,
+      "train_test_identity_overlap": 0,
+      "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "train_test_scaffold_overlap": 0,
+      "train_val_unique_identities": 890,
+      "unique_identities": 1111
+    }
+  },
+  "full_labels": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/full_labels.tsv",
+    "sha256": "c6c70c291996f76d0664cabfa42cd0675d13fc68e287546721d2da21b77da917"
+  },
+  "full_panel": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/full_panel.tsv",
+    "sha256": "a969f5744b168c9394ff621cfa2bbe41e7f6d928a4c3f9e019a4861384164397"
+  },
+  "ordered_panel_identity_sha256": "cd75296d306bb7abeb43d0bf965ce917424e72a1ce28924cd96f8b6e3ac75b73",
+  "schema_version": 1,
+  "source_manifest_sha256": "de5901461bc564931b263e7c7d2c439880bd46fe611678fc1e4cfd3e2a1f405d",
+  "source_occurrences": 81809,
+  "split_indices": {
+    "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/full_split_indices.npz",
+    "sha256": "8f8c9f797539c08298f3238b69c0f16d57face18324e0c36dfc818cc20a00d9a"
+  },
+  "status": "policy_filtered_official_roles_frozen",
+  "unique_panel_identities": 44143
+}
