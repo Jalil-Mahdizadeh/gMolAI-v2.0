@@ -49,9 +49,10 @@ graphify-out/.graphify_chunk_*.json
 # Dated snapshots are local rollback copies created by incremental refreshes.
 graphify-out/20??-??-??/
 
-# Inference outputs are local products. The exact packaged model pair is an
-# intentional exception to the general checkpoint rule above.
+# Inference outputs are local products. The exact packaged encoder/calibrator
+# and Git-LFS decoder export are intentional exceptions to the checkpoint rule.
 inference/output/*
 !inference/output/.gitkeep
-!inference/model/representation-best.pt
-!inference/model/representation-calibrator.pt
+!inference/models/representation-best.pt
+!inference/models/representation-calibrator.pt
+!inference/models/decoder_inference.pt

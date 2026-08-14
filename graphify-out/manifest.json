@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786618784.0,
-    "ast_hash": "6266ebd64d5ab2f6596578770a1c6b83",
+    "mtime": 1786731136.0,
+    "ast_hash": "5dc00b285b7672fafba21d66c0d4b3dd",
     "semantic_hash": ""
   },
   "REPRESENTATION_REPAIR.md": {
@@ -195,8 +195,8 @@
     "semantic_hash": ""
   },
   "REVIEW_ARTIFACTS.md": {
-    "mtime": 1786523226.0,
-    "ast_hash": "8c9fe4621bbb887f9b73b0c1840050d3",
+    "mtime": 1786731196.0,
+    "ast_hash": "d87a9efa47c1cd24861e6f47ddb7a02c",
     "semantic_hash": ""
   },
   "configs/descriptors.yaml": {
@@ -405,8 +405,8 @@
     "semantic_hash": "aa59a51263b401a83648969b3e5354ca"
   },
   "inference/README.md": {
-    "mtime": 1786614899.0,
-    "ast_hash": "8e9d4bd30a2b52e88b51e8be5d912699",
+    "mtime": 1786730610.0,
+    "ast_hash": "39e85960a020cbd45bd52774ccb6a6cd",
     "semantic_hash": ""
   },
   "scripts/summarize_promotion_trajectory.py": {
@@ -1000,8 +1000,8 @@
     "semantic_hash": ""
   },
   "extra-benchmark/README.md": {
-    "mtime": 1786613110.0,
-    "ast_hash": "a2da43eaa3bd1ed06f34a3762fc504bd",
+    "mtime": 1786718717.0,
+    "ast_hash": "5cc043d8473e6f3505046324098e95f8",
     "semantic_hash": ""
   },
   "extra-benchmark/moleculenet/PROTOCOL.md": {
@@ -1980,18 +1980,18 @@
     "semantic_hash": ""
   },
   "deriv-gen/CHECKPOINT.md": {
-    "mtime": 1786696342.0,
-    "ast_hash": "05a0a328cd44bb4b91048ca4cf86b354",
+    "mtime": 1786718717.0,
+    "ast_hash": "15d95e46f5ddc164acd84260aba6906d",
     "semantic_hash": ""
   },
   "deriv-gen/README.md": {
-    "mtime": 1786696342.0,
-    "ast_hash": "08cf2c0624bf7b1ecfbd40dbc9ace4c5",
+    "mtime": 1786718717.0,
+    "ast_hash": "51aabf585903c5be3d54fd702c31a51f",
     "semantic_hash": ""
   },
   "deriv-gen/shared/README.md": {
-    "mtime": 1786696282.0,
-    "ast_hash": "66e5b549dc35ffdd110cdd5e1e5acc00",
+    "mtime": 1786712679.0,
+    "ast_hash": "43c905900ecae58f385f9d7e92fb633c",
     "semantic_hash": ""
   },
   "deriv-gen/step-01-latent-geometry-retrieval/PROTOCOL.md": {
@@ -2395,8 +2395,8 @@
     "semantic_hash": ""
   },
   "deriv-gen/STRATEGIC_DIRECTION.md": {
-    "mtime": 1786696342.0,
-    "ast_hash": "1600eb4b143314e1a9f72daa786274d3",
+    "mtime": 1786718717.0,
+    "ast_hash": "c9639900291489e0a6f3d58ecac2747e",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260814_073200_explore_the_current_repo_and_fully_understand_it.md": {
@@ -2420,13 +2420,228 @@
     "semantic_hash": ""
   },
   "deriv-gen/shared/frozen-generation-v1/README.md": {
-    "mtime": 1786696282.0,
-    "ast_hash": "d385c16fb2cd25f934712031bfa40b8f",
+    "mtime": 1786712679.0,
+    "ast_hash": "1d6e5d398e20e79d9b9fd5cf8076c88d",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md": {
     "mtime": 1786696523.0,
     "ast_hash": "c2f0005105e9cbe50760fc29e2042529",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/inputs/common_manifest.json": {
+    "mtime": 1786717273.0,
+    "ast_hash": "8c9d8cd24be63447477410ef9b815997",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/inputs/prepared_manifest.json": {
+    "mtime": 1786717270.0,
+    "ast_hash": "4fe356c6f54bcb2d1b4ba180ebea611e",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/inputs/prior_development_overlap.json": {
+    "mtime": 1786715146.0,
+    "ast_hash": "9ee92cedb273e33ef6cec9a8de382f00",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/inputs/source_manifest.json": {
+    "mtime": 1786717158.0,
+    "ast_hash": "1008cdf458c71ce818e825332c0d0197",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/descriptor_13.json": {
+    "mtime": 1786717346.0,
+    "ast_hash": "b9fcb7a95aa9be2f6d659b30342dd7ad",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/gmolai.json": {
+    "mtime": 1786717583.0,
+    "ast_hash": "239d4d54bdea204a0c76118f204c2872",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/kermt_v2.json": {
+    "mtime": 1786717780.0,
+    "ast_hash": "32cab7efdac541e092ffb24f9d4b0893",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/molai.json": {
+    "mtime": 1786717652.0,
+    "ast_hash": "3193af3b23fa07bcfe63ff29cf3272ce",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/molclr_gin.json": {
+    "mtime": 1786717631.0,
+    "ast_hash": "f32571013abf1f19a56d3f3555ef74e1",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/molformer.json": {
+    "mtime": 1786717610.0,
+    "ast_hash": "a975002ec11cf9dfc717aa12eef83c02",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/morgan.json": {
+    "mtime": 1786718109.0,
+    "ast_hash": "c9e5a94d6fabb0d34401e1293ae0fcb2",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/results/smi_ted.json": {
+    "mtime": 1786717850.0,
+    "ast_hash": "01b82f2cdcc256fae3afa989b12750bf",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/outputs/tdc_admet_summary.json": {
+    "mtime": 1786718113.0,
+    "ast_hash": "35855ceb7c1beaf4cf0929bc5d3533df",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/protocol.json": {
+    "mtime": 1786716859.0,
+    "ast_hash": "5a696c9b121716bb50c545eecb72f883",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/assemble_common.py": {
+    "mtime": 1786715490.0,
+    "ast_hash": "4d19e7edb62d092877a463821b5441c5",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/audit_prior_overlap.py": {
+    "mtime": 1786715129.0,
+    "ast_hash": "14589411eef44fe68257db6b218ebb6b",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/benchmark_io.py": {
+    "mtime": 1786715490.0,
+    "ast_hash": "02777b072e7276de611bbb2ab5da4caa",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/descriptor_adapter.py": {
+    "mtime": 1786716965.0,
+    "ast_hash": "70701fa8e5043b0f2aba082b231a677f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/evaluate.py": {
+    "mtime": 1786716859.0,
+    "ast_hash": "f9b2ee6dd066562b8a29b9a7165b8064",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/finalize.py": {
+    "mtime": 1786716859.0,
+    "ast_hash": "8a92e12d68ccdeb473353bc07ebdb9cb",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/gmolai_adapter.py": {
+    "mtime": 1786715490.0,
+    "ast_hash": "2957e0c0c82b2a64138735886dfe9c50",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/preflight.py": {
+    "mtime": 1786715490.0,
+    "ast_hash": "e2791f39843f572c7db45a03dbffc896",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/prepare.py": {
+    "mtime": 1786715490.0,
+    "ast_hash": "ac1f60d82be16fd3015f1de303338493",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/state_update.py": {
+    "mtime": 1786715490.0,
+    "ast_hash": "18c6fb1cbb6c36f9e2b127938be4ff2a",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/validate_embedding.py": {
+    "mtime": 1786716965.0,
+    "ast_hash": "0962cf4be0238ffc51a458d0cbb0da0c",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/scripts/verify_results.py": {
+    "mtime": 1786718468.0,
+    "ast_hash": "052b8ec9644960f28239303287d45a57",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/state/COMPLETE.json": {
+    "mtime": 1786718113.0,
+    "ast_hash": "52ceb236ca975c43e019bf5512eb7a79",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/state/preflight.json": {
+    "mtime": 1786717155.0,
+    "ast_hash": "f1f0ce9297b5401654dda4842055e499",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/state/status.json": {
+    "mtime": 1786718114.0,
+    "ast_hash": "e0cba3b919855b72ea1d1b95e10322a9",
+    "semantic_hash": ""
+  },
+  "inference/__init__.py": {
+    "mtime": 1786730277.0,
+    "ast_hash": "e3a34ebc67fabd5300d41f584a01706a",
+    "semantic_hash": ""
+  },
+  "inference/_decoder.py": {
+    "mtime": 1786729950.0,
+    "ast_hash": "c6c40fe9c24f8b265b4afdda4ca6dfc2",
+    "semantic_hash": ""
+  },
+  "inference/gmolai.py": {
+    "mtime": 1786730271.0,
+    "ast_hash": "ba78379f3ad2f749008cbab5a939faaf",
+    "semantic_hash": ""
+  },
+  "inference/models/representation_selection.json": {
+    "mtime": 1786361668.0,
+    "ast_hash": "5611d5a9d7165bb75e5fe7443971351a",
+    "semantic_hash": ""
+  },
+  "inference/models/resolved_config.json": {
+    "mtime": 1786340904.0,
+    "ast_hash": "9aec9f0babf5754ed96dbc80b24bdec3",
+    "semantic_hash": ""
+  },
+  "scripts/generate_deriv_gen_manuscript_figures.py": {
+    "mtime": 1786724497.0,
+    "ast_hash": "07b6452dcfa07a69dcaffa9162ad0bf9",
+    "semantic_hash": ""
+  },
+  "scripts/update_manuscript_rev8.py": {
+    "mtime": 1786723165.0,
+    "ast_hash": "ace42ffb85b71263a21b33b95154372d",
+    "semantic_hash": ""
+  },
+  "scripts/update_manuscript_rev9.py": {
+    "mtime": 1786724042.0,
+    "ast_hash": "9793d92e2f2eaf563be5ba4c27ce3823",
+    "semantic_hash": ""
+  },
+  "tests/test_release_inference.py": {
+    "mtime": 1786730786.0,
+    "ast_hash": "6a3dfda47f5f9c4d8f4bc2117219f9a2",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/PROTOCOL.md": {
+    "mtime": 1786716859.0,
+    "ast_hash": "6dcff1899440b683937d8c359849ebc3",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/README.md": {
+    "mtime": 1786718717.0,
+    "ast_hash": "a6836f1406339cfbcc82af7454f57221",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/tdc-admet/RESULTS.md": {
+    "mtime": 1786718837.0,
+    "ast_hash": "ccec40dbe9bfee0e271455d465791c5a",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260814_152648_generate_publication_quality_radar_plots_for_molec.md": {
+    "mtime": 1786721208.0,
+    "ast_hash": "feb728a676a7492be16383af56d29c2f",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260814_162333_update_the_manuscript__both__materials_and_methods.md": {
+    "mtime": 1786724613.0,
+    "ast_hash": "f61140d215dba0a0bd1557402a940db4",
     "semantic_hash": ""
   }
 }

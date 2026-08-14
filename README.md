@@ -14,10 +14,13 @@ shards, intermediate checkpoints, and bulk embedding tensors are deliberately
 excluded. See [`REVIEW_ARTIFACTS.md`](REVIEW_ARTIFACTS.md) for hashes, scope,
 usage, and the exclusion boundary.
 
-For direct real-world CSV-to-vector inference without graph shards, use the
-hash-verified workflow in [`inference/README.md`](inference/README.md). Its
-default backend is now the qualified speed-optimized implementation; explicit
-`reference` and bounded `verify` modes retain the original scientific oracle.
+For direct SMILES-to-vector inference and optional seed-conditioned candidate
+generation without graph shards, use the hash-verified release workflow in
+[`inference/README.md`](inference/README.md). It packages the calibrated hybrid
+×3 encoder, frozen Step-2 decoder, and frozen Step-2d
+`hybrid_b500_s500_t120` strategy behind `encode`, `decode`, and `validate`
+commands. The optimized encoder remains the default; explicit `reference` and
+bounded `verify` modes retain the original scientific oracle.
 
 ## Descriptor contract (resolved)
 

@@ -23,18 +23,25 @@ must be retained together for the public 384-dimensional molecular vector.
 and both hashes before loading them.
 
 Byte-identical copies of the promoted pair, selection record, and resolved model
-configuration are packaged under `inference/model/`. The standalone inference
-script applies the training-time canonicalization/feature policy and does not
-need graph shards:
+configuration are packaged under `inference/models/` together with the compact
+frozen Step-2 decoder export. The public CLI applies the training-time
+canonicalization/feature policy and does not need graph shards:
 
 ```bash
-python inference/generate_embeddings.py \
+python inference/gmolai.py validate
+python inference/gmolai.py encode \
   --input inference/data/example_smiles.csv \
-  --output-dir inference/output
+  --output inference/output/embeddings.npz
+python inference/gmolai.py decode \
+  --embeddings inference/output/embeddings.npz \
+  --output-dir inference/output/candidates \
+  --proposal-budget 1000
 ```
 
-See [`inference/README.md`](inference/README.md) for the CSV contract, rejection
-handling, device selection, and output provenance.
+See [`inference/README.md`](inference/README.md) for the `.npz` schema, flags,
+validity/uniqueness policy, frozen sampling contract, and provenance. The
+byte-frozen legacy CSV encoder and compatibility symlink remain for historical
+manifests.
 
 With the immutable graph data available at the paths in `configs/retrain.yaml`,
 the promoted export path is:
