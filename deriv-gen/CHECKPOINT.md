@@ -10,6 +10,11 @@ passed verification. There is no active SLURM job: the direct n54 run finished
 successfully before a submission was necessary (about 51 seconds end to end).
 Do not submit a duplicate job or regenerate candidates.
 
+The future generation baseline is now frozen in the versioned, read-only
+[`shared/frozen-generation-v1/`](shared/frozen-generation-v1/) contract. This
+contract records an operational handoff only; it did not launch a run or alter
+any completed-step file.
+
 ## Frozen strategic decision
 
 The planned controlled MMP-edit generation branch is retired. A known,
@@ -35,10 +40,15 @@ The frozen scientific boundary remains intact:
 - gMolAI seed-42/step-10,000 checkpoint, calibrator, and released 384-D x3
   representation were unchanged.
 - The Step-2 decoder and Step-2d candidate-generation policy were unchanged.
+- The canonical runtime decoder is Step-2 `checkpoints/best.pt` (SHA-256
+  `bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6`);
+  its compact inference export is `decoder_inference.pt` (SHA-256
+  `8b4f8db04499083ea2e9d028eaaae18d629b34ce773608d8e2c80863e9121d47`).
 - No training, latent perturbation, MMP-direction editing, property
   optimization, endpoint labels, or locked-test rows were used.
 - The original Step-2d strategy and budget decision remain unchanged:
-  `hybrid_b500_s500_t120`, 1,000 raw proposals per seed.
+  `hybrid_b500_s500_t120`, 500 beam plus 500 sample-stream hypotheses at
+  temperature 1.2/top-p 0.995, and 1,000 raw proposals per seed.
 
 ## Next objective (not started)
 
@@ -52,6 +62,10 @@ synthetic-accessibility characteristics.
 No property target, property model, prioritization protocol, new candidate
 generation, or evaluation has been selected or run. This checkpoint records
 the direction only; it does not authorize or begin the experiment.
+
+Any future candidate-library protocol must verify and consume
+`shared/frozen-generation-v1` unchanged. A decoder or sampler change requires a
+new versioned contract and explicit superseding decision.
 
 ## SA extension
 
@@ -110,3 +124,11 @@ Expected exit code: 0 with no output. Preserve every prior artifact unchanged.
 Do not recreate the retired Step 3/Step 4 controlled-edit branch without a
 superseding strategic decision. The next property-guided prioritization
 experiment remains unstarted.
+
+To verify the cross-step decoder and sampler freeze from the repository root:
+
+```bash
+python deriv-gen/shared/frozen-generation-v1/verify.py
+```
+
+Expected output: `PASS: gmolai-deriv-gen-frozen-generation-v1`.

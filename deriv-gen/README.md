@@ -50,6 +50,14 @@ branch is now closed: when a desired site-specific structural modification is
 already explicit, direct graph/SMILES editing is exact and computationally
 preferable to an encoder-to-latent-edit-to-decoder workflow.
 
+The operational generation baseline is now permanently versioned in
+[`shared/frozen-generation-v1/`](shared/frozen-generation-v1/). It binds the
+exact existing Step-2 runtime checkpoint and inference export, plus the full
+`hybrid_b500_s500_t120` strategy: 500 beam and 500 sample-stream hypotheses,
+temperature 1.2, top-p 0.995, deterministic ordering and seed derivation, and
+1,000 raw proposals per seed. This additive contract does not modify any
+completed-step artifact or start a new experiment.
+
 ## Forward direction (not started)
 
 The next objective is:
@@ -66,6 +74,9 @@ synthetic-accessibility characteristics. The scientific question is:
 
 This is a documented direction only. No property target, prioritization
 protocol, experiment, or new candidate-generation run has been started.
+Any future protocol using this route must consume and verify the
+[`frozen-generation-v1`](shared/frozen-generation-v1/) baseline rather than
+retraining the decoder or retuning its sampling strategy in place.
 
 ## Reproducing Step 1
 
@@ -144,7 +155,9 @@ Read the frozen scaling decision and additive SA interpretation in
 and
 [`step-02d-generation-scaling/DECISION.md`](step-02d-generation-scaling/DECISION.md).
 The current strategy is [`STRATEGIC_DIRECTION.md`](STRATEGIC_DIRECTION.md), and
-the cross-step operational handoff is [`CHECKPOINT.md`](CHECKPOINT.md).
+the cross-step operational handoff is [`CHECKPOINT.md`](CHECKPOINT.md). The
+machine-verifiable decoder/sampler freeze is
+[`shared/frozen-generation-v1/`](shared/frozen-generation-v1/).
 
 ## Artifact policy
 
@@ -153,4 +166,6 @@ tables, decision records, and figures are versioned. Large generated model,
 Parquet, and NumPy array artifacts remain on the project filesystem and are
 excluded by the repository-wide ignore policy. Each step's `outputs/SHA256SUMS`
 records the complete local run, while the scripts and frozen manifests provide
-the reproducible path to regenerate omitted bulk artifacts.
+the reproducible path to regenerate omitted bulk artifacts. The shared frozen
+generation contract additionally binds both excluded Step-2 decoder files by
+SHA-256 and byte size.

@@ -1980,18 +1980,18 @@
     "semantic_hash": ""
   },
   "deriv-gen/CHECKPOINT.md": {
-    "mtime": 1786694464.0,
-    "ast_hash": "cefa4f4a982e9180647bf4f75ad3343e",
+    "mtime": 1786696342.0,
+    "ast_hash": "05a0a328cd44bb4b91048ca4cf86b354",
     "semantic_hash": ""
   },
   "deriv-gen/README.md": {
-    "mtime": 1786694553.0,
-    "ast_hash": "4fe689c03f4c23903cfc0ac608c9aea6",
+    "mtime": 1786696342.0,
+    "ast_hash": "08cf2c0624bf7b1ecfbd40dbc9ace4c5",
     "semantic_hash": ""
   },
   "deriv-gen/shared/README.md": {
-    "mtime": 1786625262.0,
-    "ast_hash": "33af870cec01afd81e52c43fcf973ee0",
+    "mtime": 1786696282.0,
+    "ast_hash": "66e5b549dc35ffdd110cdd5e1e5acc00",
     "semantic_hash": ""
   },
   "deriv-gen/step-01-latent-geometry-retrieval/PROTOCOL.md": {
@@ -2395,8 +2395,8 @@
     "semantic_hash": ""
   },
   "deriv-gen/STRATEGIC_DIRECTION.md": {
-    "mtime": 1786694553.0,
-    "ast_hash": "bc561fa91f71592c7615c6de24bbd1c3",
+    "mtime": 1786696342.0,
+    "ast_hash": "1600eb4b143314e1a9f72daa786274d3",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260814_073200_explore_the_current_repo_and_fully_understand_it.md": {
@@ -2407,6 +2407,26 @@
   "graphify-out/memory/query_20260814_080400_update_the_deriv_gen_project_direction_based_on_th.md": {
     "mtime": 1786694640.0,
     "ast_hash": "7a27f4f91fb3516bdc0eb30082cc572f",
+    "semantic_hash": ""
+  },
+  "deriv-gen/shared/frozen-generation-v1/contract.json": {
+    "mtime": 1786696461.0,
+    "ast_hash": "0ee5ec48e0c3ef325168f1d3c2531003",
+    "semantic_hash": ""
+  },
+  "deriv-gen/shared/frozen-generation-v1/verify.py": {
+    "mtime": 1786696461.0,
+    "ast_hash": "3019be00a1cf5e6f954c577c5dd0c65e",
+    "semantic_hash": ""
+  },
+  "deriv-gen/shared/frozen-generation-v1/README.md": {
+    "mtime": 1786696282.0,
+    "ast_hash": "d385c16fb2cd25f934712031bfa40b8f",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md": {
+    "mtime": 1786696523.0,
+    "ast_hash": "c2f0005105e9cbe50760fc29e2042529",
     "semantic_hash": ""
   }
 }

@@ -166,6 +166,123 @@
   },
   "nodes": [
     {
+      "label": "verify.py",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "verify.py"
+    },
+    {
+      "label": "load_json()",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_load_json",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "load_json()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_py_path",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "path"
+    },
+    {
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_py_any",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "any"
+    },
+    {
+      "label": "sha256_file()",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_sha256_file",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "sha256_file()"
+    },
+    {
+      "label": "require()",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L33",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_require",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "require()"
+    },
+    {
+      "label": "resolve_bound_path()",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L38",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_resolve_bound_path",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "resolve_bound_path()"
+    },
+    {
+      "label": "verify_binding()",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L52",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "verify_binding()"
+    },
+    {
+      "label": "find_named()",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L63",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_find_named",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "find_named()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L69",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_verify_main",
+      "community": 42,
+      "community_name": "verify.py",
+      "norm_label": "main()"
+    },
+    {
       "label": "step-01-latent-geometry-retrieval/inputs/manifest.json",
       "file_type": "code",
       "source_file": "deriv-gen/step-01-latent-geometry-retrieval/inputs/manifest.json",
@@ -3106,8 +3223,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_inputs_manifest_files_calibrator",
-      "community": 147,
-      "community_name": "calibrator",
+      "community": 97,
+      "community_name": "files",
       "norm_label": "calibrator"
     },
     {
@@ -3117,8 +3234,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_inputs_manifest_calibrator_path",
-      "community": 147,
-      "community_name": "calibrator",
+      "community": 97,
+      "community_name": "files",
       "norm_label": "path"
     },
     {
@@ -3128,8 +3245,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_inputs_manifest_calibrator_sha256",
-      "community": 147,
-      "community_name": "calibrator",
+      "community": 97,
+      "community_name": "files",
       "norm_label": "sha256"
     },
     {
@@ -3139,8 +3256,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_inputs_manifest_files_resolved_config",
-      "community": 97,
-      "community_name": "files",
+      "community": 85,
+      "community_name": "resolved_config",
       "norm_label": "resolved_config"
     },
     {
@@ -3150,8 +3267,8 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_inputs_manifest_resolved_config_path",
-      "community": 97,
-      "community_name": "files",
+      "community": 85,
+      "community_name": "resolved_config",
       "norm_label": "path"
     },
     {
@@ -3161,8 +3278,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_inputs_manifest_resolved_config_sha256",
-      "community": 97,
-      "community_name": "files",
+      "community": 85,
+      "community_name": "resolved_config",
       "norm_label": "sha256"
     },
     {
@@ -5266,8 +5383,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_inputs_manifest_files_container",
-      "community": 248,
-      "community_name": "container",
+      "community": 98,
+      "community_name": "files",
       "norm_label": "container"
     },
     {
@@ -5277,8 +5394,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_inputs_manifest_container_path",
-      "community": 248,
-      "community_name": "container",
+      "community": 98,
+      "community_name": "files",
       "norm_label": "path"
     },
     {
@@ -5288,8 +5405,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_inputs_manifest_container_sha256",
-      "community": 248,
-      "community_name": "container",
+      "community": 98,
+      "community_name": "files",
       "norm_label": "sha256"
     },
     {
@@ -5530,8 +5647,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_inputs_manifest_files_optimized_inference",
-      "community": 98,
-      "community_name": "files",
+      "community": 120,
+      "community_name": "optimized_inference",
       "norm_label": "optimized_inference"
     },
     {
@@ -5541,8 +5658,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_inputs_manifest_optimized_inference_path",
-      "community": 98,
-      "community_name": "files",
+      "community": 120,
+      "community_name": "optimized_inference",
       "norm_label": "path"
     },
     {
@@ -5552,8 +5669,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_inputs_manifest_optimized_inference_sha256",
-      "community": 98,
-      "community_name": "files",
+      "community": 120,
+      "community_name": "optimized_inference",
       "norm_label": "sha256"
     },
     {
@@ -7143,8 +7260,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_files_external_step1b_fragment_source",
-      "community": 120,
-      "community_name": "external_step1b_fragment_source",
+      "community": 90,
+      "community_name": "files",
       "norm_label": "external_step1b_fragment_source"
     },
     {
@@ -7154,8 +7271,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_external_step1b_fragment_source_path",
-      "community": 120,
-      "community_name": "external_step1b_fragment_source",
+      "community": 90,
+      "community_name": "files",
       "norm_label": "path"
     },
     {
@@ -7165,8 +7282,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_external_step1b_fragment_source_sha256",
-      "community": 120,
-      "community_name": "external_step1b_fragment_source",
+      "community": 90,
+      "community_name": "files",
       "norm_label": "sha256"
     },
     {
@@ -7176,8 +7293,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_external_step1b_fragment_source_size_bytes",
-      "community": 120,
-      "community_name": "external_step1b_fragment_source",
+      "community": 90,
+      "community_name": "files",
       "norm_label": "size_bytes"
     },
     {
@@ -7275,8 +7392,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_files_external_step2b_common_source",
-      "community": 90,
-      "community_name": "files",
+      "community": 80,
+      "community_name": "external_step2b_common_source",
       "norm_label": "external_step2b_common_source"
     },
     {
@@ -7286,8 +7403,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_external_step2b_common_source_path",
-      "community": 90,
-      "community_name": "files",
+      "community": 80,
+      "community_name": "external_step2b_common_source",
       "norm_label": "path"
     },
     {
@@ -7297,8 +7414,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_external_step2b_common_source_sha256",
-      "community": 90,
-      "community_name": "files",
+      "community": 80,
+      "community_name": "external_step2b_common_source",
       "norm_label": "sha256"
     },
     {
@@ -7308,8 +7425,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "deriv_gen_step_02c_chemical_characterization_inputs_manifest_external_step2b_common_source_size_bytes",
-      "community": 90,
-      "community_name": "files",
+      "community": 80,
+      "community_name": "external_step2b_common_source",
       "norm_label": "size_bytes"
     },
     {
@@ -17251,8 +17368,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_init",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "__init__.py"
     },
     {
@@ -17262,8 +17379,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_init_rationale_1",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "corrected and reproducible gmolai retraining pipeline."
     },
     {
@@ -17284,8 +17401,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "checkpoint.py"
     },
     {
@@ -17296,8 +17413,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_capture_rng_state",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "capture_rng_state()"
     },
     {
@@ -17307,8 +17424,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_py_any",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "any"
     },
     {
@@ -17319,8 +17436,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_restore_rng_state",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "restore_rng_state()"
     },
     {
@@ -17331,8 +17448,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_gather_rank_objects",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "gather_rank_objects()"
     },
     {
@@ -17344,7 +17461,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_atomic_torch_save",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "atomic_torch_save()"
     },
     {
@@ -17355,7 +17472,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_py_path",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "path"
     },
     {
@@ -17367,7 +17484,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_atomic_copy",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "atomic_copy()"
     },
     {
@@ -17378,8 +17495,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_build_checkpoint",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "build_checkpoint()"
     },
     {
@@ -17389,8 +17506,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_py_module",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "module"
     },
     {
@@ -17400,8 +17517,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_py_optimizer",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "optimizer"
     },
     {
@@ -17412,8 +17529,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_checkpoint_validate_checkpoint",
-      "community": 22,
-      "community_name": "checkpoint.py",
+      "community": 10,
+      "community_name": "ValueError",
       "norm_label": "validate_checkpoint()"
     },
     {
@@ -17471,8 +17588,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_chem_canonicalmolecule",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "canonicalmolecule"
     },
     {
@@ -17958,8 +18075,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "config.py"
     },
     {
@@ -17971,8 +18088,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_configurationerror",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "configurationerror"
     },
     {
@@ -17982,7 +18099,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "valueerror",
-      "community": 239,
+      "community": 10,
       "community_name": "ValueError",
       "norm_label": "valueerror"
     },
@@ -17994,8 +18111,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_expand",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "_expand()"
     },
     {
@@ -18005,8 +18122,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_py_any",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "any"
     },
     {
@@ -18017,8 +18134,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_canonical_json",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "canonical_json()"
     },
     {
@@ -18029,8 +18146,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_object_hash",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "object_hash()"
     },
     {
@@ -18041,8 +18158,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_load_yaml",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "load_yaml()"
     },
     {
@@ -18052,8 +18169,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_py_path",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "path"
     },
     {
@@ -18064,8 +18181,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_load_config",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "load_config()"
     },
     {
@@ -18076,8 +18193,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_deep_update",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "_deep_update()"
     },
     {
@@ -18088,8 +18205,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_apply_training_plan",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "apply_training_plan()"
     },
     {
@@ -18100,8 +18217,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_validate_descriptor_manifest",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "_validate_descriptor_manifest()"
     },
     {
@@ -18112,8 +18229,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_validate_config",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "_validate_config()"
     },
     {
@@ -18124,8 +18241,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_validate_training_plan",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "_validate_training_plan()"
     },
     {
@@ -18136,8 +18253,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_descriptor_names",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 2,
+      "community_name": "downstream_audit.py",
       "norm_label": "descriptor_names()"
     },
     {
@@ -18148,8 +18265,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_public_config",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "public_config()"
     },
     {
@@ -18159,8 +18276,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "src_gmolai_retrain_config_rationale_85",
-      "community": 71,
-      "community_name": "config.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "overlay model/training choices without changing immutable data identity. graph..."
     },
     {
@@ -18486,8 +18603,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_deduplicate",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "deduplicate.py"
     },
     {
@@ -18498,8 +18615,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_deduplicate_sql_path",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "_sql_path()"
     },
     {
@@ -18509,8 +18626,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_deduplicate_py_path",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "path"
     },
     {
@@ -18521,8 +18638,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_deduplicate_deduplicate_bucket",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "deduplicate_bucket()"
     },
     {
@@ -18532,8 +18649,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_deduplicate_py_any",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "any"
     },
     {
@@ -18544,8 +18661,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_deduplicate_finalize_dataset",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "finalize_dataset()"
     },
     {
@@ -18556,8 +18673,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_deduplicate_fit_train_scaler",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "fit_train_scaler()"
     },
     {
@@ -18567,7 +18684,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "downstream.py"
     },
@@ -18581,7 +18698,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_preparedmoleculenetdataset",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "preparedmoleculenetdataset"
     },
     {
@@ -18593,7 +18710,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_resolve_dataset_names",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_resolve_dataset_names()"
     },
     {
@@ -18604,7 +18721,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_sha256",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_sha256()"
     },
@@ -18615,7 +18732,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_path",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "path"
     },
@@ -18627,7 +18744,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_prepare_dataset_records",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_prepare_dataset_records()"
     },
@@ -18638,7 +18755,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_any",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "any"
     },
@@ -18650,7 +18767,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_prepare_dataset",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_prepare_dataset()"
     },
@@ -18661,7 +18778,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_mol",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "mol"
     },
@@ -18672,7 +18789,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_ndarray",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "ndarray"
     },
@@ -18683,7 +18800,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_no_grad",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "no_grad"
     },
@@ -18695,7 +18812,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_encode_molecules",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_encode_molecules()"
     },
@@ -18706,7 +18823,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_module",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "module"
     },
@@ -18717,7 +18834,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_py_device",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "device"
     },
@@ -18729,7 +18846,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_morgan_features",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_morgan_features()"
     },
@@ -18741,7 +18858,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_select_representation_embedding",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_select_representation_embedding()"
     },
@@ -18753,7 +18870,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_scaffold_splits",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_scaffold_splits()"
     },
@@ -18765,7 +18882,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_inner_group_folds",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_inner_group_folds()"
     },
@@ -18777,7 +18894,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_regression_probe",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_regression_probe()"
     },
@@ -18789,7 +18906,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_classification_probe",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_classification_probe()"
     },
@@ -18801,7 +18918,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_summarize",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "_summarize()"
     },
@@ -18813,7 +18930,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_benchmark_moleculenet",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "benchmark_moleculenet()"
     },
@@ -18825,7 +18942,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_rationale_113",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "canonical, deduplicated downstream rows in their deterministic order."
     },
     {
@@ -18835,7 +18952,7 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_rationale_260",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "backward-compatible tuple view used by the pretrained-model benchmark."
     },
@@ -18846,7 +18963,7 @@
       "source_location": "L395",
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_rationale_395",
-      "community": 2,
+      "community": 22,
       "community_name": "downstream.py",
       "norm_label": "select the public vector without depending on diagnostic feature exports."
     },
@@ -18858,7 +18975,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "downstream_audit.py"
     },
     {
@@ -18870,7 +18987,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_identity_digest",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_identity_digest()"
     },
     {
@@ -18882,7 +18999,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_dataset_source",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_dataset_source()"
     },
     {
@@ -18893,7 +19010,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_py_any",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "any"
     },
     {
@@ -18905,7 +19022,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_load_dataset_manifest",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_load_dataset_manifest()"
     },
     {
@@ -18916,7 +19033,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_py_path",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "path"
     },
     {
@@ -18928,7 +19045,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_prepare_selected",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_prepare_selected()"
     },
     {
@@ -18940,7 +19057,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_parquet_files_by_bucket",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_parquet_files_by_bucket()"
     },
     {
@@ -18952,7 +19069,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_join_pretraining_rows",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_join_pretraining_rows()"
     },
     {
@@ -18964,7 +19081,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_audit_pretraining_overlap",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "audit_pretraining_overlap()"
     },
     {
@@ -18976,7 +19093,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_descriptor_matrix",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_descriptor_matrix()"
     },
     {
@@ -18987,7 +19104,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_py_ndarray",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "ndarray"
     },
     {
@@ -18999,7 +19116,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_indices_digest",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_indices_digest()"
     },
     {
@@ -19011,7 +19128,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_groups_digest",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_groups_digest()"
     },
     {
@@ -19023,7 +19140,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_split_identity_manifest",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_split_identity_manifest()"
     },
     {
@@ -19035,7 +19152,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_validate_reference_dataset",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_validate_reference_dataset()"
     },
     {
@@ -19047,7 +19164,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_benchmark_descriptor_control",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "benchmark_descriptor_control()"
     },
     {
@@ -19058,7 +19175,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_audit_rationale_139",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "bucket-pruned exact sha-256 join against the immutable deduplicated corpus."
     },
     {
@@ -19069,7 +19186,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "downstream_exposure.py"
     },
     {
@@ -19081,7 +19198,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_discard_tensor",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_discard_tensor()"
     },
     {
@@ -19092,7 +19209,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_py_any",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "any"
     },
     {
@@ -19105,7 +19222,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_storageplaceholder",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_storageplaceholder"
     },
     {
@@ -19118,7 +19235,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_identitymetadataunpickler",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_identitymetadataunpickler"
     },
     {
@@ -19130,7 +19247,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_identitymetadataunpickler_find_class",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": ".find_class()"
     },
     {
@@ -19142,7 +19259,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_identitymetadataunpickler_persistent_load",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": ".persistent_load()"
     },
     {
@@ -19154,7 +19271,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_load_graph_shard_identities",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_load_graph_shard_identities()"
     },
     {
@@ -19166,7 +19283,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_cycle_zero_shard_positions",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_cycle_zero_shard_positions()"
     },
     {
@@ -19178,7 +19295,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_scan_target_locations",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_scan_target_locations()"
     },
     {
@@ -19190,7 +19307,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_seen_at_cycle_zero_cursor",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_seen_at_cycle_zero_cursor()"
     },
     {
@@ -19202,7 +19319,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_checkpoint_records",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_checkpoint_records()"
     },
     {
@@ -19214,7 +19331,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_audit_downstream_checkpoint_exposure",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "audit_downstream_checkpoint_exposure()"
     },
     {
@@ -19225,7 +19342,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_py_path",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "path"
     },
     {
@@ -19236,7 +19353,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_rationale_30",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "replace tensor rebuilds while reading the identity-only pickle member."
     },
     {
@@ -19247,7 +19364,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_rationale_40",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "allow only the globals used by the immutable graph-shard metadata."
     },
     {
@@ -19258,7 +19375,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_rationale_75",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "read graph identities without materializing any tensor-storage member."
     },
     {
@@ -19269,7 +19386,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_downstream_exposure_rationale_373",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "audit exact downstream identities consumed before retained checkpoints."
     },
     {
@@ -19280,7 +19397,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_exposure",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "exposure.py"
     },
     {
@@ -19292,7 +19409,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_exposure_load_checkpoint_safely",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_load_checkpoint_safely()"
     },
     {
@@ -19303,7 +19420,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_exposure_py_path",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "path"
     },
     {
@@ -19314,7 +19431,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_exposure_py_any",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "any"
     },
     {
@@ -19326,7 +19443,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_exposure_rank_exposure",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_rank_exposure()"
     },
     {
@@ -19338,7 +19455,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_exposure_audit_training_exposure",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "audit_training_exposure()"
     },
     {
@@ -19349,7 +19466,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_exposure_rationale_16",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "load a local checkpoint with the weights-only unpickler and a minimal numpy..."
     },
     {
@@ -19359,8 +19476,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "gmolai_retrain/fast_graph.py"
     },
     {
@@ -19371,8 +19488,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_group_offsets",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "_group_offsets()"
     },
     {
@@ -19383,8 +19500,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_hbond_factory",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "_hbond_factory()"
     },
     {
@@ -19395,8 +19512,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_category",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "_category()"
     },
     {
@@ -19407,8 +19524,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_fast_featurize_molecule",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "fast_featurize_molecule()"
     },
     {
@@ -19418,8 +19535,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_py_mol",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "mol"
     },
     {
@@ -19429,8 +19546,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_py_ndarray",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "ndarray"
     },
     {
@@ -19442,8 +19559,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_packedbatch",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "packedbatch"
     },
     {
@@ -19454,8 +19571,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_pack_feature_arrays",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "pack_feature_arrays()"
     },
     {
@@ -19466,8 +19583,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_pack_molecules",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "pack_molecules()"
     },
     {
@@ -19478,8 +19595,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_pack_smiles_task",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "pack_smiles_task()"
     },
     {
@@ -19490,8 +19607,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_smiles_tasks",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "smiles_tasks()"
     },
     {
@@ -19502,8 +19619,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_initialize_worker",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "initialize_worker()"
     },
     {
@@ -19525,8 +19642,8 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_rationale_114",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "return arrays equivalent to the promoted reference feature contract."
     },
     {
@@ -19536,8 +19653,8 @@
       "source_location": "L342",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_graph_rationale_342",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "warm immutable rdkit state and prevent nested cpu oversubscription."
     },
     {
@@ -19583,8 +19700,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedrawcore",
-      "community": 24,
-      "community_name": "fast_inference.py",
+      "community": 22,
+      "community_name": "downstream.py",
       "norm_label": "optimizedrawcore"
     },
     {
@@ -19664,8 +19781,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_calibrated_embedding_numpy",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "calibrated_embedding_numpy()"
     },
     {
@@ -19675,8 +19792,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_py_ndarray",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "ndarray"
     },
     {
@@ -19723,8 +19840,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_py_inference_mode",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "inference_mode"
     },
     {
@@ -19735,8 +19852,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_referencesmilesencoder_encode",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".encode()"
     },
     {
@@ -19760,8 +19877,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedsmilesencoder",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "optimizedsmilesencoder"
     },
     {
@@ -19784,8 +19901,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedsmilesencoder_ensure_executor",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "._ensure_executor()"
     },
     {
@@ -19807,8 +19924,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedsmilesencoder_warm_workers",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".warm_workers()"
     },
     {
@@ -19819,8 +19936,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedsmilesencoder_encode",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".encode()"
     },
     {
@@ -19831,8 +19948,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedsmilesencoder_close",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".close()"
     },
     {
@@ -19843,8 +19960,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedsmilesencoder_enter",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".__enter__()"
     },
     {
@@ -19855,8 +19972,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_optimizedsmilesencoder_exit",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".__exit__()"
     },
     {
@@ -19867,8 +19984,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_compare_embedding_matrices",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "compare_embedding_matrices()"
     },
     {
@@ -19880,8 +19997,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_verifyingsmilesencoder",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "verifyingsmilesencoder"
     },
     {
@@ -19904,8 +20021,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_verifyingsmilesencoder_encode",
-      "community": 239,
-      "community_name": "ValueError",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".encode()"
     },
     {
@@ -19916,8 +20033,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_verifyingsmilesencoder_close",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": ".close()"
     },
     {
@@ -19952,8 +20069,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_implementation_metadata",
-      "community": 43,
-      "community_name": "evaluate_panel.py",
+      "community": 12,
+      "community_name": "generate_embeddings.py",
       "norm_label": "implementation_metadata()"
     },
     {
@@ -19963,8 +20080,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_py_any",
-      "community": 43,
-      "community_name": "evaluate_panel.py",
+      "community": 12,
+      "community_name": "generate_embeddings.py",
       "norm_label": "any"
     },
     {
@@ -19974,8 +20091,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_rationale_65",
-      "community": 24,
-      "community_name": "fast_inference.py",
+      "community": 22,
+      "community_name": "downstream.py",
       "norm_label": "equivalent eval-only gine/readout returning raw graph+mean-node blocks."
     },
     {
@@ -19996,8 +20113,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_rationale_251",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "multiprocess rdkit + direct packed-array + equivalent gine inference."
     },
     {
@@ -20007,8 +20124,8 @@
       "source_location": "L396",
       "_origin": "ast",
       "id": "src_gmolai_retrain_fast_inference_rationale_396",
-      "community": 188,
-      "community_name": "OptimizedSmilesEncoder",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "return optimized vectors while checking a bounded reference sample."
     },
     {
@@ -20029,8 +20146,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "graph_shards.py"
     },
     {
@@ -20041,8 +20158,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_signed_graph_id",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "_signed_graph_id()"
     },
     {
@@ -20054,8 +20171,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_shardbuffer",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "_shardbuffer"
     },
     {
@@ -20066,8 +20183,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_shardbuffer_init",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": ".__init__()"
     },
     {
@@ -20078,8 +20195,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_shardbuffer_len",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": ".__len__()"
     },
     {
@@ -20090,8 +20207,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_shardbuffer_append",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": ".append()"
     },
     {
@@ -20101,8 +20218,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_py_tensor",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "tensor"
     },
     {
@@ -20113,8 +20230,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_shardbuffer_pack",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": ".pack()"
     },
     {
@@ -20124,8 +20241,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_py_any",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "any"
     },
     {
@@ -20136,8 +20253,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_shardbuffer_clear",
-      "community": 80,
-      "community_name": "_ShardBuffer",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": ".clear()"
     },
     {
@@ -20148,8 +20265,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_atomic_torch_save",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "_atomic_torch_save()"
     },
     {
@@ -20159,8 +20276,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_py_path",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "path"
     },
     {
@@ -20171,8 +20288,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_featurize_bucket",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "featurize_bucket()"
     },
     {
@@ -20183,8 +20300,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_graph_shards_finalize_graphs",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "finalize_graphs()"
     },
     {
@@ -20194,8 +20311,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "model.py"
     },
     {
@@ -20208,7 +20325,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_residualgineencoder",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "residualgineencoder"
     },
     {
@@ -20220,7 +20337,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_residualgineencoder_init",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".__init__()"
     },
     {
@@ -20232,7 +20349,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_residualgineencoder_forward",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".forward()"
     },
     {
@@ -20242,7 +20359,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_py_tensor",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "tensor"
     },
@@ -20255,7 +20372,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_symmetric_pair_features",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "symmetric_pair_features()"
     },
     {
@@ -20268,7 +20385,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_symmetricedgedecoder",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "symmetricedgedecoder"
     },
     {
@@ -20280,7 +20397,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_symmetricedgedecoder_init",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".__init__()"
     },
     {
@@ -20292,7 +20409,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_symmetricedgedecoder_forward",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".forward()"
     },
     {
@@ -20317,7 +20434,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularvgae_init",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".__init__()"
     },
     {
@@ -20328,7 +20445,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_py_any",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "any"
     },
     {
@@ -20339,7 +20456,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularvgae_encode",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".encode()"
     },
@@ -20351,7 +20468,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularvgae_forward",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".forward()"
     },
@@ -20363,7 +20480,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularvgae_predict_descriptors",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".predict_descriptors()"
     },
@@ -20377,7 +20494,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_deterministicgineencoder",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "deterministicgineencoder"
     },
     {
@@ -20389,7 +20506,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_deterministicgineencoder_init",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".__init__()"
     },
     {
@@ -20401,7 +20518,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_deterministicgineencoder_forward",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".forward()"
     },
     {
@@ -20414,7 +20531,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_graphconditionededgedecoder",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "graphconditionededgedecoder"
     },
     {
@@ -20426,7 +20543,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_graphconditionededgedecoder_init",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".__init__()"
     },
     {
@@ -20438,7 +20555,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_graphconditionededgedecoder_forward",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".forward()"
     },
     {
@@ -20450,7 +20567,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "molecularrepresentationmodel"
     },
@@ -20463,7 +20580,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_init",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": ".__init__()"
     },
     {
@@ -20474,7 +20591,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_pool",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "._pool()"
     },
@@ -20486,7 +20603,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_encode",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".encode()"
     },
@@ -20498,7 +20615,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_combine_molecule_embedding",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".combine_molecule_embedding()"
     },
@@ -20510,7 +20627,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_combine_raw_molecule_embedding",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".combine_raw_molecule_embedding()"
     },
@@ -20522,7 +20639,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_apply_molecule_calibration",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".apply_molecule_calibration()"
     },
@@ -20534,7 +20651,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_molecule_embedding",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".molecule_embedding()"
     },
@@ -20546,7 +20663,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_molecularrepresentationmodel_forward",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": ".forward()"
     },
@@ -20558,8 +20675,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_vicreg_terms",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "vicreg_terms()"
     },
     {
@@ -20570,8 +20687,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_nt_xent_loss",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "nt_xent_loss()"
     },
     {
@@ -20583,8 +20700,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_corruptedgraph",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "corruptedgraph"
     },
     {
@@ -20595,8 +20712,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_corrupt_graph_inputs",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "corrupt_graph_inputs()"
     },
     {
@@ -20607,8 +20724,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_kl_divergence",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "kl_divergence()"
     },
     {
@@ -20631,7 +20748,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_182",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "a deterministic atom encoder for transferable molecular representations."
     },
     {
@@ -20642,7 +20759,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_225",
       "community": 15,
-      "community_name": ".__init__",
+      "community_name": "MolecularRepresentationModel",
       "norm_label": "decode an unordered atom pair while forcing use of its graph embedding."
     },
     {
@@ -20652,7 +20769,7 @@
       "source_location": "L250",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_250",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "masked graph autoencoder with an explicit deterministic molecule vector. every..."
     },
@@ -20663,7 +20780,7 @@
       "source_location": "L329",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_329",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "return deterministic atom and molecule embeddings."
     },
@@ -20674,7 +20791,7 @@
       "source_location": "L341",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_341",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "combine already encoded graph and atom blocks."
     },
@@ -20685,7 +20802,7 @@
       "source_location": "L359",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_359",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "concatenate raw graph and mean-atom blocks before train calibration."
     },
@@ -20696,7 +20813,7 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_370",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "apply immutable train-split coordinate statistics to raw vectors."
     },
@@ -20707,7 +20824,7 @@
       "source_location": "L392",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_392",
-      "community": 42,
+      "community": 15,
       "community_name": "MolecularRepresentationModel",
       "norm_label": "return the legacy unit-block hybrid molecule vector. the unit-normalized graph..."
     },
@@ -20718,8 +20835,8 @@
       "source_location": "L496",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_496",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "return invariance, variance-floor, and covariance-redundancy losses."
     },
     {
@@ -20729,8 +20846,8 @@
       "source_location": "L525",
       "_origin": "ast",
       "id": "src_gmolai_retrain_model_rationale_525",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "symmetric cross-view infonce loss for graph embeddings."
     },
     {
@@ -20752,7 +20869,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "negative_sampling.py"
     },
     {
@@ -20764,8 +20881,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_negativecandidates",
-      "community": 20,
-      "community_name": "NegativeCandidates",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "negativecandidates"
     },
     {
@@ -20776,8 +20893,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_negativecandidates_post_init",
-      "community": 20,
-      "community_name": "NegativeCandidates",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": ".__post_init__()"
     },
     {
@@ -20788,8 +20905,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_negativecandidates_pin_memory",
-      "community": 20,
-      "community_name": "NegativeCandidates",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": ".pin_memory()"
     },
     {
@@ -20801,7 +20918,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_edge_tensor",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "_edge_tensor()"
     },
     {
@@ -20812,7 +20929,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_py_ndarray",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "ndarray"
     },
     {
@@ -20823,7 +20940,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_py_tensor",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "tensor"
     },
     {
@@ -20835,7 +20952,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_pair_template",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "_pair_template()"
     },
     {
@@ -20847,7 +20964,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_sample_per_graph_negatives",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "sample_per_graph_negatives()"
     },
     {
@@ -20858,8 +20975,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_select_hard_negative_logits",
-      "community": 20,
-      "community_name": "NegativeCandidates",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "select_hard_negative_logits()"
     },
     {
@@ -20871,7 +20988,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_assert_valid_candidates",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "assert_valid_candidates()"
     },
     {
@@ -20882,7 +20999,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_rationale_41",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "return lexicographic upper-triangle pairs for a graph size."
     },
     {
@@ -20893,7 +21010,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_rationale_56",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "sample unique undirected negatives independently inside each graph. easy..."
     },
     {
@@ -20903,8 +21020,8 @@
       "source_location": "L181",
       "_origin": "ast",
       "id": "src_gmolai_retrain_negative_sampling_rationale_181",
-      "community": 20,
-      "community_name": "NegativeCandidates",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "select hard-pool logits while retaining gradients for selected values."
     },
     {
@@ -21240,7 +21357,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "representations.py"
     },
     {
@@ -21252,7 +21369,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_reweight_hybrid_embeddings",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "reweight_hybrid_embeddings()"
     },
     {
@@ -21263,7 +21380,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_py_path",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "path"
     },
     {
@@ -21274,7 +21391,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_py_any",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "any"
     },
     {
@@ -21286,7 +21403,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_resolve_embedding_definition",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_resolve_embedding_definition()"
     },
     {
@@ -21298,7 +21415,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_file_sha256",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_file_sha256()"
     },
     {
@@ -21310,7 +21427,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_fit_embedding_calibrator",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "fit_embedding_calibrator()"
     },
     {
@@ -21322,7 +21439,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_load_embedding_calibrator",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_load_embedding_calibrator()"
     },
     {
@@ -21333,7 +21450,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_py_tensor",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "tensor"
     },
     {
@@ -21345,7 +21462,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_calibrator_expected_identity",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_calibrator_expected_identity()"
     },
     {
@@ -21357,7 +21474,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_check_gate",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_check_gate()"
     },
     {
@@ -21369,7 +21486,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_validate_promotion_quality",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_validate_promotion_quality()"
     },
     {
@@ -21381,7 +21498,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_resolve_run_configuration",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "resolve_run_configuration()"
     },
     {
@@ -21393,7 +21510,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_automatic_checkpoint_name",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_automatic_checkpoint_name()"
     },
     {
@@ -21405,7 +21522,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_automatic_representation_calibrator",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_automatic_representation_calibrator()"
     },
     {
@@ -21417,7 +21534,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_load_saved_model",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "load_saved_model()"
     },
     {
@@ -21428,7 +21545,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_py_device",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "device"
     },
     {
@@ -21439,7 +21556,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_py_no_grad",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "no_grad"
     },
     {
@@ -21451,7 +21568,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_export_embeddings",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "export_embeddings()"
     },
     {
@@ -21463,7 +21580,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_promote_representation_checkpoint",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "promote_representation_checkpoint()"
     },
     {
@@ -21474,7 +21591,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_rationale_54",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "atomically recalibrate a saved hybrid vector without re-encoding graphs."
     },
     {
@@ -21485,7 +21602,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_rationale_145",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "resolve ``auto`` without changing the legacy checkpoint contract."
     },
     {
@@ -21496,7 +21613,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_rationale_174",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "fit immutable coordinate statistics on a stratified pretraining-train export."
     },
     {
@@ -21507,7 +21624,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_representations_rationale_887",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "promote a validated retained milestone to the canonical downstream artifact."
     },
     {
@@ -21578,8 +21695,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_schema_validate_feature_schema",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 0,
+      "community_name": "chem.py",
       "norm_label": "validate_feature_schema()"
     },
     {
@@ -21707,7 +21824,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_training_plan_hash",
       "community": 10,
-      "community_name": "representations.py",
+      "community_name": "ValueError",
       "norm_label": "_training_plan_hash()"
     },
     {
@@ -21766,8 +21883,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_preparedtrainingbatch",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "_preparedtrainingbatch"
     },
     {
@@ -21791,8 +21908,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "_trainingbatchprefetcher"
     },
     {
@@ -21803,8 +21920,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_init",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": ".__init__()"
     },
     {
@@ -21815,8 +21932,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_submit",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "._submit()"
     },
     {
@@ -21826,8 +21943,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "future",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "future"
     },
     {
@@ -21838,8 +21955,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_next",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": ".next()"
     },
     {
@@ -21850,8 +21967,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_checkpoint_state",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": ".checkpoint_state()"
     },
     {
@@ -21862,8 +21979,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_trainingbatchprefetcher_close",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": ".close()"
     },
     {
@@ -22108,8 +22225,8 @@
       "source_location": "L232",
       "_origin": "ast",
       "id": "src_gmolai_retrain_train_rationale_232",
-      "community": 238,
-      "community_name": "_TrainingBatchPrefetcher",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "prepare one deterministic batch ahead without advancing checkpoint cursors."
     },
     {
@@ -22177,8 +22294,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_gmolai_retrain_util_atomic_write_csv",
-      "community": 75,
-      "community_name": "atomic_write_json",
+      "community": 2,
+      "community_name": "downstream_audit.py",
       "norm_label": "atomic_write_csv()"
     },
     {
@@ -22262,7 +22379,7 @@
       "_origin": "ast",
       "id": "src_gmolai_retrain_util_runtime_versions",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "runtime_versions()"
     },
     {
@@ -22273,7 +22390,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "benchmark_negative_sampling.py"
     },
     {
@@ -22285,7 +22402,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling_synthetic_path_batch",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "synthetic_path_batch()"
     },
     {
@@ -22297,7 +22414,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling_main",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "main()"
     },
     {
@@ -22308,7 +22425,7 @@
       "_origin": "ast",
       "id": "tests_benchmark_negative_sampling_rationale_1",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "microbenchmark the deterministic molecular negative sampler."
     },
     {
@@ -22506,8 +22623,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_downstream",
-      "community": 2,
-      "community_name": "downstream.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_downstream.py"
     },
     {
@@ -22518,8 +22635,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_downstream_test_repeated_scaffold_splits_are_disjoint_deterministic_and_stratified",
-      "community": 2,
-      "community_name": "downstream.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_repeated_scaffold_splits_are_disjoint_deterministic_and_stratified()"
     },
     {
@@ -22530,8 +22647,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_downstream_test_downstream_dataset_selection_is_ordered_deduplicated_and_validated",
-      "community": 2,
-      "community_name": "downstream.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_downstream_dataset_selection_is_ordered_deduplicated_and_validated()"
     },
     {
@@ -22542,8 +22659,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_downstream_test_downstream_cli_can_request_only_the_selected_representation",
-      "community": 2,
-      "community_name": "downstream.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_downstream_cli_can_request_only_the_selected_representation()"
     },
     {
@@ -22554,8 +22671,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_downstream_test_selected_representation_blocks_do_not_depend_on_diagnostic_exports",
-      "community": 2,
-      "community_name": "downstream.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_selected_representation_blocks_do_not_depend_on_diagnostic_exports()"
     },
     {
@@ -22566,8 +22683,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_downstream_test_downstream_artifact_records_complete_checkpoint_provenance",
-      "community": 2,
-      "community_name": "downstream.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_downstream_artifact_records_complete_checkpoint_provenance()"
     },
     {
@@ -22578,7 +22695,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_downstream_audit.py"
     },
     {
@@ -22590,7 +22707,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_hash",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_hash()"
     },
     {
@@ -22602,7 +22719,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_cfg",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_cfg()"
     },
     {
@@ -22614,7 +22731,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_test_bucket_join_returns_exact_corpus_split_and_frozen_descriptors",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_bucket_join_returns_exact_corpus_split_and_frozen_descriptors()"
     },
     {
@@ -22626,7 +22743,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_test_descriptor_matrix_uses_the_frozen_13_feature_order",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_descriptor_matrix_uses_the_frozen_13_feature_order()"
     },
     {
@@ -22638,7 +22755,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_test_rank_exposure_counts_cycles_presentations_and_unique_graphs",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_rank_exposure_counts_cycles_presentations_and_unique_graphs()"
     },
     {
@@ -22650,7 +22767,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_write_identity_shard",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "_write_identity_shard()"
     },
     {
@@ -22662,7 +22779,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_test_identity_metadata_reader_and_exact_target_locations",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_identity_metadata_reader_and_exact_target_locations()"
     },
     {
@@ -22674,7 +22791,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_test_cycle_zero_seen_boundary_is_strict",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_cycle_zero_seen_boundary_is_strict()"
     },
     {
@@ -22686,7 +22803,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_test_atomic_csv_artifacts_use_lf_line_endings",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_atomic_csv_artifacts_use_lf_line_endings()"
     },
     {
@@ -22698,7 +22815,7 @@
       "_origin": "ast",
       "id": "tests_test_downstream_audit_test_no_training_audit_commands_are_registered",
       "community": 2,
-      "community_name": "downstream.py",
+      "community_name": "downstream_audit.py",
       "norm_label": "test_no_training_audit_commands_are_registered()"
     },
     {
@@ -22708,8 +22825,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_fast_inference",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_fast_inference.py"
     },
     {
@@ -22720,8 +22837,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_small_representation_model",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "small_representation_model()"
     },
     {
@@ -22732,8 +22849,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_molecules",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "molecules()"
     },
     {
@@ -22743,8 +22860,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "tests_test_fast_inference_py_mol",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "mol"
     },
     {
@@ -22755,8 +22872,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_fast_features_are_exact_on_curated_chemistry",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_fast_features_are_exact_on_curated_chemistry()"
     },
     {
@@ -22767,8 +22884,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_fast_features_fail_closed_outside_promoted_schema",
-      "community": 72,
-      "community_name": "gmolai_retrain/fast_graph.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_fast_features_fail_closed_outside_promoted_schema()"
     },
     {
@@ -22779,8 +22896,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_direct_packing_matches_pyg_batch_exactly",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_direct_packing_matches_pyg_batch_exactly()"
     },
     {
@@ -22791,8 +22908,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_smiles_tasks_respect_graph_and_node_budgets",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_smiles_tasks_respect_graph_and_node_budgets()"
     },
     {
@@ -22803,8 +22920,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_optimized_raw_core_matches_authoritative_model_encode",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_optimized_raw_core_matches_authoritative_model_encode()"
     },
     {
@@ -22815,8 +22932,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_optimized_smiles_encoder_preserves_reference_values_and_order",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_optimized_smiles_encoder_preserves_reference_values_and_order()"
     },
     {
@@ -22827,8 +22944,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_verify_backend_returns_optimized_matrix_after_reference_gate",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_verify_backend_returns_optimized_matrix_after_reference_gate()"
     },
     {
@@ -22839,8 +22956,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_downstream_consumer_uses_equivalent_optimized_blocks",
-      "community": 123,
-      "community_name": "test_fast_inference.py",
+      "community": 24,
+      "community_name": "fast_inference.py",
       "norm_label": "test_downstream_consumer_uses_equivalent_optimized_blocks()"
     },
     {
@@ -22851,8 +22968,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_fast_inference_test_optimized_core_rejects_nonpromoted_feature_schema",
-      "community": 24,
-      "community_name": "fast_inference.py",
+      "community": 22,
+      "community_name": "downstream.py",
       "norm_label": "test_optimized_core_rejects_nonpromoted_feature_schema()"
     },
     {
@@ -22863,7 +22980,7 @@
       "_origin": "ast",
       "id": "tests_test_model",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_model.py"
     },
     {
@@ -22875,7 +22992,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_model_forward_and_symmetric_edge_decoder",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_model_forward_and_symmetric_edge_decoder()"
     },
     {
@@ -22887,7 +23004,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_descriptor_prediction_is_independent_of_posterior_sampling",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_descriptor_prediction_is_independent_of_posterior_sampling()"
     },
     {
@@ -22899,7 +23016,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_corruption_masks_both_directions_together",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_corruption_masks_both_directions_together()"
     },
     {
@@ -22923,7 +23040,7 @@
       "_origin": "ast",
       "id": "tests_test_model_valid_features",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "_valid_features()"
     },
     {
@@ -22934,7 +23051,7 @@
       "_origin": "ast",
       "id": "tests_test_model_py_tensor",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "tensor"
     },
     {
@@ -22946,7 +23063,7 @@
       "_origin": "ast",
       "id": "tests_test_model_representation_model_and_batch",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "_representation_model_and_batch()"
     },
     {
@@ -22958,7 +23075,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_representation_model_exports_deterministic_graph_vectors_and_symmetric_edges",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_representation_model_exports_deterministic_graph_vectors_and_symmetric_edges()"
     },
     {
@@ -22970,7 +23087,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_molecule_embedding_is_invariant_to_atom_index_permutation",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_molecule_embedding_is_invariant_to_atom_index_permutation()"
     },
     {
@@ -22982,7 +23099,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_molecule_embedding_does_not_depend_on_batch_companions",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_molecule_embedding_does_not_depend_on_batch_companions()"
     },
     {
@@ -22994,7 +23111,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_vicreg_and_complete_representation_objective_prevent_silent_unused_parameters",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_vicreg_and_complete_representation_objective_prevent_silent_unused_parameters()"
     },
     {
@@ -23005,8 +23122,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_nt_xent_prefers_correct_cross_view_pairs",
-      "community": 19,
-      "community_name": "model.py",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "test_nt_xent_prefers_correct_cross_view_pairs()"
     },
     {
@@ -23018,7 +23135,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_contrastive_objective_can_target_canonical_mean_node_block",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_contrastive_objective_can_target_canonical_mean_node_block()"
     },
     {
@@ -23029,8 +23146,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_model_test_embedding_auto_resolves_to_canonical_hybrid_without_changing_legacy",
-      "community": 10,
-      "community_name": "representations.py",
+      "community": 19,
+      "community_name": "test_model.py",
       "norm_label": "test_embedding_auto_resolves_to_canonical_hybrid_without_changing_legacy()"
     },
     {
@@ -23042,7 +23159,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_projector_regularization_keeps_exported_graph_vector_separate_and_backpropagates",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_projector_regularization_keeps_exported_graph_vector_separate_and_backpropagates()"
     },
     {
@@ -23054,7 +23171,7 @@
       "_origin": "ast",
       "id": "tests_test_model_test_warm_start_loads_shared_weights_and_only_initializes_new_projector",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "test_warm_start_loads_shared_weights_and_only_initializes_new_projector()"
     },
     {
@@ -23065,7 +23182,7 @@
       "_origin": "ast",
       "id": "tests_test_model_rationale_59",
       "community": 19,
-      "community_name": "model.py",
+      "community_name": "test_model.py",
       "norm_label": "the descriptor head must see the same representation in train/eval paths."
     },
     {
@@ -23076,7 +23193,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_negative_sampling.py"
     },
     {
@@ -23088,7 +23205,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_per_graph_negatives_are_unique_disjoint_and_deterministic",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_per_graph_negatives_are_unique_disjoint_and_deterministic()"
     },
     {
@@ -23100,7 +23217,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_complete_graph_has_no_invalid_negative",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_complete_graph_has_no_invalid_negative()"
     },
     {
@@ -23112,7 +23229,7 @@
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_cross_graph_positive_edge_is_rejected",
       "community": 20,
-      "community_name": "NegativeCandidates",
+      "community_name": "sample_per_graph_negatives",
       "norm_label": "test_cross_graph_positive_edge_is_rejected()"
     },
     {
@@ -23123,8 +23240,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_negative_sampling_test_segmented_hard_negative_selection_preserves_selected_gradients",
-      "community": 20,
-      "community_name": "NegativeCandidates",
+      "community": 8,
+      "community_name": "train.py",
       "norm_label": "test_segmented_hard_negative_selection_preserves_selected_gradients()"
     },
     {
@@ -23134,8 +23251,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_pipeline",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "test_pipeline.py"
     },
     {
@@ -23146,8 +23263,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_pipeline_sha256",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "_sha256()"
     },
     {
@@ -23158,8 +23275,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_pipeline_write_source",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "_write_source()"
     },
     {
@@ -23170,8 +23287,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_pipeline_test_end_to_end_data_contract_dedup_scaler_and_graph_shards",
-      "community": 76,
-      "community_name": "deduplicate.py",
+      "community": 75,
+      "community_name": "atomic_write_json",
       "norm_label": "test_end_to_end_data_contract_dedup_scaler_and_graph_shards()"
     },
     {
@@ -23216,8 +23333,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_representations",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_representations.py"
     },
     {
@@ -23228,8 +23345,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_embed_cli_accepts_independent_sampling_seed",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_embed_cli_accepts_independent_sampling_seed()"
     },
     {
@@ -23240,8 +23357,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_downstream_cli_accepts_calibrated_embedding_definition",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_downstream_cli_accepts_calibrated_embedding_definition()"
     },
     {
@@ -23252,8 +23369,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_train_only_embedding_calibrator_is_atomic_and_provenance_checked",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_train_only_embedding_calibrator_is_atomic_and_provenance_checked()"
     },
     {
@@ -23264,8 +23381,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_embedding_calibrator_rejects_validation_split",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_embedding_calibrator_rejects_validation_split()"
     },
     {
@@ -23276,8 +23393,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_hybrid_reweighting_is_atomic_and_preserves_identity",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_hybrid_reweighting_is_atomic_and_preserves_identity()"
     },
     {
@@ -23288,8 +23405,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_reweight_train_standardized_hybrid_embeddings",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_reweight_train_standardized_hybrid_embeddings()"
     },
     {
@@ -23300,8 +23417,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_promotion_requires_identical_checkpoint_and_calibrator",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_promotion_requires_identical_checkpoint_and_calibrator()"
     },
     {
@@ -23312,8 +23429,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_automatic_representation_export_requires_promotion",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_automatic_representation_export_requires_promotion()"
     },
     {
@@ -23324,8 +23441,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "tests_test_representations_test_promotion_rejects_mutable_checkpoint_aliases",
-      "community": 85,
-      "community_name": "test_representations.py",
+      "community": 4,
+      "community_name": "cli.py",
       "norm_label": "test_promotion_rejects_mutable_checkpoint_aliases()"
     },
     {
@@ -23906,7 +24023,7 @@
       "label": "Frozen strategic decision",
       "file_type": "document",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L13",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "deriv_gen_checkpoint_frozen_strategic_decision",
       "community": 105,
@@ -23917,7 +24034,7 @@
       "label": "Next objective (not started)",
       "file_type": "document",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L43",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "deriv_gen_checkpoint_next_objective_not_started",
       "community": 105,
@@ -23928,7 +24045,7 @@
       "label": "SA extension",
       "file_type": "document",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L56",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "deriv_gen_checkpoint_sa_extension",
       "community": 105,
@@ -23939,7 +24056,7 @@
       "label": "Integrity and outputs",
       "file_type": "document",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L77",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "deriv_gen_checkpoint_integrity_and_outputs",
       "community": 105,
@@ -23983,7 +24100,7 @@
       "label": "Forward direction (not started)",
       "file_type": "document",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L53",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "deriv_gen_readme_forward_direction_not_started",
       "community": 241,
@@ -23994,7 +24111,7 @@
       "label": "Reproducing Step 1",
       "file_type": "document",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L70",
+      "source_location": "L81",
       "_origin": "ast",
       "id": "deriv_gen_readme_reproducing_step_1",
       "community": 241,
@@ -24005,7 +24122,7 @@
       "label": "Artifact policy",
       "file_type": "document",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L149",
+      "source_location": "L162",
       "_origin": "ast",
       "id": "deriv_gen_readme_artifact_policy",
       "community": 241,
@@ -24079,6 +24196,17 @@
       "norm_label": "next objective"
     },
     {
+      "label": "Frozen generation baseline",
+      "file_type": "document",
+      "source_file": "deriv-gen/STRATEGIC_DIRECTION.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "deriv_gen_strategic_direction_frozen_generation_baseline",
+      "community": 243,
+      "community_name": "Frozen strategic direction",
+      "norm_label": "frozen generation baseline"
+    },
+    {
       "label": "shared/README.md",
       "file_type": "document",
       "source_file": "deriv-gen/shared/README.md",
@@ -24086,7 +24214,7 @@
       "_origin": "ast",
       "id": "deriv_gen_shared_readme",
       "community": 225,
-      "community_name": "shared/README.md",
+      "community_name": "Shared contracts",
       "norm_label": "shared/readme.md"
     },
     {
@@ -24097,8 +24225,74 @@
       "_origin": "ast",
       "id": "deriv_gen_shared_readme_shared_contracts",
       "community": 225,
-      "community_name": "shared/README.md",
+      "community_name": "Shared contracts",
       "norm_label": "shared contracts"
+    },
+    {
+      "label": "Active contracts",
+      "file_type": "document",
+      "source_file": "deriv-gen/shared/README.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_readme_active_contracts",
+      "community": 225,
+      "community_name": "Shared contracts",
+      "norm_label": "active contracts"
+    },
+    {
+      "label": "frozen-generation-v1/README.md",
+      "file_type": "document",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_readme",
+      "community": 71,
+      "community_name": "Frozen generation baseline v1",
+      "norm_label": "frozen-generation-v1/readme.md"
+    },
+    {
+      "label": "Frozen generation baseline v1",
+      "file_type": "document",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_readme_frozen_generation_baseline_v1",
+      "community": 71,
+      "community_name": "Frozen generation baseline v1",
+      "norm_label": "frozen generation baseline v1"
+    },
+    {
+      "label": "What is frozen",
+      "file_type": "document",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_readme_what_is_frozen",
+      "community": 71,
+      "community_name": "Frozen generation baseline v1",
+      "norm_label": "what is frozen"
+    },
+    {
+      "label": "Change control",
+      "file_type": "document",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_readme_change_control",
+      "community": 71,
+      "community_name": "Frozen generation baseline v1",
+      "norm_label": "change control"
+    },
+    {
+      "label": "Verification",
+      "file_type": "document",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "deriv_gen_shared_frozen_generation_v1_readme_verification",
+      "community": 71,
+      "community_name": "Frozen generation baseline v1",
+      "norm_label": "verification"
     },
     {
       "label": "step-01-latent-geometry-retrieval/PROTOCOL.md",
@@ -24767,8 +24961,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_decision",
-      "community": 247,
-      "community_name": "step-02-decoder-feasibility/DECISION.md",
+      "community": 66,
+      "community_name": "deriv-gen/README.md",
       "norm_label": "step-02-decoder-feasibility/decision.md"
     },
     {
@@ -24778,8 +24972,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_decision_decoder_decision",
-      "community": 247,
-      "community_name": "step-02-decoder-feasibility/DECISION.md",
+      "community": 66,
+      "community_name": "deriv-gen/README.md",
       "norm_label": "decoder decision"
     },
     {
@@ -24789,8 +24983,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "deriv_gen_step_02_decoder_feasibility_decision_no_go",
-      "community": 247,
-      "community_name": "step-02-decoder-feasibility/DECISION.md",
+      "community": 66,
+      "community_name": "deriv-gen/README.md",
       "norm_label": "no-go"
     },
     {
@@ -25185,8 +25379,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_results",
-      "community": 66,
-      "community_name": "deriv-gen/README.md",
+      "community": 72,
+      "community_name": "Step 2b results",
       "norm_label": "step-02b-candidate-reranking/results.md"
     },
     {
@@ -25196,8 +25390,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_results_step_2b_results",
-      "community": 66,
-      "community_name": "deriv-gen/README.md",
+      "community": 72,
+      "community_name": "Step 2b results",
       "norm_label": "step 2b results"
     },
     {
@@ -25207,8 +25401,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_results_outcome",
-      "community": 66,
-      "community_name": "deriv-gen/README.md",
+      "community": 72,
+      "community_name": "Step 2b results",
       "norm_label": "outcome"
     },
     {
@@ -25218,8 +25412,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_results_condition_use_controls",
-      "community": 66,
-      "community_name": "deriv-gen/README.md",
+      "community": 72,
+      "community_name": "Step 2b results",
       "norm_label": "condition-use controls"
     },
     {
@@ -25229,8 +25423,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "deriv_gen_step_02b_candidate_reranking_results_interpretation",
-      "community": 66,
-      "community_name": "deriv-gen/README.md",
+      "community": 72,
+      "community_name": "Step 2b results",
       "norm_label": "interpretation"
     },
     {
@@ -27651,6 +27845,61 @@
       "id": "graphify_out_memory_query_20260814_080400_update_the_deriv_gen_project_direction_based_on_th_source_nodes",
       "community": 245,
       "community_name": "Q: Update the deriv-gen project direction based on the completed evidence.",
+      "norm_label": "source nodes"
+    },
+    {
+      "label": "query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin",
+      "community": 76,
+      "community_name": "Q: Which existing decoder and sampling strategy define the frozen deriv-gen generation baseline?",
+      "norm_label": "query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md"
+    },
+    {
+      "label": "Q: Which existing decoder and sampling strategy define the frozen deriv-gen generation baseline?",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_q_which_existing_decoder_and_sampling_strategy_define_the_frozen_deriv_gen_generation_baseline",
+      "community": 76,
+      "community_name": "Q: Which existing decoder and sampling strategy define the frozen deriv-gen generation baseline?",
+      "norm_label": "q: which existing decoder and sampling strategy define the frozen deriv-gen generation baseline?"
+    },
+    {
+      "label": "Answer",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_answer",
+      "community": 76,
+      "community_name": "Q: Which existing decoder and sampling strategy define the frozen deriv-gen generation baseline?",
+      "norm_label": "answer"
+    },
+    {
+      "label": "Outcome",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_outcome",
+      "community": 76,
+      "community_name": "Q: Which existing decoder and sampling strategy define the frozen deriv-gen generation baseline?",
+      "norm_label": "outcome"
+    },
+    {
+      "label": "Source Nodes",
+      "file_type": "document",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_source_nodes",
+      "community": 76,
+      "community_name": "Q: Which existing decoder and sampling strategy define the frozen deriv-gen generation baseline?",
       "norm_label": "source nodes"
     },
     {
@@ -30915,6 +31164,323 @@
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_find_named",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_load_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_resolve_bound_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_sha256_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_load_json",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_load_json",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_load_json",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_main",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_load_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_resolve_bound_path",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_sha256_file",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_find_named",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_py_any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_sha256_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_find_named",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_main",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_require",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_resolve_bound_path",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_require",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_main",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_resolve_bound_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_resolve_bound_path",
+      "target": "runtimeerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_resolve_bound_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_main",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_verify_binding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/verify.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_verify_main",
+      "target": "deriv_gen_shared_frozen_generation_v1_verify_find_named",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -95717,7 +96283,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L31",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_checkpoint",
@@ -95728,7 +96294,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L147",
+      "source_location": "L158",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95750,7 +96316,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L13",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_checkpoint_derivative_generation_checkpoint",
@@ -95761,7 +96327,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L77",
+      "source_location": "L91",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_checkpoint_derivative_generation_checkpoint",
@@ -95772,7 +96338,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L43",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_checkpoint_derivative_generation_checkpoint",
@@ -95783,7 +96349,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/CHECKPOINT.md",
-      "source_location": "L56",
+      "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_checkpoint_derivative_generation_checkpoint",
@@ -95805,7 +96371,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L83",
+      "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95816,7 +96382,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L94",
+      "source_location": "L105",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95827,7 +96393,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L92",
+      "source_location": "L103",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95838,7 +96404,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L106",
+      "source_location": "L117",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95849,7 +96415,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L104",
+      "source_location": "L115",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95860,7 +96426,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L121",
+      "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95871,7 +96437,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L119",
+      "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95882,7 +96448,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L132",
+      "source_location": "L143",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95893,7 +96459,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L130",
+      "source_location": "L141",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95904,7 +96470,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L145",
+      "source_location": "L156",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95915,7 +96481,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L143",
+      "source_location": "L154",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme",
@@ -95937,7 +96503,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L149",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme_gmolai_derivative_generation_studies",
@@ -95948,7 +96514,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L53",
+      "source_location": "L61",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme_gmolai_derivative_generation_studies",
@@ -95959,7 +96525,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/README.md",
-      "source_location": "L70",
+      "source_location": "L81",
       "weight": 1.0,
       "_origin": "ast",
       "source": "deriv_gen_readme_gmolai_derivative_generation_studies",
@@ -96014,6 +96580,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "deriv-gen/STRATEGIC_DIRECTION.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_strategic_direction_frozen_strategic_direction",
+      "target": "deriv_gen_strategic_direction_frozen_generation_baseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/STRATEGIC_DIRECTION.md",
       "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
@@ -96041,6 +96618,61 @@
       "_origin": "ast",
       "source": "deriv_gen_shared_readme",
       "target": "deriv_gen_shared_readme_shared_contracts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_readme_shared_contracts",
+      "target": "deriv_gen_shared_readme_active_contracts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_readme",
+      "target": "deriv_gen_shared_frozen_generation_v1_readme_frozen_generation_baseline_v1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_readme_frozen_generation_baseline_v1",
+      "target": "deriv_gen_shared_frozen_generation_v1_readme_change_control",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_readme_frozen_generation_baseline_v1",
+      "target": "deriv_gen_shared_frozen_generation_v1_readme_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "deriv-gen/shared/frozen-generation-v1/README.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "deriv_gen_shared_frozen_generation_v1_readme_frozen_generation_baseline_v1",
+      "target": "deriv_gen_shared_frozen_generation_v1_readme_what_is_frozen",
       "confidence_score": 1.0
     },
     {
@@ -99011,6 +99643,50 @@
       "_origin": "ast",
       "source": "graphify_out_memory_query_20260814_080400_update_the_deriv_gen_project_direction_based_on_th_q_update_the_deriv_gen_project_direction_based_on_the_completed_evidence",
       "target": "graphify_out_memory_query_20260814_080400_update_the_deriv_gen_project_direction_based_on_th_source_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin",
+      "target": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_q_which_existing_decoder_and_sampling_strategy_define_the_frozen_deriv_gen_generation_baseline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_q_which_existing_decoder_and_sampling_strategy_define_the_frozen_deriv_gen_generation_baseline",
+      "target": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_answer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_q_which_existing_decoder_and_sampling_strategy_define_the_frozen_deriv_gen_generation_baseline",
+      "target": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_outcome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/memory/query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_q_which_existing_decoder_and_sampling_strategy_define_the_frozen_deriv_gen_generation_baseline",
+      "target": "graphify_out_memory_query_20260814_083523_which_existing_decoder_and_sampling_strategy_defin_source_nodes",
       "confidence_score": 1.0
     },
     {
@@ -102783,5 +103459,5 @@
       "source_file": "inference/README.md"
     }
   ],
-  "built_at_commit": "a95468f2ddceb74136bbdf06dba4a8b5565c9cad"
+  "built_at_commit": "ae54b83e36951e46f675ebc0f73b86add81fec44"
 }

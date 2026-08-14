@@ -1,7 +1,15 @@
 # Shared contracts
 
-Future steps may place only cross-step, versioned contracts here. Step-specific
-scripts, intermediate data, outputs, logs, and conclusions remain in the
-corresponding numbered step directory so each experiment can be audited and
-removed independently.
+Only cross-step, versioned contracts belong here. Step-specific scripts,
+intermediate data, outputs, logs, and conclusions remain in the corresponding
+numbered step directory so each experiment can be audited independently.
 
+## Active contracts
+
+- [`frozen-generation-v1/`](frozen-generation-v1/): permanently binds the
+  existing Step-2 decoder bytes and the Step-2d
+  `hybrid_b500_s500_t120`/1,000-proposal sampling strategy for future
+  separately preregistered candidate-library work.
+
+Contracts are immutable. A scientific decision that changes a bound artifact
+or policy must create a new version rather than editing an existing contract.

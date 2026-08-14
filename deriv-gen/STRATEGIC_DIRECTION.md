@@ -72,3 +72,18 @@ This direction uses the frozen encoder/embedding definition and frozen decoder;
 it does not reopen controlled MMP-direction editing. No endpoint, property
 model, seed panel, ranking rule, threshold, protocol, or experiment has yet been
 selected or run.
+
+## Frozen generation baseline
+
+The decoder and raw candidate-generation strategy for this direction are
+permanently pinned by
+[`shared/frozen-generation-v1/`](shared/frozen-generation-v1/). The contract
+binds the exact existing Step-2 runtime checkpoint and inference export, and
+the selected Step-2d `hybrid_b500_s500_t120` policy: 500 beam hypotheses plus
+500 sample-stream hypotheses, temperature 1.2, top-p 0.995, deterministic
+ordering/seed semantics, and 1,000 raw proposals per seed.
+
+This is an immutable baseline, not permission to begin the next experiment.
+Future work must verify and consume it unchanged. Any different decoder or
+sampling policy requires a new versioned contract and an explicit superseding
+scientific decision.

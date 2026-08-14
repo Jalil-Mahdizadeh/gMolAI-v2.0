@@ -1,0 +1,117 @@
+{
+  "change_control": {
+    "immutable": true,
+    "rule": "Do not overwrite, retrain, retune, or silently reinterpret this baseline. Any change requires a new versioned contract and an explicit superseding scientific decision."
+  },
+  "contract_id": "gmolai-deriv-gen-frozen-generation-v1",
+  "decoder": {
+    "artifacts": {
+      "inference_export": {
+        "path": "deriv-gen/step-02-decoder-feasibility/checkpoints/decoder_inference.pt",
+        "role": "compact inference-only export without optimizer or gMolAI parameters",
+        "sha256": "8b4f8db04499083ea2e9d028eaaae18d629b34ce773608d8e2c80863e9121d47",
+        "size_bytes": 113314208
+      },
+      "runtime_checkpoint": {
+        "path": "deriv-gen/step-02-decoder-feasibility/checkpoints/best.pt",
+        "role": "canonical Step-2 checkpoint loaded by downstream candidate generation",
+        "sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+        "size_bytes": 339961051
+      }
+    },
+    "condition_dimensions": 384,
+    "conditioning_representation": "released_hybrid_w3",
+    "parameters": 28316160,
+    "training_allowed": false
+  },
+  "frozen_bindings": {
+    "decoder_export_seal": {
+      "path": "deriv-gen/step-02-decoder-feasibility/state/DECODER_EXPORT.json",
+      "sha256": "e305ed858b6f5459f3cb43f4b43cb7212443b829970fbe4a40d42cdc875fa20f"
+    },
+    "decoder_model_source": {
+      "path": "deriv-gen/step-02-decoder-feasibility/scripts/decoder_model.py",
+      "sha256": "7cb33424f91e00241946e38f63666690ff6cea6871433bd5ab1271ecc7862122"
+    },
+    "decoder_training_seal": {
+      "path": "deriv-gen/step-02-decoder-feasibility/state/TRAINING_COMPLETE.json",
+      "sha256": "28e6b81fc8bc589881af0e2929ccb75ec7a1ec66e2758ca61ca0ed21436df92f"
+    },
+    "step2b_beam_source": {
+      "path": "deriv-gen/step-02b-candidate-reranking/scripts/candidate_model.py",
+      "sha256": "806a0b543460201f344a5bf0f379d3db2c1768fd9b13ab8246b6471c69f1d5f7"
+    },
+    "step2d_common_source": {
+      "path": "deriv-gen/step-02d-generation-scaling/scripts/common.py",
+      "sha256": "72bbe89bd344caccc40de7e4a02b6ae8b88bca4057c15c097529c9fe61274fa7"
+    },
+    "step2d_decision": {
+      "path": "deriv-gen/step-02d-generation-scaling/outputs/decision.json",
+      "sha256": "e19e1d447c871d0324e60fd1e8aa337a1f7c58a9ecff1fb2490639be2bd37e0c"
+    },
+    "step2d_generation_core_source": {
+      "path": "deriv-gen/step-02d-generation-scaling/scripts/generation_core.py",
+      "sha256": "5ca274a2b21aaee953e3b0a5c5fc39a62fe31cf43857533cbf11667b7b3c61ef"
+    },
+    "step2d_generation_orchestration_source": {
+      "path": "deriv-gen/step-02d-generation-scaling/scripts/generate_candidates.py",
+      "sha256": "d1f609c2f78269a8de8fdeaff1b4eea29d1144304c30ba2d0a211dfd494c68f6"
+    },
+    "step2d_input_manifest": {
+      "path": "deriv-gen/step-02d-generation-scaling/inputs/manifest.json",
+      "sha256": "704a18b1933cc8bb7d076c1cb4ab332d05a639f3e4b9a6c39266af05cbcb872f"
+    },
+    "step2d_protocol": {
+      "path": "deriv-gen/step-02d-generation-scaling/config/protocol.json",
+      "sha256": "fbd1e3dc9107226522e992547ce28adf477036eec801e2d3a3ea504136b3a5b8"
+    },
+    "step2d_strategy_seal": {
+      "path": "deriv-gen/step-02d-generation-scaling/state/STRATEGY_FROZEN.json",
+      "sha256": "5351bbdc66664a4e7c9b3f8ca64dc08621d18c5de54a54eeb4147858919b0c78"
+    },
+    "step2d_verification": {
+      "path": "deriv-gen/step-02d-generation-scaling/outputs/verification.json",
+      "sha256": "5443db949f3340d5dba520ebac0484d08aa521eec397636115349bf2e3d3de09"
+    }
+  },
+  "recorded_on": "2026-08-14",
+  "sampling_strategy": {
+    "base_sample_pool": {
+      "draws": 999,
+      "name": "t120_p0995",
+      "temperature": 1.2,
+      "top_p": 0.995
+    },
+    "beam_order": "length-normalized cumulative decoder log probability, then source rank",
+    "beam_pool_width": 1000,
+    "global_seed": 20260817,
+    "hybrid_order": "deterministic proportional merge of ordered beam and fixed-order sample hypotheses",
+    "maximum_smiles_bytes": 128,
+    "raw_proposals_per_seed": 1000,
+    "sample_component": "one greedy proposal followed by the first 499 fixed-order stochastic draws from the registered 999-draw t120_p0995 pool",
+    "sample_order": "fixed RNG draw order after one greedy proposal",
+    "sampling_seed_definition": "SHA256(global_seed, phase, base_pool_name, target_hash) truncated to 63 bits",
+    "selected_definition": {
+      "beam_hypotheses": 500,
+      "kind": "hybrid",
+      "length_penalty": 0.0,
+      "merge": "proportional_balanced",
+      "name": "hybrid_b500_s500_t120",
+      "registered_order": 7,
+      "sample_hypotheses": 500,
+      "sample_pool": "t120_p0995"
+    },
+    "target_chemistry_used_for_generation_or_ordering": false
+  },
+  "schema_version": 1,
+  "scientific_boundary": {
+    "decoder_training": false,
+    "encoder_training": false,
+    "latent_perturbation": false,
+    "new_experiment_started_by_this_contract": false,
+    "property_guided_prioritization_performed": false,
+    "purpose": "immutable generation baseline for future, separately preregistered candidate-library studies"
+  },
+  "source_strategy_frozen_at": "2026-08-14T01:42:12.247043+00:00",
+  "status": "frozen"
+}
