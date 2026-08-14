@@ -1,0 +1,50 @@
+name: CPU CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cpu-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  install-test-validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out source and release artifacts
+        uses: actions/checkout@v7
+        with:
+          lfs: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install CPU runtime and package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.8.0"
+          python -m pip install "torch-geometric==2.7.0"
+          python -m pip install ".[test,evaluation]"
+          python -m pip check
+
+      - name: Verify installed entry points
+        run: |
+          python -c "import torch, torch_geometric; import gmolai_retrain.model"
+          gmolai-retrain --help
+
+      - name: Run core tests
+        run: python -m pytest
+
+      - name: Validate frozen release on CPU
+        run: python inference/gmolai.py validate --device cpu --threads 2

@@ -1,5 +1,7 @@
-# PyTorch, PyG, CUDA, NCCL and their compiled extensions come from the pinned
-# NVIDIA PyG base image in arrhenius.def. Keep this file architecture-neutral.
+# Standard pip installs resolve PyTorch and PyG through pyproject.toml. For the
+# pinned Arrhenius image only, PyTorch, PyG, CUDA, NCCL and compiled extensions
+# come from the NVIDIA PyG base in arrhenius.def. Keep this lock supplemental
+# and architecture-neutral.
 duckdb==1.5.4
 pandas==2.2.3
 # NVIDIA PyG 25.09 includes cuDF 25.6, which requires PyArrow >=14,<20.

@@ -22,6 +22,32 @@ generation without graph shards, use the hash-verified release workflow in
 commands. The optimized encoder remains the default; explicit `reference` and
 bounded `verify` modes retain the original scientific oracle.
 
+## Standard Python installation
+
+The package requires Python 3.12 or newer. A normal installation now resolves
+the complete core graph runtime, including PyTorch and PyTorch Geometric:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install .
+```
+
+Install the test and downstream-evaluation extras for development:
+
+```bash
+python -m pip install ".[test,evaluation]"
+python -m pytest
+```
+
+For CUDA or another accelerator, install the appropriate platform-specific
+PyTorch wheel first; `pip install .` will retain any compatible PyTorch
+2.x installation. The pinned Arrhenius container remains the authoritative
+scientific runtime. The CPU GitHub Actions workflow independently checks package
+installation, the core test suite, and hash/semantic validation of all frozen
+release artifacts on every push and pull request.
+
 ## Descriptor contract (resolved)
 
 The source function was supplied after the audit. It filters `Descriptors._descList` by a set and returns `list(res.values())`; therefore the stored order follows `_descList`, not the set literal. The resulting mapping is:

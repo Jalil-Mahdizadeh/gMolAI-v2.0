@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gmolai-retrain"
-version = "0.4.0"
+version = "0.4.1"
 description = "Auditable molecular representation training, evaluation, and export pipeline"
 requires-python = ">=3.12"
 dependencies = [
@@ -13,6 +13,8 @@ dependencies = [
   "pyarrow==19.0.1",
   "PyYAML==6.0.2",
   "rdkit==2025.9.3",
+  "torch>=2.8.0a0,<3",
+  "torch-geometric>=2.7,<3",
   "tqdm==4.67.1",
 ]
 

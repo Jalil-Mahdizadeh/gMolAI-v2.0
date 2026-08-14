@@ -57,8 +57,21 @@ The compact decoder is stored with Git LFS because it exceeds GitHub's normal
 
 ## Runtime
 
-Use an environment containing PyTorch, PyTorch Geometric, RDKit, and NumPy. On
-Arrhenius, the project container is the authoritative runtime:
+From a repository clone with Python 3.12 or newer, the standard CPU-capable
+installation is:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install .
+python inference/gmolai.py validate --device cpu
+```
+
+PyTorch and PyTorch Geometric are core package dependencies. For CUDA or another
+accelerator, install the matching platform-specific PyTorch wheel before
+`pip install .`. On Arrhenius, the project container remains the authoritative
+scientific runtime:
 
 ```bash
 apptainer exec --nv \
@@ -114,6 +127,16 @@ identities. Two sidecars are written beside it:
 - `<name>.rejections.csv` records rejected input rows and reasons;
 - `<name>.metadata.json` records provenance, artifact/output hashes, runtime
   versions, execution settings, and row counts.
+
+Encoding is collection-size memory bounded. Each completed model batch is
+written to a temporary float32 file, accepted row metadata and exact uniqueness
+counts are staged in SQLite, and the final compressed `.npz` is assembled from
+memory-mapped arrays. RAM therefore scales with active preprocessing/model
+batches and bounded compression buffers rather than with the total input row
+count. Temporary staging is created beside `--output` and removed on success
+or handled failure. For large collections, reserve output-filesystem scratch
+space for at least 1,536 uncompressed embedding bytes per accepted molecule,
+plus row metadata, the SQLite index, and the final compressed archive.
 
 Existing outputs are never replaced unless `--overwrite` is supplied.
 

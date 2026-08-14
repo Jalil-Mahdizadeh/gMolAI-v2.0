@@ -16,7 +16,9 @@ import os
 from pathlib import Path
 import platform
 import re
+import sqlite3
 import sys
+import tempfile
 import time
 from typing import Any, Sequence
 
@@ -71,7 +73,7 @@ except ImportError as error:  # pragma: no cover - deployment dependent
 
 RDLogger.DisableLog("rdApp.*")
 
-SCRIPT_VERSION = "1.0.0"
+SCRIPT_VERSION = "1.1.0"
 EMBEDDING_SCHEMA_VERSION = 1
 EMBEDDING_ARTIFACT_TYPE = "gmolai_release_hybrid_w3_embeddings"
 EMBEDDING_SPACE = "released_hybrid_w3"
@@ -170,6 +172,241 @@ class Proposal:
 def require(condition: bool, message: str) -> None:
     if not condition:
         raise ReleaseInferenceError(message)
+
+
+class _DiskBackedEmbeddingStore:
+    """Stage accepted rows and vectors without collection-sized Python objects."""
+
+    _STRING_FIELDS = (
+        "input_id",
+        "input_smiles",
+        "canonical_smiles",
+        "molecule_hash",
+    )
+
+    def __init__(self, directory: Path, dimensions: int) -> None:
+        require(dimensions > 0, "Embedding staging dimensions must be positive")
+        self.directory = directory
+        self.dimensions = dimensions
+        self.accepted_count = 0
+        self._finalized = False
+        self._maximum_lengths = {name: 0 for name in self._STRING_FIELDS}
+        self._vector_path = directory / "embeddings.float32"
+        self._vector_handle = self._vector_path.open("w+b")
+        self._database: sqlite3.Connection | None = sqlite3.connect(
+            directory / "rows.sqlite3"
+        )
+        self._database.execute("PRAGMA journal_mode=OFF")
+        self._database.execute("PRAGMA synchronous=OFF")
+        self._database.execute("PRAGMA temp_store=FILE")
+        self._database.executescript(
+            """
+            CREATE TABLE accepted_rows (
+                position INTEGER PRIMARY KEY,
+                input_row INTEGER NOT NULL,
+                input_id TEXT NOT NULL,
+                input_smiles TEXT NOT NULL,
+                canonical_smiles TEXT NOT NULL,
+                molecule_hash TEXT NOT NULL,
+                atom_count INTEGER NOT NULL
+            );
+            CREATE TABLE accepted_hashes (
+                molecule_hash TEXT PRIMARY KEY
+            ) WITHOUT ROWID;
+            CREATE TABLE seen_input_ids (
+                input_id TEXT PRIMARY KEY
+            ) WITHOUT ROWID;
+            """
+        )
+
+    def observe_input_id(self, input_id: str) -> bool:
+        """Record an input ID and return whether it was already present."""
+
+        if not input_id:
+            return False
+        database = self._active_database()
+        changes_before = database.total_changes
+        database.execute(
+            "INSERT OR IGNORE INTO seen_input_ids(input_id) VALUES (?)",
+            (input_id,),
+        )
+        return database.total_changes == changes_before
+
+    def append(
+        self,
+        records: Sequence[encoder_api.PendingMolecule],
+        vectors: np.ndarray,
+    ) -> None:
+        require(not self._finalized, "Embedding staging is already finalized")
+        require(bool(records), "Cannot stage an empty embedding batch")
+        matrix = np.ascontiguousarray(vectors, dtype=np.float32)
+        require(
+            matrix.shape == (len(records), self.dimensions),
+            "Encoder returned an unexpected batch shape",
+        )
+        require(bool(np.isfinite(matrix).all()), "Embeddings contain non-finite values")
+        matrix.tofile(self._vector_handle)
+
+        database = self._active_database()
+        rows: list[tuple[Any, ...]] = []
+        hashes: list[tuple[str]] = []
+        for offset, record in enumerate(records):
+            position = self.accepted_count + offset
+            rows.append(
+                (
+                    position,
+                    int(record.input_row),
+                    record.input_id,
+                    record.input_smiles,
+                    record.canonical_smiles,
+                    record.molecule_hash,
+                    int(record.atom_count),
+                )
+            )
+            hashes.append((record.molecule_hash,))
+            for name in self._STRING_FIELDS:
+                self._maximum_lengths[name] = max(
+                    self._maximum_lengths[name],
+                    len(str(getattr(record, name))),
+                )
+        database.executemany(
+            """
+            INSERT INTO accepted_rows(
+                position,
+                input_row,
+                input_id,
+                input_smiles,
+                canonical_smiles,
+                molecule_hash,
+                atom_count
+            ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            rows,
+        )
+        database.executemany(
+            "INSERT OR IGNORE INTO accepted_hashes(molecule_hash) VALUES (?)",
+            hashes,
+        )
+        self.accepted_count += len(records)
+
+    def materialize_arrays(self) -> tuple[dict[str, np.ndarray], int]:
+        """Return disk-backed arrays ready for streaming into the final NPZ."""
+
+        require(not self._finalized, "Embedding staging is already finalized")
+        require(self.accepted_count > 0, "No accepted embeddings were staged")
+        database = self._active_database()
+        database.commit()
+        self._vector_handle.flush()
+        os.fsync(self._vector_handle.fileno())
+        self._vector_handle.close()
+        expected_bytes = (
+            self.accepted_count
+            * self.dimensions
+            * np.dtype(np.float32).itemsize
+        )
+        require(
+            self._vector_path.stat().st_size == expected_bytes,
+            "Disk-backed embedding staging size is inconsistent",
+        )
+
+        arrays: dict[str, np.ndarray] = {
+            "embeddings": np.memmap(
+                self._vector_path,
+                mode="r",
+                dtype=np.float32,
+                shape=(self.accepted_count, self.dimensions),
+                order="C",
+            ),
+            "input_row": np.lib.format.open_memmap(
+                self.directory / "input_row.npy",
+                mode="w+",
+                dtype=np.int64,
+                shape=(self.accepted_count,),
+            ),
+            "atom_count": np.lib.format.open_memmap(
+                self.directory / "atom_count.npy",
+                mode="w+",
+                dtype=np.int32,
+                shape=(self.accepted_count,),
+            ),
+        }
+        for name in self._STRING_FIELDS:
+            arrays[name] = np.lib.format.open_memmap(
+                self.directory / f"{name}.npy",
+                mode="w+",
+                dtype=np.dtype(f"<U{max(1, self._maximum_lengths[name])}"),
+                shape=(self.accepted_count,),
+            )
+
+        cursor = database.execute(
+            """
+            SELECT
+                input_row,
+                input_id,
+                input_smiles,
+                canonical_smiles,
+                molecule_hash,
+                atom_count
+            FROM accepted_rows
+            ORDER BY position
+            """
+        )
+        offset = 0
+        while batch := cursor.fetchmany(8192):
+            stop = offset + len(batch)
+            columns = tuple(zip(*batch, strict=True))
+            arrays["input_row"][offset:stop] = columns[0]
+            arrays["input_id"][offset:stop] = columns[1]
+            arrays["input_smiles"][offset:stop] = columns[2]
+            arrays["canonical_smiles"][offset:stop] = columns[3]
+            arrays["molecule_hash"][offset:stop] = columns[4]
+            arrays["atom_count"][offset:stop] = columns[5]
+            offset = stop
+        require(
+            offset == self.accepted_count,
+            "Disk-backed row metadata is not aligned to embeddings",
+        )
+        for name, array in arrays.items():
+            if name != "embeddings" and isinstance(array, np.memmap):
+                array.flush()
+
+        unique_row = database.execute(
+            "SELECT COUNT(*) FROM accepted_hashes"
+        ).fetchone()
+        require(unique_row is not None, "Cannot count unique accepted molecules")
+        unique_accepted = int(unique_row[0])
+        database.close()
+        self._database = None
+        self._finalized = True
+        return arrays, unique_accepted
+
+    def _active_database(self) -> sqlite3.Connection:
+        require(
+            self._database is not None,
+            "Embedding staging database is closed",
+        )
+        assert self._database is not None
+        return self._database
+
+    def close(self) -> None:
+        if not self._vector_handle.closed:
+            self._vector_handle.close()
+        if self._database is not None:
+            self._database.close()
+            self._database = None
+
+
+def _close_memmap_arrays(arrays: dict[str, np.ndarray]) -> None:
+    for array in arrays.values():
+        if not isinstance(array, np.memmap):
+            continue
+        try:
+            array.flush()
+        except ValueError:
+            pass
+        mapping = getattr(array, "_mmap", None)
+        if mapping is not None and not mapping.closed:
+            mapping.close()
 
 
 def utc_now() -> str:
@@ -413,156 +650,195 @@ def run_encode(args: argparse.Namespace) -> dict[str, Any]:
     pipeline_node_budget = args.node_budget * pipeline_batches
 
     total_rows = 0
+    rejected_rows = 0
     pending_nodes = 0
     pending: list[encoder_api.PendingMolecule] = []
-    records: list[encoder_api.PendingMolecule] = []
-    vector_blocks: list[np.ndarray] = []
-    rejections: list[tuple[int, str, str, str]] = []
     rejection_reasons: Counter[str] = Counter()
-    seen_ids: set[str] = set()
     duplicate_nonempty_ids = 0
-
-    def flush_pending() -> None:
-        nonlocal pending, pending_nodes
-        if not pending:
-            return
-        vector_blocks.append(encoder_api.encode_batch(encoder, pending))
-        records.extend(pending)
-        pending = []
-        pending_nodes = 0
-
-    try:
-        with input_path.open("r", encoding="utf-8-sig", newline="") as handle:
-            reader = csv.DictReader(handle)
-            headers = list(reader.fieldnames or [])
-            require(bool(headers), "Input CSV is empty or lacks a header")
-            require(
-                len(headers) == len(set(headers)),
-                "Input CSV contains duplicate column names",
-            )
-            require(
-                args.smiles_column in headers,
-                f"SMILES column {args.smiles_column!r} is absent from the input CSV",
-            )
-            id_column = encoder_api.resolve_id_column(args.id_column, headers)
-            for input_row, row in enumerate(reader, start=1):
-                if args.limit is not None and total_rows >= args.limit:
-                    break
-                total_rows += 1
-                if None in row or any(value is None for value in row.values()):
-                    raise ReleaseInferenceError(
-                        f"Malformed CSV record at input row {input_row}: field count "
-                        "differs from the header"
-                    )
-                raw_smiles = str(row[args.smiles_column])
-                input_id = str(row[id_column]) if id_column is not None else ""
-                if input_id:
-                    if input_id in seen_ids:
-                        duplicate_nonempty_ids += 1
-                    seen_ids.add(input_id)
-                canonical, reason = encoder_api.canonicalize_input(
-                    raw_smiles, bundle.resolved_config
-                )
-                if reason is not None:
-                    rejection_reasons[reason] += 1
-                    rejections.append((input_row, input_id, raw_smiles, reason))
-                    if args.invalid_policy == "error":
-                        raise ReleaseInferenceError(
-                            f"Rejected molecule at input row {input_row}: {reason}"
-                        )
-                    continue
-                assert canonical is not None
-                if pending and (
-                    len(pending) >= pipeline_graph_budget
-                    or pending_nodes + canonical.atom_count > pipeline_node_budget
-                ):
-                    flush_pending()
-                pending.append(
-                    encoder_api.PendingMolecule(
-                        input_row=input_row,
-                        input_id=input_id,
-                        input_smiles=raw_smiles,
-                        canonical_smiles=canonical.smiles,
-                        molecule_hash=canonical.molecule_hash,
-                        atom_count=int(canonical.atom_count),
-                    )
-                )
-                pending_nodes += int(canonical.atom_count)
-            flush_pending()
-    finally:
-        encoder.close()
-
-    require(total_rows > 0, "Input CSV contains no data rows")
-    require(bool(records), "No input molecule passed the release policy")
-    embeddings = np.ascontiguousarray(
-        np.concatenate(vector_blocks, axis=0), dtype=np.float32
-    )
-    require(
-        embeddings.shape == (len(records), EMBEDDING_DIMENSIONS),
-        "Encoder returned an unexpected matrix shape",
-    )
-    require(bool(np.isfinite(embeddings).all()), "Embeddings contain non-finite values")
-
-    created_utc = utc_now()
-    arrays = {
-        "embeddings": embeddings,
-        "input_row": np.asarray([record.input_row for record in records], dtype=np.int64),
-        "input_id": np.asarray([record.input_id for record in records], dtype=str),
-        "input_smiles": np.asarray(
-            [record.input_smiles for record in records], dtype=str
-        ),
-        "canonical_smiles": np.asarray(
-            [record.canonical_smiles for record in records], dtype=str
-        ),
-        "molecule_hash": np.asarray(
-            [record.molecule_hash for record in records], dtype=str
-        ),
-        "atom_count": np.asarray(
-            [record.atom_count for record in records], dtype=np.int32
-        ),
-        "schema_version": np.asarray(EMBEDDING_SCHEMA_VERSION, dtype=np.int64),
-        "artifact_type": np.asarray(EMBEDDING_ARTIFACT_TYPE),
-        "embedding_space": np.asarray(EMBEDDING_SPACE),
-        "embedding_definition": np.asarray(
-            encoder_api.PUBLIC_EMBEDDING_DEFINITION
-        ),
-        "embedding_dimensions": np.asarray(
-            EMBEDDING_DIMENSIONS, dtype=np.int64
-        ),
-        "mean_node_weight": np.asarray(MEAN_NODE_WEIGHT, dtype=np.float32),
-        "encoder_checkpoint_sha256": np.asarray(
-            artifact_hashes["representation-best.pt"]
-        ),
-        "calibrator_sha256": np.asarray(
-            artifact_hashes["representation-calibrator.pt"]
-        ),
-        "selection_sha256": np.asarray(
-            artifact_hashes["representation_selection.json"]
-        ),
-        "resolved_config_sha256": np.asarray(
-            artifact_hashes["resolved_config.json"]
-        ),
-        "input_sha256": np.asarray(encoder_api.sha256_file(input_path)),
-        "created_utc": np.asarray(created_utc),
-        "script_version": np.asarray(SCRIPT_VERSION),
-    }
+    id_column: str | None = None
+    disk_arrays: dict[str, np.ndarray] = {}
 
     npz_temporary = encoder_api.temporary_path(output_path)
     rejection_temporary = encoder_api.temporary_path(rejections_path)
     metadata_temporary = encoder_api.temporary_path(metadata_path)
     temporaries = (npz_temporary, rejection_temporary, metadata_temporary)
+    staging_directory = tempfile.TemporaryDirectory(
+        prefix=f".{output_path.name}.stream-",
+        dir=output_path.parent,
+    )
+    store = _DiskBackedEmbeddingStore(
+        Path(staging_directory.name),
+        EMBEDDING_DIMENSIONS,
+    )
+    encoder_open = True
+
+    def close_encoder() -> None:
+        nonlocal encoder_open
+        if encoder_open:
+            encoder_open = False
+            encoder.close()
+
+    def flush_pending() -> None:
+        nonlocal pending, pending_nodes
+        if not pending:
+            return
+        store.append(pending, encoder_api.encode_batch(encoder, pending))
+        pending = []
+        pending_nodes = 0
+
     try:
+        try:
+            with rejection_temporary.open(
+                "w", encoding="utf-8", newline=""
+            ) as rejection_handle:
+                rejection_writer = csv.writer(
+                    rejection_handle,
+                    lineterminator="\n",
+                )
+                rejection_writer.writerow(
+                    ["input_row", "input_id", "input_smiles", "reason"]
+                )
+                with input_path.open(
+                    "r", encoding="utf-8-sig", newline=""
+                ) as input_handle:
+                    reader = csv.DictReader(input_handle)
+                    headers = list(reader.fieldnames or [])
+                    require(bool(headers), "Input CSV is empty or lacks a header")
+                    require(
+                        len(headers) == len(set(headers)),
+                        "Input CSV contains duplicate column names",
+                    )
+                    require(
+                        args.smiles_column in headers,
+                        f"SMILES column {args.smiles_column!r} is absent from "
+                        "the input CSV",
+                    )
+                    id_column = encoder_api.resolve_id_column(
+                        args.id_column,
+                        headers,
+                    )
+                    for input_row, row in enumerate(reader, start=1):
+                        if (
+                            args.limit is not None
+                            and total_rows >= args.limit
+                        ):
+                            break
+                        total_rows += 1
+                        if None in row or any(
+                            value is None for value in row.values()
+                        ):
+                            raise ReleaseInferenceError(
+                                f"Malformed CSV record at input row {input_row}: "
+                                "field count differs from the header"
+                            )
+                        raw_smiles = str(row[args.smiles_column])
+                        input_id = (
+                            str(row[id_column])
+                            if id_column is not None
+                            else ""
+                        )
+                        if store.observe_input_id(input_id):
+                            duplicate_nonempty_ids += 1
+                        canonical, reason = encoder_api.canonicalize_input(
+                            raw_smiles,
+                            bundle.resolved_config,
+                        )
+                        if reason is not None:
+                            rejection_reasons[reason] += 1
+                            rejected_rows += 1
+                            rejection_writer.writerow(
+                                (input_row, input_id, raw_smiles, reason)
+                            )
+                            if args.invalid_policy == "error":
+                                raise ReleaseInferenceError(
+                                    "Rejected molecule at input row "
+                                    f"{input_row}: {reason}"
+                                )
+                            continue
+                        assert canonical is not None
+                        if pending and (
+                            len(pending) >= pipeline_graph_budget
+                            or pending_nodes + canonical.atom_count
+                            > pipeline_node_budget
+                        ):
+                            flush_pending()
+                        pending.append(
+                            encoder_api.PendingMolecule(
+                                input_row=input_row,
+                                input_id=input_id,
+                                input_smiles=raw_smiles,
+                                canonical_smiles=canonical.smiles,
+                                molecule_hash=canonical.molecule_hash,
+                                atom_count=int(canonical.atom_count),
+                            )
+                        )
+                        pending_nodes += int(canonical.atom_count)
+                    flush_pending()
+                encoder_api.fsync_text_handle(rejection_handle)
+        finally:
+            close_encoder()
+
+        require(total_rows > 0, "Input CSV contains no data rows")
+        require(
+            store.accepted_count > 0,
+            "No input molecule passed the release policy",
+        )
+        disk_arrays, unique_accepted_molecules = store.materialize_arrays()
+        embeddings = disk_arrays["embeddings"]
+        require(
+            embeddings.shape
+            == (store.accepted_count, EMBEDDING_DIMENSIONS),
+            "Encoder returned an unexpected matrix shape",
+        )
+
+        created_utc = utc_now()
+        input_sha256 = encoder_api.sha256_file(input_path)
+        arrays = {
+            "embeddings": disk_arrays["embeddings"],
+            "input_row": disk_arrays["input_row"],
+            "input_id": disk_arrays["input_id"],
+            "input_smiles": disk_arrays["input_smiles"],
+            "canonical_smiles": disk_arrays["canonical_smiles"],
+            "molecule_hash": disk_arrays["molecule_hash"],
+            "atom_count": disk_arrays["atom_count"],
+            "schema_version": np.asarray(
+                EMBEDDING_SCHEMA_VERSION,
+                dtype=np.int64,
+            ),
+            "artifact_type": np.asarray(EMBEDDING_ARTIFACT_TYPE),
+            "embedding_space": np.asarray(EMBEDDING_SPACE),
+            "embedding_definition": np.asarray(
+                encoder_api.PUBLIC_EMBEDDING_DEFINITION
+            ),
+            "embedding_dimensions": np.asarray(
+                EMBEDDING_DIMENSIONS,
+                dtype=np.int64,
+            ),
+            "mean_node_weight": np.asarray(
+                MEAN_NODE_WEIGHT,
+                dtype=np.float32,
+            ),
+            "encoder_checkpoint_sha256": np.asarray(
+                artifact_hashes["representation-best.pt"]
+            ),
+            "calibrator_sha256": np.asarray(
+                artifact_hashes["representation-calibrator.pt"]
+            ),
+            "selection_sha256": np.asarray(
+                artifact_hashes["representation_selection.json"]
+            ),
+            "resolved_config_sha256": np.asarray(
+                artifact_hashes["resolved_config.json"]
+            ),
+            "input_sha256": np.asarray(input_sha256),
+            "created_utc": np.asarray(created_utc),
+            "script_version": np.asarray(SCRIPT_VERSION),
+        }
+
         with npz_temporary.open("wb") as handle:
             np.savez_compressed(handle, **arrays)
             handle.flush()
             os.fsync(handle.fileno())
-        with rejection_temporary.open(
-            "w", encoding="utf-8", newline=""
-        ) as handle:
-            writer = csv.writer(handle, lineterminator="\n")
-            writer.writerow(["input_row", "input_id", "input_smiles", "reason"])
-            writer.writerows(rejections)
-            encoder_api.fsync_text_handle(handle)
 
         npz_hash = encoder_api.sha256_file(npz_temporary)
         rejection_hash = encoder_api.sha256_file(rejection_temporary)
@@ -573,18 +849,16 @@ def run_encode(args: argparse.Namespace) -> dict[str, Any]:
             "created_utc": created_utc,
             "input": {
                 "path": str(input_path),
-                "sha256": encoder_api.sha256_file(input_path),
+                "sha256": input_sha256,
                 "smiles_column": args.smiles_column,
                 "id_column": id_column,
                 "limit": args.limit,
             },
             "rows": {
                 "total": total_rows,
-                "accepted": len(records),
-                "rejected": len(rejections),
-                "unique_accepted_molecules": len(
-                    {record.molecule_hash for record in records}
-                ),
+                "accepted": store.accepted_count,
+                "rejected": rejected_rows,
+                "unique_accepted_molecules": unique_accepted_molecules,
                 "duplicate_nonempty_ids": duplicate_nonempty_ids,
                 "rejection_reasons": dict(sorted(rejection_reasons.items())),
             },
@@ -597,9 +871,12 @@ def run_encode(args: argparse.Namespace) -> dict[str, Any]:
                 "mean_node_weight": bundle.mean_node_weight,
                 "dtype": "float32",
                 "storage": "compressed_npz_without_pickle",
+                "assembly": "disk_backed_streaming",
             },
             "artifacts": artifact_hashes,
-            "canonicalization": bundle.resolved_config["data"]["canonicalization"],
+            "canonicalization": bundle.resolved_config["data"][
+                "canonicalization"
+            ],
             "execution": {
                 "device": str(device),
                 "backend": backend_info["backend"],
@@ -607,9 +884,15 @@ def run_encode(args: argparse.Namespace) -> dict[str, Any]:
                 "node_budget": args.node_budget,
                 "workers": backend_info["workers"],
                 "pipeline_batches": pipeline_batches,
-                "verify_rows": args.verify_rows if args.backend == "verify" else 0,
+                "verify_rows": (
+                    args.verify_rows if args.backend == "verify" else 0
+                ),
                 "threads": args.threads,
                 "invalid_policy": args.invalid_policy,
+                "encoder_memory_contract": (
+                    "active_pipeline_batches_plus_bounded_compression_buffers"
+                ),
+                "staging": "disk_backed_float32_and_sqlite",
                 "python": platform.python_version(),
                 "numpy": np.__version__,
                 "rdkit": rdBase.rdkitVersion,
@@ -619,12 +902,12 @@ def run_encode(args: argparse.Namespace) -> dict[str, Any]:
             "outputs": {
                 output_path.name: {
                     "sha256": npz_hash,
-                    "rows": len(records),
+                    "rows": store.accepted_count,
                     "dimensions": EMBEDDING_DIMENSIONS,
                 },
                 rejections_path.name: {
                     "sha256": rejection_hash,
-                    "rows": len(rejections),
+                    "rows": rejected_rows,
                 },
             },
         }
@@ -633,12 +916,16 @@ def run_encode(args: argparse.Namespace) -> dict[str, Any]:
         os.replace(rejection_temporary, rejections_path)
         os.replace(metadata_temporary, metadata_path)
     finally:
+        close_encoder()
+        _close_memmap_arrays(disk_arrays)
+        store.close()
+        staging_directory.cleanup()
         for temporary in temporaries:
             temporary.unlink(missing_ok=True)
 
     return {
-        "accepted": len(records),
-        "rejected": len(rejections),
+        "accepted": store.accepted_count,
+        "rejected": rejected_rows,
         "dimensions": EMBEDDING_DIMENSIONS,
         "embedding_space": EMBEDDING_SPACE,
         "embeddings": str(output_path),
