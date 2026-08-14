@@ -440,6 +440,17 @@ paragraph, and validates the serialized Office archive before publication.
 
 ### Additional frozen-encoder benchmarks
 
+The derivative-generation investigation in [`deriv-gen/`](deriv-gen/) is
+closed at its completed Step 2d frozen-library result. Its retained evidence
+covers latent chemical organization, decoder search, candidate chemistry,
+scaling, locality, diversity, novelty relative to decoder training, and
+heuristic SA-score context. It does not claim property optimization,
+bioactivity, or synthesis feasibility. The frozen decoder is released as a
+candidate-proposal tool whose outputs can be prioritized downstream with
+independent, project-specific models or experiments. A property-guided
+optimization study is retained as future work rather than a required stage of
+the present project.
+
 [`extra-benchmark/test-partition/`](extra-benchmark/test-partition/) contains
 the completed inference-only comparison of the frozen seed-42/10k 384-D gMolAI
 representation with Morgan, MolAI epoch 6, MoLFormer, SMI-TED-Light,

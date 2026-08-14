@@ -2,13 +2,17 @@
 
 Updated: 2026-08-14
 
-## Current state
+## Terminal state
 
 Steps 1, 1b, 2, 2b, 2c, and 2d are complete. The latest requested work—an
 additive Step-2d synthetic-accessibility (SA) comparison—also completed and
 passed verification. There is no active SLURM job: the direct n54 run finished
 successfully before a submission was necessary (about 51 seconds end to end).
 Do not submit a duplicate job or regenerate candidates.
+
+Derivative generation is now closed at this state. No additional generation,
+property-guided prioritization, latent optimization, decoder training, or
+candidate evaluation is required for the current project or manuscript.
 
 The future generation baseline is now frozen in the versioned, read-only
 [`shared/frozen-generation-v1/`](shared/frozen-generation-v1/) contract. This
@@ -50,7 +54,7 @@ The frozen scientific boundary remains intact:
   `hybrid_b500_s500_t120`, 500 beam plus 500 sample-stream hypotheses at
   temperature 1.2/top-p 0.995, and 1,000 raw proposals per seed.
 
-## Next objective (not started)
+## Future-work design (not an active objective)
 
 `seed molecule -> frozen gMolAI embedding -> frozen decoder -> large candidate library -> property-guided prioritization`
 
@@ -60,8 +64,14 @@ similarity/scaffold relationships to the seed and acceptable
 synthetic-accessibility characteristics.
 
 No property target, property model, prioritization protocol, new candidate
-generation, or evaluation has been selected or run. This checkpoint records
-the direction only; it does not authorize or begin the experiment.
+generation, or evaluation has been selected or run. This question is retained
+as a possible separate future study and is not an unfinished stage of the
+current work.
+
+The frozen decoder output is a proposal library, not an optimized library.
+Users may apply independent, project-specific prediction or experimental
+filters to prioritize candidates, but the present evidence makes no claim that
+those candidates improve an ADMET, bioactivity, or other desired property.
 
 Any future candidate-library protocol must verify and consume
 `shared/frozen-generation-v1` unchanged. A decoder or sampler change requires a
@@ -122,8 +132,10 @@ sha256sum -c --quiet outputs/SHA256SUMS
 
 Expected exit code: 0 with no output. Preserve every prior artifact unchanged.
 Do not recreate the retired Step 3/Step 4 controlled-edit branch without a
-superseding strategic decision. The next property-guided prioritization
-experiment remains unstarted.
+superseding strategic decision. Property-guided prioritization remains
+unstarted future work. The final active project stage is a separate
+frozen-representation TDC ADMET benchmark; it does not reopen this checkpoint
+or validate generated-candidate properties.
 
 To verify the cross-step decoder and sampler freeze from the repository root:
 

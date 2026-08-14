@@ -2,7 +2,7 @@
 
 Decision date: 2026-08-14
 
-Status: **decision recorded; next experiment not started**
+Status: **derivative-generation study closed; future-work design retained**
 
 ## Decision
 
@@ -14,7 +14,10 @@ computationally preferable to an encoder-to-latent-edit-to-decoder workflow.
 A gMolAI-native decoder will therefore not be developed for that objective.
 
 This closes an execution strategy, not the scientific interpretation of the
-latent-space studies.
+latent-space studies. The completed Step 2d frozen-library result is also the
+terminal derivative-generation experiment in the current project. No further
+generation, property-guided selection, latent optimization, or decoder
+development is required for manuscript completion.
 
 ## Evidence retained permanently
 
@@ -52,9 +55,25 @@ contained a protocol, implementation, execution record, output, result, or
 scientific conclusion. They were therefore removed rather than archived; their
 placeholder text remains recoverable from Git history.
 
-## Next objective
+## Closed generation scope
 
-The next project objective is:
+The completed generation evidence supports the bounded statement that the
+frozen encoder, Step-2 decoder, and Step-2d sampling policy can propose large
+libraries containing valid, unique, non-seed, chemically local, and
+decoder-training-novel molecular identities, with heuristic SA-score context.
+It does not establish property improvement, bioactivity, experimental
+synthesizability, or an end-to-end molecular-optimization method.
+
+The decoder should therefore be presented as a **candidate-proposal tool**.
+Users may evaluate its exported candidates with independent, project-specific
+property models, structural alerts, experimental measurements, availability
+constraints, or synthesis planning, then retain the candidates appropriate to
+their own objectives. Those downstream choices are intentionally outside the
+frozen generator and are not validated by the present study.
+
+## Future work, not current execution
+
+The previously selected follow-up question remains scientifically legitimate:
 
 `seed molecule -> frozen gMolAI embedding -> frozen decoder -> large candidate library -> property-guided prioritization`
 
@@ -68,10 +87,18 @@ The scientific question is:
 > property profiles while retaining useful similarity/scaffold relationships
 > to the seed and acceptable synthetic-accessibility characteristics?
 
-This direction uses the frozen encoder/embedding definition and frozen decoder;
-it does not reopen controlled MMP-direction editing. No endpoint, property
-model, seed panel, ranking rule, threshold, protocol, or experiment has yet been
-selected or run.
+It is retained as a possible separate future study, not as the next experiment
+or an unresolved claim in the current project. If revisited, it must use
+independent property evidence and preserve the frozen encoder, decoder, and
+generation contract. No endpoint, property model, seed panel, ranking rule,
+threshold, protocol, candidate generation, or evaluation has been selected or
+run for that future work.
+
+The final active benchmark direction for the current project is instead a
+standardized frozen-representation ADMET transfer comparison. That benchmark
+is scientifically separate from derivative generation: it tests whether
+released representations support ADMET endpoint prediction and cannot be used
+as evidence that generated candidates have improved ADMET profiles.
 
 ## Frozen generation baseline
 
@@ -83,7 +110,7 @@ the selected Step-2d `hybrid_b500_s500_t120` policy: 500 beam hypotheses plus
 500 sample-stream hypotheses, temperature 1.2, top-p 0.995, deterministic
 ordering/seed semantics, and 1,000 raw proposals per seed.
 
-This is an immutable baseline, not permission to begin the next experiment.
-Future work must verify and consume it unchanged. Any different decoder or
-sampling policy requires a new versioned contract and an explicit superseding
-scientific decision.
+This is an immutable archival and future-work baseline, not an active
+optimization protocol. Any future work must verify and consume it unchanged.
+Any different decoder or sampling policy requires a new versioned contract and
+an explicit superseding scientific decision.

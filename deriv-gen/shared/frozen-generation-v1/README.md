@@ -2,8 +2,10 @@
 
 This contract permanently pins the existing Step-2 decoder and the selected
 Step-2d `hybrid_b500_s500_t120` sampling strategy as the derivative-generation
-baseline. It is an operational handoff for a possible future study, not a new
-experiment, result, or authorization to regenerate candidates.
+baseline. The current derivative-generation project is closed at Step 2d; this
+is an archival handoff for a possible separate future study, not a new
+experiment, result, active optimization protocol, or authorization to
+regenerate candidates.
 
 ## What is frozen
 

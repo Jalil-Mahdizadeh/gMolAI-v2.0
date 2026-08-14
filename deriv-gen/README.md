@@ -6,6 +6,10 @@ with the frozen strategic interpretation of the completed evidence. Nothing in
 this directory changes the released encoder, calibrator, inference package, or
 earlier benchmarks.
 
+**Project status:** closed at Step 2d on 14 August 2026. All completed evidence
+and frozen artifacts are retained, but no additional derivative-generation or
+property-guided optimization experiment is part of the current project.
+
 ## Study layout
 
 | Step | Directory | Status | Purpose |
@@ -58,9 +62,21 @@ temperature 1.2, top-p 0.995, deterministic ordering and seed derivation, and
 1,000 raw proposals per seed. This additive contract does not modify any
 completed-step artifact or start a new experiment.
 
-## Forward direction (not started)
+## Closure and future-work boundary
 
-The next objective is:
+The current derivative-generation study ends with the frozen Step-2d candidate
+library. It establishes proposal yield, locality, diversity,
+decoder-training-novelty, and heuristic SA-score context; it does not establish
+property improvement, bioactivity, synthesis feasibility, or optimized
+molecules.
+
+The released decoder is therefore a candidate-proposal mechanism. Users may
+apply independent, project-specific prediction models, experimental evidence,
+structural filters, and synthesis constraints to the exported molecules. The
+paper must describe that process as downstream user prioritization rather than
+as a property-optimization result of gMolAI.
+
+The following question is retained only as possible separate future work:
 
 `seed molecule -> frozen gMolAI embedding -> frozen decoder -> large candidate library -> property-guided prioritization`
 
@@ -72,11 +88,15 @@ synthetic-accessibility characteristics. The scientific question is:
 > property profiles while retaining useful similarity/scaffold relationships
 > to the seed and acceptable synthetic-accessibility characteristics?
 
-This is a documented direction only. No property target, prioritization
-protocol, experiment, or new candidate-generation run has been started.
-Any future protocol using this route must consume and verify the
+No property target, prioritization protocol, experiment, or new
+candidate-generation run has been started, and none is required to close the
+current project. Any later protocol using this route must consume and verify the
 [`frozen-generation-v1`](shared/frozen-generation-v1/) baseline rather than
 retraining the decoder or retuning its sampling strategy in place.
+
+The final active study before manuscript preparation is a standardized
+frozen-representation TDC ADMET benchmark. It is separate from this directory
+and must not be interpreted as validation of the generated candidates.
 
 ## Reproducing Step 1
 
