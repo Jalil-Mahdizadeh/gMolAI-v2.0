@@ -366,12 +366,16 @@ def main() -> None:
             "status": "diagnostic_only",
             "included_in_primary_rank": False,
             "reason": "hand-designed physicochemical features are closely related to several ADMET endpoints",
+            "missing_value_handling": protocol["diagnostic_control"][
+                "missing_value_policy"
+            ],
         },
         "interpretation_constraints": [
             "All 22 endpoints were included without result-based endpoint selection.",
             "BBB and Lipophilicity are exact prior development reuse and AqSolDB strongly overlaps ESOL; the predeclared 19-endpoint sensitivity addresses this selection conditioning.",
             "All neural representations were frozen; only shallow endpoint probes were fitted.",
             "Every fixed test set remained isolated from scaling and regularization selection.",
+            "The diagnostic-only descriptor median imputer was likewise fitted without validation or test leakage.",
             "The common panel is a support intersection and is not a literal unfiltered TDC leaderboard submission.",
             "Five-value dispersions measure train/validation selection sensitivity on the same test set, not independent test replicates or standard errors.",
             "Public benchmark results are retrospective and do not establish prospective ADMET utility.",

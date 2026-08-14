@@ -57,10 +57,26 @@ TPSA, HeavyAtomCount, NumHAcceptors, NumHDonors, MolLogP, and MolMR. It is not a
 primary comparator because several TDC endpoints are closely related to these
 hand-designed physicochemical variables.
 
+### Frozen diagnostic-only runtime amendment
+
+The first descriptor export failed before creating a descriptor matrix and
+before any endpoint probe was fitted. RDKit returned exactly 12 `NaN` values:
+`MaxPartialCharge` and `MinPartialCharge` for six already-qualified identities.
+The identities and their sorted-set SHA-256 are frozen in `protocol.json`.
+
+Only for this non-primary diagnostic, those exact missing values are permitted.
+A median imputer is fitted on the current training fold before feature scaling;
+for final test prediction it is refitted on `train_val` only. Any other missing
+or infinite value fails closed. The common panel is unchanged, and none of the
+seven primary representations, splits, labels, metrics, grids, or ranks is
+affected.
+
 ## Probe fitting
 
 For every endpoint, representation, and scaffold seed:
 
+- for the descriptor diagnostic only, fit its preregistered median imputer on
+  the seed's training fold;
 - fit `StandardScaler` on the seed's training fold only;
 - regression: standardize the training target, select Ridge `alpha` from
   `[0.1, 1, 10, 100, 1000]` using the endpoint's official validation metric;

@@ -16,6 +16,7 @@ import numpy as np
 import scipy
 from scipy.stats import spearmanr
 import sklearn
+from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression, Ridge
 from sklearn.metrics import (
     average_precision_score,
@@ -88,6 +89,27 @@ def metric_value(
     raise KeyError(f"Unsupported official metric: {task}/{official_metric}")
 
 
+def prepare_fold_features(
+    features: np.ndarray,
+    fit_indices: np.ndarray,
+    evaluation_indices: np.ndarray,
+    impute_missing: bool,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Fit all feature preprocessing on one training partition only."""
+    x_fit = features[fit_indices]
+    x_evaluation = features[evaluation_indices]
+    if impute_missing:
+        imputer = SimpleImputer(strategy="median")
+        x_fit = imputer.fit_transform(x_fit)
+        x_evaluation = imputer.transform(x_evaluation)
+    elif not np.isfinite(x_fit).all() or not np.isfinite(x_evaluation).all():
+        raise RuntimeError("Non-finite primary representation feature")
+    if not np.isfinite(x_fit).all() or not np.isfinite(x_evaluation).all():
+        raise RuntimeError("Feature preprocessing produced a non-finite value")
+    scaler = StandardScaler().fit(x_fit)
+    return scaler.transform(x_fit), scaler.transform(x_evaluation)
+
+
 def regression_endpoint(
     features: np.ndarray,
     targets: np.ndarray,
@@ -96,6 +118,7 @@ def regression_endpoint(
     endpoint: str,
     metric: str,
     protocol: dict[str, Any],
+    impute_missing: bool,
 ) -> dict[str, Any]:
     seeds = [int(value) for value in protocol["evaluation"]["seeds"]]
     alphas = [float(value) for value in protocol["evaluation"]["regression"]["alphas"]]
@@ -112,9 +135,9 @@ def regression_endpoint(
     for seed in seeds:
         train = arrays[split_key(endpoint, seed, "train")]
         validation = arrays[split_key(endpoint, seed, "valid")]
-        scaler = StandardScaler().fit(features[train])
-        x_train = scaler.transform(features[train])
-        x_validation = scaler.transform(features[validation])
+        x_train, x_validation = prepare_fold_features(
+            features, train, validation, impute_missing
+        )
         y_mean = float(targets[train].mean())
         y_std = max(1.0e-12, float(targets[train].std(ddof=0)))
         best_alpha = None
@@ -133,16 +156,18 @@ def regression_endpoint(
         if best_alpha is None:
             raise RuntimeError(f"No Ridge alpha selected for {endpoint} seed {seed}")
         if best_alpha not in final_cache:
-            full_scaler = StandardScaler().fit(features[train_val])
+            x_train_val, x_test = prepare_fold_features(
+                features, train_val, test, impute_missing
+            )
             full_y_mean = float(targets[train_val].mean())
             full_y_std = max(1.0e-12, float(targets[train_val].std(ddof=0)))
             model = Ridge(alpha=best_alpha, solver="lsqr")
             model.fit(
-                full_scaler.transform(features[train_val]),
+                x_train_val,
                 (targets[train_val] - full_y_mean) / full_y_std,
             )
             prediction = (
-                model.predict(full_scaler.transform(features[test])) * full_y_std
+                model.predict(x_test) * full_y_std
                 + full_y_mean
             )
             metrics = regression_metrics(targets[test], prediction)
@@ -186,6 +211,7 @@ def classification_endpoint(
     endpoint: str,
     metric: str,
     protocol: dict[str, Any],
+    impute_missing: bool,
 ) -> dict[str, Any]:
     labels = targets.astype(np.int64)
     seeds = [int(value) for value in protocol["evaluation"]["seeds"]]
@@ -203,9 +229,9 @@ def classification_endpoint(
     for seed in seeds:
         train = arrays[split_key(endpoint, seed, "train")]
         validation = arrays[split_key(endpoint, seed, "valid")]
-        scaler = StandardScaler().fit(features[train])
-        x_train = scaler.transform(features[train])
-        x_validation = scaler.transform(features[validation])
+        x_train, x_validation = prepare_fold_features(
+            features, train, validation, impute_missing
+        )
         best_c = None
         best_value = -float("inf")
         validation_grid = []
@@ -228,7 +254,9 @@ def classification_endpoint(
         if best_c is None:
             raise RuntimeError(f"No logistic C selected for {endpoint} seed {seed}")
         if best_c not in final_cache:
-            full_scaler = StandardScaler().fit(features[train_val])
+            x_train_val, x_test = prepare_fold_features(
+                features, train_val, test, impute_missing
+            )
             model = LogisticRegression(
                 C=best_c,
                 class_weight="balanced",
@@ -236,8 +264,8 @@ def classification_endpoint(
                 solver="liblinear",
                 random_state=0,
             )
-            model.fit(full_scaler.transform(features[train_val]), labels[train_val])
-            probability = model.predict_proba(full_scaler.transform(features[test]))[:, 1]
+            model.fit(x_train_val, labels[train_val])
+            probability = model.predict_proba(x_test)[:, 1]
             metrics = classification_metrics(labels[test], probability)
             strict_metrics = None
             strict_positions = [
@@ -340,6 +368,7 @@ def main() -> None:
         arrays = {key: source[key] for key in source.files}
 
     endpoints: dict[str, Any] = {}
+    impute_missing = args.model == "descriptor_13"
     for endpoint in protocol["data"]["endpoint_order"]:
         rows = [row for row in labels if row["endpoint"] == endpoint]
         indices = np.asarray([int(row["panel_index"]) for row in rows], dtype=np.int64)
@@ -349,11 +378,25 @@ def main() -> None:
         spec = protocol["data"]["endpoints"][endpoint]
         outcome = (
             regression_endpoint(
-                features, targets, identities, arrays, endpoint, spec["metric"], protocol
+                features,
+                targets,
+                identities,
+                arrays,
+                endpoint,
+                spec["metric"],
+                protocol,
+                impute_missing,
             )
             if spec["task"] == "regression"
             else classification_endpoint(
-                features, targets, identities, arrays, endpoint, spec["metric"], protocol
+                features,
+                targets,
+                identities,
+                arrays,
+                endpoint,
+                spec["metric"],
+                protocol,
+                impute_missing,
             )
         )
         endpoints[endpoint] = {
@@ -406,6 +449,11 @@ def main() -> None:
             "selection": "five exact PyTDC train/validation scaffold seeds",
             "refit": "all common train_val occurrences after regularization selection",
             "dispersion": "population standard deviation across selection seeds; not a standard error",
+            "feature_missing_values": (
+                protocol["diagnostic_control"]["missing_value_policy"]
+                if impute_missing
+                else "none permitted"
+            ),
         },
         "runtime": {
             "wall_seconds": time.perf_counter() - started,

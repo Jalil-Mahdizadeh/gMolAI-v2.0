@@ -17,6 +17,7 @@ from rdkit.Chem import Descriptors
 
 from benchmark_io import (
     atomic_write_json,
+    identity_set_sha256,
     load_protocol,
     read_panel_tsv,
     sha256_file,
@@ -62,8 +63,27 @@ def main() -> None:
             raise RuntimeError("Descriptor panel contains an unparsable SMILES")
         values.append([float(GENERATORS[name](molecule)) for name in names])
     matrix = np.asarray(values, dtype=np.float32)
-    if matrix.shape != (len(rows), len(names)) or not np.isfinite(matrix).all():
+    if matrix.shape != (len(rows), len(names)) or np.isinf(matrix).any():
         raise RuntimeError("Descriptor calculation produced an invalid matrix")
+    amendment = protocol["runtime_amendments"][-1]
+    nan_mask = np.isnan(matrix)
+    nan_rows = np.flatnonzero(nan_mask.any(axis=1))
+    observed_identities = {rows[int(index)]["molecule_hash"] for index in nan_rows}
+    expected_identities = set(amendment["affected_identities"])
+    if identity_set_sha256(expected_identities) != amendment[
+        "affected_unique_identity_sha256"
+    ]:
+        raise RuntimeError("Frozen descriptor amendment identity digest is invalid")
+    allowed_columns = {
+        names.index(name) for name in amendment["allowed_nan_features"]
+    }
+    observed_columns = set(np.flatnonzero(nan_mask.any(axis=0)).tolist())
+    if (
+        observed_identities != expected_identities
+        or observed_columns != allowed_columns
+        or int(nan_mask.sum()) != int(amendment["expected_nan_values"])
+    ):
+        raise RuntimeError("RDKit descriptor NaNs differ from the frozen amendment")
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_name(args.output.name + ".partial")
     if temporary.exists():
@@ -94,6 +114,15 @@ def main() -> None:
         "dimension": int(matrix.shape[1]),
         "dtype": "float32",
         "ordered_features": names,
+        "nan_values": int(nan_mask.sum()),
+        "nan_unique_identities": len(observed_identities),
+        "nan_features": amendment["allowed_nan_features"],
+        "affected_unique_identity_sha256": amendment[
+            "affected_unique_identity_sha256"
+        ],
+        "missing_value_handling": protocol["diagnostic_control"][
+            "missing_value_policy"
+        ],
         "wall_seconds_model_load_warmup_and_export": elapsed,
         "rows_per_second_including_load_warmup_and_export": len(rows) / elapsed,
         "peak_gpu_memory_bytes": None,

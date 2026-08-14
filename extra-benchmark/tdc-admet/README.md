@@ -47,6 +47,12 @@ bash extra-benchmark/tdc-admet/run_tdc_admet.sbatch
 The runner is restart-safe: complete embeddings are checksum-validated before
 reuse and partial or inconsistent outputs fail closed.
 
+The protocol records one diagnostic-only runtime amendment made after the
+initial RDKit descriptor export failed and before any endpoint probe existed.
+Exactly 12 undefined partial-charge descriptor values on six identities are
+median-imputed within each training fold. The common panel and all seven
+primary representations are unchanged.
+
 ## Interpretation boundary
 
 This benchmark evaluates representation utility for ADMET prediction. It does

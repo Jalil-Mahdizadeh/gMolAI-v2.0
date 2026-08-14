@@ -2,6 +2,24 @@
   "schema_version": 1,
   "protocol_status": "frozen_before_representation_execution",
   "frozen_date": "2026-08-14",
+  "runtime_amendment_status": "diagnostic-only amendment after failed export and before any probe fit",
+  "runtime_amendments": [
+    {
+      "id": "2026-08-14-rdkit-charge-median-imputation",
+      "trigger": "descriptor_13 export returned NaN for MaxPartialCharge and MinPartialCharge on six qualified identities",
+      "failed_descriptor_output_created": false,
+      "endpoint_probe_outputs_created_before_amendment": false,
+      "primary_representation_embeddings_already_exported": true,
+      "scope": "13-descriptor diagnostic only; no primary representation, panel identity, split role, label, hyperparameter grid, endpoint metric, or primary ranking changed",
+      "allowed_nan_features": ["MaxPartialCharge", "MinPartialCharge"],
+      "affected_unique_identity_sha256": "556941cad8b286d64f243b6d1023bb9fdf8e7d089ca303d095887fbb771f4916",
+      "affected_identities": ["cdb6d1952a3ab6b96714ff47dc6e8b7f39162d6eaa1296093ba7455a1e48fd1d", "08119669253bb544feae59001ce831e9eec656ff3abc61bc957c21f91ab07d5b", "f5ce3fb47be4d36887bfce6a0825bd6f343c773e8aadd29460527b6203463b86", "e644a392438292d9f69cd4415d6fe60671fb71e8fbd622118c910e3bd5927f4a", "83848968203f0edc8dacab4e44f1a458f2ec7150ae6b981d4560b24c258d4245", "72d4fd394b14f7578f6ee17db62ce9f33a290d892f8108581cd82148999cfb8a"],
+      "expected_nan_values": 12,
+      "change": "Permit only those preregistered charge NaNs in descriptor_13 and median-impute each feature using the current training fold before scaling; refit the imputer on all train_val occurrences for final test prediction.",
+      "leakage_control": "No validation or test value contributes to an imputation median used to select or evaluate a probe.",
+      "scientific_impact": "The diagnostic control remains on the identical common occurrence panel. Primary seven-representation results are unaffected."
+    }
+  ],
   "study": {
     "name": "TDC ADMET frozen-representation common-panel linear probes",
     "scope": "all 22 endpoints; no endpoint selection from results",
@@ -105,7 +123,8 @@
     "display_name": "13-descriptor diagnostic",
     "dimension": 13,
     "included_in_primary_model_ranking": false,
-    "ordered_features": ["qed", "MolWt", "NumValenceElectrons", "MaxPartialCharge", "MinPartialCharge", "BalabanJ", "LabuteASA", "TPSA", "HeavyAtomCount", "NumHAcceptors", "NumHDonors", "MolLogP", "MolMR"]
+    "ordered_features": ["qed", "MolWt", "NumValenceElectrons", "MaxPartialCharge", "MinPartialCharge", "BalabanJ", "LabuteASA", "TPSA", "HeavyAtomCount", "NumHAcceptors", "NumHDonors", "MolLogP", "MolMR"],
+    "missing_value_policy": "only the 12 preregistered RDKit charge NaNs on six identities; fold-local median imputation before StandardScaler, with train_val-only refit for final test prediction"
   },
   "selection_conditioning": {
     "audit": {"path": "extra-benchmark/tdc-admet/inputs/prior_development_overlap.json", "sha256": "ca943bb87a5a6baad3abce1db271a5c84fbcc9635809f2bd2a8db157fe68f579", "tdc_full_labels_sha256": "c6c70c291996f76d0664cabfa42cd0675d13fc68e287546721d2da21b77da917", "prior_moleculenet_full_labels_sha256": "dff7d9597af94e27e2ed6afb8151b3f7fc8b5e8092841d003ade47284f2abb08"},

@@ -9,7 +9,14 @@ from pathlib import Path
 
 import numpy as np
 
-from benchmark_io import load_json, load_protocol, read_panel_tsv, sha256_file, sha256_lines
+from benchmark_io import (
+    identity_set_sha256,
+    load_json,
+    load_protocol,
+    read_panel_tsv,
+    sha256_file,
+    sha256_lines,
+)
 
 
 def main() -> None:
@@ -41,12 +48,50 @@ def main() -> None:
             f"{args.model} matrix {matrix.shape}/{matrix.dtype}; "
             f"expected {(len(rows), dimension)}/float32"
         )
+    nan_row_indices: list[int] = []
+    nan_columns: set[int] = set()
+    nan_values = 0
     for start in range(0, len(rows), 4096):
         values = np.asarray(matrix[start : start + 4096])
-        if not np.isfinite(values).all():
-            raise RuntimeError(f"Non-finite {args.model} values at {start}")
-        if np.any(np.linalg.norm(values.astype(np.float64), axis=1) <= 1.0e-12):
+        if args.model == "descriptor_13":
+            if np.isinf(values).any():
+                raise RuntimeError(f"Infinite descriptor value at {start}")
+            mask = np.isnan(values)
+            nan_values += int(mask.sum())
+            nan_columns.update(np.flatnonzero(mask.any(axis=0)).tolist())
+            nan_row_indices.extend(
+                (start + int(index)) for index in np.flatnonzero(mask.any(axis=1))
+            )
+            norm_values = np.nan_to_num(values, nan=0.0)
+        else:
+            if not np.isfinite(values).all():
+                raise RuntimeError(f"Non-finite {args.model} values at {start}")
+            norm_values = values
+        if np.any(
+            np.linalg.norm(norm_values.astype(np.float64), axis=1) <= 1.0e-12
+        ):
             raise RuntimeError(f"Zero-norm {args.model} values at {start}")
+    if args.model == "descriptor_13":
+        amendment = protocol["runtime_amendments"][-1]
+        names = protocol["diagnostic_control"]["ordered_features"]
+        expected_columns = {
+            names.index(name) for name in amendment["allowed_nan_features"]
+        }
+        observed_identities = {
+            rows[index]["molecule_hash"] for index in nan_row_indices
+        }
+        expected_identities = set(amendment["affected_identities"])
+        if identity_set_sha256(expected_identities) != amendment[
+            "affected_unique_identity_sha256"
+        ]:
+            raise RuntimeError("Frozen descriptor amendment identity digest is invalid")
+        if (
+            observed_identities != expected_identities
+            or nan_columns != expected_columns
+            or nan_values != int(amendment["expected_nan_values"])
+            or metadata.get("nan_values") != nan_values
+        ):
+            raise RuntimeError("Descriptor NaNs differ from the frozen amendment")
     print(
         json.dumps(
             {
