@@ -1,0 +1,21 @@
+{
+  "benchmark": "TDC ADMET frozen-representation common-panel linear probes",
+  "checksums_sha256": "3f6c7914f1b3ef3112341178b26f8b583b915fa1ce90fa89dc3e5cb0c35733bb",
+  "diagnostic_control": "descriptor_13",
+  "endpoints": 22,
+  "primary_models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "protocol_sha256": "97a733a080a26d22cfe1e7700bc68c230de94ba26afb4c23301ca8ca986d9810",
+  "schema_version": 1,
+  "slurm_job_id": "1255034",
+  "status": "complete",
+  "summary_sha256": "910478580e58c2ccb52936e9f2f853eccd1a277a1960842b04c8b5edd10ef702",
+  "timestamp_utc": "2026-08-14T14:35:13.995783+00:00"
+}

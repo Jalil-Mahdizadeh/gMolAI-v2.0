@@ -480,14 +480,23 @@ repository-canonical optimized gMolAI path reached 58,330 molecules/s at batch
 representation-equivalent neural encoder under that condition. These are
 descriptive one-pass measurements on one GH200.
 
-[`extra-benchmark/tdc-admet/`](extra-benchmark/tdc-admet/) is the final active
-study before manuscript preparation. Its protocol freezes the complete
+[`extra-benchmark/tdc-admet/`](extra-benchmark/tdc-admet/) is the completed
+final benchmark before manuscript preparation. Its protocol froze the complete
 22-endpoint DOI-backed TDC ADMET snapshot, the same seven representation
 definitions, five official scaffold-selection seeds, common-support pairing,
-and shallow Ridge/logistic probes before representation execution. The
-13-descriptor panel is diagnostic and excluded from the primary seven-model
+and shallow Ridge/logistic probes before representation execution. The study
+completed on the 43,730-identity common panel: SMI-TED-Light ranked first and
+gMolAI second by the category-balanced summary, while gMolAI recorded the most
+endpoint wins (9/22). The predeclared 19-endpoint selection-robust sensitivity
+retained the same first/second ordering and 8 gMolAI wins. The complete audited
+result is in
+[`extra-benchmark/tdc-admet/RESULTS.md`](extra-benchmark/tdc-admet/RESULTS.md).
+The 13-descriptor panel is diagnostic and excluded from the primary seven-model
 rank summary. This benchmark tests ADMET representation utility; it neither
 scores generated analogues nor reopens the closed derivative-generation study.
+With this final benchmark complete, the experimental phase is closed and the
+repository is ready for manuscript integration. Property-guided candidate
+optimization remains future work.
 
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both

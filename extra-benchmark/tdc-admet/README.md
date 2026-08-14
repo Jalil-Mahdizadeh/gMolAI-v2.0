@@ -1,6 +1,6 @@
 # TDC ADMET frozen-representation benchmark
 
-This is the final active gMolAI study before manuscript preparation. It asks a
+This completed final gMolAI benchmark before manuscript preparation asks a
 narrower and more defensible question than property-guided generation:
 
 > Does the already-frozen gMolAI representation support competitive simple
@@ -29,7 +29,26 @@ sensitivity excluding BBB, Lipophilicity, and AqSolDB because a source-only audi
 found exact or near-exact reuse of earlier representation-development evidence.
 Every excluded sensitivity endpoint remains visible in the full result tables.
 
-## Reproduction
+## Completed result
+
+The benchmark completed on 14 August 2026 inside interactive Slurm allocation
+`1255034` on n42. The all-model panel contains 43,730 unique identities and
+78,131 labeled occurrences. SMI-TED-Light ranked first and gMolAI second in
+both the complete 22-endpoint and predeclared 19-endpoint category-balanced
+summaries. gMolAI had the most individual endpoint wins: 9/22 and 8/19,
+respectively.
+
+Read the complete endpoint table, limitations, coverage, selection-conditioning
+analysis, and checksum audit in [RESULTS.md](RESULTS.md).
+
+## Verification and reproduction
+
+Verify the completed local artifacts without changing them:
+
+```bash
+PYTHONPATH=extra-benchmark/tdc-admet/scripts \
+  python extra-benchmark/tdc-admet/scripts/verify_results.py
+```
 
 The protocol is frozen in [protocol.json](protocol.json) and explained in
 [PROTOCOL.md](PROTOCOL.md). The end-to-end entry point is:
@@ -44,8 +63,10 @@ On an allocated interactive GPU node it can also be run directly:
 bash extra-benchmark/tdc-admet/run_tdc_admet.sbatch
 ```
 
-The runner is restart-safe: complete embeddings are checksum-validated before
-reuse and partial or inconsistent outputs fail closed.
+The runner is restart-safe for deliberate reproduction: complete embeddings
+are checksum-validated before reuse and partial or inconsistent outputs fail
+closed. Because it recomputes and reseals compact endpoint outputs, use the
+read-only verifier for routine integrity checks of this completed run.
 
 The protocol records one diagnostic-only runtime amendment made after the
 initial RDKit descriptor export failed and before any endpoint probe existed.

@@ -1,0 +1,1998 @@
+{
+  "artifacts": {
+    "all_metrics": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/outputs/all_metrics.csv",
+      "sha256": "d5c515ff9c80e9b8362a8e341834e68bed280192cd3decee3df849fb21ff0a9f"
+    },
+    "category_rank_summary": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/outputs/category_rank_summary.csv",
+      "sha256": "73db91d5ff7af8aeca6136b111df150b7ad87b98d6ee76cc17f1bc7b26925725"
+    },
+    "coverage": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/outputs/coverage.csv",
+      "sha256": "e9a5f0dddcc73d32ea0178c228f9edb4f37f8c030974cb11752358c21e4ea1bf"
+    },
+    "encoding_runtime": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/outputs/encoding_runtime_observed.csv",
+      "sha256": "c12853c6233594a16951c97e5b64fc1cf575eebb1d90f2a92833f5a7bfb58ed6"
+    },
+    "endpoint_primary_metrics": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/outputs/endpoint_primary_metrics.csv",
+      "sha256": "4d9bd6f77fb996e11ba5425d77d44e98629519e81cbe95a16e5b0fa6fcf9b7ee"
+    },
+    "model_summary": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/outputs/model_summary.csv",
+      "sha256": "7fea193053bf8eba483e9061efc62d4b0992885ecfa40ab43447753a23b0b177"
+    }
+  },
+  "benchmark": "TDC ADMET frozen-representation common-panel linear probes",
+  "common_panel": {
+    "common_labels": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/common_labels.tsv",
+      "sha256": "2d01fbc68607fb695da3120953dea6e7014b194a889dfd2f1358cf5d06ce3ec9"
+    },
+    "common_occurrences": 78131,
+    "common_panel": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/common_panel.tsv",
+      "sha256": "22559e82dcb7a572e7e6812f42ddc144ad0b4f353c25a7c60d2dacdb354b496a"
+    },
+    "common_unique_identities": 43730,
+    "coverage": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/outputs/coverage.csv",
+      "sha256": "e9a5f0dddcc73d32ea0178c228f9edb4f37f8c030974cb11752358c21e4ea1bf"
+    },
+    "endpoints": {
+      "ames": {
+        "common_occurrences": 7278,
+        "common_unique_identities": 7255,
+        "full_policy_accepted_occurrences": 7278,
+        "removed_occurrences": 0,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 1457,
+            "train_identity_set_sha256": "8411f115621e1f449226ecb1b8c2c78f62f07794b228b99a57ad9dc723374255",
+            "train_occurrences": 5093,
+            "train_val_occurrences": 5821,
+            "valid_identity_set_sha256": "e881d8d0b9a2f4068eeebdbaf154f50ad088a94bc0b9416999299e7228eee3d2",
+            "valid_occurrences": 728
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 1457,
+            "train_identity_set_sha256": "cfff19d83ec88974b8b2371b9e51595f5d9b54092e47669dd5d12589efc7d3d6",
+            "train_occurrences": 4553,
+            "train_val_occurrences": 5821,
+            "valid_identity_set_sha256": "9f8108b83061e79c72c03be813963bf134a12580ff409b1e7a6b0533f8eccb2f",
+            "valid_occurrences": 1268
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 1457,
+            "train_identity_set_sha256": "c0e40e40e75b701736e4ff3bd82150b3a2b8ac6ae377bb06c5f3ce0911acafc3",
+            "train_occurrences": 5093,
+            "train_val_occurrences": 5821,
+            "valid_identity_set_sha256": "101ce6686f64c8fdd4761f4cbd61dfb2be4c923d1fc617984acb65441ff4cdd9",
+            "valid_occurrences": 728
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 1457,
+            "train_identity_set_sha256": "f75d1659ce053c087e7c5f2a67838e323fbab4a10d6527b922658772d159f20f",
+            "train_occurrences": 5093,
+            "train_val_occurrences": 5821,
+            "valid_identity_set_sha256": "fb1f38cd29412555e51445beee13b9d002a31f99a9286c300e98040712e76e15",
+            "valid_occurrences": 728
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 1457,
+            "train_identity_set_sha256": "0db828ab291433607b25e4b71461cd7ad837f70f63a0d7f82268edac4e90367e",
+            "train_occurrences": 5093,
+            "train_val_occurrences": 5821,
+            "valid_identity_set_sha256": "8111dc99c065cecde49005db1ed68481348c475e5a0f50c74306b90b1489063f",
+            "valid_occurrences": 728
+          }
+        ],
+        "test_occurrences": 1457,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 5821
+      },
+      "bbb_martins": {
+        "common_occurrences": 1898,
+        "common_unique_identities": 1843,
+        "full_policy_accepted_occurrences": 1925,
+        "removed_occurrences": 27,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 388,
+            "train_identity_set_sha256": "2896333c86bd5158a5cb70856d53a596b045664100ae55c11417bdcd1c2d329a",
+            "train_occurrences": 1323,
+            "train_val_occurrences": 1510,
+            "valid_identity_set_sha256": "e47b3c7eb023c461c188d2d55a420690802174d077b755ea5ac9d13e34c92d65",
+            "valid_occurrences": 187
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 388,
+            "train_identity_set_sha256": "3d7778ce208a1c8ecc17a5ff3bebadb9011edf96e2da7e8f4fec36e48219265c",
+            "train_occurrences": 1327,
+            "train_val_occurrences": 1510,
+            "valid_identity_set_sha256": "3fbbe9fd6aa03a5d1b23265ca3f480e37b8c530a9daaa0e18460298c508ed8ab",
+            "valid_occurrences": 183
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 388,
+            "train_identity_set_sha256": "bef1bf2c1c67d89b71a421070d39fafb1eb308f996b11566a67b9471e203e7e5",
+            "train_occurrences": 1320,
+            "train_val_occurrences": 1510,
+            "valid_identity_set_sha256": "447961e9f81a7d1ad87f4a56a607a3dc5abc3509186a45e504062bd597bf7ae5",
+            "valid_occurrences": 190
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 388,
+            "train_identity_set_sha256": "6db3e16023b2d312fad467d397172dba79a82de3a48dde5e2b8cb6bb0c8f7f3b",
+            "train_occurrences": 1323,
+            "train_val_occurrences": 1510,
+            "valid_identity_set_sha256": "9e3bad6cd7d90737b77384658a8e6edb21855efd4f3213655abaad87454ceabb",
+            "valid_occurrences": 187
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 388,
+            "train_identity_set_sha256": "c13450788218da6178148e252bc36dc59e03cb470ca17beef30dddfb85e4b5db",
+            "train_occurrences": 1327,
+            "train_val_occurrences": 1510,
+            "valid_identity_set_sha256": "a76c3cbf1501caa08f73b363126124ecb1103d09f75c6e7c0c214f740423b2a3",
+            "valid_occurrences": 183
+          }
+        ],
+        "test_occurrences": 388,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 1510
+      },
+      "bioavailability_ma": {
+        "common_occurrences": 634,
+        "common_unique_identities": 634,
+        "full_policy_accepted_occurrences": 638,
+        "removed_occurrences": 4,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 127,
+            "train_identity_set_sha256": "3e389b150c5e4729dfae0f48a1317ecb6006d48216a7de489c0e41853f8b7e77",
+            "train_occurrences": 444,
+            "train_val_occurrences": 507,
+            "valid_identity_set_sha256": "62e89d07bb587bcbfb6ca6990e6304b417e7922c2451c7eb0a3c350ca5c9849e",
+            "valid_occurrences": 63
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 127,
+            "train_identity_set_sha256": "394ce592b6d70faefb5b5c1c700e855dbf8ce271caa07b791d3006066d2f9449",
+            "train_occurrences": 443,
+            "train_val_occurrences": 507,
+            "valid_identity_set_sha256": "2a97673c4921a87d6ba2f040675bc7483acfb8600bf14cc73088f30cc189222f",
+            "valid_occurrences": 64
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 127,
+            "train_identity_set_sha256": "b1cf26ba3b860b64c192edefd57630428555f0dbb76b21ca4bab21e128d78fe8",
+            "train_occurrences": 443,
+            "train_val_occurrences": 507,
+            "valid_identity_set_sha256": "156c346bed962f8f18d0095cf4522e5bf931385b91845169b2bc96f62a3fd391",
+            "valid_occurrences": 64
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 127,
+            "train_identity_set_sha256": "ab2ccf0505f8025f5f2e2a7ff67f54d942c8cdc79a2363668a6fe518fddfd25f",
+            "train_occurrences": 443,
+            "train_val_occurrences": 507,
+            "valid_identity_set_sha256": "532438959f19e991353deada980cad1824d963e0c34a47fe5b31d34776cee065",
+            "valid_occurrences": 64
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 127,
+            "train_identity_set_sha256": "14eeabecd2afaf5f9743314ade8da85f669139fb367276467fc8d14995d34205",
+            "train_occurrences": 443,
+            "train_val_occurrences": 507,
+            "valid_identity_set_sha256": "6fe9f1031dd02322fa192f88b728ff4a04e1151cefc40270419ac96151b8d334",
+            "valid_occurrences": 64
+          }
+        ],
+        "test_occurrences": 127,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 507
+      },
+      "caco2_wang": {
+        "common_occurrences": 893,
+        "common_unique_identities": 889,
+        "full_policy_accepted_occurrences": 901,
+        "removed_occurrences": 8,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 180,
+            "train_identity_set_sha256": "0833f4636b03ccf0ffdcf8103c2c57cd02990b512d28e3d7db97d28e965d08b9",
+            "train_occurrences": 625,
+            "train_val_occurrences": 713,
+            "valid_identity_set_sha256": "79f8054471f8a3edcd91bcbd109321020222f2e6a707dd2541f11bfb5877ab47",
+            "valid_occurrences": 88
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 180,
+            "train_identity_set_sha256": "5856e8ff92a12b8c29d05c9aa85cf0dc01951006f65d55f472a064356a4e34af",
+            "train_occurrences": 623,
+            "train_val_occurrences": 713,
+            "valid_identity_set_sha256": "7a06e0c0aac6a2795f54c9cf2e9b9a15d84cd7ff6434317018c9eb00099925e5",
+            "valid_occurrences": 90
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 180,
+            "train_identity_set_sha256": "827bba30ab0fe479212aad828739c6ab2e1ff7c17057f045213884d0d6bceb67",
+            "train_occurrences": 623,
+            "train_val_occurrences": 713,
+            "valid_identity_set_sha256": "12b932e9548691361d2d38a1305ca68aab037e413bcb9b3354d06564e4bf95ab",
+            "valid_occurrences": 90
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 180,
+            "train_identity_set_sha256": "020643a7601c3d141397fb3364370fabaf0d3789ca01ae2072059686ce9ab66c",
+            "train_occurrences": 624,
+            "train_val_occurrences": 713,
+            "valid_identity_set_sha256": "606df12b72aca08d69da815efa5820a990cb2c4e71ff9542b2f56253487805ee",
+            "valid_occurrences": 89
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 180,
+            "train_identity_set_sha256": "7e8af14f8b472dc616d5e9d9a37476e0a964d716e0534f0db43615499e62576f",
+            "train_occurrences": 622,
+            "train_val_occurrences": 713,
+            "valid_identity_set_sha256": "398f2f4007567dc3a682d7d6a8a252a98ea61fa3af4da69dcffea12c2295be13",
+            "valid_occurrences": 91
+          }
+        ],
+        "test_occurrences": 180,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 713
+      },
+      "clearance_hepatocyte_az": {
+        "common_occurrences": 1198,
+        "common_unique_identities": 1006,
+        "full_policy_accepted_occurrences": 1213,
+        "removed_occurrences": 15,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 238,
+            "train_identity_set_sha256": "b7a131be9e31a5f423583c09c3ac549bda9a52365e96d3299ba96648e4e96b2f",
+            "train_occurrences": 838,
+            "train_val_occurrences": 960,
+            "valid_identity_set_sha256": "dc07db75c3596f06472b4dd645e68dca57cf3d34e460dfd8c4a7da3543e77a06",
+            "valid_occurrences": 122
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 238,
+            "train_identity_set_sha256": "797f910941c35e59fa9260ac4a06f3e907afed652d090a28e87dacaa3d56e85f",
+            "train_occurrences": 839,
+            "train_val_occurrences": 960,
+            "valid_identity_set_sha256": "fe6786e8e9aaa18fea418a9ce0d67cbedb78b0215ee88db4a8cf65c9799335d6",
+            "valid_occurrences": 121
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 238,
+            "train_identity_set_sha256": "aed4f89bc8f84ee8821063a7e1e977a986ddb172d5bdd5fe80eea296098d4b3f",
+            "train_occurrences": 839,
+            "train_val_occurrences": 960,
+            "valid_identity_set_sha256": "b4f5ebde6530e65d1d9bb2a09f4942f864fa82a9a2df9bc192b1e4fe92a9735f",
+            "valid_occurrences": 121
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 238,
+            "train_identity_set_sha256": "bf8961570dbf2e02459c808698e67dcfc4eafec5c69e3bb5c50e88c56cd80647",
+            "train_occurrences": 838,
+            "train_val_occurrences": 960,
+            "valid_identity_set_sha256": "78db33ba5ebd7af58f5bc7709d27ab1095b7af0ed8e927b765d8dd905aaa78d0",
+            "valid_occurrences": 122
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 238,
+            "train_identity_set_sha256": "d72dd2dc89d83fc47784ca85a5035da7bd99a810525fab59bfb7665b522dd2cd",
+            "train_occurrences": 838,
+            "train_val_occurrences": 960,
+            "valid_identity_set_sha256": "aa763d16d678afe8ad4029cb4a3b35b9e986243d76e0fd5e0b1fd24786fdb405",
+            "valid_occurrences": 122
+          }
+        ],
+        "test_occurrences": 238,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 960
+      },
+      "clearance_microsome_az": {
+        "common_occurrences": 1096,
+        "common_unique_identities": 1096,
+        "full_policy_accepted_occurrences": 1102,
+        "removed_occurrences": 6,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 219,
+            "train_identity_set_sha256": "ec7e1afff38ff7e0f9dcd2df951938084ebc7295bf565f0de9f1e2d9aa013af0",
+            "train_occurrences": 768,
+            "train_val_occurrences": 877,
+            "valid_identity_set_sha256": "9616d2d3abf04e19d9775744ca57adf5bc2820c16dd04cfa2f3bbad13ddb6f01",
+            "valid_occurrences": 109
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 219,
+            "train_identity_set_sha256": "0e9c182d20bc87c99d610ee0e6645d9faee844ecc1a0fa2497bbf9ae31c2013e",
+            "train_occurrences": 766,
+            "train_val_occurrences": 877,
+            "valid_identity_set_sha256": "f88a329fa2a58a6c5830f95029456eab73de2bdccd15bfc8bc791a67423fb139",
+            "valid_occurrences": 111
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 219,
+            "train_identity_set_sha256": "f3ece90cc51f7a75e2ae8946c246fda65701f69627c7b39931284c6487f94d7a",
+            "train_occurrences": 766,
+            "train_val_occurrences": 877,
+            "valid_identity_set_sha256": "49fa43b18fa7b7fed28235214a75cad240998037171be8b4952bd748cd4807d8",
+            "valid_occurrences": 111
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 219,
+            "train_identity_set_sha256": "97c9197c1cf65c5700731347ceb21c018764c16aa6db790cb7a847c833733330",
+            "train_occurrences": 767,
+            "train_val_occurrences": 877,
+            "valid_identity_set_sha256": "3612ca7467a68ebc3b53793310d995a377e2da146d8f448a672ff449fd470be6",
+            "valid_occurrences": 110
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 219,
+            "train_identity_set_sha256": "5f3062f78c14990aeb6b34334d7655b4436e1e44f1c7b665da1bb1484e7e9103",
+            "train_occurrences": 767,
+            "train_val_occurrences": 877,
+            "valid_identity_set_sha256": "74867223b6e2515820434f63acec7510a350ce0aad65b97bc7d7cc9018d9faa6",
+            "valid_occurrences": 110
+          }
+        ],
+        "test_occurrences": 219,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 877
+      },
+      "cyp2c9_substrate_carbonmangels": {
+        "common_occurrences": 659,
+        "common_unique_identities": 656,
+        "full_policy_accepted_occurrences": 669,
+        "removed_occurrences": 10,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 131,
+            "train_identity_set_sha256": "c98b3ba3e2b238787b94c66684ad58900aca12367c1e8cfafe4940e3f26ede9e",
+            "train_occurrences": 463,
+            "train_val_occurrences": 528,
+            "valid_identity_set_sha256": "2ace78bebbd33f2585225ed4dd74373ab53643d8cd79ad758329ccb6702030fa",
+            "valid_occurrences": 65
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 131,
+            "train_identity_set_sha256": "b75ebe89b7b0489cddf37bf8d032c9cb24ea5b12da81911fa7b5ec594e6feea3",
+            "train_occurrences": 463,
+            "train_val_occurrences": 528,
+            "valid_identity_set_sha256": "a0d8ad4dc96400d9c083e30ed6d2b27d8080619598cfa67e23c677743672769c",
+            "valid_occurrences": 65
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 131,
+            "train_identity_set_sha256": "67f7efb8b2f53bf11a5a1a93ff18e358057c52afe0406506efe50a4010129202",
+            "train_occurrences": 462,
+            "train_val_occurrences": 528,
+            "valid_identity_set_sha256": "9f77243d8f74277e0b2d556a5fc7aab9dc07d984a778f0f8b544688a6dfe51d1",
+            "valid_occurrences": 66
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 131,
+            "train_identity_set_sha256": "1c0dfc27d4f5ff820b61967684c54563be8f4e904d3c572c98a5663368a324e4",
+            "train_occurrences": 461,
+            "train_val_occurrences": 528,
+            "valid_identity_set_sha256": "d641c54a5a56b093b81f2805acbbc0e8b9e501a807d599cb0485d19473bbae40",
+            "valid_occurrences": 67
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 131,
+            "train_identity_set_sha256": "3187165a44b0292f7ef39c756a6a45ea685ae97982f637da012dc30e8ec4a07d",
+            "train_occurrences": 461,
+            "train_val_occurrences": 528,
+            "valid_identity_set_sha256": "3c68d955e8622aa94bcb5bc7835be832bffaf94fa2c3e3da43d5dd50102785c3",
+            "valid_occurrences": 67
+          }
+        ],
+        "test_occurrences": 131,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 528
+      },
+      "cyp2c9_veith": {
+        "common_occurrences": 11477,
+        "common_unique_identities": 11477,
+        "full_policy_accepted_occurrences": 11519,
+        "removed_occurrences": 42,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 2302,
+            "train_identity_set_sha256": "17bf0d1ca6bb34b004c17ad9d02a6c60ee05d4eda9553459f1b47b176e92eee8",
+            "train_occurrences": 8015,
+            "train_val_occurrences": 9175,
+            "valid_identity_set_sha256": "9e2d42f2a6072692b2b355292e3b201df4837159ce16d1a42434248dd6a19b88",
+            "valid_occurrences": 1160
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 2302,
+            "train_identity_set_sha256": "6ca15b7ba7df72b2cd922fa0aaabef657b298a842c591ff532625985c065898a",
+            "train_occurrences": 8011,
+            "train_val_occurrences": 9175,
+            "valid_identity_set_sha256": "2bf4d74439e6dbd68a4d05bb1b4de0b1fe42d2b9fd81139fea759dd144bc2e03",
+            "valid_occurrences": 1164
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 2302,
+            "train_identity_set_sha256": "260bca21fcf1b4db2b27df0774c9de65e827c06d3582fda2ce96c2d9c90051c0",
+            "train_occurrences": 8037,
+            "train_val_occurrences": 9175,
+            "valid_identity_set_sha256": "ce9d271a63773acd7c95df43d6896cde8746df6bea4d66fab925b86658b6736c",
+            "valid_occurrences": 1138
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 2302,
+            "train_identity_set_sha256": "d174c617e61fcb675be4013af80ea4f2a237233566c5a0ab22667f49dea9670a",
+            "train_occurrences": 8031,
+            "train_val_occurrences": 9175,
+            "valid_identity_set_sha256": "d4919b94919a4eac93127440f19c6b53f02ef41f389ba7c40084f6de8f7fd01e",
+            "valid_occurrences": 1144
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 2302,
+            "train_identity_set_sha256": "311aaa9a0abeec9884a0f6cf4d78549b11319ded4ff906ef588b184e38fb75a7",
+            "train_occurrences": 8025,
+            "train_val_occurrences": 9175,
+            "valid_identity_set_sha256": "5aca941335826cc82cde72069f9d8b692f44d923b8ccf257dacfb102af17c4c9",
+            "valid_occurrences": 1150
+          }
+        ],
+        "test_occurrences": 2302,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 9175
+      },
+      "cyp2d6_substrate_carbonmangels": {
+        "common_occurrences": 657,
+        "common_unique_identities": 654,
+        "full_policy_accepted_occurrences": 667,
+        "removed_occurrences": 10,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 133,
+            "train_identity_set_sha256": "caca36956bc8fc96d906a85feaeebb7bd4143e966e422ae3703c303d26cd1204",
+            "train_occurrences": 457,
+            "train_val_occurrences": 524,
+            "valid_identity_set_sha256": "375878b712b53c20593c1c66baededae56bab1d7e9c8c082341b6577358ca696",
+            "valid_occurrences": 67
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 133,
+            "train_identity_set_sha256": "34d1dfad4c101d8359a5de742832b87fd74e2d5445a7343e8c310f0058dc2962",
+            "train_occurrences": 458,
+            "train_val_occurrences": 524,
+            "valid_identity_set_sha256": "9d9abb1e342453d33d982a2638d4dd8651968270d5ff2ab9c757f2a7d6bbfc30",
+            "valid_occurrences": 66
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 133,
+            "train_identity_set_sha256": "45e20b0db2b1d1fa56f00030828f4f00050fb48588837f1bd24b84810828035c",
+            "train_occurrences": 458,
+            "train_val_occurrences": 524,
+            "valid_identity_set_sha256": "f2f479cea4ca24712102b391fc93caa4cffb6a7f5b3586688033845f234d8ae1",
+            "valid_occurrences": 66
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 133,
+            "train_identity_set_sha256": "d516b1690a5613da77db89dd5ba0f03cd95575ea198e54442653e447f31f53ee",
+            "train_occurrences": 457,
+            "train_val_occurrences": 524,
+            "valid_identity_set_sha256": "1101d2fded54e4427dc9a50a4d7003a741d22fb02332dc59213229186dd46495",
+            "valid_occurrences": 67
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 133,
+            "train_identity_set_sha256": "a950d540dab24d01d2d00f51e1a8b08e55dbe42d466a05a9665fcc2cd8b705fa",
+            "train_occurrences": 457,
+            "train_val_occurrences": 524,
+            "valid_identity_set_sha256": "aaffd45b7ca0096c135d97fa9e369600202b252f0bbe2bc923e1e4f2100ff121",
+            "valid_occurrences": 67
+          }
+        ],
+        "test_occurrences": 133,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 524
+      },
+      "cyp2d6_veith": {
+        "common_occurrences": 12507,
+        "common_unique_identities": 12507,
+        "full_policy_accepted_occurrences": 12547,
+        "removed_occurrences": 40,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 2472,
+            "train_identity_set_sha256": "21d5f174519035524f783beb5315140d1281aaa66043e767b226650e2eb81cc4",
+            "train_occurrences": 8779,
+            "train_val_occurrences": 10035,
+            "valid_identity_set_sha256": "113c783e5d46fac7d603ea93b8bf47463974a6b83bc8d276e349218f9f046694",
+            "valid_occurrences": 1256
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 2472,
+            "train_identity_set_sha256": "c721b3b6348b74924dc76952475018e5f1e6e8cebd2cb6d80c9f8687e1046229",
+            "train_occurrences": 8788,
+            "train_val_occurrences": 10035,
+            "valid_identity_set_sha256": "9042627ae520153b5bfb1bffed6fb7421022580289e102d996de3f32cea8de60",
+            "valid_occurrences": 1247
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 2472,
+            "train_identity_set_sha256": "1b3acedec9ad04e37e37ff32c6acec5f061e0c17fdeffba3dc929ad0be0ba80b",
+            "train_occurrences": 8771,
+            "train_val_occurrences": 10035,
+            "valid_identity_set_sha256": "4f8435a3eb13c5dd5520292f5301520711cf4ef8c8c14832b9ddda011ac5e115",
+            "valid_occurrences": 1264
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 2472,
+            "train_identity_set_sha256": "fd351476f4294700e6b8c26baf0da3d188a8477e900142d543419ec7afb6c280",
+            "train_occurrences": 8768,
+            "train_val_occurrences": 10035,
+            "valid_identity_set_sha256": "6496d2b21a28eb033853e0ff2fffe301a3df309eb942f89d2900faaeff5e6e2a",
+            "valid_occurrences": 1267
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 2472,
+            "train_identity_set_sha256": "b92423a58e8e65e2d59f0766de85e3d0c8a5b352d2c3c5197e417ce495f273fb",
+            "train_occurrences": 8773,
+            "train_val_occurrences": 10035,
+            "valid_identity_set_sha256": "da92418265102e6025d30a77c1e1b3494b14e0a6eff942155988fb63c5526d2d",
+            "valid_occurrences": 1262
+          }
+        ],
+        "test_occurrences": 2472,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 10035
+      },
+      "cyp3a4_substrate_carbonmangels": {
+        "common_occurrences": 658,
+        "common_unique_identities": 655,
+        "full_policy_accepted_occurrences": 670,
+        "removed_occurrences": 12,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 132,
+            "train_identity_set_sha256": "90c77787983a3aee91ecef67f951b169f1cc55bba62425ae1e9b6a6f61d33146",
+            "train_occurrences": 459,
+            "train_val_occurrences": 526,
+            "valid_identity_set_sha256": "c3776e019176db47a66a11f256c5a2fe7fbf0cb912d0486af70cfc7ef54a841e",
+            "valid_occurrences": 67
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 132,
+            "train_identity_set_sha256": "4fadddd2d48a9bd6ea8a496cab849f9f33f06f6dc0d661772d4fea97ca0871f1",
+            "train_occurrences": 459,
+            "train_val_occurrences": 526,
+            "valid_identity_set_sha256": "64c0f80ca84e3977a9cf98a0fecb5c96e3e9b4e5aa3cb0399630f9440cfa0dd7",
+            "valid_occurrences": 67
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 132,
+            "train_identity_set_sha256": "8889e7f0986517a66435846569f95b62918947b44a46c561b892f1f29ac84ff6",
+            "train_occurrences": 462,
+            "train_val_occurrences": 526,
+            "valid_identity_set_sha256": "816d92692cd36b9d28ff521f27cea1b23f13b0f4980b122a847860989400bffe",
+            "valid_occurrences": 64
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 132,
+            "train_identity_set_sha256": "a72eb76f478f5f90e86260e53a17819467869d24087978328066d5ee535e5fa8",
+            "train_occurrences": 460,
+            "train_val_occurrences": 526,
+            "valid_identity_set_sha256": "9568ba5d1711d97dd78e072388de033b5fbf907ad809c2986a30129e7010af69",
+            "valid_occurrences": 66
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 132,
+            "train_identity_set_sha256": "9ffccbd9bdc7ab0a7c59481a2394babbab264e54d4c2f5fbc4ab295066bcf487",
+            "train_occurrences": 459,
+            "train_val_occurrences": 526,
+            "valid_identity_set_sha256": "eafb81dddc0bd64abd9e270fe8047370a7e83e92431041ddedd807b18dcda6db",
+            "valid_occurrences": 67
+          }
+        ],
+        "test_occurrences": 132,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 526
+      },
+      "cyp3a4_veith": {
+        "common_occurrences": 11706,
+        "common_unique_identities": 11706,
+        "full_policy_accepted_occurrences": 11744,
+        "removed_occurrences": 38,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 2350,
+            "train_identity_set_sha256": "4f6853188068f99bfb8d410be6e03bf3d58b4576ca3d1eff84f7afa88ee0a596",
+            "train_occurrences": 8180,
+            "train_val_occurrences": 9356,
+            "valid_identity_set_sha256": "a8aa68183ac488e31d7c2f2a1b2072edc515050aa58ccc419aaa102407521472",
+            "valid_occurrences": 1176
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 2350,
+            "train_identity_set_sha256": "e71f14509671ea9022837ddcc9a481c09bd4432816f460987f1f7cc892feffc7",
+            "train_occurrences": 8185,
+            "train_val_occurrences": 9356,
+            "valid_identity_set_sha256": "ae478e8a437e53de95f12b5d9b990152816fa21139b6bee884d151b89c61b39c",
+            "valid_occurrences": 1171
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 2350,
+            "train_identity_set_sha256": "4189cfd7373401431fe8732fd303820d7796018bb85a5f737ed31f74b2cd1460",
+            "train_occurrences": 8178,
+            "train_val_occurrences": 9356,
+            "valid_identity_set_sha256": "6371a4531b4cb32658a0122b0f37e15d97de4b8175644017bc4879acfc118d54",
+            "valid_occurrences": 1178
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 2350,
+            "train_identity_set_sha256": "df6e0d2855046940e5e4365002c98d60607fe2db9d0006ae9286e278c7ec2798",
+            "train_occurrences": 8179,
+            "train_val_occurrences": 9356,
+            "valid_identity_set_sha256": "01f546062ad92b8800dad186ddb49942c2a608848f48e7890c83db82514bc6b6",
+            "valid_occurrences": 1177
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 2350,
+            "train_identity_set_sha256": "4e0e69af1ea9b5ff762ac828833d61a5cf6935e3f8d326e33c8aeaa008338698",
+            "train_occurrences": 8198,
+            "train_val_occurrences": 9356,
+            "valid_identity_set_sha256": "c09635755f76912632489e58f059a078cab16d5a1cbd04665ba6d7033e78ce5a",
+            "valid_occurrences": 1158
+          }
+        ],
+        "test_occurrences": 2350,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 9356
+      },
+      "dili": {
+        "common_occurrences": 444,
+        "common_unique_identities": 444,
+        "full_policy_accepted_occurrences": 456,
+        "removed_occurrences": 12,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 88,
+            "train_identity_set_sha256": "3c9c1f499cf1610beb42037e6a1e15392b96a3bd0550c9b875829be2efc9abd3",
+            "train_occurrences": 302,
+            "train_val_occurrences": 356,
+            "valid_identity_set_sha256": "0a8e443a6b4d22a8a341f15ad23411896fcee5676777d6e5f3ec296d8bda1bdc",
+            "valid_occurrences": 54
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 88,
+            "train_identity_set_sha256": "65743492a4db2f227c841fe63572df9ec2d0fe29fd5a6101d34341573b337204",
+            "train_occurrences": 311,
+            "train_val_occurrences": 356,
+            "valid_identity_set_sha256": "aeb8d8b2fc928fbfbe6e6d85531fe35b7cd79c56dcebd831214f3bdea4e7e1dd",
+            "valid_occurrences": 45
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 88,
+            "train_identity_set_sha256": "ebe55d5108e5c5ee81e861b2b48d6f839e25e2c87d8b5b55c9872e8f01e901ee",
+            "train_occurrences": 310,
+            "train_val_occurrences": 356,
+            "valid_identity_set_sha256": "d9348f854a0b0e74d25a20d862ab0f4444e27718099699a1051981775ad4c138",
+            "valid_occurrences": 46
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 88,
+            "train_identity_set_sha256": "59f74a74d4cff8c79f8e4283f7ce9cb5046b37d741848cb57f59d8f42b2295d9",
+            "train_occurrences": 310,
+            "train_val_occurrences": 356,
+            "valid_identity_set_sha256": "cb93726753832dcd636172c0ceed9c01c2f1c644adc8d3b01ea88ce734c84372",
+            "valid_occurrences": 46
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 88,
+            "train_identity_set_sha256": "4ea2b25b661ed33b42a05650ad129f174f45fad6ecd2d581b2ec95aafc92ec6d",
+            "train_occurrences": 311,
+            "train_val_occurrences": 356,
+            "valid_identity_set_sha256": "d96b93d24b553a693da2d906210164248879d124ae1e62cb6f2e5b206de59017",
+            "valid_occurrences": 45
+          }
+        ],
+        "test_occurrences": 88,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 356
+      },
+      "half_life_obach": {
+        "common_occurrences": 625,
+        "common_unique_identities": 623,
+        "full_policy_accepted_occurrences": 657,
+        "removed_occurrences": 32,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 126,
+            "train_identity_set_sha256": "c64b6209d2121910f90b198b6a474634151d66bb7c65b8e373663f936ff15415",
+            "train_occurrences": 437,
+            "train_val_occurrences": 499,
+            "valid_identity_set_sha256": "e13d3f26c8299d977ce38a2e86f88782d648e3df2b8b88affbfeea3a5bb69cf6",
+            "valid_occurrences": 62
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 126,
+            "train_identity_set_sha256": "acc825bd1c428d5357c8566ceff8a9dec076900b4be23a5b9f0ee4450421272d",
+            "train_occurrences": 434,
+            "train_val_occurrences": 499,
+            "valid_identity_set_sha256": "e1d61d3ab2664a3591e0f26d430402fa6c16676145be8f40e8fef248546fb045",
+            "valid_occurrences": 65
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 126,
+            "train_identity_set_sha256": "5aa52594b728f36ccd8fae4a7feaf8269dd4d799d3f9c7a8c9f4683851b9aa0c",
+            "train_occurrences": 432,
+            "train_val_occurrences": 499,
+            "valid_identity_set_sha256": "2d5876fad3391dfc921e8f8fd21b4138912b4ba3183761cb3e8bb2425e9797bf",
+            "valid_occurrences": 67
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 126,
+            "train_identity_set_sha256": "40a763a5b5c70db5e5937d6997965c0769e28c15f3bd3b24deedb3cf9ad25fb7",
+            "train_occurrences": 439,
+            "train_val_occurrences": 499,
+            "valid_identity_set_sha256": "f6b7a17f093fe8c83768f86d1a272f6c5eba2ba5370a41d6165922c4182ae66d",
+            "valid_occurrences": 60
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 126,
+            "train_identity_set_sha256": "3acef77e40faeb5cfe710c0018932ae4910443d50894fdffa461b476a79955a0",
+            "train_occurrences": 435,
+            "train_val_occurrences": 499,
+            "valid_identity_set_sha256": "c47692651200c80a917caace05307c118de4b34aae6b8dcea9f55de5612e6649",
+            "valid_occurrences": 64
+          }
+        ],
+        "test_occurrences": 126,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 499
+      },
+      "herg": {
+        "common_occurrences": 643,
+        "common_unique_identities": 636,
+        "full_policy_accepted_occurrences": 643,
+        "removed_occurrences": 0,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 130,
+            "train_identity_set_sha256": "5c4e3f78e8f179ff032e04833ea5f2fe5132728a9d45610c42a02cbebf7b4d19",
+            "train_occurrences": 449,
+            "train_val_occurrences": 513,
+            "valid_identity_set_sha256": "cc3c5b1fae769613781cc19fc00b1b7e4cfbffc8a5974a50f2578601ad137612",
+            "valid_occurrences": 64
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 130,
+            "train_identity_set_sha256": "8b4c80f98a131a0081199804e17086cbbd95c94a5977def65e83e5c2ac8fa9af",
+            "train_occurrences": 448,
+            "train_val_occurrences": 513,
+            "valid_identity_set_sha256": "6afb9c8548d0a5c7ed7bfbec1870c80887cebe1250f7bc1bddd53b897db0b143",
+            "valid_occurrences": 65
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 130,
+            "train_identity_set_sha256": "253cb43ff97e8486f86e2820636c4e3a0812549dfe256bf4c2ff324ac24bae89",
+            "train_occurrences": 448,
+            "train_val_occurrences": 513,
+            "valid_identity_set_sha256": "841645af69ff9cf60a100bacafd229416e86c93a94ab26ed4154b8fd533d0173",
+            "valid_occurrences": 65
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 130,
+            "train_identity_set_sha256": "91347db3de49f3e93a6ff48b94c75faa43f3eb3a6d1c9e3e2c813c5422af1e3a",
+            "train_occurrences": 447,
+            "train_val_occurrences": 513,
+            "valid_identity_set_sha256": "2684366501c597d6c30953251d23f420359bd8d034443ca776a7591e84cb888e",
+            "valid_occurrences": 66
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 130,
+            "train_identity_set_sha256": "e7b9393b7ec62e9518d8314ed2aea80ff7417d8d1439e578d163f54fe5d76c9d",
+            "train_occurrences": 448,
+            "train_val_occurrences": 513,
+            "valid_identity_set_sha256": "a6b68b28e98ed123842103852a056cb313dce89e2902855da9bf73a94d43a892",
+            "valid_occurrences": 65
+          }
+        ],
+        "test_occurrences": 130,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 513
+      },
+      "hia_hou": {
+        "common_occurrences": 573,
+        "common_unique_identities": 573,
+        "full_policy_accepted_occurrences": 578,
+        "removed_occurrences": 5,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 116,
+            "train_identity_set_sha256": "3ca2547cd43e2816127a1da73a895cfae4b60e210990a38d34229df83e51fba8",
+            "train_occurrences": 400,
+            "train_val_occurrences": 457,
+            "valid_identity_set_sha256": "1ac071b5005c0277b6647a9a046dd7362a2135e1734f34119947853a3d53a2c4",
+            "valid_occurrences": 57
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 116,
+            "train_identity_set_sha256": "a88110f180d6ab5d2a4c372272f3a92c0ee98cf63265933d16d5c7da21c79689",
+            "train_occurrences": 400,
+            "train_val_occurrences": 457,
+            "valid_identity_set_sha256": "9f78376f3ce1f63cd98bbd0387cbedba68b104e845ae890deb52c1a91fa316e5",
+            "valid_occurrences": 57
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 116,
+            "train_identity_set_sha256": "d110184676e3ad590647ea9c806730a6fd4a5999995d6edc34a44e3bc1575f87",
+            "train_occurrences": 399,
+            "train_val_occurrences": 457,
+            "valid_identity_set_sha256": "2edcbb30209a40a1a9e7d0fa74a84e32080dc7f3e738520a0ac7c601393c0613",
+            "valid_occurrences": 58
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 116,
+            "train_identity_set_sha256": "e62ddd36bdef4b9e7bab87466129cb0f1bfa6fb2611431f4ce2b1385227af0e1",
+            "train_occurrences": 400,
+            "train_val_occurrences": 457,
+            "valid_identity_set_sha256": "9c8dcf83f33c77c148c2851e426bbf6ecec806c71e065ede25656f77cc37151f",
+            "valid_occurrences": 57
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 116,
+            "train_identity_set_sha256": "864716ffa46041aa1fe424eecdcf4f9c42e45a88735631278e49d4732f791ae5",
+            "train_occurrences": 393,
+            "train_val_occurrences": 457,
+            "valid_identity_set_sha256": "63761b9b395bfe85934ae3dad4d69fac2187a09d6d9700007471b44ba283fcad",
+            "valid_occurrences": 64
+          }
+        ],
+        "test_occurrences": 116,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 457
+      },
+      "ld50_zhu": {
+        "common_occurrences": 7266,
+        "common_unique_identities": 7224,
+        "full_policy_accepted_occurrences": 7385,
+        "removed_occurrences": 119,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 1468,
+            "train_identity_set_sha256": "2f271f1685e95ca378337066f94b7cb17c4d0cc88dc898441bc0e5c406b1e5a6",
+            "train_occurrences": 5067,
+            "train_val_occurrences": 5798,
+            "valid_identity_set_sha256": "fe675093920ac20eff488949a2e21724c4792fd08f51af62cfb82e6f8a3d0e92",
+            "valid_occurrences": 731
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 1468,
+            "train_identity_set_sha256": "e4ca08dd7d88d3567e84cd469c7a66636f447f2a8efa307a30ef48fc7442d66a",
+            "train_occurrences": 5067,
+            "train_val_occurrences": 5798,
+            "valid_identity_set_sha256": "0a8b4dc0481368a47576957fe2fe9cc5881a1747501d2955f09e3e732ce44459",
+            "valid_occurrences": 731
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 1468,
+            "train_identity_set_sha256": "8b6ab19d164bde7ad0fa3f0c35e258d5f6bf7f71a842d82a411c191309b7bf3c",
+            "train_occurrences": 3939,
+            "train_val_occurrences": 5798,
+            "valid_identity_set_sha256": "5e3db58fc3b0a605579b4568d7f19a76cb52c4c2ed68222f3872db88013a3bd6",
+            "valid_occurrences": 1859
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 1468,
+            "train_identity_set_sha256": "a82e7ee8115f0f5987d924db23e7cec707aa7adb45a6a88bb0049cb8b8633f1f",
+            "train_occurrences": 5071,
+            "train_val_occurrences": 5798,
+            "valid_identity_set_sha256": "933f46d199db08ad93396b51a2c96d3fce396771b6f876b98fbc978e8696add4",
+            "valid_occurrences": 727
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 1468,
+            "train_identity_set_sha256": "15a4cf42684af78b07435f507c7af998d74d1586fa3173da33ed76804f37fdbf",
+            "train_occurrences": 4264,
+            "train_val_occurrences": 5798,
+            "valid_identity_set_sha256": "5be69cdf320ababfb7dfd1edbd363f573eb4a33df070d1d8f60d59a429a31cfd",
+            "valid_occurrences": 1534
+          }
+        ],
+        "test_occurrences": 1468,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 5798
+      },
+      "lipophilicity_astrazeneca": {
+        "common_occurrences": 4187,
+        "common_unique_identities": 4187,
+        "full_policy_accepted_occurrences": 4198,
+        "removed_occurrences": 11,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 837,
+            "train_identity_set_sha256": "e66f5b5a3702016f9930a265fe951c11352faf6028e5ddb53d8120f0ce3f8a85",
+            "train_occurrences": 2932,
+            "train_val_occurrences": 3350,
+            "valid_identity_set_sha256": "fec7ca2dbaab99779eabdf003b74a464d9a1dfc970bd004a4e92427b400a4818",
+            "valid_occurrences": 418
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 837,
+            "train_identity_set_sha256": "929624e354a8d88e241a0e0db5f67fdd5a641496e9dae83656cd06744926d72f",
+            "train_occurrences": 2932,
+            "train_val_occurrences": 3350,
+            "valid_identity_set_sha256": "a2e03fcea0de5176f4da6b36b48fc2323f29b73ac7e1d2a1ed826c3b044fbe4e",
+            "valid_occurrences": 418
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 837,
+            "train_identity_set_sha256": "f5619c56f41f4df75b5017f29e48b6fee9b30b67e3f5d9d3af2d1dc06d5867cd",
+            "train_occurrences": 2933,
+            "train_val_occurrences": 3350,
+            "valid_identity_set_sha256": "c66b191b3d9662f5729bdceb9fdf907ff86ac9428d466f0330bc121bc396ccac",
+            "valid_occurrences": 417
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 837,
+            "train_identity_set_sha256": "085e22a32e8466c00fad688705fce6680f64cee3972919813dd606f6951b5e4d",
+            "train_occurrences": 2931,
+            "train_val_occurrences": 3350,
+            "valid_identity_set_sha256": "4eea30b1ae0e88659ec31e79259a5bfa2e08a17ecaefc12d14da40cab543fee2",
+            "valid_occurrences": 419
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 837,
+            "train_identity_set_sha256": "2f2f31c23bcd38533d8b81d121b4527b5dc754d5fae1fe204300aafc58d3f480",
+            "train_occurrences": 2931,
+            "train_val_occurrences": 3350,
+            "valid_identity_set_sha256": "fd34afe02a80eebd17f51dcd9f39f23cfc468e2563a13ae3bb9b6e46a6ae1588",
+            "valid_occurrences": 419
+          }
+        ],
+        "test_occurrences": 837,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 3350
+      },
+      "pgp_broccatelli": {
+        "common_occurrences": 1218,
+        "common_unique_identities": 1212,
+        "full_policy_accepted_occurrences": 1218,
+        "removed_occurrences": 0,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 245,
+            "train_identity_set_sha256": "987c3e1dab02f4d7f3f20b9a9b26e2f946131a24e4b349e4f7f2dbf15bbc46e8",
+            "train_occurrences": 851,
+            "train_val_occurrences": 973,
+            "valid_identity_set_sha256": "461a81be1e208fd60f9048fc91a104a2cef70561884287058cf01900a73dc5eb",
+            "valid_occurrences": 122
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 245,
+            "train_identity_set_sha256": "bc3d59fafa7db076d5838629173ddb4ec71542ade2c0d830e90fe6cf2db11330",
+            "train_occurrences": 851,
+            "train_val_occurrences": 973,
+            "valid_identity_set_sha256": "0550cb639be1d551a50d3bb4e9a75cfaa1cecd1b5651953e93adbfd55df61713",
+            "valid_occurrences": 122
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 245,
+            "train_identity_set_sha256": "04ce3f1b734a5b0e89278d5456e0cc916d49b8b6d678de1c1d312f55a57b143e",
+            "train_occurrences": 851,
+            "train_val_occurrences": 973,
+            "valid_identity_set_sha256": "71ba570a20c904f5524caac350365bfe72e2635c3d7be5cccf1ac4aff4e4754d",
+            "valid_occurrences": 122
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 245,
+            "train_identity_set_sha256": "ac06b2e71c9609cb8f445d31732761e4eba1aa32ec1cefc709c4401c601c4b99",
+            "train_occurrences": 851,
+            "train_val_occurrences": 973,
+            "valid_identity_set_sha256": "8b6bb1dd32ac0112731c234f45b9e0a013992cd247352877a3e7fbe28640e7a9",
+            "valid_occurrences": 122
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 245,
+            "train_identity_set_sha256": "4aea0bb46ab4d157bf2eb98f5f2a8a2d82a070881b6e471e821764aa6d8f52b1",
+            "train_occurrences": 851,
+            "train_val_occurrences": 973,
+            "valid_identity_set_sha256": "2333290a05430fad21f70748d133dcb8846f56bfd4f1228e85aebf4232d0ba8c",
+            "valid_occurrences": 122
+          }
+        ],
+        "test_occurrences": 245,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 973
+      },
+      "ppbr_az": {
+        "common_occurrences": 2771,
+        "common_unique_identities": 1780,
+        "full_policy_accepted_occurrences": 2790,
+        "removed_occurrences": 19,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 557,
+            "train_identity_set_sha256": "1159a57f7c22fe2fd040939277262f537c18d6cc49c99f5f57d9f3f72acd6a2e",
+            "train_occurrences": 1943,
+            "train_val_occurrences": 2214,
+            "valid_identity_set_sha256": "19834fde72dbdc69a3aa24416ef807ad32e90f9901d41e79be9a511979ceda22",
+            "valid_occurrences": 271
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 557,
+            "train_identity_set_sha256": "55f9fb6a1f30b9d2ae9fd59ecaba7a35ea09cbd3edfbbed97914cfaae4fd7888",
+            "train_occurrences": 1942,
+            "train_val_occurrences": 2214,
+            "valid_identity_set_sha256": "8ab2f6ff05e797824ccdcb0b39850edebed123abdaf5090d30c05fe6c2756081",
+            "valid_occurrences": 272
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 557,
+            "train_identity_set_sha256": "909ec682c4e6f94f1161e9437364ebd9be44cb7c3c3b8fb6f7d7a5b68258631d",
+            "train_occurrences": 1935,
+            "train_val_occurrences": 2214,
+            "valid_identity_set_sha256": "9c82971c2a9e2b2b2f4e5b4e10c0a9aae5ff931e6bab6b16480547e6889242f9",
+            "valid_occurrences": 279
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 557,
+            "train_identity_set_sha256": "bb50d2bb10a43ce9d5011eb98efc0d00283f6fb2bdb6c39c5b097a2a8cf8dd21",
+            "train_occurrences": 1936,
+            "train_val_occurrences": 2214,
+            "valid_identity_set_sha256": "1ed65e2820b44e8b3e25474c06ea48d5e61728be1348b2c58dd256e10020ba16",
+            "valid_occurrences": 278
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 557,
+            "train_identity_set_sha256": "ecce849a48996976bde99c08935a57ef37e95eb646cb4cb2c7e30d05ed2c4fcc",
+            "train_occurrences": 1942,
+            "train_val_occurrences": 2214,
+            "valid_identity_set_sha256": "5c09fce214c0340ad89cde2e0e6857ffc0e5c613d92e8f37cf00165176e40792",
+            "valid_occurrences": 272
+          }
+        ],
+        "test_occurrences": 557,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 2214
+      },
+      "solubility_aqsoldb": {
+        "common_occurrences": 8692,
+        "common_unique_identities": 8692,
+        "full_policy_accepted_occurrences": 8771,
+        "removed_occurrences": 79,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 1804,
+            "train_identity_set_sha256": "a4233c13943e00ff7d32362df1426d8894c1e96792d0032f5d9d8d2f82d45d39",
+            "train_occurrences": 5978,
+            "train_val_occurrences": 6888,
+            "valid_identity_set_sha256": "3007d7d4a96986c692dd14b488631575d39fa073989220917d8362840b0ee92b",
+            "valid_occurrences": 910
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 1804,
+            "train_identity_set_sha256": "14d64ed401995d994e65c4e7a585369a8ce0c1395b1a7d6dba725cb57e6c303b",
+            "train_occurrences": 5964,
+            "train_val_occurrences": 6888,
+            "valid_identity_set_sha256": "a51ad7d98b82f01d260c7681eb644ab2a1e8c505e4b89d422f52609b00ce92f9",
+            "valid_occurrences": 924
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 1804,
+            "train_identity_set_sha256": "f6288f7559d0eebda9d894b52bb1e593d907131c04483b2788f914f5fb45fd60",
+            "train_occurrences": 5980,
+            "train_val_occurrences": 6888,
+            "valid_identity_set_sha256": "879c72cb9792fe99d914c8b77600d17342cbccaa17211d3ca0f054d553a8b56b",
+            "valid_occurrences": 908
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 1804,
+            "train_identity_set_sha256": "9272750aa15eb05be31022ea074faca7b377b0367bb38d0def4af2baccc477d9",
+            "train_occurrences": 5970,
+            "train_val_occurrences": 6888,
+            "valid_identity_set_sha256": "919e3abe2e1f30494ff4e82750e0f3c993126c77c4d8fbb6e081713701e7a0ed",
+            "valid_occurrences": 918
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 1804,
+            "train_identity_set_sha256": "fdefd9d488e90052bee78b6de13d7402bc5388530cd1085e0edf5cc991c426ba",
+            "train_occurrences": 4683,
+            "train_val_occurrences": 6888,
+            "valid_identity_set_sha256": "eea50e60fe699f002438953b1e278a7a3909421b29d60d8d8b878b19bb241e9d",
+            "valid_occurrences": 2205
+          }
+        ],
+        "test_occurrences": 1804,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 6888
+      },
+      "vdss_lombardo": {
+        "common_occurrences": 1051,
+        "common_unique_identities": 1034,
+        "full_policy_accepted_occurrences": 1130,
+        "removed_occurrences": 79,
+        "split_manifest": [
+          {
+            "seed": 1,
+            "test_occurrences": 211,
+            "train_identity_set_sha256": "d3ebf9497a9f2cec79ce4b34be9c37531d5cd45f1fdeb8ebeabae5096d74cd76",
+            "train_occurrences": 734,
+            "train_val_occurrences": 840,
+            "valid_identity_set_sha256": "c67dc88329f2ebab2dc05e3c88ca8df7c3bf1b5520b3cb65b3f76a0528707c76",
+            "valid_occurrences": 106
+          },
+          {
+            "seed": 2,
+            "test_occurrences": 211,
+            "train_identity_set_sha256": "ec3c36a86c266681eef27fcc50519af3f7b2e602108d2f202b25bc77ee75850b",
+            "train_occurrences": 737,
+            "train_val_occurrences": 840,
+            "valid_identity_set_sha256": "61510069bd8f99e36aedc477f3eddece47bfdb611d80a70df7df480ea5eb1d2d",
+            "valid_occurrences": 103
+          },
+          {
+            "seed": 3,
+            "test_occurrences": 211,
+            "train_identity_set_sha256": "96121b9910a6a88772ed118b09ea12f8cdf4ba61fc79eb657abeca2a331e38a5",
+            "train_occurrences": 736,
+            "train_val_occurrences": 840,
+            "valid_identity_set_sha256": "a00bf68c3203df32842711521329d9f084c8e55ca6359863fcede4e7666ad8e9",
+            "valid_occurrences": 104
+          },
+          {
+            "seed": 4,
+            "test_occurrences": 211,
+            "train_identity_set_sha256": "cc53cbb530b28432469dd75c284988c8e2780e220a2985a46364f0c23b383236",
+            "train_occurrences": 738,
+            "train_val_occurrences": 840,
+            "valid_identity_set_sha256": "b567354f075277bbf8166476af523642ff91c4dc9e1948818c86e8949ed5a4c5",
+            "valid_occurrences": 102
+          },
+          {
+            "seed": 5,
+            "test_occurrences": 211,
+            "train_identity_set_sha256": "f36fe6c23e500ca59878106fb4ae9560e74cef369d2311f5847b2e8251b85f0e",
+            "train_occurrences": 738,
+            "train_val_occurrences": 840,
+            "valid_identity_set_sha256": "27b76beb03f3137d74e33e01719f90f46be0cc6375310f15b8d8a261b028a70d",
+            "valid_occurrences": 102
+          }
+        ],
+        "test_occurrences": 211,
+        "train_test_identity_overlap": 0,
+        "train_test_identity_overlap_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "train_test_scaffold_overlap": 0,
+        "train_val_occurrences": 840
+      }
+    },
+    "full_occurrences": 78699,
+    "full_unique_identities": 44143,
+    "identity_set_sha256": "70614c3e278444037c6b0461f56e5980204d251f4b0936e2d0048d6923dd00ce",
+    "models": [
+      "gmolai",
+      "morgan",
+      "molai",
+      "molformer",
+      "smi_ted",
+      "molclr_gin",
+      "kermt_v2"
+    ],
+    "ordered_identity_sha256": "dcc44ff55d7689401f944ec633b37cd819b7a45e111ef2b09f0a060a189aaacc",
+    "removed_occurrences": 568,
+    "removed_unique_identities": 413,
+    "schema_version": 1,
+    "split_indices": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/common_split_indices.npz",
+      "sha256": "b57e213c857ddc523eb8a25868edfb1412064e9fbdc2607f68905b3572ad20ae"
+    },
+    "status": "all_representation_common_panel_frozen"
+  },
+  "descriptor_control": {
+    "included_in_primary_rank": false,
+    "missing_value_handling": "only the 12 preregistered RDKit charge NaNs on six identities; fold-local median imputation before StandardScaler, with train_val-only refit for final test prediction",
+    "reason": "hand-designed physicochemical features are closely related to several ADMET endpoints",
+    "status": "diagnostic_only"
+  },
+  "endpoint_headline": {
+    "ames": {
+      "best_primary_display_name": "SMI-TED-Light",
+      "best_primary_model": "smi_ted",
+      "category": "Toxicity",
+      "gmolai_mean": 0.8110850026434824,
+      "gmolai_rank": 3.0,
+      "morgan_rank": 5.0,
+      "official_metric": "roc_auc"
+    },
+    "bbb_martins": {
+      "best_primary_display_name": "SMI-TED-Light",
+      "best_primary_model": "smi_ted",
+      "category": "Distribution",
+      "gmolai_mean": 0.8745680147058824,
+      "gmolai_rank": 4.0,
+      "morgan_rank": 6.0,
+      "official_metric": "roc_auc"
+    },
+    "bioavailability_ma": {
+      "best_primary_display_name": "MoLFormer",
+      "best_primary_model": "molformer",
+      "category": "Absorption",
+      "gmolai_mean": 0.5769759450171821,
+      "gmolai_rank": 7.0,
+      "morgan_rank": 4.0,
+      "official_metric": "roc_auc"
+    },
+    "caco2_wang": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Absorption",
+      "gmolai_mean": 0.30079035101000307,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 6.0,
+      "official_metric": "mae"
+    },
+    "clearance_hepatocyte_az": {
+      "best_primary_display_name": "MoLFormer",
+      "best_primary_model": "molformer",
+      "category": "Excretion",
+      "gmolai_mean": 0.34471759286504333,
+      "gmolai_rank": 4.0,
+      "morgan_rank": 6.0,
+      "official_metric": "spearman"
+    },
+    "clearance_microsome_az": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Excretion",
+      "gmolai_mean": 0.6030995735917701,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 6.0,
+      "official_metric": "spearman"
+    },
+    "cyp2c9_substrate_carbonmangels": {
+      "best_primary_display_name": "KERMT v2",
+      "best_primary_model": "kermt_v2",
+      "category": "Metabolism",
+      "gmolai_mean": 0.35130910738134463,
+      "gmolai_rank": 4.0,
+      "morgan_rank": 5.0,
+      "official_metric": "pr_auc"
+    },
+    "cyp2c9_veith": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Metabolism",
+      "gmolai_mean": 0.7586385642063604,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 6.0,
+      "official_metric": "pr_auc"
+    },
+    "cyp2d6_substrate_carbonmangels": {
+      "best_primary_display_name": "KERMT v2",
+      "best_primary_model": "kermt_v2",
+      "category": "Metabolism",
+      "gmolai_mean": 0.7016929971102285,
+      "gmolai_rank": 3.0,
+      "morgan_rank": 5.0,
+      "official_metric": "pr_auc"
+    },
+    "cyp2d6_veith": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Metabolism",
+      "gmolai_mean": 0.5720706166334848,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 5.0,
+      "official_metric": "pr_auc"
+    },
+    "cyp3a4_substrate_carbonmangels": {
+      "best_primary_display_name": "MolAI epoch 6",
+      "best_primary_model": "molai",
+      "category": "Metabolism",
+      "gmolai_mean": 0.5826210826210827,
+      "gmolai_rank": 7.0,
+      "morgan_rank": 4.0,
+      "official_metric": "roc_auc"
+    },
+    "cyp3a4_veith": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Metabolism",
+      "gmolai_mean": 0.8247650842599376,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 2.0,
+      "official_metric": "pr_auc"
+    },
+    "dili": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Toxicity",
+      "gmolai_mean": 0.9395833333333332,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 7.0,
+      "official_metric": "roc_auc"
+    },
+    "half_life_obach": {
+      "best_primary_display_name": "MoLFormer",
+      "best_primary_model": "molformer",
+      "category": "Excretion",
+      "gmolai_mean": 0.14803123745036467,
+      "gmolai_rank": 6.0,
+      "morgan_rank": 5.0,
+      "official_metric": "spearman"
+    },
+    "herg": {
+      "best_primary_display_name": "KERMT v2",
+      "best_primary_model": "kermt_v2",
+      "category": "Toxicity",
+      "gmolai_mean": 0.8064661654135339,
+      "gmolai_rank": 4.0,
+      "morgan_rank": 5.0,
+      "official_metric": "roc_auc"
+    },
+    "hia_hou": {
+      "best_primary_display_name": "SMI-TED-Light",
+      "best_primary_model": "smi_ted",
+      "category": "Absorption",
+      "gmolai_mean": 0.9844444444444445,
+      "gmolai_rank": 2.0,
+      "morgan_rank": 5.0,
+      "official_metric": "roc_auc"
+    },
+    "ld50_zhu": {
+      "best_primary_display_name": "MoLFormer",
+      "best_primary_model": "molformer",
+      "category": "Toxicity",
+      "gmolai_mean": 0.6918845421880727,
+      "gmolai_rank": 2.0,
+      "morgan_rank": 5.0,
+      "official_metric": "mae"
+    },
+    "lipophilicity_astrazeneca": {
+      "best_primary_display_name": "KERMT v2",
+      "best_primary_model": "kermt_v2",
+      "category": "Absorption",
+      "gmolai_mean": 0.658129016370329,
+      "gmolai_rank": 3.0,
+      "morgan_rank": 5.0,
+      "official_metric": "mae"
+    },
+    "pgp_broccatelli": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Absorption",
+      "gmolai_mean": 0.9275526526259663,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 5.0,
+      "official_metric": "roc_auc"
+    },
+    "ppbr_az": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Distribution",
+      "gmolai_mean": 9.021072074739466,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 7.0,
+      "official_metric": "mae"
+    },
+    "solubility_aqsoldb": {
+      "best_primary_display_name": "gMolAI",
+      "best_primary_model": "gmolai",
+      "category": "Absorption",
+      "gmolai_mean": 0.7947204693309697,
+      "gmolai_rank": 1.0,
+      "morgan_rank": 7.0,
+      "official_metric": "mae"
+    },
+    "vdss_lombardo": {
+      "best_primary_display_name": "SMI-TED-Light",
+      "best_primary_model": "smi_ted",
+      "category": "Distribution",
+      "gmolai_mean": 0.40351989628614443,
+      "gmolai_rank": 2.0,
+      "morgan_rank": 6.0,
+      "official_metric": "spearman"
+    }
+  },
+  "gmolai_summary": {
+    "category_balanced_mean_rank": 2.7666666666666666,
+    "category_balanced_rank": 2.0,
+    "display_name": "gMolAI",
+    "endpoint_mean_rank": 2.727272727272727,
+    "endpoint_median_rank": 2.0,
+    "model": "gmolai",
+    "rank_one_endpoints": 9,
+    "selection_robust_category_balanced_mean_rank": 2.65,
+    "selection_robust_category_balanced_rank": 2.0,
+    "selection_robust_endpoint_mean_rank": 2.736842105263158,
+    "selection_robust_endpoint_median_rank": 2.0,
+    "top_three_endpoints": 15
+  },
+  "interpretation_constraints": [
+    "All 22 endpoints were included without result-based endpoint selection.",
+    "BBB and Lipophilicity are exact prior development reuse and AqSolDB strongly overlaps ESOL; the predeclared 19-endpoint sensitivity addresses this selection conditioning.",
+    "All neural representations were frozen; only shallow endpoint probes were fitted.",
+    "Every fixed test set remained isolated from scaling and regularization selection.",
+    "The diagnostic-only descriptor median imputer was likewise fitted without validation or test leakage.",
+    "The common panel is a support intersection and is not a literal unfiltered TDC leaderboard submission.",
+    "Five-value dispersions measure train/validation selection sensitivity on the same test set, not independent test replicates or standard errors.",
+    "Public benchmark results are retrospective and do not establish prospective ADMET utility.",
+    "This study does not evaluate decoder-generated candidates or reopen derivative generation."
+  ],
+  "primary_model_summary": [
+    {
+      "category_balanced_mean_rank": 2.2666666666666666,
+      "category_balanced_rank": 1.0,
+      "display_name": "SMI-TED-Light",
+      "endpoint_mean_rank": 2.409090909090909,
+      "endpoint_median_rank": 2.0,
+      "model": "smi_ted",
+      "rank_one_endpoints": 4,
+      "selection_robust_category_balanced_mean_rank": 2.2666666666666666,
+      "selection_robust_category_balanced_rank": 1.0,
+      "selection_robust_endpoint_mean_rank": 2.4210526315789473,
+      "selection_robust_endpoint_median_rank": 2.0,
+      "top_three_endpoints": 18
+    },
+    {
+      "category_balanced_mean_rank": 2.7666666666666666,
+      "category_balanced_rank": 2.0,
+      "display_name": "gMolAI",
+      "endpoint_mean_rank": 2.727272727272727,
+      "endpoint_median_rank": 2.0,
+      "model": "gmolai",
+      "rank_one_endpoints": 9,
+      "selection_robust_category_balanced_mean_rank": 2.65,
+      "selection_robust_category_balanced_rank": 2.0,
+      "selection_robust_endpoint_mean_rank": 2.736842105263158,
+      "selection_robust_endpoint_median_rank": 2.0,
+      "top_three_endpoints": 15
+    },
+    {
+      "category_balanced_mean_rank": 3.233333333333333,
+      "category_balanced_rank": 3.0,
+      "display_name": "MoLFormer",
+      "endpoint_mean_rank": 3.3636363636363638,
+      "endpoint_median_rank": 3.0,
+      "model": "molformer",
+      "rank_one_endpoints": 4,
+      "selection_robust_category_balanced_mean_rank": 3.333333333333333,
+      "selection_robust_category_balanced_rank": 3.0,
+      "selection_robust_endpoint_mean_rank": 3.473684210526316,
+      "selection_robust_endpoint_median_rank": 3.0,
+      "top_three_endpoints": 14
+    },
+    {
+      "category_balanced_mean_rank": 3.7333333333333334,
+      "category_balanced_rank": 4.0,
+      "display_name": "KERMT v2",
+      "endpoint_mean_rank": 3.6363636363636362,
+      "endpoint_median_rank": 4.0,
+      "model": "kermt_v2",
+      "rank_one_endpoints": 4,
+      "selection_robust_category_balanced_mean_rank": 3.9666666666666663,
+      "selection_robust_category_balanced_rank": 4.0,
+      "selection_robust_endpoint_mean_rank": 3.789473684210526,
+      "selection_robust_endpoint_median_rank": 4.0,
+      "top_three_endpoints": 9
+    },
+    {
+      "category_balanced_mean_rank": 5.066666666666667,
+      "category_balanced_rank": 5.0,
+      "display_name": "MolAI epoch 6",
+      "endpoint_mean_rank": 4.863636363636363,
+      "endpoint_median_rank": 5.0,
+      "model": "molai",
+      "rank_one_endpoints": 1,
+      "selection_robust_category_balanced_mean_rank": 4.983333333333333,
+      "selection_robust_category_balanced_rank": 5.0,
+      "selection_robust_endpoint_mean_rank": 4.7894736842105265,
+      "selection_robust_endpoint_median_rank": 5.0,
+      "top_three_endpoints": 6
+    },
+    {
+      "category_balanced_mean_rank": 5.466666666666667,
+      "category_balanced_rank": 6.5,
+      "display_name": "Morgan radius-2",
+      "endpoint_mean_rank": 5.318181818181818,
+      "endpoint_median_rank": 5.0,
+      "model": "morgan",
+      "rank_one_endpoints": 0,
+      "selection_robust_category_balanced_mean_rank": 5.433333333333334,
+      "selection_robust_category_balanced_rank": 7.0,
+      "selection_robust_endpoint_mean_rank": 5.2105263157894735,
+      "selection_robust_endpoint_median_rank": 5.0,
+      "top_three_endpoints": 1
+    },
+    {
+      "category_balanced_mean_rank": 5.466666666666667,
+      "category_balanced_rank": 6.5,
+      "display_name": "MolCLR-GIN",
+      "endpoint_mean_rank": 5.681818181818182,
+      "endpoint_median_rank": 6.0,
+      "model": "molclr_gin",
+      "rank_one_endpoints": 0,
+      "selection_robust_category_balanced_mean_rank": 5.366666666666666,
+      "selection_robust_category_balanced_rank": 6.0,
+      "selection_robust_endpoint_mean_rank": 5.578947368421052,
+      "selection_robust_endpoint_median_rank": 6.0,
+      "top_three_endpoints": 3
+    }
+  ],
+  "protocol_sha256": "97a733a080a26d22cfe1e7700bc68c230de94ba26afb4c23301ca8ca986d9810",
+  "runtime": {
+    "slurm_job_id": "1255034",
+    "timestamp_utc": "2026-08-14T14:35:13.361052+00:00"
+  },
+  "schema_version": 1,
+  "selection_conditioning": {
+    "audit": {
+      "direct_or_near_endpoint_reuse": {
+        "bbb_martins": {
+          "conflicting_tdc_target_identities_in_overlap": 0,
+          "exact_target_matches": 1860,
+          "interpretation": "exact endpoint reuse among unambiguous overlapping identities",
+          "maximum_absolute_target_difference": 0.0,
+          "overlap_unique_identities": 1860,
+          "prior_dataset": "bbbp",
+          "target_pearson": 1.0000000000000002,
+          "unambiguous_target_pairs": 1860
+        },
+        "lipophilicity_astrazeneca": {
+          "conflicting_tdc_target_identities_in_overlap": 0,
+          "exact_target_matches": 4198,
+          "interpretation": "exact endpoint reuse among unambiguous overlapping identities",
+          "maximum_absolute_target_difference": 0.0,
+          "overlap_unique_identities": 4198,
+          "prior_dataset": "lipophilicity",
+          "target_pearson": 0.9999999999999999,
+          "unambiguous_target_pairs": 4198
+        },
+        "solubility_aqsoldb": {
+          "conflicting_tdc_target_identities_in_overlap": 0,
+          "exact_target_matches": 260,
+          "interpretation": "strongly related endpoint subset",
+          "maximum_absolute_target_difference": 2.967831125,
+          "overlap_unique_identities": 1098,
+          "prior_dataset": "esol",
+          "target_pearson": 0.9925145871399653,
+          "unambiguous_target_pairs": 1098
+        }
+      },
+      "endpoints": {
+        "ames": {
+          "overlap_unique_identities": {
+            "bace": 2,
+            "bbbp": 171,
+            "esol": 458,
+            "freesolv": 292,
+            "lipophilicity": 124
+          },
+          "overlap_with_any_development_identity": 740,
+          "tdc_unique_identities": 7255
+        },
+        "bbb_martins": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 1860,
+            "esol": 93,
+            "freesolv": 38,
+            "lipophilicity": 185
+          },
+          "overlap_with_any_development_identity": 1864,
+          "tdc_unique_identities": 1870
+        },
+        "bioavailability_ma": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 287,
+            "esol": 39,
+            "freesolv": 8,
+            "lipophilicity": 211
+          },
+          "overlap_with_any_development_identity": 384,
+          "tdc_unique_identities": 638
+        },
+        "caco2_wang": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 97,
+            "esol": 23,
+            "freesolv": 15,
+            "lipophilicity": 67
+          },
+          "overlap_with_any_development_identity": 147,
+          "tdc_unique_identities": 897
+        },
+        "clearance_hepatocyte_az": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 71,
+            "esol": 18,
+            "freesolv": 4,
+            "lipophilicity": 710
+          },
+          "overlap_with_any_development_identity": 725,
+          "tdc_unique_identities": 1020
+        },
+        "clearance_microsome_az": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 47,
+            "esol": 9,
+            "freesolv": 3,
+            "lipophilicity": 884
+          },
+          "overlap_with_any_development_identity": 893,
+          "tdc_unique_identities": 1102
+        },
+        "cyp2c9_substrate_carbonmangels": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 211,
+            "esol": 44,
+            "freesolv": 25,
+            "lipophilicity": 143
+          },
+          "overlap_with_any_development_identity": 293,
+          "tdc_unique_identities": 666
+        },
+        "cyp2c9_veith": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 109,
+            "esol": 19,
+            "freesolv": 7,
+            "lipophilicity": 102
+          },
+          "overlap_with_any_development_identity": 180,
+          "tdc_unique_identities": 11519
+        },
+        "cyp2d6_substrate_carbonmangels": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 212,
+            "esol": 44,
+            "freesolv": 25,
+            "lipophilicity": 144
+          },
+          "overlap_with_any_development_identity": 295,
+          "tdc_unique_identities": 664
+        },
+        "cyp2d6_veith": {
+          "overlap_unique_identities": {
+            "bace": 1,
+            "bbbp": 109,
+            "esol": 21,
+            "freesolv": 8,
+            "lipophilicity": 114
+          },
+          "overlap_with_any_development_identity": 191,
+          "tdc_unique_identities": 12547
+        },
+        "cyp3a4_substrate_carbonmangels": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 211,
+            "esol": 41,
+            "freesolv": 24,
+            "lipophilicity": 143
+          },
+          "overlap_with_any_development_identity": 293,
+          "tdc_unique_identities": 667
+        },
+        "cyp3a4_veith": {
+          "overlap_unique_identities": {
+            "bace": 1,
+            "bbbp": 101,
+            "esol": 20,
+            "freesolv": 7,
+            "lipophilicity": 106
+          },
+          "overlap_with_any_development_identity": 180,
+          "tdc_unique_identities": 11744
+        },
+        "dili": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 130,
+            "esol": 39,
+            "freesolv": 7,
+            "lipophilicity": 133
+          },
+          "overlap_with_any_development_identity": 216,
+          "tdc_unique_identities": 456
+        },
+        "half_life_obach": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 243,
+            "esol": 31,
+            "freesolv": 6,
+            "lipophilicity": 166
+          },
+          "overlap_with_any_development_identity": 322,
+          "tdc_unique_identities": 655
+        },
+        "herg": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 51,
+            "esol": 12,
+            "freesolv": 3,
+            "lipophilicity": 43
+          },
+          "overlap_with_any_development_identity": 70,
+          "tdc_unique_identities": 636
+        },
+        "hia_hou": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 88,
+            "esol": 24,
+            "freesolv": 9,
+            "lipophilicity": 93
+          },
+          "overlap_with_any_development_identity": 141,
+          "tdc_unique_identities": 578
+        },
+        "ld50_zhu": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 333,
+            "esol": 590,
+            "freesolv": 316,
+            "lipophilicity": 169
+          },
+          "overlap_with_any_development_identity": 1032,
+          "tdc_unique_identities": 7342
+        },
+        "lipophilicity_astrazeneca": {
+          "overlap_unique_identities": {
+            "bace": 10,
+            "bbbp": 182,
+            "esol": 50,
+            "freesolv": 10,
+            "lipophilicity": 4198
+          },
+          "overlap_with_any_development_identity": 4198,
+          "tdc_unique_identities": 4198
+        },
+        "pgp_broccatelli": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 108,
+            "esol": 30,
+            "freesolv": 8,
+            "lipophilicity": 84
+          },
+          "overlap_with_any_development_identity": 162,
+          "tdc_unique_identities": 1212
+        },
+        "ppbr_az": {
+          "overlap_unique_identities": {
+            "bace": 13,
+            "bbbp": 106,
+            "esol": 15,
+            "freesolv": 3,
+            "lipophilicity": 1083
+          },
+          "overlap_with_any_development_identity": 1119,
+          "tdc_unique_identities": 1797
+        },
+        "solubility_aqsoldb": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 327,
+            "esol": 1098,
+            "freesolv": 522,
+            "lipophilicity": 204
+          },
+          "overlap_with_any_development_identity": 1591,
+          "tdc_unique_identities": 8771
+        },
+        "vdss_lombardo": {
+          "overlap_unique_identities": {
+            "bace": 0,
+            "bbbp": 80,
+            "esol": 42,
+            "freesolv": 2,
+            "lipophilicity": 52
+          },
+          "overlap_with_any_development_identity": 116,
+          "tdc_unique_identities": 1111
+        }
+      },
+      "predeclared_selection_robust_exclusions": [
+        "bbb_martins",
+        "lipophilicity_astrazeneca",
+        "solubility_aqsoldb"
+      ],
+      "prior_development_datasets": [
+        "bace",
+        "bbbp",
+        "esol",
+        "freesolv",
+        "lipophilicity"
+      ],
+      "prior_moleculenet_full_labels": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/moleculenet/inputs/full_labels.tsv",
+        "sha256": "dff7d9597af94e27e2ed6afb8151b3f7fc8b5e8092841d003ade47284f2abb08"
+      },
+      "purpose": "selection-conditioning audit; no TDC model output was available",
+      "rule": "Report all 22 endpoints and the panel-complete primary summary; also report a 19-endpoint category-balanced sensitivity excluding the three directly reused or near-reused development endpoints.",
+      "schema_version": 1,
+      "status": "frozen_before_representation_execution",
+      "tdc_full_labels": {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/full_labels.tsv",
+        "sha256": "c6c70c291996f76d0664cabfa42cd0675d13fc68e287546721d2da21b77da917"
+      }
+    },
+    "excluded_from_sensitivity_only": [
+      "bbb_martins",
+      "lipophilicity_astrazeneca",
+      "solubility_aqsoldb"
+    ],
+    "panel_complete_endpoints": 22,
+    "selection_robust_endpoints": 19
+  },
+  "source": {
+    "archive_sha256": "8ac217bd8c316d04d15ab2ef5173ef6e9a084e156dfcd16c0ac21e2ed6e4590b",
+    "doi": "10.5281/zenodo.20180944",
+    "title": "TDC ADMET benchmark snapshot (2026-03-24)"
+  },
+  "status": "complete"
+}

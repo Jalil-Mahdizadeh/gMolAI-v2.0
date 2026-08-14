@@ -1,0 +1,93 @@
+{
+  "containers": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif",
+      "sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif",
+      "sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif",
+      "sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif",
+      "sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif",
+      "sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117"
+    }
+  ],
+  "git": {
+    "branch": "main",
+    "head": "bbc356d8a3c94e63f513c579157603cd4d50d649",
+    "working_tree_status": "?? extra-benchmark/tdc-admet/state/status.json"
+  },
+  "integrity": [
+    {
+      "name": "config",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/configs/retrain.yaml",
+      "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011"
+    },
+    {
+      "name": "training_plan",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/configs/representation-pilot-mean-node-contrastive-001-desc050.yaml",
+      "sha256": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61"
+    },
+    {
+      "name": "calibrator",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    {
+      "name": "qualification_protocol",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/test-partition/protocol.json",
+      "sha256": "1fe98a5a7e3795c5e876d8616bd7a61b0b7038418be7ad472744558433d83f3e"
+    },
+    {
+      "name": "qualification_complete",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/test-partition/state/COMPLETE.json",
+      "sha256": "e797cd4134999b42ef46200ccf71cf01721bd1bfbb73e6606adf19991429c54e"
+    },
+    {
+      "name": "qualified_adapter",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/test-partition/scripts/adapter.py",
+      "sha256": "7c87bfa567564765da7aca9ae417ef3b1f4c7252c7922b6ab4db2bb25c59a8e4"
+    },
+    {
+      "name": "prior_development_overlap_audit",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/inputs/prior_development_overlap.json",
+      "sha256": "ca943bb87a5a6baad3abce1db271a5c84fbcc9635809f2bd2a8db157fe68f579"
+    },
+    {
+      "name": "gmolai_checkpoint",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    }
+  ],
+  "protocol_file_sha256": "6a0cdefffe0e1fe48924191f50f4f558cc3ad47a23a30fd626143d4fe1cf0304",
+  "protocol_sha256": "97a733a080a26d22cfe1e7700bc68c230de94ba26afb4c23301ca8ca986d9810",
+  "runtime": {
+    "cuda": "13.0",
+    "gpu": "NVIDIA GH200 120GB",
+    "host": "n42",
+    "numpy": "1.26.4",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "scikit_learn": "1.5.0",
+    "scipy": "1.15.3",
+    "slurm_job_id": "1255034",
+    "timestamp_utc": "2026-08-14T14:19:15.463320+00:00",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "visible_gpu_count": 1
+  },
+  "schema_version": 1,
+  "status": "pass"
+}

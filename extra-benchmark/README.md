@@ -11,9 +11,11 @@ fingerprints.
 - `speed/` contains the completed optimized single-GPU encoding-throughput
   comparison on the 49,844-molecule common locked-test panel at batch sizes 64,
   128, 256 and 512.
-- `tdc-admet/` contains the final active study: a preregistered, complete
+- `tdc-admet/` contains the completed final study: a preregistered, complete
   22-endpoint TDC ADMET comparison of the same seven frozen representations,
-  with a 13-descriptor diagnostic control.
+  with a separate 13-descriptor diagnostic control. SMI-TED-Light ranked first
+  and gMolAI second by the category-balanced summary; gMolAI had the most
+  endpoint wins.
 
 The evidence sources are deliberately separated. The locked internal partition
 has no endpoint labels and supports common representation diagnostics.
@@ -25,6 +27,7 @@ separate from decoder-generated candidates.
 No script in this directory trains, resumes, fine-tunes or modifies a neural
 model.
 
-See `test-partition/RESULTS.md`, `moleculenet/RESULTS.md` and
-`speed/RESULTS.md` for completed audited results. The TDC study's frozen design
-and live status are in `tdc-admet/PROTOCOL.md` and `tdc-admet/README.md`.
+See `test-partition/RESULTS.md`, `moleculenet/RESULTS.md`, `speed/RESULTS.md`,
+and `tdc-admet/RESULTS.md` for completed audited results. The TDC study's
+frozen design and execution guide are in `tdc-admet/PROTOCOL.md` and
+`tdc-admet/README.md`.

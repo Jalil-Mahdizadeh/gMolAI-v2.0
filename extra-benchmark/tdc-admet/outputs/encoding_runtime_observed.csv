@@ -1,0 +1,9 @@
+model,display_name,unique_identities,dimension,wall_seconds_including_load_warmup_export,rows_per_second_including_load_warmup_export,peak_gpu_memory_bytes,gpu_name,interpretation
+gmolai,gMolAI,43730,384,21.2334864489967,2059.482794078138,310182912,NVIDIA GH200 120GB,observed export provenance; not a controlled speed benchmark
+morgan,Morgan radius-2,43730,2048,6.531113449949771,6695.642379376569,,,observed export provenance; not a controlled speed benchmark
+molai,MolAI epoch 6,43730,512,12.263065400067717,3565.992561676995,1233785344,NVIDIA GH200 120GB,observed export provenance; not a controlled speed benchmark
+molformer,MoLFormer,43730,768,20.82923362008296,2099.453143481802,627991040,NVIDIA GH200 120GB,observed export provenance; not a controlled speed benchmark
+smi_ted,SMI-TED-Light,43730,768,64.88578986504581,673.9534201703152,991011840,NVIDIA GH200 120GB,observed export provenance; not a controlled speed benchmark
+molclr_gin,MolCLR-GIN,43730,512,31.4721599369077,1389.4820084692508,1226743296,NVIDIA GH200 120GB,observed export provenance; not a controlled speed benchmark
+kermt_v2,KERMT v2,43730,512,145.97638328699395,299.5690057207782,796705280,NVIDIA GH200 120GB,observed export provenance; not a controlled speed benchmark
+descriptor_13,13-descriptor diagnostic,43730,13,57.41086490591988,761.702511739913,,,observed export provenance; not a controlled speed benchmark

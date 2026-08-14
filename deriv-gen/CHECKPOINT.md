@@ -133,9 +133,9 @@ sha256sum -c --quiet outputs/SHA256SUMS
 Expected exit code: 0 with no output. Preserve every prior artifact unchanged.
 Do not recreate the retired Step 3/Step 4 controlled-edit branch without a
 superseding strategic decision. Property-guided prioritization remains
-unstarted future work. The final active project stage is a separate
-frozen-representation TDC ADMET benchmark; it does not reopen this checkpoint
-or validate generated-candidate properties.
+unstarted future work. The separate final frozen-representation TDC ADMET
+benchmark has completed; it does not reopen this checkpoint or validate
+generated-candidate properties.
 
 To verify the cross-step decoder and sampler freeze from the repository root:
 

@@ -1,0 +1,53 @@
+{
+  "history": [
+    {
+      "message": "Verifying frozen assets, containers, repository state, and one-GPU contract",
+      "stage": "preflight",
+      "status": "running",
+      "timestamp_utc": "2026-08-14T14:18:31.597588+00:00"
+    },
+    {
+      "message": "Fetching and hash-verifying the DOI-backed 22-endpoint snapshot",
+      "stage": "data",
+      "status": "running",
+      "timestamp_utc": "2026-08-14T14:19:17.798206+00:00"
+    },
+    {
+      "message": "Screening each unique canonical identity with qualified comparator preprocessing",
+      "stage": "coverage",
+      "status": "running",
+      "timestamp_utc": "2026-08-14T14:21:10.568771+00:00"
+    },
+    {
+      "message": "Exporting seven frozen representations and the diagnostic descriptor panel",
+      "stage": "representation",
+      "status": "running",
+      "timestamp_utc": "2026-08-14T14:21:14.329670+00:00"
+    },
+    {
+      "message": "Fitting paired shallow probes for all 22 endpoints and five scaffold-selection seeds",
+      "stage": "evaluation",
+      "status": "running",
+      "timestamp_utc": "2026-08-14T14:22:20.857768+00:00"
+    },
+    {
+      "message": "Aggregating category-balanced ranks and checksum-sealing artifacts",
+      "stage": "integrity",
+      "status": "running",
+      "timestamp_utc": "2026-08-14T14:35:11.170662+00:00"
+    },
+    {
+      "message": "TDC ADMET frozen-representation benchmark completed",
+      "stage": "complete",
+      "status": "complete",
+      "timestamp_utc": "2026-08-14T14:35:14.403358+00:00"
+    }
+  ],
+  "host": "n42",
+  "message": "TDC ADMET frozen-representation benchmark completed",
+  "schema_version": 1,
+  "slurm_job_id": "1255034",
+  "stage": "complete",
+  "status": "complete",
+  "updated_utc": "2026-08-14T14:35:14.403358+00:00"
+}

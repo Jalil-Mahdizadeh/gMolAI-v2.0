@@ -94,10 +94,10 @@ current project. Any later protocol using this route must consume and verify the
 [`frozen-generation-v1`](shared/frozen-generation-v1/) baseline rather than
 retraining the decoder or retuning its sampling strategy in place.
 
-The final active study before manuscript preparation is the standardized
-frozen-representation [TDC ADMET benchmark](../extra-benchmark/tdc-admet/). It
-is separate from this directory and must not be interpreted as validation of
-the generated candidates.
+The separate final project benchmark, the standardized frozen-representation
+[TDC ADMET study](../extra-benchmark/tdc-admet/), has now completed. Its
+[results](../extra-benchmark/tdc-admet/RESULTS.md) do not alter this closure and
+must not be interpreted as validation of the generated candidates.
 
 ## Reproducing Step 1
 
