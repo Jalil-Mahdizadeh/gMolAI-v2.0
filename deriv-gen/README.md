@@ -1,38 +1,71 @@
 # gMolAI derivative generation studies
 
 This directory contains an additive, versioned investigation of molecular
-derivative generation from the frozen promoted gMolAI representation. Nothing
-in this directory changes the released encoder, calibrator, inference package,
-or earlier benchmarks.
+derivative generation from the frozen promoted gMolAI representation, together
+with the frozen strategic interpretation of the completed evidence. Nothing in
+this directory changes the released encoder, calibrator, inference package, or
+earlier benchmarks.
 
 ## Study layout
 
 | Step | Directory | Status | Purpose |
 |---:|---|---|---|
-| 1 | `step-01-latent-geometry-retrieval/` | Completed | Test latent geometry, matched-pair directions, interpolation, and retrieval |
-| 1b | `step-01b-scaled-space-selection/` | Completed and verified | Scale MMP mining to 1M train molecules and freeze the latent edit-control space |
+| 1 | `step-01-latent-geometry-retrieval/` | Completed; permanently retained | Test latent organization, matched-pair direction transfer, interpolation, and retrieval |
+| 1b | `step-01b-scaled-space-selection/` | Completed, verified, and permanently retained | Test transfer at 1M scale and freeze the released x3 hybrid as a viable diagnostic edit geometry |
 | 2 | `step-02-decoder-feasibility/` | Completed and verified; faithful-inverse NO-GO | Train and control-test a decoder conditioned on the frozen released 384D representation |
 | 2b | `step-02b-candidate-reranking/` | Completed and verified; GO | Test frozen-decoder search and target-blind frozen-gMolAI latent reranking on a fresh validation panel |
 | 2c | `step-02c-chemical-characterization/` | Completed and verified | Chemically classify the frozen unperturbed candidate sets |
 | 2d | `step-02d-generation-scaling/` | Completed and verified | Scale unperturbed candidate generation from 50 to 1,000 proposals and audit SA-score context |
-| 3 | `step-03-controlled-candidates/` | Reserved | Generate, sanitize, re-encode, and rank controlled candidates |
-| 4 | `step-04-native-decoder/` | Reserved | Evaluate a gMolAI-native conditional decoder if earlier gates justify it |
 
-Steps 1 and 1b are retrieval-geometry feasibility studies, not decoding
-claims. Step 2 trained only a new decoder and demonstrated strong use of the
-released condition, but greedy decoding did not meet the frozen fidelity
-gates. Step 2b froze that decoder and showed prospectively that the deficit was
-primarily search-related: target-blind latent reranking reached 93.92% exact
-identity on a fresh 10,000-molecule validation panel. Every completed step uses
-immutable train/validation inputs; the locked internal test partition and all
-endpoint labels are excluded.
+The previously reserved Step 3 controlled-candidate and Step 4 native-decoder
+branches have been retired. Their directories contained only unexecuted
+placeholder READMEs, so no scientific or protocol artifact required archival.
+The rationale and replacement direction are frozen in
+[`STRATEGIC_DIRECTION.md`](STRATEGIC_DIRECTION.md).
+
+Steps 1 and 1b are permanently retained as representation-interpretability
+studies. They show that recurrent chemical transformations correspond to
+transferable latent directions across unseen molecular cores, that the signal
+survives support thresholds of at least 5, 10, and 20 independent cores, and
+that the released x3 hybrid is a viable frozen edit geometry. These findings
+describe latent chemical organization; they do not make latent editing the
+preferred way to execute a known structural change and are not decoding or
+generation claims.
+
+Step 2 trained only a new decoder and demonstrated strong use of the released
+condition, but greedy decoding did not meet the frozen fidelity gates. Step 2b
+froze that decoder and showed prospectively that the deficit was primarily
+search-related: target-blind latent reranking reached 93.92% exact identity on
+a fresh 10,000-molecule validation panel. Every completed step uses immutable
+train/validation inputs; the locked internal test partition and all endpoint
+labels are excluded.
 
 Step 2c established that the frozen decoder's unperturbed candidate sets
 already contain genuine non-seed analogues and one-cut MMP derivatives rather
 than merely alternative SMILES. Step 2d then quantified their scaling,
 locality, diversity, decoder-training novelty, and heuristic synthetic
 accessibility through 1,000 proposals per seed. No latent perturbation,
-MMP-direction editing, property optimization, or Step 3 generation has occurred.
+MMP-direction editing, or property optimization occurred. The controlled-edit
+branch is now closed: when a desired site-specific structural modification is
+already explicit, direct graph/SMILES editing is exact and computationally
+preferable to an encoder-to-latent-edit-to-decoder workflow.
+
+## Forward direction (not started)
+
+The next objective is:
+
+`seed molecule -> frozen gMolAI embedding -> frozen decoder -> large candidate library -> property-guided prioritization`
+
+Candidate prioritization must retain useful chemical locality and
+similarity/scaffold relationships to the seed while maintaining reasonable
+synthetic-accessibility characteristics. The scientific question is:
+
+> Can the generated candidate library contain molecules with improved desired
+> property profiles while retaining useful similarity/scaffold relationships
+> to the seed and acceptable synthetic-accessibility characteristics?
+
+This is a documented direction only. No property target, prioritization
+protocol, experiment, or new candidate-generation run has been started.
 
 ## Reproducing Step 1
 
@@ -110,7 +143,8 @@ Read the frozen scaling decision and additive SA interpretation in
 [`step-02d-generation-scaling/RESULTS.md`](step-02d-generation-scaling/RESULTS.md)
 and
 [`step-02d-generation-scaling/DECISION.md`](step-02d-generation-scaling/DECISION.md).
-The current cross-step handoff is [`CHECKPOINT.md`](CHECKPOINT.md).
+The current strategy is [`STRATEGIC_DIRECTION.md`](STRATEGIC_DIRECTION.md), and
+the cross-step operational handoff is [`CHECKPOINT.md`](CHECKPOINT.md).
 
 ## Artifact policy
 

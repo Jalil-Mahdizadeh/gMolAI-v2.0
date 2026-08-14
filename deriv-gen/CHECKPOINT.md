@@ -1,6 +1,6 @@
 # Derivative-generation checkpoint
 
-Updated: 2026-08-14 08:55 CEST
+Updated: 2026-08-14
 
 ## Current state
 
@@ -9,6 +9,26 @@ additive Step-2d synthetic-accessibility (SA) comparison—also completed and
 passed verification. There is no active SLURM job: the direct n54 run finished
 successfully before a submission was necessary (about 51 seconds end to end).
 Do not submit a duplicate job or regenerate candidates.
+
+## Frozen strategic decision
+
+The planned controlled MMP-edit generation branch is retired. A known,
+site-specific structural modification, such as a specified CH3-to-Cl
+substitution, should be made directly in the molecular graph/SMILES; that route
+is exact and computationally preferable to encoding, applying a latent edit,
+and decoding. The previously reserved Step 3 and Step 4 directories contained
+only unexecuted README placeholders and were removed without an archive.
+
+Steps 1 and 1b and all of their frozen artifacts remain permanent
+representation-interpretability evidence. Recurrent transformations define
+transferable latent directions on unseen cores, the signal survives the
+at-least-5, at-least-10, and at-least-20 independent-core cohorts, and the
+released x3 hybrid remains a viable frozen edit geometry. This is evidence of
+latent chemical organization, not a recommendation to use latent generation
+for an explicitly known edit.
+
+The full decision record is
+[`STRATEGIC_DIRECTION.md`](STRATEGIC_DIRECTION.md).
 
 The frozen scientific boundary remains intact:
 
@@ -19,6 +39,19 @@ The frozen scientific boundary remains intact:
   optimization, endpoint labels, or locked-test rows were used.
 - The original Step-2d strategy and budget decision remain unchanged:
   `hybrid_b500_s500_t120`, 1,000 raw proposals per seed.
+
+## Next objective (not started)
+
+`seed molecule -> frozen gMolAI embedding -> frozen decoder -> large candidate library -> property-guided prioritization`
+
+The future scientific question is whether that candidate library can contain
+molecules with improved desired property profiles while retaining useful
+similarity/scaffold relationships to the seed and acceptable
+synthetic-accessibility characteristics.
+
+No property target, property model, prioritization protocol, new candidate
+generation, or evaluation has been selected or run. This checkpoint records
+the direction only; it does not authorize or begin the experiment.
 
 ## SA extension
 
@@ -74,4 +107,6 @@ sha256sum -c --quiet outputs/SHA256SUMS
 ```
 
 Expected exit code: 0 with no output. Preserve every prior artifact unchanged.
-Do not proceed to Step 3 or latent perturbation unless the user explicitly asks.
+Do not recreate the retired Step 3/Step 4 controlled-edit branch without a
+superseding strategic decision. The next property-guided prioritization
+experiment remains unstarted.

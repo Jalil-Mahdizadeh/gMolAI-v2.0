@@ -1,23 +1,23 @@
 # Graph Report - gMolAI-retrain  (2026-08-14)
 
 ## Corpus Check
-- 397 files · ~689,145 words
+- 398 files · ~690,646 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2589 nodes · 6139 edges · 240 communities (212 shown, 28 thin omitted)
+- 2605 nodes · 6161 edges · 250 communities (224 shown, 26 thin omitted)
 - Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 537 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ba4c96dc`
+- Built from commit: `a95468f2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - chem.py
 - adapter.py
-- downstream_audit.py
+- downstream.py
 - Scientific Audit and Repair
 - cli.py
 - Representation V1 Training Overlay
@@ -25,16 +25,16 @@
 - data.py
 - train.py
 - Self-Contained Inference Entry Point
-- ValueError
+- representations.py
 - Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers)
 - generate_embeddings.py
 - update_manuscript_rev5.py
 - study_common.py
-- MolecularRepresentationModel
+- .__init__
 - tune.py
 - run_representation_probes
 - update_manuscript_rev4.py
-- feature_schema
+- model.py
 - NegativeCandidates
 - build
 - checkpoint.py
@@ -57,7 +57,7 @@
 - gMolAI comparator and encoding-speed benchmark: feasibility memo
 - MoleculeNet development panel plus HIV: completed results
 - update_manuscript_rev6.py
-- _finite_shard_window_plan
+- MolecularRepresentationModel
 - evaluate_panel.py
 - Locked internal test-partition encoder benchmark: completed results
 - Q: Explore and fully understand this repository. Expanded query tokens: architecture, pipeline, data, model, training, inference, evaluation, validation, checkpoints, reproducibility, promotion, audit.
@@ -81,26 +81,26 @@
 - run_final.sh
 - Q: is the use face folder 'inference' current? I mean is it using the speed-optimized pipeline instead of old slow one?
 - extra-benchmark/README.md
-- Scaled latent-space selection results
+- deriv-gen/README.md
 - files
 - files
 - main
 - update_manuscript_rev7.py
 - config.py
-- downstream.py
+- gmolai_retrain/fast_graph.py
 - RuntimeError
 - load_json
 - atomic_write_json
-- runtime_versions
+- deduplicate.py
 - step-02d-generation-scaling/scripts/common.py
 - step-02c-chemical-characterization/inputs/manifest.json
 - analyze_phase.py
-- graph_shards.py
+- _ShardBuffer
 - Final protocol: latent geometry and derivative retrieval
 - Frozen protocol: scaled MMP mining and latent control-space selection
 - Frozen protocol: decoder feasibility from released gMolAI vectors
 - step-02d-generation-scaling/inputs/manifest.json
-- test_downstream_audit.py
+- test_representations.py
 - collect
 - files
 - audit_raw_smiles
@@ -138,7 +138,7 @@
 - external_step1b_fragment_source
 - external_step1b_protocol
 - external_step2b_candidates
-- external_step2b_common_source
+- test_fast_inference.py
 - external_step2b_complete
 - external_step2b_evaluation_source
 - external_step2b_final_seal
@@ -186,7 +186,7 @@
 - gmolai_model_definition
 - gmolai_resolved_config
 - inference_entrypoint
-- optimized_inference
+- Scaled latent-space selection results
 - packaged_calibrator
 - packaged_checkpoint
 - packaged_resolved_config
@@ -203,7 +203,7 @@
 - validation_embeddings
 - validation_molecules
 - Step 2d decision
-- chemistry_policy
+- OptimizedSmilesEncoder
 - container
 - decoder_checkpoint
 - decoder_inference_export
@@ -246,15 +246,25 @@
 - step-02b-candidate-reranking/DESIGN.md
 - step-02b-candidate-reranking/README.md
 - step-02b-candidate-reranking/scripts/run_study.sh
-- step-02c-chemical-characterization/DECISION.md
+- Day-1 results: latent geometry and derivative retrieval
 - step-02c-chemical-characterization/DESIGN.md
 - step-02c-chemical-characterization/README.md
 - step-02d-generation-scaling/DESIGN.md
 - sa_extension_base_DECISION.md
 - sa_extension_base_README.md
 - run_sa_extension.sh
-- step-03-controlled-candidates/README.md
-- step-04-native-decoder/README.md
+- _TrainingBatchPrefetcher
+- ValueError
+- Decoder feasibility results
+- gMolAI derivative generation studies
+- Latent control-space decision
+- Frozen strategic direction
+- Q: explore the current repo and fully understand it. you can use graphify skill if that helps.
+- Q: Update the deriv-gen project direction based on the completed evidence.
+- external_resolved_config
+- step-02-decoder-feasibility/DECISION.md
+- container
+- gmolai_model_definition
 
 ## God Nodes (most connected - your core abstractions)
 1. `MolecularRepresentationModel` - 42 edges
@@ -296,19 +306,19 @@
 - **384-Dimensional Embedding Composition** — configs_representation_v1_dual_latent_spaces, inference_readme_vector_definition, inference_readme_promoted_384_dimensional_vector [INFERRED 0.95]
 - **Training-to-Inference Molecule Policy Continuity** — configs_retrain_molecular_canonicalization_policy, inference_readme_molecule_acceptance_policy, inference_readme_row_stable_rejection_policy [INFERRED 0.95]
 
-## Communities (240 total, 28 thin omitted)
+## Communities (250 total, 26 thin omitted)
 
 ### Community 0 - "chem.py"
-Cohesion: 0.23
-Nodes (15): canonicalize(), CanonicalMolecule, _feature_factory(), featurize_molecule(), _hydrogen_bond_flags(), _one_hot(), _position_encoding(), Any (+7 more)
+Cohesion: 0.17
+Nodes (20): canonicalize(), _feature_factory(), featurize_molecule(), _hydrogen_bond_flags(), _one_hot(), _position_encoding(), Any, Mol (+12 more)
 
 ### Community 1 - "adapter.py"
 Cohesion: 0.07
 Nodes (78): Exception, load_kermt(), load_molai(), load_molclr(), load_molformer(), load_morgan(), load_smi_ted(), main() (+70 more)
 
-### Community 2 - "downstream_audit.py"
-Cohesion: 0.14
-Nodes (36): audit_pretraining_overlap(), benchmark_descriptor_control(), _dataset_source(), _descriptor_matrix(), _groups_digest(), _identity_digest(), _indices_digest(), _join_pretraining_rows() (+28 more)
+### Community 2 - "downstream.py"
+Cohesion: 0.07
+Nodes (78): audit_pretraining_overlap(), benchmark_descriptor_control(), _dataset_source(), _descriptor_matrix(), _groups_digest(), _identity_digest(), _indices_digest(), _join_pretraining_rows() (+70 more)
 
 ### Community 3 - "Scientific Audit and Repair"
 Cohesion: 0.06
@@ -327,28 +337,28 @@ Cohesion: 0.19
 Nodes (13): _check_gate(), Checkpoint 10k vs 15k Promotion Review, Fixed Promotion Threshold Wording, FreeSolv 1.30 RMSE Gate, Promotion Integrity Gates, Reviewer-Proof Follow-Up Evaluation, Statistical Evidence Limit, Step 10k Operational Selection (+5 more)
 
 ### Community 7 - "data.py"
-Cohesion: 0.13
-Nodes (17): Batch, Data, Future, finite_batches(), graph_from_shard(), InfiniteGraphBatchIterator, load_graph_manifest(), _load_shard() (+9 more)
+Cohesion: 0.12
+Nodes (26): Batch, Data, _balanced_allocation(), finite_batches(), _finite_shard_plan(), _finite_shard_window_plan(), graph_from_shard(), InfiniteGraphBatchIterator (+18 more)
 
 ### Community 8 - "train.py"
-Cohesion: 0.16
-Nodes (37): DistributedDataParallel, grouped_feature_loss(), kl_divergence(), Use categorical CE for one-hot groups and BCE for binary features., _all_reduce_mean(), _architecture(), _balanced_existence_loss(), _binary_histogram_metrics() (+29 more)
+Cohesion: 0.14
+Nodes (42): DistributedDataParallel, grouped_feature_loss(), MolecularVGAE, Use categorical CE for one-hot groups and BCE for binary features., _all_reduce_mean(), _architecture(), _balanced_existence_loss(), _binary_histogram_metrics() (+34 more)
 
 ### Community 9 - "Self-Contained Inference Entry Point"
 Cohesion: 0.27
 Nodes (11): CSV Molecular Embedding Inference, Embedding Output Contract, Checkpoint and Calibrator Model Asset Bundle, SHA-256 and Model Identity Validation, Training-Time Molecule Acceptance Policy, Hardware-Conditional Numerical Determinism Contract, Promoted gMolAI 384-Dimensional Molecular Vector, Embedding Provenance Metadata Sidecar (+3 more)
 
-### Community 10 - "ValueError"
-Cohesion: 0.20
-Nodes (29): atomic_copy(), atomic_torch_save(), Path, _automatic_checkpoint_name(), _automatic_representation_calibrator(), _calibrator_expected_identity(), _check_gate(), export_embeddings() (+21 more)
+### Community 10 - "representations.py"
+Cohesion: 0.19
+Nodes (28): atomic_copy(), atomic_torch_save(), Path, _automatic_checkpoint_name(), _automatic_representation_calibrator(), _calibrator_expected_identity(), _check_gate(), export_embeddings() (+20 more)
 
 ### Community 11 - "Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers)"
 Cohesion: 0.15
 Nodes (29): Pilot Contrastive 0.005 Configuration, Low-Contrastive Pilot, Masked Graph VICReg Architecture (256 hidden, 128 node latent, 256 graph latent, four GINE layers), Pilot Projector Contrastive Configuration (weight 0.01), Pilot Projector Contrastive Configuration (weight 0.01, descriptor weight 0.50, 15k steps), Projector-Space Contrastive Masked-Graph Objective with VICReg Terms Disabled, Pilot Projector Contrastive Configuration (weight 0.01, seed 43), Pilot Projector Contrastive Configuration (weight 0.02) (+21 more)
 
 ### Community 12 - "generate_embeddings.py"
-Cohesion: 0.16
-Nodes (28): build_parser(), canonicalize_input(), encode_batch(), fsync_text_handle(), InferenceError, load_json_object(), load_model_bundle(), main() (+20 more)
+Cohesion: 0.18
+Nodes (26): build_parser(), canonicalize_input(), encode_batch(), fsync_text_handle(), InferenceError, load_json_object(), load_model_bundle(), main() (+18 more)
 
 ### Community 13 - "update_manuscript_rev5.py"
 Cohesion: 0.22
@@ -358,9 +368,9 @@ Nodes (21): assert_source_contract(), build(), delete_paragraph(), find_exact_pa
 Cohesion: 0.05
 Nodes (100): atomic_copy(), epoch_row(), main(), DataFrame, Path, Series, utc_now(), ConditionalSmilesTransformer (+92 more)
 
-### Community 15 - "MolecularRepresentationModel"
-Cohesion: 0.08
-Nodes (24): corrupt_graph_inputs(), CorruptedGraph, DeterministicGINEEncoder, GraphConditionedEdgeDecoder, MolecularRepresentationModel, MolecularVGAE, nt_xent_loss(), Any (+16 more)
+### Community 15 - ".__init__"
+Cohesion: 0.15
+Nodes (8): DeterministicGINEEncoder, GraphConditionedEdgeDecoder, Any, A deterministic atom encoder for transferable molecular representations., Decode an unordered atom pair while forcing use of its graph embedding., ResidualGINEEncoder, symmetric_pair_features(), SymmetricEdgeDecoder
 
 ### Community 16 - "tune.py"
 Cohesion: 0.08
@@ -374,9 +384,9 @@ Nodes (17): _chemical_records(), _embedding_diagnostics(), _held_out_values(), _
 Cohesion: 0.27
 Nodes (17): build(), _dataset_counts_sentence(), find_paragraph(), _format_seen(), insert_after(), insert_exposure_table(), load_json(), parse_args() (+9 more)
 
-### Community 19 - "feature_schema"
-Cohesion: 0.11
-Nodes (26): categorical_width(), dimensions(), feature_schema(), FeatureDimensions, main(), Run directly with: torchrun --standalone --nproc_per_node=2 tests/ddp_smoke.py, valid_features(), Tensor (+18 more)
+### Community 19 - "model.py"
+Cohesion: 0.13
+Nodes (22): corrupt_graph_inputs(), CorruptedGraph, kl_divergence(), nt_xent_loss(), Return invariance, variance-floor, and covariance-redundancy losses., Symmetric cross-view InfoNCE loss for graph embeddings., vicreg_terms(), Tensor (+14 more)
 
 ### Community 20 - "NegativeCandidates"
 Cohesion: 0.15
@@ -395,8 +405,8 @@ Cohesion: 0.44
 Nodes (11): add_check(), audit_step(), finite_number(), format_number(), main(), nested(), Any, Path (+3 more)
 
 ### Community 24 - "fast_inference.py"
-Cohesion: 0.07
-Nodes (48): _category(), fast_featurize_molecule(), _hbond_factory(), initialize_worker(), pack_feature_arrays(), pack_molecules(), pack_smiles_task(), PackedBatch (+40 more)
+Cohesion: 0.17
+Nodes (16): resolve_worker_count(), build_smiles_encoder(), _calibrator_arrays(), optimized_representation_blocks(), OptimizedRawCore, packed_to_device(), device, Module (+8 more)
 
 ### Community 25 - "Manuscript rev3 audit artifacts"
 Cohesion: 0.29
@@ -446,13 +456,13 @@ Nodes (9): Bounded conclusions, Completion and integrity, Descriptor-only contex
 Cohesion: 0.21
 Nodes (21): build(), find_exact_paragraph(), find_paragraph(), insert_parameter_table(), load_benchmark(), load_parameter_counts(), old_text_is_subsequence(), omml_hashes() (+13 more)
 
-### Community 42 - "_finite_shard_window_plan"
-Cohesion: 0.26
-Nodes (13): _balanced_allocation(), _finite_shard_plan(), _finite_shard_window_plan(), Allocate a target evenly, using ``order`` only to break ties., Plan a deterministic sample spread across every molecule-hash bucket. Manifests…, Select one efficient, non-overlapping window of the stratified sequence.…, _manifest(), test_balanced_allocation_respects_capacity_and_exact_target() (+5 more)
+### Community 42 - "MolecularRepresentationModel"
+Cohesion: 0.20
+Nodes (8): MolecularRepresentationModel, Tensor, Masked graph autoencoder with an explicit deterministic molecule vector. Every…, Return deterministic atom and molecule embeddings., Combine already encoded graph and atom blocks., Concatenate raw graph and mean-atom blocks before train calibration., Apply immutable train-split coordinate statistics to raw vectors., Return the legacy unit-block hybrid molecule vector. The unit-normalized graph…
 
 ### Community 43 - "evaluate_panel.py"
-Cohesion: 0.09
-Nodes (64): generate_beam_pool(), generate_sample_pool(), dtype, inference_mode, Tensor, Inference-only candidate generators for the frozen Step-2 decoder., Return fixed-seed samples and their untempered decoder scores., Return all final beam hypotheses, cumulative scores, and token lengths. (+56 more)
+Cohesion: 0.08
+Nodes (66): generate_beam_pool(), generate_sample_pool(), dtype, inference_mode, Tensor, Inference-only candidate generators for the frozen Step-2 decoder., Return fixed-seed samples and their untempered decoder scores., Return all final beam hypotheses, cumulative scores, and token lengths. (+58 more)
 
 ### Community 44 - "Locked internal test-partition encoder benchmark: completed results"
 Cohesion: 0.33
@@ -530,9 +540,9 @@ Nodes (62): atomic_save_npz(), atomic_write_csv(), atomic_write_json(), atomic_w
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: is the use face folder 'inference' current? I mean is it using the speed-optimized pipeline instead of old slow one?, Source Nodes
 
-### Community 66 - "Scaled latent-space selection results"
-Cohesion: 0.04
-Nodes (39): gMolAI derivative generation studies, Reproducing Step 1, Study layout, Artifacts, Audited data, Bounded conclusion, Day-1 results: latent geometry and derivative retrieval, Geometry (+31 more)
+### Community 66 - "deriv-gen/README.md"
+Cohesion: 0.15
+Nodes (6): Step 2b decision, Condition-use controls, Interpretation, Outcome, Step 2b results, Step 2c bounded decision
 
 ### Community 67 - "files"
 Cohesion: 0.05
@@ -551,12 +561,12 @@ Cohesion: 0.18
 Nodes (29): assert_archive_has_no_images(), build(), endpoint_table_matrix(), find_exact_paragraph(), find_paragraph(), insert_table_before(), load_endpoint_results(), load_speed_results() (+21 more)
 
 ### Community 71 - "config.py"
-Cohesion: 0.15
-Nodes (19): apply_training_plan(), canonical_json(), ConfigurationError, _deep_update(), _expand(), load_config(), load_yaml(), object_hash() (+11 more)
+Cohesion: 0.38
+Nodes (15): apply_training_plan(), canonical_json(), ConfigurationError, _deep_update(), _expand(), load_config(), load_yaml(), object_hash() (+7 more)
 
-### Community 72 - "downstream.py"
-Cohesion: 0.16
-Nodes (26): benchmark_moleculenet(), _classification_probe(), _encode_molecules(), _inner_group_folds(), _morgan_features(), _prepare_dataset(), _prepare_dataset_records(), Any (+18 more)
+### Community 72 - "gmolai_retrain/fast_graph.py"
+Cohesion: 0.24
+Nodes (13): _category(), fast_featurize_molecule(), _hbond_factory(), initialize_worker(), pack_feature_arrays(), pack_molecules(), pack_smiles_task(), PackedBatch (+5 more)
 
 ### Community 73 - "RuntimeError"
 Cohesion: 0.26
@@ -567,12 +577,12 @@ Cohesion: 0.18
 Nodes (18): main(), main(), main(), main(), load_json(), protocol(), Any, utc_now() (+10 more)
 
 ### Community 75 - "atomic_write_json"
-Cohesion: 0.29
-Nodes (18): Schema, _accepted_table(), _canonical_schema(), canonicalize_task(), _open_feather(), prepare_tasks(), Any, Path (+10 more)
+Cohesion: 0.19
+Nodes (26): Schema, CanonicalMolecule, _atomic_torch_save(), featurize_bucket(), finalize_graphs(), Any, Path, _accepted_table() (+18 more)
 
-### Community 76 - "runtime_versions"
-Cohesion: 0.21
-Nodes (17): descriptor_names(), deduplicate_bucket(), finalize_dataset(), fit_train_scaler(), Any, Path, _sql_path(), audit_training_exposure() (+9 more)
+### Community 76 - "deduplicate.py"
+Cohesion: 0.36
+Nodes (10): descriptor_names(), deduplicate_bucket(), finalize_dataset(), fit_train_scaler(), Any, Path, _sql_path(), _sha256() (+2 more)
 
 ### Community 77 - "step-02d-generation-scaling/scripts/common.py"
 Cohesion: 0.21
@@ -586,9 +596,9 @@ Nodes (15): candidate_regeneration, endpoint_labels_used, latent_perturbation, l
 Cohesion: 0.30
 Nodes (15): aggregate_tables(), audit_and_extract(), characterize_pairs(), main(), phase_strategies(), proposal_view(), Any, DataFrame (+7 more)
 
-### Community 80 - "graph_shards.py"
-Cohesion: 0.25
-Nodes (8): _atomic_torch_save(), featurize_bucket(), finalize_graphs(), Any, Path, Tensor, _ShardBuffer, _signed_graph_id()
+### Community 80 - "_ShardBuffer"
+Cohesion: 0.32
+Nodes (3): Tensor, _ShardBuffer, _signed_graph_id()
 
 ### Community 81 - "Final protocol: latent geometry and derivative retrieval"
 Cohesion: 0.18
@@ -606,9 +616,9 @@ Nodes (10): Boundary, Decoder, Development-only decode selection, Development-on
 Cohesion: 0.18
 Nodes (10): embedding_space, forbidden_inputs, locked internal test partition, MoleculeNet or HIV endpoint labels, policy, schema_version, study_id, latent perturbations (+2 more)
 
-### Community 85 - "test_downstream_audit.py"
-Cohesion: 0.27
-Nodes (10): _cfg(), _hash(), test_atomic_csv_artifacts_use_lf_line_endings(), test_bucket_join_returns_exact_corpus_split_and_frozen_descriptors(), test_cycle_zero_seen_boundary_is_strict(), test_descriptor_matrix_uses_the_frozen_13_feature_order(), test_identity_metadata_reader_and_exact_target_locations(), test_no_training_audit_commands_are_registered() (+2 more)
+### Community 85 - "test_representations.py"
+Cohesion: 0.17
+Nodes (4): Corrected and reproducible gMolAI retraining pipeline., test_downstream_cli_accepts_calibrated_embedding_definition(), test_embed_cli_accepts_independent_sampling_seed(), test_promotion_requires_identical_checkpoint_and_calibrator()
 
 ### Community 86 - "collect"
 Cohesion: 0.36
@@ -616,7 +626,7 @@ Nodes (9): collect(), CollectArgs, propagate(), Tensor, NamedTuple, OptPairTenso
 
 ### Community 87 - "files"
 Cohesion: 0.20
-Nodes (10): files, gmolai_model_definition, step2b_candidate_source, step2b_complete, path, sha256, path, sha256 (+2 more)
+Nodes (10): path, sha256, files, chemistry_policy, step2b_candidate_source, step2b_complete, path, sha256 (+2 more)
 
 ### Community 88 - "audit_raw_smiles"
 Cohesion: 0.38
@@ -628,7 +638,7 @@ Nodes (8): embedding_space, forbidden_inputs, locked internal test partition, Mo
 
 ### Community 90 - "files"
 Cohesion: 0.22
-Nodes (9): path, sha256, size_bytes, path, sha256, size_bytes, files, external_resolved_config (+1 more)
+Nodes (9): path, sha256, size_bytes, path, sha256, size_bytes, files, external_step2b_common_source (+1 more)
 
 ### Community 91 - "Step 2c results: chemical characterization of frozen candidate sets"
 Cohesion: 0.22
@@ -660,7 +670,7 @@ Nodes (7): files, packaged_resolved_config, resolved_config, path, sha256, path,
 
 ### Community 98 - "files"
 Cohesion: 0.29
-Nodes (7): path, sha256, files, container, gmolai_checkpoint, path, sha256
+Nodes (7): files, gmolai_checkpoint, optimized_inference, path, sha256, path, sha256
 
 ### Community 99 - "Frozen protocol: Step 2c chemical characterization"
 Cohesion: 0.29
@@ -687,8 +697,8 @@ Cohesion: 0.53
 Nodes (6): Checkpoint Archive Integrity, Evaluation Coverage Limit, Retained Checkpoint Availability Audit, Seed-42 Retained Checkpoint Set, Seed-43 Retained Checkpoint Set, Seed-42 Five-Checkpoint Set
 
 ### Community 105 - "Derivative-generation checkpoint"
-Cohesion: 0.40
-Nodes (4): Current state, Derivative-generation checkpoint, Integrity and outputs, SA extension
+Cohesion: 0.33
+Nodes (6): Current state, Derivative-generation checkpoint, Frozen strategic decision, Integrity and outputs, Next objective (not started), SA extension
 
 ### Community 106 - "Protocol amendment 01: repeated-transformation support"
 Cohesion: 0.40
@@ -758,9 +768,9 @@ Nodes (4): path, sha256, size_bytes, external_step1b_protocol
 Cohesion: 0.50
 Nodes (4): path, sha256, size_bytes, external_step2b_candidates
 
-### Community 123 - "external_step2b_common_source"
-Cohesion: 0.50
-Nodes (4): path, sha256, size_bytes, external_step2b_common_source
+### Community 123 - "test_fast_inference.py"
+Cohesion: 0.36
+Nodes (10): molecules(), Mol, small_representation_model(), test_direct_packing_matches_pyg_batch_exactly(), test_downstream_consumer_uses_equivalent_optimized_blocks(), test_fast_features_are_exact_on_curated_chemistry(), test_optimized_raw_core_matches_authoritative_model_encode(), test_optimized_smiles_encoder_preserves_reference_values_and_order() (+2 more)
 
 ### Community 124 - "external_step2b_complete"
 Cohesion: 0.50
@@ -938,9 +948,9 @@ Nodes (3): gmolai_resolved_config, path, sha256
 Cohesion: 0.67
 Nodes (3): inference_entrypoint, path, sha256
 
-### Community 171 - "optimized_inference"
-Cohesion: 0.67
-Nodes (3): optimized_inference, path, sha256
+### Community 171 - "Scaled latent-space selection results"
+Cohesion: 0.20
+Nodes (10): Derivative retrieval, Directional transfer, Frozen primary comparison, Mean-node assessment, MMP scale and support, Output map, Required answers, Scaled latent-space selection results (+2 more)
 
 ### Community 172 - "packaged_calibrator"
 Cohesion: 0.67
@@ -1002,9 +1012,9 @@ Nodes (3): validation_embeddings, path, sha256
 Cohesion: 0.67
 Nodes (3): validation_molecules, path, sha256
 
-### Community 188 - "chemistry_policy"
-Cohesion: 0.67
-Nodes (3): path, sha256, chemistry_policy
+### Community 188 - "OptimizedSmilesEncoder"
+Cohesion: 0.22
+Nodes (4): OptimizedSmilesEncoder, Multiprocess RDKit + direct packed-array + equivalent GINE inference., Return optimized vectors while checking a bounded reference sample., VerifyingSmilesEncoder
 
 ### Community 189 - "container"
 Cohesion: 0.67
@@ -1146,23 +1156,72 @@ Nodes (3): validation_embeddings, path, sha256
 Cohesion: 0.67
 Nodes (3): validation_molecules, path, sha256
 
+### Community 231 - "Day-1 results: latent geometry and derivative retrieval"
+Cohesion: 0.22
+Nodes (9): Artifacts, Audited data, Bounded conclusion, Day-1 results: latent geometry and derivative retrieval, Geometry, Hybrid-384 retrieval, Outcome, Predeclared gates (+1 more)
+
+### Community 238 - "_TrainingBatchPrefetcher"
+Cohesion: 0.31
+Nodes (4): Future, _PreparedTrainingBatch, Prepare one deterministic batch ahead without advancing checkpoint cursors., _TrainingBatchPrefetcher
+
+### Community 239 - "ValueError"
+Cohesion: 0.47
+Nodes (6): smiles_tasks(), calibrated_embedding_numpy(), compare_embedding_matrices(), inference_mode, ndarray, ValueError
+
+### Community 240 - "Decoder feasibility results"
+Cohesion: 0.29
+Nodes (6): Decoder feasibility results, Frozen decision audit, Frozen latent consistency and chemistry, Outcome, Reconstruction and explicit condition-use controls, Teacher-forced controls
+
+### Community 241 - "gMolAI derivative generation studies"
+Cohesion: 0.40
+Nodes (5): Artifact policy, Forward direction (not started), gMolAI derivative generation studies, Reproducing Step 1, Study layout
+
+### Community 242 - "Latent control-space decision"
+Cohesion: 0.40
+Nodes (4): Directional-transfer result, Latent control-space decision, Mean-node result, Weighting result
+
+### Community 243 - "Frozen strategic direction"
+Cohesion: 0.40
+Nodes (5): Decision, Evidence retained permanently, Frozen strategic direction, Next objective, Retired placeholders
+
+### Community 244 - "Q: explore the current repo and fully understand it. you can use graphify skill if that helps."
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: explore the current repo and fully understand it. you can use graphify skill if that helps., Source Nodes
+
+### Community 245 - "Q: Update the deriv-gen project direction based on the completed evidence."
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: Update the deriv-gen project direction based on the completed evidence., Source Nodes
+
+### Community 246 - "external_resolved_config"
+Cohesion: 0.50
+Nodes (4): path, sha256, size_bytes, external_resolved_config
+
+### Community 248 - "container"
+Cohesion: 0.67
+Nodes (3): path, sha256, container
+
+### Community 249 - "gmolai_model_definition"
+Cohesion: 0.67
+Nodes (3): gmolai_model_definition, path, sha256
+
 ## Knowledge Gaps
-- **629 isolated node(s):** `schema_version`, `policy`, `path`, `sha256`, `split` (+624 more)
+- **641 isolated node(s):** `schema_version`, `policy`, `path`, `sha256`, `split` (+636 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **28 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **26 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Work-memory lessons
 
 **Preferred sources** — corroborated by past sessions; start here.
-- `OptimizedSmilesEncoder` (4× useful, score=3.94145288)
-- `Semantic Promotion Suite` (3× useful, score=2.810900623)
-- `Molecular Canonicalization Policy` (2× useful, score=1.99326504)
-- `GraphConditionedEdgeDecoder` (2× useful, score=1.982611912)
-- `generate_embeddings.py` (2× useful, score=1.972131492)
-- `speed_adapter.py` (2× useful, score=1.961706448)
-- `Manuscript rev4: exact downstream-molecule exposure audit` (2× useful, score=1.903853556)
-- `Promotion Integrity Gates` (2× useful, score=1.894063749)
-- `Validation Evidence Bundle` (2× useful, score=1.894063749)
+- `OptimizedSmilesEncoder` (5× useful, score=4.935562089)
+- `Molecular Canonicalization Policy` (3× useful, score=2.989543578)
+- `Semantic Promotion Suite` (3× useful, score=2.806946604)
+- `GraphConditionedEdgeDecoder` (2× useful, score=1.979823025)
+- `MolecularRepresentationModel` (2× useful, score=1.976733734)
+- `generate_embeddings.py` (2× useful, score=1.969357348)
+- `speed_adapter.py` (2× useful, score=1.958946968)
+- `gMolAI Retraining Pipeline` (2× useful, score=1.933662694)
+- `Manuscript rev4: exact downstream-molecule exposure audit` (2× useful, score=1.901175456)
+- `Promotion Integrity Gates` (2× useful, score=1.89139942)
 
 **Known dead ends** — questions that led nowhere; don't re-derive.
 - "done" -> `benchmark_io.py`, `finalize.py`, `adapter.py`
@@ -1170,11 +1229,11 @@ Nodes (3): validation_molecules, path, sha256
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `_initialize_model_from_checkpoint()` connect `train.py` to `feature_schema`, `RuntimeError`, `atomic_write_json`?**
+- **Why does `_initialize_model_from_checkpoint()` connect `train.py` to `model.py`, `RuntimeError`, `atomic_write_json`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **Why does `main()` connect `scaled_common.py` to `RuntimeError`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `train()` connect `train.py` to `cli.py`, `config.py`, `data.py`, `RuntimeError`, `ValueError`, `atomic_write_json`, `runtime_versions`, `feature_schema`, `checkpoint.py`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `train()` connect `train.py` to `chem.py`, `downstream.py`, `cli.py`, `config.py`, `data.py`, `RuntimeError`, `representations.py`, `atomic_write_json`, `_TrainingBatchPrefetcher`, `checkpoint.py`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **Are the 251 inferred relationships involving `RuntimeError` (e.g. with `ensure_within()` and `chemical_records()`) actually correct?**
   _`RuntimeError` has 251 INFERRED edges - model-reasoned connections that need verification._

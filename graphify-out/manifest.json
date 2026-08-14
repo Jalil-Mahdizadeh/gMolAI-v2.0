@@ -1980,13 +1980,13 @@
     "semantic_hash": ""
   },
   "deriv-gen/CHECKPOINT.md": {
-    "mtime": 1786690520.0,
-    "ast_hash": "69f3d34dcdc424a9c9c41dd5177db180",
+    "mtime": 1786694464.0,
+    "ast_hash": "cefa4f4a982e9180647bf4f75ad3343e",
     "semantic_hash": ""
   },
   "deriv-gen/README.md": {
-    "mtime": 1786657954.0,
-    "ast_hash": "0bf120cbccca375f8079a6a067816d52",
+    "mtime": 1786694553.0,
+    "ast_hash": "4fe689c03f4c23903cfc0ac608c9aea6",
     "semantic_hash": ""
   },
   "deriv-gen/shared/README.md": {
@@ -2152,16 +2152,6 @@
   "deriv-gen/step-02d-generation-scaling/inputs/sa_extension_base_RESULTS.md": {
     "mtime": 1786690290.0,
     "ast_hash": "7316b70c6bac7752093a1fc8dfe0ecc2",
-    "semantic_hash": ""
-  },
-  "deriv-gen/step-03-controlled-candidates/README.md": {
-    "mtime": 1786625262.0,
-    "ast_hash": "f9a70d5f0c6a035fcec46d933fd005f6",
-    "semantic_hash": ""
-  },
-  "deriv-gen/step-04-native-decoder/README.md": {
-    "mtime": 1786625262.0,
-    "ast_hash": "b350231d2811167a1c917fd68f5914c3",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260813_110823_update_gmolai_rev6_docx_to_rev7_using_the_complete.md": {
@@ -2402,6 +2392,21 @@
   "deriv-gen/step-02d-generation-scaling/outputs/figures/yield_scaling.png": {
     "mtime": 1786685283.0,
     "ast_hash": "35d0dddfb50828d6aa2d6654aebddd9d",
+    "semantic_hash": ""
+  },
+  "deriv-gen/STRATEGIC_DIRECTION.md": {
+    "mtime": 1786694553.0,
+    "ast_hash": "bc561fa91f71592c7615c6de24bbd1c3",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260814_073200_explore_the_current_repo_and_fully_understand_it.md": {
+    "mtime": 1786692720.0,
+    "ast_hash": "01088b5a53b421a0e367a46debf8617e",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260814_080400_update_the_deriv_gen_project_direction_based_on_th.md": {
+    "mtime": 1786694640.0,
+    "ast_hash": "7a27f4f91fb3516bdc0eb30082cc572f",
     "semantic_hash": ""
   }
 }
