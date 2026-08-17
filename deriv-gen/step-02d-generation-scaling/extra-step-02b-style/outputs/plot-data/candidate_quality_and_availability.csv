@@ -1,0 +1,31 @@
+strategy,budget,metric,estimate,ci_lower,ci_upper,confidence_level,bootstrap_resamples,unit,denominator,metric_order,display_label
+hybrid_b500_s500_t120,50,raw_token_decode_fraction,1.0,1.0,1.0,0.95,2000,fraction,all seeds,0,Token decoded
+hybrid_b500_s500_t120,100,raw_token_decode_fraction,1.0,1.0,1.0,0.95,2000,fraction,all seeds,0,Token decoded
+hybrid_b500_s500_t120,250,raw_token_decode_fraction,1.0,1.0,1.0,0.95,2000,fraction,all seeds,0,Token decoded
+hybrid_b500_s500_t120,500,raw_token_decode_fraction,0.9999998,0.9999994,1.0,0.95,2000,fraction,all seeds,0,Token decoded
+hybrid_b500_s500_t120,1000,raw_token_decode_fraction,0.9999998,0.9999995,1.0,0.95,2000,fraction,all seeds,0,Token decoded
+hybrid_b500_s500_t120,50,raw_rdkit_valid_fraction,0.8567959999999999,0.8542280000000001,0.8593862500000001,0.95,2000,fraction,all seeds,1,RDKit valid
+hybrid_b500_s500_t120,100,raw_rdkit_valid_fraction,0.8199699999999999,0.8175465499999999,0.82255215,0.95,2000,fraction,all seeds,1,RDKit valid
+hybrid_b500_s500_t120,250,raw_rdkit_valid_fraction,0.7733307999999999,0.771003,0.77589085,0.95,2000,fraction,all seeds,1,RDKit valid
+hybrid_b500_s500_t120,500,raw_rdkit_valid_fraction,0.7415486,0.7392858950000001,0.7440451849999999,0.95,2000,fraction,all seeds,1,RDKit valid
+hybrid_b500_s500_t120,1000,raw_rdkit_valid_fraction,0.7129675,0.7108019825,0.7153135549999999,0.95,2000,fraction,all seeds,1,RDKit valid
+hybrid_b500_s500_t120,50,raw_policy_acceptance_fraction,0.856776,0.8542119000000001,0.8593585500000002,0.95,2000,fraction,all seeds,2,Policy accepted
+hybrid_b500_s500_t120,100,raw_policy_acceptance_fraction,0.8199190000000001,0.817501475,0.8224961500000001,0.95,2000,fraction,all seeds,2,Policy accepted
+hybrid_b500_s500_t120,250,raw_policy_acceptance_fraction,0.7732256,0.7708973100000001,0.77577866,0.95,2000,fraction,all seeds,2,Policy accepted
+hybrid_b500_s500_t120,500,raw_policy_acceptance_fraction,0.7413696,0.7391055200000001,0.743873135,0.95,2000,fraction,all seeds,2,Policy accepted
+hybrid_b500_s500_t120,1000,raw_policy_acceptance_fraction,0.7127173000000001,0.7105563225,0.7150656775,0.95,2000,fraction,all seeds,2,Policy accepted
+hybrid_b500_s500_t120,50,unique_identity_yield_per_raw_slot,0.360638,0.3580075,0.3633380499999999,0.95,2000,fraction,all seeds,3,Unique identity yield
+hybrid_b500_s500_t120,100,unique_identity_yield_per_raw_slot,0.319888,0.317298975,0.322585075,0.95,2000,fraction,all seeds,3,Unique identity yield
+hybrid_b500_s500_t120,250,unique_identity_yield_per_raw_slot,0.27159,0.2691256,0.2741827,0.95,2000,fraction,all seeds,3,Unique identity yield
+hybrid_b500_s500_t120,500,unique_identity_yield_per_raw_slot,0.2396756,0.23729227,0.2422192199999999,0.95,2000,fraction,all seeds,3,Unique identity yield
+hybrid_b500_s500_t120,1000,unique_identity_yield_per_raw_slot,0.2116072,0.2093698825,0.2140028799999999,0.95,2000,fraction,all seeds,3,Unique identity yield
+hybrid_b500_s500_t120,50,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds,4,Candidate available
+hybrid_b500_s500_t120,100,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds,4,Candidate available
+hybrid_b500_s500_t120,250,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds,4,Candidate available
+hybrid_b500_s500_t120,500,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds,4,Candidate available
+hybrid_b500_s500_t120,1000,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds,4,Candidate available
+hybrid_b500_s500_t120,50,mean_unique_accepted_identities,18.0319,17.900375,18.1669025,0.95,2000,count,all seeds,5,Mean unique identities
+hybrid_b500_s500_t120,100,mean_unique_accepted_identities,31.9888,31.7298975,32.2585075,0.95,2000,count,all seeds,5,Mean unique identities
+hybrid_b500_s500_t120,250,mean_unique_accepted_identities,67.8975,67.28139999999999,68.54567499999999,0.95,2000,count,all seeds,5,Mean unique identities
+hybrid_b500_s500_t120,500,mean_unique_accepted_identities,119.8378,118.646135,121.10961,0.95,2000,count,all seeds,5,Mean unique identities
+hybrid_b500_s500_t120,1000,mean_unique_accepted_identities,211.6072,209.3698825,214.00288,0.95,2000,count,all seeds,5,Mean unique identities

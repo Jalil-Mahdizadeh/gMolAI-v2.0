@@ -1,0 +1,88 @@
+{
+  "artifact_type": "gmolai_release_hybrid_w3_embeddings",
+  "artifacts": {
+    "decoder_inference.pt": "8b4f8db04499083ea2e9d028eaaae18d629b34ce773608d8e2c80863e9121d47",
+    "representation-best.pt": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "representation-calibrator.pt": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "representation_selection.json": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1",
+    "resolved_config.json": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+  },
+  "canonicalization": {
+    "allowed_elements": [
+      "C",
+      "N",
+      "O",
+      "F",
+      "P",
+      "S",
+      "Cl",
+      "Br",
+      "I",
+      "H",
+      "B",
+      "Si"
+    ],
+    "fragment_policy": "reject",
+    "isomeric_smiles": true,
+    "max_atoms": 256,
+    "min_atoms": 2
+  },
+  "created_utc": "2026-08-17T17:36:10.460233+00:00",
+  "embedding": {
+    "assembly": "disk_backed_streaming",
+    "definition": "clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks",
+    "dimensions": 384,
+    "dtype": "float32",
+    "graph_dimensions": 256,
+    "mean_node_dimensions": 128,
+    "mean_node_weight": 3.0,
+    "space": "released_hybrid_w3",
+    "storage": "compressed_npz_without_pickle"
+  },
+  "execution": {
+    "backend": "optimized_gine_v1",
+    "batch_size": 512,
+    "device": "cuda:0",
+    "encoder_memory_contract": "active_pipeline_batches_plus_bounded_compression_buffers",
+    "invalid_policy": "error",
+    "node_budget": 65536,
+    "numpy": "1.26.4",
+    "pipeline_batches": 48,
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "staging": "disk_backed_float32_and_sqlite",
+    "threads": 8,
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0",
+    "verify_rows": 0,
+    "workers": 48
+  },
+  "input": {
+    "id_column": "molecule_id",
+    "limit": null,
+    "path": "/analysis/inputs/encoder_input.csv",
+    "sha256": "977e929a6693723b4f98450cfda717f72b41eb760c99c21cc1445cba3dac8f2a",
+    "smiles_column": "smiles"
+  },
+  "outputs": {
+    "candidate_embeddings.npz": {
+      "dimensions": 384,
+      "rows": 2108115,
+      "sha256": "793efdc19364da93a950b813c62c6c4b66875e3d06b62f03f4058dab0223232f"
+    },
+    "candidate_embeddings.rejections.csv": {
+      "rows": 0,
+      "sha256": "8d8da74fadbf9c18527321575a5a1a9d617f2db52b05715c8d8ea7eb9c0a0417"
+    }
+  },
+  "rows": {
+    "accepted": 2108115,
+    "duplicate_nonempty_ids": 0,
+    "rejected": 0,
+    "rejection_reasons": {},
+    "total": 2108115,
+    "unique_accepted_molecules": 2108114
+  },
+  "schema_version": 1,
+  "script_version": "1.1.0"
+}

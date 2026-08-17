@@ -1,0 +1,16 @@
+strategy,budget,metric,estimate,ci_lower,ci_upper,confidence_level,bootstrap_resamples,unit,denominator,metric_order,display_label
+hybrid_b500_s500_t120,50,reranked_mean_latent_l2,0.3702822879215702,0.3389871929309703,0.4018112418750301,0.95,2000,distance,available selected top-1 candidates,0,L2
+hybrid_b500_s500_t120,100,reranked_mean_latent_l2,0.3004944672740995,0.2747488380698627,0.3265778707979385,0.95,2000,distance,available selected top-1 candidates,0,L2
+hybrid_b500_s500_t120,250,reranked_mean_latent_l2,0.2320661890545859,0.21061739189276,0.2540976117952494,0.95,2000,distance,available selected top-1 candidates,0,L2
+hybrid_b500_s500_t120,500,reranked_mean_latent_l2,0.1914941781314089,0.172311797651695,0.2108990517985821,0.95,2000,distance,available selected top-1 candidates,0,L2
+hybrid_b500_s500_t120,1000,reranked_mean_latent_l2,0.1602609083082526,0.1437065301230736,0.1775260165176773,0.95,2000,distance,available selected top-1 candidates,0,L2
+hybrid_b500_s500_t120,50,reranked_mean_latent_relative_l2,0.0092031341868219,0.0084611706427402,0.0099513939239607,0.95,2000,relative_distance,available selected top-1 candidates,1,Relative L2
+hybrid_b500_s500_t120,100,reranked_mean_latent_relative_l2,0.0074139457712182,0.0068107895762141,0.0080211112044052,0.95,2000,relative_distance,available selected top-1 candidates,1,Relative L2
+hybrid_b500_s500_t120,250,reranked_mean_latent_relative_l2,0.0057102903148595,0.0052125652978646,0.0062245444406848,0.95,2000,relative_distance,available selected top-1 candidates,1,Relative L2
+hybrid_b500_s500_t120,500,reranked_mean_latent_relative_l2,0.0047365838570025,0.0042805458805376,0.005208475292852,0.95,2000,relative_distance,available selected top-1 candidates,1,Relative L2
+hybrid_b500_s500_t120,1000,reranked_mean_latent_relative_l2,0.00396354749616,0.0035734322199765,0.0043832294710796,0.95,2000,relative_distance,available selected top-1 candidates,1,Relative L2
+hybrid_b500_s500_t120,50,reranked_mean_latent_cosine,0.9993020164310932,0.9992009329673648,0.999393608945608,0.95,2000,cosine,available selected top-1 candidates,2,Cosine
+hybrid_b500_s500_t120,100,reranked_mean_latent_cosine,0.999492791634798,0.9994185982388256,0.9995626115591824,0.95,2000,cosine,available selected top-1 candidates,2,Cosine
+hybrid_b500_s500_t120,250,reranked_mean_latent_cosine,0.9996453292787076,0.9995869345042108,0.9997013216036558,0.95,2000,cosine,available selected top-1 candidates,2,Cosine
+hybrid_b500_s500_t120,500,reranked_mean_latent_cosine,0.9997239817857744,0.9996751819437742,0.999771100627184,0.95,2000,cosine,available selected top-1 candidates,2,Cosine
+hybrid_b500_s500_t120,1000,reranked_mean_latent_cosine,0.999792568165064,0.9997523038974404,0.999828760356456,0.95,2000,cosine,available selected top-1 candidates,2,Cosine

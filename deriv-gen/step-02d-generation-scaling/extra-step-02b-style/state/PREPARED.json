@@ -1,0 +1,10 @@
+{
+  "encoder_input_rows": 2108115,
+  "encoder_input_sha256": "977e929a6693723b4f98450cfda717f72b41eb760c99c21cc1445cba3dac8f2a",
+  "manifest_sha256": "1ed4cb84efba5b8de3a5aabc5965756a372712bdb8e42f7d03bd4e13b6aa9d9f",
+  "prepared_at": "2026-08-17T17:13:16.043527+00:00",
+  "schema_version": 1,
+  "status": "prepared",
+  "study_id": "gmolai-step2d-extra-step2b-style-v1",
+  "wall_seconds": 5.528202277957462
+}

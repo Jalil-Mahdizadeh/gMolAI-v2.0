@@ -1,0 +1,31 @@
+strategy,budget,metric,estimate,ci_lower,ci_upper,confidence_level,bootstrap_resamples,unit,denominator,metric_order,display_label
+hybrid_b500_s500_t120,50,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,100,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,250,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,500,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,1000,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,50,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,100,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,250,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,500,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,1000,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,50,reranked_seed_scaffold_recovery,0.948,0.9435,0.9523,0.95,2000,fraction,all seeds,2,Latent reranked
+hybrid_b500_s500_t120,100,reranked_seed_scaffold_recovery,0.9569,0.9529,0.9608,0.95,2000,fraction,all seeds,2,Latent reranked
+hybrid_b500_s500_t120,250,reranked_seed_scaffold_recovery,0.9652,0.9615,0.9686,0.95,2000,fraction,all seeds,2,Latent reranked
+hybrid_b500_s500_t120,500,reranked_seed_scaffold_recovery,0.9702,0.9668,0.9734,0.95,2000,fraction,all seeds,2,Latent reranked
+hybrid_b500_s500_t120,1000,reranked_seed_scaffold_recovery,0.975,0.972,0.9779,0.95,2000,fraction,all seeds,2,Latent reranked
+hybrid_b500_s500_t120,50,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds,3,Greedy
+hybrid_b500_s500_t120,100,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds,3,Greedy
+hybrid_b500_s500_t120,250,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds,3,Greedy
+hybrid_b500_s500_t120,500,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds,3,Greedy
+hybrid_b500_s500_t120,1000,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds,3,Greedy
+hybrid_b500_s500_t120,50,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds,4,Generator order
+hybrid_b500_s500_t120,100,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds,4,Generator order
+hybrid_b500_s500_t120,250,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds,4,Generator order
+hybrid_b500_s500_t120,500,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds,4,Generator order
+hybrid_b500_s500_t120,1000,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds,4,Generator order
+hybrid_b500_s500_t120,50,reranked_mean_morgan_to_seed,0.9691958161309362,0.9668680207367242,0.9715552710131184,0.95,2000,similarity,all seeds,5,Latent reranked
+hybrid_b500_s500_t120,100,reranked_mean_morgan_to_seed,0.9746234113007785,0.972526595526114,0.9767095633206144,0.95,2000,similarity,all seeds,5,Latent reranked
+hybrid_b500_s500_t120,250,reranked_mean_morgan_to_seed,0.9803072356894612,0.9783801872980968,0.9821008622001484,0.95,2000,similarity,all seeds,5,Latent reranked
+hybrid_b500_s500_t120,500,reranked_mean_morgan_to_seed,0.9833896113798022,0.9817067400469632,0.9850776754546166,0.95,2000,similarity,all seeds,5,Latent reranked
+hybrid_b500_s500_t120,1000,reranked_mean_morgan_to_seed,0.985756805549562,0.9841585584206508,0.9873134750712664,0.95,2000,similarity,all seeds,5,Latent reranked

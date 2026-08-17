@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "tested_at": "2026-08-17T17:12:55.253585+00:00",
+  "tests": [
+    "reranking_primary_and_tie_break_order",
+    "nested_budget_selection",
+    "paired_bootstrap_determinism",
+    "ratio_recomputed_within_bootstrap",
+    "output_path_containment"
+  ]
+}

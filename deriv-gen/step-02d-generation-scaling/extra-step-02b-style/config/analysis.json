@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study_id": "gmolai-step2d-extra-step2b-style-v1",
+  "seed": 20260817,
+  "budgets": [50, 100, 250, 500, 1000],
+  "bootstrap": {
+    "resamples": 2000,
+    "confidence_level": 0.95,
+    "unit": "seed"
+  },
+  "reencoding": {
+    "backend": "optimized",
+    "device": "cuda",
+    "batch_size": 512,
+    "node_budget": 65536,
+    "workers": 48,
+    "threads": 8,
+    "embedding_dimensions": 384
+  },
+  "candidate_scope": {
+    "phase": "final",
+    "strategy": "hybrid_b500_s500_t120",
+    "budget_definition": "nested prefix of raw decoder proposal slots",
+    "accepted_candidate_definition": "first occurrence of each unique policy-accepted canonical molecular identity"
+  },
+  "reranking": {
+    "primary": "latent_relative_l2_to_seed_condition",
+    "tie_breakers": [
+      "higher_latent_cosine_to_seed_condition",
+      "lower_first_proposal_rank",
+      "canonical_smiles_lexical_order"
+    ],
+    "target_information_used_for_ranking": false
+  },
+  "structural_metrics": {
+    "fingerprint": "Morgan",
+    "radius": 2,
+    "bits": 2048,
+    "include_chirality": false,
+    "missing_top1_policy": "zero for unconditional identity, scaffold, and Morgan summaries"
+  }
+}

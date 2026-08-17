@@ -1,0 +1,21 @@
+strategy,budget,metric,estimate,ci_lower,ci_upper,confidence_level,bootstrap_resamples,unit,denominator,metric_order,display_label
+hybrid_b500_s500_t120,50,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,100,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,250,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,500,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,1000,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds,0,Greedy
+hybrid_b500_s500_t120,50,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,100,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,250,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,500,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,1000,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds,1,Generator order
+hybrid_b500_s500_t120,50,exact_seed_oracle_recall_at_budget,0.9233,0.918,0.9286,0.95,2000,fraction,all seeds,2,Exact-seed oracle
+hybrid_b500_s500_t120,100,exact_seed_oracle_recall_at_budget,0.9355,0.9307,0.9403,0.95,2000,fraction,all seeds,2,Exact-seed oracle
+hybrid_b500_s500_t120,250,exact_seed_oracle_recall_at_budget,0.9486,0.9441,0.9528025,0.95,2000,fraction,all seeds,2,Exact-seed oracle
+hybrid_b500_s500_t120,500,exact_seed_oracle_recall_at_budget,0.9568,0.9526,0.9607,0.95,2000,fraction,all seeds,2,Exact-seed oracle
+hybrid_b500_s500_t120,1000,exact_seed_oracle_recall_at_budget,0.9626,0.9588,0.9663025,0.95,2000,fraction,all seeds,2,Exact-seed oracle
+hybrid_b500_s500_t120,50,reranked_exact_seed_identity_at_1,0.9233,0.918,0.9286,0.95,2000,fraction,all seeds,3,Latent reranked
+hybrid_b500_s500_t120,100,reranked_exact_seed_identity_at_1,0.9355,0.9307,0.9403,0.95,2000,fraction,all seeds,3,Latent reranked
+hybrid_b500_s500_t120,250,reranked_exact_seed_identity_at_1,0.9486,0.9441,0.9528025,0.95,2000,fraction,all seeds,3,Latent reranked
+hybrid_b500_s500_t120,500,reranked_exact_seed_identity_at_1,0.9568,0.9526,0.9607,0.95,2000,fraction,all seeds,3,Latent reranked
+hybrid_b500_s500_t120,1000,reranked_exact_seed_identity_at_1,0.9625,0.9587,0.9662025,0.95,2000,fraction,all seeds,3,Latent reranked

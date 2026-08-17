@@ -1,0 +1,11 @@
+strategy,budget,metric,estimate,ci_lower,ci_upper,confidence_level,bootstrap_resamples,unit,denominator,metric_order,display_label
+hybrid_b500_s500_t120,50,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix,0,Selection efficiency
+hybrid_b500_s500_t120,100,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix,0,Selection efficiency
+hybrid_b500_s500_t120,250,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix,0,Selection efficiency
+hybrid_b500_s500_t120,500,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix,0,Selection efficiency
+hybrid_b500_s500_t120,1000,rerank_selection_efficiency_given_oracle_presence,0.9998961146893828,0.999687565090606,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix,0,Selection efficiency
+hybrid_b500_s500_t120,50,reranked_identity_gain_over_greedy,0.2919,0.2833,0.3008,0.95,2000,fraction_point,all seeds,1,Gain over greedy
+hybrid_b500_s500_t120,100,reranked_identity_gain_over_greedy,0.3041,0.2952,0.3133025,0.95,2000,fraction_point,all seeds,1,Gain over greedy
+hybrid_b500_s500_t120,250,reranked_identity_gain_over_greedy,0.3172,0.3083975,0.3263,0.95,2000,fraction_point,all seeds,1,Gain over greedy
+hybrid_b500_s500_t120,500,reranked_identity_gain_over_greedy,0.3254,0.3164,0.3343,0.95,2000,fraction_point,all seeds,1,Gain over greedy
+hybrid_b500_s500_t120,1000,reranked_identity_gain_over_greedy,0.3311,0.3219975,0.3402,0.95,2000,fraction_point,all seeds,1,Gain over greedy

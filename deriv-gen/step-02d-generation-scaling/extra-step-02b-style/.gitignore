@@ -1,0 +1,11 @@
+# Regenerated encoder input and local runtime products.
+inputs/encoder_input.csv
+state/smoke_candidate_embeddings.*
+state/tmp/
+state/home/
+state/matplotlib/
+state/xdg-cache/
+state/pycache/
+state/apptainer-cache/
+state/apptainer-tmp/
+state/duckdb_tmp/

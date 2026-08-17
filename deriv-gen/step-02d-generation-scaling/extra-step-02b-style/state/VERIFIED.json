@@ -1,0 +1,242 @@
+{
+  "bootstrap_resamples": 2000,
+  "budgets": [
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "candidate_rows": 2116072,
+  "embedding_space": "released_hybrid_w3",
+  "figures_png": 5,
+  "figures_svg": 5,
+  "headline_metrics": [
+    {
+      "budget": 50,
+      "ci_lower": 0.6219,
+      "ci_upper": 0.6407,
+      "estimate": 0.6314,
+      "metric": "greedy_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 50,
+      "ci_lower": 0.6398975,
+      "ci_upper": 0.659,
+      "estimate": 0.6493,
+      "metric": "generator_order_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 50,
+      "ci_lower": 0.918,
+      "ci_upper": 0.9286,
+      "estimate": 0.9233,
+      "metric": "exact_seed_oracle_recall_at_budget"
+    },
+    {
+      "budget": 50,
+      "ci_lower": 0.918,
+      "ci_upper": 0.9286,
+      "estimate": 0.9233,
+      "metric": "reranked_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 50,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0,
+      "estimate": 1.0,
+      "metric": "rerank_selection_efficiency_given_oracle_presence"
+    },
+    {
+      "budget": 50,
+      "ci_lower": 0.2833,
+      "ci_upper": 0.3008,
+      "estimate": 0.2919,
+      "metric": "reranked_identity_gain_over_greedy"
+    },
+    {
+      "budget": 100,
+      "ci_lower": 0.6219,
+      "ci_upper": 0.6407,
+      "estimate": 0.6314,
+      "metric": "greedy_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 100,
+      "ci_lower": 0.6398975,
+      "ci_upper": 0.659,
+      "estimate": 0.6493,
+      "metric": "generator_order_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 100,
+      "ci_lower": 0.9307,
+      "ci_upper": 0.9403,
+      "estimate": 0.9355,
+      "metric": "exact_seed_oracle_recall_at_budget"
+    },
+    {
+      "budget": 100,
+      "ci_lower": 0.9307,
+      "ci_upper": 0.9403,
+      "estimate": 0.9355,
+      "metric": "reranked_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 100,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0,
+      "estimate": 1.0,
+      "metric": "rerank_selection_efficiency_given_oracle_presence"
+    },
+    {
+      "budget": 100,
+      "ci_lower": 0.2952,
+      "ci_upper": 0.3133025,
+      "estimate": 0.3041,
+      "metric": "reranked_identity_gain_over_greedy"
+    },
+    {
+      "budget": 250,
+      "ci_lower": 0.6219,
+      "ci_upper": 0.6407,
+      "estimate": 0.6314,
+      "metric": "greedy_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 250,
+      "ci_lower": 0.6398975,
+      "ci_upper": 0.659,
+      "estimate": 0.6493,
+      "metric": "generator_order_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 250,
+      "ci_lower": 0.9441,
+      "ci_upper": 0.9528025,
+      "estimate": 0.9486,
+      "metric": "exact_seed_oracle_recall_at_budget"
+    },
+    {
+      "budget": 250,
+      "ci_lower": 0.9441,
+      "ci_upper": 0.9528025,
+      "estimate": 0.9486,
+      "metric": "reranked_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 250,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0,
+      "estimate": 1.0,
+      "metric": "rerank_selection_efficiency_given_oracle_presence"
+    },
+    {
+      "budget": 250,
+      "ci_lower": 0.3083975,
+      "ci_upper": 0.3263,
+      "estimate": 0.3172,
+      "metric": "reranked_identity_gain_over_greedy"
+    },
+    {
+      "budget": 500,
+      "ci_lower": 0.6219,
+      "ci_upper": 0.6407,
+      "estimate": 0.6314,
+      "metric": "greedy_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 500,
+      "ci_lower": 0.6398975,
+      "ci_upper": 0.659,
+      "estimate": 0.6493,
+      "metric": "generator_order_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 500,
+      "ci_lower": 0.9526,
+      "ci_upper": 0.9607,
+      "estimate": 0.9568,
+      "metric": "exact_seed_oracle_recall_at_budget"
+    },
+    {
+      "budget": 500,
+      "ci_lower": 0.9526,
+      "ci_upper": 0.9607,
+      "estimate": 0.9568,
+      "metric": "reranked_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 500,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0,
+      "estimate": 1.0,
+      "metric": "rerank_selection_efficiency_given_oracle_presence"
+    },
+    {
+      "budget": 500,
+      "ci_lower": 0.3164,
+      "ci_upper": 0.3343,
+      "estimate": 0.3254,
+      "metric": "reranked_identity_gain_over_greedy"
+    },
+    {
+      "budget": 1000,
+      "ci_lower": 0.6219,
+      "ci_upper": 0.6407,
+      "estimate": 0.6314,
+      "metric": "greedy_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 1000,
+      "ci_lower": 0.6398975,
+      "ci_upper": 0.659,
+      "estimate": 0.6493,
+      "metric": "generator_order_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 1000,
+      "ci_lower": 0.9588,
+      "ci_upper": 0.9663025,
+      "estimate": 0.9626,
+      "metric": "exact_seed_oracle_recall_at_budget"
+    },
+    {
+      "budget": 1000,
+      "ci_lower": 0.9587,
+      "ci_upper": 0.9662025,
+      "estimate": 0.9625,
+      "metric": "reranked_exact_seed_identity_at_1"
+    },
+    {
+      "budget": 1000,
+      "ci_lower": 0.9996875651,
+      "ci_upper": 1.0,
+      "estimate": 0.9998961147,
+      "metric": "rerank_selection_efficiency_given_oracle_presence"
+    },
+    {
+      "budget": 1000,
+      "ci_lower": 0.3219975,
+      "ci_upper": 0.3402,
+      "estimate": 0.3311,
+      "metric": "reranked_identity_gain_over_greedy"
+    }
+  ],
+  "immutable_manifest_files_verified": 22,
+  "no_candidate_generation": true,
+  "no_property_or_control_analysis": true,
+  "no_target_information_used_for_ranking": true,
+  "output_ledger_files_verified": 21,
+  "plot_source_csvs": 5,
+  "reencoded_unique_molecules": 2108115,
+  "reencoding_batch_size": 512,
+  "reencoding_workers": 48,
+  "schema_version": 1,
+  "seed_rows_per_budget": 10000,
+  "status": "passed",
+  "study_id": "gmolai-step2d-extra-step2b-style-v1",
+  "verification_sha256": "8d2f80a4f1ec00f1a5b94da6e16ea585bef091eb4a95a07563d8e4a728d75f11",
+  "verified_at": "2026-08-17T17:46:20.817165+00:00",
+  "writes_confined_by_runtime_mount": "/analysis"
+}

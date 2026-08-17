@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-08-17T17:13:16.034920+00:00",
+  "encoder_input_order": "Step 2d final structure_index ascending",
+  "encoder_input_rows": 2108115,
+  "immutable_inputs": {
+    "analysis_config": {
+      "bytes": 1200,
+      "path": "/analysis/config/analysis.json",
+      "sha256": "3235291bbaf924bfc6eeee87e8f2f912f5c620090b86295a9ecb8d9f14af1710"
+    },
+    "analysis_protocol": {
+      "bytes": 3922,
+      "path": "/analysis/PROTOCOL.md",
+      "sha256": "cf7735bb78eeb82e9d7050512a25d8acebadd81d954eee63238908b717f98582"
+    },
+    "candidate_characterization": {
+      "bytes": 147374917,
+      "path": "deriv-gen/step-02d-generation-scaling/outputs/tables/final_candidate_characterization.parquet",
+      "sha256": "b08e753a85dec8299e4edd0aa8609ebde0f9a3b5cd99dd36487a80ae1f380f5c"
+    },
+    "conditions": {
+      "bytes": 15360128,
+      "path": "deriv-gen/step-02d-generation-scaling/prepared/final_conditions.npy",
+      "sha256": "8df7f0162797dff8bd62308c2207ae0a158a7d85ca498e4310378bd408c09629"
+    },
+    "encoder_calibrator": {
+      "bytes": 6661,
+      "path": "inference/models/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b"
+    },
+    "encoder_checkpoint": {
+      "bytes": 26796827,
+      "path": "inference/models/representation-best.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e"
+    },
+    "encoder_cli": {
+      "bytes": 64489,
+      "path": "inference/gmolai.py",
+      "sha256": "347b180d94042254a1a7cbf2db20a84e272012563c9a9c6d147b873acccad9d9"
+    },
+    "encoder_config": {
+      "bytes": 4731,
+      "path": "inference/models/resolved_config.json",
+      "sha256": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+    },
+    "encoder_input": {
+      "bytes": 227266863,
+      "path": "/analysis/inputs/encoder_input.csv",
+      "sha256": "977e929a6693723b4f98450cfda717f72b41eb760c99c21cc1445cba3dac8f2a"
+    },
+    "encoder_model_source": {
+      "bytes": 24706,
+      "path": "src/gmolai_retrain/model.py",
+      "sha256": "32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02"
+    },
+    "encoder_selection": {
+      "bytes": 39829,
+      "path": "inference/models/representation_selection.json",
+      "sha256": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1"
+    },
+    "optimized_inference_source": {
+      "bytes": 19279,
+      "path": "src/gmolai_retrain/fast_inference.py",
+      "sha256": "6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba"
+    },
+    "panel": {
+      "bytes": 1501646,
+      "path": "deriv-gen/step-02d-generation-scaling/prepared/fresh_validation_panel.csv",
+      "sha256": "de28147773d5492e60c912056422c898d1fc170db2e23002ac4bb2efc91a138f"
+    },
+    "policy_audit": {
+      "bytes": 172208080,
+      "path": "deriv-gen/step-02d-generation-scaling/intermediate/final_raw_smiles_policy_audit.parquet",
+      "sha256": "fdc014e01aee8845cfb8042db3dce9aaa685f6bc4c179de64bea8e301357e3f3"
+    },
+    "raw_proposals": [
+      {
+        "bytes": 41191312,
+        "path": "deriv-gen/step-02d-generation-scaling/outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-00-of-04.parquet",
+        "sha256": "d0ecb6cd1de6199bea3b98753d765387974f78ca485bf9e332fc1d566a1ce7db"
+      },
+      {
+        "bytes": 41026988,
+        "path": "deriv-gen/step-02d-generation-scaling/outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-01-of-04.parquet",
+        "sha256": "1ddd4872cec919239e7af3a8492f1902ab5ba50a510bb5eea9de2c4fa2d8fcd7"
+      },
+      {
+        "bytes": 41178415,
+        "path": "deriv-gen/step-02d-generation-scaling/outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-02-of-04.parquet",
+        "sha256": "7ec11945504b6d68899fc8d9c6557079490509fde6ec2ab29332e956eb768c0f"
+      },
+      {
+        "bytes": 41246957,
+        "path": "deriv-gen/step-02d-generation-scaling/outputs/raw/final/proposals-hybrid_b500_s500_t120-shard-03-of-04.parquet",
+        "sha256": "04b0948f23c80f74a05fb00ee45cc3754af53ceee4163b745afe7e135e4aed21"
+      }
+    ],
+    "seed_budget_metrics": {
+      "bytes": 4115354,
+      "path": "deriv-gen/step-02d-generation-scaling/outputs/tables/final_seed_budget_metrics.parquet",
+      "sha256": "20aa4fd76a3ae146d7f9667dd5915feb07120afb7fec60a5c8f61d5da455bcc2"
+    },
+    "step2d_final_analysis_summary": {
+      "bytes": 1279,
+      "path": "deriv-gen/step-02d-generation-scaling/outputs/final_analysis_summary.json",
+      "sha256": "14c7182eb484b26c08a45e58a550677ba0f7677edca9f5c9921511c900d76a66"
+    },
+    "step2d_verification": {
+      "bytes": 4852,
+      "path": "deriv-gen/step-02d-generation-scaling/outputs/verification.json",
+      "sha256": "5443db949f3340d5dba520ebac0484d08aa521eec397636115349bf2e3d3de09"
+    },
+    "unique_molecules": {
+      "bytes": 126134901,
+      "path": "deriv-gen/step-02d-generation-scaling/intermediate/final_unique_molecules.parquet",
+      "sha256": "c5b627725d7f7d2b31a959a72908d9a3c819bb7d90eb48547de4c5cc83d0724d"
+    }
+  },
+  "reencoding": {
+    "backend": "optimized",
+    "batch_size": 512,
+    "device": "cuda",
+    "embedding_dimensions": 384,
+    "node_budget": 65536,
+    "threads": 8,
+    "workers": 48
+  },
+  "schema_version": 1,
+  "study_id": "gmolai-step2d-extra-step2b-style-v1",
+  "writes_allowed_only_under": "/analysis"
+}

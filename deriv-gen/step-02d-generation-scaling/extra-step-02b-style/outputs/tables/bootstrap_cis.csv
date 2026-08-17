@@ -1,0 +1,141 @@
+strategy,budget,metric,estimate,ci_lower,ci_upper,confidence_level,bootstrap_resamples,unit,denominator
+hybrid_b500_s500_t120,50,raw_token_decode_fraction,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,raw_rdkit_valid_fraction,0.8567959999999999,0.8542280000000001,0.8593862500000001,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,raw_policy_acceptance_fraction,0.856776,0.8542119000000001,0.8593585500000002,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,unique_identity_yield_per_raw_slot,0.360638,0.35800750000000003,0.36333804999999997,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,mean_unique_accepted_identities,18.0319,17.900375,18.1669025,0.95,2000,count,all seeds
+hybrid_b500_s500_t120,50,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,greedy_rdkit_valid_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,greedy_policy_accepted_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,50,greedy_conditional_mean_morgan_to_seed,0.8681479792929987,0.8641115163219677,0.8725443170853037,0.95,2000,similarity,policy-accepted greedy top-1 candidates
+hybrid_b500_s500_t120,50,generator_order_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,50,generator_order_conditional_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,available generator-order top-1 candidates
+hybrid_b500_s500_t120,50,exact_seed_oracle_recall_at_budget,0.9233,0.918,0.9286,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,reranked_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,reranked_exact_seed_identity_at_1,0.9233,0.918,0.9286,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix
+hybrid_b500_s500_t120,50,reranked_identity_gain_over_greedy,0.2919,0.2833,0.3008,0.95,2000,fraction_point,all seeds
+hybrid_b500_s500_t120,50,reranked_seed_scaffold_recovery,0.948,0.9435,0.9523,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,50,reranked_mean_morgan_to_seed,0.9691958161309362,0.9668680207367242,0.9715552710131183,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,50,reranked_conditional_mean_morgan_to_seed,0.9691958161309362,0.9668680207367242,0.9715552710131183,0.95,2000,similarity,available selected top-1 candidates
+hybrid_b500_s500_t120,50,reranked_mean_latent_l2,0.37028228792157025,0.33898719293097035,0.4018112418750301,0.95,2000,distance,available selected top-1 candidates
+hybrid_b500_s500_t120,50,reranked_mean_latent_relative_l2,0.00920313418682199,0.008461170642740254,0.009951393923960713,0.95,2000,relative_distance,available selected top-1 candidates
+hybrid_b500_s500_t120,50,reranked_mean_latent_cosine,0.9993020164310932,0.9992009329673648,0.9993936089456081,0.95,2000,cosine,available selected top-1 candidates
+hybrid_b500_s500_t120,100,raw_token_decode_fraction,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,raw_rdkit_valid_fraction,0.8199699999999999,0.8175465499999999,0.82255215,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,raw_policy_acceptance_fraction,0.8199190000000001,0.817501475,0.8224961500000001,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,unique_identity_yield_per_raw_slot,0.31988800000000006,0.317298975,0.322585075,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,mean_unique_accepted_identities,31.9888,31.7298975,32.2585075,0.95,2000,count,all seeds
+hybrid_b500_s500_t120,100,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,greedy_rdkit_valid_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,greedy_policy_accepted_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,100,greedy_conditional_mean_morgan_to_seed,0.8681479792929987,0.8641115163219677,0.8725443170853037,0.95,2000,similarity,policy-accepted greedy top-1 candidates
+hybrid_b500_s500_t120,100,generator_order_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,100,generator_order_conditional_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,available generator-order top-1 candidates
+hybrid_b500_s500_t120,100,exact_seed_oracle_recall_at_budget,0.9355,0.9307,0.9403,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,reranked_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,reranked_exact_seed_identity_at_1,0.9355,0.9307,0.9403,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix
+hybrid_b500_s500_t120,100,reranked_identity_gain_over_greedy,0.3041,0.2952,0.3133025,0.95,2000,fraction_point,all seeds
+hybrid_b500_s500_t120,100,reranked_seed_scaffold_recovery,0.9569,0.9529,0.9608,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,100,reranked_mean_morgan_to_seed,0.9746234113007783,0.9725265955261141,0.9767095633206144,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,100,reranked_conditional_mean_morgan_to_seed,0.9746234113007783,0.9725265955261141,0.9767095633206144,0.95,2000,similarity,available selected top-1 candidates
+hybrid_b500_s500_t120,100,reranked_mean_latent_l2,0.30049446727409956,0.2747488380698627,0.32657787079793854,0.95,2000,distance,available selected top-1 candidates
+hybrid_b500_s500_t120,100,reranked_mean_latent_relative_l2,0.0074139457712182775,0.0068107895762141565,0.008021111204405242,0.95,2000,relative_distance,available selected top-1 candidates
+hybrid_b500_s500_t120,100,reranked_mean_latent_cosine,0.9994927916347981,0.9994185982388257,0.9995626115591824,0.95,2000,cosine,available selected top-1 candidates
+hybrid_b500_s500_t120,250,raw_token_decode_fraction,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,raw_rdkit_valid_fraction,0.7733307999999999,0.771003,0.77589085,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,raw_policy_acceptance_fraction,0.7732256,0.7708973100000001,0.77577866,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,unique_identity_yield_per_raw_slot,0.27159000000000005,0.2691256,0.2741827,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,mean_unique_accepted_identities,67.8975,67.28139999999999,68.54567499999999,0.95,2000,count,all seeds
+hybrid_b500_s500_t120,250,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,greedy_rdkit_valid_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,greedy_policy_accepted_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,250,greedy_conditional_mean_morgan_to_seed,0.8681479792929987,0.8641115163219677,0.8725443170853037,0.95,2000,similarity,policy-accepted greedy top-1 candidates
+hybrid_b500_s500_t120,250,generator_order_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,250,generator_order_conditional_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,available generator-order top-1 candidates
+hybrid_b500_s500_t120,250,exact_seed_oracle_recall_at_budget,0.9486,0.9441,0.9528025,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,reranked_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,reranked_exact_seed_identity_at_1,0.9486,0.9441,0.9528025,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix
+hybrid_b500_s500_t120,250,reranked_identity_gain_over_greedy,0.3172,0.3083975,0.3263,0.95,2000,fraction_point,all seeds
+hybrid_b500_s500_t120,250,reranked_seed_scaffold_recovery,0.9652,0.9615,0.9686,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,250,reranked_mean_morgan_to_seed,0.9803072356894612,0.9783801872980967,0.9821008622001485,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,250,reranked_conditional_mean_morgan_to_seed,0.9803072356894612,0.9783801872980967,0.9821008622001485,0.95,2000,similarity,available selected top-1 candidates
+hybrid_b500_s500_t120,250,reranked_mean_latent_l2,0.23206618905458598,0.21061739189276005,0.2540976117952494,0.95,2000,distance,available selected top-1 candidates
+hybrid_b500_s500_t120,250,reranked_mean_latent_relative_l2,0.005710290314859594,0.00521256529786464,0.00622454444068484,0.95,2000,relative_distance,available selected top-1 candidates
+hybrid_b500_s500_t120,250,reranked_mean_latent_cosine,0.9996453292787075,0.9995869345042109,0.9997013216036558,0.95,2000,cosine,available selected top-1 candidates
+hybrid_b500_s500_t120,500,raw_token_decode_fraction,0.9999998,0.9999993999999999,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,raw_rdkit_valid_fraction,0.7415486,0.7392858950000001,0.7440451849999999,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,raw_policy_acceptance_fraction,0.7413696,0.7391055200000001,0.743873135,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,unique_identity_yield_per_raw_slot,0.23967560000000004,0.23729227,0.24221921999999999,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,mean_unique_accepted_identities,119.8378,118.64613499999999,121.10961,0.95,2000,count,all seeds
+hybrid_b500_s500_t120,500,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,greedy_rdkit_valid_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,greedy_policy_accepted_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,500,greedy_conditional_mean_morgan_to_seed,0.8681479792929987,0.8641115163219677,0.8725443170853037,0.95,2000,similarity,policy-accepted greedy top-1 candidates
+hybrid_b500_s500_t120,500,generator_order_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,500,generator_order_conditional_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,available generator-order top-1 candidates
+hybrid_b500_s500_t120,500,exact_seed_oracle_recall_at_budget,0.9568,0.9526,0.9607,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,reranked_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,reranked_exact_seed_identity_at_1,0.9568,0.9526,0.9607,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,rerank_selection_efficiency_given_oracle_presence,1.0,1.0,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix
+hybrid_b500_s500_t120,500,reranked_identity_gain_over_greedy,0.3254,0.3164,0.3343,0.95,2000,fraction_point,all seeds
+hybrid_b500_s500_t120,500,reranked_seed_scaffold_recovery,0.9702,0.9668,0.9734,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,500,reranked_mean_morgan_to_seed,0.9833896113798022,0.9817067400469631,0.9850776754546166,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,500,reranked_conditional_mean_morgan_to_seed,0.9833896113798022,0.9817067400469631,0.9850776754546166,0.95,2000,similarity,available selected top-1 candidates
+hybrid_b500_s500_t120,500,reranked_mean_latent_l2,0.19149417813140898,0.17231179765169508,0.2108990517985821,0.95,2000,distance,available selected top-1 candidates
+hybrid_b500_s500_t120,500,reranked_mean_latent_relative_l2,0.004736583857002551,0.004280545880537684,0.00520847529285209,0.95,2000,relative_distance,available selected top-1 candidates
+hybrid_b500_s500_t120,500,reranked_mean_latent_cosine,0.9997239817857743,0.9996751819437742,0.9997711006271839,0.95,2000,cosine,available selected top-1 candidates
+hybrid_b500_s500_t120,1000,raw_token_decode_fraction,0.9999998,0.9999994999999999,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,raw_rdkit_valid_fraction,0.7129675,0.7108019825,0.7153135549999999,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,raw_policy_acceptance_fraction,0.7127173000000001,0.7105563225,0.7150656775,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,unique_identity_yield_per_raw_slot,0.21160720000000002,0.2093698825,0.21400287999999998,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,mean_unique_accepted_identities,211.6072,209.3698825,214.00288,0.95,2000,count,all seeds
+hybrid_b500_s500_t120,1000,candidate_availability_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,greedy_rdkit_valid_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,greedy_policy_accepted_top1_rate,0.9716,0.9683,0.9748,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,greedy_exact_seed_identity_at_1,0.6314,0.6219,0.6407,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,greedy_seed_scaffold_recovery,0.7361,0.7276,0.7444,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,greedy_mean_morgan_to_seed,0.8434925766810775,0.8386715481976047,0.8483480171367899,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,1000,greedy_conditional_mean_morgan_to_seed,0.8681479792929987,0.8641115163219677,0.8725443170853037,0.95,2000,similarity,policy-accepted greedy top-1 candidates
+hybrid_b500_s500_t120,1000,generator_order_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,generator_order_exact_seed_identity_at_1,0.6493,0.6398975,0.659,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,generator_order_seed_scaffold_recovery,0.7564,0.7481,0.7644,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,generator_order_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,1000,generator_order_conditional_mean_morgan_to_seed,0.8682286110106856,0.864176884039417,0.8723560171128623,0.95,2000,similarity,available generator-order top-1 candidates
+hybrid_b500_s500_t120,1000,exact_seed_oracle_recall_at_budget,0.9626,0.9588,0.9663025000000001,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,reranked_valid_top1_rate,1.0,1.0,1.0,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,reranked_exact_seed_identity_at_1,0.9625,0.9587,0.9662025,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,rerank_selection_efficiency_given_oracle_presence,0.9998961146893829,0.9996875650906061,1.0,0.95,2000,fraction,seeds with exact seed present in accepted candidate prefix
+hybrid_b500_s500_t120,1000,reranked_identity_gain_over_greedy,0.3311,0.3219975,0.3402,0.95,2000,fraction_point,all seeds
+hybrid_b500_s500_t120,1000,reranked_seed_scaffold_recovery,0.975,0.972,0.9779,0.95,2000,fraction,all seeds
+hybrid_b500_s500_t120,1000,reranked_mean_morgan_to_seed,0.985756805549562,0.9841585584206507,0.9873134750712663,0.95,2000,similarity,all seeds
+hybrid_b500_s500_t120,1000,reranked_conditional_mean_morgan_to_seed,0.985756805549562,0.9841585584206507,0.9873134750712663,0.95,2000,similarity,available selected top-1 candidates
+hybrid_b500_s500_t120,1000,reranked_mean_latent_l2,0.16026090830825268,0.1437065301230736,0.1775260165176773,0.95,2000,distance,available selected top-1 candidates
+hybrid_b500_s500_t120,1000,reranked_mean_latent_relative_l2,0.003963547496160027,0.0035734322199765306,0.004383229471079612,0.95,2000,relative_distance,available selected top-1 candidates
+hybrid_b500_s500_t120,1000,reranked_mean_latent_cosine,0.9997925681650639,0.9997523038974404,0.9998287603564561,0.95,2000,cosine,available selected top-1 candidates

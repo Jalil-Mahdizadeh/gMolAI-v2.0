@@ -1,0 +1,29 @@
+{
+  "analysis_summary_sha256": "bc8a91749ae087b206fe72b32da39ff4c16a30dadc340adaf9eaafd9751a2142",
+  "completed_at": "2026-08-17T17:46:14.798109+00:00",
+  "figures": [
+    "outputs/figures/candidate_quality_and_availability.png",
+    "outputs/figures/candidate_quality_and_availability.svg",
+    "outputs/figures/exact_identity_recovery.png",
+    "outputs/figures/exact_identity_recovery.svg",
+    "outputs/figures/top1_structural_fidelity.png",
+    "outputs/figures/top1_structural_fidelity.svg",
+    "outputs/figures/reranked_latent_metrics.png",
+    "outputs/figures/reranked_latent_metrics.svg",
+    "outputs/figures/reranking_effect.png",
+    "outputs/figures/reranking_effect.svg"
+  ],
+  "ledger_sha256": "a1b622ef875bb45b6dc3542efbdfe322cde9dd80111590f5cf25a4041a447d5e",
+  "plot_source_tables": [
+    "outputs/plot-data/candidate_quality_and_availability.csv",
+    "outputs/plot-data/exact_identity_recovery.csv",
+    "outputs/plot-data/reranked_latent_metrics.csv",
+    "outputs/plot-data/reranking_effect.csv",
+    "outputs/plot-data/top1_structural_fidelity.csv"
+  ],
+  "results_sha256": "0f28b6bd6d907fa40e974f6126c9974224658ef1f5aa4494d0703a9b9e96fea4",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "gmolai-step2d-extra-step2b-style-v1",
+  "wall_seconds": 1.7737594309728593
+}

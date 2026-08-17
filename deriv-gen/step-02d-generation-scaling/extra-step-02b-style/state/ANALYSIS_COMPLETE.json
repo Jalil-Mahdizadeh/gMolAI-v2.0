@@ -1,0 +1,37 @@
+{
+  "bootstrap_resamples": 2000,
+  "budgets": [
+    50,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "candidate_rows": 2116072,
+  "completed_at": "2026-08-17T17:46:09.666108+00:00",
+  "outputs": {
+    "bootstrap_cis": {
+      "path": "outputs/tables/bootstrap_cis.csv",
+      "sha256": "e51a0c87ad6eb083c285de0abb72e7b3e123cbd4babd76fe9d0263c7753289a4"
+    },
+    "candidate_latent_metrics": {
+      "path": "outputs/tables/candidate_latent_metrics.parquet",
+      "sha256": "70aa8d644e5248af840398775315e027a5bc6658d646e7f8841c83c60fbe3c91"
+    },
+    "per_seed_budget_metrics": {
+      "path": "outputs/tables/per_seed_budget_metrics.parquet",
+      "sha256": "36584c1888d0f7928122c5b122fb4efc8d35518aaca3dca9b848545fe0ad2bea"
+    },
+    "summary_metrics_by_budget": {
+      "path": "outputs/tables/summary_metrics_by_budget.csv",
+      "sha256": "1581b47061c8924a91456af0c30733900221623d83c169a7c4a636c9dfdb0715"
+    }
+  },
+  "reencoding_recanonicalized_rows": 17,
+  "schema_version": 1,
+  "seed_rows": 10000,
+  "status": "complete",
+  "study_id": "gmolai-step2d-extra-step2b-style-v1",
+  "unique_reencoded_molecules": 2108115,
+  "wall_seconds": 50.875272001023404
+}
