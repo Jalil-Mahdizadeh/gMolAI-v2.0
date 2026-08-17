@@ -1,0 +1,26 @@
+{
+  "artifact_manifest_sha256": "1b320e24ba70541e1dee894b88b2c83d238107c4e96e03f9231da97488e52c7b",
+  "check_count": 17,
+  "checks": {
+    "all_required_artifacts_exist": true,
+    "all_six_figure_files_are_nonempty": true,
+    "batch_table_has_50_two_seed_batches": true,
+    "draw_indices_are_complete": true,
+    "every_seed_has_exactly_1000_draws": true,
+    "headline_plot_has_requested_two_metrics": true,
+    "one_visible_cuda_gpu_recorded": true,
+    "policy_unique_counts_reconcile": true,
+    "raw_table_has_100000_rows": true,
+    "raw_throughput_arithmetic": true,
+    "rdkit_unique_counts_reconcile": true,
+    "results_document_exists": true,
+    "seed_table_has_100_rows": true,
+    "selected_conditions_are_100_by_384_float32": true,
+    "selected_hashes_are_unique": true,
+    "selected_panel_has_100_rows": true,
+    "valid_unique_throughput_arithmetic": true
+  },
+  "schema_version": 1,
+  "status": "pass",
+  "verified_utc": "2026-08-17T18:29:03.219392+00:00"
+}

@@ -1,0 +1,3 @@
+metric,value,unit,ci95_lower,ci95_upper,numerator,denominator_seconds,definition,plot_order,display_label
+raw_proposals_per_second,1737.8207035149226,proposals/s,1583.464386636663,1902.9798551269307,100000,57.54333562590182,Raw proposal slots / condition transfer + GPU generation + token transfer,0,Raw proposals
+valid_unique_molecules_per_second,91.64025771613149,molecules/s,57.88390744460198,128.00495843448263,6460,70.49303615023382,Sum of per-seed first unique RDKit-valid identities / generation + token decode + RDKit validation,1,Valid unique molecules

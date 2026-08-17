@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "study_id": "step-03-decoder-speed",
+  "embedding_space": "released_hybrid_w3",
+  "source": {
+    "conditions": "deriv-gen/step-02d-generation-scaling/prepared/final_conditions.npy",
+    "models_dir": "inference/models",
+    "panel": "deriv-gen/step-02d-generation-scaling/prepared/fresh_validation_panel.csv"
+  },
+  "selection": {
+    "count": 100,
+    "method": "numpy_default_rng_choice_without_replacement",
+    "seed": 20260817
+  },
+  "decoder": {
+    "autocast_dtype": "bfloat16",
+    "draws_per_seed": 1000,
+    "maximum_smiles_bytes": 128,
+    "mode": "released_generate_seeded_sample_pool",
+    "query_batch_size": 2,
+    "temperature": 1.2,
+    "top_p": 0.995,
+    "torch_threads": 1
+  },
+  "warmup": {
+    "draws_per_seed": 1000,
+    "seed_count": 2
+  },
+  "chemistry": {
+    "headline_validity": "rdkit_parseable_isomeric_canonical_smiles",
+    "secondary_policy": "released_encoder_canonicalization_policy",
+    "uniqueness_scope": "within_conditioning_seed"
+  },
+  "uncertainty": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260818,
+    "confidence_level": 0.95,
+    "resampling_unit": "two_seed_decoder_batch"
+  }
+}

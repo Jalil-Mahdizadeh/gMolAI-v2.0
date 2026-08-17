@@ -1,0 +1,173 @@
+{
+  "completed_utc": "2026-08-17T18:22:55.193617+00:00",
+  "counts": {
+    "globally_unique_rdkit_valid_molecules": 6460,
+    "globally_unique_release_policy_molecules": 6460,
+    "per_seed_unique_rdkit_valid_molecules": 6460,
+    "per_seed_unique_release_policy_molecules": 6460,
+    "raw_proposals": 100000,
+    "rdkit_valid_proposals": 95455,
+    "release_policy_accepted_proposals": 95455,
+    "token_decodable_proposals": 100000
+  },
+  "diagnostics": {
+    "release_policy_rejections": {
+      "parse_failure": 4545
+    },
+    "token_errors": {}
+  },
+  "execution": {
+    "container_image": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+    "cuda_visible_device_count": 1,
+    "cuda_visible_devices_environment": "",
+    "cudnn": 91200,
+    "gpu_compute_capability": "9.0",
+    "gpu_name": "NVIDIA GH200 120GB",
+    "gpu_total_memory_bytes": 102005473280,
+    "hostname": "n60",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "peak_cuda_memory_allocated_bytes": 2746248704,
+    "peak_cuda_memory_reserved_bytes": 47208988672,
+    "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "slurm_job_id": "",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_cuda": "13.0",
+    "torch_threads": 1
+  },
+  "metrics": {
+    "policy_unique_molecules_per_second": {
+      "ci95_lower": 35.99234559331116,
+      "ci95_upper": 83.24496006425377,
+      "definition": "Sum of per-seed first unique release-policy identities / generation + token decode + RDKit validation + policy pass",
+      "denominator_seconds": 110.87209133733995,
+      "metric": "policy_unique_molecules_per_second",
+      "numerator": 6460,
+      "unit": "molecules/s",
+      "value": 58.26533911356261
+    },
+    "raw_proposals_per_second": {
+      "ci95_lower": 1583.464386636663,
+      "ci95_upper": 1902.9798551269307,
+      "definition": "Raw proposal slots / condition transfer + GPU generation + token transfer",
+      "denominator_seconds": 57.54333562590182,
+      "metric": "raw_proposals_per_second",
+      "numerator": 100000,
+      "unit": "proposals/s",
+      "value": 1737.8207035149226
+    },
+    "raw_smiles_per_second": {
+      "ci95_lower": 1561.3743235553015,
+      "ci95_upper": 1877.9577040887377,
+      "definition": "Raw proposal slots / generation + byte-token-to-SMILES conversion",
+      "denominator_seconds": 58.44203760201344,
+      "metric": "raw_smiles_per_second",
+      "numerator": 100000,
+      "unit": "SMILES/s",
+      "value": 1711.0970818812589
+    },
+    "rdkit_unique_fraction_of_raw": {
+      "ci95_lower": null,
+      "ci95_upper": null,
+      "definition": "Sum of per-seed unique RDKit-valid identities / raw slots",
+      "denominator_seconds": null,
+      "metric": "rdkit_unique_fraction_of_raw",
+      "numerator": 6460,
+      "unit": "fraction",
+      "value": 0.0646
+    },
+    "rdkit_valid_fraction": {
+      "ci95_lower": null,
+      "ci95_upper": null,
+      "definition": "RDKit-parseable proposals / raw slots",
+      "denominator_seconds": null,
+      "metric": "rdkit_valid_fraction",
+      "numerator": 95455,
+      "unit": "fraction",
+      "value": 0.95455
+    },
+    "release_policy_accepted_fraction": {
+      "ci95_lower": null,
+      "ci95_upper": null,
+      "definition": "Released-policy accepted proposals / raw slots",
+      "denominator_seconds": null,
+      "metric": "release_policy_accepted_fraction",
+      "numerator": 95455,
+      "unit": "fraction",
+      "value": 0.95455
+    },
+    "token_decodable_fraction": {
+      "ci95_lower": null,
+      "ci95_upper": null,
+      "definition": "Token sequences decoded to an ASCII string with EOS / raw slots",
+      "denominator_seconds": null,
+      "metric": "token_decodable_fraction",
+      "numerator": 100000,
+      "unit": "fraction",
+      "value": 1.0
+    },
+    "valid_unique_molecules_per_second": {
+      "ci95_lower": 57.88390744460198,
+      "ci95_upper": 128.00495843448263,
+      "definition": "Sum of per-seed first unique RDKit-valid identities / generation + token decode + RDKit validation",
+      "denominator_seconds": 70.49303615023382,
+      "metric": "valid_unique_molecules_per_second",
+      "numerator": 6460,
+      "unit": "molecules/s",
+      "value": 91.64025771613147
+    }
+  },
+  "protocol": {
+    "draws_per_seed": 1000,
+    "embedding_space": "released_hybrid_w3",
+    "maximum_smiles_bytes": 128,
+    "measured_batches": 50,
+    "query_batch_size": 2,
+    "sampling_seed_rule": "released gmolai.sample_seed(target_hash)",
+    "selected_seeds": 100,
+    "temperature": 1.2,
+    "top_p": 0.995,
+    "total_raw_proposals": 100000,
+    "warmup_draws_per_seed": 1000,
+    "warmup_seed_count": 2
+  },
+  "provenance": {
+    "config_sha256": "2ee83e1fd85e0dd8fb8391b417e267d2e559be8810a191edb11b18da23e9aa30",
+    "decoder_source_checkpoint_sha256": "bb9623080ddaed070278c8abca39252e070c110a6611b3bd7a75caf6c37a41f6",
+    "raw_proposals_sha256": "4794fd35853c0864464a8e1946327f81d552390436db67153a0fa483002ee357",
+    "release_artifact_sha256": {
+      "decoder_inference.pt": "8b4f8db04499083ea2e9d028eaaae18d629b34ce773608d8e2c80863e9121d47",
+      "representation-best.pt": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "representation-calibrator.pt": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "representation_selection.json": "43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1",
+      "resolved_config.json": "9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628"
+    },
+    "selected_conditions_sha256": "0c5d5f407aa005660bbb336fc9248e24f940c6e7ee6c34fa627394c5dbb88f5c",
+    "selected_panel_sha256": "352104cf33ea5190bdca989ce262c25c8d430be2cc86cb8f5d11672e288b3173",
+    "selection_metadata_sha256": "ee3a3319657ac2569744fe4d555e491288444e57b9f355f27298d363ca84d0cb"
+  },
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "step-03-decoder-speed",
+  "timings_seconds": {
+    "artifact_validation": 0.09064841299550608,
+    "generation": 57.54333562590182,
+    "measured_observed_wall_including_serialization": 111.26581597799668,
+    "model_load": 0.3380600390373729,
+    "rdkit_validation": 12.050998548220377,
+    "release_policy": 40.37905518710613,
+    "serialization_excluded": 0.24604840972460806,
+    "token_decode": 0.8987019761116244,
+    "warmup_excluded": 3.0931134130223654,
+    "whole_script_to_summary": 115.06650485302089
+  },
+  "uncertainty": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260818,
+    "confidence_level": 0.95,
+    "resampling_unit": "two_seed_decoder_batch"
+  }
+}

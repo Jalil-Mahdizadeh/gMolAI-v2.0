@@ -1,0 +1,9 @@
+metric,value,unit,ci95_lower,ci95_upper,numerator,denominator_seconds,definition
+raw_proposals_per_second,1737.8207035149226,proposals/s,1583.464386636663,1902.9798551269307,100000,57.54333562590182,Raw proposal slots / condition transfer + GPU generation + token transfer
+raw_smiles_per_second,1711.0970818812589,SMILES/s,1561.3743235553015,1877.9577040887377,100000,58.44203760201344,Raw proposal slots / generation + byte-token-to-SMILES conversion
+valid_unique_molecules_per_second,91.64025771613147,molecules/s,57.88390744460198,128.00495843448263,6460,70.49303615023382,Sum of per-seed first unique RDKit-valid identities / generation + token decode + RDKit validation
+policy_unique_molecules_per_second,58.26533911356261,molecules/s,35.99234559331116,83.24496006425377,6460,110.87209133733995,Sum of per-seed first unique release-policy identities / generation + token decode + RDKit validation + policy pass
+token_decodable_fraction,1.0,fraction,,,100000,,Token sequences decoded to an ASCII string with EOS / raw slots
+rdkit_valid_fraction,0.95455,fraction,,,95455,,RDKit-parseable proposals / raw slots
+rdkit_unique_fraction_of_raw,0.0646,fraction,,,6460,,Sum of per-seed unique RDKit-valid identities / raw slots
+release_policy_accepted_fraction,0.95455,fraction,,,95455,,Released-policy accepted proposals / raw slots
