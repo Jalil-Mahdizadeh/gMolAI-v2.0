@@ -1,0 +1,15 @@
+{
+  "benchmark": "classyfire",
+  "dimension": 768,
+  "dtype": "float32",
+  "embedding_sha256": "5f9e96975ed93f11e55884d4714c14dffe0995d63ab532fbfb738ead71fa5eba",
+  "input_sha256": "573597629dfe5e29909dd4c414838b0b5a0abd86cb549eb6ad13749ce8f47b96",
+  "metadata_sha256": "4f33a4d9edc63048268cfd27cb61c16d34f5a56218757a1e8605de2a576ce0b2",
+  "model": "molformer",
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "fdb3f37f32662e8a31697817d1f420560960ec5c6afb2660eb0e6ea36e3a6358",
+  "rows": 36200,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

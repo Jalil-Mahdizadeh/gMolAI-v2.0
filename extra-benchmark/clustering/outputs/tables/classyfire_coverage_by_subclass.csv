@@ -1,0 +1,176 @@
+subclass,model,attempted,accepted,rejected,all_model_common_before_balance,frozen_balanced_rows
+1-benzopyrans,gmolai,2998,2998,0,2878,1448
+1-benzopyrans,morgan,2998,2998,0,2878,1448
+1-benzopyrans,molai,2998,2878,120,2878,1448
+1-benzopyrans,molformer,2998,2998,0,2878,1448
+1-benzopyrans,smi_ted,2998,2998,0,2878,1448
+1-benzopyrans,molclr_gin,2998,2998,0,2878,1448
+1-benzopyrans,kermt_v2,2998,2998,0,2878,1448
+Amines,gmolai,2984,2984,0,2923,1448
+Amines,morgan,2984,2984,0,2923,1448
+Amines,molai,2984,2923,61,2923,1448
+Amines,molformer,2984,2983,1,2923,1448
+Amines,smi_ted,2984,2983,1,2923,1448
+Amines,molclr_gin,2984,2984,0,2923,1448
+Amines,kermt_v2,2984,2984,0,2923,1448
+"Amino acids, peptides, and analogues",gmolai,2992,2992,0,2728,1448
+"Amino acids, peptides, and analogues",morgan,2992,2992,0,2728,1448
+"Amino acids, peptides, and analogues",molai,2992,2728,264,2728,1448
+"Amino acids, peptides, and analogues",molformer,2992,2974,18,2728,1448
+"Amino acids, peptides, and analogues",smi_ted,2992,2974,18,2728,1448
+"Amino acids, peptides, and analogues",molclr_gin,2992,2992,0,2728,1448
+"Amino acids, peptides, and analogues",kermt_v2,2992,2992,0,2728,1448
+Anilides,gmolai,2992,2992,0,2963,1448
+Anilides,morgan,2992,2992,0,2963,1448
+Anilides,molai,2992,2963,29,2963,1448
+Anilides,molformer,2992,2992,0,2963,1448
+Anilides,smi_ted,2992,2992,0,2963,1448
+Anilides,molclr_gin,2992,2992,0,2963,1448
+Anilides,kermt_v2,2992,2992,0,2963,1448
+Benzodiazines,gmolai,2999,2999,0,2995,1448
+Benzodiazines,morgan,2999,2999,0,2995,1448
+Benzodiazines,molai,2999,2995,4,2995,1448
+Benzodiazines,molformer,2999,2999,0,2995,1448
+Benzodiazines,smi_ted,2999,2999,0,2995,1448
+Benzodiazines,molclr_gin,2999,2999,0,2995,1448
+Benzodiazines,kermt_v2,2999,2999,0,2995,1448
+Benzoic acids and derivatives,gmolai,2992,2992,0,2946,1448
+Benzoic acids and derivatives,morgan,2992,2992,0,2946,1448
+Benzoic acids and derivatives,molai,2992,2946,46,2946,1448
+Benzoic acids and derivatives,molformer,2992,2992,0,2946,1448
+Benzoic acids and derivatives,smi_ted,2992,2992,0,2946,1448
+Benzoic acids and derivatives,molclr_gin,2992,2992,0,2946,1448
+Benzoic acids and derivatives,kermt_v2,2992,2992,0,2946,1448
+Carbohydrates and carbohydrate conjugates,gmolai,2994,2994,0,2566,1448
+Carbohydrates and carbohydrate conjugates,morgan,2994,2994,0,2566,1448
+Carbohydrates and carbohydrate conjugates,molai,2994,2566,428,2566,1448
+Carbohydrates and carbohydrate conjugates,molformer,2994,2979,15,2566,1448
+Carbohydrates and carbohydrate conjugates,smi_ted,2994,2979,15,2566,1448
+Carbohydrates and carbohydrate conjugates,molclr_gin,2994,2994,0,2566,1448
+Carbohydrates and carbohydrate conjugates,kermt_v2,2994,2994,0,2566,1448
+Carbonyl compounds,gmolai,2999,2999,0,2968,1448
+Carbonyl compounds,morgan,2999,2999,0,2968,1448
+Carbonyl compounds,molai,2999,2968,31,2968,1448
+Carbonyl compounds,molformer,2999,2999,0,2968,1448
+Carbonyl compounds,smi_ted,2999,2999,0,2968,1448
+Carbonyl compounds,molclr_gin,2999,2999,0,2968,1448
+Carbonyl compounds,kermt_v2,2999,2999,0,2968,1448
+Diphenylmethanes,gmolai,2999,2999,0,2928,1448
+Diphenylmethanes,morgan,2999,2999,0,2928,1448
+Diphenylmethanes,molai,2999,2928,71,2928,1448
+Diphenylmethanes,molformer,2999,2999,0,2928,1448
+Diphenylmethanes,smi_ted,2999,2999,0,2928,1448
+Diphenylmethanes,molclr_gin,2999,2999,0,2928,1448
+Diphenylmethanes,kermt_v2,2999,2999,0,2928,1448
+Diterpenoids,gmolai,3000,3000,0,2916,1448
+Diterpenoids,morgan,3000,3000,0,2916,1448
+Diterpenoids,molai,3000,2916,84,2916,1448
+Diterpenoids,molformer,3000,3000,0,2916,1448
+Diterpenoids,smi_ted,3000,3000,0,2916,1448
+Diterpenoids,molclr_gin,3000,3000,0,2916,1448
+Diterpenoids,kermt_v2,3000,3000,0,2916,1448
+Ethers,gmolai,2998,2998,0,2805,1448
+Ethers,morgan,2998,2998,0,2805,1448
+Ethers,molai,2998,2805,193,2805,1448
+Ethers,molformer,2998,2998,0,2805,1448
+Ethers,smi_ted,2998,2998,0,2805,1448
+Ethers,molclr_gin,2998,2998,0,2805,1448
+Ethers,kermt_v2,2998,2998,0,2805,1448
+Fatty acid esters,gmolai,3000,3000,0,2961,1448
+Fatty acid esters,morgan,3000,3000,0,2961,1448
+Fatty acid esters,molai,3000,2961,39,2961,1448
+Fatty acid esters,molformer,3000,3000,0,2961,1448
+Fatty acid esters,smi_ted,3000,3000,0,2961,1448
+Fatty acid esters,molclr_gin,3000,3000,0,2961,1448
+Fatty acid esters,kermt_v2,3000,3000,0,2961,1448
+Fatty acids and conjugates,gmolai,2993,2993,0,2950,1448
+Fatty acids and conjugates,morgan,2993,2993,0,2950,1448
+Fatty acids and conjugates,molai,2993,2950,43,2950,1448
+Fatty acids and conjugates,molformer,2993,2993,0,2950,1448
+Fatty acids and conjugates,smi_ted,2993,2993,0,2950,1448
+Fatty acids and conjugates,molclr_gin,2993,2993,0,2950,1448
+Fatty acids and conjugates,kermt_v2,2993,2993,0,2950,1448
+Flavonoid glycosides,gmolai,3000,3000,0,2689,1448
+Flavonoid glycosides,morgan,3000,3000,0,2689,1448
+Flavonoid glycosides,molai,3000,2689,311,2689,1448
+Flavonoid glycosides,molformer,3000,2993,7,2689,1448
+Flavonoid glycosides,smi_ted,3000,2993,7,2689,1448
+Flavonoid glycosides,molclr_gin,3000,3000,0,2689,1448
+Flavonoid glycosides,kermt_v2,3000,3000,0,2689,1448
+Halobenzenes,gmolai,2985,2985,0,2855,1448
+Halobenzenes,morgan,2985,2985,0,2855,1448
+Halobenzenes,molai,2985,2855,130,2855,1448
+Halobenzenes,molformer,2985,2985,0,2855,1448
+Halobenzenes,smi_ted,2985,2985,0,2855,1448
+Halobenzenes,molclr_gin,2985,2985,0,2855,1448
+Halobenzenes,kermt_v2,2985,2985,0,2855,1448
+Monoterpenoids,gmolai,2999,2999,0,2958,1448
+Monoterpenoids,morgan,2999,2999,0,2958,1448
+Monoterpenoids,molai,2999,2958,41,2958,1448
+Monoterpenoids,molformer,2999,2999,0,2958,1448
+Monoterpenoids,smi_ted,2999,2999,0,2958,1448
+Monoterpenoids,molclr_gin,2999,2999,0,2958,1448
+Monoterpenoids,kermt_v2,2999,2999,0,2958,1448
+Piperazines,gmolai,3000,3000,0,2982,1448
+Piperazines,morgan,3000,3000,0,2982,1448
+Piperazines,molai,3000,2982,18,2982,1448
+Piperazines,molformer,3000,3000,0,2982,1448
+Piperazines,smi_ted,3000,3000,0,2982,1448
+Piperazines,molclr_gin,3000,3000,0,2982,1448
+Piperazines,kermt_v2,3000,3000,0,2982,1448
+Pyrazoles,gmolai,2998,2998,0,2986,1448
+Pyrazoles,morgan,2998,2998,0,2986,1448
+Pyrazoles,molai,2998,2986,12,2986,1448
+Pyrazoles,molformer,2998,2998,0,2986,1448
+Pyrazoles,smi_ted,2998,2998,0,2986,1448
+Pyrazoles,molclr_gin,2998,2998,0,2986,1448
+Pyrazoles,kermt_v2,2998,2998,0,2986,1448
+Pyridoindoles,gmolai,3000,3000,0,2997,1448
+Pyridoindoles,morgan,3000,3000,0,2997,1448
+Pyridoindoles,molai,3000,2997,3,2997,1448
+Pyridoindoles,molformer,3000,3000,0,2997,1448
+Pyridoindoles,smi_ted,3000,3000,0,2997,1448
+Pyridoindoles,molclr_gin,3000,3000,0,2997,1448
+Pyridoindoles,kermt_v2,3000,3000,0,2997,1448
+Pyrimidines and pyrimidine derivatives,gmolai,2998,2998,0,2965,1448
+Pyrimidines and pyrimidine derivatives,morgan,2998,2998,0,2965,1448
+Pyrimidines and pyrimidine derivatives,molai,2998,2965,33,2965,1448
+Pyrimidines and pyrimidine derivatives,molformer,2998,2998,0,2965,1448
+Pyrimidines and pyrimidine derivatives,smi_ted,2998,2998,0,2965,1448
+Pyrimidines and pyrimidine derivatives,molclr_gin,2998,2998,0,2965,1448
+Pyrimidines and pyrimidine derivatives,kermt_v2,2998,2998,0,2965,1448
+Sesquiterpenoids,gmolai,3000,3000,0,2920,1448
+Sesquiterpenoids,morgan,3000,3000,0,2920,1448
+Sesquiterpenoids,molai,3000,2920,80,2920,1448
+Sesquiterpenoids,molformer,3000,3000,0,2920,1448
+Sesquiterpenoids,smi_ted,3000,3000,0,2920,1448
+Sesquiterpenoids,molclr_gin,3000,3000,0,2920,1448
+Sesquiterpenoids,kermt_v2,3000,3000,0,2920,1448
+Steroidal glycosides,gmolai,3000,3000,0,1448,1448
+Steroidal glycosides,morgan,3000,3000,0,1448,1448
+Steroidal glycosides,molai,3000,1448,1552,1448,1448
+Steroidal glycosides,molformer,3000,2991,9,1448,1448
+Steroidal glycosides,smi_ted,3000,2991,9,1448,1448
+Steroidal glycosides,molclr_gin,3000,3000,0,1448,1448
+Steroidal glycosides,kermt_v2,3000,3000,0,1448,1448
+Terpene glycosides,gmolai,3000,3000,0,1505,1448
+Terpene glycosides,morgan,3000,3000,0,1505,1448
+Terpene glycosides,molai,3000,1505,1495,1505,1448
+Terpene glycosides,molformer,3000,2893,107,1505,1448
+Terpene glycosides,smi_ted,3000,2893,107,1505,1448
+Terpene glycosides,molclr_gin,3000,3000,0,1505,1448
+Terpene glycosides,kermt_v2,3000,3000,0,1505,1448
+Terpene lactones,gmolai,3000,3000,0,2945,1448
+Terpene lactones,morgan,3000,3000,0,2945,1448
+Terpene lactones,molai,3000,2945,55,2945,1448
+Terpene lactones,molformer,3000,2999,1,2945,1448
+Terpene lactones,smi_ted,3000,2999,1,2945,1448
+Terpene lactones,molclr_gin,3000,3000,0,2945,1448
+Terpene lactones,kermt_v2,3000,3000,0,2945,1448
+Triterpenoids,gmolai,3000,3000,0,2070,1448
+Triterpenoids,morgan,3000,3000,0,2070,1448
+Triterpenoids,molai,3000,2070,930,2070,1448
+Triterpenoids,molformer,3000,3000,0,2070,1448
+Triterpenoids,smi_ted,3000,3000,0,2070,1448
+Triterpenoids,molclr_gin,3000,3000,0,2070,1448
+Triterpenoids,kermt_v2,3000,3000,0,2070,1448

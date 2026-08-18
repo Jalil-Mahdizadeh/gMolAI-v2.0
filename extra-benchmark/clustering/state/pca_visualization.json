@@ -1,0 +1,51 @@
+{
+  "models": [
+    "gmolai",
+    "morgan"
+  ],
+  "property": {
+    "gmolai": {
+      "explained_variance_ratio": [
+        0.11413772433360166,
+        0.09372118992642589
+      ],
+      "fit_rows": 25000,
+      "plot_rows": 10000
+    },
+    "morgan": {
+      "explained_variance_ratio": [
+        0.022197558222911976,
+        0.019840071587035362
+      ],
+      "fit_rows": 25000,
+      "plot_rows": 10000
+    }
+  },
+  "property_source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_qmugs_pca.csv",
+  "property_source_sha256": "bf6d18373adf2bb61a35add77af2de3f66b28792f5806f9a0c1541d59eaadb14",
+  "schema_version": 1,
+  "status": "ok",
+  "structural": {
+    "gmolai": {
+      "explained_variance_ratio": [
+        0.1909124611138028,
+        0.12276537819439783
+      ],
+      "fit_rows": 25000,
+      "plot_rows": 6250
+    },
+    "morgan": {
+      "explained_variance_ratio": [
+        0.04621554925569021,
+        0.033238089955558894
+      ],
+      "fit_rows": 25000,
+      "plot_rows": 6250
+    }
+  },
+  "structural_source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_classyfire_pca.csv",
+  "structural_source_sha256": "b76b40613aa5bb6acda4800c55d8edade37ca7d2f273ef6a7228efb5b8a2f5d2",
+  "timestamp_utc": "2026-08-18T14:20:33.424553+00:00",
+  "used_by_metrics": false,
+  "visualization_only": true
+}

@@ -1,0 +1,15 @@
+{
+  "benchmark": "classyfire",
+  "dimension": 512,
+  "dtype": "float32",
+  "embedding_sha256": "9fd703c86c6eac62945e43dfa40df719049728b0cc26c4cebcf57a717a057947",
+  "input_sha256": "573597629dfe5e29909dd4c414838b0b5a0abd86cb549eb6ad13749ce8f47b96",
+  "metadata_sha256": "4825d76519786d81abb89474fd895b0343a03123c8d4f7c6777811620fc3cfd9",
+  "model": "kermt_v2",
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "fdb3f37f32662e8a31697817d1f420560960ec5c6afb2660eb0e6ea36e3a6358",
+  "rows": 36200,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

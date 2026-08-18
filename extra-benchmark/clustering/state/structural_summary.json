@@ -1,0 +1,35 @@
+{
+  "bootstrap_archive": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/classyfire_bootstrap.npz",
+  "bootstrap_archive_sha256": "e38f88d6cafc2acf08c04b63af7ed7b330658aaa7577f8b16df1fb9a570767b9",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 20260818,
+  "models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2",
+    "morgan_count",
+    "descriptor13"
+  ],
+  "paired_differences": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/classyfire_paired_differences.csv",
+  "paired_differences_sha256": "c95ee7893a23c45fd20b9daf876604029a764606d72b93014afbb34b8abaafdf",
+  "parallel_jobs": 16,
+  "primary_models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "rows": 36200,
+  "schema_version": 1,
+  "status": "ok",
+  "table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/classyfire_structural_metrics.csv",
+  "table_sha256": "2464858c170abcb3ba5e219bf6f233f555ee2b752ea5d2b9bde9898f80086c27",
+  "timestamp_utc": "2026-08-18T14:20:03.236446+00:00"
+}

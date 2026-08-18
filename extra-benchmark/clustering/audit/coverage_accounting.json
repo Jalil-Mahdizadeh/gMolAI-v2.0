@@ -1,0 +1,11 @@
+{
+  "classyfire_preparation_sha256": "aed9df8697bd1bee9255d90982357159fbd7678ed97d0ecb706b9e3d088dd207",
+  "coverage_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/full_coverage_accounting.csv",
+  "coverage_table_sha256": "a5bfdde1caff6495eabd6072ae82f90d675f4c1d0874d89c3c9a2f1e30682dcb",
+  "qmugs_preparation_sha256": "58a854761d6db2519f7b1af5e57ea20bbdcb3fb8e874ed9e29b208d1db890d83",
+  "rejection_reason_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/adapter_rejection_reasons.csv",
+  "rejection_reason_table_sha256": "66e60fc465513af40fb8927783950e23069ebfa056c4b3fe47b5956efff2e549",
+  "rows": 182,
+  "schema_version": 1,
+  "status": "ok"
+}

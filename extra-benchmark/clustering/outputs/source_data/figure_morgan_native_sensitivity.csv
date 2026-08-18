@@ -1,0 +1,5 @@
+model,display_name,distance,macro_same_subclass_at_100
+morgan,Morgan (binary),normalized_euclidean,0.5595950276243093
+morgan,Morgan (binary),binary_tanimoto,0.5629709944751382
+morgan_count,Morgan (count sensitivity),normalized_euclidean,0.5345016574585635
+morgan_count,Morgan (count sensitivity),generalized_tanimoto_raw_counts,0.4932961325966851

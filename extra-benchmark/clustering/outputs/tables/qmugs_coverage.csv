@@ -1,0 +1,8 @@
+model,attempted,accepted,rejected,coverage_fraction,all_model_common,missing_after_common_support,nonfinite_vectors,zero_norm_vectors
+gmolai,60000,60000,0,1.0,59176,824,0,0
+morgan,60000,60000,0,1.0,59176,824,0,0
+molai,60000,59176,824,0.9862666666666666,59176,0,0,0
+molformer,60000,60000,0,1.0,59176,824,0,0
+smi_ted,60000,60000,0,1.0,59176,824,0,0
+molclr_gin,60000,60000,0,1.0,59176,824,0,0
+kermt_v2,60000,60000,0,1.0,59176,824,0,0

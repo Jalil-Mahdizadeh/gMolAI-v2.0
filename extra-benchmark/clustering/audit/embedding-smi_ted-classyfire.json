@@ -1,0 +1,15 @@
+{
+  "benchmark": "classyfire",
+  "dimension": 768,
+  "dtype": "float32",
+  "embedding_sha256": "f72fe5bda2a96261f43429113ca23d96d4f494fd3fa19207e22ba79316c8fbc3",
+  "input_sha256": "573597629dfe5e29909dd4c414838b0b5a0abd86cb549eb6ad13749ce8f47b96",
+  "metadata_sha256": "51e4e28b1ffb164f917386ad5a2e8bb043ec2f97eda15687fcdc6385f99b57ee",
+  "model": "smi_ted",
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "fdb3f37f32662e8a31697817d1f420560960ec5c6afb2660eb0e6ea36e3a6358",
+  "rows": 36200,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

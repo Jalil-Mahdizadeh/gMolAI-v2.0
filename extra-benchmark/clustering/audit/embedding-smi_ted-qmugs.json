@@ -1,0 +1,15 @@
+{
+  "benchmark": "qmugs",
+  "dimension": 768,
+  "dtype": "float32",
+  "embedding_sha256": "269fd4425f194b475260cd3918a1c6009295abb5be522daa5d314a8c09a6fe57",
+  "input_sha256": "0f3bdbc60aeea109558dfd95e9f6ac3a6defc343706089ae9dbc4fba8f62fe28",
+  "metadata_sha256": "8e80eff3ad56c3338b88f805e664d6ab45bf09f108ad49a7ec3eb29d24d6fa7a",
+  "model": "smi_ted",
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "6de5c4f439963b42b2eb6b86d7027e657f36422c5e4e1e18b171034777558041",
+  "rows": 50000,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

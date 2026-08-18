@@ -1,0 +1,6 @@
+benchmark,model,reason_category,count
+classyfire,molai,molai_token_length_exceeds_109,5660
+classyfire,molai,molai_unsupported_character,413
+classyfire,molformer,token_length_exceeds_202,158
+classyfire,smi_ted,token_length_exceeds_202,158
+qmugs,molai,molai_token_length_exceeds_109,824

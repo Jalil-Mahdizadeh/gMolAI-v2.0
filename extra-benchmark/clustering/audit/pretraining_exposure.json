@@ -1,0 +1,178 @@
+{
+  "audit": "exact canonical corpus overlap and graph presentation before step 10000",
+  "checkpoint": {
+    "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+    "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "data_states": [
+      {
+        "cycle": 0,
+        "graph_position": 7532,
+        "shard_position": 1760
+      },
+      {
+        "cycle": 0,
+        "graph_position": 2478,
+        "shard_position": 1770
+      },
+      {
+        "cycle": 0,
+        "graph_position": 83,
+        "shard_position": 1762
+      },
+      {
+        "cycle": 0,
+        "graph_position": 1061,
+        "shard_position": 1764
+      }
+    ],
+    "global_step": 10000,
+    "rank_accounting": [
+      {
+        "completed_shards_in_current_cycle": 1760,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0142/train/shard-00016.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 7532,
+          "shard_position": 1760
+        },
+        "local_population": 55574528,
+        "local_shards": 6784,
+        "rank": 0,
+        "total_presentations": 14425452,
+        "unique_graphs_presented": 14425452
+      },
+      {
+        "completed_shards_in_current_cycle": 1770,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0255/train/shard-00087.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 2478,
+          "shard_position": 1770
+        },
+        "local_population": 54997218,
+        "local_shards": 6784,
+        "rank": 1,
+        "total_presentations": 14325085,
+        "unique_graphs_presented": 14325085
+      },
+      {
+        "completed_shards_in_current_cycle": 1762,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0083/train/shard-00024.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 83,
+          "shard_position": 1762
+        },
+        "local_population": 55574528,
+        "local_shards": 6784,
+        "rank": 2,
+        "total_presentations": 14434387,
+        "unique_graphs_presented": 14434387
+      },
+      {
+        "completed_shards_in_current_cycle": 1764,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0169/train/shard-00081.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 1061,
+          "shard_position": 1764
+        },
+        "local_population": 55002621,
+        "local_shards": 6784,
+        "rank": 3,
+        "total_presentations": 14319341,
+        "unique_graphs_presented": 14319341
+      }
+    ],
+    "training_graph_presentations": 57504265,
+    "unique_training_graphs_presented": 57504265,
+    "world_size": 4
+  },
+  "competitor_status_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/model_pretraining_exposure_status.csv",
+  "competitor_status_table_sha256": "86d95026b4c3da5c37644fb196de4717f02910736e854e4c2b0f22c70a414f4c",
+  "corpus": {
+    "dataset_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/dataset_manifest.json",
+    "dataset_manifest_hash": "4e3aa3b70b7808c5d2efcd891314c99a982766391cc48a383d9096af41fc2a1a",
+    "dataset_manifest_sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "graph_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graph_manifest.json",
+    "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+    "graph_manifest_sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+    "graphs_total": 223180699,
+    "graphs_train": 221148895
+  },
+  "datasets": {
+    "classyfire": {
+      "accepted_identity_set_sha256": "fdb3f37f32662e8a31697817d1f420560960ec5c6afb2660eb0e6ea36e3a6358",
+      "benchmark": "classyfire",
+      "corpus_overlap_identity_set_sha256": "3f0b0c69adc3230da26aa45b50f7c6f7196c6ccc09c6e2d2e38fdf7380d647b9",
+      "panel_rows": 36200,
+      "pretraining_corpus_overlap": 25711,
+      "pretraining_corpus_overlap_percent": 71.02486187845304,
+      "pretraining_test_overlap": 81,
+      "pretraining_train_overlap": 25492,
+      "pretraining_validation_overlap": 138,
+      "seen_before_step_10000": 6652,
+      "seen_before_step_10000_percent_panel": 18.375690607734807,
+      "seen_before_step_10000_percent_train_overlap": 26.094461007374864,
+      "seen_identity_set_sha256": "386b874c5273cc8f491880ea2e8aec91ec14a7cf651d8ae5ea2d89179e965b5e",
+      "train_overlap_identity_set_sha256": "d4593a01bc7883223a8d9c0bf8c9e23a0775c3322c21c5997891b0c06be8a8ad"
+    },
+    "qmugs": {
+      "accepted_identity_set_sha256": "6de5c4f439963b42b2eb6b86d7027e657f36422c5e4e1e18b171034777558041",
+      "benchmark": "qmugs",
+      "corpus_overlap_identity_set_sha256": "eba9d4bbf2149242fe0795801b1a629176a89fb37923675d72612376d1577968",
+      "panel_rows": 50000,
+      "pretraining_corpus_overlap": 17017,
+      "pretraining_corpus_overlap_percent": 34.034,
+      "pretraining_test_overlap": 111,
+      "pretraining_train_overlap": 16835,
+      "pretraining_validation_overlap": 71,
+      "seen_before_step_10000": 4412,
+      "seen_before_step_10000_percent_panel": 8.824,
+      "seen_before_step_10000_percent_train_overlap": 26.207306207306207,
+      "seen_identity_set_sha256": "d7911ad3fdb947f44c975e30f987e8aabfbbe7aa461f1f0f32474bd42f67a3e6",
+      "train_overlap_identity_set_sha256": "c412286273dd0c89573c3edf06ac42cf596217e61c0ca4af3797f2acd449cfbf"
+    }
+  },
+  "identity_ledger": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/gmolai_pretraining_exposure_ledger.csv",
+  "identity_ledger_sha256": "51ab1a01925356efaa941ce0328583ab491c64b15c7a55607a75e2fdd4541a68",
+  "no_unseen_or_ood_claim": true,
+  "pretrained_model_executed": false,
+  "runtime": {
+    "duckdb": "1.5.4",
+    "gmolai_retrain": "0.4.1",
+    "numpy": "1.26.4",
+    "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0"
+  },
+  "scan": {
+    "identity_pickle_bytes_read": 16380374136,
+    "rank_shard_counts": [
+      6784,
+      6784,
+      6784,
+      6784
+    ],
+    "rank_shards_exclusive": true,
+    "target_locations_resolved": 42229,
+    "target_training_identity_union": 42229,
+    "tensor_storage_members_loaded": false,
+    "training_graph_hashes_scanned": 221148895,
+    "training_shards_scanned": 27136
+  },
+  "schema_version": 1,
+  "status": "ok",
+  "summary_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/gmolai_pretraining_exposure.csv",
+  "summary_table_sha256": "0558625d77245a698fe8c522d635b66fbed2eca87b9bd497dec03afedb135852",
+  "timestamp_utc": "2026-08-18T13:53:46.112829+00:00",
+  "training_permitted": false,
+  "training_stream_seed": 42
+}

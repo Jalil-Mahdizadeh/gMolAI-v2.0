@@ -1,0 +1,110 @@
+{
+  "cluster_labels": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/structural_clusters/morgan_count.npz",
+  "cluster_labels_sha256": "c79b6e4ac31008b8301c8a014de4a2cf1d41ef71e3c12dbb999e49342dea13d9",
+  "dimension": 4096,
+  "input_embedding": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/embeddings/classyfire/morgan_count.npy",
+  "input_embedding_sha256": "72ffb6e0cd7a65a79a0a28340ce18576d9afbdb33325b3c54a2737364c777d02",
+  "kmeans": {
+    "algorithm": "lloyd",
+    "init": "k-means++",
+    "max_iter": 500,
+    "n_clusters": 25,
+    "n_init": 20,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "tol": 0.0001
+  },
+  "macro_same_subclass_at_100": 0.5345016574585635,
+  "mean_seed_metrics": {
+    "AMI": 0.4180294971060669,
+    "ARI": 0.22998134721390126,
+    "NMI": 0.419488641815901
+  },
+  "model": "morgan_count",
+  "native_macro_same_subclass_at_100": 0.49329613259668514,
+  "native_metric": "generalized_tanimoto_raw_counts",
+  "neighbors": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/structural_neighbors/morgan_count.npz",
+  "neighbors_sha256": "e1374f2e036d18dcb1cdfca1039eb6b16605d45069cecc22a6fa7d71158fe32b",
+  "per_subclass_same_subclass_at_100": {
+    "1-benzopyrans": 0.5316988950276244,
+    "Amines": 0.2857389502762431,
+    "Amino acids, peptides, and analogues": 0.41328038674033146,
+    "Anilides": 0.5662499999999999,
+    "Benzodiazines": 0.5274930939226519,
+    "Benzoic acids and derivatives": 0.3112361878453039,
+    "Carbohydrates and carbohydrate conjugates": 0.4958287292817679,
+    "Carbonyl compounds": 0.22332872928176795,
+    "Diphenylmethanes": 0.5963812154696132,
+    "Diterpenoids": 0.4437983425414365,
+    "Ethers": 0.32110497237569063,
+    "Fatty acid esters": 0.655421270718232,
+    "Fatty acids and conjugates": 0.6920856353591159,
+    "Flavonoid glycosides": 0.9457113259668507,
+    "Halobenzenes": 0.39110497237569064,
+    "Monoterpenoids": 0.32322513812154696,
+    "Piperazines": 0.7261878453038674,
+    "Pyrazoles": 0.5025069060773479,
+    "Pyridoindoles": 0.856360497237569,
+    "Pyrimidines and pyrimidine derivatives": 0.4796477900552486,
+    "Sesquiterpenoids": 0.28216160220994474,
+    "Steroidal glycosides": 0.8564848066298343,
+    "Terpene glycosides": 0.6806837016574585,
+    "Terpene lactones": 0.5915124309392266,
+    "Triterpenoids": 0.6633080110497238
+  },
+  "preprocessing": "float64_row_l2",
+  "query_source_data": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/structural_queries/morgan_count.parquet",
+  "query_source_data_sha256": "82050b888b0c87bc25172e103ef03645ddd836a525ccdec8901a971198bdfe3f",
+  "rows": 36200,
+  "schema_version": 1,
+  "seed_metrics": [
+    {
+      "AMI": 0.4143231890652866,
+      "ARI": 0.2308919444414966,
+      "NMI": 0.4157886385825305,
+      "inertia": 18754.297267671212,
+      "n_iter": 91,
+      "seed": 42
+    },
+    {
+      "AMI": 0.4145990424316344,
+      "ARI": 0.22755851491700832,
+      "NMI": 0.41606864393363635,
+      "inertia": 18782.534923715903,
+      "n_iter": 61,
+      "seed": 43
+    },
+    {
+      "AMI": 0.4185353879988617,
+      "ARI": 0.24327013207990886,
+      "NMI": 0.4199921415967933,
+      "inertia": 18773.085871518273,
+      "n_iter": 75,
+      "seed": 44
+    },
+    {
+      "AMI": 0.4172228167384094,
+      "ARI": 0.23051123461700934,
+      "NMI": 0.4186834110427408,
+      "inertia": 18792.900032890997,
+      "n_iter": 68,
+      "seed": 45
+    },
+    {
+      "AMI": 0.4254670492961427,
+      "ARI": 0.21767491001408304,
+      "NMI": 0.4269103739238037,
+      "inertia": 18794.24625827979,
+      "n_iter": 87,
+      "seed": 46
+    }
+  ],
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T14:15:13.310766+00:00",
+  "wall_seconds": 451.5045012109913
+}

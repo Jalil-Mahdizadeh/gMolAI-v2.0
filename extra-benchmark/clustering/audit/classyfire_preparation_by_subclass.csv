@@ -1,0 +1,26 @@
+subclass,source_attempted,accepted_before_deduplication,eligible_unique
+1-benzopyrans,3000,2998,2998
+Amines,3000,2984,2984
+"Amino acids, peptides, and analogues",3000,2992,2992
+Anilides,3000,2992,2992
+Benzodiazines,3000,2999,2999
+Benzoic acids and derivatives,3000,2992,2992
+Carbohydrates and carbohydrate conjugates,3000,2994,2994
+Carbonyl compounds,3000,2999,2999
+Diphenylmethanes,3000,2999,2999
+Diterpenoids,3000,3000,3000
+Ethers,3000,2998,2998
+Fatty acid esters,3000,3000,3000
+Fatty acids and conjugates,3000,2993,2993
+Flavonoid glycosides,3000,3000,3000
+Halobenzenes,3000,2985,2985
+Monoterpenoids,3000,2999,2999
+Piperazines,3000,3000,3000
+Pyrazoles,3000,2998,2998
+Pyridoindoles,3000,3000,3000
+Pyrimidines and pyrimidine derivatives,3000,2998,2998
+Sesquiterpenoids,3000,3000,3000
+Steroidal glycosides,3000,3000,3000
+Terpene glycosides,3000,3000,3000
+Terpene lactones,3000,3000,3000
+Triterpenoids,3000,3000,3000

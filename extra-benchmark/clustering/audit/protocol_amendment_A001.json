@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "A001",
+  "timestamp_utc": "2026-08-18T13:36:00Z",
+  "stage": "after label-blind screening and before representation execution",
+  "removed_guards": {
+    "minimum_overall_fraction": 0.9,
+    "minimum_per_subclass_fraction": 0.8
+  },
+  "observed_screen_only_support": {
+    "all_model_common_rows": 68847,
+    "minimum_subclass": "Steroidal glycosides",
+    "minimum_subclass_rows": 1448,
+    "frozen_balanced_rows_under_requested_rule": 36200,
+    "dominant_limiting_adapter": "MolAI",
+    "limiting_reason": "frozen MolAI token-length and character-vocabulary validity"
+  },
+  "justification": "The user-prespecified design mandates all-model intersection followed by deterministic m=min subclass balancing and does not specify a coverage threshold. The implementation-added guards would replace that rule. Removing them restores the requested design.",
+  "information_not_available_at_amendment": [
+    "embeddings",
+    "cluster assignments",
+    "structural metrics",
+    "property metrics",
+    "PCA coordinates"
+  ],
+  "representation_forward_passes_completed_before_amendment": 0
+}

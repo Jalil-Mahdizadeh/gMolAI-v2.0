@@ -1,0 +1,12 @@
+# Pinned source datasets and deterministic prepared manifests are retained in the
+# sealed local benchmark bundle, but are too large for ordinary Git transport.
+/inputs/raw/
+/inputs/prepared/
+
+# Frozen embeddings, neighbor matrices, cluster assignments, bootstrap arrays,
+# and adapter screen payloads are reproducible from protocol.json and the runner.
+/artifacts/
+
+# Execution logs and scratch state are local operational records.
+/logs/
+/tmp/

@@ -2585,8 +2585,8 @@
     "semantic_hash": ""
   },
   "inference/gmolai.py": {
-    "mtime": 1786734450.0,
-    "ast_hash": "2bd02f7bc5af07e432196c8d4ac85407",
+    "mtime": 1786735113.0,
+    "ast_hash": "109640914633fde742b74f77cab98d9d",
     "semantic_hash": ""
   },
   "inference/models/representation_selection.json": {
@@ -2615,8 +2615,8 @@
     "semantic_hash": ""
   },
   "tests/test_release_inference.py": {
-    "mtime": 1786734524.0,
-    "ast_hash": "d04f8f27a5899a9bedc4158ed57ff1dc",
+    "mtime": 1786735113.0,
+    "ast_hash": "daa89ebb3dcb66157c06ba54806e22ce",
     "semantic_hash": ""
   },
   "extra-benchmark/tdc-admet/PROTOCOL.md": {
@@ -2657,6 +2657,956 @@
   "graphify-out/memory/query_20260814_191546_review_three_findings__missing_pytorch_and_pytorch.md": {
     "mtime": 1786734946.0,
     "ast_hash": "57dea3d0e5b898c5b03a655557684921",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/config/analysis.json": {
+    "mtime": 1786985760.0,
+    "ast_hash": "33a8ae04a462fa64c91bc7f49e9c3361",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/inputs/manifest.json": {
+    "mtime": 1786986796.0,
+    "ast_hash": "61ef13a10d4e5ae927d191b42856ae29",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/intermediate/candidate_embeddings.metadata.json": {
+    "mtime": 1786988331.0,
+    "ast_hash": "577fe7e7aab0e9086db4cca29c2193c4",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/analysis_summary.json": {
+    "mtime": 1786988774.0,
+    "ast_hash": "3826ab021360bceb03ee711e8ad3933f",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/verification.json": {
+    "mtime": 1786988780.0,
+    "ast_hash": "07628ee6d46b7803c5966b7d492587c6",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/run_analysis.sh": {
+    "mtime": 1786986736.0,
+    "ast_hash": "95e7c4b90444867d1f2456d2844bf54a",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/analysis_core.py": {
+    "mtime": 1786985760.0,
+    "ast_hash": "0a1545e1a2e0457ddaf2fa832da000b8",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/analyze_results.py": {
+    "mtime": 1786988688.0,
+    "ast_hash": "613654530e38bbe896beff9952bc7db8",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/common.py": {
+    "mtime": 1786985760.0,
+    "ast_hash": "e5f684fe9a482ef4342e6b0da3bcefa2",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/plot_results.py": {
+    "mtime": 1786986589.0,
+    "ast_hash": "6377e33ded692a0ccf3499edfc1e8579",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/prepare_inputs.py": {
+    "mtime": 1786986038.0,
+    "ast_hash": "0e58d6108409378ed26fd9d4ebead3be",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/sitecustomize.py": {
+    "mtime": 1786986921.0,
+    "ast_hash": "b9db0fa78090eb3ad032ec974ce533e2",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/test_components.py": {
+    "mtime": 1786986038.0,
+    "ast_hash": "ffd42fed637b50fdcb3f425e48a1967c",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/scripts/verify_results.py": {
+    "mtime": 1786986682.0,
+    "ast_hash": "f6bcf27cd60492f24e424854a6f9d922",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/state/ANALYSIS_COMPLETE.json": {
+    "mtime": 1786988769.0,
+    "ast_hash": "94f67e36d0d697a6c2999b9e89fb0c55",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/state/COMPONENT_TESTS.json": {
+    "mtime": 1786986775.0,
+    "ast_hash": "5e54e5928d70e5c364bdd93d5f0d5925",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/state/PREPARED.json": {
+    "mtime": 1786986796.0,
+    "ast_hash": "c1234c0677597d573a7c2c18085c1c42",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/state/REPORT_COMPLETE.json": {
+    "mtime": 1786988774.0,
+    "ast_hash": "378e6f30848c7b0dfc3bf86de90e99ca",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/state/VERIFIED.json": {
+    "mtime": 1786988780.0,
+    "ast_hash": "5329b328fe894d429e35c277c36bc30c",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/config/benchmark.json": {
+    "mtime": 1786991325.0,
+    "ast_hash": "17ee970b69bb1b138282cbc3fdec176f",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/inputs/selection_metadata.json": {
+    "mtime": 1786990848.0,
+    "ast_hash": "12363b6524ee8b080c1abaed17638fef",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/outputs/benchmark_summary.json": {
+    "mtime": 1786990975.0,
+    "ast_hash": "4a1762cf6599d763fa26360c7d5feefe",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/outputs/verification.json": {
+    "mtime": 1786991343.0,
+    "ast_hash": "97d52b3e7103ac32392543e39dfbf7a1",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/run_benchmark.sh": {
+    "mtime": 1786991325.0,
+    "ast_hash": "cd480ffed9ffc426a2e96e6057bd389f",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/scripts/common.py": {
+    "mtime": 1786991325.0,
+    "ast_hash": "20b2a2a48f06514e0a7328c147e5dead",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/scripts/plot_results.py": {
+    "mtime": 1786991325.0,
+    "ast_hash": "6a08e11446f28563c369aaa5fb7ac112",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/scripts/prepare_inputs.py": {
+    "mtime": 1786991325.0,
+    "ast_hash": "11ff06516712725782824ebf705af872",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/scripts/report_results.py": {
+    "mtime": 1786991325.0,
+    "ast_hash": "1ecc59a965d4929c103da97548176f59",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/scripts/run_benchmark.py": {
+    "mtime": 1786991325.0,
+    "ast_hash": "60dc5e8861d0234289124572e08f0c51",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/scripts/verify_results.py": {
+    "mtime": 1786991325.0,
+    "ast_hash": "5ef7612756de463240adcf71b48dffd2",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/descriptor13.json": {
+    "mtime": 1787060564.0,
+    "ast_hash": "1531037b4366b5faffffe84c64d1814f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/gmolai.json": {
+    "mtime": 1787060453.0,
+    "ast_hash": "df4c9929bb1a180c10a0f38df66108f6",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/kermt_v2.json": {
+    "mtime": 1787061034.0,
+    "ast_hash": "0f9e6c35d6668088fcbca8126d2f9580",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/molai.json": {
+    "mtime": 1787060600.0,
+    "ast_hash": "60e8255a43fc3bb70b778852dca4a56e",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/molclr_gin.json": {
+    "mtime": 1787060839.0,
+    "ast_hash": "f394b928af9cb4b82b27993688f779f8",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/molformer.json": {
+    "mtime": 1787060641.0,
+    "ast_hash": "afd81ab639aac2e55cc2c9cb966925cf",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/morgan.json": {
+    "mtime": 1787060491.0,
+    "ast_hash": "729618d3a0400400539787563001ca2a",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/morgan_count.json": {
+    "mtime": 1787060501.0,
+    "ast_hash": "c909021cf3a26196462c310de6f6575b",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/classyfire/smi_ted.json": {
+    "mtime": 1787060727.0,
+    "ast_hash": "5d9c94d151620c0fba5113c1deed0273",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/descriptor13.json": {
+    "mtime": 1787060682.0,
+    "ast_hash": "1bf0ef790de22010a981b488516849f8",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/gmolai.json": {
+    "mtime": 1787060580.0,
+    "ast_hash": "9bc94c932f1b14f7277c7909f0701dbe",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/kermt_v2.json": {
+    "mtime": 1787061267.0,
+    "ast_hash": "ff6b934d2636ce2f5a915913be929332",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/molai.json": {
+    "mtime": 1787060618.0,
+    "ast_hash": "26f15d2594613a408a0d0353b91f63ef",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/molclr_gin.json": {
+    "mtime": 1787060882.0,
+    "ast_hash": "3bd8ea1b7807ec30049129e80ec342d6",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/molformer.json": {
+    "mtime": 1787060666.0,
+    "ast_hash": "9209cba7f08280c4975107fdc04562fd",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/morgan.json": {
+    "mtime": 1787060577.0,
+    "ast_hash": "ae6e0f4c126a8c5233d657a77a505a6e",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/morgan_count.json": {
+    "mtime": 1787060591.0,
+    "ast_hash": "b5c5864d44b8f3c75e1f51ea6106c71b",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/embeddings/qmugs/smi_ted.json": {
+    "mtime": 1787060805.0,
+    "ast_hash": "a6e7ecb7b13f24041ba6ea03df82a8ca",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/kermt_v2-classyfire.json": {
+    "mtime": 1787060011.0,
+    "ast_hash": "f809b3f86cb4c39a7d800b99407ab3b0",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/kermt_v2-qmugs_060000.json": {
+    "mtime": 1787060021.0,
+    "ast_hash": "6b4f1e6eb69d51859031b7e8c33b090a",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/molai-classyfire.json": {
+    "mtime": 1787060013.0,
+    "ast_hash": "d9ce1fed7f7dba1741cf45e3d7f5f220",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/molai-qmugs_060000.json": {
+    "mtime": 1787060026.0,
+    "ast_hash": "8da32dc8cdf359b753b10edfd7b2c8f9",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/molclr_gin-classyfire.json": {
+    "mtime": 1787060045.0,
+    "ast_hash": "92f5abb1cfd06681e055a34716b234a3",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/molclr_gin-qmugs_060000.json": {
+    "mtime": 1787060084.0,
+    "ast_hash": "4797951c80090a9fd1a28b4e2ffbb158",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/molformer-classyfire.json": {
+    "mtime": 1787060015.0,
+    "ast_hash": "87b2f36913e531aff52026b80e58ff3a",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/molformer-qmugs_060000.json": {
+    "mtime": 1787060031.0,
+    "ast_hash": "af10093b5dea4f57291237cf975fd4d2",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/morgan-classyfire.json": {
+    "mtime": 1787060006.0,
+    "ast_hash": "20537aab90a5b5674b027bc482a2dc0e",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/morgan-qmugs_060000.json": {
+    "mtime": 1787060013.0,
+    "ast_hash": "b31e9d7af819a77cebb71ed243f0d0fb",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/smi_ted-classyfire.json": {
+    "mtime": 1787060028.0,
+    "ast_hash": "f43c0f40e500f53eea5a131fdc5b0014",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/artifacts/screens/smi_ted-qmugs_060000.json": {
+    "mtime": 1787060055.0,
+    "ast_hash": "388a180beaca5638f64a97d7326ee2b8",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/classyfire_preparation.json": {
+    "mtime": 1787059082.0,
+    "ast_hash": "cbc9c45456a329a28ec14bfea9db9c2e",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/container_packages.json": {
+    "mtime": 1787062801.0,
+    "ast_hash": "525de1a5f3c283494e3db1ccd433bb7f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/coverage_accounting.json": {
+    "mtime": 1787061304.0,
+    "ast_hash": "839ffaf8691b926078c8518a15587705",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-descriptor13-classyfire.json": {
+    "mtime": 1787060567.0,
+    "ast_hash": "67da4ae243b55bd5be95bbb04e2efff8",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-descriptor13-qmugs.json": {
+    "mtime": 1787060686.0,
+    "ast_hash": "72c5899dbff7e3072e91aff1419975eb",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-gmolai-classyfire.json": {
+    "mtime": 1787060584.0,
+    "ast_hash": "2d7dcbf1b205f0c48714b887c638050d",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-gmolai-qmugs.json": {
+    "mtime": 1787060585.0,
+    "ast_hash": "cb31c5e079e48f2e3727a9515687a66f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-kermt_v2-classyfire.json": {
+    "mtime": 1787061046.0,
+    "ast_hash": "c7d881657e4f06c9036ec937bcefab9c",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-kermt_v2-qmugs.json": {
+    "mtime": 1787061277.0,
+    "ast_hash": "959b180b2e3b097272d1243900d43965",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-molai-classyfire.json": {
+    "mtime": 1787060603.0,
+    "ast_hash": "a9d5da54b16f682d3953c20ea061748b",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-molai-qmugs.json": {
+    "mtime": 1787060620.0,
+    "ast_hash": "4ed76f16b995cb491e7a4fb17d757099",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-molclr_gin-classyfire.json": {
+    "mtime": 1787060841.0,
+    "ast_hash": "410837bb3c5906043a7bc797cd15cddb",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-molclr_gin-qmugs.json": {
+    "mtime": 1787060884.0,
+    "ast_hash": "114944749fc724608f68a5acefbe6b41",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-molformer-classyfire.json": {
+    "mtime": 1787060643.0,
+    "ast_hash": "48c1737872e120f3c4b8ca6ee4d21aa9",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-molformer-qmugs.json": {
+    "mtime": 1787060668.0,
+    "ast_hash": "dc740330cd203a85d4cc3acf3819994a",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-morgan-classyfire.json": {
+    "mtime": 1787060565.0,
+    "ast_hash": "0679150cc437fefa3d0ebea1234db1ad",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-morgan-qmugs.json": {
+    "mtime": 1787060683.0,
+    "ast_hash": "b7acd2c659ae7446696dbd98d44cc0b3",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-morgan_count-classyfire.json": {
+    "mtime": 1787060567.0,
+    "ast_hash": "7208f52b49ce65bc4c80166989dc7450",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-morgan_count-qmugs.json": {
+    "mtime": 1787060686.0,
+    "ast_hash": "0019724e29cd1c4ca974c07e54918566",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-smi_ted-classyfire.json": {
+    "mtime": 1787060729.0,
+    "ast_hash": "7ef0859c3bf2c92b7d131c9244f8cce2",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/embedding-smi_ted-qmugs.json": {
+    "mtime": 1787060807.0,
+    "ast_hash": "d510ab30cdd94d54b5ff5d38f01bf4fe",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/figure_manifest.json": {
+    "mtime": 1787063162.0,
+    "ast_hash": "3bb7b0b4775dc4590468acbae9e8f011",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/preflight.json": {
+    "mtime": 1787060355.0,
+    "ast_hash": "a1125703bd8db16adbfde26dd055ddcb",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/pretraining_exposure.json": {
+    "mtime": 1787061226.0,
+    "ast_hash": "aebbc3f2017c305cb58b2f6a549df6df",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/protocol_amendment_A001.json": {
+    "mtime": 1787060278.0,
+    "ast_hash": "dc89e688c4c8f6f7e23d6b505caefd92",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/qmugs_preparation.json": {
+    "mtime": 1787059882.0,
+    "ast_hash": "98afa1c03e56acadb7297ceaacf31e6d",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/software_versions.json": {
+    "mtime": 1787063451.0,
+    "ast_hash": "d936f63fa8d9703603b5a73d41b7aefe",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/verification.json": {
+    "mtime": 1787063436.0,
+    "ast_hash": "58daab372b6f0d9345bc8d0f43bf7d94",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/inputs/provenance/zenodo-record-18682051.json": {
+    "mtime": 1787057796.0,
+    "ast_hash": "deeb1ddccfe6bd0c2a9d64f8942dbd79",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/protocol.json": {
+    "mtime": 1787060278.0,
+    "ast_hash": "f609de1970037ff4973e94bf33099b7b",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/__init__.py": {
+    "mtime": 1787057753.0,
+    "ast_hash": "dab069e7faf89bb30aa5f18c6f48d939",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/adapter.py": {
+    "mtime": 1787058848.0,
+    "ast_hash": "488537c675e9d7adbbe6d78d7ca34b50",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/assemble_common.py": {
+    "mtime": 1787060278.0,
+    "ast_hash": "63e18f8ecf70ce2c9efe9c4c575a5cfc",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/audit_exposure.py": {
+    "mtime": 1787059797.0,
+    "ast_hash": "883f56c370c8ea3a2ebb987a127e979f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/benchmark_io.py": {
+    "mtime": 1787058595.0,
+    "ast_hash": "bb2db1747d26fdc4fb6412e127e43d88",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/collect_container_versions.py": {
+    "mtime": 1787062768.0,
+    "ast_hash": "ff809ce781fd112a2e79388903d59ef7",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/consolidate_coverage.py": {
+    "mtime": 1787060831.0,
+    "ast_hash": "1cbf95ee39c450841b288737f5a1c3c0",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/diagnostic_adapter.py": {
+    "mtime": 1787058848.0,
+    "ast_hash": "f1d31b68f9df7d93f8c61c57bdc2f96d",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/evaluate_property_model.py": {
+    "mtime": 1787059488.0,
+    "ast_hash": "f9e2dd546133476db984087661b10d18",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/evaluate_structural_model.py": {
+    "mtime": 1787059266.0,
+    "ast_hash": "ecdcc1171be50bea373f7868e31ec7bd",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/finalize.py": {
+    "mtime": 1787060178.0,
+    "ast_hash": "ef6fd42852137db65ef3452dd313ff7f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/gmolai_adapter.py": {
+    "mtime": 1787060405.0,
+    "ast_hash": "0d58d02b9e92c2740751cd04ec62b3fb",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/make_figures.py": {
+    "mtime": 1787063142.0,
+    "ast_hash": "31e37728eac8eaee334ea057ae852142",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/make_pca_source.py": {
+    "mtime": 1787059700.0,
+    "ast_hash": "3b4c4d270390f840bbf3ece6d963e700",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/make_qmugs_attempt.py": {
+    "mtime": 1787058978.0,
+    "ast_hash": "4d473f91db4ef99cae169ba3e3401174",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/metrics_common.py": {
+    "mtime": 1787059266.0,
+    "ast_hash": "2253d423d52cef83956d20f2c30cea4f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/preflight.py": {
+    "mtime": 1787060071.0,
+    "ast_hash": "c5a427c2947948fdcd7694ec40d4f860",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/prepare_data.py": {
+    "mtime": 1787058595.0,
+    "ast_hash": "f11d8ec31ab53d0a78e5a1335a5644df",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/prepare_property_reference.py": {
+    "mtime": 1787059488.0,
+    "ast_hash": "2640a604b8fda84c223bd67bd12193c2",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/render_results.py": {
+    "mtime": 1787063230.0,
+    "ast_hash": "e38983774fab7ad43a1cf4bc6e9c9202",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/summarize_property.py": {
+    "mtime": 1787059488.0,
+    "ast_hash": "f16f34492a8668f9c56fc7400dc5375c",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/summarize_structural.py": {
+    "mtime": 1787059331.0,
+    "ast_hash": "ccac858ec6b1e0e1681be5bea1b485a6",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/validate_embedding.py": {
+    "mtime": 1787058978.0,
+    "ast_hash": "444cb4e41a26514d71853829681366e3",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/scripts/verify_results.py": {
+    "mtime": 1787063342.0,
+    "ast_hash": "241c2d7725f6019794fcbc033a7dcb3f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/COMPLETE.json": {
+    "mtime": 1787063457.0,
+    "ast_hash": "525aea0e23f3a91f4a56830a319e6300",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/classyfire_common.json": {
+    "mtime": 1787060288.0,
+    "ast_hash": "9ed3f449d5e402fc78165da219a5042d",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/pca_visualization.json": {
+    "mtime": 1787062833.0,
+    "ast_hash": "db3354b16dcbe6bbd8a6259440f580ec",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/descriptor13.json": {
+    "mtime": 1787062245.0,
+    "ast_hash": "f85e94738aa33c34830753cc917b3bf4",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/gmolai.json": {
+    "mtime": 1787062168.0,
+    "ast_hash": "6d68a33d2643ada0d02f7ec765394b28",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/kermt_v2.json": {
+    "mtime": 1787062235.0,
+    "ast_hash": "6ff34b98f3b3f3789916a726c620127f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/molai.json": {
+    "mtime": 1787062193.0,
+    "ast_hash": "dd095f363cb9223d9261e01957884ad4",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/molclr_gin.json": {
+    "mtime": 1787062225.0,
+    "ast_hash": "fc7040b929c7d23ed4db73cd3caefa9b",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/molformer.json": {
+    "mtime": 1787062204.0,
+    "ast_hash": "8e8ebb037af8ec5e7275df5792f166eb",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/morgan.json": {
+    "mtime": 1787062183.0,
+    "ast_hash": "f0ca4d22cd6bff569978769ccf0b8cb8",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/morgan_count.json": {
+    "mtime": 1787062266.0,
+    "ast_hash": "5f0692734188d2e7db480c4c6f65b1f5",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property/smi_ted.json": {
+    "mtime": 1787062215.0,
+    "ast_hash": "ae2b9228d7625e42d5718165afe0be21",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property_reference.json": {
+    "mtime": 1787061335.0,
+    "ast_hash": "b7573d383f3a48e237deaa1c17c08d6d",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/property_summary.json": {
+    "mtime": 1787062344.0,
+    "ast_hash": "224a29bd60406d9fc336182693b49705",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/qmugs_common.json": {
+    "mtime": 1787060289.0,
+    "ast_hash": "125b10c80bc63790b4ecd13a337b5181",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/descriptor13.json": {
+    "mtime": 1787061369.0,
+    "ast_hash": "85458d3a22f1a1ab505d3c8b9ef62a69",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/gmolai.json": {
+    "mtime": 1787061425.0,
+    "ast_hash": "4d2ffff7b51b89f5b06438e274fcf232",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/kermt_v2.json": {
+    "mtime": 1787062059.0,
+    "ast_hash": "7a9bd405b8adc735d21c52b7b6946be3",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/molai.json": {
+    "mtime": 1787061726.0,
+    "ast_hash": "85a5c67858f7fdec0de0c0dcfd8f8f40",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/molclr_gin.json": {
+    "mtime": 1787061999.0,
+    "ast_hash": "9f650d71eebaa8e25bd6cb28de2bcf5e",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/molformer.json": {
+    "mtime": 1787061828.0,
+    "ast_hash": "e204b03568ff90ef898d0aacc6956b0d",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/morgan.json": {
+    "mtime": 1787061640.0,
+    "ast_hash": "782318055c1c8421578bfae68575846d",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/morgan_count.json": {
+    "mtime": 1787062513.0,
+    "ast_hash": "846fcbe470911c2e6bb9fc55a958ab24",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural/smi_ted.json": {
+    "mtime": 1787061926.0,
+    "ast_hash": "ffa6b998977b5c1b3c9a3fde949a0c7a",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/state/structural_summary.json": {
+    "mtime": 1787062803.0,
+    "ast_hash": "b83cbbd66e96ebc4b89232733ca1b943",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/PROTOCOL.md": {
+    "mtime": 1786985760.0,
+    "ast_hash": "a1ccb28cd63694778468a5b59e2e9fa9",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/README.md": {
+    "mtime": 1786985760.0,
+    "ast_hash": "dffffbd3f565a8514dacf5d4e3566afa",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/RESULTS.md": {
+    "mtime": 1786988774.0,
+    "ast_hash": "bb0850d3015f97521bd84e2dfc234f57",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/PROTOCOL.md": {
+    "mtime": 1786991325.0,
+    "ast_hash": "0861067a37e86c0dff9ea0f0142241dd",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/README.md": {
+    "mtime": 1786991325.0,
+    "ast_hash": "49c133f8dcc4dd1b6394a4c116caf95f",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/RESULTS.md": {
+    "mtime": 1786990979.0,
+    "ast_hash": "6adda3d11c943944617f5d91fc9630ba",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/PROTOCOL.md": {
+    "mtime": 1787060278.0,
+    "ast_hash": "2c23eb5629ee2ab3c54dcc1ad7c9c999",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/README.md": {
+    "mtime": 1787062768.0,
+    "ast_hash": "63f3b3cb14755db2aab7d3520abaf656",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/RESULTS.md": {
+    "mtime": 1787063261.0,
+    "ast_hash": "404f8e5bbb8e822ca7ea9df67a850184",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/container_packages/base.txt": {
+    "mtime": 1787062781.0,
+    "ast_hash": "f4bb699dc116012525e114f0158de816",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/container_packages/kermt_v2.txt": {
+    "mtime": 1787062801.0,
+    "ast_hash": "8ea029ae9e96bd4933a5150cb5470b10",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/container_packages/molai.txt": {
+    "mtime": 1787062785.0,
+    "ast_hash": "f4bb699dc116012525e114f0158de816",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/container_packages/molclr_gin.txt": {
+    "mtime": 1787062797.0,
+    "ast_hash": "f4bb699dc116012525e114f0158de816",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/container_packages/molformer.txt": {
+    "mtime": 1787062789.0,
+    "ast_hash": "f4bb699dc116012525e114f0158de816",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/audit/container_packages/smi_ted.txt": {
+    "mtime": 1787062792.0,
+    "ast_hash": "f4bb699dc116012525e114f0158de816",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/inputs/provenance/QMugs-README.md": {
+    "mtime": 1787057801.0,
+    "ast_hash": "5d8547c1732f6a61e7c2e65a704fcddf",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260818_074437_explore_the_repo_and_fully_understanf_it__then_i_a.md": {
+    "mtime": 1787039077.0,
+    "ast_hash": "e4d82a3ca2db8a67137f9b9d98059d51",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_classyfire_main_metrics.pdf": {
+    "mtime": 1787063155.0,
+    "ast_hash": "6cc96f6ddadc158b0e67df8642460b31",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_classyfire_pca.pdf": {
+    "mtime": 1787063156.0,
+    "ast_hash": "47c3e19fdcb715242f82e0ef5a84a2b1",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_qmugs_main_metrics.pdf": {
+    "mtime": 1787063157.0,
+    "ast_hash": "e0f778f8ab8af287ba8a4b2d47f5e255",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_qmugs_pca_homo_lumo_gap.pdf": {
+    "mtime": 1787063159.0,
+    "ast_hash": "8a1c0af39589f0787789228313b2e503",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_qmugs_property_deviations.pdf": {
+    "mtime": 1787063158.0,
+    "ast_hash": "647ea30f03ee6456ae24b2ac47836900",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_count_morgan_descriptor_diagnostics.pdf": {
+    "mtime": 1787063161.0,
+    "ast_hash": "b5270352cc0a6df2eb29c354b7b7632f",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_coverage.pdf": {
+    "mtime": 1787063160.0,
+    "ast_hash": "3de09d406036570a883631a384a1b8ea",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_morgan_native_distance.pdf": {
+    "mtime": 1787063161.0,
+    "ast_hash": "c846e896de0e17ff8b94a342d78d5a94",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_qmugs_heavy_atom_deciles.pdf": {
+    "mtime": 1787063162.0,
+    "ast_hash": "efccc3391ecae67577295afe9a61e1b0",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/candidate_quality_and_availability.png": {
+    "mtime": 1786988773.0,
+    "ast_hash": "dca2a951ad5e9858ada0d1263acbc686",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/candidate_quality_and_availability.svg": {
+    "mtime": 1786988773.0,
+    "ast_hash": "289de1c3d8a64dff0a55d7532c111f63",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/exact_identity_recovery.png": {
+    "mtime": 1786988773.0,
+    "ast_hash": "af083c8fe286fa8907f554ee68ac98fc",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/exact_identity_recovery.svg": {
+    "mtime": 1786988773.0,
+    "ast_hash": "c83a7944766a98c906d500058120100d",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/reranked_latent_metrics.png": {
+    "mtime": 1786988774.0,
+    "ast_hash": "a2e5797496baa70123438a775363b144",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/reranked_latent_metrics.svg": {
+    "mtime": 1786988774.0,
+    "ast_hash": "1e5acb3f9a94ca0cae943d99cd3ececb",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/reranking_effect.png": {
+    "mtime": 1786988774.0,
+    "ast_hash": "b84a9539d20d87515b7340e7f09fd210",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/reranking_effect.svg": {
+    "mtime": 1786988774.0,
+    "ast_hash": "8f99e6713001c197e21002a3991ff0f6",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/top1_structural_fidelity.png": {
+    "mtime": 1786988773.0,
+    "ast_hash": "a1b5822e70394a158f29452d75761171",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-02d-generation-scaling/extra-step-02b-style/outputs/figures/top1_structural_fidelity.svg": {
+    "mtime": 1786988773.0,
+    "ast_hash": "813d442536b849d637a0078092afe86a",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/figures/batch_throughput_trace.png": {
+    "mtime": 1786990979.0,
+    "ast_hash": "087a5f8e5c27f0f0699e3b73ca0ba1e3",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/figures/batch_throughput_trace.svg": {
+    "mtime": 1786990979.0,
+    "ast_hash": "a603b175f9d6e02aef363be851b73d38",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/figures/decoder_throughput.png": {
+    "mtime": 1786990979.0,
+    "ast_hash": "c3c4ff73bbf2f4265416d74f21a9ea35",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/figures/decoder_throughput.svg": {
+    "mtime": 1786990979.0,
+    "ast_hash": "9bf9fa59761ccd6ba8af79dd9f42f907",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/figures/per_seed_valid_unique_yield.png": {
+    "mtime": 1786990979.0,
+    "ast_hash": "eb24080927be2e6b56b2f3b3d1d5dafe",
+    "semantic_hash": ""
+  },
+  "deriv-gen/step-03-decoder-speed/figures/per_seed_valid_unique_yield.svg": {
+    "mtime": 1786990979.0,
+    "ast_hash": "8852bf0629e19f8e2a537ed3aab002c6",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_classyfire_main_metrics.png": {
+    "mtime": 1787063155.0,
+    "ast_hash": "192c0883dc2d4667b7124eece32f4278",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_classyfire_pca.png": {
+    "mtime": 1787063157.0,
+    "ast_hash": "d5c85d6fb58be925c7ac23c72b64e66e",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_qmugs_main_metrics.png": {
+    "mtime": 1787063157.0,
+    "ast_hash": "4571edb53fffc0f96a52634914f94d7b",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_qmugs_pca_homo_lumo_gap.png": {
+    "mtime": 1787063160.0,
+    "ast_hash": "73a05ab2065c920f6cf278a9547090db",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_qmugs_property_deviations.png": {
+    "mtime": 1787063158.0,
+    "ast_hash": "9d473ecd56a0a1832ce320bc5fabbe52",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_count_morgan_descriptor_diagnostics.png": {
+    "mtime": 1787063162.0,
+    "ast_hash": "dcad527102b2600b485c8b4e6e80dac1",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_coverage.png": {
+    "mtime": 1787063161.0,
+    "ast_hash": "c00bc9ca5ea0b412e5e1097ed4cad095",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_morgan_native_distance.png": {
+    "mtime": 1787063161.0,
+    "ast_hash": "28d1b68bcd6e846f300b7f134993d489",
+    "semantic_hash": ""
+  },
+  "extra-benchmark/clustering/outputs/figures/figure_si_qmugs_heavy_atom_deciles.png": {
+    "mtime": 1787063162.0,
+    "ast_hash": "e546cd104b0d78cf40b331cea6076824",
     "semantic_hash": ""
   }
 }

@@ -1,0 +1,25 @@
+{
+  "all_model_common_before_truncation": 59176,
+  "attempted_rows": 60000,
+  "benchmark": "qmugs",
+  "coverage_failure": false,
+  "coverage_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/qmugs_coverage.csv",
+  "coverage_table_sha256": "24930de22971403fcbfb283a62d37f5c325038b44e0eea4d8de310935290e500",
+  "final_identity_sha256": "6de5c4f439963b42b2eb6b86d7027e657f36422c5e4e1e18b171034777558041",
+  "final_panel": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/inputs/prepared/qmugs_common.tsv",
+  "final_panel_sha256": "0f3bdbc60aeea109558dfd95e9f6ac3a6defc343706089ae9dbc4fba8f62fe28",
+  "final_rows": 50000,
+  "schema_version": 1,
+  "screen_reports": {
+    "kermt_v2": "2c19d5b4c4b48580a4c9ffc845f7a83f8bc14529b1981c1b314e49f29930a900",
+    "molai": "2c19d5b4c4b48580a4c9ffc845f7a83f8bc14529b1981c1b314e49f29930a900",
+    "molclr_gin": "2c19d5b4c4b48580a4c9ffc845f7a83f8bc14529b1981c1b314e49f29930a900",
+    "molformer": "2c19d5b4c4b48580a4c9ffc845f7a83f8bc14529b1981c1b314e49f29930a900",
+    "morgan": "2c19d5b4c4b48580a4c9ffc845f7a83f8bc14529b1981c1b314e49f29930a900",
+    "smi_ted": "2c19d5b4c4b48580a4c9ffc845f7a83f8bc14529b1981c1b314e49f29930a900"
+  },
+  "source_panel": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/inputs/prepared/qmugs_attempt_060000.tsv",
+  "source_panel_sha256": "2c19d5b4c4b48580a4c9ffc845f7a83f8bc14529b1981c1b314e49f29930a900",
+  "status": "ok",
+  "target_rows": 50000
+}

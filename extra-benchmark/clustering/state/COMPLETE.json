@@ -1,0 +1,12 @@
+{
+  "inference_only": true,
+  "manifest_files": 236,
+  "protocol_sha256": "67ae8be09c78a4cb5351f6352f4d50317cba5b4505179444e2654745b4d5fc01",
+  "schema_version": 1,
+  "sha256_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/SHA256SUMS",
+  "sha256_manifest_sha256": "e00b0d47e96fd7c2c9e6f4db312f02874bffb222a09a348bb9605fee14f2cfa2",
+  "software_versions_sha256": "bf4cef640dc2139cb268c3609c07562ee79526f22c75e387b9a76b8f2ce2a44d",
+  "status": "complete",
+  "timestamp_utc": "2026-08-18T14:39:40.546852+00:00",
+  "verification_sha256": "df00880e2f43b4d79aebe1b782cf0fabca91d0b09821d5f7a6141f4a4ce87514"
+}

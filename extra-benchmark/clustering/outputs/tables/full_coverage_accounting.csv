@@ -1,0 +1,183 @@
+benchmark,subclass,model,source_rows,chemistry_policy_accepted_unique,chemistry_rejected_or_removed,duplicate_occurrences_removed,conflicting_identities_removed,adapter_attempted,adapter_accepted,adapter_rejected,all_model_common_before_balance,frozen_final_common,adapter_accepted_not_in_final_common,nonfinite_vectors_on_final_common,zero_norm_vectors_on_final_common
+classyfire,1-benzopyrans,gmolai,3000,2998,2,0,0,2998,2998,0,2878,1448,1550,0,0
+classyfire,1-benzopyrans,morgan,3000,2998,2,0,0,2998,2998,0,2878,1448,1550,0,0
+classyfire,1-benzopyrans,molai,3000,2998,2,0,0,2998,2878,120,2878,1448,1430,0,0
+classyfire,1-benzopyrans,molformer,3000,2998,2,0,0,2998,2998,0,2878,1448,1550,0,0
+classyfire,1-benzopyrans,smi_ted,3000,2998,2,0,0,2998,2998,0,2878,1448,1550,0,0
+classyfire,1-benzopyrans,molclr_gin,3000,2998,2,0,0,2998,2998,0,2878,1448,1550,0,0
+classyfire,1-benzopyrans,kermt_v2,3000,2998,2,0,0,2998,2998,0,2878,1448,1550,0,0
+classyfire,Amines,gmolai,3000,2984,16,0,0,2984,2984,0,2923,1448,1536,0,0
+classyfire,Amines,morgan,3000,2984,16,0,0,2984,2984,0,2923,1448,1536,0,0
+classyfire,Amines,molai,3000,2984,16,0,0,2984,2923,61,2923,1448,1475,0,0
+classyfire,Amines,molformer,3000,2984,16,0,0,2984,2983,1,2923,1448,1535,0,0
+classyfire,Amines,smi_ted,3000,2984,16,0,0,2984,2983,1,2923,1448,1535,0,0
+classyfire,Amines,molclr_gin,3000,2984,16,0,0,2984,2984,0,2923,1448,1536,0,0
+classyfire,Amines,kermt_v2,3000,2984,16,0,0,2984,2984,0,2923,1448,1536,0,0
+classyfire,"Amino acids, peptides, and analogues",gmolai,3000,2992,8,0,0,2992,2992,0,2728,1448,1544,0,0
+classyfire,"Amino acids, peptides, and analogues",morgan,3000,2992,8,0,0,2992,2992,0,2728,1448,1544,0,0
+classyfire,"Amino acids, peptides, and analogues",molai,3000,2992,8,0,0,2992,2728,264,2728,1448,1280,0,0
+classyfire,"Amino acids, peptides, and analogues",molformer,3000,2992,8,0,0,2992,2974,18,2728,1448,1526,0,0
+classyfire,"Amino acids, peptides, and analogues",smi_ted,3000,2992,8,0,0,2992,2974,18,2728,1448,1526,0,0
+classyfire,"Amino acids, peptides, and analogues",molclr_gin,3000,2992,8,0,0,2992,2992,0,2728,1448,1544,0,0
+classyfire,"Amino acids, peptides, and analogues",kermt_v2,3000,2992,8,0,0,2992,2992,0,2728,1448,1544,0,0
+classyfire,Anilides,gmolai,3000,2992,8,0,0,2992,2992,0,2963,1448,1544,0,0
+classyfire,Anilides,morgan,3000,2992,8,0,0,2992,2992,0,2963,1448,1544,0,0
+classyfire,Anilides,molai,3000,2992,8,0,0,2992,2963,29,2963,1448,1515,0,0
+classyfire,Anilides,molformer,3000,2992,8,0,0,2992,2992,0,2963,1448,1544,0,0
+classyfire,Anilides,smi_ted,3000,2992,8,0,0,2992,2992,0,2963,1448,1544,0,0
+classyfire,Anilides,molclr_gin,3000,2992,8,0,0,2992,2992,0,2963,1448,1544,0,0
+classyfire,Anilides,kermt_v2,3000,2992,8,0,0,2992,2992,0,2963,1448,1544,0,0
+classyfire,Benzodiazines,gmolai,3000,2999,1,0,0,2999,2999,0,2995,1448,1551,0,0
+classyfire,Benzodiazines,morgan,3000,2999,1,0,0,2999,2999,0,2995,1448,1551,0,0
+classyfire,Benzodiazines,molai,3000,2999,1,0,0,2999,2995,4,2995,1448,1547,0,0
+classyfire,Benzodiazines,molformer,3000,2999,1,0,0,2999,2999,0,2995,1448,1551,0,0
+classyfire,Benzodiazines,smi_ted,3000,2999,1,0,0,2999,2999,0,2995,1448,1551,0,0
+classyfire,Benzodiazines,molclr_gin,3000,2999,1,0,0,2999,2999,0,2995,1448,1551,0,0
+classyfire,Benzodiazines,kermt_v2,3000,2999,1,0,0,2999,2999,0,2995,1448,1551,0,0
+classyfire,Benzoic acids and derivatives,gmolai,3000,2992,8,0,0,2992,2992,0,2946,1448,1544,0,0
+classyfire,Benzoic acids and derivatives,morgan,3000,2992,8,0,0,2992,2992,0,2946,1448,1544,0,0
+classyfire,Benzoic acids and derivatives,molai,3000,2992,8,0,0,2992,2946,46,2946,1448,1498,0,0
+classyfire,Benzoic acids and derivatives,molformer,3000,2992,8,0,0,2992,2992,0,2946,1448,1544,0,0
+classyfire,Benzoic acids and derivatives,smi_ted,3000,2992,8,0,0,2992,2992,0,2946,1448,1544,0,0
+classyfire,Benzoic acids and derivatives,molclr_gin,3000,2992,8,0,0,2992,2992,0,2946,1448,1544,0,0
+classyfire,Benzoic acids and derivatives,kermt_v2,3000,2992,8,0,0,2992,2992,0,2946,1448,1544,0,0
+classyfire,Carbohydrates and carbohydrate conjugates,gmolai,3000,2994,6,0,0,2994,2994,0,2566,1448,1546,0,0
+classyfire,Carbohydrates and carbohydrate conjugates,morgan,3000,2994,6,0,0,2994,2994,0,2566,1448,1546,0,0
+classyfire,Carbohydrates and carbohydrate conjugates,molai,3000,2994,6,0,0,2994,2566,428,2566,1448,1118,0,0
+classyfire,Carbohydrates and carbohydrate conjugates,molformer,3000,2994,6,0,0,2994,2979,15,2566,1448,1531,0,0
+classyfire,Carbohydrates and carbohydrate conjugates,smi_ted,3000,2994,6,0,0,2994,2979,15,2566,1448,1531,0,0
+classyfire,Carbohydrates and carbohydrate conjugates,molclr_gin,3000,2994,6,0,0,2994,2994,0,2566,1448,1546,0,0
+classyfire,Carbohydrates and carbohydrate conjugates,kermt_v2,3000,2994,6,0,0,2994,2994,0,2566,1448,1546,0,0
+classyfire,Carbonyl compounds,gmolai,3000,2999,1,0,0,2999,2999,0,2968,1448,1551,0,0
+classyfire,Carbonyl compounds,morgan,3000,2999,1,0,0,2999,2999,0,2968,1448,1551,0,0
+classyfire,Carbonyl compounds,molai,3000,2999,1,0,0,2999,2968,31,2968,1448,1520,0,0
+classyfire,Carbonyl compounds,molformer,3000,2999,1,0,0,2999,2999,0,2968,1448,1551,0,0
+classyfire,Carbonyl compounds,smi_ted,3000,2999,1,0,0,2999,2999,0,2968,1448,1551,0,0
+classyfire,Carbonyl compounds,molclr_gin,3000,2999,1,0,0,2999,2999,0,2968,1448,1551,0,0
+classyfire,Carbonyl compounds,kermt_v2,3000,2999,1,0,0,2999,2999,0,2968,1448,1551,0,0
+classyfire,Diphenylmethanes,gmolai,3000,2999,1,0,0,2999,2999,0,2928,1448,1551,0,0
+classyfire,Diphenylmethanes,morgan,3000,2999,1,0,0,2999,2999,0,2928,1448,1551,0,0
+classyfire,Diphenylmethanes,molai,3000,2999,1,0,0,2999,2928,71,2928,1448,1480,0,0
+classyfire,Diphenylmethanes,molformer,3000,2999,1,0,0,2999,2999,0,2928,1448,1551,0,0
+classyfire,Diphenylmethanes,smi_ted,3000,2999,1,0,0,2999,2999,0,2928,1448,1551,0,0
+classyfire,Diphenylmethanes,molclr_gin,3000,2999,1,0,0,2999,2999,0,2928,1448,1551,0,0
+classyfire,Diphenylmethanes,kermt_v2,3000,2999,1,0,0,2999,2999,0,2928,1448,1551,0,0
+classyfire,Diterpenoids,gmolai,3000,3000,0,0,0,3000,3000,0,2916,1448,1552,0,0
+classyfire,Diterpenoids,morgan,3000,3000,0,0,0,3000,3000,0,2916,1448,1552,0,0
+classyfire,Diterpenoids,molai,3000,3000,0,0,0,3000,2916,84,2916,1448,1468,0,0
+classyfire,Diterpenoids,molformer,3000,3000,0,0,0,3000,3000,0,2916,1448,1552,0,0
+classyfire,Diterpenoids,smi_ted,3000,3000,0,0,0,3000,3000,0,2916,1448,1552,0,0
+classyfire,Diterpenoids,molclr_gin,3000,3000,0,0,0,3000,3000,0,2916,1448,1552,0,0
+classyfire,Diterpenoids,kermt_v2,3000,3000,0,0,0,3000,3000,0,2916,1448,1552,0,0
+classyfire,Ethers,gmolai,3000,2998,2,0,0,2998,2998,0,2805,1448,1550,0,0
+classyfire,Ethers,morgan,3000,2998,2,0,0,2998,2998,0,2805,1448,1550,0,0
+classyfire,Ethers,molai,3000,2998,2,0,0,2998,2805,193,2805,1448,1357,0,0
+classyfire,Ethers,molformer,3000,2998,2,0,0,2998,2998,0,2805,1448,1550,0,0
+classyfire,Ethers,smi_ted,3000,2998,2,0,0,2998,2998,0,2805,1448,1550,0,0
+classyfire,Ethers,molclr_gin,3000,2998,2,0,0,2998,2998,0,2805,1448,1550,0,0
+classyfire,Ethers,kermt_v2,3000,2998,2,0,0,2998,2998,0,2805,1448,1550,0,0
+classyfire,Fatty acid esters,gmolai,3000,3000,0,0,0,3000,3000,0,2961,1448,1552,0,0
+classyfire,Fatty acid esters,morgan,3000,3000,0,0,0,3000,3000,0,2961,1448,1552,0,0
+classyfire,Fatty acid esters,molai,3000,3000,0,0,0,3000,2961,39,2961,1448,1513,0,0
+classyfire,Fatty acid esters,molformer,3000,3000,0,0,0,3000,3000,0,2961,1448,1552,0,0
+classyfire,Fatty acid esters,smi_ted,3000,3000,0,0,0,3000,3000,0,2961,1448,1552,0,0
+classyfire,Fatty acid esters,molclr_gin,3000,3000,0,0,0,3000,3000,0,2961,1448,1552,0,0
+classyfire,Fatty acid esters,kermt_v2,3000,3000,0,0,0,3000,3000,0,2961,1448,1552,0,0
+classyfire,Fatty acids and conjugates,gmolai,3000,2993,7,0,0,2993,2993,0,2950,1448,1545,0,0
+classyfire,Fatty acids and conjugates,morgan,3000,2993,7,0,0,2993,2993,0,2950,1448,1545,0,0
+classyfire,Fatty acids and conjugates,molai,3000,2993,7,0,0,2993,2950,43,2950,1448,1502,0,0
+classyfire,Fatty acids and conjugates,molformer,3000,2993,7,0,0,2993,2993,0,2950,1448,1545,0,0
+classyfire,Fatty acids and conjugates,smi_ted,3000,2993,7,0,0,2993,2993,0,2950,1448,1545,0,0
+classyfire,Fatty acids and conjugates,molclr_gin,3000,2993,7,0,0,2993,2993,0,2950,1448,1545,0,0
+classyfire,Fatty acids and conjugates,kermt_v2,3000,2993,7,0,0,2993,2993,0,2950,1448,1545,0,0
+classyfire,Flavonoid glycosides,gmolai,3000,3000,0,0,0,3000,3000,0,2689,1448,1552,0,0
+classyfire,Flavonoid glycosides,morgan,3000,3000,0,0,0,3000,3000,0,2689,1448,1552,0,0
+classyfire,Flavonoid glycosides,molai,3000,3000,0,0,0,3000,2689,311,2689,1448,1241,0,0
+classyfire,Flavonoid glycosides,molformer,3000,3000,0,0,0,3000,2993,7,2689,1448,1545,0,0
+classyfire,Flavonoid glycosides,smi_ted,3000,3000,0,0,0,3000,2993,7,2689,1448,1545,0,0
+classyfire,Flavonoid glycosides,molclr_gin,3000,3000,0,0,0,3000,3000,0,2689,1448,1552,0,0
+classyfire,Flavonoid glycosides,kermt_v2,3000,3000,0,0,0,3000,3000,0,2689,1448,1552,0,0
+classyfire,Halobenzenes,gmolai,3000,2985,15,0,0,2985,2985,0,2855,1448,1537,0,0
+classyfire,Halobenzenes,morgan,3000,2985,15,0,0,2985,2985,0,2855,1448,1537,0,0
+classyfire,Halobenzenes,molai,3000,2985,15,0,0,2985,2855,130,2855,1448,1407,0,0
+classyfire,Halobenzenes,molformer,3000,2985,15,0,0,2985,2985,0,2855,1448,1537,0,0
+classyfire,Halobenzenes,smi_ted,3000,2985,15,0,0,2985,2985,0,2855,1448,1537,0,0
+classyfire,Halobenzenes,molclr_gin,3000,2985,15,0,0,2985,2985,0,2855,1448,1537,0,0
+classyfire,Halobenzenes,kermt_v2,3000,2985,15,0,0,2985,2985,0,2855,1448,1537,0,0
+classyfire,Monoterpenoids,gmolai,3000,2999,1,0,0,2999,2999,0,2958,1448,1551,0,0
+classyfire,Monoterpenoids,morgan,3000,2999,1,0,0,2999,2999,0,2958,1448,1551,0,0
+classyfire,Monoterpenoids,molai,3000,2999,1,0,0,2999,2958,41,2958,1448,1510,0,0
+classyfire,Monoterpenoids,molformer,3000,2999,1,0,0,2999,2999,0,2958,1448,1551,0,0
+classyfire,Monoterpenoids,smi_ted,3000,2999,1,0,0,2999,2999,0,2958,1448,1551,0,0
+classyfire,Monoterpenoids,molclr_gin,3000,2999,1,0,0,2999,2999,0,2958,1448,1551,0,0
+classyfire,Monoterpenoids,kermt_v2,3000,2999,1,0,0,2999,2999,0,2958,1448,1551,0,0
+classyfire,Piperazines,gmolai,3000,3000,0,0,0,3000,3000,0,2982,1448,1552,0,0
+classyfire,Piperazines,morgan,3000,3000,0,0,0,3000,3000,0,2982,1448,1552,0,0
+classyfire,Piperazines,molai,3000,3000,0,0,0,3000,2982,18,2982,1448,1534,0,0
+classyfire,Piperazines,molformer,3000,3000,0,0,0,3000,3000,0,2982,1448,1552,0,0
+classyfire,Piperazines,smi_ted,3000,3000,0,0,0,3000,3000,0,2982,1448,1552,0,0
+classyfire,Piperazines,molclr_gin,3000,3000,0,0,0,3000,3000,0,2982,1448,1552,0,0
+classyfire,Piperazines,kermt_v2,3000,3000,0,0,0,3000,3000,0,2982,1448,1552,0,0
+classyfire,Pyrazoles,gmolai,3000,2998,2,0,0,2998,2998,0,2986,1448,1550,0,0
+classyfire,Pyrazoles,morgan,3000,2998,2,0,0,2998,2998,0,2986,1448,1550,0,0
+classyfire,Pyrazoles,molai,3000,2998,2,0,0,2998,2986,12,2986,1448,1538,0,0
+classyfire,Pyrazoles,molformer,3000,2998,2,0,0,2998,2998,0,2986,1448,1550,0,0
+classyfire,Pyrazoles,smi_ted,3000,2998,2,0,0,2998,2998,0,2986,1448,1550,0,0
+classyfire,Pyrazoles,molclr_gin,3000,2998,2,0,0,2998,2998,0,2986,1448,1550,0,0
+classyfire,Pyrazoles,kermt_v2,3000,2998,2,0,0,2998,2998,0,2986,1448,1550,0,0
+classyfire,Pyridoindoles,gmolai,3000,3000,0,0,0,3000,3000,0,2997,1448,1552,0,0
+classyfire,Pyridoindoles,morgan,3000,3000,0,0,0,3000,3000,0,2997,1448,1552,0,0
+classyfire,Pyridoindoles,molai,3000,3000,0,0,0,3000,2997,3,2997,1448,1549,0,0
+classyfire,Pyridoindoles,molformer,3000,3000,0,0,0,3000,3000,0,2997,1448,1552,0,0
+classyfire,Pyridoindoles,smi_ted,3000,3000,0,0,0,3000,3000,0,2997,1448,1552,0,0
+classyfire,Pyridoindoles,molclr_gin,3000,3000,0,0,0,3000,3000,0,2997,1448,1552,0,0
+classyfire,Pyridoindoles,kermt_v2,3000,3000,0,0,0,3000,3000,0,2997,1448,1552,0,0
+classyfire,Pyrimidines and pyrimidine derivatives,gmolai,3000,2998,2,0,0,2998,2998,0,2965,1448,1550,0,0
+classyfire,Pyrimidines and pyrimidine derivatives,morgan,3000,2998,2,0,0,2998,2998,0,2965,1448,1550,0,0
+classyfire,Pyrimidines and pyrimidine derivatives,molai,3000,2998,2,0,0,2998,2965,33,2965,1448,1517,0,0
+classyfire,Pyrimidines and pyrimidine derivatives,molformer,3000,2998,2,0,0,2998,2998,0,2965,1448,1550,0,0
+classyfire,Pyrimidines and pyrimidine derivatives,smi_ted,3000,2998,2,0,0,2998,2998,0,2965,1448,1550,0,0
+classyfire,Pyrimidines and pyrimidine derivatives,molclr_gin,3000,2998,2,0,0,2998,2998,0,2965,1448,1550,0,0
+classyfire,Pyrimidines and pyrimidine derivatives,kermt_v2,3000,2998,2,0,0,2998,2998,0,2965,1448,1550,0,0
+classyfire,Sesquiterpenoids,gmolai,3000,3000,0,0,0,3000,3000,0,2920,1448,1552,0,0
+classyfire,Sesquiterpenoids,morgan,3000,3000,0,0,0,3000,3000,0,2920,1448,1552,0,0
+classyfire,Sesquiterpenoids,molai,3000,3000,0,0,0,3000,2920,80,2920,1448,1472,0,0
+classyfire,Sesquiterpenoids,molformer,3000,3000,0,0,0,3000,3000,0,2920,1448,1552,0,0
+classyfire,Sesquiterpenoids,smi_ted,3000,3000,0,0,0,3000,3000,0,2920,1448,1552,0,0
+classyfire,Sesquiterpenoids,molclr_gin,3000,3000,0,0,0,3000,3000,0,2920,1448,1552,0,0
+classyfire,Sesquiterpenoids,kermt_v2,3000,3000,0,0,0,3000,3000,0,2920,1448,1552,0,0
+classyfire,Steroidal glycosides,gmolai,3000,3000,0,0,0,3000,3000,0,1448,1448,1552,0,0
+classyfire,Steroidal glycosides,morgan,3000,3000,0,0,0,3000,3000,0,1448,1448,1552,0,0
+classyfire,Steroidal glycosides,molai,3000,3000,0,0,0,3000,1448,1552,1448,1448,0,0,0
+classyfire,Steroidal glycosides,molformer,3000,3000,0,0,0,3000,2991,9,1448,1448,1543,0,0
+classyfire,Steroidal glycosides,smi_ted,3000,3000,0,0,0,3000,2991,9,1448,1448,1543,0,0
+classyfire,Steroidal glycosides,molclr_gin,3000,3000,0,0,0,3000,3000,0,1448,1448,1552,0,0
+classyfire,Steroidal glycosides,kermt_v2,3000,3000,0,0,0,3000,3000,0,1448,1448,1552,0,0
+classyfire,Terpene glycosides,gmolai,3000,3000,0,0,0,3000,3000,0,1505,1448,1552,0,0
+classyfire,Terpene glycosides,morgan,3000,3000,0,0,0,3000,3000,0,1505,1448,1552,0,0
+classyfire,Terpene glycosides,molai,3000,3000,0,0,0,3000,1505,1495,1505,1448,57,0,0
+classyfire,Terpene glycosides,molformer,3000,3000,0,0,0,3000,2893,107,1505,1448,1445,0,0
+classyfire,Terpene glycosides,smi_ted,3000,3000,0,0,0,3000,2893,107,1505,1448,1445,0,0
+classyfire,Terpene glycosides,molclr_gin,3000,3000,0,0,0,3000,3000,0,1505,1448,1552,0,0
+classyfire,Terpene glycosides,kermt_v2,3000,3000,0,0,0,3000,3000,0,1505,1448,1552,0,0
+classyfire,Terpene lactones,gmolai,3000,3000,0,0,0,3000,3000,0,2945,1448,1552,0,0
+classyfire,Terpene lactones,morgan,3000,3000,0,0,0,3000,3000,0,2945,1448,1552,0,0
+classyfire,Terpene lactones,molai,3000,3000,0,0,0,3000,2945,55,2945,1448,1497,0,0
+classyfire,Terpene lactones,molformer,3000,3000,0,0,0,3000,2999,1,2945,1448,1551,0,0
+classyfire,Terpene lactones,smi_ted,3000,3000,0,0,0,3000,2999,1,2945,1448,1551,0,0
+classyfire,Terpene lactones,molclr_gin,3000,3000,0,0,0,3000,3000,0,2945,1448,1552,0,0
+classyfire,Terpene lactones,kermt_v2,3000,3000,0,0,0,3000,3000,0,2945,1448,1552,0,0
+classyfire,Triterpenoids,gmolai,3000,3000,0,0,0,3000,3000,0,2070,1448,1552,0,0
+classyfire,Triterpenoids,morgan,3000,3000,0,0,0,3000,3000,0,2070,1448,1552,0,0
+classyfire,Triterpenoids,molai,3000,3000,0,0,0,3000,2070,930,2070,1448,622,0,0
+classyfire,Triterpenoids,molformer,3000,3000,0,0,0,3000,3000,0,2070,1448,1552,0,0
+classyfire,Triterpenoids,smi_ted,3000,3000,0,0,0,3000,3000,0,2070,1448,1552,0,0
+classyfire,Triterpenoids,molclr_gin,3000,3000,0,0,0,3000,3000,0,2070,1448,1552,0,0
+classyfire,Triterpenoids,kermt_v2,3000,3000,0,0,0,3000,3000,0,2070,1448,1552,0,0
+qmugs,ALL,gmolai,1992984,632079,1360905,0,0,60000,60000,0,59176,50000,10000,0,0
+qmugs,ALL,morgan,1992984,632079,1360905,0,0,60000,60000,0,59176,50000,10000,0,0
+qmugs,ALL,molai,1992984,632079,1360905,0,0,60000,59176,824,59176,50000,9176,0,0
+qmugs,ALL,molformer,1992984,632079,1360905,0,0,60000,60000,0,59176,50000,10000,0,0
+qmugs,ALL,smi_ted,1992984,632079,1360905,0,0,60000,60000,0,59176,50000,10000,0,0
+qmugs,ALL,molclr_gin,1992984,632079,1360905,0,0,60000,60000,0,59176,50000,10000,0,0
+qmugs,ALL,kermt_v2,1992984,632079,1360905,0,0,60000,60000,0,59176,50000,10000,0,0

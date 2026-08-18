@@ -1,0 +1,3 @@
+benchmark,panel_rows,pretraining_corpus_overlap,pretraining_corpus_overlap_percent,pretraining_train_overlap,pretraining_validation_overlap,pretraining_test_overlap,seen_before_step_10000,seen_before_step_10000_percent_panel,seen_before_step_10000_percent_train_overlap
+classyfire,36200,25711,71.02486187845304,25492,138,81,6652,18.375690607734807,26.094461007374864
+qmugs,50000,17017,34.034,16835,71,111,4412,8.824,26.207306207306207

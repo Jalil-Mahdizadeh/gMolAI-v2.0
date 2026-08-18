@@ -1,0 +1,20 @@
+{
+  "cuda_available": true,
+  "cuda_runtime": "13.0",
+  "duckdb": "1.5.4",
+  "gpu": "NVIDIA GH200 120GB",
+  "host": "n544",
+  "matplotlib": "3.10.5",
+  "numpy": "1.26.4",
+  "pandas": "2.2.3",
+  "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+  "pyarrow": "19.0.1",
+  "python": "3.12.3",
+  "rdkit": "2025.09.3",
+  "schema_version": 1,
+  "scikit_learn": "1.5.0",
+  "scipy": "1.15.3",
+  "slurm_job_id": null,
+  "timestamp_utc": "2026-08-18T14:39:36.237940+00:00",
+  "torch": "2.8.0a0+34c6371d24.nv25.08"
+}

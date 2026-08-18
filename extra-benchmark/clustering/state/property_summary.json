@@ -1,0 +1,26 @@
+{
+  "bootstrap_archive": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/qmugs_bootstrap.npz",
+  "bootstrap_archive_sha256": "ba432ae943dc5163914d184e94e8067dda221e66dbea775d2a2004076f0cd8b2",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 20260819,
+  "models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2",
+    "morgan_count",
+    "descriptor13"
+  ],
+  "paired_differences": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/qmugs_paired_differences.csv",
+  "paired_differences_sha256": "4906ac5cbf6bc69a7d668c74fd855bf6f31e2b0155a27e957ceb2c4224490d01",
+  "parallel_jobs": 16,
+  "rows": 50000,
+  "schema_version": 1,
+  "status": "ok",
+  "table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/qmugs_property_metrics.csv",
+  "table_sha256": "b49d9a5de7f4da50a9f2fd5b73a4d4411e89542d5ac0092032eddf16b4a95575",
+  "timestamp_utc": "2026-08-18T14:12:24.240474+00:00"
+}

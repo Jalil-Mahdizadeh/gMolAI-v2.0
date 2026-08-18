@@ -1,0 +1,15 @@
+model,benchmark,exact_identity_exposure_known,exact_corpus_overlap,status,interpretation
+gmolai,classyfire,True,25711,exact identity and presentation audit complete,no unseen/OOD claim
+gmolai,qmugs,True,17017,exact identity and presentation audit complete,no unseen/OOD claim
+morgan,classyfire,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+morgan,qmugs,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+molai,classyfire,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+molai,qmugs,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+molformer,classyfire,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+molformer,qmugs,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+smi_ted,classyfire,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+smi_ted,qmugs,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+molclr_gin,classyfire,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+molclr_gin,qmugs,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+kermt_v2,classyfire,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim
+kermt_v2,qmugs,False,,published checkpoint/corpus provenance only; exact identity manifest unavailable,no unseen/OOD claim

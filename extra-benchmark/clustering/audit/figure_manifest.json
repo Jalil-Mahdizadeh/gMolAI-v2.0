@@ -1,0 +1,178 @@
+{
+  "figures": [
+    {
+      "figure": "figure_classyfire_main_metrics",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_classyfire_main_metrics.pdf",
+          "sha256": "6287edb61ffdef0c38e0909d1483bb6fef5e871a8470e3d1e0eed475542b4a66"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_classyfire_main_metrics.png",
+          "sha256": "ad53011b5183f02c3df9d6aa9d6d5a42588a47e0ad7abb1dbd45f6a092cd6103"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_structural_main.csv",
+          "sha256": "c0d34e964fb54d0c797254dbf7e34dc28796f4a45196f0b197f280b8dc447009"
+        }
+      ]
+    },
+    {
+      "figure": "figure_classyfire_pca",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_classyfire_pca.pdf",
+          "sha256": "3db445e1eb07248f248464ff96f030daf387cda2a6f6b4989834c4186ac4b5e1"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_classyfire_pca.png",
+          "sha256": "305995b7bd1e946e77da3388e1e0d416f5aea24592c5943d2719309f26e2e599"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_classyfire_pca.csv",
+          "sha256": "b76b40613aa5bb6acda4800c55d8edade37ca7d2f273ef6a7228efb5b8a2f5d2"
+        }
+      ]
+    },
+    {
+      "figure": "figure_qmugs_main_metrics",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_qmugs_main_metrics.pdf",
+          "sha256": "b98197e070c326aa4d4e40daab9830ffecaf5c3530c6188f39018e4efc7dce8b"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_qmugs_main_metrics.png",
+          "sha256": "45bad731ca9a4b79d558f88c09c1c5ef4545e1e9f3f7112a416c92f5324f09c4"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_property_main.csv",
+          "sha256": "5c1ccb3986682f6ffcafb9c088cb2842e2cff070eda52e9955be2c87b2a40911"
+        }
+      ]
+    },
+    {
+      "figure": "figure_qmugs_property_deviations",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_qmugs_property_deviations.pdf",
+          "sha256": "b48c54e6f43af7f740d6be772eb86ee1efc808d2626cc32e564f433c9c02a931"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_qmugs_property_deviations.png",
+          "sha256": "97cb7c3d0094bbfa44c943d8922fa34fc2dd83b89bbb6026b125c29af85464ae"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_property_deviations.csv",
+          "sha256": "32dddd447b6df08f434128058ed666a80f30b2c3b8c0cda5874f9b716b2d7665"
+        }
+      ]
+    },
+    {
+      "figure": "figure_qmugs_pca_homo_lumo_gap",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_qmugs_pca_homo_lumo_gap.pdf",
+          "sha256": "360d25897307350d5559ed6d53c87cd0deb7e068dbd19623c6f3bbfdf049b4e2"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_qmugs_pca_homo_lumo_gap.png",
+          "sha256": "64cfa2a10729e2b574df2c8ee96fd508c8626ffbe1afc5c57971b3bcf67936c4"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_qmugs_pca.csv",
+          "sha256": "bf6d18373adf2bb61a35add77af2de3f66b28792f5806f9a0c1541d59eaadb14"
+        }
+      ]
+    },
+    {
+      "figure": "figure_si_coverage",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_coverage.pdf",
+          "sha256": "e6d43d06233f0a1836c974772a98717081647e959e23ab19eb0aa549ee4bca94"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_coverage.png",
+          "sha256": "50d82aef81341451678808bccca799121674294d992601ed4d1b066c902c4730"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_coverage.csv",
+          "sha256": "5d6022637a66a252449585f8a4778ca4562aa12b2b297854acea58be12b995c0"
+        }
+      ]
+    },
+    {
+      "figure": "figure_si_morgan_native_distance",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_morgan_native_distance.pdf",
+          "sha256": "2951812992e228267a45172832b8c7de700fa078a55528ea9c77d57e5f693b31"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_morgan_native_distance.png",
+          "sha256": "cf7b6b1aacba9fef8dd3ab9ad38c0b28709c0547b5e967a0fd85e7e1cd26010d"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_morgan_native_sensitivity.csv",
+          "sha256": "163ed70b8a52ca82a60ccf3f1bef4405e5cbb5128b51e58dfe601109fa09028c"
+        }
+      ]
+    },
+    {
+      "figure": "figure_si_count_morgan_descriptor_diagnostics",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_count_morgan_descriptor_diagnostics.pdf",
+          "sha256": "9cce45d4e791ca2a93ab7cab678692b429826ad85006c318583df0311d2e77e7"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_count_morgan_descriptor_diagnostics.png",
+          "sha256": "02927aa6816c76beab3c8fa526f94e587668bcec538c23a77fde789f4f51eac3"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_diagnostic_sensitivities.csv",
+          "sha256": "ff58f7e65bf78ac8e8ce2d3fc4c76d70765867da7532e95a6808e6c1c59cbdfc"
+        }
+      ]
+    },
+    {
+      "figure": "figure_si_qmugs_heavy_atom_deciles",
+      "files": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_qmugs_heavy_atom_deciles.pdf",
+          "sha256": "de1261e5eb949a8fb80df9ee95eb4c356ff1cc3a1d52d08026df6f0f8273d7cc"
+        },
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/figures/figure_si_qmugs_heavy_atom_deciles.png",
+          "sha256": "edf79c0b9a92273c125f7ea9c1172c0ebc9ec20100b6946f6b7a4e0c1af6837d"
+        }
+      ],
+      "source_data": [
+        {
+          "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/figure_property_heavy_atom_deciles.csv",
+          "sha256": "e0acbfb623b8ddf4abf2b14c7416e2ffbd242494dadabac40b6b48abd8fa7e0b"
+        }
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T14:26:02.887093+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "benchmark": "qmugs",
+  "dimension": 512,
+  "dtype": "float32",
+  "embedding_sha256": "abb80dbf5421e079c976fac59bf83c78240b6973d07351fc6c4d9d91630f0e94",
+  "input_sha256": "0f3bdbc60aeea109558dfd95e9f6ac3a6defc343706089ae9dbc4fba8f62fe28",
+  "metadata_sha256": "9819b54a518ce76cabb994e86321310ac602d4726657000751fda3006c328a92",
+  "model": "molai",
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "6de5c4f439963b42b2eb6b86d7027e657f36422c5e4e1e18b171034777558041",
+  "rows": 50000,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

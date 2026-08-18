@@ -1,0 +1,26 @@
+{
+  "host": "n544",
+  "protocol_sha256": "67ae8be09c78a4cb5351f6352f4d50317cba5b4505179444e2654745b4d5fc01",
+  "python": "3.12.3",
+  "repository_head": "45d0d51c378b3597aaa1f47f7e5c19e0f563c0e8",
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T13:39:15.398409+00:00",
+  "verified_files": {
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/configs/representation-pilot-mean-node-contrastive-001-desc050.yaml": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/configs/retrain.yaml": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/inputs/raw/25_subclasses_chemical_subset.csv": "32002cc65f2b3a32d6fec3418570f1e8a5e623ccf894229038c5f5e6ed58bc05",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/inputs/raw/QMugs-summary.csv": "b6d7b54fa4d290ceace81c644f20b2ddfd68c21ecb1f4b5c00e8913cd608bcfd",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/tdc-admet/scripts/gmolai_adapter.py": "fe2c310b037d52ae72b3a3139c62684a7497502858df24198123ad060c249af5",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/test-partition/scripts/adapter.py": "7c87bfa567564765da7aca9ae417ef3b1f4c7252c7922b6ab4db2bb25c59a8e4",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+    "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/descriptor_scaler.json": "120aaa0c7b59c36ffe2b3051273385bee0f82c1389d56ea4c56c7ba7952ea363"
+  }
+}

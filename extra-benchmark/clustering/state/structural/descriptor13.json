@@ -1,0 +1,110 @@
+{
+  "cluster_labels": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/structural_clusters/descriptor13.npz",
+  "cluster_labels_sha256": "cd9f84bee161df811df1f19a25cddfc6531222c2c8e94ead428c45cc7d59f02c",
+  "dimension": 13,
+  "input_embedding": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/embeddings/classyfire/descriptor13.npy",
+  "input_embedding_sha256": "9b11a332d9ff7e55e7fe07bafea6e851e1a72b51ef19d37d6017d62caaa561b7",
+  "kmeans": {
+    "algorithm": "lloyd",
+    "init": "k-means++",
+    "max_iter": 500,
+    "n_clusters": 25,
+    "n_init": 20,
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "tol": 0.0001
+  },
+  "macro_same_subclass_at_100": 0.3149162983425414,
+  "mean_seed_metrics": {
+    "AMI": 0.22033065864605642,
+    "ARI": 0.10174743923013499,
+    "NMI": 0.22232923107722216
+  },
+  "model": "descriptor13",
+  "native_macro_same_subclass_at_100": null,
+  "native_metric": null,
+  "neighbors": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/structural_neighbors/descriptor13.npz",
+  "neighbors_sha256": "4932bf04b34151e80f93586741e9f4eb8d887840b9a5fac2aa61bab05181963a",
+  "per_subclass_same_subclass_at_100": {
+    "1-benzopyrans": 0.21435773480662987,
+    "Amines": 0.27874309392265195,
+    "Amino acids, peptides, and analogues": 0.2082527624309392,
+    "Anilides": 0.1978314917127072,
+    "Benzodiazines": 0.12800414364640886,
+    "Benzoic acids and derivatives": 0.13531767955801105,
+    "Carbohydrates and carbohydrate conjugates": 0.40095994475138114,
+    "Carbonyl compounds": 0.18248618784530388,
+    "Diphenylmethanes": 0.18315607734806633,
+    "Diterpenoids": 0.257707182320442,
+    "Ethers": 0.1940400552486188,
+    "Fatty acid esters": 0.5451588397790055,
+    "Fatty acids and conjugates": 0.45529696132596686,
+    "Flavonoid glycosides": 0.8353729281767956,
+    "Halobenzenes": 0.26431629834254144,
+    "Monoterpenoids": 0.13763121546961327,
+    "Piperazines": 0.23479281767955804,
+    "Pyrazoles": 0.15947513812154698,
+    "Pyridoindoles": 0.4576657458563536,
+    "Pyrimidines and pyrimidine derivatives": 0.2457182320441989,
+    "Sesquiterpenoids": 0.1962707182320442,
+    "Steroidal glycosides": 0.6655041436464089,
+    "Terpene glycosides": 0.43713397790055253,
+    "Terpene lactones": 0.36607734806629827,
+    "Triterpenoids": 0.4916367403314917
+  },
+  "preprocessing": "float64_row_l2",
+  "query_source_data": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/structural_queries/descriptor13.parquet",
+  "query_source_data_sha256": "4fcc00d23cba67fe6fa211217de7aaba3a8e1651968dbb3c0460301ffdcc5a83",
+  "rows": 36200,
+  "schema_version": 1,
+  "seed_metrics": [
+    {
+      "AMI": 0.22059769802106755,
+      "ARI": 0.10206579112188696,
+      "NMI": 0.22259519487814508,
+      "inertia": 6719.491724923929,
+      "n_iter": 78,
+      "seed": 42
+    },
+    {
+      "AMI": 0.22101968111579984,
+      "ARI": 0.10106896410792028,
+      "NMI": 0.22301456762182895,
+      "inertia": 6712.247600932048,
+      "n_iter": 88,
+      "seed": 43
+    },
+    {
+      "AMI": 0.21839120539380802,
+      "ARI": 0.10196472114546982,
+      "NMI": 0.22039467703874194,
+      "inertia": 6713.674745401514,
+      "n_iter": 143,
+      "seed": 44
+    },
+    {
+      "AMI": 0.21991450134949728,
+      "ARI": 0.10106173392814138,
+      "NMI": 0.2219180257052852,
+      "inertia": 6706.683235680497,
+      "n_iter": 103,
+      "seed": 45
+    },
+    {
+      "AMI": 0.22173020735010945,
+      "ARI": 0.10257598584725651,
+      "NMI": 0.2237236901421096,
+      "inertia": 6716.8740273303065,
+      "n_iter": 86,
+      "seed": 46
+    }
+  ],
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T13:56:09.013712+00:00",
+  "wall_seconds": 9.905060211953241
+}

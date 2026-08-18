@@ -1,0 +1,30 @@
+{
+  "decile_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/qmugs_heavy_atom_deciles.csv",
+  "decile_table_sha256": "24f809d96ffe44cf511b45b292ab6f20e822149e87ce338d5b503c1cc2284238",
+  "iqr": [
+    0.024811634046910336,
+    0.03780585175841367,
+    0.5614019244487933
+  ],
+  "k": 100,
+  "median": [
+    -0.2880998279287298,
+    0.30043061442134833,
+    1.6523571250675473
+  ],
+  "null_definition": "mean exact 3D robust-property distance from each query to all other molecules in its heavy-atom-count decile",
+  "properties": [
+    "DFT_HOMO_ENERGY",
+    "DFT_HOMO_LUMO_GAP",
+    "log1p_DFT_DIPOLE_TOT"
+  ],
+  "quantile_method": "linear",
+  "reference": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/qmugs_property_reference.npz",
+  "reference_sha256": "a2f90861d9ade2adcdd0d83fdc341dd5ccfeb907f3f376ac5f53639b6c137e58",
+  "rows": 50000,
+  "scaling_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/tables/qmugs_property_scaling.csv",
+  "scaling_table_sha256": "fcdb2e4a6c0a027f47c8f27779b4c13587f61561e2bdcb6417d35dfe821a47b1",
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T13:55:35.847277+00:00"
+}

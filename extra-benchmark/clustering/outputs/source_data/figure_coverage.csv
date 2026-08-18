@@ -1,0 +1,15 @@
+model,attempted,accepted,rejected,coverage_fraction,all_model_common,missing_after_common_support,nonfinite_vectors,zero_norm_vectors,benchmark
+gmolai,74920,74920,0,1.0,68847,6073,0,0,ClassyFire-25
+morgan,74920,74920,0,1.0,68847,6073,0,0,ClassyFire-25
+molai,74920,68847,6073,0.9189402028830752,68847,0,0,0,ClassyFire-25
+molformer,74920,74762,158,0.9978910838227444,68847,5915,0,0,ClassyFire-25
+smi_ted,74920,74762,158,0.9978910838227444,68847,5915,0,0,ClassyFire-25
+molclr_gin,74920,74920,0,1.0,68847,6073,0,0,ClassyFire-25
+kermt_v2,74920,74920,0,1.0,68847,6073,0,0,ClassyFire-25
+gmolai,60000,60000,0,1.0,59176,824,0,0,QMugs
+morgan,60000,60000,0,1.0,59176,824,0,0,QMugs
+molai,60000,59176,824,0.9862666666666666,59176,0,0,0,QMugs
+molformer,60000,60000,0,1.0,59176,824,0,0,QMugs
+smi_ted,60000,60000,0,1.0,59176,824,0,0,QMugs
+molclr_gin,60000,60000,0,1.0,59176,824,0,0,QMugs
+kermt_v2,60000,60000,0,1.0,59176,824,0,0,QMugs

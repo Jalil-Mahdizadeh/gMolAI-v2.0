@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "protocol_status": "frozen_before_representation_execution",
+  "frozen_at_utc": "2026-08-18T13:00:00Z",
+  "protocol_amendments": [
+    {
+      "id": "A001",
+      "timestamp_utc": "2026-08-18T13:36:00Z",
+      "stage": "after label-blind adapter screening and before any representation forward pass",
+      "change": "removed implementation-added 90% overall and 80% per-subclass ClassyFire coverage abort guards",
+      "reason": "the requested frozen design specifies the exact all-model intersection followed by m=min(subclass count) balancing and specifies no coverage threshold; the extra guard would override that design",
+      "information_available": "adapter validity and rejection reasons only; no embeddings, cluster assignments, endpoint metrics, PCA, or property results existed",
+      "scientific_effect": "retain the requested deterministic balanced common-support rule and disclose all support attrition"
+    }
+  ],
+  "study": {
+    "name": "gMolAI frozen minimal external clustering benchmark",
+    "scope": ["ClassyFire-25 structural taxonomy", "QMugs property neighborhoods"],
+    "inference_only": true,
+    "no_model_selection": true,
+    "no_training_or_finetuning": true,
+    "primary_population": "all-seven-model common support",
+    "excluded_families": ["ClassyFire-120", "MCES", "ATC", "ChEBI", "LIT-PCBA", "MUV", "QM9", "FreeSolv", "property-derived clusters", "unknown-K optimization", "additional clustering algorithms"]
+  },
+  "repository": {
+    "root": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain",
+    "head_at_freeze": "45d0d51c378b3597aaa1f47f7e5c19e0f563c0e8",
+    "benchmark_root": "extra-benchmark/clustering"
+  },
+  "data": {
+    "classyfire25": {
+      "title": "Molecular fingerprint benchmarking datasets: 25-subclasses dataset",
+      "authors": ["Florian Huber", "Julian Pollmann"],
+      "doi": "10.5281/zenodo.18682051",
+      "record_id": 18682051,
+      "version": "v1",
+      "publication_date": "2026-02-18",
+      "license": "CC-BY-4.0",
+      "url": "https://zenodo.org/api/records/18682051/files/25_subclasses_chemical_subset.csv/content",
+      "path": "inputs/raw/25_subclasses_chemical_subset.csv",
+      "bytes": 14068128,
+      "md5": "53b44ac90703e356f56a421bc3a305e3",
+      "sha256": "32002cc65f2b3a32d6fec3418570f1e8a5e623ccf894229038c5f5e6ed58bc05",
+      "expected_rows": 75000,
+      "expected_subclasses": 25,
+      "expected_rows_per_subclass": 3000
+    },
+    "qmugs": {
+      "title": "QMugs: Quantum Mechanical Properties of Drug-like Molecules",
+      "authors": ["Clemens Isert", "Kenneth Atz", "Jose Jimenez-Luna", "Gisbert Schneider"],
+      "doi": "10.3929/ethz-b-000482129",
+      "paper_doi": "10.1038/s41597-022-01390-7",
+      "source_release": "original QMugs based on ChEMBL 27",
+      "license": "CC-BY-SA-3.0",
+      "url": "https://libdrive.ethz.ch/index.php/s/X5vOBNSITAG5vzM/download?path=%2F&files=summary.csv",
+      "path": "inputs/raw/QMugs-summary.csv",
+      "bytes": 2026848085,
+      "sha256": "b6d7b54fa4d290ceace81c644f20b2ddfd68c21ecb1f4b5c00e8913cd608bcfd",
+      "expected_rows": 1992984,
+      "expected_chembl_ids": 665911,
+      "required_columns": ["chembl_id", "conf_id", "smiles", "heavy_atoms", "significant_negative_wavenumbers", "nonunique_smiles", "DFT_TOTAL_ENERGY", "DFT_HOMO_ENERGY", "DFT_HOMO_LUMO_GAP", "DFT_DIPOLE_TOT"]
+    }
+  },
+  "chemistry_policy": {
+    "source_smiles_parse": "RDKit",
+    "explicit_hydrogen_amendment": "Chem.RemoveHs before repository canonicalization for every source in both benchmarks; required because QMugs summary SMILES are hydrogen-complete",
+    "isomeric_smiles": true,
+    "fragment_policy": "reject",
+    "allowed_elements": ["C", "N", "O", "F", "P", "S", "Cl", "Br", "I", "H", "B", "Si"],
+    "min_atoms": 2,
+    "max_atoms": 256,
+    "identity": "SHA-256 of canonical isomeric SMILES",
+    "deduplication": "one row per canonical identity",
+    "conflicting_class_policy": "exclude identity",
+    "qmugs_nonunique_policy": "exclude any source row with nonunique_smiles=True; exclude canonical identities mapping to multiple ChEMBL IDs",
+    "qmugs_conformer_policy": "among eligible conformers of one ChEMBL ID choose minimum DFT_TOTAL_ENERGY, tie-break by conf_id",
+    "qmugs_geometry_policy": "exclude significant_negative_wavenumbers=True",
+    "qmugs_nonfinite_policy": "exclude nonfinite required energy/property values"
+  },
+  "gmolai": {
+    "representation": "released_hybrid_w3: clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks_mean_node_weight_3",
+    "dimension": 384,
+    "config": {"path": "configs/retrain.yaml", "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011"},
+    "training_plan": {"path": "configs/representation-pilot-mean-node-contrastive-001-desc050.yaml", "sha256": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61"},
+    "checkpoint": {"path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt", "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e", "global_step": 10000},
+    "calibrator": {"path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt", "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b", "training_graphs": 100000}
+  },
+  "models": {
+    "primary_order": ["gmolai", "morgan", "molai", "molformer", "smi_ted", "molclr_gin", "kermt_v2"],
+    "gmolai": {"display_name": "gMolAI", "dimension": 384, "batch_size": null, "representation": "released_hybrid_w3", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif", "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"},
+    "morgan": {"display_name": "Morgan (binary)", "dimension": 2048, "batch_size": 4096, "representation": "radius2_fpSize2048_binary", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif", "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"},
+    "molai": {"display_name": "MolAI", "dimension": 512, "batch_size": 256, "representation": "epoch6_three_lstm_hidden_cell_concat_linear_tanh", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif", "container_sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e"},
+    "molformer": {"display_name": "MoLFormer", "dimension": 768, "batch_size": 128, "representation": "official_pooler_output", "model_revision": "7b12d946c181a37f6012b9dc3b002275de070314", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif", "container_sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431"},
+    "smi_ted": {"display_name": "SMI-TED-Light", "dimension": 768, "batch_size": 100, "representation": "official_model_encode", "model_revision": "414c3ea0a8603ef49d1c5bb3db336e09877c01ce", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif", "container_sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a"},
+    "molclr_gin": {"display_name": "MolCLR-GIN", "dimension": 512, "batch_size": 256, "representation": "official_downstream_preprojection_graph_vector", "model_revision": "3d3bc1912be27b0c97435fd9134f4d4c73d4c5ab", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif", "container_sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272"},
+    "kermt_v2": {"display_name": "KERMT v2", "dimension": 512, "batch_size": 64, "representation": "cmim_projected_mean_latent", "model_revision": "7df5eb3179235fdea1e8124db73215da33d77dce", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif", "container_sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117"},
+    "morgan_count": {"display_name": "Morgan (count sensitivity)", "dimension": 4096, "batch_size": 2048, "representation": "log1p(radius2_fpSize4096_count)", "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif", "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2", "included_in_primary_ranking": false}
+  },
+  "descriptor_diagnostic": {
+    "display_name": "13-descriptor diagnostic",
+    "dimension": 13,
+    "included_in_primary_ranking": false,
+    "ordered_features": ["qed", "MolWt", "NumValenceElectrons", "MaxPartialCharge", "MinPartialCharge", "BalabanJ", "LabuteASA", "TPSA", "HeavyAtomCount", "NumHAcceptors", "NumHDonors", "MolLogP", "MolMR"],
+    "scaler": {"path": "work/descriptor_scaler.json", "sha256": "120aaa0c7b59c36ffe2b3051273385bee0f82c1389d56ea4c56c7ba7952ea363", "fit_rows": 221148895, "fit_split": "train"},
+    "nonfinite_policy": "replace only nonfinite RDKit descriptor values with the frozen pretraining mean, yielding zero after standardization"
+  },
+  "implementation_sources": {
+    "competitor_adapter": {"path": "extra-benchmark/test-partition/scripts/adapter.py", "sha256": "7c87bfa567564765da7aca9ae417ef3b1f4c7252c7922b6ab4db2bb25c59a8e4"},
+    "gmolai_adapter": {"path": "extra-benchmark/tdc-admet/scripts/gmolai_adapter.py", "sha256": "fe2c310b037d52ae72b3a3139c62684a7497502858df24198123ad060c249af5"}
+  },
+  "common_support": {
+    "classyfire": "intersection of all seven primary model screens; then within each subclass retain SHA-256-first m identities where m is the minimum retained subclass count; report attrition without an unrequested post-screen coverage threshold",
+    "qmugs_initial_attempt": 60000,
+    "qmugs_increment": 10000,
+    "qmugs_maximum_attempt": 100000,
+    "qmugs_target_common": 50000,
+    "qmugs_rule": "SHA-256 ordered eligible identities; expand only if the current prefix has fewer than 50000 common identities"
+  },
+  "structural_evaluation": {
+    "preprocessing": "float64 row-L2 normalization; no centering, feature scaling, PCA, whitening or learned projection",
+    "kmeans": {"n_clusters": 25, "init": "k-means++", "algorithm": "lloyd", "n_init": 20, "max_iter": 500, "tol": 0.0001, "seeds": [42, 43, 44, 45, 46]},
+    "primary_metrics": ["ARI", "AMI"],
+    "continuity_metric": "NMI",
+    "geometry_metric": {"name": "macro_same_subclass_at_100", "k": 100, "class_macro_average": true},
+    "native_sensitivities": {"morgan": "binary Tanimoto", "morgan_count": "generalized Tanimoto on raw counts recovered from log1p values"},
+    "neighbor_search": {"method": "exact blocked GPU matrix search", "dtype": "float64", "tie_break": "ordered identity index with additive epsilon 1e-12"}
+  },
+  "property_evaluation": {
+    "properties": [
+      {"column": "DFT_HOMO_ENERGY", "transform": "identity"},
+      {"column": "DFT_HOMO_LUMO_GAP", "transform": "identity"},
+      {"column": "DFT_DIPOLE_TOT", "transform": "log1p"}
+    ],
+    "reference_scaling": "panel median and IQR per property",
+    "embedding_preprocessing": "float64 row-L2 normalization",
+    "k": 100,
+    "primary_metrics": ["NPD@100", "property_neighbor_recall@100"],
+    "npd_null": "mean exact 3D robust-property distance from each query to all other molecules in its heavy-atom-count decile",
+    "npd_aggregation": "for each query divide its mean 100-neighbor property-space distance by its query-specific null; report the arithmetic mean across queries (lower is better)",
+    "heavy_atom_deciles": "ten equal-count deterministic strata from heavy-atom-count then molecule-hash ordering",
+    "per_property_metric": "median across queries of each query's mean absolute robust-scaled property deviation over 100 representation neighbors",
+    "property_neighbor_reference": "exact 100 nearest neighbors in robust-scaled 3D property space"
+  },
+  "statistics": {
+    "bootstrap_repetitions": 2000,
+    "bootstrap_seed": 20260818,
+    "confidence_level": 0.95,
+    "structural_strata": "ClassyFire subclass",
+    "property_strata": "heavy-atom-count decile",
+    "resampling_unit": "query molecule",
+    "kmeans_seeds_are_inferential_replicates": false
+  },
+  "visualization": {
+    "pca_is_visualization_only": true,
+    "pca_solver": "randomized",
+    "pca_random_state": 42,
+    "structural_fit_per_subclass": 1000,
+    "structural_plot_per_subclass": 250,
+    "property_fit_rows": 25000,
+    "property_plot_rows": 10000,
+    "selection": "deterministic SHA-256 order",
+    "no_metric_uses_pca": true
+  },
+  "exposure_audit": {
+    "gmolai": "exact canonical identity overlap with full corpus, pretraining split, and actual presentation before step 10000 when graph-shard audit is feasible",
+    "competitors": "published corpus provenance; exact identity exposure marked unknown without manifests",
+    "no_unseen_or_ood_claim": true
+  }
+}

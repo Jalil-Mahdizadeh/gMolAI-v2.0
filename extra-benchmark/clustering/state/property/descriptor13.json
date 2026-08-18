@@ -1,0 +1,116 @@
+{
+  "NPD_at_100": 0.8812647711135724,
+  "dimension": 13,
+  "embedding_sha256": "423c8fbdc7db234d7b8a80c186bcca6d9de0478c0390df94e7b0cdad4fb2f740",
+  "heavy_atom_deciles": [
+    {
+      "NPD_at_100": 0.8702547207262152,
+      "deviation_DFT_HOMO_ENERGY": 0.7192747126679218,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.8120110375957033,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6855615820066479,
+      "heavy_atom_decile": 1,
+      "property_neighbor_recall_at_100": 0.012152000000000001,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8762134904655653,
+      "deviation_DFT_HOMO_ENERGY": 0.6482248408838881,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.675721974139372,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6685385445547998,
+      "heavy_atom_decile": 2,
+      "property_neighbor_recall_at_100": 0.0074,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8802408781891495,
+      "deviation_DFT_HOMO_ENERGY": 0.6158519583453399,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.6182408541731976,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6737799208363183,
+      "heavy_atom_decile": 3,
+      "property_neighbor_recall_at_100": 0.005872,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.882582570608933,
+      "deviation_DFT_HOMO_ENERGY": 0.6025245181703994,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.602991805638325,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6730915171625643,
+      "heavy_atom_decile": 4,
+      "property_neighbor_recall_at_100": 0.005638000000000001,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8818256885474614,
+      "deviation_DFT_HOMO_ENERGY": 0.6051767874864877,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5933620495905649,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6749213058100292,
+      "heavy_atom_decile": 5,
+      "property_neighbor_recall_at_100": 0.006136,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8880466511434286,
+      "deviation_DFT_HOMO_ENERGY": 0.6044806412210153,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5780832274207219,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6727005932863654,
+      "heavy_atom_decile": 6,
+      "property_neighbor_recall_at_100": 0.006074,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8926869013671221,
+      "deviation_DFT_HOMO_ENERGY": 0.5986435242141316,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5771831651211184,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.667737146510217,
+      "heavy_atom_decile": 7,
+      "property_neighbor_recall_at_100": 0.005524,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8891113173388571,
+      "deviation_DFT_HOMO_ENERGY": 0.590278844596972,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5758781105853035,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6739797349015995,
+      "heavy_atom_decile": 8,
+      "property_neighbor_recall_at_100": 0.005534000000000001,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8828401657899926,
+      "deviation_DFT_HOMO_ENERGY": 0.582158407169308,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5766744123941359,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6782662075436723,
+      "heavy_atom_decile": 9,
+      "property_neighbor_recall_at_100": 0.006022,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.868845326958998,
+      "deviation_DFT_HOMO_ENERGY": 0.5931348740866762,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.613181065617391,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6975174082087467,
+      "heavy_atom_decile": 10,
+      "property_neighbor_recall_at_100": 0.006764,
+      "rows": 5000
+    }
+  ],
+  "k": 100,
+  "model": "descriptor13",
+  "neighbors": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/property_neighbors/descriptor13.npz",
+  "neighbors_sha256": "b4ff7041375efbd80ebfdfd1a68ac200b598c6aa84707d81c606df127044fb50",
+  "per_property_median_absolute_neighbor_deviation": {
+    "DFT_HOMO_ENERGY": 0.6143914064451027,
+    "DFT_HOMO_LUMO_GAP": 0.618509695899577,
+    "log1p_DFT_DIPOLE_TOT": 0.6764651956442991
+  },
+  "preprocessing": "float64_row_l2",
+  "property_neighbor_recall_at_100": 0.0067116,
+  "property_reference_sha256": "a2f90861d9ade2adcdd0d83fdc341dd5ccfeb907f3f376ac5f53639b6c137e58",
+  "query_source_data": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/property_queries/descriptor13.parquet",
+  "query_source_data_sha256": "cf0763463e17e5893fe5ed170a32ca96968b242b15adc9fc2bd7a931cbd61eba",
+  "rows": 50000,
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T14:10:45.162437+00:00",
+  "wall_seconds": 6.686848121986259
+}

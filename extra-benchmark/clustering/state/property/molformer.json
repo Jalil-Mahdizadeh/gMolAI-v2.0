@@ -1,0 +1,116 @@
+{
+  "NPD_at_100": 0.8185788722389332,
+  "dimension": 768,
+  "embedding_sha256": "cb94edf484a983704eeb87a1067acaede181a4fae743107d802bf5224a81c391",
+  "heavy_atom_deciles": [
+    {
+      "NPD_at_100": 0.7873446427724139,
+      "deviation_DFT_HOMO_ENERGY": 0.6301052198349498,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.6460852095401313,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.675556985192541,
+      "heavy_atom_decile": 1,
+      "property_neighbor_recall_at_100": 0.014716000000000002,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8004774146498006,
+      "deviation_DFT_HOMO_ENERGY": 0.5939878031883807,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5665750177261573,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6612762479961223,
+      "heavy_atom_decile": 2,
+      "property_neighbor_recall_at_100": 0.010896000000000001,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8122809840390152,
+      "deviation_DFT_HOMO_ENERGY": 0.5821005493912405,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5309655159868044,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6613144226039609,
+      "heavy_atom_decile": 3,
+      "property_neighbor_recall_at_100": 0.009634,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8198410765141704,
+      "deviation_DFT_HOMO_ENERGY": 0.5714450421246022,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5289318974144248,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6629956436552571,
+      "heavy_atom_decile": 4,
+      "property_neighbor_recall_at_100": 0.009882,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8201698684377566,
+      "deviation_DFT_HOMO_ENERGY": 0.5692402149458016,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5264689233890254,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6645687238501208,
+      "heavy_atom_decile": 5,
+      "property_neighbor_recall_at_100": 0.009982,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8293566505712544,
+      "deviation_DFT_HOMO_ENERGY": 0.5649912223454316,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5145513954311405,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6607208600443177,
+      "heavy_atom_decile": 6,
+      "property_neighbor_recall_at_100": 0.009828,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8346311553747117,
+      "deviation_DFT_HOMO_ENERGY": 0.5644139593442505,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5106835239387904,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6616238649924282,
+      "heavy_atom_decile": 7,
+      "property_neighbor_recall_at_100": 0.009504,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8339861291025096,
+      "deviation_DFT_HOMO_ENERGY": 0.5583700328730502,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5065217055857187,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6647738832381641,
+      "heavy_atom_decile": 8,
+      "property_neighbor_recall_at_100": 0.009193999999999999,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8288240296853256,
+      "deviation_DFT_HOMO_ENERGY": 0.5494219181708605,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5047863265203911,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6740537166243734,
+      "heavy_atom_decile": 9,
+      "property_neighbor_recall_at_100": 0.01034,
+      "rows": 5000
+    },
+    {
+      "NPD_at_100": 0.8188767712423759,
+      "deviation_DFT_HOMO_ENERGY": 0.5577971254005436,
+      "deviation_DFT_HOMO_LUMO_GAP": 0.5371261372863858,
+      "deviation_log1p_DFT_DIPOLE_TOT": 0.6895537217211898,
+      "heavy_atom_decile": 10,
+      "property_neighbor_recall_at_100": 0.010414000000000001,
+      "rows": 5000
+    }
+  ],
+  "k": 100,
+  "model": "molformer",
+  "neighbors": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/artifacts/common/property_neighbors/molformer.npz",
+  "neighbors_sha256": "16d3076f7618c3c006afc67692fb9be720e34c07ef3097917103636af1fc1e7a",
+  "per_property_median_absolute_neighbor_deviation": {
+    "DFT_HOMO_ENERGY": 0.5730996912024617,
+    "DFT_HOMO_LUMO_GAP": 0.5329879995828006,
+    "log1p_DFT_DIPOLE_TOT": 0.6676083359546929
+  },
+  "preprocessing": "float64_row_l2",
+  "property_neighbor_recall_at_100": 0.010439,
+  "property_reference_sha256": "a2f90861d9ade2adcdd0d83fdc341dd5ccfeb907f3f376ac5f53639b6c137e58",
+  "query_source_data": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/outputs/source_data/property_queries/molformer.parquet",
+  "query_source_data_sha256": "2c605540e13e103ea18115f933e1cffb583f22d66fd2703ca0ef0e88e440ab67",
+  "rows": 50000,
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T14:10:04.518758+00:00",
+  "wall_seconds": 8.569635932042729
+}

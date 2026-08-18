@@ -1,0 +1,83 @@
+{
+  "inventories": {
+    "base": {
+      "image": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "image_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2",
+      "installed_distributions": 332,
+      "inventory": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/container_packages/base.txt",
+      "inventory_sha256": "051df498f0f5986b2ad058a7e8b966ba84301f7d3b8eb7405740befc01989d63",
+      "models": [
+        "descriptor13",
+        "gmolai",
+        "morgan",
+        "morgan_count"
+      ],
+      "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+      "python": "3.12.3"
+    },
+    "kermt_v2": {
+      "image": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif",
+      "image_sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117",
+      "installed_distributions": 335,
+      "inventory": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/container_packages/kermt_v2.txt",
+      "inventory_sha256": "51e62c1c319be67f7754c65f06ee9cb7dd73921e5026feddc7cde3aa418f1da0",
+      "models": [
+        "kermt_v2"
+      ],
+      "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+      "python": "3.12.3"
+    },
+    "molai": {
+      "image": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif",
+      "image_sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e",
+      "installed_distributions": 332,
+      "inventory": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/container_packages/molai.txt",
+      "inventory_sha256": "051df498f0f5986b2ad058a7e8b966ba84301f7d3b8eb7405740befc01989d63",
+      "models": [
+        "molai"
+      ],
+      "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+      "python": "3.12.3"
+    },
+    "molclr_gin": {
+      "image": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif",
+      "image_sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272",
+      "installed_distributions": 332,
+      "inventory": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/container_packages/molclr_gin.txt",
+      "inventory_sha256": "051df498f0f5986b2ad058a7e8b966ba84301f7d3b8eb7405740befc01989d63",
+      "models": [
+        "molclr_gin"
+      ],
+      "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+      "python": "3.12.3"
+    },
+    "molformer": {
+      "image": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif",
+      "image_sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431",
+      "installed_distributions": 332,
+      "inventory": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/container_packages/molformer.txt",
+      "inventory_sha256": "051df498f0f5986b2ad058a7e8b966ba84301f7d3b8eb7405740befc01989d63",
+      "models": [
+        "molformer"
+      ],
+      "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+      "python": "3.12.3"
+    },
+    "smi_ted": {
+      "image": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif",
+      "image_sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a",
+      "installed_distributions": 332,
+      "inventory": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/container_packages/smi_ted.txt",
+      "inventory_sha256": "051df498f0f5986b2ad058a7e8b966ba84301f7d3b8eb7405740befc01989d63",
+      "models": [
+        "smi_ted"
+      ],
+      "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+      "python": "3.12.3"
+    }
+  },
+  "method": "importlib.metadata distributions queried inside each immutable SIF",
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T14:20:01.414453+00:00"
+}

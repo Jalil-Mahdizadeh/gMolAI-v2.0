@@ -1,0 +1,22 @@
+{
+  "attempted": 75000,
+  "by_subclass": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/audit/classyfire_preparation_by_subclass.csv",
+  "by_subclass_sha256": "66a409f9125a289426178ecaa97e50ff7e5a4a947a82ab7ef91b7f5fe49298d5",
+  "canonicalization_rejected": 80,
+  "canonicalization_rejection_reasons": {
+    "unsupported_element": 80
+  },
+  "conflicting_label_identities_removed": 0,
+  "duplicate_occurrences_removed": 0,
+  "eligible_identity_sha256": "7df53b01b0b681b38b5fd4d53e1cadd040520c3a7ad407b78edaa5bcb4534cb0",
+  "eligible_unique": 74920,
+  "explicit_hydrogens_removed_before_identity": true,
+  "output": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/inputs/prepared/classyfire_candidates.tsv",
+  "output_sha256": "efce2b6a7c4292fbd2908cd35ce4fff1853ef6981e85a2535f45890a6ccac02e",
+  "schema_version": 1,
+  "source": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/clustering/inputs/raw/25_subclasses_chemical_subset.csv",
+  "source_sha256": "32002cc65f2b3a32d6fec3418570f1e8a5e623ccf894229038c5f5e6ed58bc05",
+  "status": "ok",
+  "timestamp_utc": "2026-08-18T13:18:02.924566+00:00",
+  "wall_seconds": 72.78631937701721
+}
