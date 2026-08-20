@@ -127,6 +127,12 @@ publication-grade sustained-throughput comparison. A separate controlled speed
 benchmark would require identical timing boundaries, repeated steady-state
 runs, and serialization-free model-only timing.
 
+That requirement was subsequently addressed by the completed
+[controlled speed protocol](../speed/PROTOCOL.md) and
+[audited speed results](../speed/RESULTS.md). Those records, rather than the
+incidental export timings described here, are authoritative for throughput
+claims.
+
 ## Execution chronology and integrity
 
 Initial job `1219337` completed and validated gMolAI, Morgan, MolAI, MoLFormer,

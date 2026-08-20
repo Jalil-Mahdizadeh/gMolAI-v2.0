@@ -1,7 +1,7 @@
 # TDC ADMET frozen-representation benchmark
 
-This completed final gMolAI benchmark before manuscript preparation asks a
-narrower and more defensible question than property-guided generation:
+This completed broad-transfer gMolAI benchmark asks a narrower and more
+defensible question than property-guided generation:
 
 > Does the already-frozen gMolAI representation support competitive simple
 > predictors across the complete TDC ADMET panel, relative to the same frozen
@@ -80,3 +80,8 @@ This benchmark evaluates representation utility for ADMET prediction. It does
 not score decoder-generated analogues, establish prospective ADMET improvement,
 or reopen the closed derivative-generation workflow. Property-guided candidate
 optimization remains explicitly future work.
+
+The later
+[external molecular-clustering benchmark](../clustering/RESULTS.md) is a
+separate label-structure and retrieval study. It does not change this TDC
+protocol, result, or interpretation boundary.

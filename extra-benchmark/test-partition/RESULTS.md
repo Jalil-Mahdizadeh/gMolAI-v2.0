@@ -7,8 +7,9 @@
 
 This retrospective additive benchmark cannot alter the promoted gMolAI
 seed-42/10k checkpoint, train-only calibrator, or released 384-D representation.
-It contains no endpoint labels and is separate from the unexecuted MoleculeNet
-benchmark.
+It contains no endpoint labels and is scientifically separate from the
+subsequently completed
+[MoleculeNet plus HIV benchmark](../moleculenet/RESULTS.md).
 
 ## Execution and integrity
 

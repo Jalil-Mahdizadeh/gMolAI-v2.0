@@ -18,6 +18,12 @@
       "output_tokens": 0,
       "files": 66,
       "note": "deterministic incremental refresh; 15 semantic docs left queued after workers timed out"
+    },
+    {
+      "date": "2026-08-20T08:44:30.467465+00:00",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "files": 10
     }
   ],
   "total_input_tokens": 0,

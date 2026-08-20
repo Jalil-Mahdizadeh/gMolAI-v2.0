@@ -1,14 +1,15 @@
 # Derivative-generation checkpoint
 
-Updated: 2026-08-14
+Updated: 2026-08-20
 
 ## Terminal state
 
-Steps 1, 1b, 2, 2b, 2c, and 2d are complete. The latest requested work—an
-additive Step-2d synthetic-accessibility (SA) comparison—also completed and
-passed verification. There is no active SLURM job: the direct n54 run finished
-successfully before a submission was necessary (about 51 seconds end to end).
-Do not submit a duplicate job or regenerate candidates.
+Steps 1, 1b, 2, 2b, 2c, and 2d are complete. The additive Step-2d
+synthetic-accessibility (SA) comparison also completed and passed verification.
+Two bounded post-closure analyses completed on 17 August 2026: read-only latent
+reranking of the existing Step-2d accepted library and a throughput-only test of
+the frozen decoder. Neither modifies or extends the frozen Step-2d candidate
+library, and neither changes the terminal decision.
 
 Derivative generation is now closed at this state. No additional generation,
 property-guided prioritization, latent optimization, decoder training, or
@@ -18,6 +19,25 @@ The future generation baseline is now frozen in the versioned, read-only
 [`shared/frozen-generation-v1/`](shared/frozen-generation-v1/) contract. This
 contract records an operational handoff only; it did not launch a run or alter
 any completed-step file.
+
+## Post-closure analyses
+
+The
+[latent-reranking addendum](step-02d-generation-scaling/extra-step-02b-style/RESULTS.md)
+re-encoded 2,108,115 globally unique accepted molecules from 10,000 seeds
+without candidate generation, training, latent perturbation, property analysis,
+or locked-test access. At the 1,000-proposal budget, target-blind gMolAI
+reranking reached 96.25% exact seed identity at rank 1 against a 96.26% oracle
+ceiling, for 99.9896% selection efficiency.
+
+The separate
+[decoder-throughput benchmark](step-03-decoder-speed/RESULTS.md) used 100
+embeddings and 1,000 stochastic draws per embedding solely for systems
+measurement. On one GH200, its 100,000 proposal slots ran at 1,737.8 raw
+proposals/s, 91.6 per-seed unique RDKit-valid molecules/s, and 95.455%
+raw-slot RDKit validity. It did not train or change the encoder, decoder,
+sampling policy, or candidate-selection contract. Neither post-closure analysis
+used endpoint labels or supports a property-improvement claim.
 
 ## Frozen strategic decision
 
@@ -133,9 +153,9 @@ sha256sum -c --quiet outputs/SHA256SUMS
 Expected exit code: 0 with no output. Preserve every prior artifact unchanged.
 Do not recreate the retired Step 3/Step 4 controlled-edit branch without a
 superseding strategic decision. Property-guided prioritization remains
-unstarted future work. The separate final frozen-representation TDC ADMET
-benchmark has completed; it does not reopen this checkpoint or validate
-generated-candidate properties.
+unstarted future work. The separate frozen-representation TDC ADMET and
+external molecular-clustering benchmarks have completed; neither reopens this
+checkpoint or validates generated-candidate properties.
 
 To verify the cross-step decoder and sampler freeze from the repository root:
 

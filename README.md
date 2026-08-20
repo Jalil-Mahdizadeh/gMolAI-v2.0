@@ -467,18 +467,25 @@ no embedded images. The builder verifies all three benchmark inputs and
 completion seals by SHA-256, preserves every existing equation and unedited
 paragraph, and validates the serialized Office archive before publication.
 
-### Additional frozen-encoder benchmarks
+### Additional frozen studies and benchmarks
 
 The derivative-generation investigation in [`deriv-gen/`](deriv-gen/) is
-closed at its completed Step 2d frozen-library result. Its retained evidence
-covers latent chemical organization, decoder search, candidate chemistry,
-scaling, locality, diversity, novelty relative to decoder training, and
-heuristic SA-score context. It does not claim property optimization,
-bioactivity, or synthesis feasibility. The frozen decoder is released as a
-candidate-proposal tool whose outputs can be prioritized downstream with
-independent, project-specific models or experiments. A property-guided
-optimization study is retained as future work rather than a required stage of
-the present project.
+scientifically closed at its completed Step 2d frozen-library result. Two
+bounded post-closure analyses completed on 17 August 2026. The
+[read-only latent-reranking addendum](deriv-gen/step-02d-generation-scaling/extra-step-02b-style/RESULTS.md)
+re-encoded 2,108,115 globally unique accepted molecules from 10,000 seeds and,
+at 1,000 raw proposals, reached 96.25% exact seed identity at rank 1 against a
+96.26% oracle ceiling (99.9896% selection efficiency). The separate
+[decoder-throughput study](deriv-gen/step-03-decoder-speed/RESULTS.md) generated
+100,000 proposal slots on one GH200 at 1,737.8 raw proposals/s, 91.6 per-seed
+unique RDKit-valid molecules/s, and 95.455% raw-slot RDKit validity. Neither
+analysis used endpoint labels, changed the frozen encoder/decoder/sampling
+contract, or reopened property-guided optimization. The retained evidence
+therefore covers latent chemical organization, decoder search, candidate
+chemistry, scaling, locality, diversity, novelty relative to decoder training,
+heuristic SA-score context, reranking efficiency, and controlled decoder
+throughput. It does not claim property optimization, bioactivity, or synthesis
+feasibility.
 
 [`extra-benchmark/test-partition/`](extra-benchmark/test-partition/) contains
 the completed inference-only comparison of the frozen seed-42/10k 384-D gMolAI
@@ -510,22 +517,33 @@ representation-equivalent neural encoder under that condition. These are
 descriptive one-pass measurements on one GH200.
 
 [`extra-benchmark/tdc-admet/`](extra-benchmark/tdc-admet/) is the completed
-final benchmark before manuscript preparation. Its protocol froze the complete
-22-endpoint DOI-backed TDC ADMET snapshot, the same seven representation
-definitions, five official scaffold-selection seeds, common-support pairing,
-and shallow Ridge/logistic probes before representation execution. The study
-completed on the 43,730-identity common panel: SMI-TED-Light ranked first and
-gMolAI second by the category-balanced summary, while gMolAI recorded the most
-endpoint wins (9/22). The predeclared 19-endpoint selection-robust sensitivity
-retained the same first/second ordering and 8 gMolAI wins. The complete audited
-result is in
+22-endpoint broad-transfer study. Its protocol froze the DOI-backed TDC ADMET
+snapshot, the same seven representation definitions, five official
+scaffold-selection seeds, common-support pairing, and shallow Ridge/logistic
+probes before representation execution. On the 43,730-identity common panel,
+SMI-TED-Light ranked first and gMolAI second by the category-balanced summary,
+while gMolAI recorded the most endpoint wins (9/22). The predeclared
+19-endpoint selection-robust sensitivity retained the same first/second
+ordering and 8 gMolAI wins. The complete audited result is in
 [`extra-benchmark/tdc-admet/RESULTS.md`](extra-benchmark/tdc-admet/RESULTS.md).
 The 13-descriptor panel is diagnostic and excluded from the primary seven-model
-rank summary. This benchmark tests ADMET representation utility; it neither
-scores generated analogues nor reopens the closed derivative-generation study.
-With this final benchmark complete, the experimental phase is closed and the
-repository is ready for manuscript integration. Property-guided candidate
-optimization remains future work.
+rank summary.
+
+[`extra-benchmark/clustering/`](extra-benchmark/clustering/) is the later
+external molecular-clustering benchmark on a balanced 36,200-molecule
+ClassyFire-25 panel and 50,000 QMugs molecules. On ClassyFire-25, gMolAI ranked
+second of seven primary representations by ARI (0.260 versus KERMT's 0.267);
+Morgan led AMI (0.453) and same-subclass retrieval (0.560). On QMugs, gMolAI led
+NPD@100 (0.810; lower is better) and Recall@100 (0.0113; higher is better). The
+bounded result is complementary rather than universally dominant: label
+recovery, local retrieval, and continuous-neighborhood preservation favor
+different representations.
+
+All current studies under [`deriv-gen/`](deriv-gen/) and
+[`extra-benchmark/`](extra-benchmark/) are complete, and the repository is
+ready for manuscript integration. The TDC and clustering studies neither score
+generated analogues nor reopen derivative generation. Property-guided
+candidate optimization remains future work.
 
 After promotion, `embed --checkpoint auto --embedding-definition auto` verifies
 the hash-bound selection metadata and automatically loads both

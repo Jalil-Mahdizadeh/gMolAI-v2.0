@@ -1,6 +1,9 @@
 # Audit disposition and retraining corrections
 
-The detailed evidence remains in [`../audit/VGAE_RETRAINING_AUDIT.md`](../audit/VGAE_RETRAINING_AUDIT.md). The second-pass review confirmed every material audit conclusion. It corrected four points of precision, not the underlying findings:
+The original detailed audit was maintained outside this repository and is not
+present in this checkout. This file is the repository-local disposition. The
+second-pass review confirmed every material audit conclusion. It corrected four
+points of precision, not the underlying findings:
 
 - The encoder has four GINE trunk blocks, but only blocks 2–4 were residual.
 - The integer negative-sampling bug usually made the candidate complement exhaustive; it was not necessarily newly random on every validation pass.

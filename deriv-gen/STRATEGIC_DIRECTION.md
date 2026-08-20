@@ -4,6 +4,14 @@ Decision date: 2026-08-14
 
 Status: **derivative-generation study closed; future-work design retained**
 
+Post-decision status (updated 2026-08-20): the
+[read-only latent-reranking addendum](step-02d-generation-scaling/extra-step-02b-style/RESULTS.md)
+and
+[throughput-only decoder benchmark](step-03-decoder-speed/RESULTS.md) completed
+on 17 August 2026. They add selection-efficiency and systems-throughput
+measurements without changing the frozen encoder, decoder, sampling policy,
+candidate library, property boundary, or this closure decision.
+
 ## Decision
 
 The project will not pursue the previously planned Step 3/Step 4 controlled
@@ -94,12 +102,13 @@ generation contract. No endpoint, property model, seed panel, ranking rule,
 threshold, protocol, candidate generation, or evaluation has been selected or
 run for that future work.
 
-The separate final benchmark for the current project, the standardized
-frozen-representation
-[TDC ADMET transfer comparison](../extra-benchmark/tdc-admet/), has now
-completed. Its [results](../extra-benchmark/tdc-admet/RESULTS.md) are
-scientifically separate from derivative generation: they test whether released
-representations support ADMET endpoint prediction and cannot be used as
+The separate standardized frozen-representation
+[TDC ADMET transfer comparison](../extra-benchmark/tdc-admet/) and later
+[external molecular-clustering benchmark](../extra-benchmark/clustering/) have
+now completed. Their [TDC results](../extra-benchmark/tdc-admet/RESULTS.md) and
+[clustering results](../extra-benchmark/clustering/RESULTS.md) are
+scientifically separate from derivative generation: they test released
+representations, not generated-candidate properties, and cannot be used as
 evidence that generated candidates have improved ADMET profiles.
 
 ## Frozen generation baseline

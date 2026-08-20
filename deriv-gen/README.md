@@ -6,9 +6,12 @@ with the frozen strategic interpretation of the completed evidence. Nothing in
 this directory changes the released encoder, calibrator, inference package, or
 earlier benchmarks.
 
-**Project status:** closed at Step 2d on 14 August 2026. All completed evidence
-and frozen artifacts are retained, but no additional derivative-generation or
-property-guided optimization experiment is part of the current project.
+**Project status:** scientific closure remains Step 2d on 14 August 2026. Two
+bounded post-closure analyses completed on 17 August 2026: read-only latent
+reranking of the frozen Step-2d candidate library and a throughput-only decoder
+benchmark. All completed evidence and frozen artifacts are retained, but no
+additional derivative-generation or property-guided optimization experiment is
+part of the current project.
 
 ## Study layout
 
@@ -20,11 +23,15 @@ property-guided optimization experiment is part of the current project.
 | 2b | `step-02b-candidate-reranking/` | Completed and verified; GO | Test frozen-decoder search and target-blind frozen-gMolAI latent reranking on a fresh validation panel |
 | 2c | `step-02c-chemical-characterization/` | Completed and verified | Chemically classify the frozen unperturbed candidate sets |
 | 2d | `step-02d-generation-scaling/` | Completed and verified | Scale unperturbed candidate generation from 50 to 1,000 proposals and audit SA-score context |
+| 2d addendum | `step-02d-generation-scaling/extra-step-02b-style/` | Completed and verified; post-closure | Re-encode the frozen accepted library and measure target-blind latent reranking against its oracle |
+| 3 (speed) | `step-03-decoder-speed/` | Completed and verified; throughput only | Measure the frozen decoder's controlled proposal throughput on one GH200 |
 
 The previously reserved Step 3 controlled-candidate and Step 4 native-decoder
 branches have been retired. Their directories contained only unexecuted
 placeholder READMEs, so no scientific or protocol artifact required archival.
-The rationale and replacement direction are frozen in
+The later `step-03-decoder-speed/` directory is a separate systems benchmark,
+not a revival of the retired controlled-candidate branch. The rationale and
+replacement direction are frozen in
 [`STRATEGIC_DIRECTION.md`](STRATEGIC_DIRECTION.md).
 
 Steps 1 and 1b are permanently retained as representation-interpretability
@@ -53,6 +60,17 @@ MMP-direction editing, or property optimization occurred. The controlled-edit
 branch is now closed: when a desired site-specific structural modification is
 already explicit, direct graph/SMILES editing is exact and computationally
 preferable to an encoder-to-latent-edit-to-decoder workflow.
+
+The post-closure latent-reranking addendum used no candidate generation,
+training, latent perturbation, property analysis, or locked-test data. It
+re-encoded 2,108,115 globally unique accepted molecules from 10,000 seeds and,
+at the 1,000-proposal budget, reached 96.25% exact seed identity at rank 1
+against a 96.26% oracle ceiling (99.9896% selection efficiency). The separate
+decoder-throughput benchmark generated 100,000 proposal slots (100 embeddings
+times 1,000 stochastic draws) on one GH200 at 1,737.8 raw proposals/s, 91.6
+per-seed unique RDKit-valid molecules/s, and 95.455% raw-slot RDKit validity.
+Both analyses preserved the frozen encoder, decoder, sampling policy, and
+scientific closure.
 
 The operational generation baseline is now permanently versioned in
 [`shared/frozen-generation-v1/`](shared/frozen-generation-v1/). It binds the
@@ -94,10 +112,12 @@ current project. Any later protocol using this route must consume and verify the
 [`frozen-generation-v1`](shared/frozen-generation-v1/) baseline rather than
 retraining the decoder or retuning its sampling strategy in place.
 
-The separate final project benchmark, the standardized frozen-representation
-[TDC ADMET study](../extra-benchmark/tdc-admet/), has now completed. Its
-[results](../extra-benchmark/tdc-admet/RESULTS.md) do not alter this closure and
-must not be interpreted as validation of the generated candidates.
+The separate frozen-representation
+[TDC ADMET study](../extra-benchmark/tdc-admet/) and later
+[external molecular-clustering study](../extra-benchmark/clustering/) have both
+completed. Their [TDC results](../extra-benchmark/tdc-admet/RESULTS.md) and
+[clustering results](../extra-benchmark/clustering/RESULTS.md) do not alter this
+closure and must not be interpreted as validation of the generated candidates.
 
 ## Reproducing Step 1
 
@@ -175,6 +195,10 @@ Read the frozen scaling decision and additive SA interpretation in
 [`step-02d-generation-scaling/RESULTS.md`](step-02d-generation-scaling/RESULTS.md)
 and
 [`step-02d-generation-scaling/DECISION.md`](step-02d-generation-scaling/DECISION.md).
+The bounded post-closure records are the
+[latent-reranking addendum](step-02d-generation-scaling/extra-step-02b-style/RESULTS.md)
+and
+[decoder-throughput result](step-03-decoder-speed/RESULTS.md).
 The current strategy is [`STRATEGIC_DIRECTION.md`](STRATEGIC_DIRECTION.md), and
 the cross-step operational handoff is [`CHECKPOINT.md`](CHECKPOINT.md). The
 machine-verifiable decoder/sampler freeze is

@@ -1,8 +1,21 @@
 # gMolAI comparator and encoding-speed benchmark: feasibility memo
 
 **Date:** 2026-08-12
-**Status:** planning document; no benchmark has been run
+**Status:** historical planning document; benchmark program completed
 **Scope:** 1D/2D molecular inputs only; Arrhenius HPC; current gMolAI evidence structure
+
+## Execution status (updated 2026-08-20)
+
+This memo preserves the original design reasoning and therefore uses future
+tense below. The proposed comparator program was subsequently completed and
+extended. The authoritative executed results are the
+[locked-test representation study](../../extra-benchmark/test-partition/RESULTS.md),
+[MoleculeNet plus HIV study](../../extra-benchmark/moleculenet/RESULTS.md),
+[controlled encoding-speed study](../../extra-benchmark/speed/RESULTS.md),
+[TDC ADMET transfer study](../../extra-benchmark/tdc-admet/RESULTS.md), and
+[external molecular-clustering study](../../extra-benchmark/clustering/RESULTS.md).
+Those frozen result records supersede this planning memo for realized coverage,
+metrics, and interpretation.
 
 ## Executive verdict
 
