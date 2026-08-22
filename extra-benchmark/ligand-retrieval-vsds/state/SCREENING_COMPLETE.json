@@ -1,0 +1,59 @@
+{
+  "coverage_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/audits/label_blind_screen_coverage.csv",
+  "coverage_table_sha256": "298cfefc4846cf13597ab1f68b83f13ff4e238b650d30950828f9bf0445815ea",
+  "execution": "label_blind_before_representation_forward_pass",
+  "labels_read": false,
+  "panels": {
+    "gmolai": {
+      "identity_sha256": "ac1ea6ae8c614be4c76b662f13c3e67f3c1300b9cd1bb563f3fbc9986409c540",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/model_panels/gmolai.tsv",
+      "rows": 81622,
+      "sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910"
+    },
+    "kermt_v2": {
+      "identity_sha256": "ac1ea6ae8c614be4c76b662f13c3e67f3c1300b9cd1bb563f3fbc9986409c540",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/model_panels/kermt_v2.tsv",
+      "rows": 81622,
+      "sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910"
+    },
+    "molai": {
+      "identity_sha256": "6f0fde18f11706cc63f7745a2dfe90bd8fe00e6588c1500af3bb3420b5bbd6b7",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/model_panels/molai.tsv",
+      "rows": 81129,
+      "sha256": "62b7dba0a3be876d2211a7060a25a1ac85bd97ede6e807156117df5c203e03de"
+    },
+    "molclr_gin": {
+      "identity_sha256": "7233035b3e8853f61a4ca6b8d0c57802802739ff6e4edf17a1ebf7deb7d780d4",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/model_panels/molclr_gin.tsv",
+      "rows": 81621,
+      "sha256": "ac6bbd52d50903fceac6d181ce70c9bbdd05edbe4a9820aa2d1faf93eb0f1089"
+    },
+    "molformer": {
+      "identity_sha256": "b1793d15994f9e3dadc922a1256c60421e661ded3cc3876c7f773bc608b315fc",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/model_panels/molformer.tsv",
+      "rows": 81619,
+      "sha256": "32078539e54d1ec3b6b4a090cdd1c2bdf83be89812d649e2f709c2eb4342dd33"
+    },
+    "morgan": {
+      "identity_sha256": "ac1ea6ae8c614be4c76b662f13c3e67f3c1300b9cd1bb563f3fbc9986409c540",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/model_panels/morgan.tsv",
+      "rows": 81622,
+      "sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910"
+    },
+    "smi_ted": {
+      "identity_sha256": "ac1ea6ae8c614be4c76b662f13c3e67f3c1300b9cd1bb563f3fbc9986409c540",
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/model_panels/smi_ted.tsv",
+      "rows": 81622,
+      "sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910"
+    }
+  },
+  "performance_inspected": false,
+  "rejection_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/audits/label_blind_screen_rejections.csv",
+  "rejection_table_sha256": "0cc16bdc28e4ffedfa9cbe4051edf8ee53626a7bddc1556615264968ac8475ea",
+  "schema_version": 1,
+  "source_panel": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/inputs/prepared/molecule_candidates.tsv",
+  "source_panel_sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910",
+  "source_rows": 81622,
+  "status": "ok",
+  "timestamp_utc": "2026-08-22T19:15:55.417498+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "dimension": 512,
+  "dtype": "float32",
+  "embedding_sha256": "dff5f31bd1f472b63b8fb82a99fb7be5b593621d27942f6c39c78f6066c56cff",
+  "input_sha256": "ac6bbd52d50903fceac6d181ce70c9bbdd05edbe4a9820aa2d1faf93eb0f1089",
+  "metadata_sha256": "09295868524687ebaddec15381ce540f1bcacf6644e7fe5682eabb439a78093b",
+  "model": "molclr_gin",
+  "nonbinary_values": null,
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "7233035b3e8853f61a4ca6b8d0c57802802739ff6e4edf17a1ebf7deb7d780d4",
+  "rows": 81621,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

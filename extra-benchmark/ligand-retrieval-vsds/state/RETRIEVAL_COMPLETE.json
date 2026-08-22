@@ -1,0 +1,21 @@
+{
+  "anchors_state_sha256": "fbd9b51674545f7908247b6f3cafc8ad24f166108e022d0b8bd01435b8d05bd8",
+  "models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "population_state_sha256": "210352019b7b8393bb5d9e7f505113ec027969af0b995c6ff560ae4b5308bf31",
+  "random_control_included": true,
+  "retrieval_per_draw": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/retrieval_per_draw.csv",
+  "retrieval_per_draw_sha256": "0643b19c0c775064d32b1bb8b44146a4234420d03cd9a46e2a1fe215db42d61a",
+  "rows": 33600,
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-22T19:35:08.405880+00:00",
+  "wall_seconds": 126.80379144696053
+}

@@ -1,0 +1,72 @@
+target_id,target_class,raw_active,raw_inactive_or_lower_affinity,canonical_active_before_dedup,canonical_inactive_before_dedup,conflicting_canonical_identities,conflicting_full_inchikeys,duplicate_occurrences_removed,prepared_active,prepared_inactive_or_lower_affinity,canonicalization_rejected,rejection_reasons_json
+Q9NWZ3,Kinase,21,858,17,823,0,0,4,17,819,39,"{""active:disconnected"": 4, ""inactive_or_lower_affinity:disconnected"": 35}"
+P42336,Kinase,59,2361,59,2358,0,0,11,59,2347,3,"{""inactive_or_lower_affinity:disconnected"": 3}"
+P27986,Kinase,22,907,22,907,0,0,7,22,900,0,{}
+O60674,Kinase,56,2275,56,2272,0,0,7,56,2265,3,"{""inactive_or_lower_affinity:disconnected"": 3}"
+P43405,Kinase,19,795,19,794,0,0,0,19,794,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P10721,Kinase,25,1001,25,1001,0,0,4,25,997,0,{}
+O14965,Kinase,28,1143,28,1142,0,0,1,28,1141,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P15056,Kinase,22,912,22,912,0,0,0,22,912,0,{}
+P23458,Kinase,28,1126,28,1126,0,0,14,28,1112,0,{}
+P11362,Kinase,30,1228,30,1223,0,0,2,30,1221,5,"{""inactive_or_lower_affinity:disconnected"": 5}"
+P29597,Kinase,17,685,17,684,0,0,15,17,669,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+O00329,Kinase,46,1876,46,1876,0,0,23,46,1853,0,{}
+P28482,Kinase,18,738,18,738,0,0,1,18,737,0,{}
+Q96GD4,Kinase,21,858,21,857,0,0,1,21,856,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P00533,Kinase,93,3735,91,3719,0,0,5,91,3714,18,"{""active:disconnected"": 2, ""inactive_or_lower_affinity:disconnected"": 6, ""inactive_or_lower_affinity:unsupported_element"": 10}"
+Q06187,Kinase,28,1120,28,1119,0,0,3,28,1116,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+O14757,Kinase,19,765,19,764,0,0,0,19,764,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P36888,Kinase,24,968,21,968,0,0,0,21,968,3,"{""active:disconnected"": 3}"
+P00519,Kinase,31,1260,31,1254,0,0,1,31,1253,6,"{""inactive_or_lower_affinity:disconnected"": 6}"
+Q05397,Kinase,22,918,22,918,0,0,0,22,918,0,{}
+Q16539,Kinase,37,1487,36,1480,0,0,1,36,1479,8,"{""active:disconnected"": 1, ""inactive_or_lower_affinity:disconnected"": 7}"
+P08581,Kinase,24,995,24,995,0,0,0,24,995,0,{}
+P11802,Kinase,25,1028,25,1026,0,0,2,25,1024,2,"{""inactive_or_lower_affinity:disconnected"": 2}"
+P06239,Kinase,28,1120,28,1114,0,0,0,28,1114,6,"{""inactive_or_lower_affinity:disconnected"": 6}"
+O75116,Kinase,29,1166,29,1166,0,0,0,29,1166,0,{}
+Q9Y233,Other Enzymes,19,783,19,783,0,0,19,19,764,0,{}
+Q14432,Other Enzymes,23,957,21,950,1,1,2,20,947,9,"{""active:disconnected"": 2, ""inactive_or_lower_affinity:disconnected"": 6, ""inactive_or_lower_affinity:unsupported_element"": 1}"
+Q08499,Other Enzymes,20,800,20,795,0,0,5,20,790,5,"{""inactive_or_lower_affinity:disconnected"": 4, ""inactive_or_lower_affinity:unsupported_element"": 1}"
+P00918,Other Enzymes,57,2308,54,2208,0,0,3,54,2205,103,"{""active:disconnected"": 2, ""active:unsupported_element"": 1, ""inactive_or_lower_affinity:disconnected"": 34, ""inactive_or_lower_affinity:too_few_atoms"": 5, ""inactive_or_lower_affinity:unsupported_element"": 61}"
+Q16790,Other Enzymes,29,1166,29,1098,0,0,0,29,1098,68,"{""inactive_or_lower_affinity:disconnected"": 14, ""inactive_or_lower_affinity:too_few_atoms"": 5, ""inactive_or_lower_affinity:unsupported_element"": 49}"
+Q00987,Other Enzymes,22,890,22,889,0,0,2,22,887,1,"{""inactive_or_lower_affinity:unsupported_element"": 1}"
+P78536,Other Enzymes,30,1236,30,1236,0,0,8,30,1228,0,{}
+P09874,Other Enzymes,23,929,23,928,0,0,2,23,926,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P35372,GPCR,61,2444,61,2438,0,0,12,61,2426,6,"{""inactive_or_lower_affinity:disconnected"": 6}"
+P20309,GPCR,21,866,19,807,0,0,4,19,803,61,"{""active:disconnected"": 2, ""inactive_or_lower_affinity:disconnected"": 59}"
+P41143,GPCR,59,2399,58,2358,0,0,7,58,2351,42,"{""active:disconnected"": 1, ""inactive_or_lower_affinity:disconnected"": 41}"
+P35462,GPCR,23,942,22,925,0,0,5,22,920,18,"{""active:disconnected"": 1, ""inactive_or_lower_affinity:disconnected"": 17}"
+P07550,GPCR,18,757,16,735,0,0,0,16,735,24,"{""active:disconnected"": 2, ""inactive_or_lower_affinity:disconnected"": 22}"
+P14416,GPCR,72,2894,70,2811,0,0,15,70,2796,85,"{""active:disconnected"": 2, ""inactive_or_lower_affinity:disconnected"": 83}"
+P08172,GPCR,19,766,16,717,0,0,4,16,713,52,"{""active:disconnected"": 3, ""inactive_or_lower_affinity:disconnected"": 49}"
+P34969,GPCR,21,844,20,791,0,0,0,20,791,54,"{""active:disconnected"": 1, ""inactive_or_lower_affinity:disconnected"": 51, ""inactive_or_lower_affinity:unsupported_element"": 2}"
+P08908,GPCR,33,1340,33,1311,0,0,3,33,1308,29,"{""inactive_or_lower_affinity:disconnected"": 27, ""inactive_or_lower_affinity:unsupported_element"": 2}"
+P28335,GPCR,27,1106,25,1051,0,0,3,25,1048,57,"{""active:disconnected"": 2, ""inactive_or_lower_affinity:disconnected"": 55}"
+P30542,GPCR,44,1778,44,1772,0,0,7,44,1765,6,"{""inactive_or_lower_affinity:disconnected"": 2, ""inactive_or_lower_affinity:unsupported_element"": 4}"
+P29274,GPCR,53,2141,53,2110,0,0,8,53,2102,31,"{""inactive_or_lower_affinity:disconnected"": 20, ""inactive_or_lower_affinity:unsupported_element"": 11}"
+P34972,GPCR,70,2803,70,2802,0,0,4,70,2798,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P21453,GPCR,31,1247,31,1239,0,0,5,31,1234,8,"{""inactive_or_lower_affinity:disconnected"": 8}"
+O43614,GPCR,54,2170,54,2170,1,1,8,53,2161,0,{}
+P28223,GPCR,33,1320,33,1241,0,0,2,33,1239,79,"{""inactive_or_lower_affinity:disconnected"": 79}"
+P08253,Peptidase,55,2202,55,2196,0,0,3,55,2193,6,"{""inactive_or_lower_affinity:disconnected"": 6}"
+P03952,Peptidase,25,1021,25,997,0,0,1,25,996,24,"{""inactive_or_lower_affinity:disconnected"": 24}"
+P14780,Peptidase,33,1327,33,1327,0,0,1,33,1326,0,{}
+P00742,Peptidase,56,2250,56,2195,0,0,1,56,2194,55,"{""inactive_or_lower_affinity:disconnected"": 55}"
+P45452,Peptidase,25,1005,25,1005,0,0,15,25,990,0,{}
+P27487,Peptidase,32,1303,31,1286,0,0,3,31,1283,18,"{""active:disconnected"": 1, ""inactive_or_lower_affinity:disconnected"": 10, ""inactive_or_lower_affinity:unsupported_element"": 7}"
+P08246,Peptidase,20,811,20,791,0,0,0,20,791,20,"{""inactive_or_lower_affinity:disconnected"": 16, ""inactive_or_lower_affinity:unsupported_element"": 4}"
+P07711,Peptidase,38,1524,38,1519,0,0,3,38,1516,5,"{""inactive_or_lower_affinity:disconnected"": 2, ""inactive_or_lower_affinity:unsupported_element"": 3}"
+P00734,Peptidase,103,4124,98,4037,0,0,2,98,4035,92,"{""active:disconnected"": 5, ""inactive_or_lower_affinity:disconnected"": 86, ""inactive_or_lower_affinity:unsupported_element"": 1}"
+P03372,Nuclear receptor,42,1710,42,1676,0,0,5,42,1671,34,"{""inactive_or_lower_affinity:disconnected"": 33, ""inactive_or_lower_affinity:unsupported_element"": 1}"
+Q92731,Nuclear receptor,22,887,22,881,0,0,0,22,881,6,"{""inactive_or_lower_affinity:disconnected"": 5, ""inactive_or_lower_affinity:unsupported_element"": 1}"
+P51449,Nuclear receptor,30,1219,30,1218,0,0,5,30,1213,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P04150,Nuclear receptor,14,593,14,593,0,0,1,14,592,0,{}
+Q96RI1,Nuclear receptor,23,949,23,948,0,0,1,23,947,1,"{""inactive_or_lower_affinity:unsupported_element"": 1}"
+P31645,Other Proteins,35,1401,35,1379,0,0,14,35,1365,22,"{""inactive_or_lower_affinity:disconnected"": 16, ""inactive_or_lower_affinity:unsupported_element"": 6}"
+P01375,Other Proteins,29,1164,29,1160,0,0,0,29,1160,4,"{""inactive_or_lower_affinity:disconnected"": 4}"
+O15379,Deacetylase,30,1203,29,1196,0,0,2,29,1194,8,"{""active:disconnected"": 1, ""inactive_or_lower_affinity:disconnected"": 6, ""inactive_or_lower_affinity:unsupported_element"": 1}"
+Q9UBN7,Deacetylase,39,1591,37,1570,0,0,5,37,1565,23,"{""active:disconnected"": 2, ""inactive_or_lower_affinity:disconnected"": 18, ""inactive_or_lower_affinity:unsupported_element"": 3}"
+Q07817,Apoptosis regulator,29,1172,29,1172,0,0,4,29,1168,0,{}
+Q07820,Apoptosis regulator,51,2075,51,2074,0,0,0,51,2074,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+P10415,Apoptosis regulator,22,891,22,890,0,0,1,22,889,1,"{""inactive_or_lower_affinity:disconnected"": 1}"
+O60341,Oxidase,28,1128,28,1098,0,0,6,28,1092,30,"{""inactive_or_lower_affinity:disconnected"": 30}"

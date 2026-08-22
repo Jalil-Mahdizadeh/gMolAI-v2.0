@@ -1,0 +1,15 @@
+{
+  "dimension": 2048,
+  "dtype": "float32",
+  "embedding_sha256": "c72fdcb4c456bcb739ea3a24e92ee7054d641e9fd446ba1b501f50de2b997d40",
+  "input_sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910",
+  "metadata_sha256": "f8de4e01f6163b623258bad5005b8705086cd866cb095a6caabfb69c6dcde72d",
+  "model": "morgan",
+  "nonbinary_values": 0,
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "ac1ea6ae8c614be4c76b662f13c3e67f3c1300b9cd1bb563f3fbc9986409c540",
+  "rows": 81622,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

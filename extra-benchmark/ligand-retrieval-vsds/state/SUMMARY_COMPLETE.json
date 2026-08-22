@@ -1,0 +1,18 @@
+{
+  "anchor_draws_treated_as_inferential_replicates": false,
+  "bootstrap_unit": "protein_target_stratified_by_target_class",
+  "model_summary": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/model_summary.csv",
+  "model_summary_sha256": "7dba03357c3b22c4f96c20fd292805bbd031c828ecc1e5b391f85c37022e48ec",
+  "paired_comparisons": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/paired_comparisons.csv",
+  "paired_comparisons_sha256": "25340e2b0a48f1bcc6e8121a608e85bc0345edc12e165681ea24e0fcf8254768",
+  "random_primary_ef1_draws": 1400,
+  "random_primary_ef1_mean": 1.0064809646805393,
+  "retrieval_per_target": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/retrieval_per_target.csv",
+  "retrieval_per_target_sha256": "5327486d3683dd7da4ba13da076da16b48d72a0136434cd314b156e034bc4099",
+  "retrieval_state_sha256": "8be6289a0a1e2d76fb67f0b37f250537060574c24270f34e49b22376e45e8541",
+  "scaffold_excluded_summary": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/scaffold_excluded_summary.csv",
+  "scaffold_excluded_summary_sha256": "35cb2c1fbee135b90874b08b3124ab0443469bc2c9e7ad71bcbae99edf5b79a4",
+  "schema_version": 1,
+  "status": "ok",
+  "timestamp_utc": "2026-08-22T19:36:58.377288+00:00"
+}

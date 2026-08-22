@@ -1,0 +1,15 @@
+{
+  "dimension": 384,
+  "dtype": "float32",
+  "embedding_sha256": "07212aba4c321be7915dc19df2d2c96743160a91f68b7dc5994c16b8fbbe1d7a",
+  "input_sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910",
+  "metadata_sha256": "52bfdc392614825cc002ca90579bdf77ec7eefe82c338478168797e4c103987a",
+  "model": "gmolai",
+  "nonbinary_values": null,
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "ac1ea6ae8c614be4c76b662f13c3e67f3c1300b9cd1bb563f3fbc9986409c540",
+  "rows": 81622,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

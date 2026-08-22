@@ -1,0 +1,35 @@
+{
+  "all_seven_common_support_enforced": true,
+  "anchor_schedules_verified": 2800,
+  "anchors_absent_from_candidate_pools": true,
+  "figure_and_source_data_artifacts_verified": 10,
+  "formal_p_values_performed": false,
+  "models_verified": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "protocol_sha256": "c438733c03380cbec2321f4da9884ea6b3d16384d74470a7ea6636e83b9e0f96",
+  "random_primary_ef1_mean": 1.0064809646805393,
+  "retrieval_groups_verified": 4200,
+  "retrieval_rows_verified": 33600,
+  "same_anchors_candidates_and_realized_cutoffs_for_all_models": true,
+  "scaffold_eligible_draws_verified": 1400,
+  "schema_version": 1,
+  "status": "ok",
+  "targets_verified": 70,
+  "timestamp_utc": "2026-08-22T19:40:36.051814+00:00",
+  "verification_inputs": {
+    "anchors_state_sha256": "fbd9b51674545f7908247b6f3cafc8ad24f166108e022d0b8bd01435b8d05bd8",
+    "exposure_audit_sha256": "fb12ab2a6afd0b07f64a3a5351a806c6554f235ac23383f44c7f9d89bf4c7adc",
+    "figure_manifest_sha256": "e1c529cd480f1d664b0f92a4ed827c030425af478e468876bdb27ca85d3ef8b8",
+    "population_state_sha256": "210352019b7b8393bb5d9e7f505113ec027969af0b995c6ff560ae4b5308bf31",
+    "report_state_sha256": "6ac91d0d0c1bd648daedb9aa94bcd19f2faaa5c417ae9a19372488c67b616eac",
+    "retrieval_state_sha256": "8be6289a0a1e2d76fb67f0b37f250537060574c24270f34e49b22376e45e8541",
+    "summary_state_sha256": "cfaffe364712e441b65af8ba315890df02e31b40bbf287895bc03c627155f8c6"
+  }
+}

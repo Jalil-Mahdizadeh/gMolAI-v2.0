@@ -1,0 +1,15 @@
+{
+  "dimension": 512,
+  "dtype": "float32",
+  "embedding_sha256": "6ad26e5da7e536c1881b138767c1ed3c82eca7144d87ec9188845c427ba862fc",
+  "input_sha256": "62b7dba0a3be876d2211a7060a25a1ac85bd97ede6e807156117df5c203e03de",
+  "metadata_sha256": "e8f7186a4517f3aaee63ddefa3053c042161154b88d747ea646945f5f7c623c2",
+  "model": "molai",
+  "nonbinary_values": null,
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "6f0fde18f11706cc63f7745a2dfe90bd8fe00e6588c1500af3bb3420b5bbd6b7",
+  "rows": 81129,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

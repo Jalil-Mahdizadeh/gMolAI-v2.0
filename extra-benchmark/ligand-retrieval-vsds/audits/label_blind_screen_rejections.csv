@@ -1,0 +1,30 @@
+model,reason,count
+molai,ValueError: tokenized SMILES on input line 1 has length 110; the epoch-6 encoder supports at most 109,35
+molai,ValueError: tokenized SMILES on input line 1 has length 111; the epoch-6 encoder supports at most 109,26
+molai,ValueError: tokenized SMILES on input line 1 has length 112; the epoch-6 encoder supports at most 109,27
+molai,ValueError: tokenized SMILES on input line 1 has length 113; the epoch-6 encoder supports at most 109,19
+molai,ValueError: tokenized SMILES on input line 1 has length 114; the epoch-6 encoder supports at most 109,21
+molai,ValueError: tokenized SMILES on input line 1 has length 115; the epoch-6 encoder supports at most 109,31
+molai,ValueError: tokenized SMILES on input line 1 has length 116; the epoch-6 encoder supports at most 109,14
+molai,ValueError: tokenized SMILES on input line 1 has length 117; the epoch-6 encoder supports at most 109,10
+molai,ValueError: tokenized SMILES on input line 1 has length 118; the epoch-6 encoder supports at most 109,9
+molai,ValueError: tokenized SMILES on input line 1 has length 119; the epoch-6 encoder supports at most 109,6
+molai,ValueError: tokenized SMILES on input line 1 has length 120; the epoch-6 encoder supports at most 109,7
+molai,ValueError: tokenized SMILES on input line 1 has length 121; the epoch-6 encoder supports at most 109,7
+molai,ValueError: tokenized SMILES on input line 1 has length 122; the epoch-6 encoder supports at most 109,7
+molai,ValueError: tokenized SMILES on input line 1 has length 123; the epoch-6 encoder supports at most 109,11
+molai,ValueError: tokenized SMILES on input line 1 has length 124; the epoch-6 encoder supports at most 109,5
+molai,ValueError: tokenized SMILES on input line 1 has length 125; the epoch-6 encoder supports at most 109,7
+molai,ValueError: tokenized SMILES on input line 1 has length 126; the epoch-6 encoder supports at most 109,9
+molai,ValueError: tokenized SMILES on input line 1 has length 127; the epoch-6 encoder supports at most 109,8
+molai,ValueError: tokenized SMILES on input line 1 has length 128; the epoch-6 encoder supports at most 109,2
+molai,ValueError: tokenized SMILES on input line 1 has length 129; the epoch-6 encoder supports at most 109,2
+molai,ValueError: tokenized SMILES on input line 1 has length 130; the epoch-6 encoder supports at most 109,2
+molai,ValueError: tokenized SMILES on input line 1 has length 131; the epoch-6 encoder supports at most 109,1
+molai,ValueError: tokenized SMILES on input line 1 has length 132; the epoch-6 encoder supports at most 109,1
+molai,ValueError: tokenized SMILES on input line 1 has length 133; the epoch-6 encoder supports at most 109,1
+molai,ValueError: unsupported MolAI character(s) on input line 1: ['9']; use --allow-unknown-zero only to reproduce the supplied script's silent all-zero behavior,1
+molai,ValueError: unsupported MolAI character(s) on input line 1: ['B']; use --allow-unknown-zero only to reproduce the supplied script's silent all-zero behavior,167
+molai,ValueError: unsupported MolAI character(s) on input line 1: ['i']; use --allow-unknown-zero only to reproduce the supplied script's silent all-zero behavior,57
+molformer,tokenization_not_lossless,3
+molclr_gin,ValueError: chirality tag CHI_TRIGONALBIPYRAMIDAL is unsupported by the released 3-row embedding,1

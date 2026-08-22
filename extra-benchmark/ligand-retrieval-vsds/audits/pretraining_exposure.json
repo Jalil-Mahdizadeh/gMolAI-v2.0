@@ -1,0 +1,152 @@
+{
+  "accepted_identity_set_sha256": "5e5a94aef82d79766d15976e38b7dff84e2e4bfa154474c1e352ec2c5aae1e0d",
+  "audit": "exact canonical corpus overlap, assigned split, and graph presentation before step 10000",
+  "checkpoint": {
+    "checkpoint": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+    "checkpoint_sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+    "data_states": [
+      {
+        "cycle": 0,
+        "graph_position": 7532,
+        "shard_position": 1760
+      },
+      {
+        "cycle": 0,
+        "graph_position": 2478,
+        "shard_position": 1770
+      },
+      {
+        "cycle": 0,
+        "graph_position": 83,
+        "shard_position": 1762
+      },
+      {
+        "cycle": 0,
+        "graph_position": 1061,
+        "shard_position": 1764
+      }
+    ],
+    "global_step": 10000,
+    "rank_accounting": [
+      {
+        "completed_shards_in_current_cycle": 1760,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0142/train/shard-00016.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 7532,
+          "shard_position": 1760
+        },
+        "local_population": 55574528,
+        "local_shards": 6784,
+        "rank": 0,
+        "total_presentations": 14425452,
+        "unique_graphs_presented": 14425452
+      },
+      {
+        "completed_shards_in_current_cycle": 1770,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0255/train/shard-00087.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 2478,
+          "shard_position": 1770
+        },
+        "local_population": 54997218,
+        "local_shards": 6784,
+        "rank": 1,
+        "total_presentations": 14325085,
+        "unique_graphs_presented": 14325085
+      },
+      {
+        "completed_shards_in_current_cycle": 1762,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0083/train/shard-00024.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 83,
+          "shard_position": 1762
+        },
+        "local_population": 55574528,
+        "local_shards": 6784,
+        "rank": 2,
+        "total_presentations": 14434387,
+        "unique_graphs_presented": 14434387
+      },
+      {
+        "completed_shards_in_current_cycle": 1764,
+        "current_shard": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graphs/bucket-0169/train/shard-00081.pt",
+        "current_shard_graphs": 8192,
+        "cursor": {
+          "cycle": 0,
+          "graph_position": 1061,
+          "shard_position": 1764
+        },
+        "local_population": 55002621,
+        "local_shards": 6784,
+        "rank": 3,
+        "total_presentations": 14319341,
+        "unique_graphs_presented": 14319341
+      }
+    ],
+    "training_graph_presentations": 57504265,
+    "unique_training_graphs_presented": 57504265,
+    "world_size": 4
+  },
+  "competitor_status_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/competitor_exposure_status.csv",
+  "competitor_status_table_sha256": "7841f2e5c71d8cacbfd1c140888165b0dc6325880b65b7d8d2bd4270a31f887b",
+  "corpus": {
+    "dataset_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/dataset_manifest.json",
+    "dataset_manifest_hash": "4e3aa3b70b7808c5d2efcd891314c99a982766391cc48a383d9096af41fc2a1a",
+    "dataset_manifest_sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+    "graph_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/work/graph_manifest.json",
+    "graph_manifest_hash": "d52b5765c07c727265b310843c2499b3738800b7292bc93fe618dba89aa1e13a",
+    "graph_manifest_sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+    "graphs_total": 223180699,
+    "graphs_train": 221148895
+  },
+  "corpus_overlap_identity_set_sha256": "7a14f8088851c372a7f188d54b14c844bc8829144006e9e4baafcf7e65f4246b",
+  "identity_ledger": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/audits/gmolai_pretraining_exposure_ledger.csv",
+  "identity_ledger_sha256": "1dbfc0447c6ae4e03c3296ddb5d2e316fe21b513a4c60511fb378833dad1af4a",
+  "no_unseen_or_ood_claim": true,
+  "pretrained_model_executed": false,
+  "runtime": {
+    "duckdb": "1.5.4",
+    "gmolai_retrain": "0.4.1",
+    "numpy": "1.26.4",
+    "platform": "Linux-5.14.0-687.38.1.el9_8.aarch64-aarch64-with-glibc2.39",
+    "pyarrow": "19.0.1",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0"
+  },
+  "scan": {
+    "identity_pickle_bytes_read": 16380374136,
+    "rank_shard_counts": [
+      6784,
+      6784,
+      6784,
+      6784
+    ],
+    "rank_shards_exclusive": true,
+    "target_locations_resolved": 30838,
+    "target_training_identity_union": 30838,
+    "tensor_storage_members_loaded": false,
+    "training_graph_hashes_scanned": 221148895,
+    "training_shards_scanned": 27136
+  },
+  "schema_version": 1,
+  "seen_identity_set_sha256": "373fd5bb8aac3e577077ab4ed98060557cf6de688cfe181bff4dac54ab9515a7",
+  "status": "ok",
+  "summary_table": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/pretraining_exposure.csv",
+  "summary_table_sha256": "efb071bfbe128daa1defb208f86e8d1c453b4fb4d578c0d8cb9bbf639e32a733",
+  "target_memberships": 97245,
+  "timestamp_utc": "2026-08-22T19:39:15.704976+00:00",
+  "training_permitted": false,
+  "training_stream_seed": 42,
+  "unique_corpus_overlap": 31174,
+  "unique_panel_molecules": 80713,
+  "unique_seen_before_step_10000": 8128,
+  "unique_train_overlap": 30838
+}

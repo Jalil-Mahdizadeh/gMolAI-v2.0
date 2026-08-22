@@ -1,0 +1,23 @@
+{
+  "anchor_draws": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/anchor_draws.csv",
+  "anchor_draws_sha256": "f0c88ccadd84925b44645b2b4ab8e28b456bd53cb42b0f7a92dcfaeb0ef960c8",
+  "anchor_identity_schedule_sha256": "91eb4963ba9ef8fd6d4b91fd7b0205ef782448fc503dba0b55af48b4703b3965",
+  "anchor_rows": 8400,
+  "draws_per_target": 20,
+  "freeze_stage": "after_population_freeze_before_retrieval",
+  "performance_inspected": false,
+  "population_state_sha256": "210352019b7b8393bb5d9e7f505113ec027969af0b995c6ff560ae4b5308bf31",
+  "scaffold_draw_eligibility": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/scaffold_draw_eligibility.csv",
+  "scaffold_draw_eligibility_sha256": "d11333e969ae2c15120af048ae6281dde34a2ad1ff44d12edb12695a91cdeb29",
+  "scaffold_eligible_targets": 70,
+  "schema_version": 1,
+  "shot_counts": [
+    1,
+    5
+  ],
+  "status": "frozen",
+  "target_summary": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/tables/target_summary.csv",
+  "target_summary_sha256": "90fecb3abe7e0e991447dc66d7d702a83f70b53d2a73de47c982faaa7ecb80fa",
+  "targets": 70,
+  "timestamp_utc": "2026-08-22T19:32:34.531905+00:00"
+}

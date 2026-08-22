@@ -1,0 +1,15 @@
+{
+  "dimension": 512,
+  "dtype": "float32",
+  "embedding_sha256": "3c7402f75df21392eb3668a79c984771486d8d5f0251bad706e34b8f1a792bf2",
+  "input_sha256": "5030a7e94a495924223c9188d152f0b235daef85b96569833357504141d9b910",
+  "metadata_sha256": "9c829f5fe221f23263544b6677c6a183698b56c579ebe53a44a7c231dfe7631b",
+  "model": "kermt_v2",
+  "nonbinary_values": null,
+  "nonfinite_vectors": 0,
+  "ordered_identity_sha256": "ac1ea6ae8c614be4c76b662f13c3e67f3c1300b9cd1bb563f3fbc9986409c540",
+  "rows": 81622,
+  "schema_version": 1,
+  "status": "ok",
+  "zero_norm_vectors": 0
+}

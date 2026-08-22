@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "protocol_status": "frozen_before_representation_execution",
+  "frozen_at_utc": "2026-08-22T18:47:32Z",
+  "study": {
+    "name": "gMolAI manuscript-scale ligand-based virtual screening benchmark",
+    "question": "Given a small number of experimentally validated active ligands for a target, how well does each frozen molecular representation retrieve other experimentally validated actives from experimentally characterized inactive or lower-affinity compounds?",
+    "dataset_scope": "VSDS-vd v3 TrueDecoy_gap only",
+    "inference_only": true,
+    "no_training_or_finetuning": true,
+    "no_model_or_representation_selection": true,
+    "no_target_specific_model": true,
+    "no_protein_input": true,
+    "primary_population": "all-seven-model common support finalized only after every model-specific representation export passes validation"
+  },
+  "repository": {
+    "root": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain",
+    "head_at_freeze": "29ced8352886692c00a792d24a183f05e5de0059",
+    "benchmark_root": "extra-benchmark/ligand-retrieval-vsds"
+  },
+  "data": {
+    "archive": {
+      "title": "VSDS-vd v3",
+      "doi": "10.5281/zenodo.14874127",
+      "record_id": 14874127,
+      "version": "v3",
+      "publication_date": "2024-12-22",
+      "license": "CC-BY-4.0",
+      "url": "https://zenodo.org/api/records/14874127/files/VSDS_vd.rar/content",
+      "path": "inputs/raw/VSDS_vd-v3.rar",
+      "bytes": 173961755,
+      "md5": "cc53b779cdc340cc6b8d5c82c76aceb5",
+      "sha256": "6cc80289ce9f1fbe5adb3ac0b14a27825976f55799e069d1695489cff91b858e",
+      "archive_subset_path": "VSDS_vd/TrueDecoy set/{target}/{actives,inactives}.sdf",
+      "full_true_decoy_targets": 147
+    },
+    "gap_definition": {
+      "title": "Supplementary Data 1: Data distribution of the TrueDecoy_gap set",
+      "article_doi": "10.1038/s42256-025-00993-0",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42256-025-00993-0/MediaObjects/42256_2025_993_MOESM3_ESM.xlsx",
+      "path": "inputs/raw/VSDS_TrueDecoy_gap_Supplementary_Data_1.xlsx",
+      "bytes": 14506,
+      "md5": "2aae3f0aa96ff39fcbfeef55ebf6a97a",
+      "sha256": "a90c6e000c31e79eb492916e87f932515e154d20e8e409cde7b21cea873159d6",
+      "expected_targets": 71,
+      "expected_active_records": 2415,
+      "expected_inactive_or_lower_affinity_records": 97761,
+      "definition": "For every included target, the least-potent active is at least 1000-fold more potent than the most-potent inactive or lower-affinity compound; source values mix Ki, Kd, and IC50 in nM."
+    }
+  },
+  "chemistry_policy": {
+    "source_format": "RDKit SDMolSupplier over the source actives.sdf and inactives.sdf files",
+    "explicit_hydrogens": "remove before repository canonicalization",
+    "isomeric_smiles": true,
+    "fragment_policy": "reject",
+    "allowed_elements": ["C", "N", "O", "F", "P", "S", "Cl", "Br", "I", "H", "B", "Si"],
+    "min_atoms": 2,
+    "max_atoms": 256,
+    "identity": "SHA-256 of repository-canonical isomeric SMILES",
+    "inchikey": "standard full InChIKey generated from the canonical molecule",
+    "within_target_deduplication": "within each full InChIKey and label retain the lexicographically first molecule hash then source record; exclude all occurrences if either a full InChIKey or canonical identity has conflicting labels",
+    "cross_target_identity": "retain target-specific memberships but encode each canonical molecule once globally",
+    "scaffold": "canonical nonisomeric Bemis-Murcko scaffold",
+    "empty_scaffold_policy": "empty acyclic scaffolds are retained but never used as scaffold-exclusion keys"
+  },
+  "gmolai": {
+    "representation": "released_hybrid_w3: clean_graph_z_plus_mean_node_z_train_standardized_raw_blocks_mean_node_weight_3",
+    "dimension": 384,
+    "config": {
+      "path": "configs/retrain.yaml",
+      "sha256": "9b8180f3aae3c6b6985752d359028c2b135ae4eaa5894aa1f1d99eafdcd7e011",
+      "bytes": 2326
+    },
+    "training_plan": {
+      "path": "configs/representation-pilot-mean-node-contrastive-001-desc050.yaml",
+      "sha256": "77288ba7af4da96e9b6134c0c3762efb483a63ee3b0613d35b3c9785e212bf61",
+      "bytes": 1083
+    },
+    "checkpoint": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/checkpoints/step-000010000.pt",
+      "sha256": "02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e",
+      "bytes": 26796827,
+      "global_step": 10000
+    },
+    "calibrator": {
+      "path": "runs/combined-zinc-pubchem-representation-pilot-mean-node-contrastive-001-desc050/representation-calibrator.pt",
+      "sha256": "5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b",
+      "bytes": 6661,
+      "training_graphs": 100000
+    }
+  },
+  "models": {
+    "primary_order": [
+      "gmolai",
+      "morgan",
+      "molai",
+      "molformer",
+      "smi_ted",
+      "molclr_gin",
+      "kermt_v2"
+    ],
+    "gmolai": {
+      "display_name": "gMolAI",
+      "dimension": 384,
+      "batch_size": null,
+      "representation": "released_hybrid_w3",
+      "similarity": "cosine_after_row_L2_normalization",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    },
+    "morgan": {
+      "display_name": "Morgan (binary)",
+      "dimension": 2048,
+      "batch_size": 4096,
+      "representation": "RDKit Morgan radius 2, fpSize 2048, binary",
+      "similarity": "Tanimoto",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/gmolai-pyg-25.09-arm64.sif",
+      "container_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+    },
+    "molai": {
+      "display_name": "MolAI",
+      "dimension": 512,
+      "batch_size": 256,
+      "representation": "epoch6_three_lstm_hidden_cell_concat_linear_tanh",
+      "similarity": "cosine_after_row_L2_normalization",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolAI/molai-epoch6-arm64.sif",
+      "container_sha256": "f10c57ce6747a6e0ffd8f648d9f1be79022f8fdb47e77798bd1e08474ef7bc8e"
+    },
+    "molformer": {
+      "display_name": "MoLFormer",
+      "dimension": 768,
+      "batch_size": 128,
+      "representation": "official_pooler_output",
+      "similarity": "cosine_after_row_L2_normalization",
+      "model_revision": "7b12d946c181a37f6012b9dc3b002275de070314",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolFormer/molformer-xl-both-10pct-arm64.sif",
+      "container_sha256": "fa239958c185a0fa11b5db067785166924335d360dc57023cad3555282443431"
+    },
+    "smi_ted": {
+      "display_name": "SMI-TED-Light",
+      "dimension": 768,
+      "batch_size": 100,
+      "representation": "official_model_encode",
+      "similarity": "cosine_after_row_L2_normalization",
+      "model_revision": "414c3ea0a8603ef49d1c5bb3db336e09877c01ce",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/SMI-TED/smi-ted-light-arm64.sif",
+      "container_sha256": "7c8bf35f997d6e8cceb11cf0f18a4de95dee7d767286cf48d8ba8f3c36212f6a"
+    },
+    "molclr_gin": {
+      "display_name": "MolCLR-GIN",
+      "dimension": 512,
+      "batch_size": 256,
+      "representation": "official_downstream_preprojection_graph_vector",
+      "similarity": "cosine_after_row_L2_normalization",
+      "model_revision": "3d3bc1912be27b0c97435fd9134f4d4c73d4c5ab",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/MolCLR-GIN/molclr-gin-arm64.sif",
+      "container_sha256": "83f1b288006adcc85081fea731888f0b7fc648f754347b8593741b57bd049272"
+    },
+    "kermt_v2": {
+      "display_name": "KERMT v2",
+      "dimension": 512,
+      "batch_size": 64,
+      "representation": "cmim_projected_mean_latent",
+      "similarity": "cosine_after_row_L2_normalization",
+      "model_revision": "7df5eb3179235fdea1e8124db73215da33d77dce",
+      "container": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/containers/KERMT-v2/kermt-v2-arm64.sif",
+      "container_sha256": "f0a5e007693fc18f674d796374bf04ad6898656445204f52fa09203e5f097117"
+    }
+  },
+  "implementation_sources": {
+    "competitor_adapter": {
+      "path": "extra-benchmark/test-partition/scripts/adapter.py",
+      "sha256": "7c87bfa567564765da7aca9ae417ef3b1f4c7252c7922b6ab4db2bb25c59a8e4"
+    },
+    "gmolai_adapter": {
+      "path": "extra-benchmark/tdc-admet/scripts/gmolai_adapter.py",
+      "sha256": "fe2c310b037d52ae72b3a3139c62684a7497502858df24198123ad060c249af5"
+    },
+    "canonicalization": {
+      "path": "src/gmolai_retrain/chem.py",
+      "sha256": "57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3"
+    },
+    "gmolai_inference": {
+      "path": "src/gmolai_retrain/downstream.py",
+      "sha256": "2c55bcda7bc1f9916e0ca5102488198db6cd131ef5a00c6c9347e5eb032390c5"
+    },
+    "exposure": {
+      "path": "src/gmolai_retrain/downstream_exposure.py",
+      "sha256": "46e8737fe4148a3a5d84bd6ed6a5092c1e65e4d514723e9f6406bc79542c4e29"
+    }
+  },
+  "coverage_and_eligibility": {
+    "screening": "label-blind model-specific adapter screening followed by an actual representation export and validation on every accepted model-specific panel",
+    "common_support": "intersection of identities with successfully validated representation exports from all seven models",
+    "freeze_order": [
+      "freeze eligibility rules",
+      "prepare label-blind unique molecule panel",
+      "screen and encode all model-specific panels",
+      "validate per-model representation coverage",
+      "construct all-seven intersection",
+      "apply target eligibility",
+      "freeze exact target and molecule population",
+      "freeze anchor identities",
+      "calculate retrieval"
+    ],
+    "primary_target_minimum_common_actives": 10,
+    "primary_target_minimum_common_inactives": 1,
+    "scaffold_draw_minimum_remaining_actives": 5,
+    "scaffold_draw_minimum_remaining_inactives": 1,
+    "scaffold_target_minimum_eligible_draws": 10,
+    "report_coverage_before_intersection": true
+  },
+  "retrieval": {
+    "primary_shots": 5,
+    "secondary_shots": 1,
+    "draws_per_target": 20,
+    "anchor_master_seed": 20260822,
+    "anchor_sampler": "SHA-256 pseudorandom ordering of active molecule identities keyed by master seed, target, shot count, and draw; select the lowest hashes",
+    "candidate_pool": "all common-support target members except the active anchors",
+    "score_fusion": "maximum similarity to any anchor",
+    "same_anchors_and_candidates_for_all_models": true,
+    "learned_vector_preprocessing": "float64 row-L2 normalization only; preserve raw float32 exports; no centering, PCA, whitening, projection, or training",
+    "morgan_similarity": "binary Tanimoto",
+    "scaffold_exclusion": "for each 5-shot draw, after removing anchors remove every active and inactive/lower-affinity candidate whose nonempty Bemis-Murcko scaffold equals any nonempty anchor scaffold"
+  },
+  "metrics": {
+    "primary": "EF1%",
+    "ef1": {
+      "k": "max(1, ceil(0.01*N))",
+      "formula": "(A_k/A)/(k/N)",
+      "screened_fraction": "realized k/N",
+      "boundary_ties": "fractional credit: A_k = active_above + ((k-above_count)/tie_count)*active_in_boundary_tie"
+    },
+    "secondary": ["BEDROC_alpha20", "ROC_AUC", "average_precision"],
+    "bedroc_alpha": 20.0,
+    "bedroc_ties": "expected exponential rank contribution within every exact score-tie block",
+    "average_precision_definition": "sklearn.metrics.average_precision_score; not trapezoidal PR-AUC",
+    "random_control": "deterministic SHA-256 pseudorandom candidate ranking; excluded from the seven-model primary ranking"
+  },
+  "statistics": {
+    "target_is_inferential_unit": true,
+    "anchor_draws_are_inferential_replicates": false,
+    "within_target_draw_summary": "arithmetic mean plus median, standard deviation, minimum, and maximum",
+    "bootstrap_repetitions": 5000,
+    "bootstrap_seed": 20260822,
+    "confidence_level": 0.95,
+    "bootstrap": "target-level resampling stratified by the source target class",
+    "paired_reference": "gmolai",
+    "report": ["mean", "median", "bootstrap 95% CI", "paired mean and median differences", "strict win/loss/tie fractions"],
+    "formal_p_values": false
+  },
+  "exposure_audit": {
+    "gmolai": "exact canonical identity overlap with full pretraining corpus, assigned split, and actual graph presentation before checkpoint step 10000",
+    "corpus_artifacts": {
+      "dataset_manifest": {
+        "path": "work/dataset_manifest.json",
+        "sha256": "a771bb6e279c303684efa88d4a9e2ea0b89b711959e66cb6af20b2a54b125788",
+        "bytes": 32754
+      },
+      "graph_manifest": {
+        "path": "work/graph_manifest.json",
+        "sha256": "d57cb00a5a339b05ad8d35b4b3b38ced5f9815bf2ddeecd89d4ab9d928b2e2da",
+        "bytes": 8783155
+      }
+    },
+    "competitors": "published checkpoint and corpus provenance only when molecule-level manifests are unavailable",
+    "performance_restricted_to_unseen_molecules": false,
+    "interpretation": "descriptive exposure audit only; no unseen-molecule or out-of-distribution performance claim"
+  },
+  "outputs": {
+    "main_figure_panels": [
+      "all-model target-level 5-shot EF1% distribution",
+      "paired gMolAI-versus-Morgan target-level 5-shot EF1%",
+      "all-model target-level scaffold-excluded 5-shot EF1% distribution"
+    ],
+    "main_formats": ["pdf", "svg", "png"],
+    "secondary_location": "tables and one compact SI figure",
+    "all_figure_values_have_csv_source_data": true
+  }
+}
+

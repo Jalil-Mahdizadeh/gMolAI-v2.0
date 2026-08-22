@@ -1,0 +1,23 @@
+{
+  "benchmark": "VSDS-vd v3 TrueDecoy_gap ligand retrieval",
+  "completed_at_utc": "2026-08-22T19:42:50.980180+00:00",
+  "final_unique_molecules": 80713,
+  "models": [
+    "gmolai",
+    "morgan",
+    "molai",
+    "molformer",
+    "smi_ted",
+    "molclr_gin",
+    "kermt_v2"
+  ],
+  "retained_artifacts": 110,
+  "retrieval_rows": 33600,
+  "schema_version": 1,
+  "sha256_manifest": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/results/SHA256SUMS",
+  "sha256_manifest_sha256": "6c8260dd1a74d14dca2f1d525b435181734ce4416e3d633e8dfb1d7675104fa6",
+  "status": "complete",
+  "targets": 70,
+  "verification": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/audits/verification.json",
+  "verification_sha256": "90e44f7c9a41b97e8273b7da274107f35693aa49cc216317328942b80ec4abde"
+}

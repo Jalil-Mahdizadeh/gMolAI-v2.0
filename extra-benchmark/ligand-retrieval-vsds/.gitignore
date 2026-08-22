@@ -1,0 +1,19 @@
+# Immutable downloaded sources and deterministic prepared panels are retained
+# locally but are too large for ordinary Git transport.
+/inputs/raw/
+/inputs/prepared/
+
+# Frozen representation matrices and label-blind screen reports are
+# reproducible from protocol.json and the runner.
+/embeddings/
+/artifacts/
+
+# Operational logs and scratch products are local execution records.
+/logs/
+/tmp/
+
+*.partial
+*.orig
+*.rej
+__pycache__/
+

@@ -1,0 +1,1961 @@
+model,display_name,target_id,target_class,value,panel
+gmolai,gMolAI,O00329,Kinase,8.431111111111111,One-shot EF1%
+gmolai,gMolAI,O14757,Kinase,33.35520833333334,One-shot EF1%
+gmolai,gMolAI,O14965,Kinase,7.364814814814814,One-shot EF1%
+gmolai,gMolAI,O15379,Deacetylase,23.904273504273505,One-shot EF1%
+gmolai,gMolAI,O43614,GPCR,6.661204013377926,One-shot EF1%
+gmolai,gMolAI,O60341,Oxidase,26.59351851851852,One-shot EF1%
+gmolai,gMolAI,O60674,Kinase,7.356363636363636,One-shot EF1%
+gmolai,gMolAI,O75116,Kinase,22.3875,One-shot EF1%
+gmolai,gMolAI,P00519,Kinase,8.793103448275861,One-shot EF1%
+gmolai,gMolAI,P00533,Kinase,6.493157894736844,One-shot EF1%
+gmolai,gMolAI,P00734,Peptidase,4.435372194854953,One-shot EF1%
+gmolai,gMolAI,P00742,Peptidase,9.333952569169956,One-shot EF1%
+gmolai,gMolAI,P00918,Other Enzymes,6.271698113207547,One-shot EF1%
+gmolai,gMolAI,P01375,Other Proteins,39.39002976190476,One-shot EF1%
+gmolai,gMolAI,P03372,Nuclear receptor,10.426829268292684,One-shot EF1%
+gmolai,gMolAI,P03952,Peptidase,11.579545454545457,One-shot EF1%
+gmolai,gMolAI,P04150,Nuclear receptor,10.253846153846156,One-shot EF1%
+gmolai,gMolAI,P06239,Kinase,11.2,One-shot EF1%
+gmolai,gMolAI,P07550,GPCR,18.75,One-shot EF1%
+gmolai,gMolAI,P07711,Peptidase,8.116554054054056,One-shot EF1%
+gmolai,gMolAI,P08172,GPCR,4.55,One-shot EF1%
+gmolai,gMolAI,P08246,Peptidase,26.957894736842103,One-shot EF1%
+gmolai,gMolAI,P08253,Peptidase,10.02306763285024,One-shot EF1%
+gmolai,gMolAI,P08581,Kinase,8.2,One-shot EF1%
+gmolai,gMolAI,P08908,GPCR,7.4720982142857135,One-shot EF1%
+gmolai,gMolAI,P09874,Other Enzymes,11.85,One-shot EF1%
+gmolai,gMolAI,P10721,Kinase,24.36477272727273,One-shot EF1%
+gmolai,gMolAI,P11362,Kinase,10.270291777188328,One-shot EF1%
+gmolai,gMolAI,P11802,Kinase,16.077272727272724,One-shot EF1%
+gmolai,gMolAI,P14416,GPCR,3.430284857571215,One-shot EF1%
+gmolai,gMolAI,P14780,Peptidase,7.68984375,One-shot EF1%
+gmolai,gMolAI,P15056,Kinase,12.204761904761902,One-shot EF1%
+gmolai,gMolAI,P20309,GPCR,14.913888888888884,One-shot EF1%
+gmolai,gMolAI,P21453,GPCR,9.067692307692306,One-shot EF1%
+gmolai,gMolAI,P23458,Kinase,12.972839506172836,One-shot EF1%
+gmolai,gMolAI,P27487,Peptidase,6.512820512820514,One-shot EF1%
+gmolai,gMolAI,P27986,Kinase,26.095,One-shot EF1%
+gmolai,gMolAI,P28223,GPCR,6.416105769230768,One-shot EF1%
+gmolai,gMolAI,P28335,GPCR,6.7,One-shot EF1%
+gmolai,gMolAI,P28482,Kinase,24.948529411764703,One-shot EF1%
+gmolai,gMolAI,P29274,GPCR,5.168269230769231,One-shot EF1%
+gmolai,gMolAI,P29597,Kinase,20.369196428571428,One-shot EF1%
+gmolai,gMolAI,P30542,GPCR,5.639963280293758,One-shot EF1%
+gmolai,gMolAI,P31645,Other Proteins,7.190441176470588,One-shot EF1%
+gmolai,gMolAI,P34969,GPCR,5.210526315789473,One-shot EF1%
+gmolai,gMolAI,P34972,GPCR,4.010394802598701,One-shot EF1%
+gmolai,gMolAI,P35372,GPCR,8.73793333333333,One-shot EF1%
+gmolai,gMolAI,P35462,GPCR,32.794999999999995,One-shot EF1%
+gmolai,gMolAI,P36888,Kinase,3.4545000000000003,One-shot EF1%
+gmolai,gMolAI,P41143,GPCR,10.162719298245612,One-shot EF1%
+gmolai,gMolAI,P42336,Kinase,18.06393103448276,One-shot EF1%
+gmolai,gMolAI,P43405,Kinase,7.2679012345678995,One-shot EF1%
+gmolai,gMolAI,P45452,Peptidase,7.489772727272728,One-shot EF1%
+gmolai,gMolAI,P51449,Nuclear receptor,26.960212201591517,One-shot EF1%
+gmolai,gMolAI,P78536,Other Enzymes,13.959151193633952,One-shot EF1%
+gmolai,gMolAI,Q00987,Other Enzymes,31.92571428571428,One-shot EF1%
+gmolai,gMolAI,Q05397,Kinase,35.3242857142857,One-shot EF1%
+gmolai,gMolAI,Q06187,Kinase,15.522222222222222,One-shot EF1%
+gmolai,gMolAI,Q07817,Apoptosis regulator,22.27972027972028,One-shot EF1%
+gmolai,gMolAI,Q07820,Apoptosis regulator,47.500270562770574,One-shot EF1%
+gmolai,gMolAI,Q08499,Other Enzymes,13.6859649122807,One-shot EF1%
+gmolai,gMolAI,Q14432,Other Enzymes,19.28,One-shot EF1%
+gmolai,gMolAI,Q16539,Kinase,9.456250000000002,One-shot EF1%
+gmolai,gMolAI,Q16790,Other Enzymes,7.486607142857143,One-shot EF1%
+gmolai,gMolAI,Q92731,Nuclear receptor,5.148571428571428,One-shot EF1%
+gmolai,gMolAI,Q96GD4,Kinase,10.196666666666667,One-shot EF1%
+gmolai,gMolAI,Q96RI1,Nuclear receptor,11.22,One-shot EF1%
+gmolai,gMolAI,Q9NWZ3,Kinase,6.073958333333333,One-shot EF1%
+gmolai,gMolAI,Q9UBN7,Deacetylase,7.0125,One-shot EF1%
+gmolai,gMolAI,Q9Y233,Other Enzymes,23.26180555555556,One-shot EF1%
+kermt_v2,KERMT v2,O00329,Kinase,13.201345029239766,One-shot EF1%
+kermt_v2,KERMT v2,O14757,Kinase,37.69409722222223,One-shot EF1%
+kermt_v2,KERMT v2,O14965,Kinase,13.831481481481484,One-shot EF1%
+kermt_v2,KERMT v2,O15379,Deacetylase,25.116809116809115,One-shot EF1%
+kermt_v2,KERMT v2,O43614,GPCR,10.546906354515048,One-shot EF1%
+kermt_v2,KERMT v2,O60341,Oxidase,27.28425925925926,One-shot EF1%
+kermt_v2,KERMT v2,O60674,Kinase,11.209696969696967,One-shot EF1%
+kermt_v2,KERMT v2,O75116,Kinase,25.585714285714285,One-shot EF1%
+kermt_v2,KERMT v2,P00519,Kinase,20.79907161803713,One-shot EF1%
+kermt_v2,KERMT v2,P00533,Kinase,6.881637426900585,One-shot EF1%
+kermt_v2,KERMT v2,P00734,Peptidase,6.344266557197591,One-shot EF1%
+kermt_v2,KERMT v2,P00742,Peptidase,14.044545454545451,One-shot EF1%
+kermt_v2,KERMT v2,P00918,Other Enzymes,9.271205906480722,One-shot EF1%
+kermt_v2,KERMT v2,P01375,Other Proteins,38.50684523809524,One-shot EF1%
+kermt_v2,KERMT v2,P03372,Nuclear receptor,11.817073170731708,One-shot EF1%
+kermt_v2,KERMT v2,P03952,Peptidase,9.07064393939394,One-shot EF1%
+kermt_v2,KERMT v2,P04150,Nuclear receptor,16.53846153846154,One-shot EF1%
+kermt_v2,KERMT v2,P06239,Kinase,14.525,One-shot EF1%
+kermt_v2,KERMT v2,P07550,GPCR,19.0625,One-shot EF1%
+kermt_v2,KERMT v2,P07711,Peptidase,10.08023648648649,One-shot EF1%
+kermt_v2,KERMT v2,P08172,GPCR,8.19,One-shot EF1%
+kermt_v2,KERMT v2,P08246,Peptidase,37.326315789473696,One-shot EF1%
+kermt_v2,KERMT v2,P08253,Peptidase,12.2805152979066,One-shot EF1%
+kermt_v2,KERMT v2,P08581,Kinase,10.2,One-shot EF1%
+kermt_v2,KERMT v2,P08908,GPCR,11.20814732142857,One-shot EF1%
+kermt_v2,KERMT v2,P09874,Other Enzymes,12.065454545454548,One-shot EF1%
+kermt_v2,KERMT v2,P10721,Kinase,33.646590909090904,One-shot EF1%
+kermt_v2,KERMT v2,P11362,Kinase,12.423740053050398,One-shot EF1%
+kermt_v2,KERMT v2,P11802,Kinase,17.863636363636367,One-shot EF1%
+kermt_v2,KERMT v2,P14416,GPCR,5.288355822088954,One-shot EF1%
+kermt_v2,KERMT v2,P14780,Peptidase,14.475,One-shot EF1%
+kermt_v2,KERMT v2,P15056,Kinase,16.42095238095238,One-shot EF1%
+kermt_v2,KERMT v2,P20309,GPCR,16.93611111111111,One-shot EF1%
+kermt_v2,KERMT v2,P21453,GPCR,11.334615384615384,One-shot EF1%
+kermt_v2,KERMT v2,P23458,Kinase,21.73827160493827,One-shot EF1%
+kermt_v2,KERMT v2,P27487,Peptidase,6.675641025641026,One-shot EF1%
+kermt_v2,KERMT v2,P27986,Kinase,33.77,One-shot EF1%
+kermt_v2,KERMT v2,P28223,GPCR,9.776923076923076,One-shot EF1%
+kermt_v2,KERMT v2,P28335,GPCR,5.278787878787879,One-shot EF1%
+kermt_v2,KERMT v2,P28482,Kinase,31.87867647058824,One-shot EF1%
+kermt_v2,KERMT v2,P29274,GPCR,7.987325174825178,One-shot EF1%
+kermt_v2,KERMT v2,P29597,Kinase,20.673214285714288,One-shot EF1%
+kermt_v2,KERMT v2,P30542,GPCR,7.077600979192167,One-shot EF1%
+kermt_v2,KERMT v2,P31645,Other Proteins,6.896953781512606,One-shot EF1%
+kermt_v2,KERMT v2,P34969,GPCR,7.105263157894737,One-shot EF1%
+kermt_v2,KERMT v2,P34972,GPCR,4.583308345827087,One-shot EF1%
+kermt_v2,KERMT v2,P35372,GPCR,12.8596,One-shot EF1%
+kermt_v2,KERMT v2,P35462,GPCR,37.03380952380952,One-shot EF1%
+kermt_v2,KERMT v2,P36888,Kinase,3.948,One-shot EF1%
+kermt_v2,KERMT v2,P41143,GPCR,12.966228070175436,One-shot EF1%
+kermt_v2,KERMT v2,P42336,Kinase,23.615689655172417,One-shot EF1%
+kermt_v2,KERMT v2,P43405,Kinase,16.29012345679012,One-shot EF1%
+kermt_v2,KERMT v2,P45452,Peptidase,13.251136363636364,One-shot EF1%
+kermt_v2,KERMT v2,P51449,Nuclear receptor,33.332625994694965,One-shot EF1%
+kermt_v2,KERMT v2,P78536,Other Enzymes,20.274005305039783,One-shot EF1%
+kermt_v2,KERMT v2,Q00987,Other Enzymes,33.43571428571428,One-shot EF1%
+kermt_v2,KERMT v2,Q05397,Kinase,40.019285714285694,One-shot EF1%
+kermt_v2,KERMT v2,Q06187,Kinase,20.46111111111111,One-shot EF1%
+kermt_v2,KERMT v2,Q07817,Apoptosis regulator,28.59230769230769,One-shot EF1%
+kermt_v2,KERMT v2,Q07820,Apoptosis regulator,47.500270562770574,One-shot EF1%
+kermt_v2,KERMT v2,Q08499,Other Enzymes,26.6640350877193,One-shot EF1%
+kermt_v2,KERMT v2,Q14432,Other Enzymes,25.114736842105263,One-shot EF1%
+kermt_v2,KERMT v2,Q16539,Kinase,16.210714285714285,One-shot EF1%
+kermt_v2,KERMT v2,Q16790,Other Enzymes,15.47232142857143,One-shot EF1%
+kermt_v2,KERMT v2,Q92731,Nuclear receptor,7.508333333333333,One-shot EF1%
+kermt_v2,KERMT v2,Q96GD4,Kinase,20.15055555555556,One-shot EF1%
+kermt_v2,KERMT v2,Q96RI1,Nuclear receptor,17.380000000000003,One-shot EF1%
+kermt_v2,KERMT v2,Q9NWZ3,Kinase,9.834027777777775,One-shot EF1%
+kermt_v2,KERMT v2,Q9UBN7,Deacetylase,14.9875,One-shot EF1%
+kermt_v2,KERMT v2,Q9Y233,Other Enzymes,30.56493055555556,One-shot EF1%
+molai,MolAI,O00329,Kinase,9.318596491228073,One-shot EF1%
+molai,MolAI,O14757,Kinase,31.99930555555556,One-shot EF1%
+molai,MolAI,O14965,Kinase,8.262962962962963,One-shot EF1%
+molai,MolAI,O15379,Deacetylase,20.95954415954415,One-shot EF1%
+molai,MolAI,O43614,GPCR,5.273453177257525,One-shot EF1%
+molai,MolAI,O60341,Oxidase,10.533796296296297,One-shot EF1%
+molai,MolAI,O60674,Kinase,5.692424242424243,One-shot EF1%
+molai,MolAI,O75116,Kinase,13.148214285714284,One-shot EF1%
+molai,MolAI,P00519,Kinase,5.411140583554377,One-shot EF1%
+molai,MolAI,P00533,Kinase,4.439766081871346,One-shot EF1%
+molai,MolAI,P00734,Peptidase,3.2563492063492063,One-shot EF1%
+molai,MolAI,P00742,Peptidase,6.891422924901185,One-shot EF1%
+molai,MolAI,P00918,Other Enzymes,8.634946677604592,One-shot EF1%
+molai,MolAI,P01375,Other Proteins,38.86011904761905,One-shot EF1%
+molai,MolAI,P03372,Nuclear receptor,7.414634146341461,One-shot EF1%
+molai,MolAI,P03952,Peptidase,3.859848484848485,One-shot EF1%
+molai,MolAI,P04150,Nuclear receptor,9.923076923076923,One-shot EF1%
+molai,MolAI,P06239,Kinase,7.7,One-shot EF1%
+molai,MolAI,P07550,GPCR,14.375,One-shot EF1%
+molai,MolAI,P07711,Peptidase,5.236486486486487,One-shot EF1%
+molai,MolAI,P08172,GPCR,3.0333333333333328,One-shot EF1%
+molai,MolAI,P08246,Peptidase,27.994736842105265,One-shot EF1%
+molai,MolAI,P08253,Peptidase,4.695491143317229,One-shot EF1%
+molai,MolAI,P08581,Kinase,4.2,One-shot EF1%
+molai,MolAI,P08908,GPCR,6.2765625,One-shot EF1%
+molai,MolAI,P09874,Other Enzymes,10.557272727272728,One-shot EF1%
+molai,MolAI,P10721,Kinase,14.50284090909091,One-shot EF1%
+molai,MolAI,P11362,Kinase,10.435941644562334,One-shot EF1%
+molai,MolAI,P11802,Kinase,9.130303030303027,One-shot EF1%
+molai,MolAI,P14416,GPCR,2.572713643178411,One-shot EF1%
+molai,MolAI,P14780,Peptidase,6.48359375,One-shot EF1%
+molai,MolAI,P15056,Kinase,8.654285714285713,One-shot EF1%
+molai,MolAI,P20309,GPCR,17.94722222222222,One-shot EF1%
+molai,MolAI,P21453,GPCR,6.315,One-shot EF1%
+molai,MolAI,P23458,Kinase,15.076543209876544,One-shot EF1%
+molai,MolAI,P27487,Peptidase,3.093589743589744,One-shot EF1%
+molai,MolAI,P27986,Kinase,12.718571428571426,One-shot EF1%
+molai,MolAI,P28223,GPCR,4.277403846153846,One-shot EF1%
+molai,MolAI,P28335,GPCR,3.2484848484848485,One-shot EF1%
+molai,MolAI,P28482,Kinase,15.246323529411764,One-shot EF1%
+molai,MolAI,P29274,GPCR,3.3828671328671334,One-shot EF1%
+molai,MolAI,P29597,Kinase,10.640624999999998,One-shot EF1%
+molai,MolAI,P30542,GPCR,3.649388004895961,One-shot EF1%
+molai,MolAI,P31645,Other Proteins,3.5218487394957982,One-shot EF1%
+molai,MolAI,P34969,GPCR,4.026315789473683,One-shot EF1%
+molai,MolAI,P34972,GPCR,1.575512243878061,One-shot EF1%
+molai,MolAI,P35372,GPCR,3.6270666666666656,One-shot EF1%
+molai,MolAI,P35462,GPCR,23.425,One-shot EF1%
+molai,MolAI,P36888,Kinase,2.7142500000000007,One-shot EF1%
+molai,MolAI,P41143,GPCR,8.14769736842105,One-shot EF1%
+molai,MolAI,P42336,Kinase,9.280551724137933,One-shot EF1%
+molai,MolAI,P43405,Kinase,7.017283950617285,One-shot EF1%
+molai,MolAI,P45452,Peptidase,4.225,One-shot EF1%
+molai,MolAI,P51449,Nuclear receptor,20.914588859416444,One-shot EF1%
+molai,MolAI,P78536,Other Enzymes,9.139920424403185,One-shot EF1%
+molai,MolAI,Q00987,Other Enzymes,23.944285714285712,One-shot EF1%
+molai,MolAI,Q05397,Kinase,26.605,One-shot EF1%
+molai,MolAI,Q06187,Kinase,11.288888888888888,One-shot EF1%
+molai,MolAI,Q07817,Apoptosis regulator,17.45244755244755,One-shot EF1%
+molai,MolAI,Q07820,Apoptosis regulator,37.86417748917749,One-shot EF1%
+molai,MolAI,Q08499,Other Enzymes,13.214035087719296,One-shot EF1%
+molai,MolAI,Q14432,Other Enzymes,29.68105263157894,One-shot EF1%
+molai,MolAI,Q16539,Kinase,10.131696428571429,One-shot EF1%
+molai,MolAI,Q16790,Other Enzymes,7.985714285714286,One-shot EF1%
+molai,MolAI,Q92731,Nuclear receptor,5.148571428571428,One-shot EF1%
+molai,MolAI,Q96GD4,Kinase,11.167777777777776,One-shot EF1%
+molai,MolAI,Q96RI1,Nuclear receptor,9.24,One-shot EF1%
+molai,MolAI,Q9NWZ3,Kinase,8.966319444444446,One-shot EF1%
+molai,MolAI,Q9UBN7,Deacetylase,5.087499999999999,One-shot EF1%
+molai,MolAI,Q9Y233,Other Enzymes,10.819444444444446,One-shot EF1%
+molclr_gin,MolCLR-GIN,O00329,Kinase,9.651403508771931,One-shot EF1%
+molclr_gin,MolCLR-GIN,O14757,Kinase,36.33819444444445,One-shot EF1%
+molclr_gin,MolCLR-GIN,O14965,Kinase,8.442592592592593,One-shot EF1%
+molclr_gin,MolCLR-GIN,O15379,Deacetylase,23.03817663817664,One-shot EF1%
+molclr_gin,MolCLR-GIN,O43614,GPCR,5.643520066889632,One-shot EF1%
+molclr_gin,MolCLR-GIN,O60341,Oxidase,25.03935185185185,One-shot EF1%
+molclr_gin,MolCLR-GIN,O60674,Kinase,7.006060606060606,One-shot EF1%
+molclr_gin,MolCLR-GIN,O75116,Kinase,20.966071428571425,One-shot EF1%
+molclr_gin,MolCLR-GIN,P00519,Kinase,9.807692307692308,One-shot EF1%
+molclr_gin,MolCLR-GIN,P00533,Kinase,7.825087719298246,One-shot EF1%
+molclr_gin,MolCLR-GIN,P00734,Peptidase,5.221387520525452,One-shot EF1%
+molclr_gin,MolCLR-GIN,P00742,Peptidase,10.7296837944664,One-shot EF1%
+molclr_gin,MolCLR-GIN,P00918,Other Enzymes,7.907793273174734,One-shot EF1%
+molclr_gin,MolCLR-GIN,P01375,Other Proteins,37.976934523809526,One-shot EF1%
+molclr_gin,MolCLR-GIN,P03372,Nuclear receptor,10.658536585365855,One-shot EF1%
+molclr_gin,MolCLR-GIN,P03952,Peptidase,8.491666666666665,One-shot EF1%
+molclr_gin,MolCLR-GIN,P04150,Nuclear receptor,10.915384615384614,One-shot EF1%
+molclr_gin,MolCLR-GIN,P06239,Kinase,14.175,One-shot EF1%
+molclr_gin,MolCLR-GIN,P07550,GPCR,20.0,One-shot EF1%
+molclr_gin,MolCLR-GIN,P07711,Peptidase,8.640202702702704,One-shot EF1%
+molclr_gin,MolCLR-GIN,P08172,GPCR,5.459999999999999,One-shot EF1%
+molclr_gin,MolCLR-GIN,P08246,Peptidase,25.661842105263155,One-shot EF1%
+molclr_gin,MolCLR-GIN,P08253,Peptidase,7.585024154589371,One-shot EF1%
+molclr_gin,MolCLR-GIN,P08581,Kinase,3.8,One-shot EF1%
+molclr_gin,MolCLR-GIN,P08908,GPCR,8.06986607142857,One-shot EF1%
+molclr_gin,MolCLR-GIN,P09874,Other Enzymes,7.756363636363638,One-shot EF1%
+molclr_gin,MolCLR-GIN,P10721,Kinase,19.14375,One-shot EF1%
+molclr_gin,MolCLR-GIN,P11362,Kinase,11.761140583554376,One-shot EF1%
+molclr_gin,MolCLR-GIN,P11802,Kinase,17.466666666666672,One-shot EF1%
+molclr_gin,MolCLR-GIN,P14416,GPCR,3.573213393303349,One-shot EF1%
+molclr_gin,MolCLR-GIN,P14780,Peptidase,5.88046875,One-shot EF1%
+molclr_gin,MolCLR-GIN,P15056,Kinase,11.982857142857146,One-shot EF1%
+molclr_gin,MolCLR-GIN,P20309,GPCR,10.616666666666664,One-shot EF1%
+molclr_gin,MolCLR-GIN,P21453,GPCR,8.419999999999998,One-shot EF1%
+molclr_gin,MolCLR-GIN,P23458,Kinase,12.446913580246914,One-shot EF1%
+molclr_gin,MolCLR-GIN,P27487,Peptidase,4.070512820512821,One-shot EF1%
+molclr_gin,MolCLR-GIN,P27986,Kinase,21.928571428571423,One-shot EF1%
+molclr_gin,MolCLR-GIN,P28223,GPCR,4.582932692307692,One-shot EF1%
+molclr_gin,MolCLR-GIN,P28335,GPCR,3.654545454545455,One-shot EF1%
+molclr_gin,MolCLR-GIN,P28482,Kinase,20.51323529411765,One-shot EF1%
+molclr_gin,MolCLR-GIN,P29274,GPCR,6.295891608391608,One-shot EF1%
+molclr_gin,MolCLR-GIN,P29597,Kinase,17.93705357142857,One-shot EF1%
+molclr_gin,MolCLR-GIN,P30542,GPCR,8.183476132190943,One-shot EF1%
+molclr_gin,MolCLR-GIN,P31645,Other Proteins,5.42951680672269,One-shot EF1%
+molclr_gin,MolCLR-GIN,P34969,GPCR,3.31578947368421,One-shot EF1%
+molclr_gin,MolCLR-GIN,P34972,GPCR,5.4426786606696655,One-shot EF1%
+molclr_gin,MolCLR-GIN,P35372,GPCR,7.583866666666667,One-shot EF1%
+molclr_gin,MolCLR-GIN,P35462,GPCR,26.10214285714285,One-shot EF1%
+molclr_gin,MolCLR-GIN,P36888,Kinase,2.4675,One-shot EF1%
+molclr_gin,MolCLR-GIN,P41143,GPCR,10.075109649122805,One-shot EF1%
+molclr_gin,MolCLR-GIN,P42336,Kinase,14.99803448275862,One-shot EF1%
+molclr_gin,MolCLR-GIN,P43405,Kinase,8.019753086419753,One-shot EF1%
+molclr_gin,MolCLR-GIN,P45452,Peptidase,4.417045454545455,One-shot EF1%
+molclr_gin,MolCLR-GIN,P51449,Nuclear receptor,15.522546419098148,One-shot EF1%
+molclr_gin,MolCLR-GIN,P78536,Other Enzymes,8.309018567639257,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q00987,Other Enzymes,29.121428571428567,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q05397,Kinase,33.312142857142845,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q06187,Kinase,16.580555555555556,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q07817,Apoptosis regulator,17.452447552447556,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q07820,Apoptosis regulator,46.25324675324676,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q08499,Other Enzymes,11.562280701754386,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q14432,Other Enzymes,22.83157894736842,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q16539,Kinase,11.617678571428574,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q16790,Other Enzymes,8.651190476190477,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q92731,Nuclear receptor,7.079285714285713,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q96GD4,Kinase,18.45111111111111,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q96RI1,Nuclear receptor,9.68,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q9NWZ3,Kinase,8.966319444444446,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q9UBN7,Deacetylase,8.8,One-shot EF1%
+molclr_gin,MolCLR-GIN,Q9Y233,Other Enzymes,16.229166666666668,One-shot EF1%
+molformer,MoLFormer,O00329,Kinase,10.98263157894737,One-shot EF1%
+molformer,MoLFormer,O14757,Kinase,37.965277777777786,One-shot EF1%
+molformer,MoLFormer,O14965,Kinase,9.879629629629628,One-shot EF1%
+molformer,MoLFormer,O15379,Deacetylase,24.597150997150997,One-shot EF1%
+molformer,MoLFormer,O43614,GPCR,6.661204013377926,One-shot EF1%
+molformer,MoLFormer,O60341,Oxidase,25.03935185185185,One-shot EF1%
+molformer,MoLFormer,O60674,Kinase,8.582424242424242,One-shot EF1%
+molformer,MoLFormer,O75116,Kinase,25.05267857142857,One-shot EF1%
+molformer,MoLFormer,P00519,Kinase,13.696949602122013,One-shot EF1%
+molformer,MoLFormer,P00533,Kinase,6.9371345029239775,One-shot EF1%
+molformer,MoLFormer,P00734,Peptidase,4.772235905856595,One-shot EF1%
+molformer,MoLFormer,P00742,Peptidase,10.38075098814229,One-shot EF1%
+molformer,MoLFormer,P00918,Other Enzymes,8.271369975389664,One-shot EF1%
+molformer,MoLFormer,P01375,Other Proteins,37.80029761904762,One-shot EF1%
+molformer,MoLFormer,P03372,Nuclear receptor,11.932926829268292,One-shot EF1%
+molformer,MoLFormer,P03952,Peptidase,9.07064393939394,One-shot EF1%
+molformer,MoLFormer,P04150,Nuclear receptor,14.553846153846155,One-shot EF1%
+molformer,MoLFormer,P06239,Kinase,11.2,One-shot EF1%
+molformer,MoLFormer,P07550,GPCR,21.25,One-shot EF1%
+molformer,MoLFormer,P07711,Peptidase,9.55658783783784,One-shot EF1%
+molformer,MoLFormer,P08172,GPCR,6.976666666666665,One-shot EF1%
+molformer,MoLFormer,P08246,Peptidase,30.58684210526316,One-shot EF1%
+molformer,MoLFormer,P08253,Peptidase,11.19694041867955,One-shot EF1%
+molformer,MoLFormer,P08581,Kinase,5.6,One-shot EF1%
+molformer,MoLFormer,P08908,GPCR,12.852008928571427,One-shot EF1%
+molformer,MoLFormer,P09874,Other Enzymes,17.020909090909093,One-shot EF1%
+molformer,MoLFormer,P10721,Kinase,26.29848484848485,One-shot EF1%
+molformer,MoLFormer,P11362,Kinase,10.60159151193634,One-shot EF1%
+molformer,MoLFormer,P11802,Kinase,13.893939393939396,One-shot EF1%
+molformer,MoLFormer,P14416,GPCR,4.788105947026486,One-shot EF1%
+molformer,MoLFormer,P14780,Peptidase,10.10234375,One-shot EF1%
+molformer,MoLFormer,P15056,Kinase,11.095238095238098,One-shot EF1%
+molformer,MoLFormer,P20309,GPCR,18.705555555555552,One-shot EF1%
+molformer,MoLFormer,P21453,GPCR,14.08730769230769,One-shot EF1%
+molformer,MoLFormer,P23458,Kinase,19.985185185185188,One-shot EF1%
+molformer,MoLFormer,P27487,Peptidase,5.535897435897437,One-shot EF1%
+molformer,MoLFormer,P27986,Kinase,31.357857142857146,One-shot EF1%
+molformer,MoLFormer,P28223,GPCR,9.165865384615389,One-shot EF1%
+molformer,MoLFormer,P28335,GPCR,6.903030303030303,One-shot EF1%
+molformer,MoLFormer,P28482,Kinase,17.186764705882354,One-shot EF1%
+molformer,MoLFormer,P29274,GPCR,6.483828671328672,One-shot EF1%
+molformer,MoLFormer,P29597,Kinase,19.761160714285715,One-shot EF1%
+molformer,MoLFormer,P30542,GPCR,5.97172582619339,One-shot EF1%
+molformer,MoLFormer,P31645,Other Proteins,5.869747899159664,One-shot EF1%
+molformer,MoLFormer,P34969,GPCR,7.105263157894735,One-shot EF1%
+molformer,MoLFormer,P34972,GPCR,5.514292853573214,One-shot EF1%
+molformer,MoLFormer,P35372,GPCR,7.336566666666665,One-shot EF1%
+molformer,MoLFormer,P35462,GPCR,33.46428571428571,One-shot EF1%
+molformer,MoLFormer,P36888,Kinase,4.194750000000001,One-shot EF1%
+molformer,MoLFormer,P41143,GPCR,11.827302631578943,One-shot EF1%
+molformer,MoLFormer,P42336,Kinase,16.572413793103443,One-shot EF1%
+molformer,MoLFormer,P43405,Kinase,10.024691358024688,One-shot EF1%
+molformer,MoLFormer,P45452,Peptidase,9.410227272727273,One-shot EF1%
+molformer,MoLFormer,P51449,Nuclear receptor,34.4763925729443,One-shot EF1%
+molformer,MoLFormer,P78536,Other Enzymes,16.45185676392573,One-shot EF1%
+molformer,MoLFormer,Q00987,Other Enzymes,31.27857142857142,One-shot EF1%
+molformer,MoLFormer,Q05397,Kinase,37.11285714285713,One-shot EF1%
+molformer,MoLFormer,Q06187,Kinase,15.345833333333337,One-shot EF1%
+molformer,MoLFormer,Q07817,Apoptosis regulator,28.03531468531468,One-shot EF1%
+molformer,MoLFormer,Q07820,Apoptosis regulator,47.38690476190477,One-shot EF1%
+molformer,MoLFormer,Q08499,Other Enzymes,20.05701754385965,One-shot EF1%
+molformer,MoLFormer,Q14432,Other Enzymes,28.41263157894737,One-shot EF1%
+molformer,MoLFormer,Q16539,Kinase,12.022946428571426,One-shot EF1%
+molformer,MoLFormer,Q16790,Other Enzymes,13.143154761904762,One-shot EF1%
+molformer,MoLFormer,Q92731,Nuclear receptor,9.009999999999998,One-shot EF1%
+molformer,MoLFormer,Q96GD4,Kinase,15.052222222222223,One-shot EF1%
+molformer,MoLFormer,Q96RI1,Nuclear receptor,16.500000000000004,One-shot EF1%
+molformer,MoLFormer,Q9NWZ3,Kinase,8.677083333333334,One-shot EF1%
+molformer,MoLFormer,Q9UBN7,Deacetylase,10.5875,One-shot EF1%
+molformer,MoLFormer,Q9Y233,Other Enzymes,33.54027777777779,One-shot EF1%
+morgan,Morgan (binary),O00329,Kinase,13.866959064327483,One-shot EF1%
+morgan,Morgan (binary),O14757,Kinase,37.15173611111111,One-shot EF1%
+morgan,Morgan (binary),O14965,Kinase,10.957407407407404,One-shot EF1%
+morgan,Morgan (binary),O15379,Deacetylase,24.250712250712247,One-shot EF1%
+morgan,Morgan (binary),O43614,GPCR,8.233988294314383,One-shot EF1%
+morgan,Morgan (binary),O60341,Oxidase,25.90277777777778,One-shot EF1%
+morgan,Morgan (binary),O60674,Kinase,11.91030303030303,One-shot EF1%
+morgan,Morgan (binary),O75116,Kinase,22.47633928571429,One-shot EF1%
+morgan,Morgan (binary),P00519,Kinase,19.615384615384617,One-shot EF1%
+morgan,Morgan (binary),P00533,Kinase,6.715146198830409,One-shot EF1%
+morgan,Morgan (binary),P00734,Peptidase,6.063546798029558,One-shot EF1%
+morgan,Morgan (binary),P00742,Peptidase,13.084980237154149,One-shot EF1%
+morgan,Morgan (binary),P00918,Other Enzymes,12.134372436423297,One-shot EF1%
+morgan,Morgan (binary),P01375,Other Proteins,38.86011904761905,One-shot EF1%
+morgan,Morgan (binary),P03372,Nuclear receptor,12.33841463414634,One-shot EF1%
+morgan,Morgan (binary),P03952,Peptidase,8.68465909090909,One-shot EF1%
+morgan,Morgan (binary),P04150,Nuclear receptor,16.20769230769231,One-shot EF1%
+morgan,Morgan (binary),P06239,Kinase,14.7,One-shot EF1%
+morgan,Morgan (binary),P07550,GPCR,21.875,One-shot EF1%
+morgan,Morgan (binary),P07711,Peptidase,9.687500000000004,One-shot EF1%
+morgan,Morgan (binary),P08172,GPCR,6.066666666666666,One-shot EF1%
+morgan,Morgan (binary),P08246,Peptidase,37.84473684210527,One-shot EF1%
+morgan,Morgan (binary),P08253,Peptidase,9.390982286634458,One-shot EF1%
+morgan,Morgan (binary),P08581,Kinase,8.4,One-shot EF1%
+morgan,Morgan (binary),P08908,GPCR,11.50703125,One-shot EF1%
+morgan,Morgan (binary),P09874,Other Enzymes,9.264545454545456,One-shot EF1%
+morgan,Morgan (binary),P10721,Kinase,33.646590909090904,One-shot EF1%
+morgan,Morgan (binary),P11362,Kinase,11.761140583554376,One-shot EF1%
+morgan,Morgan (binary),P11802,Kinase,16.275757575757577,One-shot EF1%
+morgan,Morgan (binary),P14416,GPCR,3.8828918873896376,One-shot EF1%
+morgan,Morgan (binary),P14780,Peptidase,10.85625,One-shot EF1%
+morgan,Morgan (binary),P15056,Kinase,17.308571428571426,One-shot EF1%
+morgan,Morgan (binary),P20309,GPCR,17.94722222222222,One-shot EF1%
+morgan,Morgan (binary),P21453,GPCR,6.962692307692308,One-shot EF1%
+morgan,Morgan (binary),P23458,Kinase,22.96543209876544,One-shot EF1%
+morgan,Morgan (binary),P27487,Peptidase,5.861538461538463,One-shot EF1%
+morgan,Morgan (binary),P27986,Kinase,34.86642857142857,One-shot EF1%
+morgan,Morgan (binary),P28223,GPCR,9.776923076923078,One-shot EF1%
+morgan,Morgan (binary),P28335,GPCR,5.481818181818182,One-shot EF1%
+morgan,Morgan (binary),P28482,Kinase,28.55220588235294,One-shot EF1%
+morgan,Morgan (binary),P29274,GPCR,9.490821678321678,One-shot EF1%
+morgan,Morgan (binary),P29597,Kinase,19.761160714285715,One-shot EF1%
+morgan,Morgan (binary),P30542,GPCR,7.188188494492044,One-shot EF1%
+morgan,Morgan (binary),P31645,Other Proteins,4.54905462184874,One-shot EF1%
+morgan,Morgan (binary),P34969,GPCR,5.447368421052632,One-shot EF1%
+morgan,Morgan (binary),P34972,GPCR,6.158820589705147,One-shot EF1%
+morgan,Morgan (binary),P35372,GPCR,11.1285,One-shot EF1%
+morgan,Morgan (binary),P35462,GPCR,35.69523809523809,One-shot EF1%
+morgan,Morgan (binary),P36888,Kinase,4.688250000000001,One-shot EF1%
+morgan,Morgan (binary),P41143,GPCR,11.652083333333332,One-shot EF1%
+morgan,Morgan (binary),P42336,Kinase,21.79272413793103,One-shot EF1%
+morgan,Morgan (binary),P43405,Kinase,16.039506172839506,One-shot EF1%
+morgan,Morgan (binary),P45452,Peptidase,13.059090909090909,One-shot EF1%
+morgan,Morgan (binary),P51449,Nuclear receptor,32.679045092838194,One-shot EF1%
+morgan,Morgan (binary),P78536,Other Enzymes,18.27984084880637,One-shot EF1%
+morgan,Morgan (binary),Q00987,Other Enzymes,34.08285714285713,One-shot EF1%
+morgan,Morgan (binary),Q05397,Kinase,34.87714285714284,One-shot EF1%
+morgan,Morgan (binary),Q06187,Kinase,21.34305555555555,One-shot EF1%
+morgan,Morgan (binary),Q07817,Apoptosis regulator,29.334965034965037,One-shot EF1%
+morgan,Morgan (binary),Q07820,Apoptosis regulator,47.38690476190477,One-shot EF1%
+morgan,Morgan (binary),Q08499,Other Enzymes,18.051315789473684,One-shot EF1%
+morgan,Morgan (binary),Q14432,Other Enzymes,22.831578947368424,One-shot EF1%
+morgan,Morgan (binary),Q16539,Kinase,15.535267857142856,One-shot EF1%
+morgan,Morgan (binary),Q16790,Other Enzymes,16.13779761904762,One-shot EF1%
+morgan,Morgan (binary),Q92731,Nuclear receptor,9.653571428571428,One-shot EF1%
+morgan,Morgan (binary),Q96GD4,Kinase,20.878888888888888,One-shot EF1%
+morgan,Morgan (binary),Q96RI1,Nuclear receptor,15.106666666666666,One-shot EF1%
+morgan,Morgan (binary),Q9NWZ3,Kinase,7.520138888888889,One-shot EF1%
+morgan,Morgan (binary),Q9UBN7,Deacetylase,13.5025,One-shot EF1%
+morgan,Morgan (binary),Q9Y233,Other Enzymes,33.26979166666668,One-shot EF1%
+smi_ted,SMI-TED-Light,O00329,Kinase,9.096725146198832,One-shot EF1%
+smi_ted,SMI-TED-Light,O14757,Kinase,36.33819444444445,One-shot EF1%
+smi_ted,SMI-TED-Light,O14965,Kinase,8.442592592592591,One-shot EF1%
+smi_ted,SMI-TED-Light,O15379,Deacetylase,23.55783475783475,One-shot EF1%
+smi_ted,SMI-TED-Light,O43614,GPCR,6.938754180602007,One-shot EF1%
+smi_ted,SMI-TED-Light,O60341,Oxidase,20.549537037037037,One-shot EF1%
+smi_ted,SMI-TED-Light,O60674,Kinase,8.67,One-shot EF1%
+smi_ted,SMI-TED-Light,O75116,Kinase,21.854464285714283,One-shot EF1%
+smi_ted,SMI-TED-Light,P00519,Kinase,12.005968169761273,One-shot EF1%
+smi_ted,SMI-TED-Light,P00533,Kinase,4.661754385964913,One-shot EF1%
+smi_ted,SMI-TED-Light,P00734,Peptidase,4.098508483853312,One-shot EF1%
+smi_ted,SMI-TED-Light,P00742,Peptidase,7.327588932806323,One-shot EF1%
+smi_ted,SMI-TED-Light,P00918,Other Enzymes,8.725840853158328,One-shot EF1%
+smi_ted,SMI-TED-Light,P01375,Other Proteins,39.21339285714286,One-shot EF1%
+smi_ted,SMI-TED-Light,P03372,Nuclear receptor,12.396341463414636,One-shot EF1%
+smi_ted,SMI-TED-Light,P03952,Peptidase,7.912689393939395,One-shot EF1%
+smi_ted,SMI-TED-Light,P04150,Nuclear receptor,16.86923076923077,One-shot EF1%
+smi_ted,SMI-TED-Light,P06239,Kinase,11.025,One-shot EF1%
+smi_ted,SMI-TED-Light,P07550,GPCR,16.5625,One-shot EF1%
+smi_ted,SMI-TED-Light,P07711,Peptidase,7.461993243243244,One-shot EF1%
+smi_ted,SMI-TED-Light,P08172,GPCR,3.943333333333333,One-shot EF1%
+smi_ted,SMI-TED-Light,P08246,Peptidase,30.58684210526316,One-shot EF1%
+smi_ted,SMI-TED-Light,P08253,Peptidase,6.049959742351046,One-shot EF1%
+smi_ted,SMI-TED-Light,P08581,Kinase,6.0,One-shot EF1%
+smi_ted,SMI-TED-Light,P08908,GPCR,8.667633928571428,One-shot EF1%
+smi_ted,SMI-TED-Light,P09874,Other Enzymes,11.419090909090912,One-shot EF1%
+smi_ted,SMI-TED-Light,P10721,Kinase,23.97803030303031,One-shot EF1%
+smi_ted,SMI-TED-Light,P11362,Kinase,11.098541114058357,One-shot EF1%
+smi_ted,SMI-TED-Light,P11802,Kinase,16.672727272727272,One-shot EF1%
+smi_ted,SMI-TED-Light,P14416,GPCR,3.716141929035482,One-shot EF1%
+smi_ted,SMI-TED-Light,P14780,Peptidase,9.49921875,One-shot EF1%
+smi_ted,SMI-TED-Light,P15056,Kinase,11.317142857142857,One-shot EF1%
+smi_ted,SMI-TED-Light,P20309,GPCR,18.95833333333333,One-shot EF1%
+smi_ted,SMI-TED-Light,P21453,GPCR,7.772307692307692,One-shot EF1%
+smi_ted,SMI-TED-Light,P23458,Kinase,18.758024691358028,One-shot EF1%
+smi_ted,SMI-TED-Light,P27487,Peptidase,4.55897435897436,One-shot EF1%
+smi_ted,SMI-TED-Light,P27986,Kinase,27.191428571428567,One-shot EF1%
+smi_ted,SMI-TED-Light,P28223,GPCR,7.485456730769229,One-shot EF1%
+smi_ted,SMI-TED-Light,P28335,GPCR,4.263636363636364,One-shot EF1%
+smi_ted,SMI-TED-Light,P28482,Kinase,16.077941176470592,One-shot EF1%
+smi_ted,SMI-TED-Light,P29274,GPCR,5.450174825174825,One-shot EF1%
+smi_ted,SMI-TED-Light,P29597,Kinase,14.896875,One-shot EF1%
+smi_ted,SMI-TED-Light,P30542,GPCR,6.745838433292533,One-shot EF1%
+smi_ted,SMI-TED-Light,P31645,Other Proteins,3.9620798319327735,One-shot EF1%
+smi_ted,SMI-TED-Light,P34969,GPCR,4.5,One-shot EF1%
+smi_ted,SMI-TED-Light,P34972,GPCR,4.440079960019991,One-shot EF1%
+smi_ted,SMI-TED-Light,P35372,GPCR,6.100066666666665,One-shot EF1%
+smi_ted,SMI-TED-Light,P35462,GPCR,27.88690476190476,One-shot EF1%
+smi_ted,SMI-TED-Light,P36888,Kinase,3.4545000000000003,One-shot EF1%
+smi_ted,SMI-TED-Light,P41143,GPCR,9.111403508771929,One-shot EF1%
+smi_ted,SMI-TED-Light,P42336,Kinase,14.169413793103448,One-shot EF1%
+smi_ted,SMI-TED-Light,P43405,Kinase,7.769135802469135,One-shot EF1%
+smi_ted,SMI-TED-Light,P45452,Peptidase,7.489772727272728,One-shot EF1%
+smi_ted,SMI-TED-Light,P51449,Nuclear receptor,35.94694960212202,One-shot EF1%
+smi_ted,SMI-TED-Light,P78536,Other Enzymes,11.466445623342173,One-shot EF1%
+smi_ted,SMI-TED-Light,Q00987,Other Enzymes,31.92571428571428,One-shot EF1%
+smi_ted,SMI-TED-Light,Q05397,Kinase,33.75928571428571,One-shot EF1%
+smi_ted,SMI-TED-Light,Q06187,Kinase,15.345833333333337,One-shot EF1%
+smi_ted,SMI-TED-Light,Q07817,Apoptosis regulator,25.993006993006997,One-shot EF1%
+smi_ted,SMI-TED-Light,Q07820,Apoptosis regulator,47.38690476190477,One-shot EF1%
+smi_ted,SMI-TED-Light,Q08499,Other Enzymes,21.23684210526316,One-shot EF1%
+smi_ted,SMI-TED-Light,Q14432,Other Enzymes,29.681052631578943,One-shot EF1%
+smi_ted,SMI-TED-Light,Q16539,Kinase,11.482589285714283,One-shot EF1%
+smi_ted,SMI-TED-Light,Q16790,Other Enzymes,11.978571428571431,One-shot EF1%
+smi_ted,SMI-TED-Light,Q92731,Nuclear receptor,9.01,One-shot EF1%
+smi_ted,SMI-TED-Light,Q96GD4,Kinase,11.653333333333332,One-shot EF1%
+smi_ted,SMI-TED-Light,Q96RI1,Nuclear receptor,16.06,One-shot EF1%
+smi_ted,SMI-TED-Light,Q9NWZ3,Kinase,9.544791666666663,One-shot EF1%
+smi_ted,SMI-TED-Light,Q9UBN7,Deacetylase,9.2125,One-shot EF1%
+smi_ted,SMI-TED-Light,Q9Y233,Other Enzymes,27.860069444444445,One-shot EF1%
+gmolai,gMolAI,O00329,Kinase,0.2820563692944656,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O14757,Kinase,0.6949996768498962,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O14965,Kinase,0.2927982101154848,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O15379,Deacetylase,0.6742307237836246,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O43614,GPCR,0.1908745108098825,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O60341,Oxidase,0.8083618110121178,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O60674,Kinase,0.35179126457185,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O75116,Kinase,0.555217178506538,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P00519,Kinase,0.4080685936988787,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P00533,Kinase,0.1853294853917376,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P00734,Peptidase,0.2678218152019694,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P00742,Peptidase,0.4142707015700252,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P00918,Other Enzymes,0.2502938178906266,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P01375,Other Proteins,0.9772158310381182,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P03372,Nuclear receptor,0.3208658108605491,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P03952,Peptidase,0.3657965275990827,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P04150,Nuclear receptor,0.4140762111385028,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P06239,Kinase,0.4936242368958061,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P07550,GPCR,0.6240848486603647,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P07711,Peptidase,0.3798742279431191,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P08172,GPCR,0.3005130141787383,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P08246,Peptidase,0.5745060794501086,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P08253,Peptidase,0.3876133093730744,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P08581,Kinase,0.374260964600495,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P08908,GPCR,0.355950283541006,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P09874,Other Enzymes,0.4360980581031998,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P10721,Kinase,0.7538994531585458,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P11362,Kinase,0.5789848645949732,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P11802,Kinase,0.4140576084762763,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P14416,GPCR,0.1952136739139991,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P14780,Peptidase,0.3638475999707177,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P15056,Kinase,0.4342435006971457,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P20309,GPCR,0.5317650393679312,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P21453,GPCR,0.4514898430816953,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P23458,Kinase,0.4520763882143761,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P27487,Peptidase,0.3241664009023897,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P27986,Kinase,0.8319917134185267,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P28223,GPCR,0.2985852356246889,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P28335,GPCR,0.2467009646908617,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P28482,Kinase,0.6675114143680391,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P29274,GPCR,0.2786642164801088,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P29597,Kinase,0.5930203864562757,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P30542,GPCR,0.1715716243139231,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P31645,Other Proteins,0.2445760348178399,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P34969,GPCR,0.3373777049591289,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P34972,GPCR,0.1591172654116726,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P35372,GPCR,0.3811236371055645,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P35462,GPCR,0.7985712653359055,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P36888,Kinase,0.220465116458011,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P41143,GPCR,0.4155104515899026,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P42336,Kinase,0.5690961995107943,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P43405,Kinase,0.2712181728567787,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P45452,Peptidase,0.4216795318995504,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P51449,Nuclear receptor,0.7046563037263589,Five-shot BEDROC (α=20)
+gmolai,gMolAI,P78536,Other Enzymes,0.4997256761845443,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q00987,Other Enzymes,0.8566738479963331,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q05397,Kinase,0.8501473202955229,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q06187,Kinase,0.5037935130782358,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q07817,Apoptosis regulator,0.6787851791326533,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q07820,Apoptosis regulator,0.9971980040348952,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q08499,Other Enzymes,0.6075656926924509,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q14432,Other Enzymes,0.7236757635813199,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q16539,Kinase,0.2887282076863233,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q16790,Other Enzymes,0.3037846385547088,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q92731,Nuclear receptor,0.3297623418933849,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q96GD4,Kinase,0.4011677785830794,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q96RI1,Nuclear receptor,0.3903714186137598,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q9NWZ3,Kinase,0.3630389550822249,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q9UBN7,Deacetylase,0.2246853192771406,Five-shot BEDROC (α=20)
+gmolai,gMolAI,Q9Y233,Other Enzymes,0.4902640888516898,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O00329,Kinase,0.3797497308045195,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O14757,Kinase,0.7808467002257353,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O14965,Kinase,0.5016139796663641,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O15379,Deacetylase,0.7404879643595573,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O43614,GPCR,0.2713310475707623,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O60341,Oxidase,0.7791702739531754,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O60674,Kinase,0.4670636989337907,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,O75116,Kinase,0.6611486437596381,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P00519,Kinase,0.7032678004213231,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P00533,Kinase,0.292625933819348,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P00734,Peptidase,0.3284505176317424,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P00742,Peptidase,0.5099257236832005,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P00918,Other Enzymes,0.3787648382443292,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P01375,Other Proteins,0.9756998220246452,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P03372,Nuclear receptor,0.3841742716159457,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P03952,Peptidase,0.3622210908775639,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P04150,Nuclear receptor,0.490064880564539,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P06239,Kinase,0.6126272780894884,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P07550,GPCR,0.6481358374693247,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P07711,Peptidase,0.4922798129440676,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P08172,GPCR,0.3645018985323314,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P08246,Peptidase,0.7125320344651117,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P08253,Peptidase,0.5349689506908177,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P08581,Kinase,0.4358677229751914,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P08908,GPCR,0.4770403555917134,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P09874,Other Enzymes,0.5614213113098871,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P10721,Kinase,0.8501485952220433,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P11362,Kinase,0.5865525869205669,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P11802,Kinase,0.4452573131720949,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P14416,GPCR,0.2660878547321298,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P14780,Peptidase,0.5889336267984533,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P15056,Kinase,0.5575954717250627,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P20309,GPCR,0.5908739253333224,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P21453,GPCR,0.5144359484073494,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P23458,Kinase,0.7149056421875307,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P27487,Peptidase,0.3483450360632617,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P27986,Kinase,0.9275753028901108,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P28223,GPCR,0.390036785018269,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P28335,GPCR,0.1868062993388672,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P28482,Kinase,0.8082979480621649,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P29274,GPCR,0.3239601609633744,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P29597,Kinase,0.6602328168747358,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P30542,GPCR,0.266413982673391,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P31645,Other Proteins,0.2689809303700434,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P34969,GPCR,0.4221655988629499,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P34972,GPCR,0.2046923996581754,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P35372,GPCR,0.4732527515420086,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P35462,GPCR,0.937601812649824,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P36888,Kinase,0.245562539170608,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P41143,GPCR,0.5713711609164748,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P42336,Kinase,0.6282564357792777,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P43405,Kinase,0.6463029174086979,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P45452,Peptidase,0.5528339304882954,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P51449,Nuclear receptor,0.756617733850341,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,P78536,Other Enzymes,0.5387937014184784,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q00987,Other Enzymes,0.8798659589084199,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q05397,Kinase,0.8729265769816907,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q06187,Kinase,0.6291643273833867,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q07817,Apoptosis regulator,0.8437843460659664,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q07820,Apoptosis regulator,0.9989586716861276,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q08499,Other Enzymes,0.7696120980667984,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q14432,Other Enzymes,0.8380630471569479,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q16539,Kinase,0.5545731052540452,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q16790,Other Enzymes,0.5442262616551365,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q92731,Nuclear receptor,0.3480245859597918,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q96GD4,Kinase,0.6475997620316611,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q96RI1,Nuclear receptor,0.4575776787146102,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q9NWZ3,Kinase,0.4846577227394303,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q9UBN7,Deacetylase,0.4908236378293509,Five-shot BEDROC (α=20)
+kermt_v2,KERMT v2,Q9Y233,Other Enzymes,0.7251964716120811,Five-shot BEDROC (α=20)
+molai,MolAI,O00329,Kinase,0.2809446439401281,Five-shot BEDROC (α=20)
+molai,MolAI,O14757,Kinase,0.6895140552091273,Five-shot BEDROC (α=20)
+molai,MolAI,O14965,Kinase,0.3270389992191739,Five-shot BEDROC (α=20)
+molai,MolAI,O15379,Deacetylase,0.6298885271853261,Five-shot BEDROC (α=20)
+molai,MolAI,O43614,GPCR,0.2133711217708275,Five-shot BEDROC (α=20)
+molai,MolAI,O60341,Oxidase,0.4597109077101747,Five-shot BEDROC (α=20)
+molai,MolAI,O60674,Kinase,0.2708276367413823,Five-shot BEDROC (α=20)
+molai,MolAI,O75116,Kinase,0.4127798247324236,Five-shot BEDROC (α=20)
+molai,MolAI,P00519,Kinase,0.2625959103076845,Five-shot BEDROC (α=20)
+molai,MolAI,P00533,Kinase,0.1539888139070471,Five-shot BEDROC (α=20)
+molai,MolAI,P00734,Peptidase,0.2110566803794606,Five-shot BEDROC (α=20)
+molai,MolAI,P00742,Peptidase,0.3698538646983008,Five-shot BEDROC (α=20)
+molai,MolAI,P00918,Other Enzymes,0.3351923851359641,Five-shot BEDROC (α=20)
+molai,MolAI,P01375,Other Proteins,0.9647048883139792,Five-shot BEDROC (α=20)
+molai,MolAI,P03372,Nuclear receptor,0.2320535948481195,Five-shot BEDROC (α=20)
+molai,MolAI,P03952,Peptidase,0.1853959312257218,Five-shot BEDROC (α=20)
+molai,MolAI,P04150,Nuclear receptor,0.3787438720879433,Five-shot BEDROC (α=20)
+molai,MolAI,P06239,Kinase,0.3281261435608334,Five-shot BEDROC (α=20)
+molai,MolAI,P07550,GPCR,0.4544329114184228,Five-shot BEDROC (α=20)
+molai,MolAI,P07711,Peptidase,0.2631437576705508,Five-shot BEDROC (α=20)
+molai,MolAI,P08172,GPCR,0.1308395445240962,Five-shot BEDROC (α=20)
+molai,MolAI,P08246,Peptidase,0.6095364368599737,Five-shot BEDROC (α=20)
+molai,MolAI,P08253,Peptidase,0.2654419902318027,Five-shot BEDROC (α=20)
+molai,MolAI,P08581,Kinase,0.2136672220817939,Five-shot BEDROC (α=20)
+molai,MolAI,P08908,GPCR,0.2833905565590633,Five-shot BEDROC (α=20)
+molai,MolAI,P09874,Other Enzymes,0.3681457883525649,Five-shot BEDROC (α=20)
+molai,MolAI,P10721,Kinase,0.5266890906408452,Five-shot BEDROC (α=20)
+molai,MolAI,P11362,Kinase,0.5401069375474233,Five-shot BEDROC (α=20)
+molai,MolAI,P11802,Kinase,0.2988974711174369,Five-shot BEDROC (α=20)
+molai,MolAI,P14416,GPCR,0.1492291534239648,Five-shot BEDROC (α=20)
+molai,MolAI,P14780,Peptidase,0.3480943269019696,Five-shot BEDROC (α=20)
+molai,MolAI,P15056,Kinase,0.337589543805227,Five-shot BEDROC (α=20)
+molai,MolAI,P20309,GPCR,0.4769935866367018,Five-shot BEDROC (α=20)
+molai,MolAI,P21453,GPCR,0.2752669979581046,Five-shot BEDROC (α=20)
+molai,MolAI,P23458,Kinase,0.6085350016299904,Five-shot BEDROC (α=20)
+molai,MolAI,P27487,Peptidase,0.1918215245273837,Five-shot BEDROC (α=20)
+molai,MolAI,P27986,Kinase,0.5449418282097442,Five-shot BEDROC (α=20)
+molai,MolAI,P28223,GPCR,0.1716311476630909,Five-shot BEDROC (α=20)
+molai,MolAI,P28335,GPCR,0.1127885150792305,Five-shot BEDROC (α=20)
+molai,MolAI,P28482,Kinase,0.5888292693800639,Five-shot BEDROC (α=20)
+molai,MolAI,P29274,GPCR,0.1859607815566467,Five-shot BEDROC (α=20)
+molai,MolAI,P29597,Kinase,0.422418016673754,Five-shot BEDROC (α=20)
+molai,MolAI,P30542,GPCR,0.1269838560798101,Five-shot BEDROC (α=20)
+molai,MolAI,P31645,Other Proteins,0.1006951627740163,Five-shot BEDROC (α=20)
+molai,MolAI,P34969,GPCR,0.1817963085552353,Five-shot BEDROC (α=20)
+molai,MolAI,P34972,GPCR,0.1242036567904073,Five-shot BEDROC (α=20)
+molai,MolAI,P35372,GPCR,0.2162974589397287,Five-shot BEDROC (α=20)
+molai,MolAI,P35462,GPCR,0.6138644685270043,Five-shot BEDROC (α=20)
+molai,MolAI,P36888,Kinase,0.1455850903923058,Five-shot BEDROC (α=20)
+molai,MolAI,P41143,GPCR,0.3116698699926695,Five-shot BEDROC (α=20)
+molai,MolAI,P42336,Kinase,0.3924440770949438,Five-shot BEDROC (α=20)
+molai,MolAI,P43405,Kinase,0.361145747248541,Five-shot BEDROC (α=20)
+molai,MolAI,P45452,Peptidase,0.2294245369950788,Five-shot BEDROC (α=20)
+molai,MolAI,P51449,Nuclear receptor,0.6107347489694146,Five-shot BEDROC (α=20)
+molai,MolAI,P78536,Other Enzymes,0.2676865374987832,Five-shot BEDROC (α=20)
+molai,MolAI,Q00987,Other Enzymes,0.8315334238205481,Five-shot BEDROC (α=20)
+molai,MolAI,Q05397,Kinase,0.7094942765693137,Five-shot BEDROC (α=20)
+molai,MolAI,Q06187,Kinase,0.4118287863777176,Five-shot BEDROC (α=20)
+molai,MolAI,Q07817,Apoptosis regulator,0.6197384705597472,Five-shot BEDROC (α=20)
+molai,MolAI,Q07820,Apoptosis regulator,0.9604043828719842,Five-shot BEDROC (α=20)
+molai,MolAI,Q08499,Other Enzymes,0.4710533217270119,Five-shot BEDROC (α=20)
+molai,MolAI,Q14432,Other Enzymes,0.7253236059816716,Five-shot BEDROC (α=20)
+molai,MolAI,Q16539,Kinase,0.3173175055098964,Five-shot BEDROC (α=20)
+molai,MolAI,Q16790,Other Enzymes,0.403122381436024,Five-shot BEDROC (α=20)
+molai,MolAI,Q92731,Nuclear receptor,0.2406124812468251,Five-shot BEDROC (α=20)
+molai,MolAI,Q96GD4,Kinase,0.4258870285579799,Five-shot BEDROC (α=20)
+molai,MolAI,Q96RI1,Nuclear receptor,0.399365219492941,Five-shot BEDROC (α=20)
+molai,MolAI,Q9NWZ3,Kinase,0.3685980920679313,Five-shot BEDROC (α=20)
+molai,MolAI,Q9UBN7,Deacetylase,0.3072988931604177,Five-shot BEDROC (α=20)
+molai,MolAI,Q9Y233,Other Enzymes,0.4549814310952524,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O00329,Kinase,0.3078921782047858,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O14757,Kinase,0.774152807747315,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O14965,Kinase,0.2978517110310098,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O15379,Deacetylase,0.6975500324667736,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O43614,GPCR,0.1911436582966871,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O60341,Oxidase,0.7718010049516708,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O60674,Kinase,0.3082818605733345,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,O75116,Kinase,0.6270188339881931,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P00519,Kinase,0.4129199896999963,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P00533,Kinase,0.3202797570258017,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P00734,Peptidase,0.2840349931125002,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P00742,Peptidase,0.3790931285047189,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P00918,Other Enzymes,0.3182178162285966,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P01375,Other Proteins,0.9371206354340488,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P03372,Nuclear receptor,0.4221816387795407,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P03952,Peptidase,0.2898272827747601,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P04150,Nuclear receptor,0.3793431490849355,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P06239,Kinase,0.5349860553352128,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P07550,GPCR,0.6318952184797599,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P07711,Peptidase,0.3725017515389569,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P08172,GPCR,0.2284193914475692,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P08246,Peptidase,0.5793305813245645,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P08253,Peptidase,0.3776376174632522,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P08581,Kinase,0.2015414871611628,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P08908,GPCR,0.3540795328602887,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P09874,Other Enzymes,0.34817332843106,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P10721,Kinase,0.6177933018897084,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P11362,Kinase,0.5074357041875197,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P11802,Kinase,0.4963450985945837,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P14416,GPCR,0.189222101504542,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P14780,Peptidase,0.2814933444594145,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P15056,Kinase,0.3443179865913744,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P20309,GPCR,0.4636297314592479,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P21453,GPCR,0.4374453722489951,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P23458,Kinase,0.4613131283424438,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P27487,Peptidase,0.2368444193505732,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P27986,Kinase,0.8048302064101975,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P28223,GPCR,0.2540251565844098,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P28335,GPCR,0.1001440766929448,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P28482,Kinase,0.5749380995082841,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P29274,GPCR,0.2307221278042904,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P29597,Kinase,0.5794149318211456,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P30542,GPCR,0.2098135503582959,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P31645,Other Proteins,0.2673845857292207,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P34969,GPCR,0.2637179466551531,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P34972,GPCR,0.2158610753945919,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P35372,GPCR,0.3503053445045655,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P35462,GPCR,0.7735401364679946,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P36888,Kinase,0.2410365874531218,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P41143,GPCR,0.4324205142871397,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P42336,Kinase,0.524512762371556,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P43405,Kinase,0.3014537999532697,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P45452,Peptidase,0.3213520754997321,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P51449,Nuclear receptor,0.6163872084635738,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,P78536,Other Enzymes,0.3374924000850602,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q00987,Other Enzymes,0.8117574191253164,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q05397,Kinase,0.7997022557612816,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q06187,Kinase,0.4273134807285293,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q07817,Apoptosis regulator,0.6263195038584005,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q07820,Apoptosis regulator,0.9895164231528198,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q08499,Other Enzymes,0.5552508310670518,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q14432,Other Enzymes,0.7613402276676096,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q16539,Kinase,0.4269507507398874,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q16790,Other Enzymes,0.3175358807107631,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q92731,Nuclear receptor,0.4008382513719891,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q96GD4,Kinase,0.4318093170005837,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q96RI1,Nuclear receptor,0.3996147314052142,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q9NWZ3,Kinase,0.4684247892046965,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q9UBN7,Deacetylase,0.3288947121350369,Five-shot BEDROC (α=20)
+molclr_gin,MolCLR-GIN,Q9Y233,Other Enzymes,0.5420721076106101,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O00329,Kinase,0.3571447518421244,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O14757,Kinase,0.8269733210843364,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O14965,Kinase,0.3770843114079857,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O15379,Deacetylase,0.6729851678314337,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O43614,GPCR,0.2627378982214076,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O60341,Oxidase,0.7905431655011221,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O60674,Kinase,0.3721470724914197,Five-shot BEDROC (α=20)
+molformer,MoLFormer,O75116,Kinase,0.6236566244461744,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P00519,Kinase,0.5727846267393677,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P00533,Kinase,0.2582168129735466,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P00734,Peptidase,0.26944059871859,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P00742,Peptidase,0.4209192812809413,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P00918,Other Enzymes,0.3419242547868961,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P01375,Other Proteins,0.968416197958078,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P03372,Nuclear receptor,0.3734107492847944,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P03952,Peptidase,0.3160084100954515,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P04150,Nuclear receptor,0.483182415035141,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P06239,Kinase,0.5525718691502772,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P07550,GPCR,0.684885474000586,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P07711,Peptidase,0.4467440876900127,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P08172,GPCR,0.3813659478823152,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P08246,Peptidase,0.6246850094797108,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P08253,Peptidase,0.4643145767126154,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P08581,Kinase,0.3447174807270582,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P08908,GPCR,0.3815606334361623,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P09874,Other Enzymes,0.616466910722467,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P10721,Kinase,0.6782218206575856,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P11362,Kinase,0.5427959138094722,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P11802,Kinase,0.3861447949458201,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P14416,GPCR,0.2453038885509772,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P14780,Peptidase,0.5249723500810514,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P15056,Kinase,0.4503477034563617,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P20309,GPCR,0.6279119495045304,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P21453,GPCR,0.4961078199167404,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P23458,Kinase,0.602837339153484,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P27487,Peptidase,0.2869861521276945,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P27986,Kinase,0.8679314006485553,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P28223,GPCR,0.3881151100112054,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P28335,GPCR,0.1889384932016395,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P28482,Kinase,0.7078074612841339,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P29274,GPCR,0.2387306820487101,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P29597,Kinase,0.5460293921185919,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P30542,GPCR,0.2371977032243533,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P31645,Other Proteins,0.2366926971365575,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P34969,GPCR,0.3809631493249965,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P34972,GPCR,0.156617629718573,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P35372,GPCR,0.3873150327632916,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P35462,GPCR,0.8839753961660236,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P36888,Kinase,0.1596670156724713,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P41143,GPCR,0.5179240676754774,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P42336,Kinase,0.5517796356677698,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P43405,Kinase,0.4680895995230809,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P45452,Peptidase,0.4071447153887216,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P51449,Nuclear receptor,0.8134220461760249,Five-shot BEDROC (α=20)
+molformer,MoLFormer,P78536,Other Enzymes,0.466904864232996,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q00987,Other Enzymes,0.8720897605140898,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q05397,Kinase,0.844789027404927,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q06187,Kinase,0.4978003721992909,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q07817,Apoptosis regulator,0.8322268296338375,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q07820,Apoptosis regulator,0.999822953118041,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q08499,Other Enzymes,0.6785385956980621,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q14432,Other Enzymes,0.8250528538975846,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q16539,Kinase,0.39769415374877,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q16790,Other Enzymes,0.4450387466051119,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q92731,Nuclear receptor,0.4212224112398345,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q96GD4,Kinase,0.4031634458926844,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q96RI1,Nuclear receptor,0.4613114013406656,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q9NWZ3,Kinase,0.4297670104819183,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q9UBN7,Deacetylase,0.3142103459339986,Five-shot BEDROC (α=20)
+molformer,MoLFormer,Q9Y233,Other Enzymes,0.7170696383109931,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O00329,Kinase,0.4046280349481611,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O14757,Kinase,0.7917520309762995,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O14965,Kinase,0.460185915689432,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O15379,Deacetylase,0.7202151125149105,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O43614,GPCR,0.3049626046001788,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O60341,Oxidase,0.7806531049431011,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O60674,Kinase,0.4751268493367414,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),O75116,Kinase,0.6444168854566465,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P00519,Kinase,0.7227951432386546,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P00533,Kinase,0.2842930675654547,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P00734,Peptidase,0.3555315071371563,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P00742,Peptidase,0.4984108307634179,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P00918,Other Enzymes,0.4122140339883751,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P01375,Other Proteins,0.9751914185001412,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P03372,Nuclear receptor,0.4407926593635801,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P03952,Peptidase,0.3283008377029849,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P04150,Nuclear receptor,0.5008634514470145,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P06239,Kinase,0.5998318516814556,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P07550,GPCR,0.6959275757032114,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P07711,Peptidase,0.4990319746929605,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P08172,GPCR,0.3669251213604474,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P08246,Peptidase,0.6956194369397782,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P08253,Peptidase,0.4765381839973015,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P08581,Kinase,0.3328414252189351,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P08908,GPCR,0.4442619546693033,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P09874,Other Enzymes,0.5605019344026908,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P10721,Kinase,0.8448931953541644,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P11362,Kinase,0.5588119772148719,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P11802,Kinase,0.5166581174355593,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P14416,GPCR,0.246706636987213,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P14780,Peptidase,0.5064829388007377,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P15056,Kinase,0.5358189024977451,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P20309,GPCR,0.5829064000343464,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P21453,GPCR,0.3888606024905283,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P23458,Kinase,0.7529928591302393,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P27487,Peptidase,0.3000251246592109,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P27986,Kinase,0.9232216208113992,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P28223,GPCR,0.3717706893651325,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P28335,GPCR,0.161958508811588,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P28482,Kinase,0.7921544766607852,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P29274,GPCR,0.3147313924992006,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P29597,Kinase,0.6310811322220646,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P30542,GPCR,0.2709260727798752,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P31645,Other Proteins,0.2246796892365502,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P34969,GPCR,0.3600198805075443,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P34972,GPCR,0.2553118177983235,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P35372,GPCR,0.4837505492805142,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P35462,GPCR,0.9350662044079906,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P36888,Kinase,0.3024353425019465,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P41143,GPCR,0.5560195752554197,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P42336,Kinase,0.648530828994317,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P43405,Kinase,0.6183206549731264,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P45452,Peptidase,0.6098510297635996,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P51449,Nuclear receptor,0.7478669248792013,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),P78536,Other Enzymes,0.5416884212692168,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q00987,Other Enzymes,0.8759582029398654,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q05397,Kinase,0.8780787457752611,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q06187,Kinase,0.6316870955220323,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q07817,Apoptosis regulator,0.8611284860543869,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q07820,Apoptosis regulator,0.9894884564449664,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q08499,Other Enzymes,0.6538275760696232,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q14432,Other Enzymes,0.8227493806953221,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q16539,Kinase,0.5220409985179937,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q16790,Other Enzymes,0.5844905528372151,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q92731,Nuclear receptor,0.3381113955322047,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q96GD4,Kinase,0.6441078320510787,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q96RI1,Nuclear receptor,0.5207077879321697,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q9NWZ3,Kinase,0.4798293156213697,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q9UBN7,Deacetylase,0.512633912950997,Five-shot BEDROC (α=20)
+morgan,Morgan (binary),Q9Y233,Other Enzymes,0.738356562803453,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O00329,Kinase,0.28301292792842,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O14757,Kinase,0.7926405727209052,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O14965,Kinase,0.3890237821765445,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O15379,Deacetylase,0.6177465587411073,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O43614,GPCR,0.191009613139163,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O60341,Oxidase,0.7162360439979635,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O60674,Kinase,0.3849450226956336,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,O75116,Kinase,0.5650437538528318,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P00519,Kinase,0.511022975904708,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P00533,Kinase,0.2024235196622245,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P00734,Peptidase,0.2296409781191326,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P00742,Peptidase,0.3844954833382686,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P00918,Other Enzymes,0.39570952558488,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P01375,Other Proteins,0.9661375892376184,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P03372,Nuclear receptor,0.4175471141673991,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P03952,Peptidase,0.2739477390484599,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P04150,Nuclear receptor,0.4519124058118482,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P06239,Kinase,0.4550081847399347,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P07550,GPCR,0.5638183727381406,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P07711,Peptidase,0.3919410757648081,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P08172,GPCR,0.2319293753346229,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P08246,Peptidase,0.6711713547995829,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P08253,Peptidase,0.3241593752513017,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P08581,Kinase,0.280249592119368,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P08908,GPCR,0.3178586251408906,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P09874,Other Enzymes,0.5125459753064868,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P10721,Kinase,0.6110355339825708,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P11362,Kinase,0.5567071981239545,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P11802,Kinase,0.4857818140974674,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P14416,GPCR,0.1889953679528266,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P14780,Peptidase,0.4242184071524112,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P15056,Kinase,0.4524780555618286,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P20309,GPCR,0.5973576464909641,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P21453,GPCR,0.396275520390578,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P23458,Kinase,0.6563204070245845,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P27487,Peptidase,0.2145009708122331,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P27986,Kinase,0.809539949765292,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P28223,GPCR,0.3403464052347638,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P28335,GPCR,0.1491101485079141,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P28482,Kinase,0.6080544754521168,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P29274,GPCR,0.2612218543086594,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P29597,Kinase,0.5305985451122943,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P30542,GPCR,0.2251128939903667,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P31645,Other Proteins,0.2120201996659278,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P34969,GPCR,0.2915679378228586,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P34972,GPCR,0.1951993761991605,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P35372,GPCR,0.2888703649037936,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P35462,GPCR,0.7808314919207386,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P36888,Kinase,0.2127384994107975,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P41143,GPCR,0.3766094979264844,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P42336,Kinase,0.4866860055069245,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P43405,Kinase,0.4621056711059664,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P45452,Peptidase,0.3218229000363756,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P51449,Nuclear receptor,0.7268401189255058,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,P78536,Other Enzymes,0.3216708695559065,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q00987,Other Enzymes,0.8285647003050997,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q05397,Kinase,0.8148700410378211,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q06187,Kinase,0.5159654912914291,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q07817,Apoptosis regulator,0.7945910200040518,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q07820,Apoptosis regulator,0.9984195354909294,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q08499,Other Enzymes,0.6759566848701665,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q14432,Other Enzymes,0.793357106232669,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q16539,Kinase,0.4046726165583517,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q16790,Other Enzymes,0.4470724770024253,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q92731,Nuclear receptor,0.3694943534006526,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q96GD4,Kinase,0.402333021411588,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q96RI1,Nuclear receptor,0.4075554583783441,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q9NWZ3,Kinase,0.3667678080558955,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q9UBN7,Deacetylase,0.3019397502519928,Five-shot BEDROC (α=20)
+smi_ted,SMI-TED-Light,Q9Y233,Other Enzymes,0.7212915604372128,Five-shot BEDROC (α=20)
+gmolai,gMolAI,O00329,Kinase,0.6818363799188749,Five-shot ROC-AUC
+gmolai,gMolAI,O14757,Kinase,0.9134197715783564,Five-shot ROC-AUC
+gmolai,gMolAI,O14965,Kinase,0.769096784061795,Five-shot ROC-AUC
+gmolai,gMolAI,O15379,Deacetylase,0.8747083775185578,Five-shot ROC-AUC
+gmolai,gMolAI,O43614,GPCR,0.5623346637359248,Five-shot ROC-AUC
+gmolai,gMolAI,O60341,Oxidase,0.9226230291447683,Five-shot ROC-AUC
+gmolai,gMolAI,O60674,Kinase,0.7449824945485504,Five-shot ROC-AUC
+gmolai,gMolAI,O75116,Kinase,0.8662485706117782,Five-shot ROC-AUC
+gmolai,gMolAI,P00519,Kinase,0.8152905296950241,Five-shot ROC-AUC
+gmolai,gMolAI,P00533,Kinase,0.651916125955396,Five-shot ROC-AUC
+gmolai,gMolAI,P00734,Peptidase,0.6994706415302645,Five-shot ROC-AUC
+gmolai,gMolAI,P00742,Peptidase,0.7252792659814855,Five-shot ROC-AUC
+gmolai,gMolAI,P00918,Other Enzymes,0.724190702633342,Five-shot ROC-AUC
+gmolai,gMolAI,P01375,Other Proteins,0.9986860080529192,Five-shot ROC-AUC
+gmolai,gMolAI,P03372,Nuclear receptor,0.802824963969362,Five-shot ROC-AUC
+gmolai,gMolAI,P03952,Peptidase,0.6961984924623116,Five-shot ROC-AUC
+gmolai,gMolAI,P04150,Nuclear receptor,0.7852292020373512,Five-shot ROC-AUC
+gmolai,gMolAI,P06239,Kinase,0.8370880955186364,Five-shot ROC-AUC
+gmolai,gMolAI,P07550,GPCR,0.8504761904761905,Five-shot ROC-AUC
+gmolai,gMolAI,P07711,Peptidase,0.765113461114783,Five-shot ROC-AUC
+gmolai,gMolAI,P08172,GPCR,0.7609269412214714,Five-shot ROC-AUC
+gmolai,gMolAI,P08246,Peptidase,0.8238188123103598,Five-shot ROC-AUC
+gmolai,gMolAI,P08253,Peptidase,0.8119620831429876,Five-shot ROC-AUC
+gmolai,gMolAI,P08581,Kinase,0.7580464051939757,Five-shot ROC-AUC
+gmolai,gMolAI,P08908,GPCR,0.812286861952126,Five-shot ROC-AUC
+gmolai,gMolAI,P09874,Other Enzymes,0.8320254379649628,Five-shot ROC-AUC
+gmolai,gMolAI,P10721,Kinase,0.9025902708124371,Five-shot ROC-AUC
+gmolai,gMolAI,P11362,Kinase,0.8882065573770493,Five-shot ROC-AUC
+gmolai,gMolAI,P11802,Kinase,0.8750268554687498,Five-shot ROC-AUC
+gmolai,gMolAI,P14416,GPCR,0.6306642229143125,Five-shot ROC-AUC
+gmolai,gMolAI,P14780,Peptidase,0.8236732373009854,Five-shot ROC-AUC
+gmolai,gMolAI,P15056,Kinase,0.8240362885000323,Five-shot ROC-AUC
+gmolai,gMolAI,P20309,GPCR,0.8631086142322097,Five-shot ROC-AUC
+gmolai,gMolAI,P21453,GPCR,0.8738910724312184,Five-shot ROC-AUC
+gmolai,gMolAI,P23458,Kinase,0.8208707413651155,Five-shot ROC-AUC
+gmolai,gMolAI,P27487,Peptidase,0.7767028535980149,Five-shot ROC-AUC
+gmolai,gMolAI,P27986,Kinase,0.9178137254901962,Five-shot ROC-AUC
+gmolai,gMolAI,P28223,GPCR,0.6488542026980283,Five-shot ROC-AUC
+gmolai,gMolAI,P28335,GPCR,0.6422757633587786,Five-shot ROC-AUC
+gmolai,gMolAI,P28482,Kinase,0.8866611000939357,Five-shot ROC-AUC
+gmolai,gMolAI,P29274,GPCR,0.6372755799173816,Five-shot ROC-AUC
+gmolai,gMolAI,P29597,Kinase,0.8341353383458646,Five-shot ROC-AUC
+gmolai,gMolAI,P30542,GPCR,0.5621039013896156,Five-shot ROC-AUC
+gmolai,gMolAI,P31645,Other Proteins,0.7033174370261677,Five-shot ROC-AUC
+gmolai,gMolAI,P34969,GPCR,0.7686894226717234,Five-shot ROC-AUC
+gmolai,gMolAI,P34972,GPCR,0.5388916696460494,Five-shot ROC-AUC
+gmolai,gMolAI,P35372,GPCR,0.854876487478539,Five-shot ROC-AUC
+gmolai,gMolAI,P35462,GPCR,0.968533264834318,Five-shot ROC-AUC
+gmolai,gMolAI,P36888,Kinase,0.6152727507755946,Five-shot ROC-AUC
+gmolai,gMolAI,P41143,GPCR,0.812606434446057,Five-shot ROC-AUC
+gmolai,gMolAI,P42336,Kinase,0.7835919608307668,Five-shot ROC-AUC
+gmolai,gMolAI,P43405,Kinase,0.7848911478949263,Five-shot ROC-AUC
+gmolai,gMolAI,P45452,Peptidase,0.8137727272727272,Five-shot ROC-AUC
+gmolai,gMolAI,P51449,Nuclear receptor,0.9341047381546136,Five-shot ROC-AUC
+gmolai,gMolAI,P78536,Other Enzymes,0.8094950980392157,Five-shot ROC-AUC
+gmolai,gMolAI,Q00987,Other Enzymes,0.953286806247923,Five-shot ROC-AUC
+gmolai,gMolAI,Q05397,Kinase,0.960832372164552,Five-shot ROC-AUC
+gmolai,gMolAI,Q06187,Kinase,0.8528927068723702,Five-shot ROC-AUC
+gmolai,gMolAI,Q07817,Apoptosis regulator,0.912199455949456,Five-shot ROC-AUC
+gmolai,gMolAI,Q07820,Apoptosis regulator,0.9998214285714286,Five-shot ROC-AUC
+gmolai,gMolAI,Q08499,Other Enzymes,0.757741116751269,Five-shot ROC-AUC
+gmolai,gMolAI,Q14432,Other Enzymes,0.9017072310405644,Five-shot ROC-AUC
+gmolai,gMolAI,Q16539,Kinase,0.6692457112925051,Five-shot ROC-AUC
+gmolai,gMolAI,Q16790,Other Enzymes,0.7320087920489298,Five-shot ROC-AUC
+gmolai,gMolAI,Q92731,Nuclear receptor,0.8504612299465242,Five-shot ROC-AUC
+gmolai,gMolAI,Q96GD4,Kinase,0.7877158957845433,Five-shot ROC-AUC
+gmolai,gMolAI,Q96RI1,Nuclear receptor,0.8312544045102184,Five-shot ROC-AUC
+gmolai,gMolAI,Q9NWZ3,Kinase,0.7328590371277031,Five-shot ROC-AUC
+gmolai,gMolAI,Q9UBN7,Deacetylase,0.7589662063953487,Five-shot ROC-AUC
+gmolai,gMolAI,Q9Y233,Other Enzymes,0.8506804955885114,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O00329,Kinase,0.7421541642522257,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O14757,Kinase,0.9371278786744056,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O14965,Kinase,0.8577511376238002,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O15379,Deacetylase,0.8912330420155774,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O43614,GPCR,0.6081289526453802,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O60341,Oxidase,0.9184065934065936,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O60674,Kinase,0.7734659925113154,Five-shot ROC-AUC
+kermt_v2,KERMT v2,O75116,Kinase,0.8737760863350486,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P00519,Kinase,0.89807544141252,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P00533,Kinase,0.7452540820040413,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P00734,Peptidase,0.7386542684682954,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P00742,Peptidase,0.7984433085501859,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P00918,Other Enzymes,0.8087010671120043,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P01375,Other Proteins,0.9986608426804718,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P03372,Nuclear receptor,0.8547981474584232,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P03952,Peptidase,0.7528743718592965,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P04150,Nuclear receptor,0.8613563478588946,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P06239,Kinase,0.9069478810730136,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P07550,GPCR,0.8749474335188621,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P07711,Peptidase,0.8321766909010796,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P08172,GPCR,0.7864720132602321,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P08246,Peptidase,0.866371911573472,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P08253,Peptidase,0.9103206943809958,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P08581,Kinase,0.8194561226118887,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P08908,GPCR,0.8771791999125588,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P09874,Other Enzymes,0.8552795776337891,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P10721,Kinase,0.8865421263791374,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P11362,Kinase,0.8997245901639344,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P11802,Kinase,0.88768310546875,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P14416,GPCR,0.691088388501502,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P14780,Peptidase,0.9152862016679302,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P15056,Kinase,0.8376509330406148,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P20309,GPCR,0.8934546103085428,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P21453,GPCR,0.9231439890199016,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P23458,Kinase,0.8894146704826126,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P27487,Peptidase,0.7576566377171216,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P27986,Kinase,0.9601666666666668,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P28223,GPCR,0.658375129712902,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P28335,GPCR,0.6258540076335877,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P28482,Kinase,0.9513255401315104,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P29274,GPCR,0.6474132109945981,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P29597,Kinase,0.8606641604010024,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P30542,GPCR,0.6404064189778476,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P31645,Other Proteins,0.7248544876497922,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P34969,GPCR,0.7999705014749263,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P34972,GPCR,0.613956436841671,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P35372,GPCR,0.8533664377479131,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P35462,GPCR,0.988257770357051,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P36888,Kinase,0.6640770423991728,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P41143,GPCR,0.8708083373649409,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P42336,Kinase,0.8569422727631684,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P43405,Kinase,0.9080964375674704,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P45452,Peptidase,0.9013080808080808,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P51449,Nuclear receptor,0.9327281795511222,Five-shot ROC-AUC
+kermt_v2,KERMT v2,P78536,Other Enzymes,0.8370359477124184,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q00987,Other Enzymes,0.9672183449651046,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q05397,Kinase,0.9861976163014224,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q06187,Kinase,0.8821392395200249,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q07817,Apoptosis regulator,0.9533169533169532,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q07820,Apoptosis regulator,0.9999329595319356,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q08499,Other Enzymes,0.8575423011844331,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q14432,Other Enzymes,0.9418518518518516,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q16539,Kinase,0.8629436029508053,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q16790,Other Enzymes,0.8496750764525993,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q92731,Nuclear receptor,0.8573629679144383,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q96GD4,Kinase,0.8778578747072598,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q96RI1,Nuclear receptor,0.8185371153394408,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q9NWZ3,Kinase,0.7913708690330478,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q9UBN7,Deacetylase,0.8941466812015504,Five-shot ROC-AUC
+kermt_v2,KERMT v2,Q9Y233,Other Enzymes,0.9513562981039986,Five-shot ROC-AUC
+molai,MolAI,O00329,Kinase,0.6474082073434124,Five-shot ROC-AUC
+molai,MolAI,O14757,Kinase,0.8705345440928663,Five-shot ROC-AUC
+molai,MolAI,O14965,Kinase,0.6796699934992925,Five-shot ROC-AUC
+molai,MolAI,O15379,Deacetylase,0.7898178959300838,Five-shot ROC-AUC
+molai,MolAI,O43614,GPCR,0.6054025913928737,Five-shot ROC-AUC
+molai,MolAI,O60341,Oxidase,0.7615922121356904,Five-shot ROC-AUC
+molai,MolAI,O60674,Kinase,0.5633666935981305,Five-shot ROC-AUC
+molai,MolAI,O75116,Kinase,0.6850771869639795,Five-shot ROC-AUC
+molai,MolAI,P00519,Kinase,0.6123049759229534,Five-shot ROC-AUC
+molai,MolAI,P00533,Kinase,0.5244826114785578,Five-shot ROC-AUC
+molai,MolAI,P00734,Peptidase,0.6434701705227283,Five-shot ROC-AUC
+molai,MolAI,P00742,Peptidase,0.6225982214447118,Five-shot ROC-AUC
+molai,MolAI,P00918,Other Enzymes,0.6808443488352346,Five-shot ROC-AUC
+molai,MolAI,P01375,Other Proteins,0.9979490221455276,Five-shot ROC-AUC
+molai,MolAI,P03372,Nuclear receptor,0.6337392515343384,Five-shot ROC-AUC
+molai,MolAI,P03952,Peptidase,0.6025427135678392,Five-shot ROC-AUC
+molai,MolAI,P04150,Nuclear receptor,0.6225712129786831,Five-shot ROC-AUC
+molai,MolAI,P06239,Kinase,0.7328757707866933,Five-shot ROC-AUC
+molai,MolAI,P07550,GPCR,0.7750773036487322,Five-shot ROC-AUC
+molai,MolAI,P07711,Peptidase,0.6439313825632398,Five-shot ROC-AUC
+molai,MolAI,P08172,GPCR,0.5361405074588805,Five-shot ROC-AUC
+molai,MolAI,P08246,Peptidase,0.724928478543563,Five-shot ROC-AUC
+molai,MolAI,P08253,Peptidase,0.6894755596162632,Five-shot ROC-AUC
+molai,MolAI,P08581,Kinase,0.60276462136129,Five-shot ROC-AUC
+molai,MolAI,P08908,GPCR,0.7511872882282217,Five-shot ROC-AUC
+molai,MolAI,P09874,Other Enzymes,0.6591222702183825,Five-shot ROC-AUC
+molai,MolAI,P10721,Kinase,0.733801404212638,Five-shot ROC-AUC
+molai,MolAI,P11362,Kinase,0.8210590163934425,Five-shot ROC-AUC
+molai,MolAI,P11802,Kinase,0.66858154296875,Five-shot ROC-AUC
+molai,MolAI,P14416,GPCR,0.5631827577653448,Five-shot ROC-AUC
+molai,MolAI,P14780,Peptidase,0.7573269793133325,Five-shot ROC-AUC
+molai,MolAI,P15056,Kinase,0.6858784787240911,Five-shot ROC-AUC
+molai,MolAI,P20309,GPCR,0.7972222222222224,Five-shot ROC-AUC
+molai,MolAI,P21453,GPCR,0.6335017780273254,Five-shot ROC-AUC
+molai,MolAI,P23458,Kinase,0.7626631904967264,Five-shot ROC-AUC
+molai,MolAI,P27487,Peptidase,0.4907444168734491,Five-shot ROC-AUC
+molai,MolAI,P27986,Kinase,0.8009215686274509,Five-shot ROC-AUC
+molai,MolAI,P28223,GPCR,0.5872448979591837,Five-shot ROC-AUC
+molai,MolAI,P28335,GPCR,0.5520252862595421,Five-shot ROC-AUC
+molai,MolAI,P28482,Kinase,0.7826479490658594,Five-shot ROC-AUC
+molai,MolAI,P29274,GPCR,0.5725085398792501,Five-shot ROC-AUC
+molai,MolAI,P29597,Kinase,0.7401378446115288,Five-shot ROC-AUC
+molai,MolAI,P30542,GPCR,0.5370639281353566,Five-shot ROC-AUC
+molai,MolAI,P31645,Other Proteins,0.4944118366348739,Five-shot ROC-AUC
+molai,MolAI,P34969,GPCR,0.6281963758954909,Five-shot ROC-AUC
+molai,MolAI,P34972,GPCR,0.5695214653062348,Five-shot ROC-AUC
+molai,MolAI,P35372,GPCR,0.6171282043691908,Five-shot ROC-AUC
+molai,MolAI,P35462,GPCR,0.8558984073978937,Five-shot ROC-AUC
+molai,MolAI,P36888,Kinase,0.5537519389865564,Five-shot ROC-AUC
+molai,MolAI,P41143,GPCR,0.6724951620706338,Five-shot ROC-AUC
+molai,MolAI,P42336,Kinase,0.7041719971570718,Five-shot ROC-AUC
+molai,MolAI,P43405,Kinase,0.6889123785534366,Five-shot ROC-AUC
+molai,MolAI,P45452,Peptidase,0.6253080808080809,Five-shot ROC-AUC
+molai,MolAI,P51449,Nuclear receptor,0.8776940980881129,Five-shot ROC-AUC
+molai,MolAI,P78536,Other Enzymes,0.6286552287581698,Five-shot ROC-AUC
+molai,MolAI,Q00987,Other Enzymes,0.9640677966101696,Five-shot ROC-AUC
+molai,MolAI,Q05397,Kinase,0.8987953351275151,Five-shot ROC-AUC
+molai,MolAI,Q06187,Kinase,0.6866516674458469,Five-shot ROC-AUC
+molai,MolAI,Q07817,Apoptosis regulator,0.909064584064584,Five-shot ROC-AUC
+molai,MolAI,Q07820,Apoptosis regulator,0.9969600195026816,Five-shot ROC-AUC
+molai,MolAI,Q08499,Other Enzymes,0.7630203045685279,Five-shot ROC-AUC
+molai,MolAI,Q14432,Other Enzymes,0.862462081128748,Five-shot ROC-AUC
+molai,MolAI,Q16539,Kinase,0.6015779824523112,Five-shot ROC-AUC
+molai,MolAI,Q16790,Other Enzymes,0.7256727828746178,Five-shot ROC-AUC
+molai,MolAI,Q92731,Nuclear receptor,0.7288335561497327,Five-shot ROC-AUC
+molai,MolAI,Q96GD4,Kinase,0.713352605386417,Five-shot ROC-AUC
+molai,MolAI,Q96RI1,Nuclear receptor,0.8337326755931407,Five-shot ROC-AUC
+molai,MolAI,Q9NWZ3,Kinase,0.6240565075479395,Five-shot ROC-AUC
+molai,MolAI,Q9UBN7,Deacetylase,0.7108093104005168,Five-shot ROC-AUC
+molai,MolAI,Q9Y233,Other Enzymes,0.7914820724610475,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O00329,Kinase,0.7331691513459412,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O14757,Kinase,0.8754680771391126,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O14965,Kinase,0.7699801154831555,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O15379,Deacetylase,0.8507057446886312,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O43614,GPCR,0.6426832677772636,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O60341,Oxidase,0.9452400860009555,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O60674,Kinase,0.7406382756913132,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,O75116,Kinase,0.8574882075471699,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P00519,Kinase,0.8119791332263242,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P00533,Kinase,0.8054052824458138,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P00734,Peptidase,0.7429870127922047,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P00742,Peptidase,0.70035580217217,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P00918,Other Enzymes,0.7372309811580665,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P01375,Other Proteins,0.9945498993385102,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P03372,Nuclear receptor,0.861388920376338,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P03952,Peptidase,0.666354271356784,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P04150,Nuclear receptor,0.7668364459535936,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P06239,Kinase,0.8968441930796119,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P07550,GPCR,0.8123005565862709,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P07711,Peptidase,0.8013669410562999,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P08172,GPCR,0.6261889583067703,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P08246,Peptidase,0.838565236237538,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P08253,Peptidase,0.8438638647784377,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P08581,Kinase,0.7263503805013036,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P08908,GPCR,0.823292163077932,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P09874,Other Enzymes,0.8099772018238541,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P10721,Kinase,0.804736710130391,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P11362,Kinase,0.8517491803278687,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P11802,Kinase,0.8854296875,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P14416,GPCR,0.6202720282225835,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P14780,Peptidase,0.7558106790858876,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P15056,Kinase,0.7804287466907729,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P20309,GPCR,0.8224629926877117,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P21453,GPCR,0.8608022958387924,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P23458,Kinase,0.8548182851766182,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P27487,Peptidase,0.6802140198511166,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P27986,Kinase,0.9236437908496732,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P28223,GPCR,0.657168799723279,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P28335,GPCR,0.5541197519083969,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P28482,Kinase,0.8866297881223254,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P29274,GPCR,0.6232314505878616,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P29597,Kinase,0.8203822055137844,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P30542,GPCR,0.575957904529333,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P31645,Other Proteins,0.7184788456835413,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P34969,GPCR,0.7721281078803203,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P34972,GPCR,0.689191991419378,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P35372,GPCR,0.7932575039962109,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P35462,GPCR,0.9562291292062676,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P36888,Kinase,0.7414652275077559,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P41143,GPCR,0.8275108853410741,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P42336,Kinase,0.7744179894179893,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P43405,Kinase,0.7816660669305506,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P45452,Peptidase,0.7867727272727273,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P51449,Nuclear receptor,0.9174014962593516,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,P78536,Other Enzymes,0.796140522875817,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q00987,Other Enzymes,0.9561016949152542,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q05397,Kinase,0.9601146994745612,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q06187,Kinase,0.8186701340190121,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q07817,Apoptosis regulator,0.904745085995086,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q07820,Apoptosis regulator,0.9992107508532422,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q08499,Other Enzymes,0.8205837563451777,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q14432,Other Enzymes,0.9360952380952382,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q16539,Kinase,0.7690001746038675,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q16790,Other Enzymes,0.7818864678899082,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q92731,Nuclear receptor,0.8075501336898396,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q96GD4,Kinase,0.8491290983606558,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q96RI1,Nuclear receptor,0.8470607235142118,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q9NWZ3,Kinase,0.8049928600571195,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q9UBN7,Deacetylase,0.8140251534237726,Five-shot ROC-AUC
+molclr_gin,MolCLR-GIN,Q9Y233,Other Enzymes,0.8664163694387085,Five-shot ROC-AUC
+molformer,MoLFormer,O00329,Kinase,0.7009890428277934,Five-shot ROC-AUC
+molformer,MoLFormer,O14757,Kinase,0.9307199026399552,Five-shot ROC-AUC
+molformer,MoLFormer,O14965,Kinase,0.8036461320790792,Five-shot ROC-AUC
+molformer,MoLFormer,O15379,Deacetylase,0.8275149010860423,Five-shot ROC-AUC
+molformer,MoLFormer,O43614,GPCR,0.6572820260681783,Five-shot ROC-AUC
+molformer,MoLFormer,O60341,Oxidase,0.9171245421245422,Five-shot ROC-AUC
+molformer,MoLFormer,O60674,Kinase,0.7233930169320718,Five-shot ROC-AUC
+molformer,MoLFormer,O75116,Kinase,0.8428316180674672,Five-shot ROC-AUC
+molformer,MoLFormer,P00519,Kinase,0.8786147672552167,Five-shot ROC-AUC
+molformer,MoLFormer,P00533,Kinase,0.7464928023695077,Five-shot ROC-AUC
+molformer,MoLFormer,P00734,Peptidase,0.7384493651898429,Five-shot ROC-AUC
+molformer,MoLFormer,P00742,Peptidase,0.771541748669728,Five-shot ROC-AUC
+molformer,MoLFormer,P00918,Other Enzymes,0.767792276411258,Five-shot ROC-AUC
+molformer,MoLFormer,P01375,Other Proteins,0.9982725769341384,Five-shot ROC-AUC
+molformer,MoLFormer,P03372,Nuclear receptor,0.8483563551568345,Five-shot ROC-AUC
+molformer,MoLFormer,P03952,Peptidase,0.7286733668341708,Five-shot ROC-AUC
+molformer,MoLFormer,P04150,Nuclear receptor,0.8778343708734202,Five-shot ROC-AUC
+molformer,MoLFormer,P06239,Kinase,0.9079867247947844,Five-shot ROC-AUC
+molformer,MoLFormer,P07550,GPCR,0.8800556586270872,Five-shot ROC-AUC
+molformer,MoLFormer,P07711,Peptidase,0.8206963888721985,Five-shot ROC-AUC
+molformer,MoLFormer,P08172,GPCR,0.7880721662629095,Five-shot ROC-AUC
+molformer,MoLFormer,P08246,Peptidase,0.8085695708712615,Five-shot ROC-AUC
+molformer,MoLFormer,P08253,Peptidase,0.888695751484696,Five-shot ROC-AUC
+molformer,MoLFormer,P08581,Kinase,0.7866318982491618,Five-shot ROC-AUC
+molformer,MoLFormer,P08908,GPCR,0.8223494370969504,Five-shot ROC-AUC
+molformer,MoLFormer,P09874,Other Enzymes,0.8954163666906648,Five-shot ROC-AUC
+molformer,MoLFormer,P10721,Kinase,0.8292527582748244,Five-shot ROC-AUC
+molformer,MoLFormer,P11362,Kinase,0.894095081967213,Five-shot ROC-AUC
+molformer,MoLFormer,P11802,Kinase,0.8672534179687499,Five-shot ROC-AUC
+molformer,MoLFormer,P14416,GPCR,0.6689590166193535,Five-shot ROC-AUC
+molformer,MoLFormer,P14780,Peptidase,0.876149409725983,Five-shot ROC-AUC
+molformer,MoLFormer,P15056,Kinase,0.8356460256989733,Five-shot ROC-AUC
+molformer,MoLFormer,P20309,GPCR,0.9171660424469412,Five-shot ROC-AUC
+molformer,MoLFormer,P21453,GPCR,0.9142912845467588,Five-shot ROC-AUC
+molformer,MoLFormer,P23458,Kinase,0.8820402242521661,Five-shot ROC-AUC
+molformer,MoLFormer,P27487,Peptidase,0.7083235111662531,Five-shot ROC-AUC
+molformer,MoLFormer,P27986,Kinase,0.9375130718954248,Five-shot ROC-AUC
+molformer,MoLFormer,P28223,GPCR,0.7532918252046581,Five-shot ROC-AUC
+molformer,MoLFormer,P28335,GPCR,0.5991197519083968,Five-shot ROC-AUC
+molformer,MoLFormer,P28482,Kinase,0.920451936123578,Five-shot ROC-AUC
+molformer,MoLFormer,P29274,GPCR,0.6280232165554497,Five-shot ROC-AUC
+molformer,MoLFormer,P29597,Kinase,0.8586215538847117,Five-shot ROC-AUC
+molformer,MoLFormer,P30542,GPCR,0.6332112332112332,Five-shot ROC-AUC
+molformer,MoLFormer,P31645,Other Proteins,0.6874443629249205,Five-shot ROC-AUC
+molformer,MoLFormer,P34969,GPCR,0.824053940160135,Five-shot ROC-AUC
+molformer,MoLFormer,P34972,GPCR,0.4855710789032205,Five-shot ROC-AUC
+molformer,MoLFormer,P35372,GPCR,0.8267735036409922,Five-shot ROC-AUC
+molformer,MoLFormer,P35462,GPCR,0.966520035961983,Five-shot ROC-AUC
+molformer,MoLFormer,P36888,Kinase,0.6059591520165462,Five-shot ROC-AUC
+molformer,MoLFormer,P41143,GPCR,0.8731611836800516,Five-shot ROC-AUC
+molformer,MoLFormer,P42336,Kinase,0.7828512200900261,Five-shot ROC-AUC
+molformer,MoLFormer,P43405,Kinase,0.774874055415617,Five-shot ROC-AUC
+molformer,MoLFormer,P45452,Peptidase,0.8574772727272727,Five-shot ROC-AUC
+molformer,MoLFormer,P51449,Nuclear receptor,0.9464954280964256,Five-shot ROC-AUC
+molformer,MoLFormer,P78536,Other Enzymes,0.8935866013071895,Five-shot ROC-AUC
+molformer,MoLFormer,Q00987,Other Enzymes,0.9737686939182452,Five-shot ROC-AUC
+molformer,MoLFormer,Q05397,Kinase,0.9722446494937844,Five-shot ROC-AUC
+molformer,MoLFormer,Q06187,Kinase,0.8549146797568955,Five-shot ROC-AUC
+molformer,MoLFormer,Q07817,Apoptosis regulator,0.9669906107406108,Five-shot ROC-AUC
+molformer,MoLFormer,Q07820,Apoptosis regulator,0.9999890297415897,Five-shot ROC-AUC
+molformer,MoLFormer,Q08499,Other Enzymes,0.8623477157360406,Five-shot ROC-AUC
+molformer,MoLFormer,Q14432,Other Enzymes,0.9257460317460318,Five-shot ROC-AUC
+molformer,MoLFormer,Q16539,Kinase,0.7812922868741542,Five-shot ROC-AUC
+molformer,MoLFormer,Q16790,Other Enzymes,0.8019514525993884,Five-shot ROC-AUC
+molformer,MoLFormer,Q92731,Nuclear receptor,0.880023395721925,Five-shot ROC-AUC
+molformer,MoLFormer,Q96GD4,Kinase,0.7666495901639345,Five-shot ROC-AUC
+molformer,MoLFormer,Q96RI1,Nuclear receptor,0.8696059431524548,Five-shot ROC-AUC
+molformer,MoLFormer,Q9NWZ3,Kinase,0.7437117503059976,Five-shot ROC-AUC
+molformer,MoLFormer,Q9UBN7,Deacetylase,0.79343709625323,Five-shot ROC-AUC
+molformer,MoLFormer,Q9Y233,Other Enzymes,0.9514173080533134,Five-shot ROC-AUC
+morgan,Morgan (binary),O00329,Kinase,0.7086900121161038,Five-shot ROC-AUC
+morgan,Morgan (binary),O14757,Kinase,0.9231253510578542,Five-shot ROC-AUC
+morgan,Morgan (binary),O14965,Kinase,0.8323209437497608,Five-shot ROC-AUC
+morgan,Morgan (binary),O15379,Deacetylase,0.8452298241123339,Five-shot ROC-AUC
+morgan,Morgan (binary),O43614,GPCR,0.5904799089927503,Five-shot ROC-AUC
+morgan,Morgan (binary),O60341,Oxidase,0.9218655438764134,Five-shot ROC-AUC
+morgan,Morgan (binary),O60674,Kinase,0.7594853049771082,Five-shot ROC-AUC
+morgan,Morgan (binary),O75116,Kinase,0.8423143582046884,Five-shot ROC-AUC
+morgan,Morgan (binary),P00519,Kinase,0.921274478330658,Five-shot ROC-AUC
+morgan,Morgan (binary),P00533,Kinase,0.7287978168651714,Five-shot ROC-AUC
+morgan,Morgan (binary),P00734,Peptidase,0.7461846139538233,Five-shot ROC-AUC
+morgan,Morgan (binary),P00742,Peptidase,0.7357565237991108,Five-shot ROC-AUC
+morgan,Morgan (binary),P00918,Other Enzymes,0.8407481577929369,Five-shot ROC-AUC
+morgan,Morgan (binary),P01375,Other Proteins,0.998641968651136,Five-shot ROC-AUC
+morgan,Morgan (binary),P03372,Nuclear receptor,0.860953314009036,Five-shot ROC-AUC
+morgan,Morgan (binary),P03952,Peptidase,0.705751256281407,Five-shot ROC-AUC
+morgan,Morgan (binary),P04150,Nuclear receptor,0.7517591020562159,Five-shot ROC-AUC
+morgan,Morgan (binary),P06239,Kinase,0.879853501433565,Five-shot ROC-AUC
+morgan,Morgan (binary),P07550,GPCR,0.90978354978355,Five-shot ROC-AUC
+morgan,Morgan (binary),P07711,Peptidase,0.8382643353562058,Five-shot ROC-AUC
+morgan,Morgan (binary),P08172,GPCR,0.7325417569807471,Five-shot ROC-AUC
+morgan,Morgan (binary),P08246,Peptidase,0.8780429128738622,Five-shot ROC-AUC
+morgan,Morgan (binary),P08253,Peptidase,0.8670413430790316,Five-shot ROC-AUC
+morgan,Morgan (binary),P08581,Kinase,0.7846282794955031,Five-shot ROC-AUC
+morgan,Morgan (binary),P08908,GPCR,0.852226336211608,Five-shot ROC-AUC
+morgan,Morgan (binary),P09874,Other Enzymes,0.8626514878809693,Five-shot ROC-AUC
+morgan,Morgan (binary),P10721,Kinase,0.8910155466399198,Five-shot ROC-AUC
+morgan,Morgan (binary),P11362,Kinase,0.8400918032786885,Five-shot ROC-AUC
+morgan,Morgan (binary),P11802,Kinase,0.898004150390625,Five-shot ROC-AUC
+morgan,Morgan (binary),P14416,GPCR,0.6333712758040956,Five-shot ROC-AUC
+morgan,Morgan (binary),P14780,Peptidase,0.8610161919202859,Five-shot ROC-AUC
+morgan,Morgan (binary),P15056,Kinase,0.8104878285013237,Five-shot ROC-AUC
+morgan,Morgan (binary),P20309,GPCR,0.8937957018013197,Five-shot ROC-AUC
+morgan,Morgan (binary),P21453,GPCR,0.8122637095264832,Five-shot ROC-AUC
+morgan,Morgan (binary),P23458,Kinase,0.8972282118634098,Five-shot ROC-AUC
+morgan,Morgan (binary),P27487,Peptidase,0.6691105769230768,Five-shot ROC-AUC
+morgan,Morgan (binary),P27986,Kinase,0.94965522875817,Five-shot ROC-AUC
+morgan,Morgan (binary),P28223,GPCR,0.6535793554710019,Five-shot ROC-AUC
+morgan,Morgan (binary),P28335,GPCR,0.5579735209923665,Five-shot ROC-AUC
+morgan,Morgan (binary),P28482,Kinase,0.9450500991545768,Five-shot ROC-AUC
+morgan,Morgan (binary),P29274,GPCR,0.66999672306959,Five-shot ROC-AUC
+morgan,Morgan (binary),P29597,Kinase,0.8568859649122806,Five-shot ROC-AUC
+morgan,Morgan (binary),P30542,GPCR,0.5907421943136228,Five-shot ROC-AUC
+morgan,Morgan (binary),P31645,Other Proteins,0.6462496943017854,Five-shot ROC-AUC
+morgan,Morgan (binary),P34969,GPCR,0.7459460598398652,Five-shot ROC-AUC
+morgan,Morgan (binary),P34972,GPCR,0.6586130744478975,Five-shot ROC-AUC
+morgan,Morgan (binary),P35372,GPCR,0.8498266458469006,Five-shot ROC-AUC
+morgan,Morgan (binary),P35462,GPCR,0.9927674672489084,Five-shot ROC-AUC
+morgan,Morgan (binary),P36888,Kinase,0.6983599405377456,Five-shot ROC-AUC
+morgan,Morgan (binary),P41143,GPCR,0.8709671827124656,Five-shot ROC-AUC
+morgan,Morgan (binary),P42336,Kinase,0.7984525783779516,Five-shot ROC-AUC
+morgan,Morgan (binary),P43405,Kinase,0.9013853904282116,Five-shot ROC-AUC
+morgan,Morgan (binary),P45452,Peptidase,0.8684532828282828,Five-shot ROC-AUC
+morgan,Morgan (binary),P51449,Nuclear receptor,0.9363308395677472,Five-shot ROC-AUC
+morgan,Morgan (binary),P78536,Other Enzymes,0.8258570261437909,Five-shot ROC-AUC
+morgan,Morgan (binary),Q00987,Other Enzymes,0.948193752077102,Five-shot ROC-AUC
+morgan,Morgan (binary),Q05397,Kinase,0.9724048442906572,Five-shot ROC-AUC
+morgan,Morgan (binary),Q06187,Kinase,0.8346959248870188,Five-shot ROC-AUC
+morgan,Morgan (binary),Q07817,Apoptosis regulator,0.9431017462267464,Five-shot ROC-AUC
+morgan,Morgan (binary),Q07820,Apoptosis regulator,0.9988731106777182,Five-shot ROC-AUC
+morgan,Morgan (binary),Q08499,Other Enzymes,0.7784560067681896,Five-shot ROC-AUC
+morgan,Morgan (binary),Q14432,Other Enzymes,0.9283209876543208,Five-shot ROC-AUC
+morgan,Morgan (binary),Q16539,Kinase,0.7988246977170543,Five-shot ROC-AUC
+morgan,Morgan (binary),Q16790,Other Enzymes,0.8790491207951069,Five-shot ROC-AUC
+morgan,Morgan (binary),Q92731,Nuclear receptor,0.8513820187165774,Five-shot ROC-AUC
+morgan,Morgan (binary),Q96GD4,Kinase,0.9049985362997658,Five-shot ROC-AUC
+morgan,Morgan (binary),Q96RI1,Nuclear receptor,0.8536997885835096,Five-shot ROC-AUC
+morgan,Morgan (binary),Q9NWZ3,Kinase,0.8075759893920849,Five-shot ROC-AUC
+morgan,Morgan (binary),Q9UBN7,Deacetylase,0.9063983769379844,Five-shot ROC-AUC
+morgan,Morgan (binary),Q9Y233,Other Enzymes,0.9366974845128592,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O00329,Kinase,0.631385976926724,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O14757,Kinase,0.8991527803782062,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O14965,Kinase,0.8278631792283278,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O15379,Deacetylase,0.7570757304274691,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O43614,GPCR,0.5574680896190035,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O60341,Oxidase,0.9188624781016086,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O60674,Kinase,0.7087774852962895,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,O75116,Kinase,0.8314036592338481,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P00519,Kinase,0.875394863563403,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P00533,Kinase,0.7009371980070032,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P00734,Peptidase,0.6832178064849037,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P00742,Peptidase,0.7064030723813689,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P00918,Other Enzymes,0.8221428099672602,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P01375,Other Proteins,0.9980856341673858,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P03372,Nuclear receptor,0.8335667902773954,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P03952,Peptidase,0.656494974874372,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P04150,Nuclear receptor,0.6697132616487456,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P06239,Kinase,0.843947606142728,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P07550,GPCR,0.85734693877551,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P07711,Peptidase,0.8005718119730016,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P08172,GPCR,0.6055080963916868,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P08246,Peptidase,0.8547767663632422,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P08253,Peptidase,0.8051681132937414,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P08581,Kinase,0.7469187376935768,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P08908,GPCR,0.7773691113782927,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P09874,Other Enzymes,0.861048116150708,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P10721,Kinase,0.796722668004012,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P11362,Kinase,0.8629655737704918,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P11802,Kinase,0.8760400390624999,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P14416,GPCR,0.6153314224292369,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P14780,Peptidase,0.8238681901873713,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P15056,Kinase,0.7984051139665527,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P20309,GPCR,0.8655163188871053,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P21453,GPCR,0.810861563416308,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P23458,Kinase,0.8972889794958245,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P27487,Peptidase,0.6449069478908189,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P27986,Kinase,0.9264150326797388,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P28223,GPCR,0.6769139859333564,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P28335,GPCR,0.6138215648854961,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P28482,Kinase,0.8629892495564138,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P29274,GPCR,0.6426735780108039,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P29597,Kinase,0.8333208020050125,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P30542,GPCR,0.625904849119135,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P31645,Other Proteins,0.6622817314746883,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P34969,GPCR,0.6990265486725664,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P34972,GPCR,0.6419809686202249,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P35372,GPCR,0.6739262033035345,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P35462,GPCR,0.9494445157975854,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P36888,Kinase,0.6379233453981386,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P41143,GPCR,0.7042323818738914,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P42336,Kinase,0.7612651030561478,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P43405,Kinase,0.8004587981288234,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P45452,Peptidase,0.719,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P51449,Nuclear receptor,0.9387514546965916,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,P78536,Other Enzymes,0.7236029411764705,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q00987,Other Enzymes,0.9406148222000664,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q05397,Kinase,0.9297417659874408,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q06187,Kinase,0.8174039660277389,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q07817,Apoptosis regulator,0.9543611793611794,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q07820,Apoptosis regulator,0.9999012676743052,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q08499,Other Enzymes,0.8744247038917091,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q14432,Other Enzymes,0.8825608465608467,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q16539,Kinase,0.7505827404076999,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q16790,Other Enzymes,0.8511334097859328,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q92731,Nuclear receptor,0.8260026737967916,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q96GD4,Kinase,0.8262331674473069,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q96RI1,Nuclear receptor,0.8537702607470049,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q9NWZ3,Kinase,0.7826754385964914,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q9UBN7,Deacetylase,0.7894642280361758,Five-shot ROC-AUC
+smi_ted,SMI-TED-Light,Q9Y233,Other Enzymes,0.9349023840810964,Five-shot ROC-AUC
+gmolai,gMolAI,O00329,Kinase,0.153760141211123,Five-shot average precision
+gmolai,gMolAI,O14757,Kinase,0.5795987823079674,Five-shot average precision
+gmolai,gMolAI,O14965,Kinase,0.1175693823152857,Five-shot average precision
+gmolai,gMolAI,O15379,Deacetylase,0.5921258127539865,Five-shot average precision
+gmolai,gMolAI,O43614,GPCR,0.0847395580496477,Five-shot average precision
+gmolai,gMolAI,O60341,Oxidase,0.7530192342881886,Five-shot average precision
+gmolai,gMolAI,O60674,Kinase,0.2144140880292875,Five-shot average precision
+gmolai,gMolAI,O75116,Kinase,0.3716657455742647,Five-shot average precision
+gmolai,gMolAI,P00519,Kinase,0.2502645442853301,Five-shot average precision
+gmolai,gMolAI,P00533,Kinase,0.0875582446185641,Five-shot average precision
+gmolai,gMolAI,P00734,Peptidase,0.1041814786066329,Five-shot average precision
+gmolai,gMolAI,P00742,Peptidase,0.2962058312323076,Five-shot average precision
+gmolai,gMolAI,P00918,Other Enzymes,0.1281828366527614,Five-shot average precision
+gmolai,gMolAI,P01375,Other Proteins,0.912397030568443,Five-shot average precision
+gmolai,gMolAI,P03372,Nuclear receptor,0.1807422396982916,Five-shot average precision
+gmolai,gMolAI,P03952,Peptidase,0.2330472105048268,Five-shot average precision
+gmolai,gMolAI,P04150,Nuclear receptor,0.2143489037951459,Five-shot average precision
+gmolai,gMolAI,P06239,Kinase,0.3636860128699566,Five-shot average precision
+gmolai,gMolAI,P07550,GPCR,0.5651013239319901,Five-shot average precision
+gmolai,gMolAI,P07711,Peptidase,0.2044715418475819,Five-shot average precision
+gmolai,gMolAI,P08172,GPCR,0.1418836229078071,Five-shot average precision
+gmolai,gMolAI,P08246,Peptidase,0.4412443169721832,Five-shot average precision
+gmolai,gMolAI,P08253,Peptidase,0.2148472809327242,Five-shot average precision
+gmolai,gMolAI,P08581,Kinase,0.1794556325345271,Five-shot average precision
+gmolai,gMolAI,P08908,GPCR,0.1977017336995268,Five-shot average precision
+gmolai,gMolAI,P09874,Other Enzymes,0.2372561987797896,Five-shot average precision
+gmolai,gMolAI,P10721,Kinase,0.6358674387248769,Five-shot average precision
+gmolai,gMolAI,P11362,Kinase,0.4327458438910799,Five-shot average precision
+gmolai,gMolAI,P11802,Kinase,0.1864980749981198,Five-shot average precision
+gmolai,gMolAI,P14416,GPCR,0.1016974707146343,Five-shot average precision
+gmolai,gMolAI,P14780,Peptidase,0.2071202493560618,Five-shot average precision
+gmolai,gMolAI,P15056,Kinase,0.234861299431832,Five-shot average precision
+gmolai,gMolAI,P20309,GPCR,0.3720739189316132,Five-shot average precision
+gmolai,gMolAI,P21453,GPCR,0.280375587596935,Five-shot average precision
+gmolai,gMolAI,P23458,Kinase,0.2690547333640317,Five-shot average precision
+gmolai,gMolAI,P27487,Peptidase,0.1686403112047654,Five-shot average precision
+gmolai,gMolAI,P27986,Kinase,0.78579010605951,Five-shot average precision
+gmolai,gMolAI,P28223,GPCR,0.2149657231021949,Five-shot average precision
+gmolai,gMolAI,P28335,GPCR,0.0915494110455873,Five-shot average precision
+gmolai,gMolAI,P28482,Kinase,0.5859689140436645,Five-shot average precision
+gmolai,gMolAI,P29274,GPCR,0.1429773412726274,Five-shot average precision
+gmolai,gMolAI,P29597,Kinase,0.4199347618026022,Five-shot average precision
+gmolai,gMolAI,P30542,GPCR,0.0731187382265421,Five-shot average precision
+gmolai,gMolAI,P31645,Other Proteins,0.1177482311683534,Five-shot average precision
+gmolai,gMolAI,P34969,GPCR,0.1766802783414784,Five-shot average precision
+gmolai,gMolAI,P34972,GPCR,0.0586811086603554,Five-shot average precision
+gmolai,gMolAI,P35372,GPCR,0.1865804933581166,Five-shot average precision
+gmolai,gMolAI,P35462,GPCR,0.7060337939441205,Five-shot average precision
+gmolai,gMolAI,P36888,Kinase,0.0962306387845691,Five-shot average precision
+gmolai,gMolAI,P41143,GPCR,0.216862302944353,Five-shot average precision
+gmolai,gMolAI,P42336,Kinase,0.4507085666796759,Five-shot average precision
+gmolai,gMolAI,P43405,Kinase,0.1163969809191071,Five-shot average precision
+gmolai,gMolAI,P45452,Peptidase,0.3022253972265613,Five-shot average precision
+gmolai,gMolAI,P51449,Nuclear receptor,0.561306715597351,Five-shot average precision
+gmolai,gMolAI,P78536,Other Enzymes,0.3034585500403417,Five-shot average precision
+gmolai,gMolAI,Q00987,Other Enzymes,0.7838638361799141,Five-shot average precision
+gmolai,gMolAI,Q05397,Kinase,0.7936854954963023,Five-shot average precision
+gmolai,gMolAI,Q06187,Kinase,0.3313992933275685,Five-shot average precision
+gmolai,gMolAI,Q07817,Apoptosis regulator,0.5539674472327227,Five-shot average precision
+gmolai,gMolAI,Q07820,Apoptosis regulator,0.9921689467278494,Five-shot average precision
+gmolai,gMolAI,Q08499,Other Enzymes,0.5369321876191937,Five-shot average precision
+gmolai,gMolAI,Q14432,Other Enzymes,0.6247045911081388,Five-shot average precision
+gmolai,gMolAI,Q16539,Kinase,0.1850534419920513,Five-shot average precision
+gmolai,gMolAI,Q16790,Other Enzymes,0.1775427589278672,Five-shot average precision
+gmolai,gMolAI,Q92731,Nuclear receptor,0.1996606887007686,Five-shot average precision
+gmolai,gMolAI,Q96GD4,Kinase,0.2195871288128147,Five-shot average precision
+gmolai,gMolAI,Q96RI1,Nuclear receptor,0.2025552481086003,Five-shot average precision
+gmolai,gMolAI,Q9NWZ3,Kinase,0.166251770544896,Five-shot average precision
+gmolai,gMolAI,Q9UBN7,Deacetylase,0.1131217495987552,Five-shot average precision
+gmolai,gMolAI,Q9Y233,Other Enzymes,0.3764607650937339,Five-shot average precision
+kermt_v2,KERMT v2,O00329,Kinase,0.2917442969754346,Five-shot average precision
+kermt_v2,KERMT v2,O14757,Kinase,0.685803350653737,Five-shot average precision
+kermt_v2,KERMT v2,O14965,Kinase,0.2708738333737759,Five-shot average precision
+kermt_v2,KERMT v2,O15379,Deacetylase,0.6623006158456795,Five-shot average precision
+kermt_v2,KERMT v2,O43614,GPCR,0.133381677723538,Five-shot average precision
+kermt_v2,KERMT v2,O60341,Oxidase,0.7236636556123747,Five-shot average precision
+kermt_v2,KERMT v2,O60674,Kinase,0.3173067303666662,Five-shot average precision
+kermt_v2,KERMT v2,O75116,Kinase,0.4889036351624289,Five-shot average precision
+kermt_v2,KERMT v2,P00519,Kinase,0.6000348062641284,Five-shot average precision
+kermt_v2,KERMT v2,P00533,Kinase,0.1580574218971186,Five-shot average precision
+kermt_v2,KERMT v2,P00734,Peptidase,0.1528864612105969,Five-shot average precision
+kermt_v2,KERMT v2,P00742,Peptidase,0.3970734241606542,Five-shot average precision
+kermt_v2,KERMT v2,P00918,Other Enzymes,0.2428328587062495,Five-shot average precision
+kermt_v2,KERMT v2,P01375,Other Proteins,0.89508540327683,Five-shot average precision
+kermt_v2,KERMT v2,P03372,Nuclear receptor,0.1993916111065382,Five-shot average precision
+kermt_v2,KERMT v2,P03952,Peptidase,0.2565737418634956,Five-shot average precision
+kermt_v2,KERMT v2,P04150,Nuclear receptor,0.3542931256827303,Five-shot average precision
+kermt_v2,KERMT v2,P06239,Kinase,0.527559121907806,Five-shot average precision
+kermt_v2,KERMT v2,P07550,GPCR,0.5896308749057567,Five-shot average precision
+kermt_v2,KERMT v2,P07711,Peptidase,0.3212530055481398,Five-shot average precision
+kermt_v2,KERMT v2,P08172,GPCR,0.2418315200340349,Five-shot average precision
+kermt_v2,KERMT v2,P08246,Peptidase,0.6165883103112426,Five-shot average precision
+kermt_v2,KERMT v2,P08253,Peptidase,0.3423183430351534,Five-shot average precision
+kermt_v2,KERMT v2,P08581,Kinase,0.2575219501907424,Five-shot average precision
+kermt_v2,KERMT v2,P08908,GPCR,0.2548125653214595,Five-shot average precision
+kermt_v2,KERMT v2,P09874,Other Enzymes,0.3274386886648419,Five-shot average precision
+kermt_v2,KERMT v2,P10721,Kinase,0.806409340144936,Five-shot average precision
+kermt_v2,KERMT v2,P11362,Kinase,0.4841535911432154,Five-shot average precision
+kermt_v2,KERMT v2,P11802,Kinase,0.2105576140432453,Five-shot average precision
+kermt_v2,KERMT v2,P14416,GPCR,0.1355470530246872,Five-shot average precision
+kermt_v2,KERMT v2,P14780,Peptidase,0.4054166458132133,Five-shot average precision
+kermt_v2,KERMT v2,P15056,Kinase,0.3738688132043802,Five-shot average precision
+kermt_v2,KERMT v2,P20309,GPCR,0.4277832510949854,Five-shot average precision
+kermt_v2,KERMT v2,P21453,GPCR,0.2992700767894068,Five-shot average precision
+kermt_v2,KERMT v2,P23458,Kinase,0.5951926175671606,Five-shot average precision
+kermt_v2,KERMT v2,P27487,Peptidase,0.2171782775100823,Five-shot average precision
+kermt_v2,KERMT v2,P27986,Kinase,0.8965277147602672,Five-shot average precision
+kermt_v2,KERMT v2,P28223,GPCR,0.263924805532617,Five-shot average precision
+kermt_v2,KERMT v2,P28335,GPCR,0.091594335157036,Five-shot average precision
+kermt_v2,KERMT v2,P28482,Kinase,0.7315438741998316,Five-shot average precision
+kermt_v2,KERMT v2,P29274,GPCR,0.2213116540085641,Five-shot average precision
+kermt_v2,KERMT v2,P29597,Kinase,0.5958917484740827,Five-shot average precision
+kermt_v2,KERMT v2,P30542,GPCR,0.179697202524168,Five-shot average precision
+kermt_v2,KERMT v2,P31645,Other Proteins,0.1520226561060755,Five-shot average precision
+kermt_v2,KERMT v2,P34969,GPCR,0.2388304335413812,Five-shot average precision
+kermt_v2,KERMT v2,P34972,GPCR,0.0869208961385386,Five-shot average precision
+kermt_v2,KERMT v2,P35372,GPCR,0.2680236393433721,Five-shot average precision
+kermt_v2,KERMT v2,P35462,GPCR,0.9029941470919566,Five-shot average precision
+kermt_v2,KERMT v2,P36888,Kinase,0.1237926069415233,Five-shot average precision
+kermt_v2,KERMT v2,P41143,GPCR,0.3685408028754873,Five-shot average precision
+kermt_v2,KERMT v2,P42336,Kinase,0.5576662359650874,Five-shot average precision
+kermt_v2,KERMT v2,P43405,Kinase,0.4571204370913284,Five-shot average precision
+kermt_v2,KERMT v2,P45452,Peptidase,0.4046318203477762,Five-shot average precision
+kermt_v2,KERMT v2,P51449,Nuclear receptor,0.6227997298832673,Five-shot average precision
+kermt_v2,KERMT v2,P78536,Other Enzymes,0.3677821822718389,Five-shot average precision
+kermt_v2,KERMT v2,Q00987,Other Enzymes,0.8312922415697394,Five-shot average precision
+kermt_v2,KERMT v2,Q05397,Kinase,0.8132178891749332,Five-shot average precision
+kermt_v2,KERMT v2,Q06187,Kinase,0.4725490615171966,Five-shot average precision
+kermt_v2,KERMT v2,Q07817,Apoptosis regulator,0.7579977747112244,Five-shot average precision
+kermt_v2,KERMT v2,Q07820,Apoptosis regulator,0.997144438008934,Five-shot average precision
+kermt_v2,KERMT v2,Q08499,Other Enzymes,0.7006668315289705,Five-shot average precision
+kermt_v2,KERMT v2,Q14432,Other Enzymes,0.7707566483534953,Five-shot average precision
+kermt_v2,KERMT v2,Q16539,Kinase,0.4227159061846624,Five-shot average precision
+kermt_v2,KERMT v2,Q16790,Other Enzymes,0.4027442604693642,Five-shot average precision
+kermt_v2,KERMT v2,Q92731,Nuclear receptor,0.1884819577588755,Five-shot average precision
+kermt_v2,KERMT v2,Q96GD4,Kinase,0.4754140929493625,Five-shot average precision
+kermt_v2,KERMT v2,Q96RI1,Nuclear receptor,0.2271535263151688,Five-shot average precision
+kermt_v2,KERMT v2,Q9NWZ3,Kinase,0.3253876906707878,Five-shot average precision
+kermt_v2,KERMT v2,Q9UBN7,Deacetylase,0.2772769334725441,Five-shot average precision
+kermt_v2,KERMT v2,Q9Y233,Other Enzymes,0.6046333023159515,Five-shot average precision
+molai,MolAI,O00329,Kinase,0.1916384935595348,Five-shot average precision
+molai,MolAI,O14757,Kinase,0.5973911028648036,Five-shot average precision
+molai,MolAI,O14965,Kinase,0.1521823214252506,Five-shot average precision
+molai,MolAI,O15379,Deacetylase,0.5661486484094224,Five-shot average precision
+molai,MolAI,O43614,GPCR,0.1039049438136348,Five-shot average precision
+molai,MolAI,O60341,Oxidase,0.3618634079795488,Five-shot average precision
+molai,MolAI,O60674,Kinase,0.1500245636267766,Five-shot average precision
+molai,MolAI,O75116,Kinase,0.2890413491719377,Five-shot average precision
+molai,MolAI,P00519,Kinase,0.1500385533480855,Five-shot average precision
+molai,MolAI,P00533,Kinase,0.077927819669024,Five-shot average precision
+molai,MolAI,P00734,Peptidase,0.0894566974268453,Five-shot average precision
+molai,MolAI,P00742,Peptidase,0.3006972971179614,Five-shot average precision
+molai,MolAI,P00918,Other Enzymes,0.2037456883357745,Five-shot average precision
+molai,MolAI,P01375,Other Proteins,0.850419196235032,Five-shot average precision
+molai,MolAI,P03372,Nuclear receptor,0.1207556122496487,Five-shot average precision
+molai,MolAI,P03952,Peptidase,0.1150383719218199,Five-shot average precision
+molai,MolAI,P04150,Nuclear receptor,0.2653214445699084,Five-shot average precision
+molai,MolAI,P06239,Kinase,0.2294003284115097,Five-shot average precision
+molai,MolAI,P07550,GPCR,0.3367894916227538,Five-shot average precision
+molai,MolAI,P07711,Peptidase,0.1683326998403106,Five-shot average precision
+molai,MolAI,P08172,GPCR,0.0700545451417144,Five-shot average precision
+molai,MolAI,P08246,Peptidase,0.5325590310592989,Five-shot average precision
+molai,MolAI,P08253,Peptidase,0.1418030433354813,Five-shot average precision
+molai,MolAI,P08581,Kinase,0.1028251843352363,Five-shot average precision
+molai,MolAI,P08908,GPCR,0.1463103947256719,Five-shot average precision
+molai,MolAI,P09874,Other Enzymes,0.2103540976836583,Five-shot average precision
+molai,MolAI,P10721,Kinase,0.478722547015951,Five-shot average precision
+molai,MolAI,P11362,Kinase,0.421847887688748,Five-shot average precision
+molai,MolAI,P11802,Kinase,0.123738969670156,Five-shot average precision
+molai,MolAI,P14416,GPCR,0.0789716960512677,Five-shot average precision
+molai,MolAI,P14780,Peptidase,0.2355017531094476,Five-shot average precision
+molai,MolAI,P15056,Kinase,0.212052927365898,Five-shot average precision
+molai,MolAI,P20309,GPCR,0.3659525803955318,Five-shot average precision
+molai,MolAI,P21453,GPCR,0.1649520365384153,Five-shot average precision
+molai,MolAI,P23458,Kinase,0.4797284376892131,Five-shot average precision
+molai,MolAI,P27487,Peptidase,0.1291677581639644,Five-shot average precision
+molai,MolAI,P27986,Kinase,0.4590310506347634,Five-shot average precision
+molai,MolAI,P28223,GPCR,0.1145112852795393,Five-shot average precision
+molai,MolAI,P28335,GPCR,0.0383948707984215,Five-shot average precision
+molai,MolAI,P28482,Kinase,0.5015587965372881,Five-shot average precision
+molai,MolAI,P29274,GPCR,0.1034842012776039,Five-shot average precision
+molai,MolAI,P29597,Kinase,0.3313894744630346,Five-shot average precision
+molai,MolAI,P30542,GPCR,0.074014886587952,Five-shot average precision
+molai,MolAI,P31645,Other Proteins,0.0544229819204033,Five-shot average precision
+molai,MolAI,P34969,GPCR,0.1050130727851684,Five-shot average precision
+molai,MolAI,P34972,GPCR,0.0562865260515956,Five-shot average precision
+molai,MolAI,P35372,GPCR,0.1214146252924563,Five-shot average precision
+molai,MolAI,P35462,GPCR,0.4960139319606009,Five-shot average precision
+molai,MolAI,P36888,Kinase,0.0647662288605259,Five-shot average precision
+molai,MolAI,P41143,GPCR,0.1808784365861295,Five-shot average precision
+molai,MolAI,P42336,Kinase,0.3101246176811757,Five-shot average precision
+molai,MolAI,P43405,Kinase,0.1991941436189181,Five-shot average precision
+molai,MolAI,P45452,Peptidase,0.1346337057897679,Five-shot average precision
+molai,MolAI,P51449,Nuclear receptor,0.4631407574052259,Five-shot average precision
+molai,MolAI,P78536,Other Enzymes,0.1453150309659481,Five-shot average precision
+molai,MolAI,Q00987,Other Enzymes,0.7859770370615975,Five-shot average precision
+molai,MolAI,Q05397,Kinase,0.6385727948282115,Five-shot average precision
+molai,MolAI,Q06187,Kinase,0.2861657740469534,Five-shot average precision
+molai,MolAI,Q07817,Apoptosis regulator,0.5218623305700167,Five-shot average precision
+molai,MolAI,Q07820,Apoptosis regulator,0.9182527040038752,Five-shot average precision
+molai,MolAI,Q08499,Other Enzymes,0.3943117433344878,Five-shot average precision
+molai,MolAI,Q14432,Other Enzymes,0.6669609472120396,Five-shot average precision
+molai,MolAI,Q16539,Kinase,0.2308889361671854,Five-shot average precision
+molai,MolAI,Q16790,Other Enzymes,0.258792908883604,Five-shot average precision
+molai,MolAI,Q92731,Nuclear receptor,0.1345455765682975,Five-shot average precision
+molai,MolAI,Q96GD4,Kinase,0.3074501251502947,Five-shot average precision
+molai,MolAI,Q96RI1,Nuclear receptor,0.2565494054197214,Five-shot average precision
+molai,MolAI,Q9NWZ3,Kinase,0.2071753688273911,Five-shot average precision
+molai,MolAI,Q9UBN7,Deacetylase,0.1254085463439462,Five-shot average precision
+molai,MolAI,Q9Y233,Other Enzymes,0.3420512161455635,Five-shot average precision
+molclr_gin,MolCLR-GIN,O00329,Kinase,0.1729520345887598,Five-shot average precision
+molclr_gin,MolCLR-GIN,O14757,Kinase,0.7108728022771236,Five-shot average precision
+molclr_gin,MolCLR-GIN,O14965,Kinase,0.1322267478401947,Five-shot average precision
+molclr_gin,MolCLR-GIN,O15379,Deacetylase,0.6313795590470255,Five-shot average precision
+molclr_gin,MolCLR-GIN,O43614,GPCR,0.0727376039924994,Five-shot average precision
+molclr_gin,MolCLR-GIN,O60341,Oxidase,0.6663047255087077,Five-shot average precision
+molclr_gin,MolCLR-GIN,O60674,Kinase,0.1719843290168995,Five-shot average precision
+molclr_gin,MolCLR-GIN,O75116,Kinase,0.4900446625345724,Five-shot average precision
+molclr_gin,MolCLR-GIN,P00519,Kinase,0.2306926419417752,Five-shot average precision
+molclr_gin,MolCLR-GIN,P00533,Kinase,0.1557833185209504,Five-shot average precision
+molclr_gin,MolCLR-GIN,P00734,Peptidase,0.1095306787799764,Five-shot average precision
+molclr_gin,MolCLR-GIN,P00742,Peptidase,0.2713223784999568,Five-shot average precision
+molclr_gin,MolCLR-GIN,P00918,Other Enzymes,0.1789743759272317,Five-shot average precision
+molclr_gin,MolCLR-GIN,P01375,Other Proteins,0.833725738138034,Five-shot average precision
+molclr_gin,MolCLR-GIN,P03372,Nuclear receptor,0.1923631649711639,Five-shot average precision
+molclr_gin,MolCLR-GIN,P03952,Peptidase,0.1841769928902378,Five-shot average precision
+molclr_gin,MolCLR-GIN,P04150,Nuclear receptor,0.2053027366563985,Five-shot average precision
+molclr_gin,MolCLR-GIN,P06239,Kinase,0.3610546074319162,Five-shot average precision
+molclr_gin,MolCLR-GIN,P07550,GPCR,0.5501832518877305,Five-shot average precision
+molclr_gin,MolCLR-GIN,P07711,Peptidase,0.2101541768398847,Five-shot average precision
+molclr_gin,MolCLR-GIN,P08172,GPCR,0.110075015760547,Five-shot average precision
+molclr_gin,MolCLR-GIN,P08246,Peptidase,0.4239396541220201,Five-shot average precision
+molclr_gin,MolCLR-GIN,P08253,Peptidase,0.2009002371078428,Five-shot average precision
+molclr_gin,MolCLR-GIN,P08581,Kinase,0.0742782411213986,Five-shot average precision
+molclr_gin,MolCLR-GIN,P08908,GPCR,0.1750292805946258,Five-shot average precision
+molclr_gin,MolCLR-GIN,P09874,Other Enzymes,0.145941955386858,Five-shot average precision
+molclr_gin,MolCLR-GIN,P10721,Kinase,0.5394623260788071,Five-shot average precision
+molclr_gin,MolCLR-GIN,P11362,Kinase,0.3747109526294744,Five-shot average precision
+molclr_gin,MolCLR-GIN,P11802,Kinase,0.2333312040939122,Five-shot average precision
+molclr_gin,MolCLR-GIN,P14416,GPCR,0.0840225963518374,Five-shot average precision
+molclr_gin,MolCLR-GIN,P14780,Peptidase,0.161877942357761,Five-shot average precision
+molclr_gin,MolCLR-GIN,P15056,Kinase,0.1643558605853506,Five-shot average precision
+molclr_gin,MolCLR-GIN,P20309,GPCR,0.3039968572763338,Five-shot average precision
+molclr_gin,MolCLR-GIN,P21453,GPCR,0.3018726564093408,Five-shot average precision
+molclr_gin,MolCLR-GIN,P23458,Kinase,0.2728640437384142,Five-shot average precision
+molclr_gin,MolCLR-GIN,P27487,Peptidase,0.0938807330988791,Five-shot average precision
+molclr_gin,MolCLR-GIN,P27986,Kinase,0.7360801715397856,Five-shot average precision
+molclr_gin,MolCLR-GIN,P28223,GPCR,0.1297704071482781,Five-shot average precision
+molclr_gin,MolCLR-GIN,P28335,GPCR,0.0353890180469132,Five-shot average precision
+molclr_gin,MolCLR-GIN,P28482,Kinase,0.4057647845830191,Five-shot average precision
+molclr_gin,MolCLR-GIN,P29274,GPCR,0.1138546642919892,Five-shot average precision
+molclr_gin,MolCLR-GIN,P29597,Kinase,0.4886465172680722,Five-shot average precision
+molclr_gin,MolCLR-GIN,P30542,GPCR,0.1056416901728814,Five-shot average precision
+molclr_gin,MolCLR-GIN,P31645,Other Proteins,0.1410778477492294,Five-shot average precision
+molclr_gin,MolCLR-GIN,P34969,GPCR,0.1175374550034404,Five-shot average precision
+molclr_gin,MolCLR-GIN,P34972,GPCR,0.0822277146542994,Five-shot average precision
+molclr_gin,MolCLR-GIN,P35372,GPCR,0.1967727535114375,Five-shot average precision
+molclr_gin,MolCLR-GIN,P35462,GPCR,0.6668020831919201,Five-shot average precision
+molclr_gin,MolCLR-GIN,P36888,Kinase,0.1049501422077127,Five-shot average precision
+molclr_gin,MolCLR-GIN,P41143,GPCR,0.2484950483744392,Five-shot average precision
+molclr_gin,MolCLR-GIN,P42336,Kinase,0.4142769733785694,Five-shot average precision
+molclr_gin,MolCLR-GIN,P43405,Kinase,0.1457311151101372,Five-shot average precision
+molclr_gin,MolCLR-GIN,P45452,Peptidase,0.2469325244146518,Five-shot average precision
+molclr_gin,MolCLR-GIN,P51449,Nuclear receptor,0.4423747023043175,Five-shot average precision
+molclr_gin,MolCLR-GIN,P78536,Other Enzymes,0.1822542042218585,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q00987,Other Enzymes,0.7082546519603306,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q05397,Kinase,0.7173785920484612,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q06187,Kinase,0.2780295126350058,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q07817,Apoptosis regulator,0.4921766666091103,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q07820,Apoptosis regulator,0.9791251801056272,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q08499,Other Enzymes,0.4974777967967169,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q14432,Other Enzymes,0.6571856161145384,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q16539,Kinase,0.3053022745501191,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q16790,Other Enzymes,0.180148227933363,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q92731,Nuclear receptor,0.2316212240081325,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q96GD4,Kinase,0.2414241347229811,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q96RI1,Nuclear receptor,0.2242375998181319,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q9NWZ3,Kinase,0.2372262423698629,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q9UBN7,Deacetylase,0.1602545273364386,Five-shot average precision
+molclr_gin,MolCLR-GIN,Q9Y233,Other Enzymes,0.3919304349099003,Five-shot average precision
+molformer,MoLFormer,O00329,Kinase,0.2477576571420926,Five-shot average precision
+molformer,MoLFormer,O14757,Kinase,0.7328547008949264,Five-shot average precision
+molformer,MoLFormer,O14965,Kinase,0.1614985078402652,Five-shot average precision
+molformer,MoLFormer,O15379,Deacetylase,0.598828692789459,Five-shot average precision
+molformer,MoLFormer,O43614,GPCR,0.1496461341213448,Five-shot average precision
+molformer,MoLFormer,O60341,Oxidase,0.714305909955866,Five-shot average precision
+molformer,MoLFormer,O60674,Kinase,0.2372649844005335,Five-shot average precision
+molformer,MoLFormer,O75116,Kinase,0.4725227826207333,Five-shot average precision
+molformer,MoLFormer,P00519,Kinase,0.3906455221802811,Five-shot average precision
+molformer,MoLFormer,P00533,Kinase,0.1283467549776824,Five-shot average precision
+molformer,MoLFormer,P00734,Peptidase,0.1181512677333376,Five-shot average precision
+molformer,MoLFormer,P00742,Peptidase,0.3252873423314246,Five-shot average precision
+molformer,MoLFormer,P00918,Other Enzymes,0.1929096583222319,Five-shot average precision
+molformer,MoLFormer,P01375,Other Proteins,0.858485008134978,Five-shot average precision
+molformer,MoLFormer,P03372,Nuclear receptor,0.2014489166453621,Five-shot average precision
+molformer,MoLFormer,P03952,Peptidase,0.2071888293872441,Five-shot average precision
+molformer,MoLFormer,P04150,Nuclear receptor,0.2880745075599816,Five-shot average precision
+molformer,MoLFormer,P06239,Kinase,0.4029235384315822,Five-shot average precision
+molformer,MoLFormer,P07550,GPCR,0.6006217488189317,Five-shot average precision
+molformer,MoLFormer,P07711,Peptidase,0.2747680635382288,Five-shot average precision
+molformer,MoLFormer,P08172,GPCR,0.208132993073253,Five-shot average precision
+molformer,MoLFormer,P08246,Peptidase,0.5560550117095773,Five-shot average precision
+molformer,MoLFormer,P08253,Peptidase,0.2681942911524166,Five-shot average precision
+molformer,MoLFormer,P08581,Kinase,0.1680362717906711,Five-shot average precision
+molformer,MoLFormer,P08908,GPCR,0.2185910330750266,Five-shot average precision
+molformer,MoLFormer,P09874,Other Enzymes,0.3950484316519726,Five-shot average precision
+molformer,MoLFormer,P10721,Kinase,0.6131077123301611,Five-shot average precision
+molformer,MoLFormer,P11362,Kinase,0.4341043658890181,Five-shot average precision
+molformer,MoLFormer,P11802,Kinase,0.1659257752833567,Five-shot average precision
+molformer,MoLFormer,P14416,GPCR,0.1199902973726488,Five-shot average precision
+molformer,MoLFormer,P14780,Peptidase,0.3504772491233897,Five-shot average precision
+molformer,MoLFormer,P15056,Kinase,0.2754331146529661,Five-shot average precision
+molformer,MoLFormer,P20309,GPCR,0.4725344811436788,Five-shot average precision
+molformer,MoLFormer,P21453,GPCR,0.3121315454878857,Five-shot average precision
+molformer,MoLFormer,P23458,Kinase,0.4152311733776215,Five-shot average precision
+molformer,MoLFormer,P27487,Peptidase,0.1666515636967673,Five-shot average precision
+molformer,MoLFormer,P27986,Kinase,0.8441867014200775,Five-shot average precision
+molformer,MoLFormer,P28223,GPCR,0.2710100017052996,Five-shot average precision
+molformer,MoLFormer,P28335,GPCR,0.1011203522400546,Five-shot average precision
+molformer,MoLFormer,P28482,Kinase,0.6010702513990296,Five-shot average precision
+molformer,MoLFormer,P29274,GPCR,0.14780960794831,Five-shot average precision
+molformer,MoLFormer,P29597,Kinase,0.4421255430188055,Five-shot average precision
+molformer,MoLFormer,P30542,GPCR,0.1347302575422808,Five-shot average precision
+molformer,MoLFormer,P31645,Other Proteins,0.1143547202887012,Five-shot average precision
+molformer,MoLFormer,P34969,GPCR,0.243015251650081,Five-shot average precision
+molformer,MoLFormer,P34972,GPCR,0.0594554816162607,Five-shot average precision
+molformer,MoLFormer,P35372,GPCR,0.212114306721799,Five-shot average precision
+molformer,MoLFormer,P35462,GPCR,0.8401682257319919,Five-shot average precision
+molformer,MoLFormer,P36888,Kinase,0.0810845081315489,Five-shot average precision
+molformer,MoLFormer,P41143,GPCR,0.3072921075930712,Five-shot average precision
+molformer,MoLFormer,P42336,Kinase,0.4679487035376338,Five-shot average precision
+molformer,MoLFormer,P43405,Kinase,0.3097930511054615,Five-shot average precision
+molformer,MoLFormer,P45452,Peptidase,0.2769001426246483,Five-shot average precision
+molformer,MoLFormer,P51449,Nuclear receptor,0.6895921732318051,Five-shot average precision
+molformer,MoLFormer,P78536,Other Enzymes,0.2786643648064895,Five-shot average precision
+molformer,MoLFormer,Q00987,Other Enzymes,0.7937494230170847,Five-shot average precision
+molformer,MoLFormer,Q05397,Kinase,0.7803179489531329,Five-shot average precision
+molformer,MoLFormer,Q06187,Kinase,0.3258316536854474,Five-shot average precision
+molformer,MoLFormer,Q07817,Apoptosis regulator,0.7399190679676828,Five-shot average precision
+molformer,MoLFormer,Q07820,Apoptosis regulator,0.9994520476404536,Five-shot average precision
+molformer,MoLFormer,Q08499,Other Enzymes,0.6300040968207031,Five-shot average precision
+molformer,MoLFormer,Q14432,Other Enzymes,0.775059755491532,Five-shot average precision
+molformer,MoLFormer,Q16539,Kinase,0.27566339014942,Five-shot average precision
+molformer,MoLFormer,Q16790,Other Enzymes,0.3023371091816656,Five-shot average precision
+molformer,MoLFormer,Q92731,Nuclear receptor,0.2188858860697188,Five-shot average precision
+molformer,MoLFormer,Q96GD4,Kinase,0.2477442349540947,Five-shot average precision
+molformer,MoLFormer,Q96RI1,Nuclear receptor,0.2588343419822941,Five-shot average precision
+molformer,MoLFormer,Q9NWZ3,Kinase,0.262308567662768,Five-shot average precision
+molformer,MoLFormer,Q9UBN7,Deacetylase,0.139975735071106,Five-shot average precision
+molformer,MoLFormer,Q9Y233,Other Enzymes,0.5589067370640562,Five-shot average precision
+morgan,Morgan (binary),O00329,Kinase,0.3004323049826403,Five-shot average precision
+morgan,Morgan (binary),O14757,Kinase,0.7402568918449919,Five-shot average precision
+morgan,Morgan (binary),O14965,Kinase,0.2091348193927627,Five-shot average precision
+morgan,Morgan (binary),O15379,Deacetylase,0.6252960596500614,Five-shot average precision
+morgan,Morgan (binary),O43614,GPCR,0.1768512035649923,Five-shot average precision
+morgan,Morgan (binary),O60341,Oxidase,0.6896715080245945,Five-shot average precision
+morgan,Morgan (binary),O60674,Kinase,0.3166323636040298,Five-shot average precision
+morgan,Morgan (binary),O75116,Kinase,0.4927477712767369,Five-shot average precision
+morgan,Morgan (binary),P00519,Kinase,0.6501305479557222,Five-shot average precision
+morgan,Morgan (binary),P00533,Kinase,0.1579429213088741,Five-shot average precision
+morgan,Morgan (binary),P00734,Peptidase,0.1738989915215208,Five-shot average precision
+morgan,Morgan (binary),P00742,Peptidase,0.3853212659633681,Five-shot average precision
+morgan,Morgan (binary),P00918,Other Enzymes,0.2536129055572451,Five-shot average precision
+morgan,Morgan (binary),P01375,Other Proteins,0.8922134252420271,Five-shot average precision
+morgan,Morgan (binary),P03372,Nuclear receptor,0.2659386767356436,Five-shot average precision
+morgan,Morgan (binary),P03952,Peptidase,0.2135336382333136,Five-shot average precision
+morgan,Morgan (binary),P04150,Nuclear receptor,0.3810632766181133,Five-shot average precision
+morgan,Morgan (binary),P06239,Kinase,0.513060007179414,Five-shot average precision
+morgan,Morgan (binary),P07550,GPCR,0.6323634487707578,Five-shot average precision
+morgan,Morgan (binary),P07711,Peptidase,0.3335480927666678,Five-shot average precision
+morgan,Morgan (binary),P08172,GPCR,0.234597882196252,Five-shot average precision
+morgan,Morgan (binary),P08246,Peptidase,0.5786996045732314,Five-shot average precision
+morgan,Morgan (binary),P08253,Peptidase,0.2927849936087293,Five-shot average precision
+morgan,Morgan (binary),P08581,Kinase,0.1938547515215747,Five-shot average precision
+morgan,Morgan (binary),P08908,GPCR,0.2357368105681014,Five-shot average precision
+morgan,Morgan (binary),P09874,Other Enzymes,0.310067937297478,Five-shot average precision
+morgan,Morgan (binary),P10721,Kinase,0.7990941472445587,Five-shot average precision
+morgan,Morgan (binary),P11362,Kinase,0.449416575802623,Five-shot average precision
+morgan,Morgan (binary),P11802,Kinase,0.2954598654838323,Five-shot average precision
+morgan,Morgan (binary),P14416,GPCR,0.1386439012352538,Five-shot average precision
+morgan,Morgan (binary),P14780,Peptidase,0.3327631404144928,Five-shot average precision
+morgan,Morgan (binary),P15056,Kinase,0.371739203929084,Five-shot average precision
+morgan,Morgan (binary),P20309,GPCR,0.425877680327939,Five-shot average precision
+morgan,Morgan (binary),P21453,GPCR,0.2272583137259159,Five-shot average precision
+morgan,Morgan (binary),P23458,Kinase,0.6632631198867474,Five-shot average precision
+morgan,Morgan (binary),P27487,Peptidase,0.1796884723812863,Five-shot average precision
+morgan,Morgan (binary),P27986,Kinase,0.8986364355955547,Five-shot average precision
+morgan,Morgan (binary),P28223,GPCR,0.2817773176370994,Five-shot average precision
+morgan,Morgan (binary),P28335,GPCR,0.0955239404142733,Five-shot average precision
+morgan,Morgan (binary),P28482,Kinase,0.68974689863791,Five-shot average precision
+morgan,Morgan (binary),P29274,GPCR,0.2224302219783468,Five-shot average precision
+morgan,Morgan (binary),P29597,Kinase,0.5732536439404698,Five-shot average precision
+morgan,Morgan (binary),P30542,GPCR,0.1635103969783675,Five-shot average precision
+morgan,Morgan (binary),P31645,Other Proteins,0.1130375325752254,Five-shot average precision
+morgan,Morgan (binary),P34969,GPCR,0.2024998664492391,Five-shot average precision
+morgan,Morgan (binary),P34972,GPCR,0.1039479909111594,Five-shot average precision
+morgan,Morgan (binary),P35372,GPCR,0.2819296550124397,Five-shot average precision
+morgan,Morgan (binary),P35462,GPCR,0.8808671830928747,Five-shot average precision
+morgan,Morgan (binary),P36888,Kinase,0.1738537831055883,Five-shot average precision
+morgan,Morgan (binary),P41143,GPCR,0.3632430324256702,Five-shot average precision
+morgan,Morgan (binary),P42336,Kinase,0.5806756672855566,Five-shot average precision
+morgan,Morgan (binary),P43405,Kinase,0.4162221615908099,Five-shot average precision
+morgan,Morgan (binary),P45452,Peptidase,0.4533788648645538,Five-shot average precision
+morgan,Morgan (binary),P51449,Nuclear receptor,0.6125208542810651,Five-shot average precision
+morgan,Morgan (binary),P78536,Other Enzymes,0.3707714029234107,Five-shot average precision
+morgan,Morgan (binary),Q00987,Other Enzymes,0.8365498453666017,Five-shot average precision
+morgan,Morgan (binary),Q05397,Kinase,0.8307380160725562,Five-shot average precision
+morgan,Morgan (binary),Q06187,Kinase,0.4803172936172604,Five-shot average precision
+morgan,Morgan (binary),Q07817,Apoptosis regulator,0.7799341404629592,Five-shot average precision
+morgan,Morgan (binary),Q07820,Apoptosis regulator,0.9845004232787454,Five-shot average precision
+morgan,Morgan (binary),Q08499,Other Enzymes,0.6066957800277274,Five-shot average precision
+morgan,Morgan (binary),Q14432,Other Enzymes,0.7635380771759341,Five-shot average precision
+morgan,Morgan (binary),Q16539,Kinase,0.3785138115046295,Five-shot average precision
+morgan,Morgan (binary),Q16790,Other Enzymes,0.4363313943598398,Five-shot average precision
+morgan,Morgan (binary),Q92731,Nuclear receptor,0.2017577640754911,Five-shot average precision
+morgan,Morgan (binary),Q96GD4,Kinase,0.4454159408997794,Five-shot average precision
+morgan,Morgan (binary),Q96RI1,Nuclear receptor,0.2755880613785595,Five-shot average precision
+morgan,Morgan (binary),Q9NWZ3,Kinase,0.3194655041242716,Five-shot average precision
+morgan,Morgan (binary),Q9UBN7,Deacetylase,0.2956407647093838,Five-shot average precision
+morgan,Morgan (binary),Q9Y233,Other Enzymes,0.6482121452107246,Five-shot average precision
+smi_ted,SMI-TED-Light,O00329,Kinase,0.1853982293596771,Five-shot average precision
+smi_ted,SMI-TED-Light,O14757,Kinase,0.7241101514275722,Five-shot average precision
+smi_ted,SMI-TED-Light,O14965,Kinase,0.1839077923593892,Five-shot average precision
+smi_ted,SMI-TED-Light,O15379,Deacetylase,0.5570308953634828,Five-shot average precision
+smi_ted,SMI-TED-Light,O43614,GPCR,0.0928089997143445,Five-shot average precision
+smi_ted,SMI-TED-Light,O60341,Oxidase,0.5806446373053868,Five-shot average precision
+smi_ted,SMI-TED-Light,O60674,Kinase,0.223797448567103,Five-shot average precision
+smi_ted,SMI-TED-Light,O75116,Kinase,0.4153745100190283,Five-shot average precision
+smi_ted,SMI-TED-Light,P00519,Kinase,0.3640030933300727,Five-shot average precision
+smi_ted,SMI-TED-Light,P00533,Kinase,0.1040693380143354,Five-shot average precision
+smi_ted,SMI-TED-Light,P00734,Peptidase,0.1011120613895151,Five-shot average precision
+smi_ted,SMI-TED-Light,P00742,Peptidase,0.3067603422362367,Five-shot average precision
+smi_ted,SMI-TED-Light,P00918,Other Enzymes,0.2392877901793876,Five-shot average precision
+smi_ted,SMI-TED-Light,P01375,Other Proteins,0.8655766857693694,Five-shot average precision
+smi_ted,SMI-TED-Light,P03372,Nuclear receptor,0.2277336533003545,Five-shot average precision
+smi_ted,SMI-TED-Light,P03952,Peptidase,0.1612935929153442,Five-shot average precision
+smi_ted,SMI-TED-Light,P04150,Nuclear receptor,0.2946844800211539,Five-shot average precision
+smi_ted,SMI-TED-Light,P06239,Kinase,0.3325136447901227,Five-shot average precision
+smi_ted,SMI-TED-Light,P07550,GPCR,0.4436033481031738,Five-shot average precision
+smi_ted,SMI-TED-Light,P07711,Peptidase,0.2494420562256595,Five-shot average precision
+smi_ted,SMI-TED-Light,P08172,GPCR,0.145180213105201,Five-shot average precision
+smi_ted,SMI-TED-Light,P08246,Peptidase,0.5941272115244164,Five-shot average precision
+smi_ted,SMI-TED-Light,P08253,Peptidase,0.1703804434098614,Five-shot average precision
+smi_ted,SMI-TED-Light,P08581,Kinase,0.1386183934543667,Five-shot average precision
+smi_ted,SMI-TED-Light,P08908,GPCR,0.176361306312251,Five-shot average precision
+smi_ted,SMI-TED-Light,P09874,Other Enzymes,0.2515539618537151,Five-shot average precision
+smi_ted,SMI-TED-Light,P10721,Kinase,0.5307917046304717,Five-shot average precision
+smi_ted,SMI-TED-Light,P11362,Kinase,0.4363735948462521,Five-shot average precision
+smi_ted,SMI-TED-Light,P11802,Kinase,0.2172981212908919,Five-shot average precision
+smi_ted,SMI-TED-Light,P14416,GPCR,0.0959350629920633,Five-shot average precision
+smi_ted,SMI-TED-Light,P14780,Peptidase,0.2722720583869247,Five-shot average precision
+smi_ted,SMI-TED-Light,P15056,Kinase,0.2733867115794703,Five-shot average precision
+smi_ted,SMI-TED-Light,P20309,GPCR,0.4375620135374728,Five-shot average precision
+smi_ted,SMI-TED-Light,P21453,GPCR,0.227674758874872,Five-shot average precision
+smi_ted,SMI-TED-Light,P23458,Kinase,0.5138228680439452,Five-shot average precision
+smi_ted,SMI-TED-Light,P27487,Peptidase,0.1475400211645013,Five-shot average precision
+smi_ted,SMI-TED-Light,P27986,Kinase,0.7424108516790562,Five-shot average precision
+smi_ted,SMI-TED-Light,P28223,GPCR,0.2172349127950539,Five-shot average precision
+smi_ted,SMI-TED-Light,P28335,GPCR,0.0788266302606955,Five-shot average precision
+smi_ted,SMI-TED-Light,P28482,Kinase,0.4615426149369065,Five-shot average precision
+smi_ted,SMI-TED-Light,P29274,GPCR,0.1570073803206817,Five-shot average precision
+smi_ted,SMI-TED-Light,P29597,Kinase,0.401042336707583,Five-shot average precision
+smi_ted,SMI-TED-Light,P30542,GPCR,0.1249998110600227,Five-shot average precision
+smi_ted,SMI-TED-Light,P31645,Other Proteins,0.1116328954206312,Five-shot average precision
+smi_ted,SMI-TED-Light,P34969,GPCR,0.1747861917368036,Five-shot average precision
+smi_ted,SMI-TED-Light,P34972,GPCR,0.0785396606233385,Five-shot average precision
+smi_ted,SMI-TED-Light,P35372,GPCR,0.1681216145148919,Five-shot average precision
+smi_ted,SMI-TED-Light,P35462,GPCR,0.6949373850079391,Five-shot average precision
+smi_ted,SMI-TED-Light,P36888,Kinase,0.1037679636086113,Five-shot average precision
+smi_ted,SMI-TED-Light,P41143,GPCR,0.2569969159388104,Five-shot average precision
+smi_ted,SMI-TED-Light,P42336,Kinase,0.3969731487769919,Five-shot average precision
+smi_ted,SMI-TED-Light,P43405,Kinase,0.2912462754575917,Five-shot average precision
+smi_ted,SMI-TED-Light,P45452,Peptidase,0.2041095931138868,Five-shot average precision
+smi_ted,SMI-TED-Light,P51449,Nuclear receptor,0.5503557726694398,Five-shot average precision
+smi_ted,SMI-TED-Light,P78536,Other Enzymes,0.1827246494752863,Five-shot average precision
+smi_ted,SMI-TED-Light,Q00987,Other Enzymes,0.7444747262646925,Five-shot average precision
+smi_ted,SMI-TED-Light,Q05397,Kinase,0.7339218155406383,Five-shot average precision
+smi_ted,SMI-TED-Light,Q06187,Kinase,0.3768548238278496,Five-shot average precision
+smi_ted,SMI-TED-Light,Q07817,Apoptosis regulator,0.6880595049563842,Five-shot average precision
+smi_ted,SMI-TED-Light,Q07820,Apoptosis regulator,0.9952967595082912,Five-shot average precision
+smi_ted,SMI-TED-Light,Q08499,Other Enzymes,0.5945380499393369,Five-shot average precision
+smi_ted,SMI-TED-Light,Q14432,Other Enzymes,0.753289086173454,Five-shot average precision
+smi_ted,SMI-TED-Light,Q16539,Kinase,0.2768918305922748,Five-shot average precision
+smi_ted,SMI-TED-Light,Q16790,Other Enzymes,0.2997845178820943,Five-shot average precision
+smi_ted,SMI-TED-Light,Q92731,Nuclear receptor,0.2124484911420718,Five-shot average precision
+smi_ted,SMI-TED-Light,Q96GD4,Kinase,0.2277764718248075,Five-shot average precision
+smi_ted,SMI-TED-Light,Q96RI1,Nuclear receptor,0.2257642574827614,Five-shot average precision
+smi_ted,SMI-TED-Light,Q9NWZ3,Kinase,0.1918922039212973,Five-shot average precision
+smi_ted,SMI-TED-Light,Q9UBN7,Deacetylase,0.1416302150575414,Five-shot average precision
+smi_ted,SMI-TED-Light,Q9Y233,Other Enzymes,0.5745280581328268,Five-shot average precision

@@ -1,0 +1,8 @@
+model,exact_molecule_level_exposure_known,status,interpretation
+gmolai,True,"exact canonical corpus, split, and step-10000 presentation audit complete",descriptive only; no unseen/OOD performance claim
+morgan,False,published checkpoint/corpus provenance only; exact molecule manifest unavailable,descriptive only; no unseen/OOD performance claim
+molai,False,published checkpoint/corpus provenance only; exact molecule manifest unavailable,descriptive only; no unseen/OOD performance claim
+molformer,False,published checkpoint/corpus provenance only; exact molecule manifest unavailable,descriptive only; no unseen/OOD performance claim
+smi_ted,False,published checkpoint/corpus provenance only; exact molecule manifest unavailable,descriptive only; no unseen/OOD performance claim
+molclr_gin,False,published checkpoint/corpus provenance only; exact molecule manifest unavailable,descriptive only; no unseen/OOD performance claim
+kermt_v2,False,published checkpoint/corpus provenance only; exact molecule manifest unavailable,descriptive only; no unseen/OOD performance claim
