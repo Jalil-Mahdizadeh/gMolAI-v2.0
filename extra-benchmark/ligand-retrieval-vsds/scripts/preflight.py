@@ -59,16 +59,23 @@ def main() -> None:
         text=True,
         capture_output=True,
     ).stdout.strip()
-    if head != protocol["repository"]["head_at_freeze"]:
+    frozen_head = protocol["repository"]["head_at_freeze"]
+    ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", frozen_head, head],
+        cwd=REPOSITORY_ROOT,
+        check=False,
+    ).returncode == 0
+    if not ancestor:
         raise RuntimeError(
-            f"Repository HEAD differs from protocol freeze: {head} != "
-            f"{protocol['repository']['head_at_freeze']}"
+            f"Protocol freeze commit {frozen_head} is not an ancestor of {head}"
         )
     result = {
         "schema_version": 1,
         "status": "ok",
         "protocol_sha256": protocol_digest(protocol),
-        "repository_head": head,
+        "repository_head": frozen_head,
+        "repository_head_at_execution": head,
+        "frozen_head_is_ancestor": True,
         "verified_files": verified,
         "python": platform.python_version(),
         "host": platform.node(),

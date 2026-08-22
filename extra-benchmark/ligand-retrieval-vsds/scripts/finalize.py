@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 from datetime import datetime, timezone
 import json
 from pathlib import Path
@@ -53,13 +54,16 @@ def verify_existing(manifest_path: Path, complete: dict) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--refresh", action="store_true")
+    args = parser.parse_args()
     verification_path = BENCHMARK_DIR / "audits/verification.json"
     verification = load_json(verification_path)
     if verification.get("status") != "ok":
         raise RuntimeError("Independent verification must pass before finalization")
     complete_path = BENCHMARK_DIR / "state/COMPLETE.json"
     checksum_path = BENCHMARK_DIR / "results/SHA256SUMS"
-    if complete_path.exists():
+    if complete_path.exists() and not args.refresh:
         verify_existing(checksum_path, load_json(complete_path))
         print(complete_path.read_text(encoding="utf-8").strip())
         return

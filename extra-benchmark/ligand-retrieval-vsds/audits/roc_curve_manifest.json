@@ -1,0 +1,43 @@
+{
+  "aggregation": "interpolate each draw ROC; average draws within target; average targets with equal weight",
+  "analysis_role": "post-completion visualization of the prespecified primary ROC-AUC endpoint",
+  "anchors_state_sha256": "fbd9b51674545f7908247b6f3cafc8ad24f166108e022d0b8bd01435b8d05bd8",
+  "condition": "standard",
+  "draws_per_target": 20,
+  "fpr_grid_points": 10001,
+  "maximum_auc_approximation_error": 1.2579616721963838e-05,
+  "maximum_permitted_auc_approximation_error": 0.0002,
+  "new_performance_endpoint_or_model_selection": false,
+  "outputs": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/five_shot_macro_roc_curves.pdf",
+      "sha256": "4deb8a5c12b3f848fdaccc384da909d9307b8e492fcd328078ce814367529635"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/five_shot_macro_roc_curves.svg",
+      "sha256": "8cee5a73564331db7a982a39258b239b0fd2f153d2868f1a2677c3829627533d"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/five_shot_macro_roc_curves.png",
+      "sha256": "ff6751ac74773c8b7b5260a0498c488cb5b11bcd5fb11de5ec854cb06b4b01ee"
+    }
+  ],
+  "population_state_sha256": "210352019b7b8393bb5d9e7f505113ec027969af0b995c6ff560ae4b5308bf31",
+  "retrieval_state_sha256": "8be6289a0a1e2d76fb67f0b37f250537060574c24270f34e49b22376e45e8541",
+  "schema_version": 1,
+  "shots": 5,
+  "source_data": [
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/source-data/five_shot_macro_roc_curves.csv",
+      "sha256": "2e9b35caf4ac200e5ce8fe85131093b0aea377e6f1da960c2ae7a421bfec6be3"
+    },
+    {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/source-data/five_shot_macro_roc_auc_audit.csv",
+      "sha256": "fa55f9536140fac9f13c30a636db808c2af6ee99637f893107b3ec59801883b6"
+    }
+  ],
+  "status": "ok",
+  "summary_state_sha256": "cfaffe364712e441b65af8ba315890df02e31b40bbf287895bc03c627155f8c6",
+  "targets": 70,
+  "timestamp_utc": "2026-08-22T20:22:48.609671+00:00"
+}

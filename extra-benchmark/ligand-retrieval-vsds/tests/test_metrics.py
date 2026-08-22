@@ -13,6 +13,7 @@ from sklearn.metrics import average_precision_score, roc_auc_score
 SCRIPT_DIR = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPT_DIR))
 
+from make_roc_curves import interpolated_roc  # noqa: E402
 from metrics import (  # noqa: E402
     candidate_mask,
     compute_metrics,
@@ -65,6 +66,20 @@ class MetricTests(unittest.TestCase):
         self.assertAlmostEqual(result["roc_auc"], roc_auc_score(labels, scores))
         self.assertAlmostEqual(
             result["average_precision"], average_precision_score(labels, scores)
+        )
+
+    def test_interpolated_roc_is_monotone_and_auc_consistent(self) -> None:
+        scores = np.asarray([0.95, 0.80, 0.70, 0.45, 0.20, 0.05])
+        labels = np.asarray([1, 0, 1, 0, 1, 0], dtype=np.int8)
+        grid = np.linspace(0.0, 1.0, 10_001)
+        curve = interpolated_roc(scores, labels, grid)
+        self.assertEqual(curve[0], 0.0)
+        self.assertEqual(curve[-1], 1.0)
+        self.assertTrue(np.all(np.diff(curve) >= 0.0))
+        self.assertAlmostEqual(
+            float(np.trapz(curve, grid)),
+            float(roc_auc_score(labels, scores)),
+            delta=2.0e-4,
         )
 
     def test_scaffold_exclusion_removes_both_labels_and_not_empty_scaffolds(self) -> None:

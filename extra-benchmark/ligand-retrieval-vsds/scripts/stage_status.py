@@ -78,6 +78,31 @@ def main() -> None:
         for filename, expected in verified_files.items():
             verify_file(str(filename), str(expected))
     verify_tree(manifest)
+    bindings = {
+        "POPULATION_FROZEN.json": (("protocol_sha256", "protocol.json"),),
+        "ANCHORS_FROZEN.json": (("population_state_sha256", "state/POPULATION_FROZEN.json"),),
+        "RETRIEVAL_COMPLETE.json": (
+            ("population_state_sha256", "state/POPULATION_FROZEN.json"),
+            ("anchors_state_sha256", "state/ANCHORS_FROZEN.json"),
+        ),
+        "SUMMARY_COMPLETE.json": (("retrieval_state_sha256", "state/RETRIEVAL_COMPLETE.json"),),
+        "roc_curve_manifest.json": (
+            ("population_state_sha256", "state/POPULATION_FROZEN.json"),
+            ("anchors_state_sha256", "state/ANCHORS_FROZEN.json"),
+            ("retrieval_state_sha256", "state/RETRIEVAL_COMPLETE.json"),
+            ("summary_state_sha256", "state/SUMMARY_COMPLETE.json"),
+        ),
+        "figure_manifest.json": (("summary_state_sha256", "state/SUMMARY_COMPLETE.json"),),
+        "REPORT_COMPLETE.json": (
+            ("population_state_sha256", "state/POPULATION_FROZEN.json"),
+            ("summary_state_sha256", "state/SUMMARY_COMPLETE.json"),
+            ("exposure_audit_sha256", "audits/pretraining_exposure.json"),
+            ("figure_manifest_sha256", "audits/figure_manifest.json"),
+        ),
+    }
+    for key, relative in bindings.get(path.name, ()):
+        if manifest.get(key) != sha256_file(BENCHMARK_DIR / relative):
+            raise RuntimeError(f"Stage dependency changed: {path.name}/{key}")
     if path.name == "preflight.json":
         protocol = load_protocol()
         if manifest.get("protocol_sha256") != protocol_digest(protocol):
@@ -89,8 +114,15 @@ def main() -> None:
             text=True,
             capture_output=True,
         ).stdout.strip()
-        if manifest.get("repository_head") != head:
-            raise RuntimeError("Preflight repository HEAD changed")
+        frozen_head = protocol["repository"]["head_at_freeze"]
+        if manifest.get("repository_head") != frozen_head:
+            raise RuntimeError("Preflight frozen repository identity changed")
+        if subprocess.run(
+            ["git", "merge-base", "--is-ancestor", frozen_head, head],
+            cwd=REPOSITORY_ROOT,
+            check=False,
+        ).returncode != 0:
+            raise RuntimeError("Protocol freeze commit is not an ancestor of HEAD")
     if path.name == "COMPLETE.json":
         checksum_path = resolve_path(str(manifest["sha256_manifest"]))
         for line in checksum_path.read_text(encoding="utf-8").splitlines():

@@ -202,6 +202,10 @@ else
     run_cpu python "${BENCHMARK_DIR}/scripts/summarize.py"
 fi
 
+if ! stage_valid "${BENCHMARK_DIR}/audits/roc_curve_manifest.json"; then
+    run_cpu python "${BENCHMARK_DIR}/scripts/make_roc_curves.py"
+fi
+
 if ! stage_valid "${BENCHMARK_DIR}/audits/figure_manifest.json"; then
     run_cpu python "${BENCHMARK_DIR}/scripts/make_figures.py"
 fi
@@ -209,4 +213,4 @@ if ! stage_valid "${BENCHMARK_DIR}/state/REPORT_COMPLETE.json"; then
     run_cpu python "${BENCHMARK_DIR}/scripts/render_results.py"
 fi
 run_cpu python "${BENCHMARK_DIR}/scripts/verify_results.py"
-run_cpu python "${BENCHMARK_DIR}/scripts/finalize.py"
+run_cpu python "${BENCHMARK_DIR}/scripts/finalize.py" --refresh

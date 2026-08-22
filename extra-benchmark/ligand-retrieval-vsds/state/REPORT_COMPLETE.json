@@ -1,11 +1,11 @@
 {
   "exposure_audit_sha256": "fb12ab2a6afd0b07f64a3a5351a806c6554f235ac23383f44c7f9d89bf4c7adc",
-  "figure_manifest_sha256": "e1c529cd480f1d664b0f92a4ed827c030425af478e468876bdb27ca85d3ef8b8",
+  "figure_manifest_sha256": "d2d6de4aca6ae6be2a9cf32fe883d2a5ee9df1177c666904b588b845ef80e4ad",
   "population_state_sha256": "210352019b7b8393bb5d9e7f505113ec027969af0b995c6ff560ae4b5308bf31",
   "report": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/RESULTS.md",
-  "report_sha256": "fb598593728d9e011af50770480c334d6628b50f32d18c97ab6bd4d24be9462a",
+  "report_sha256": "11b332477f8aec0374c8ce8a6a5cce98ac6e3536d27b294cc2c88e0f0310459b",
   "schema_version": 1,
   "status": "ok",
   "summary_state_sha256": "cfaffe364712e441b65af8ba315890df02e31b40bbf287895bc03c627155f8c6",
-  "timestamp_utc": "2026-08-22T19:40:11.066459+00:00"
+  "timestamp_utc": "2026-08-22T20:23:48.287173+00:00"
 }

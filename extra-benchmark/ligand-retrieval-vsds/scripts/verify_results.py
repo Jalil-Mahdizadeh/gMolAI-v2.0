@@ -78,9 +78,11 @@ def main() -> None:
     retrieval = load_json(retrieval_path)
     summary = load_json(summary_path)
     exposure = load_json(BENCHMARK_DIR / "audits/pretraining_exposure.json")
+    roc_manifest_path = BENCHMARK_DIR / "audits/roc_curve_manifest.json"
+    roc_manifest = load_json(roc_manifest_path)
     figures = load_json(BENCHMARK_DIR / "audits/figure_manifest.json")
     report = load_json(BENCHMARK_DIR / "state/REPORT_COMPLETE.json")
-    states = (preflight, preparation, screening, population, anchors, retrieval, summary, exposure, figures, report)
+    states = (preflight, preparation, screening, population, anchors, retrieval, summary, exposure, roc_manifest, figures, report)
     if any(state.get("status") not in {"ok", "frozen"} for state in states):
         raise RuntimeError("At least one required benchmark stage is incomplete")
     if preflight.get("protocol_sha256") != protocol_digest(protocol):
@@ -280,9 +282,10 @@ def main() -> None:
         raise RuntimeError("Random-ranking audit mean differs from the summary state")
     if not 0.7 <= random_mean <= 1.3:
         raise RuntimeError("Random-ranking EF1% sanity control is outside [0.7, 1.3]")
+    model_summary_rows = read_csv(model_summary_path)
     primary_summary_models = {
         row["model"]
-        for row in read_csv(model_summary_path)
+        for row in model_summary_rows
         if int(row["shots"]) == primary_shots
         and row["condition"] == "standard"
         and row["metric"] == "ef1"
@@ -291,6 +294,96 @@ def main() -> None:
     if primary_summary_models != set(models):
         raise RuntimeError("Primary summary ranking does not contain exactly seven models")
 
+    if (
+        roc_manifest.get("new_performance_endpoint_or_model_selection") is not False
+        or int(roc_manifest.get("shots", -1)) != primary_shots
+        or roc_manifest.get("condition") != "standard"
+        or int(roc_manifest.get("targets", -1)) != len(by_target)
+    ):
+        raise RuntimeError("Macro ROC visualization changed the frozen analysis scope")
+    if roc_manifest.get("retrieval_state_sha256") != sha256_file(retrieval_path):
+        raise RuntimeError("Macro ROC visualization is not bound to frozen retrieval")
+    roc_sources = {
+        Path(item["path"]).name: item for item in roc_manifest.get("source_data", [])
+    }
+    curve_name = "five_shot_macro_roc_curves.csv"
+    audit_name = "five_shot_macro_roc_auc_audit.csv"
+    if set(roc_sources) != {curve_name, audit_name}:
+        raise RuntimeError("Macro ROC source-data roster differs")
+    curve_path = BENCHMARK_DIR / "figures/source-data" / curve_name
+    auc_audit_path = BENCHMARK_DIR / "figures/source-data" / audit_name
+    if (
+        sha256_file(curve_path) != roc_sources[curve_name]["sha256"]
+        or sha256_file(auc_audit_path) != roc_sources[audit_name]["sha256"]
+    ):
+        raise RuntimeError("Macro ROC source data changed")
+    curve_rows = read_csv(curve_path)
+    auc_audit_rows = {row["model"]: row for row in read_csv(auc_audit_path)}
+    if set(auc_audit_rows) != set(models):
+        raise RuntimeError("Macro ROC AUC audit does not contain exactly seven models")
+    exact_auc = {
+        row["model"]: float(row["target_level_mean"])
+        for row in model_summary_rows
+        if int(row["shots"]) == primary_shots
+        and row["condition"] == "standard"
+        and row["metric"] == "roc_auc"
+        and row["model"] in models
+    }
+    grid_points = int(roc_manifest["fpr_grid_points"])
+    reference_fpr = None
+    maximum_observed_error = 0.0
+    for model in models:
+        subset = [row for row in curve_rows if row["model"] == model]
+        if len(subset) != grid_points:
+            raise RuntimeError(f"Macro ROC grid length differs for {model}")
+        fpr = np.asarray([float(row["false_positive_rate"]) for row in subset])
+        tpr = np.asarray([float(row["macro_true_positive_rate"]) for row in subset])
+        if (
+            not np.isfinite(fpr).all()
+            or not np.isfinite(tpr).all()
+            or fpr[0] != 0.0
+            or fpr[-1] != 1.0
+            or tpr[0] != 0.0
+            or tpr[-1] != 1.0
+            or np.any(np.diff(fpr) <= 0.0)
+            or np.any(np.diff(tpr) < -1.0e-12)
+            or np.any((tpr < 0.0) | (tpr > 1.0))
+        ):
+            raise RuntimeError(f"Invalid macro ROC path for {model}")
+        if reference_fpr is None:
+            reference_fpr = fpr
+        elif not np.array_equal(reference_fpr, fpr):
+            raise RuntimeError("Models use different macro ROC FPR grids")
+        audit_row = auc_audit_rows[model]
+        integrated_auc = float(np.trapz(tpr, fpr))
+        observed_error = abs(integrated_auc - exact_auc[model])
+        maximum_observed_error = max(maximum_observed_error, observed_error)
+        if (
+            not math.isclose(
+                float(audit_row["exact_mean_target_roc_auc"]),
+                exact_auc[model],
+                rel_tol=0.0,
+                abs_tol=1.0e-12,
+            )
+            or not math.isclose(
+                float(audit_row["trapezoid_auc_of_plotted_macro_curve"]),
+                integrated_auc,
+                rel_tol=0.0,
+                abs_tol=1.0e-12,
+            )
+            or observed_error > float(audit_row["maximum_permitted_difference"])
+        ):
+            raise RuntimeError(f"Macro ROC AUC audit differs for {model}")
+    if not math.isclose(
+        maximum_observed_error,
+        float(roc_manifest["maximum_auc_approximation_error"]),
+        rel_tol=0.0,
+        abs_tol=1.0e-12,
+    ):
+        raise RuntimeError("Macro ROC maximum AUC approximation error differs")
+    figure_roc = figures.get("roc", {}).get("manifest", {})
+    if figure_roc.get("sha256") != sha256_file(roc_manifest_path):
+        raise RuntimeError("Overall figure manifest is not bound to the macro ROC manifest")
     if exposure.get("no_unseen_or_ood_claim") is not True or exposure.get("pretrained_model_executed") is not False:
         raise RuntimeError("Exposure audit interpretation or execution contract changed")
     require_hash(exposure, "summary_table_sha256", BENCHMARK_DIR / "results/tables/pretraining_exposure.csv")
@@ -309,6 +402,8 @@ def main() -> None:
         "retrieval_rows_verified": len(retrieval_rows),
         "scaffold_eligible_draws_verified": scaffold_eligible_draws,
         "figure_and_source_data_artifacts_verified": figure_artifacts,
+        "macro_roc_grid_points_per_model_verified": grid_points,
+        "macro_roc_maximum_auc_approximation_error": maximum_observed_error,
         "random_primary_ef1_mean": random_mean,
         "same_anchors_candidates_and_realized_cutoffs_for_all_models": True,
         "anchors_absent_from_candidate_pools": True,
@@ -321,6 +416,7 @@ def main() -> None:
             "summary_state_sha256": sha256_file(summary_path),
             "exposure_audit_sha256": sha256_file(BENCHMARK_DIR / "audits/pretraining_exposure.json"),
             "figure_manifest_sha256": sha256_file(BENCHMARK_DIR / "audits/figure_manifest.json"),
+            "roc_curve_manifest_sha256": sha256_file(roc_manifest_path),
             "report_state_sha256": sha256_file(BENCHMARK_DIR / "state/REPORT_COMPLETE.json"),
         },
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),

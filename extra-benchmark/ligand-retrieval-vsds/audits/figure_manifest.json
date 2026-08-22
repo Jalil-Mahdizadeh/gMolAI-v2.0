@@ -3,11 +3,11 @@
     "outputs": [
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/main_lbvs_figure.pdf",
-        "sha256": "962593d64f0f3ba5bd65e6b9c9a86ca363e7a41e8300829908f0d4887584bfdf"
+        "sha256": "47f26c73fd7efbdbcd48ddbbc16704191f553ce06dc8f9f7ef5ba83b97f79ab5"
       },
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/main_lbvs_figure.svg",
-        "sha256": "60d7e7c7f3157581de94cf08e562566e87412b059a72be2773c5cf39361fc98d"
+        "sha256": "f4f1470164977b208179a239a454721562f985947f5b7053f938a369dd5ea342"
       },
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/main_lbvs_figure.png",
@@ -29,17 +29,48 @@
       }
     ]
   },
+  "roc": {
+    "manifest": {
+      "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/audits/roc_curve_manifest.json",
+      "sha256": "b48bc27b9bf9c6a4a7381e946a308ae27d34dbe31144f6837389202fc08d4e41"
+    },
+    "outputs": [
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/five_shot_macro_roc_curves.pdf",
+        "sha256": "4deb8a5c12b3f848fdaccc384da909d9307b8e492fcd328078ce814367529635"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/five_shot_macro_roc_curves.svg",
+        "sha256": "8cee5a73564331db7a982a39258b239b0fd2f153d2868f1a2677c3829627533d"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/five_shot_macro_roc_curves.png",
+        "sha256": "ff6751ac74773c8b7b5260a0498c488cb5b11bcd5fb11de5ec854cb06b4b01ee"
+      }
+    ],
+    "source_data": [
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/source-data/five_shot_macro_roc_curves.csv",
+        "sha256": "2e9b35caf4ac200e5ce8fe85131093b0aea377e6f1da960c2ae7a421bfec6be3"
+      },
+      {
+        "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/source-data/five_shot_macro_roc_auc_audit.csv",
+        "sha256": "fa55f9536140fac9f13c30a636db808c2af6ee99637f893107b3ec59801883b6"
+      }
+    ]
+  },
   "schema_version": 1,
   "status": "ok",
+  "summary_state_sha256": "cfaffe364712e441b65af8ba315890df02e31b40bbf287895bc03c627155f8c6",
   "supplementary": {
     "outputs": [
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/si_lbvs_secondary_metrics.pdf",
-        "sha256": "b923067bf64d74ca29025223e64eb9071199afeaea5e68dae6efc82a68f30774"
+        "sha256": "a09f2269e0d4279ec8df70376b4fe839bea359098f2248d2aa1f3657b158fa70"
       },
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/si_lbvs_secondary_metrics.svg",
-        "sha256": "4663df175fc604411ce91bb6d3c9c7e21a15804cc693085772cf3a68f6c78668"
+        "sha256": "3a9492870b002622ef96e53bcf0cca08fd0d9123c9a55d86572ca079f8cdebef"
       },
       {
         "path": "/nobackup/proj/disk/theo-storage/personal/jalil/gMolAI/gMolAI-retrain/extra-benchmark/ligand-retrieval-vsds/figures/si_lbvs_secondary_metrics.png",
@@ -53,5 +84,5 @@
       }
     ]
   },
-  "timestamp_utc": "2026-08-22T19:37:50.656090+00:00"
+  "timestamp_utc": "2026-08-22T20:23:47.753113+00:00"
 }

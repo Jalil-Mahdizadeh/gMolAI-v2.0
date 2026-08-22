@@ -42,3 +42,8 @@ are under `results/tables`, figures under `figures`, and every plotted value is
 preserved under `figures/source-data`. `RESULTS.md` is a generated compact
 reading copy, while `results/SHA256SUMS` binds every retained analysis artifact.
 
+The additional all-model ROC figure is a visualization of the already-frozen
+primary five-shot ROC-AUC endpoint. Its macro curve averages the 20 draws within
+each target before weighting the 70 targets equally. It introduces no new model
+selection or inferential endpoint.
+

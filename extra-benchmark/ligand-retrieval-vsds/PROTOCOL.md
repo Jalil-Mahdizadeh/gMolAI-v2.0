@@ -61,6 +61,17 @@ replicates. Metrics are averaged within target before target-class-stratified,
 target-level bootstrap intervals and paired gMolAI comparisons are calculated.
 No formal p-values are used.
 
+## Post-completion ROC visualization
+
+At the author's request after the benchmark was sealed, the prespecified
+five-shot standard-condition ROC-AUC predictions are also shown as one
+target-balanced macro ROC plot. Each draw-level ROC is interpolated on a fixed
+10,001-point false-positive-rate grid, the 20 draws are averaged within each
+target, and the 70 targets are then averaged with equal weight. The legend AUC
+is the exact mean of target-level ROC-AUC values from the frozen result table;
+the plotted-grid integral is audited against it. This visualization adds no
+endpoint, model selection, or inferential claim.
+
 ## Scope boundary
 
 This benchmark does not test arbitrary protein--ligand binding prediction. It

@@ -209,9 +209,18 @@ def main() -> None:
         axis.set_title(f"{label}  {title}", loc="left", fontweight="bold")
     si_outputs = save_figure(si_figure, "si_lbvs_secondary_metrics")
 
+    roc_manifest_path = BENCHMARK_DIR / "audits/roc_curve_manifest.json"
+    roc_manifest = load_json(roc_manifest_path)
+    if roc_manifest.get("status") != "ok":
+        raise RuntimeError("Macro ROC figure is incomplete")
+    for artifact in (*roc_manifest["outputs"], *roc_manifest["source_data"]):
+        if sha256_file(artifact["path"]) != artifact["sha256"]:
+            raise RuntimeError(f"Macro ROC artifact changed: {artifact['path']}")
+
     manifest = {
         "schema_version": 1,
         "status": "ok",
+        "summary_state_sha256": sha256_file(BENCHMARK_DIR / "state/SUMMARY_COMPLETE.json"),
         "main": {
             "outputs": main_outputs,
             "source_data": [
@@ -222,6 +231,14 @@ def main() -> None:
         "supplementary": {
             "outputs": si_outputs,
             "source_data": [{"path": str(si_path), "sha256": sha256_file(si_path)}],
+        },
+        "roc": {
+            "manifest": {
+                "path": str(roc_manifest_path),
+                "sha256": sha256_file(roc_manifest_path),
+            },
+            "outputs": roc_manifest["outputs"],
+            "source_data": roc_manifest["source_data"],
         },
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
     }

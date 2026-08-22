@@ -62,4 +62,4 @@ Exact molecule-level exposure was auditable only for gMolAI. These counts are de
 
 ## Artifacts
 
-The manuscript figure is `figures/main_lbvs_figure.{pdf,svg,png}`; the compact supplementary figure is `figures/si_lbvs_secondary_metrics.{pdf,svg,png}`. Every plotted value is retained in `figures/source-data/`.
+The manuscript figure is `figures/main_lbvs_figure.{pdf,svg,png}`; the compact supplementary figure is `figures/si_lbvs_secondary_metrics.{pdf,svg,png}`; and the seven-model target-balanced ROC plot is `figures/five_shot_macro_roc_curves.{pdf,svg,png}`. Every plotted value is retained in `figures/source-data/`.
